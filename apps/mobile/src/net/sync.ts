@@ -29,9 +29,9 @@ export type IndexResponse =
   | { mode: "snapshot"; version: string; jurisdiction: string; builtAt: string; voterCount: number; voters: VoterRecord[] }
   | { mode: "delta"; version: string; jurisdiction: string; builtAt: string; upserts: VoterRecord[]; removedIds: string[] };
 
-async function req<T>(path: string, init?: RequestInit): Promise<T | null> {
+async function req<T>(path: string, init?: RequestInit, timeoutMs: number = TIMEOUT_MS): Promise<T | null> {
   const ctrl = new AbortController();
-  const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+  const t = setTimeout(() => ctrl.abort(), timeoutMs);
   try {
     const r = await fetch(`${SYNC_BASE_URL}${path}`, {
       ...init,
@@ -72,5 +72,7 @@ export function getYield(campaignId: string): Promise<YieldResult | null> {
 /** Down-sync: ask for changes to a campaign's index since `since`; server returns current/delta/snapshot. */
 export function pullIndex(campaignId: string, since?: string): Promise<IndexResponse | null> {
   const q = since ? `?since=${encodeURIComponent(since)}` : "";
-  return req<IndexResponse>(`/index/${encodeURIComponent(campaignId)}${q}`);
+  // Index payloads can be large (a metro can be 100k+ voters / tens of MB). Captures stay on the
+  // short TIMEOUT_MS so the queue fails fast offline; the index download gets a generous window.
+  return req<IndexResponse>(`/index/${encodeURIComponent(campaignId)}${q}`, undefined, 90_000);
 }
