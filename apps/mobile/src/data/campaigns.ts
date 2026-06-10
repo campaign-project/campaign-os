@@ -27,6 +27,9 @@ export interface Campaign {
   area: string;                  // human-readable turf
   areaShort: string;             // compact turf label for the working top bar
   zips: string[];
+  turf?: string[];               // RFC-002-A1: tile cells this assignment covers. Present → the device
+                                 //   loads just these turf tiles (~1MB) instead of the whole-campaign
+                                 //   index; absent → the monolithic index (graceful fallback).
   destination: Destination;      // navigable meeting point
   shiftTargetValid: number;      // valid signatures to gather THIS shift
   statewideRequired: number;     // valid signatures to make the ballot (verify w/ BallotAccessDB)
@@ -141,6 +144,8 @@ export const CAMPAIGNS: Campaign[] = [
     area: "Mecklenburg County — Charlotte",
     areaShort: "Charlotte · 28202",
     zips: ["28202", "28203", "28204", "28205", "28211"],
+    turf: ["mecklenburg__074"], // RFC-002-A1 demo: this assignment's turf = Kirk's precinct (~688KB tile)
+
     destination: { label: "Uptown Charlotte — Tryon St", lat: 35.2271, lng: -80.8431 },
     shiftTargetValid: 40,
     statewideRequired: 85000, // NC unaffiliated statewide ≈ 1.5% of last gov vote — verify vs NCSBE/BallotAccessDB

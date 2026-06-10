@@ -76,3 +76,18 @@ export function pullIndex(campaignId: string, since?: string): Promise<IndexResp
   // short TIMEOUT_MS so the queue fails fast offline; the index download gets a generous window.
   return req<IndexResponse>(`/index/${encodeURIComponent(campaignId)}${q}`, undefined, 90_000);
 }
+
+/** A turf tile is a small index addressed by a compound id "<campaign>/tiles/<cell>". */
+export const tileId = (campaignId: string, cell: string): string => `${campaignId}/tiles/${cell}`;
+
+export interface ManifestCell { cell: string; voterCount: number; version: string; file: string }
+export interface Manifest {
+  campaignId: string; jurisdiction: string; builtAt: string;
+  tileScheme: string; tileCount: number; voterTotal: number; cells: ManifestCell[];
+}
+
+/** The tile directory for a campaign (RFC-002-A1): which cells exist and at what version. Null when
+ *  the backend has no tiles (→ the caller falls back to the whole-campaign index). */
+export function getManifest(campaignId: string): Promise<Manifest | null> {
+  return req<Manifest>(`/manifest/${encodeURIComponent(campaignId)}`);
+}

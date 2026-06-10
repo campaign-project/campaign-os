@@ -120,11 +120,24 @@ const server = createServer((req, res) => {
     return send(res, 200, { overall: { valid: tv, total: tt, rate: smooth(tv, tt) }, byZip });
   }
 
+  // Tile manifest (RFC-002-A1): the directory of cells + versions for a campaign.
+  if (req.method === "GET" && url.pathname.startsWith("/manifest/")) {
+    const id = decodeURIComponent(url.pathname.slice("/manifest/".length));
+    try {
+      return send(res, 200, JSON.parse(readFileSync(join(INDEX_DIR, "tiles", id, "manifest.json"), "utf8")));
+    } catch {
+      return send(res, 404, { error: `no manifest for "${id}"` });
+    }
+  }
+
   if (req.method === "GET" && url.pathname.startsWith("/index/")) {
     const id = decodeURIComponent(url.pathname.slice("/index/".length));
+    // A compound id "<campaign>/tiles/<cell>" is a turf tile (build-tiles.mts layout); else a whole index.
+    const tm = id.match(/^(.+)\/tiles\/(.+)$/);
+    const filePath = tm ? join(INDEX_DIR, "tiles", tm[1], `${tm[2]}.json`) : join(INDEX_DIR, `${id}.json`);
     let a;
     try {
-      a = JSON.parse(readFileSync(join(INDEX_DIR, `${id}.json`), "utf8"));
+      a = JSON.parse(readFileSync(filePath, "utf8"));
     } catch {
       return send(res, 404, { error: `no index for "${id}"` });
     }

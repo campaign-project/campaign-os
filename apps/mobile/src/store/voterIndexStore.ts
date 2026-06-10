@@ -18,7 +18,8 @@ import { AppState } from "react-native";
 import * as SQLite from "expo-sqlite";
 import { buildIndex, type VoterIndex, type VoterRecord } from "@campaign-os/engine";
 import { buildCampaignIndex } from "../data/voterIndex";
-import { pullIndex } from "../net/sync";
+import { pullIndex, getManifest, tileId } from "../net/sync";
+import { CAMPAIGNS } from "../data/campaigns";
 
 export type IndexOrigin = "bundled" | "synced";
 export interface EffectiveIndex {
@@ -73,6 +74,8 @@ try {
     syncedAt.set(r.campaign_id, r.synced_at);
     synced.set(r.campaign_id, { index: buildIndex(vs), voterCount: vs.length, jurisdiction: r.jurisdiction, builtAt: r.built_at, version: r.version ?? "", origin: "synced" });
   }
+  // Tiled campaigns: rebuild the in-memory union from any persisted turf tiles (offline after restart).
+  for (const c of CAMPAIGNS) if (c.turf?.length) rebuildUnion(c.id, c.turf);
 } catch (e) {
   console.warn("[voterIndex] SQLite unavailable — synced index won't persist this session:", e);
   db = null;
@@ -143,6 +146,59 @@ async function syncIfStale(id: string): Promise<void> {
   }
 }
 
+// --- Tiled campaigns (RFC-002-A1) ----------------------------------------------------------------
+// The device loads just its assignment's turf tiles and matches against their UNION, instead of one
+// whole-campaign index. Each tile is a small index addressed by a compound id "<campaign>/tiles/<cell>",
+// persisted individually; the campaign-level union is rebuilt in-memory. Falls back to the monolithic
+// index when the backend serves no manifest (e.g. tiles not deployed yet) — so prod keeps working.
+
+const turfOf = (campaignId: string): string[] | undefined => CAMPAIGNS.find((c) => c.id === campaignId)?.turf;
+
+/** Pull one turf tile to the manifest's target version (snapshot/delta); persisted under its id. */
+async function syncTile(key: string, want: string): Promise<void> {
+  if (synced.get(key)?.version === want) return; // already current — skip
+  const res = await pullIndex(key, synced.get(key)?.version);
+  if (!res || res.mode === "current") return;
+  if (res.mode === "snapshot") setSynced(key, res.voters, res.version, res.jurisdiction, res.builtAt);
+  else setSynced(key, applyDelta(voters.get(key) ?? [], res.upserts, res.removedIds), res.version, res.jurisdiction, res.builtAt);
+}
+
+/** Rebuild the campaign-level index from its loaded turf tiles (in-memory; the tiles are persisted). */
+function rebuildUnion(campaignId: string, cells: string[]): void {
+  const union: VoterRecord[] = [];
+  const vers: string[] = [];
+  let minAt = Infinity, jurisdiction = "", builtAt = "";
+  for (const cell of cells) {
+    const key = tileId(campaignId, cell);
+    const s = synced.get(key); const vs = voters.get(key);
+    if (!s || !vs) continue;
+    union.push(...vs); vers.push(s.version);
+    minAt = Math.min(minAt, syncedAt.get(key) ?? 0);
+    jurisdiction ||= s.jurisdiction; builtAt ||= s.builtAt;
+  }
+  if (!union.length) return;
+  voters.set(campaignId, union);
+  syncedAt.set(campaignId, isFinite(minAt) ? minAt : Date.now());
+  synced.set(campaignId, { index: buildIndex(union), voterCount: union.length, jurisdiction, builtAt, version: vers.join("|"), origin: "synced" });
+  emit();
+}
+
+/** Refresh a campaign's turf tiles: manifest → per-tile delta → union. Monolithic fallback if no manifest. */
+async function syncTurf(campaignId: string, cells: string[]): Promise<void> {
+  if (!isStale(campaignId)) return;
+  const manifest = await getManifest(campaignId);
+  if (!manifest) return void syncIfStale(campaignId); // backend has no tiles → whole-campaign index
+  if (pulling.has(campaignId)) return;
+  pulling.add(campaignId);
+  try {
+    const want = manifest.cells.filter((c) => cells.includes(c.cell));
+    for (const t of want) await syncTile(tileId(campaignId, t.cell), t.version);
+    rebuildUnion(campaignId, want.map((t) => t.cell));
+  } finally {
+    pulling.delete(campaignId);
+  }
+}
+
 /** The raw voter records backing the effective index — synced set if present, else bundled.
  *  Stable reference between syncs, so the suggester's per-array corpus cache stays warm. */
 export function getVoterList(campaignId: string): VoterRecord[] {
@@ -153,8 +209,10 @@ export function getVoterList(campaignId: string): VoterRecord[] {
 export function useCampaignIndex(campaignId: string): EffectiveIndex {
   useSyncExternalStore(subscribe, getSnapshot);
   useEffect(() => {
-    void syncIfStale(campaignId);
-    const sub = AppState.addEventListener("change", (s) => { if (s === "active") void syncIfStale(campaignId); });
+    const turf = turfOf(campaignId);
+    const run = () => { if (turf?.length) void syncTurf(campaignId, turf); else void syncIfStale(campaignId); };
+    run();
+    const sub = AppState.addEventListener("change", (s) => { if (s === "active") run(); });
     return () => sub.remove();
   }, [campaignId]);
 

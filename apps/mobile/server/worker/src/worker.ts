@@ -6,9 +6,14 @@
  *   GET  /health
  *   GET  /movement                      → live rollup (D1)
  *   GET  /yield/:campaignId             → validity-by-zip, Beta-Binomial smoothed (D1)
- *   GET  /index/:campaignId?since=V     → current / delta / snapshot (R2 version history)
+ *   GET  /index/:id?since=V             → current / delta / snapshot (R2 version history)
+ *   GET  /manifest/:campaignId          → tile directory: cells + versions (R2)
  *   POST /captures                      → server-side dedup + yield + movement (D1)
- *   PUT  /index/:campaignId             → operator upload of a built index artifact (admin token)
+ *   PUT  /index/:id                     → operator upload of a built index artifact (admin token)
+ *   PUT  /manifest/:campaignId          → operator upload of a tile manifest (admin token)
+ *
+ * Tiles (RFC-002-A1) ride the same /index machinery via a compound id "<campaign>/tiles/<cell>":
+ * a tile is just a small index, so delta/version history work per-tile for free.
  *
  * Auth: Authorization: Bearer <token>. Tokens live in D1 `tokens` (role device|admin, optional
  * campaign scope). Device tokens may be locked to one campaign; admin tokens may PUT indexes.
@@ -102,10 +107,20 @@ export default {
       return json({ overall: { valid: tv, total: tt, rate: smooth(tv, tt) }, byZip });
     }
 
-    // --- GET /index/:campaignId?since=V ---
+    // --- GET /manifest/:campaignId  (tile directory: cells + versions) ---
+    if (req.method === "GET" && path.startsWith("/manifest/")) {
+      const id = decodeURIComponent(path.slice("/manifest/".length));
+      const auth = await authorize(req, env, { campaignId: id.split("/")[0] });
+      if (auth instanceof Response) return auth;
+      const obj = await env.INDEXES.get(`manifests/${id}.json`);
+      if (!obj) return json({ error: `no manifest for "${id}"` }, 404);
+      return json(await obj.json());
+    }
+
+    // --- GET /index/:id?since=V  (id may be a campaign or a compound "<campaign>/tiles/<cell>") ---
     if (req.method === "GET" && path.startsWith("/index/")) {
       const id = decodeURIComponent(path.slice("/index/".length));
-      const auth = await authorize(req, env, { campaignId: id });
+      const auth = await authorize(req, env, { campaignId: id.split("/")[0] });
       if (auth instanceof Response) return auth;
       const meta = await env.DB.prepare("SELECT version, voter_count, built_at, jurisdiction FROM index_meta WHERE campaign_id = ?").bind(id).first<{ version: string; voter_count: number; built_at: string; jurisdiction: string }>();
       if (!meta) return json({ error: `no index for "${id}"` }, 404);
@@ -160,7 +175,18 @@ export default {
       return json({ results, accepted, duplicates, recorded, movement: { circulators: m?.circulators ?? 0, validThisWeek: m?.valid_this_week ?? 0, states: m?.states ?? 0 } });
     }
 
-    // --- PUT /index/:campaignId  (operator upload; admin token) ---
+    // --- PUT /manifest/:campaignId  (operator upload; admin token) ---
+    if (req.method === "PUT" && path.startsWith("/manifest/")) {
+      const id = decodeURIComponent(path.slice("/manifest/".length));
+      const auth = await authorize(req, env, { admin: true });
+      if (auth instanceof Response) return auth;
+      const body = await req.text();
+      if (!body) return json({ error: "empty manifest" }, 400);
+      await env.INDEXES.put(`manifests/${id}.json`, body);
+      return json({ ok: true });
+    }
+
+    // --- PUT /index/:id  (operator upload; admin token; id may be a compound tile id) ---
     if (req.method === "PUT" && path.startsWith("/index/")) {
       const id = decodeURIComponent(path.slice("/index/".length));
       const auth = await authorize(req, env, { admin: true });
