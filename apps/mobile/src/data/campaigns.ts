@@ -30,6 +30,9 @@ export interface Campaign {
   turf?: string[];               // RFC-002-A1: tile cells this assignment covers. Present → the device
                                  //   loads just these turf tiles (~1MB) instead of the whole-campaign
                                  //   index; absent → the monolithic index (graceful fallback).
+  venue?: boolean;               // RFC-002-A1 Tier 1b: venue/booth assignment (dispersed crowd) → also
+                                 //   prefetch the eligible-set membership filter for offline "appears
+                                 //   registered" on out-of-turf signers.
   destination: Destination;      // navigable meeting point
   shiftTargetValid: number;      // valid signatures to gather THIS shift
   statewideRequired: number;     // valid signatures to make the ballot (verify w/ BallotAccessDB)
@@ -145,6 +148,7 @@ export const CAMPAIGNS: Campaign[] = [
     areaShort: "Charlotte · 28202",
     zips: ["28202", "28203", "28204", "28205", "28211"],
     turf: ["mecklenburg__074"], // RFC-002-A1 demo: this assignment's turf = Kirk's precinct (~688KB tile)
+    venue: true,                // statewide petition → also carry the eligible-set membership filter (Tier 1b)
 
     destination: { label: "Uptown Charlotte — Tryon St", lat: 35.2271, lng: -80.8431 },
     shiftTargetValid: 40,

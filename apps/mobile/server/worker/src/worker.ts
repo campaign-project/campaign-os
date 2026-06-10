@@ -117,6 +117,16 @@ export default {
       return json(await obj.json());
     }
 
+    // --- GET /membership/:campaignId  (Tier 1b eligible-set Bloom filter; ~10MB, streamed) ---
+    if (req.method === "GET" && path.startsWith("/membership/")) {
+      const id = decodeURIComponent(path.slice("/membership/".length));
+      const auth = await authorize(req, env, { campaignId: id.split("/")[0] });
+      if (auth instanceof Response) return auth;
+      const obj = await env.INDEXES.get(`membership/${id}.json`);
+      if (!obj) return json({ error: `no membership filter for "${id}"` }, 404);
+      return new Response(obj.body, { headers: { "content-type": "application/json", "access-control-allow-origin": "*" } });
+    }
+
     // --- GET /index/:id?since=V  (id may be a campaign or a compound "<campaign>/tiles/<cell>") ---
     if (req.method === "GET" && path.startsWith("/index/")) {
       const id = decodeURIComponent(path.slice("/index/".length));
@@ -183,6 +193,17 @@ export default {
       const body = await req.text();
       if (!body) return json({ error: "empty manifest" }, 400);
       await env.INDEXES.put(`manifests/${id}.json`, body);
+      return json({ ok: true });
+    }
+
+    // --- PUT /membership/:campaignId  (operator upload; admin token) ---
+    if (req.method === "PUT" && path.startsWith("/membership/")) {
+      const id = decodeURIComponent(path.slice("/membership/".length));
+      const auth = await authorize(req, env, { admin: true });
+      if (auth instanceof Response) return auth;
+      const body = await req.text();
+      if (!body) return json({ error: "empty filter" }, 400);
+      await env.INDEXES.put(`membership/${id}.json`, body);
       return json({ ok: true });
     }
 

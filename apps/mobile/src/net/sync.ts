@@ -6,7 +6,7 @@
  * device never loses a capture because the network was down. fetch + AbortController are both
  * available in React Native.
  */
-import type { VoterRecord } from "@campaign-os/engine";
+import type { VoterRecord, MembershipFilter } from "@campaign-os/engine";
 
 // Simulator reaches the host here; point at the deployed Worker URL for staging/prod. The Node dev
 // reference ignores the token; the Cloudflare Worker (server/worker) requires it (device-scoped).
@@ -90,4 +90,9 @@ export interface Manifest {
  *  the backend has no tiles (→ the caller falls back to the whole-campaign index). */
 export function getManifest(campaignId: string): Promise<Manifest | null> {
   return req<Manifest>(`/manifest/${encodeURIComponent(campaignId)}`);
+}
+
+/** Tier 1b: the campaign membership filter (~10MB of hashed bits). Generous timeout (large payload). */
+export function getMembership(campaignId: string): Promise<MembershipFilter | null> {
+  return req<MembershipFilter>(`/membership/${encodeURIComponent(campaignId)}`, undefined, 90_000);
 }

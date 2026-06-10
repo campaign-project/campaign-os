@@ -130,6 +130,16 @@ const server = createServer((req, res) => {
     }
   }
 
+  // Membership filter (RFC-002-A1 Tier 1b): the campaign's eligible-set Bloom filter.
+  if (req.method === "GET" && url.pathname.startsWith("/membership/")) {
+    const id = decodeURIComponent(url.pathname.slice("/membership/".length));
+    try {
+      return send(res, 200, JSON.parse(readFileSync(join(INDEX_DIR, "membership", `${id}.json`), "utf8")));
+    } catch {
+      return send(res, 404, { error: `no membership filter for "${id}"` });
+    }
+  }
+
   if (req.method === "GET" && url.pathname.startsWith("/index/")) {
     const id = decodeURIComponent(url.pathname.slice("/index/".length));
     // A compound id "<campaign>/tiles/<cell>" is a turf tile (build-tiles.mts layout); else a whole index.

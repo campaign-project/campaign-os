@@ -13,9 +13,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Animated, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View,
 } from "react-native";
-import { makeContext, validateSigner, suggestVoters, type SignerVerdict, type VoterRecord } from "@campaign-os/engine";
+import { makeContext, validateSigner, suggestVoters, isMember, type SignerVerdict, type VoterRecord } from "@campaign-os/engine";
 import { getExamples } from "../data/voterIndex";
 import { useCampaignIndex, getVoterList } from "../store/voterIndexStore";
+import { useMembershipFilter } from "../store/membershipStore";
 import { useActiveCampaign } from "../store/campaign";
 import { addCapture } from "../store/session";
 import ShiftImpact from "../components/ShiftImpact";
@@ -51,6 +52,15 @@ export default function CollectScreen() {
   const live: SignerVerdict | null = useMemo(
     () => (ready ? validateSigner({ id: "live", name, address, signedOn: TODAY, capture: "wet" }, index, ctx) : null),
     [name, address, ready, ctx, index],
+  );
+
+  // Tier 1b (RFC-002-A1, "the ballpark case"): for a venue assignment, a signer who's in NO loaded
+  // turf tile (band NO_MATCH) can still be confirmed offline against the campaign's eligible-set
+  // membership filter — "appears registered, confirm on sync." Tier 3 reconcile resolves it for real.
+  const membership = useMembershipFilter(campaign.id, !!campaign.venue);
+  const appearsRegistered = useMemo(
+    () => !!(ready && live && live.band === "NO_MATCH" && membership && isMember(membership, name, address)),
+    [ready, live, membership, name, address],
   );
 
   // Typeahead: as you type — or dictate — surface the registered voters in the synced turf so a tap
@@ -138,8 +148,16 @@ export default function CollectScreen() {
             </View>
           ) : null}
 
-          {/* Live verdict */}
-          {live ? (
+          {/* Verdict — Tier 1b (statewide membership filter) overrides a local NO_MATCH at a venue */}
+          {appearsRegistered ? (
+            <View style={[styles.verdictCard, { borderColor: C.accent }]}>
+              <View style={styles.verdictTop}>
+                <Text style={[styles.verdictText, { color: C.accent }]}>◇ APPEARS REGISTERED</Text>
+                <Text style={styles.score}>statewide roll</Text>
+              </View>
+              <Text style={styles.reason}>Not in your turf, but on the statewide voter roll — collect it; we'll confirm on sync.</Text>
+            </View>
+          ) : live ? (
             <View style={[styles.verdictCard, { borderColor: VERDICT_COLOR[live.verdict] }]}>
               <View style={styles.verdictTop}>
                 <Text style={[styles.verdictText, { color: VERDICT_COLOR[live.verdict] }]}>
