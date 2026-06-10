@@ -1,0 +1,131 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "ID-PR",
+ "jurisdiction": "Idaho",
+ "abbr": "ID",
+ "petitionType": "popular-referendum",
+ "signatures": {
+  "required": 70725,
+  "headline": "Idaho Code 34-1805 (same formula as initiative): signatures of legal voters equal to not less than six percent (6%) of the qualified electors at the last general election in each of at least 18 Legislative Districts, with statewide total >=6% of qualified electors at the last general election. Base = November 5, 2024 General Election registered voters. (Idaho's referendum can be used on emergency legislation.)"
+ },
+ "deadline": {
+  "headline": "Referendum petitions must be filed not more than sixty (60) days after the final adjournment of the session of the State Legislature which passed the bill on which the referendum is demanded (34-1803). Signatures are submitted to the appropriate County Clerk for verification before submission to the Secretary of State, and must be verified and returned in time to meet that dead"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Idaho Code 34-1805 (same formula as initiative): signatures of legal voters equal to not less than six percent (6%) of the qualified electors at the last general election in each of at least 18 Legislative Districts, with statewide total >=6% of qualified electors at the last general election. Base = November 5, 2024 General Election registered voters. (Idaho's referendum can be used on emergency legislation.)",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Referendum petitions must be filed not more than sixty (60) days after the final adjournment of the session of the State Legislature which passed the bill on which the referendum is demanded (34-1803). Signatures are submitted to the appropriate County Clerk for verification before submission to the Secretary of State, and must be verified and returned in time to meet that dead"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": ">=6% of qualified electors (at the last general election) in EACH of at least 18 of Idaho's 35 legislative districts, AND statewide total >=6% (34-1805)."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "None expressly stated for referenda (the single-subject rule in Idaho law applies to initiatives)."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "required",
+  "operatingStance": "Per-signature pay for initiatives is ALLOWED in Idaho. Idaho formerly banned paying circulators on a per-signature basis, but a federal court struck that ban down in 2001 (Idaho Coalition United for Bears v. Cenarrusa). Per Idaho Code 34-1807, circulators must be Idaho residents at least 18 years of age and must personally witness each signature (signatures are void otherwise).",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "$20 flat per report for the statewide \"Voter Registration Information\" list (or $20 for \"Voter Registration AND Voter History\"); Absentee Ballot Reports are $10. Verbatim: \"Voter Registration Information ($20/report)\", \"Voter Registration AND Voter History ($20/report)\", \"Absentee Ballot Report ($10/report)\". A separate generic public-records copy fee of 25¢/page applies to non-voter records, not to these reports.",
+  "whoCanObtain": "Effectively open to the public / any requesting party — the form has no candidate/committee/party eligibility gate. The requester must agree to the Idaho Code 34-437A(3) use restriction and certify the request under penalty (67-6624). The voter file may be used \"for any political purpose,\" so campaigns/committees clearly qualify. The form itself notes the requester's submitted info \"will become public record.\"",
+  "useRestrictions": "Anti-solicitation restriction applies. Per Idaho Code 34-437A(3) (quoted on the form): the list may not be used to mail/deliver any advertisement, offer, or solicitation for money/services/anything of value — i.e., no commercial mailing or telephone list use (also referenced via Idaho Code 74-120 on the public-records page). However, the statute expressly carves out political use: \"any such list and label may be used for any political purpose,\" which covers a campaign verifying petition signatures against registered voters. Requester signs a certification under Section 67-6624, Idaho Code, making misuse a sworn-statement violation.",
+  "requestProcess": "Online request form (no instant download; an SOS staff-fulfilled report). Submit the \"Voter Registration and Absentee Ballot Reports\" form at forms.sos.idaho.gov: choose scope (Statewide / Congressional District / Legislative District), report type (Voter Registration Information, or Voter Registration AND Voter History), then provide a signed Certification (\"Yes, I agree\" under Section 67-6624, Idaho Code) plus a printed name/signature and acknowledge the 34-437A(3) use prohibition. The report is delivered as a .CSV download link emailed to the requester. (\"Reports requested online will be provided in .CSV text format and made available as a download link sent to the email address you provide above.\")",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 1,
+  "riskNote": "PRIMARY SOURCES: Idaho Const. Art. III, Sec. 1 reserves initiative (\"power to propose laws\") and referendum to the people, \"under such conditions and in such manner as may be provided by acts of the legislature\" — so specifics are statutory (Idaho Code Title 34, Ch. 18). The current official Idaho SoS \"Initiative Filing Requirements\" page and VoteIdaho.gov (both verified current — they list the 2026 circulating initiatives: Reproductive Freedom and Privacy Act, Decriminalize "
+ },
+ "citations": [
+  {
+   "field": "hasCitizenInitiative",
+   "url": "https://codes.findlaw.com/id/idaho-constitution/id-const-art-iii-sect-1/",
+   "quote": "The people reserve to themselves the power to propose laws, and enact the same at the polls independent of the legislature. This power is known as the initiative, and legal voters may, under such conditions and in such manner as may be provided by acts of the legislature, initiate any desired legislation and cause the same to be submitted to the vote of the people at a general election for their approval or rejection."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Idaho",
+   "quote": "Citizens of Idaho may only initiate legislation as a state statute. Idahoans may also repeal legislation via veto referendum, but cannot place a constitutional amendment on the ballot via initiative. The Idaho State Legislature, on the other hand, may place measures on the ballot as legislatively referred constitutional amendments."
+  },
+  {
+   "field": "signatureBasis",
+   "url": "https://sos.idaho.gov/elections-division/ballot-initiatives/",
+   "quote": "Pursuant to Section 34-1805, Idaho Code, there shall be affixed to the petition signatures of legal voters equal in number to not less than six percent ( 6%) of the qualified electors at the last general election in each of at least 18 Legislative Districts; provided, however, the total number of signatures shall be equal to or greater than six percent ( 6%) of the qualified electors of the state at the time of the last general election. Each signature page shall be signed by electors from one county only."
+  },
+  {
+   "field": "distribution",
+   "url": "https://voteidaho.gov/initiatives-amendments/",
+   "quote": "The sponsors of a measure must collect signatures from six percent of the total registered voters at the time of the last general election in order to qualify for the ballot. The submitted voter signatures must meet the requirements for distribution across at least 18 legislative districts, with at least 6 percent of registered voters from each district by the deadline."
+  },
+  {
+   "field": "signatureRequirement",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Idaho",
+   "quote": "| 2026 | 70,725[4] | 70,725[4] |  ...  4. ↑ [Calculated based on Idaho law]"
+  },
+  {
+   "field": "deadline",
+   "url": "https://sos.idaho.gov/elections-division/ballot-initiatives/",
+   "quote": "Signatures are submitted to the appropriate County Clerk for verification not later than the close of business on May 1st in the year an election on the initiative will be held, or 18 months from the date the petitioner receives the official ballot title from the Secretary of State, whichever is earlier. (34-1802(2), I.C.) ... Initiative petitions must be filed with the Secretary of State with the required number of verified signatures no later than four (4) months before the election at which they are to be voted upon. (34-1802(4), I.C.)"
+  },
+  {
+   "field": "deadline",
+   "url": "https://sos.idaho.gov/elections-division/ballot-initiatives/",
+   "quote": "Referendum petitions must be filed not more than sixty (60) days after the final adjournment of the session of the State Legislature which passed the bill on which the referendum is demanded. (34-1803, I.C.)"
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://sos.idaho.gov/elections-division/guidelines-for-initiative-petition-circulators/",
+   "quote": "Circulator shall be a resident of the State of Idaho and at least 18 years of age. (34-1807 I.C.)"
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://sos.idaho.gov/elections-division/ballot-initiatives/",
+   "quote": "Signatures are void if the circulator is not an Idaho resident and at least 18 years of age (34-1807, I.C.)"
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Idaho",
+   "quote": "Idaho allows paying signature gatherers based on the number of signatures collected. Idaho law requires anyone that pays signature gatherers a total of $100 or more to collect ballot initiative signatures to report the expenditures to the secretary of state. ... Idaho used to have a law banning paying signature gatherers on a per-signature basis, but a court struck this law down in 2001 in Idaho Coalition United for Bears v. Cenarrusa."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Idaho",
+   "quote": "House Bill 548: The bill required that initiatives be limited to a single subject; required that initiative petitions include a statement informing signers that they have the option to remove their signatures from the petition; required individuals or entities who pay signature gatherers to report such activity to the secretary of state"
+  },
+  {
+   "field": "statusNote",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Idaho",
+   "quote": "On August 23, 2021, the Idaho Supreme Court struck down SB 1110 as unconstitutional ... \"In so ruling, we clarify that we have not decided the question of whether section 34-1805, with its 18 legislative district requirement, is also unconstitutional,\" read the opinion."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://voteidaho.gov/initiatives-amendments/",
+   "quote": "Idaho HJR 4, the Grant Legislature Exclusive Authority and Prohibit Citizen-Initiated Measures on Marijuana, Narcotics, and Psychoactive Substances Amendment ... remove the ability for citizens to initiate state statutes that would legalize these substances."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

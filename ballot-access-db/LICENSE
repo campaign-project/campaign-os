@@ -1,0 +1,29 @@
+BallotAccessDB is made available under the Open Database License (ODbL) v1.0.
+
+  Open Database License (ODbL) v1.0
+  https://opendatacommons.org/licenses/odbl/1-0/
+
+You are free to:
+  • Share — copy, distribute and use the database.
+  • Create — produce works from the database.
+  • Adapt — modify, transform and build upon the database.
+
+As long as you:
+  • Attribute — attribute "BallotAccessDB / CampaignOS" and keep this notice and the
+    provenance/citations intact in any public use of the database or a produced work.
+  • Share-Alike — if you publicly use an adapted version of this database, you must
+    offer that adapted database under the ODbL.
+  • Keep Open — if you redistribute the database, or a modified version, you may use
+    technological measures only if you also redistribute a version without such measures.
+
+The full legal text governs and is incorporated by reference from the URL above.
+
+Attribution string (use verbatim):
+  "Contains data from BallotAccessDB / CampaignOS, licensed under ODbL 1.0."
+
+DISCLAIMER — NOT LEGAL ADVICE. This dataset is verified by an automated,
+primary-source-grounded pipeline (no attorney sign-off). Ballot-access rules change
+and many figures recompute every election cycle. Records carry a `verifiedAsOf` date
+and a verification `gate`; treat CONSERVATIVE-HOLD and BLOCKED records as provisional
+and confirm with the Secretary of State / counsel before relying on them to file.
+THE DATABASE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

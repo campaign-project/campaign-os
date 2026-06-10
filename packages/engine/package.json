@@ -1,0 +1,9 @@
+{
+  "name": "@campaign-os/engine",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "description": "Signature-validation engine — the single source of truth shared by the server and the React Native field app (RFC-002). Pure, framework-agnostic: matcher + per-state validity law, runs on-device offline and server-side."
+}

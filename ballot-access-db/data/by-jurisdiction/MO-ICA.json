@@ -1,0 +1,101 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "MO-ICA",
+ "jurisdiction": "Missouri",
+ "abbr": "MO",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 170215,
+  "headline": "Mo. Const. Art. III, Sec. 50: \"Initiative petitions proposing amendments to the constitution shall be signed by eight percent of the legal voters in each of two-thirds of the congressional districts in the state.\" Base per Art. III, Sec. 53: \"The total vote for governor at the general election last preceding the filing of any initiative or referendum petition shall be used to determine the number of legal voters necessary to sign the petition.\" Base year = 2024 gubernatorial "
+ },
+ "deadline": {
+  "headline": "Mo. Const. Art. III, Sec. 50: \"Every such petition shall be filed with the secretary of state not less than six months before the election.\" SoS published 2026-cycle deadline: \"the submission deadline for signatures is 5:00 PM on May 3\" / \"5:00 PM on May 3, 2026\" (all pages submitted at one time, organized by county)."
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Mo. Const. Art. III, Sec. 50: \"Initiative petitions proposing amendments to the constitution shall be signed by eight percent of the legal voters in each of two-thirds of the congressional districts in the state.\" Base per Art. III, Sec. 53: \"The total vote for governor at the general election last preceding the filing of any initiative or referendum petition shall be used to determine the number of legal voters necessary to sign the petition.\" Base year = 2024 gubernatorial ",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Mo. Const. Art. III, Sec. 50: \"Every such petition shall be filed with the secretary of state not less than six months before the election.\" SoS published 2026-cycle deadline: \"the submission deadline for signatures is 5:00 PM on May 3\" / \"5:00 PM on May 3, 2026\" (all pages submitted at one time, organized by county)."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "8% of the 2024 gubernatorial vote in each of two-thirds (6 of 8) of Missouri's congressional districts. SoS: \"a petition must have a minimum number of signatures in six of eight congressional districts.\" Per-district 8% requirements (2024 votes cast): CD1 24,954; CD2 34,512; CD3 32,099; CD4 29,670; CD5 26,720; CD6 30,247; CD7 29,758; CD8 28,866. The 170,215 statewide minimum is"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Mo. Const. Art. III, Sec. 50: \"Petitions for constitutional amendments shall not contain more than one amended and revised article of this constitution, or one new article which shall not contain more than one subject and matters properly connected therewith.\" Enacting clause must be: \"Be it resolved by the people of the state of Missouri that the Constitution be amended:\""
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Per-signature pay to CIRCULATORS is permitted/unaddressed-as-a-ban — paid circulation is expressly contemplated. The statutory circulator's affidavit (RSMo 116.030 referendum / 116.040 initiative) requires the circulator to disclose: \"I am at least 18 years of age. I do .... do not .... (check one) expect to be paid for circulating this petition. If paid, list the payer .......",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Statutory fee set under Chapter 610 (Sunshine Law cost-recovery), determined by the Secretary of State / local election authority — not published as a fixed online price (varies — request quote). Ballotpedia reports the statewide file cost as \"$35\" (secondary source, unverified against an official price list).",
+  "whoCanObtain": "Not the general public. The statewide file is restricted to a candidate, a duly authorized representative of a campaign committee, or a political party committee (terms defined in RSMo 130.011). RSMo 115.157.1 bars furnishing any registration info \"to any member of the public\" except as the section provides; in even-numbered years (2026 qualifies) each election authority must, upon request, supply its jurisdiction's voter registration list \"to all candidates and party committees.\"",
+  "useRestrictions": "Political-use-only. The master voter registration list \"shall not be used for commercial purposes\" (RSMo 115.158.6) — defined to include resale or obtaining names/addresses for solicitation — and \"nothing in this chapter shall require such voter information to be released to the public over the internet\" (115.157.3). Violation of the statewide-system use restriction is a class B misdemeanor (115.158.6).",
+  "requestProcess": "Written request to the Secretary of State (statewide, electronic or printed media, for a fee under RSMo 115.157.4) or to the relevant local election authority/county clerk for its jurisdiction's list (RSMo 115.157.5). Not an instant online download — Missouri voter registration is decentralized across 116 local election jurisdictions, and the file is provided per-request for a fee; no public self-service portal is published. Contact the SOS Elections Division (573-751-2301).",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sos.mo.gov/elections",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "All core figures are grounded in primary sources: the Missouri Constitution (Art. III, Secs. 50, 52(a), 53), RSMo Ch. 116 (116.030, 116.080, 116.150), and the Secretary of State's official 2026-cycle materials, which publish the exact validated minimums for this cycle: 170,215 valid signatures for a constitutional amendment and 106,384 for a statute/referendum, based on the 2024 gubernatorial vote, distributed across six of eight congressional districts. The statewide minimum"
+ },
+ "citations": [
+  {
+   "field": "measures[initiated-constitutional-amendment].signatureBasis / measures[initiated-statute].signatureBasis / singleSubject / deadline",
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=III++Section+50",
+   "quote": "Initiative petitions proposing amendments to the constitution shall be signed by eight percent of the legal voters in each of two-thirds of the congressional districts in the state, and petitions proposing laws shall be signed by five percent of such voters. Every such petition shall be filed with the secretary of state not less than six months before the election and shall contain an enacting clause and the full text of the measure. Petitions for constitutional amendments shall not contain more than one amended and revised article of this constitution, or one new article which shall not contain more than one subject and matters properly connected therewith, and the enacting clause thereof shall be \"Be it resolved by the people of the state of Missouri that the Constitution be amended:\". Petitions for laws shall contain not more than one subject which shall be expressed clearly in the title, and the enacting clause thereof shall be \"Be it enacted by the people of the state of Missouri:\"."
+  },
+  {
+   "field": "measures[*].signatureBasis (base = vote for governor)",
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=III++Section+53",
+   "quote": "The total vote for governor at the general election last preceding the filing of any initiative or referendum petition shall be used to determine the number of legal voters necessary to sign the petition. In submitting the same to the people the secretary of state and all other officers shall be governed by general laws."
+  },
+  {
+   "field": "measures[veto-referendum].signatureBasis / deadline / exceptions",
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=III++Section+52(a)",
+   "quote": "A referendum may be ordered (except as to laws necessary for the immediate preservation of the public peace, health or safety, and laws making appropriations for the current expenses of the state government, for the maintenance of state institutions and for the support of public schools) either by petitions signed by five percent of the legal voters in each of two-thirds of the congressional districts in the state, or by the general assembly, as other bills are enacted. Referendum petitions shall be filed with the secretary of state not more than ninety days after the final adjournment of the session of the general assembly which passed the bill on which the referendum is demanded."
+  },
+  {
+   "field": "signatureRequirement (official 2026-cycle figures) / distribution",
+   "url": "https://www.sos.mo.gov/CMSImages/Elections/Petitions/IPProcessOverviewFlyer-2026Cycle.pdf",
+   "quote": "CONSTITUTIONAL AMENDMENT 170,215 ... STATUTORY AMENDMENT 106,384 ... MINIMUM NUMBER OF SIGNATURES TO GET ON BALLOT. According to state law, a petition must have a minimum number of signatures in six of eight congressional districts. The minimums are based on the number of votes cast in the last gubernatorial election. ... CONGRESSIONAL DISTRICT / GUBERNATORIAL VOTES CAST IN 2024 / 5% FOR STATUTORY / 8% FOR CONSTITUTIONAL: 1ST 311,915 15,596 24,954; 2ND 431,395 21,570 34,512; 3RD 401,227 20,062 32,099; 4TH 370,875 18,544 29,670; 5TH 333,988 16,700 26,720; 6TH 378,080 18,904 30,247; 7TH 371,969 18,599 29,758; 8TH 360,817 18,041 28,866."
+  },
+  {
+   "field": "deadline (2026 cycle) / submission procedure",
+   "url": "https://www.sos.mo.gov/CMSImages/Elections/Petitions/MakeYourVoiceHeard_02.07.2025.pdf",
+   "quote": "All petitioners must deliver signed petitions to the secretary of state's office no less than six months before the election. For the 2026 election cycle, the submission deadline for signatures is 5:00 PM on May 3. ... For the 2026 election cycle, the number of valid signatures needed is outlined on page 5 (Table A). ... MINIMUM SIGNATURES REQUIRED 106,384 / 170,215."
+  },
+  {
+   "field": "circulatorResidencyRequired (no) / circulator qualifications",
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=116.080",
+   "quote": "Each petition circulator shall be at least eighteen years of age and registered with the secretary of state. Signatures collected by any circulator who has not registered with the secretary of state pursuant to this chapter on or before 5:00 p.m. on the final day for filing petitions with the secretary of state shall not be counted. A petition circulator shall be deemed registered at the time such circulator delivers a signed circulator's affidavit pursuant to section 116.030, with respect to a referendum petition, or section 116.040, with respect to an initiative petition, to the office of the secretary of state. No person shall qualify as a petition circulator who has been convicted of, found guilty of, or pled guilty to an offense involving forgery."
+  },
+  {
+   "field": "perSignaturePayAllowed (circulator pay contemplated) / signer-bounty ban",
+   "url": "https://revisor.mo.gov/main/OneSection.aspx?section=116.030",
+   "quote": "I am at least 18 years of age. I do ______ do not ______ (check one) expect to be paid for circulating this petition. If paid, list the payer ______"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

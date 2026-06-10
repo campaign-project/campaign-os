@@ -1,0 +1,203 @@
+{
+  "jurisdiction": "Montana",
+  "signaturesHeadline": "5,000 signatures (5% of last governor's vote OR 5,000, whichever is less; 5,000 cap controls — unchanged by 2025 HB 207, which touched only non-presidential)",
+  "deadlineHeadline": "Petition filed with SOS 76 days before general (2024 = Aug 21); signatures to county admins ≥1 week earlier (2024 = Aug 14)",
+  "riskNote": "All 7 citations grounded verbatim (NASS PDF verified via download). Four fields AUTO-LIVE; three on CONSERVATIVE-HOLD for legal-characterization questions (distribution-path separation, circulator residency/eligibility, and whether 13-10-202 fees reach a presidential petitioner) — none should be relied on as \"no requirement\" without SOS confirmation, to avoid ballot-access risk.",
+  "sosInquiries": [
+    "Distribution: For an INDEPENDENT presidential nominating petition under MCA 13-10-504, is there any requirement that signatures be distributed across legislative or other districts, or is the only requirement the statewide total (5% of last governor's vote or 5,000 electors, whichever is less)? Please confirm the 1/3-of-legislative-districts distribution rule applies ONLY to minor-party qualification under 13-10-601 and not to the 13-10-504 candidate petition.",
+    "Circulator eligibility: For a 13-10-504 presidential petition, must signature gatherers (circulators) be Montana residents and/or registered Montana electors, or may out-of-state and non-elector circulators gather signatures? Are there any age or registration requirements for circulators beyond the prohibition on per-signature payment in 13-27-102?",
+    "Filing fee: Does an independent or non-qualified-party candidate for president/vice president filing a petition under MCA 13-10-504 owe any filing fee (e.g., under 13-10-202), or is the petition the sole condition of access with no fee due and no fee-in-lieu-of-signatures option?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Signatures of electors equal to 5% or more of the total votes cast for the successful candidate for governor at the last general election, OR 5,000 electors, whichever is less. The 5,000 cap controls in practice (5% of the 2020 gubernatorial winner Gianforte's ~328,000 votes is ~16,400, far above 5,000), so the operative requirement for an independent presidential petition is 5,000 signatures. Recomputes each cycle off the most recent governor's race.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "All three citations grounded verbatim: MCA 13-10-504(3) (leg.mt.gov), NASS July-2024 PDF (verified via download — quote present p. Montana section), and ballot-access.org ('Presidential independents continue to need 5,000 signatures'). Adversarial: confirmed 2025 HB 207 lowered only NON-presidential petitions (5%->4%); the presidential path under 13-10-504 is unchanged. 5,000 cap independently re-derived from 2020 Gianforte vote (~328k). No interpretation required — statute is explicit."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "The nominating petition must be filed with the Secretary of State no later than 76 days before the general election (statutory rule, MCA 13-10-504(1)). Petition signatures must first be submitted to the county election administrator for verification at least 1 week before the SOS filing deadline (13-10-504(2)). For the 2024 cycle (Nov 5, 2024) this computed to an Aug 21, 2024 SOS deadline and an Aug 14, 2024 county-submission deadline. The calendar dates recompute each cycle off the 76-day / 1-week rule.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "76-day SOS rule and the '1 week before' county-submission rule both grounded verbatim in MCA 13-10-504(1)-(2). Independently verified the arithmetic: Nov 5 2024 - 76 days = Wed Aug 21 2024; minus 1 week = Wed Aug 14 2024 — both match the draft. Adversarial note: a Ballotpedia 2024 'passed-deadlines' list shows '(August 19)' linked to a 2020 page (appears stale and is NOT relied on); the statutory 76-day rule is authoritative. Both the SOS filing deadline AND the earlier county-verification deadline are binding — captured."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "For the independent / non-qualified-party PRESIDENTIAL petition (MCA 13-10-504), the grounded statutory text imposes only a statewide signature total (5% / 5,000 cap) with no express per-district distribution requirement. STRICTEST reading pending SOS confirmation: do not assume zero distribution requirement — the 1/3-of-legislative-districts distribution rule that appears in the minor-PARTY qualification path (13-10-601, per the NASS summary) must be confirmed by the SOS as NOT applying to a 13-10-504 candidate petition before treating distribution as 'none'.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": true,
+      "confidence": 0.8,
+      "note": "Citations grounded verbatim (MCA 13-10-504(3) and NASS PDF). Adversarial: the NASS text confirms the 1/3-of-legislative-districts distribution requirement attaches to the PARTY-qualification path, not the individual candidate petition — strongly supporting 'none' for the independent path. But correctness hinges on a legal characterization (which statutory path binds an independent presidential candidate). Per gate rule, grounded + interpretation -> CONSERVATIVE-HOLD; SOS inquiry filed. Getting this wrong (missing a distribution requirement) would risk ballot access, so over-comply."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Grounded facts: (a) a petition may be signed ONLY by a qualified Montana elector, and (b) a circulator may not be paid based on the number of signatures gathered (MCA 13-27-102). STRICTEST reading on circulator residency/eligibility: do NOT assume out-of-state or non-elector circulators are permitted, and do not rely on the 'prior residency rule held unconstitutional' assertion. Ballotpedia only states the statutes 'do not specify circulator requirements' — silence is not affirmative permission. Confirm circulator residency/registration/age rules with the SOS before deploying non-resident or non-elector circulators.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.7,
+      "note": "Both citations grounded verbatim: Ballotpedia ('The statutes do not specify circulator requirements (e.g., residency status).') and 13-27-102 (signer must be a qualified MT elector; no per-signature pay). Adversarial: the draft's claims that out-of-state circulators ARE permitted and that a 'prior residency rule was held unconstitutional' are NOT supported by the grounded quotes — they are added legal conclusions from statutory silence. Strictest interpretation treats circulator eligibility as unsettled. CONSERVATIVE-HOLD; SOS inquiry filed. The pay-per-signature ban and elector-signer rule, by themselves, are safe to rely on."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Notarized circulator affidavit required. An affidavit of circulation (in substantially the statutory form) must be attached to each petition sheet/section, in which the gatherer swears the signatures are genuine and signers knew the petition's contents; it must be subscribed and sworn before a person authorized to administer oaths (notarized) and must note the date of the first signature and the circulator's address. MCA 13-10-504(2) expressly requires the 13-27-302 affidavits of circulation.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Both citations grounded verbatim: MCA 13-27-302 affidavit form ('Subscribed and sworn to before me this ___ day of _________, 20__' + '(Person authorized to take oaths)') and Ballotpedia ('The affidavits must also be notarized.'). The notarization requirement is explicit on the face of the statutory form — no interpretation needed. AUTO-LIVE."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Signatures are collected on paper petition sheets, each with a notarized circulator affidavit, then submitted to county election administrators for verification before the petition is filed with the Secretary of State. No remote-online or digitized capture exists for an independent presidential nominating petition in Montana.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "Both citations grounded verbatim: MCA 13-10-504(2) (county-administrator verification/certification) and 13-27-302 ('An affidavit ... must be attached to each sheet or section submitted to the county official'). The physical-sheet + county-submission model is on the face of the statute; no online capture authorized. No interpretation required. AUTO-LIVE."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "No fee-in-lieu-of-signatures option is offered for the presidential petition; the petition is the access mechanism. STRICTEST reading on whether ANY filing fee is owed: do not assume a $0 fee. MCA 13-10-504 itself contains no fee, but MCA 13-10-202 makes independent and non-qualified-party candidates liable for the same filing fees as party candidates; whether that general fee provision reaches a presidential petitioner under 13-10-504 is a legal-characterization question. Confirm with the SOS that no filing fee is due before treating the petition path as fee-free.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.65,
+      "note": "Both citations grounded verbatim (MCA 13-10-504(1) and NASS PDF). Adversarial: the draft itself flags MCA 13-10-202, which imposes fees on independent / non-qualified-party candidates equal to party-candidate fees. The draft's conclusion that this does not reach the 13-10-504 presidential petitioner is plausible but is an unsettled legal characterization that retrieval cannot definitively resolve, and wrongly assuming no fee could risk a defective filing. Per gate rule, grounded + interpretation -> CONSERVATIVE-HOLD; SOS inquiry filed. (The narrower claim 'no fee-IN-LIEU-OF-signatures alternative is offered' is safe — there is no such substitution path.)"
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "yes",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found; initiative pay-per-signature ban is confined to Title 13 ch. 27 (ballot issues) and expressly excludes candidates",
+    "note": "For an independent PRESIDENTIAL candidate petition, Montana's election code does NOT address circulator compensation at all — neither permitting nor prohibiting per-signature pay. Montana's only pay-per-signature ban (MCA 13-27-102(2)) sits in Title 13, ch. 27 (\"Statewide Ballot Issues\") and, together with the paid-signature-gatherer scheme in 13-27-112, is by its own definitions limited to initiatives/referenda/constitutional conventions and expressly excludes a \"candidate\"; the presidential-candidate statute (13-10-504(2)) borrows only Chapter 27's affidavit and signature-verification procedures (13-27-302 through 13-27-306), not the compensation ban. No Montana candidate-petition statute imposes a circulator residency requirement (only signers must be Montana electors of the district), so an out-of-state paid pool is legally permissible; per-signature pay is treated as unaddressed and held conservatively.",
+    "sosInquiry": "For an INDEPENDENT PRESIDENTIAL candidate's nominating petition under MCA 13-10-504 (not a ballot issue under Title 13, ch. 27), may a campaign pay circulators on a per-signature basis, or does any provision (e.g., the 13-27-102(2) ban) apply to candidate-petition circulators? Are candidate-petition circulators subject to any residency or registration requirement?",
+    "citations": [
+      {
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0010/section_0020/0130-0270-0010-0020.html",
+        "quote": "TITLE 13. ELECTIONS / CHAPTER 27. STATEWIDE BALLOT ISSUES / Part 1. General Provisions ... 13-27-102. Who may petition and gather signatures. (1) A petition may be signed only by a qualified elector of the state of Montana. (2) A person gathering signatures for a petition may not be paid anything of value based upon the number of signatures gathered."
+      },
+      {
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0010/section_0120/0130-0270-0010-0120.html",
+        "quote": "(5) As used in subsections (2) and (3) ... (c)(i) \"Person\" has the meaning provided in 13-1-101 and includes a political committee. (ii) The term does not include a candidate. (d)(i) \"Person who employs a paid signature gatherer\" means a political party, political committee, or other person seeking to place a ballot issue before the electors. ... (e) \"Signature gatherer\" means an individual who collects signatures on a petition for the purpose of an initiative, a referendum, or the calling of a constitutional convention."
+      },
+      {
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0100/part_0050/section_0040/0130-0100-0050-0040.html",
+        "quote": "13-10-504. Independent or minor party candidates for president or vice president. (1) An individual who desires to run for president or vice president as an independent candidate ... shall file a petition for nomination with the secretary of state 76 days prior to the date of the general election. (2) The petition and the affidavits of circulation required by 13-27-302 must first be submitted ... to the election administrator in the county where the signer resides for verification and certification by the procedures provided in 13-27-303 through 13-27-306. (3) The petition must have the signatures of electors equal to 5% or more of the total votes cast for the successful candidate for governor at the last general election or 5,000 electors, whichever is less."
+      },
+      {
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0100/part_0050/section_0010/0130-0100-0050-0010.html",
+        "quote": "13-10-501. ... (1) Except as provided in 13-10-504, nominations for public office by an independent candidate or a political party that does not meet the requirements of 13-10-601 may be made by filing a declaration of intent and paying the filing fee in accordance with 13-10-201 and by circulating a petition for nomination. ... (5) Each sheet of a petition must contain signatures of electors residing in only one county."
+      },
+      {
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0100/part_0050/section_0020/0130-0100-0050-0020.html",
+        "quote": "13-10-502. Signature requirements for petition. (1) The petition for nomination must be signed by active electors as defined in 13-1-101 residing within the state and district or political subdivision in which the officer or officers are to be elected."
+      },
+      {
+        "url": "https://sosmt.gov/candidate-petition-signatures-submitted-to-montana-counties-election-officials-to-verify-and-certify",
+        "quote": "Tuesday evening was the deadline for independent and minor party candidates to submit signed petitions to county election administrators across Montana ... Montana law outlines the signature requirements that each candidate must receive (13-10-502, MCA)."
+      }
+    ],
+    "initiativePrior": "banned"
+  },
+  "voterFile": {
+    "tier": "PAID",
+    "cost": "$1,000.00 flat for a single copy of the complete statewide voter file (or any single extract such as the Absentee Ballot Report or Petition Signers Report); $5,000.00 for a one-year (365-day) subscription giving unlimited downloads of all extracts/reports. Paid by Visa/MasterCard (credit or debit) online.",
+    "whoCanObtain": "Any individual, for noncommercial use. By statute (13-2-122 MCA) the Secretary of State \"shall furnish to any individual, for noncommercial use\" extracts and reports from the statewide voter registration system — no candidate/committee/party eligibility gate. A campaign or committee qualifies as long as the use is noncommercial.",
+    "useRestrictions": "Noncommercial use only. Statute 13-2-122(1) limits furnishing to \"noncommercial use\"; the SOS voter file service states records \"are for non-commercial use only.\" The SOS notes that if a requester needs a legal definition of noncommercial use, they should consult an attorney. Per 13-2-122(2), residential addresses of electors whose address is protected under 13-2-115(6)/(7) are withheld (name only listed). No solicitation/penalty language quoted on the SOS page.",
+    "requestProcess": "Instant online purchase through the SOS centralized voter file service at app.mt.gov/voterfile. The requester customizes a file by criteria (county, district, etc.), pays by credit/debit card, and is emailed a download link once the file is generated. A one-time purchase requires no account beyond payment; an annual subscription requires signing up for an Okta (okta.mt.gov) account. No notarized affidavit or sworn statement of permitted use is described.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://app.mt.gov/voterfile/",
+    "note": "Montana sells the statewide voter file as a flat-fee online download ($1,000 single / $5,000 annual subscription) to any individual for noncommercial use under 13-2-122 MCA. Notably for signature verification, MT also offers a dedicated \"Petition Signers Report\" (a county-by-county record of the signers of a specific petition) that is included with the annual subscription, alongside the registered-voter file containing name, residential address, and registration status.",
+    "citations": [
+      {
+        "url": "https://sosmt.gov/elections/voter-file/",
+        "quote": "Upon request, the Secretary of State shall furnish to any individual, for noncommercial use, available extracts and reports from the statewide voter registration system, 13-2-122, MCA. If you need legal advice on the definition of non-commercial use, please consult with an attorney."
+      },
+      {
+        "url": "https://sosmt.gov/elections/voter-file/",
+        "quote": "The fee for a single copy of the complete statewide voter file or for an extract of the voter file, such as the Absentee Ballot Report, is $1000.00. The fee for a one-year (365-day) subscription to the voter file service is $5000.00. Visa and MasterCard are accepted for online payment."
+      },
+      {
+        "url": "https://sosmt.gov/elections/voter-file/",
+        "quote": "an annual subscription entitles the customer to unlimited downloads of any available extracts of the voter file, the absentee ballot report, and the petition signers report. To purchase a subscription, customers must sign up for an Okta account after clicking the “Purchase the Voter File” button above."
+      },
+      {
+        "url": "https://sosmt.gov/elections/voter-file/",
+        "quote": "The Petition Signers Report is a county-by-county record of the signers of a specific petition. By default, it is organized by county and in the order in which the signatures were processed by county election officials."
+      },
+      {
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0020/part_0010/section_0220/0130-0020-0010-0220.html",
+        "quote": "upon request, the secretary of state shall furnish to any individual, for noncommercial use, available extracts and reports from the statewide voter registration system. ... Upon delivery, the secretary of state or the local election administrator may collect a charge not to exceed the actual cost of the register, list, mailing labels, or available extracts and reports."
+      },
+      {
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0020/part_0010/section_0220/0130-0020-0010-0220.html",
+        "quote": "For an elector whose address information is protected from general distribution under 13-2-115(6) or (7), the secretary of state or a local election administrator may not include the elector's residential address on any register, list, mailing labels, or available extracts and reports but may list only the elector's name."
+      },
+      {
+        "url": "https://app.mt.gov/voterfile/",
+        "quote": "The Secretary of State provides extracts of public information from the statewide voter registration system. ... Records from this database are available for purchase and are for non-commercial use only."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the rule binds signers only. Montana's independent presidential petition statute (MCA 13-10-504(2)) borrows only the circulator affidavit form of MCA 13-27-302, which describes the circulator merely as \"the signature gatherer / person who is the signature gatherer\" and imposes no age, residency, citizenship, or registration requirement. The strict \"active/registered",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNERS must be active/qualified Montana electors who are registered and reside in the state and the district/political subdivision (MCA 13-10-502(1)); the CIRCULATOR (signature gatherer) faces no statutory age, residency, citizenship, or voter-registration requirement — only that the circulator complete and notarize the affidavit of circulation (MCA 13-27-302) and, if applicable, not be paid per-",
+    "gate": "AUTO-LIVE",
+    "note": "For an independent presidential nominating petition in Montana, MCA 13-10-504(2) requires the petition plus \"the affidavits of circulation required by 13-27-302.\" That affidavit statute (13-27-302) is the only circulator-binding provision, and it identifies the circulator solely as \"the signature gatherer,\" imposing NO age, residency, citizenship, or voter-registration requirement. The strict eligibility requirements bind the SIGNER, who must be an active/registered Montana elector residing in t",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "minorCanCirculate / circulatorMustBeStateResident / circulatorMustBeUSCitizen / circulatorMustBeRegisteredVoter — affidavit is the only circulator-binding text and imposes no eligibility class",
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0030/section_0020/0130-0270-0030-0020.html",
+        "quote": "I, (name of person who is the signature gatherer), swear that I gathered the signatures on the petition to which this affidavit is attached on the stated dates, that I believe the signatures on the petition are genuine, are the signatures of the persons whose names they purport to be, and are the signatures of Montana electors who are registered at the address or have the telephone number following the person's signature, and that the signers knew the contents of the petition before signing the petition."
+      },
+      {
+        "field": "applicability of 13-27-302 affidavit to independent presidential petition",
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0100/part_0050/section_0040/0130-0100-0050-0040.html",
+        "quote": "The petition and the affidavits of circulation required by 13-27-302 must first be submitted, at least 1 week before the deadline for filing, to the election administrator in the county where the signer resides for verification and certification by the procedures provided in 13-27-303 through 13-27-306."
+      },
+      {
+        "field": "signerVsCirculator — the strict elector/residency requirement binds the SIGNER",
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0100/part_0050/section_0020/0130-0100-0050-0020.html",
+        "quote": "The petition for nomination must be signed by active electors as defined in 13-1-101 residing within the state and district or political subdivision in which the officer or officers are to be elected."
+      },
+      {
+        "field": "circulatorMustBeRegisteredVoter / general ballot-issue circulator rule imposes no eligibility class on gatherers (only no per-signature pay)",
+        "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0010/section_0020/0130-0270-0010-0020.html",
+        "quote": "(1) A petition may be signed only by a qualified elector of the state of Montana. (2) A person gathering signatures for a petition may not be paid anything of value based upon the number of signatures gathered."
+      },
+      {
+        "field": "gate AUTO-LIVE — official-grade confirmation that no circulator requirements exist",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Montana",
+        "quote": "The statutes do not specify circulator requirements (e.g., residency status)."
+      }
+    ]
+  }
+}

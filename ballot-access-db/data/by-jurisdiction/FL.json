@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "FL",
+ "jurisdiction": "Florida",
+ "abbr": "FL",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 145040,
+  "headline": "1% of FL registered voters (per last general election) — recomputed each cycle; exact 2024 count unverified"
+ },
+ "deadline": {
+  "headline": "County petitions due noon, July 15 of the presidential election year"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "1% of the state's registered voters as shown by the Department of State's compilation for the last preceding general election (Fla. Stat. 103.021(3)); recomputed each cycle. Do NOT rely on the embedded ~145,000 figure — exact 2024 count is not primary-source verified.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Statute quote verbatim-confirmed on leg.state.fl.us 103.021(3); Ballotpedia 1% quote also verbatim. The 1% formula is correct and current. HOLD only because the value bundles an unverified '~145,000' estimate that should not be treated as an authoritative count; rely on the formula, not the number. Same 1% basis verified for the unaffiliated minor party under 103.021(4)(b)."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "County petitions must be submitted to each county supervisor of elections no later than noon on July 15 of the presidential election year; supervisor certifies registered-voter count on or before the date of the primary election and forwards to the Department of State (Fla. Stat. 103.021(3)).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Verbatim-confirmed in 103.021(3): 'no later than noon on July 15 of each presidential election year' and 'on or before the date of the primary election, shall certify.' Ballotpedia quote (omits 'noon', says 'supervisors') also present verbatim; statute controls and supports the stricter noon July 15. Correct and current."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "No geographic distribution quota. The 1% requirement is statewide; signatures are merely organized and submitted as a separate petition per county to that county's supervisor (administrative submission rule, not a per-county/per-district minimum) (Fla. Stat. 103.021(3)).",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Verbatim 'separate petition from each county ... submitted to the supervisor of elections of the respective county' confirmed. Statute imposes only a statewide 1% and a per-county submission mechanic; no minimum-per-county quota exists. Correct."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "BLOCKED",
+   "value": "none",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Value is 'UNKNOWN' with ZERO citations — nothing to ground, and the draft itself concedes the prescribed petition form's terms could not be confirmed from a primary source. Unverifiable as drafted -> BLOCKED. While 103.021/99.097 impose no statutory circulator age/residency/voter requirement and verification is by supervisor signature-match, the prescribed-form requirements are not confirmed. Sent to office inquiry."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Each petition signature is verified by the county supervisor by comparing it against the signer's signature in the voter registration system (Fla. Stat. 99.097(3)); signatures count only if on the petition form prescribed by the Division. Statute prescribes no notarization or circulator affidavit for petition signatures, BUT confirm the prescribed form imposes no attestation. The separate candidate qualifying OATH is distinct and may be notarized.",
+   "confidence": 0.85,
+   "interpretationRequired": true,
+   "note": "Signature-match verification quote and 'petition form prescribed by the division' quote both verbatim-confirmed in 99.097. The affirmative facts are grounded; however, 'no notarization required' is an absence-of-provision inference that turns on the content of the Division-prescribed form (not retrievable here) — same open question that BLOCKED circulatorEligibility. HOLD to the strict reading and confirm via office inquiry."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Signatures must be collected on the Division of Elections' prescribed paper petition form and submitted county-by-county to each supervisor for verification against the voter file; no state digital/remote-online signature-gathering system covers an independent presidential petition.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "'petition form prescribed by the division' (99.097) and per-county paper-submission mechanics (103.021(3)) verbatim-confirmed. 'paper' is the conservative/strict operating assumption and is well supported; the no-digital-path claim is an absence inference but does not loosen the requirement, so AUTO-LIVE is safe (over-compliance, no ballot-access risk)."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "No filing-fee/fee-in-lieu alternative to the signature petition. The candidate must prepay the supervisor 10 cents per signature checked or the actual cost, whichever is less (Fla. Stat. 99.097(4)(a)); an indigent waiver to verify at no charge is available on written certification of undue burden (99.097(4)(b)).",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "10-cents quote verbatim in 99.097(4)(a); 99.097(4)(b) indigent-waiver provision independently confirmed ('entitled to have the signatures verified at no charge'). 103.021(3) payment cross-reference ('cost of checking the petitions as prescribed in s. 99.097') is present verbatim — earlier match-miss was only a markdown hyperlink artifact around 's. 99.097'. No fee-in-lieu path is the correct strict reading. Sub-cites accurate."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Free — \"There is no fee associated with this complimentary disk.\" The statewide monthly voter extract is provided at no charge by the Division of Elections. (An off-cycle/late request is processed as a public records request and \"subject to administrative fees for processing.\")",
+  "whoCanObtain": "General public — voter registration and voting history are public record under Florida law; the extract is \"publicly available.\" No eligibility gate (need not be a candidate/committee/party); no political-use-only restriction on this file.",
+  "useRestrictions": "No commercial-/political-use restriction is imposed on the extract itself — the data is public record. The statutory exemptions (s. 97.0585, Fla. Stat.) carve OUT, and prohibit release of, SSN, driver-license/state-ID number, the source of the registration application (voter-registration use only), the signature image (viewable but not copyable), and records of Address Confidentiality Program participants / high-risk professionals. No anti-solicitation penalty clause specific to this file was found on the official pages.",
+  "requestProcess": "Written request by email (VoterExtract address) or mail to the Division of Elections; must include contact info, phone/email, and a mailing address. Delivered as a monthly extract on disk by mail (or pick-up). Must be received >=24 hours before the scheduled monthly generation date; a one-time annual standing request can cover all monthly extracts for the calendar year. Not an instant online download, and this contact request \"IS NOT available by email or online\" for the address detail.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-extract-request/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — the rule binds signers only. Florida's independent (No Party Affiliation) presidential petition (Fla. Stat. 103.021(3)) uses self-contained voter-completed petition cards (Form DS-DE 18A) verified directly against the voter registration system. Neither Fla. Stat. 103.021, 99.095, 99.097, nor Fla. Admin. Code 1S-2.045 recognizes a \"circulator\" role or imposes any age",
+  "minorCanCirculate": "yes",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER must be a registered voter in the county for which the petition is submitted (Fla. Stat. 103.021(3); Rule 1S-2.045(5)) and must personally provide name, address, voter-registration number or DOB, original ink signature, and date. CIRCULATOR: not a recognized role — no age, voter-registration, citizenship, residency, or affidavit/witness requirement exists; Florida uses no circulator verific",
+  "gate": "AUTO-LIVE",
+  "note": "Florida is a \"no-circulator\" state for candidate/presidential petitions. The independent presidential petition (Fla. Stat. 103.021(3)) is a set of individual, voter-completed petition cards (Form DS-DE 18A, prescribed by Fla. Admin. Code 1S-2.045), each submitted to the supervisor of elections of the county where the signer is registered and verified against the voter registration system. Florida law contains NO circulator affidavit, NO witness/oath by the collector, and NO eligibility requireme",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "BLOCKED",
+  "sosInquiries": 2,
+  "riskNote": "Core path (1% petition, noon July 15, per-county submission, paper, no fee-in-lieu) is primary-source grounded and current; circulator eligibility is unverified (BLOCKED) and the precise signature count plus any petition-form attestation need office confirmation before relying."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/104.186",
+   "quote": "104.186 Initiative petitions; violations.—A person who compensates a petition circulator as defined in s. 97.021 based on the number of petition forms gathered commits a felony of the third degree, punishable as provided in s. 775.082, s. 775.083, or s. 775.084. This section does not prohibit employment relationships that do not base payment on the number of signatures collected."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/97.021",
+   "quote": "(28) \"Petition circulator\" means an entity or individual who collects signatures for compensation for the purpose of qualifying a proposed constitutional amendment for ballot placement."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/103.021",
+   "quote": "(3) Candidates for President and Vice President with no party affiliation may have their names printed on the general election ballots if a petition is signed by 1 percent of the registered voters of this state, as shown by the compilation by the Department of State for the last preceding general election. A separate petition from each county for which signatures are solicited shall be submitted to the supervisor of elections of the respective county no later than noon on July 15 of each presidential election year."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/99.097",
+   "quote": "(6)(a) If any person is paid to solicit signatures on a petition, an undue burden oath may not subsequently be filed in lieu of paying the fee to have signatures verified for that petition."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/104.185",
+   "quote": "104.185 Petitions; knowingly signing more than once; signing another person's name or a fictitious name.—(1) A person who knowingly signs a petition or petitions for a candidate, a minor political party, or an issue more than one time commits a misdemeanor of the first degree, punishable as provided in s. 775.082 or s. 775.083."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/99.09651",
+   "quote": "(3) Signatures may be obtained from any registered voter in Florida regardless of party affiliation or district boundaries."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-extract-request/",
+   "quote": "The Division of Elections generates a publicly available voter extract file. This information is pulled from the Florida Voter Registration System and data reported by the 67 county Supervisors of Elections. The voter data includes registration information on all voters registered (active and inactive) up to the last day of the month prior to the date the file is generated."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://fldoswebuat-sandbox.azurewebsites.net/elections/data-statistics/voter-registration-statistics/voter-extract-disk-request/",
+   "quote": "There is no fee associated with this complimentary disk."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-extract-request/",
+   "quote": "A request to receive a monthly extract must be received no later than 24 hours before the scheduled date of availability to allow sufficient time to process. ... Please include in your request, contact information and either a phone number or an email address, and a mailing address to receive the disk by mail. This information IS NOT available by email or online."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-extract-request/",
+   "quote": "Any request thereafter must be submitted to [email] and will be processed as a public records request and subject to administrative fees for processing."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dos.fl.gov/elections/for-voters/voter-registration/voter-information-as-a-public-record/",
+   "quote": "Once filed, with few exceptions, all voter registration information is public record including your name, address, date of birth, party affiliation, phone number, and email address. Your social security number, your driver’s license number or state identification card number, and the source of your voter registration application CANNOT be released or disclosed to the public under any circumstances, and can only be used for voter registration purposes. Your signature can be viewed, but not copied. Section 97.0585, Fla. Stat."
+  },
+  {
+   "field": "circulatorMinAge / minorCanCirculate / circulatorMustBeRegisteredVoter / circulatorMustBeStateResident / circulatorMustBeUSCitizen",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/103.021",
+   "quote": "Candidates for President and Vice President with no party affiliation may have their names printed on the general election ballots if a petition is signed by 1 percent of the registered voters of this state, as shown by the compilation by the Department of State for the last preceding general election. A separate petition from each county for which signatures are solicited shall be submitted to the supervisor of elections of the respective county no later than noon on July 15 of each presidential election year. The supervisor shall check the names and, on or before the date of the primary election, shall certify the number shown as registered voters of the county."
+  },
+  {
+   "field": "signerVsCirculator (signer must be registered voter; verification is signature-vs-registration only, no circulator step)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2023/99.097",
+   "quote": "If all other requirements for the petition are met, a signature on a petition shall be verified and counted as valid for a registered voter if, after comparing the signature on the petition and the signature of the registered voter in the voter registration system, the supervisor is able to determine that the petition signer is the same as the registered voter, even if the name on the petition is not in substantially the same form as in the voter registration system."
+  },
+  {
+   "field": "circulatorMinAge / minorCanCirculate (exhaustive validity criteria contain no circulator/witness/collector requirement)",
+   "url": "http://flrules.elaws.us/fac/1s-2.045",
+   "quote": "In addition to the above requirements, the supervisor of elections shall not verify as valid a signature on a candidate petition form unless all of the following information is contained on the petition form: 1. The voter's name; 2. The voter's address (including city and county); 3. The voter's complete voter registration number or date of birth ... 4. The voter's original, ink signature; and, 5. The date the voter signed the petition ... as recorded by the voter."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / circulatorMustBeStateResident (only the SIGNER's registration/residence can invalidate; nothing about the collector)",
+   "url": "http://flrules.elaws.us/fac/1s-2.045",
+   "quote": "The petition is signed by a voter who is not a registered voter in the county, district, or other geographical area represented by the office sought ... at both the time of signing and verification of the petition."
+  },
+  {
+   "field": "petition is a voter-completed card; non-signature entries may be pre-filled by anyone (no circulator role)",
+   "url": "http://flrules.elaws.us/fac/1s-2.045",
+   "quote": "Except for the signature of the voter and date the voter signs the form, the entries on Forms DS-DE 18A, 18B and 104 may be completed prior to the voter signing and dating the form."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

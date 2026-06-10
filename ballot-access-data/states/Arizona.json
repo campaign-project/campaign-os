@@ -1,0 +1,195 @@
+{
+  "jurisdiction": "Arizona",
+  "signaturesHeadline": "AZ indep pres: ~42,303 (2024 only) — RECOMPUTES each cycle, do not hardcode",
+  "deadlineHeadline": "AZ pres-elector filing: 80-100 days before general (Aug 17, 2024); date recomputes",
+  "riskNote": "Six of seven fields verified live; signaturesRequired held because the number is cycle-specific (3% of non-affiliated registrants as of Jan 2) and the draft's new-party comparison misreads its own Ballot Access News citation (34,116=Full Party, 41,090=Candidate, neither equals 42,303).",
+  "sosInquiries": [
+    "For an independent (non-party) presidential-elector nomination petition under A.R.S. 16-341(E)-(F), what is the exact certified minimum signature count for the upcoming general-election cycle, computed as 3% of registered voters who are not members of a qualified party as of January 2 of the election year, and where is that official figure published?",
+    "Does A.R.S. 16-341(N)'s authorization of electronic petitions 'for statewide and legislative offices' extend to independent presidential-elector petitions, or are such petitions required to be collected on paper because E-Qual under A.R.S. 16-318 is limited to U.S. Senate and U.S. House candidates?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Treat 42,303 as the 2024-cycle figure ONLY. For any live cycle the requirement must be recomputed as 3% of Arizona registered voters who are NOT members of a qualified party, measured as of January 2 of the general-election year (A.R.S. 16-341(E)-(F)), and verified against the Secretary of State's official signature-requirement table for that cycle. Any registered AZ voter may sign regardless of party. Do NOT rely on the draft's new-party comparison.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.86,
+      "note": "All four quotes verified verbatim. 42,303 for 2024 is double-corroborated by azcentral (Aug 16 + Aug 19, 2024) as the SoS-reported independent statewide presidential figure. HOLD reasons: (1) the value is explicitly cycle-recomputed (3% of non-affiliated registrants as of Jan 2) and must not be hardcoded for a future cycle; (2) the draft's NOTE misreads its own Ballot Access News citation: in that table 34,116 is the 'Full Party' column and *41,090 is the 'Candidate' column for Arizona; neither is 42,303, and the draft's claim that the new-party 'Candidate' figure (34,116) is lower than the independent figure inverts the table headers. The headline number is right; the surrounding interpretation is not reliable."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "A nomination petition for the office of presidential elector must be filed with the Arizona Secretary of State not less than 80 nor more than 100 days before the general election (A.R.S. 16-341(G)). For 2024 (general election Nov 5) this was August 17, 2024 (exactly 80 days prior). The 120-150-days-before-primary window in 16-341(C) does NOT apply to presidential-elector filings. NOTE: the specific calendar date recomputes from the general-election date each cycle.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "Both quotes verified verbatim. The 80-100-day rule is a bright-line statute, correctly excluding presidential-elector petitions from the primary-tied window. Aug 17, 2024 derives correctly (80 days before Nov 5, 2024) and is independently confirmed by Ballot Access News. The rule is durable and non-interpretive; only the calendar date is cycle-dependent."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. A single statewide threshold (3% of statewide non-affiliated registered voters) applies; there is no geographic/congressional-district/county distribution requirement for an independent presidential-elector petition. The petition is a single group petition naming all elector candidates, and a valid signature counts for each elector candidate (A.R.S. 16-341(G)).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.92,
+      "note": "Quote verified verbatim in 16-341(G). Nothing in 16-341 imposes a distribution requirement; the threshold in 16-341(E)-(F) is a flat statewide percentage. Confirmed correct and non-interpretive."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "A circulator need NOT be an Arizona resident but must otherwise be eligible/qualified to register to vote in Arizona (U.S. citizen, 18+, etc., per A.R.S. 16-101). A non-resident circulator must register as a circulator with the Secretary of State before circulating petitions (A.R.S. 16-341(G), 16-321(D)). The circulator need not be a registered Arizona voter, only eligible to register.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.93,
+      "note": "Both quotes verified verbatim (16-341(G) and 16-321(D)). The statutory text supports each element, including the 'eligible to register' (not 'registered') standard and the non-resident circulator-registration requirement. Non-interpretive."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No notarization of signature sheets is required; the circulator must certify on each sheet that every signer signed in the circulator's presence on the indicated date and that the circulator believes each signer was a qualified elector residing at the listed address (A.R.S. 16-321(D)). Separately, the candidate's filing must include a consent statement SIGNED by the vice-presidential running mate and each designated presidential elector, and a nomination paper for each elector must be filed (A.R.S. 16-341(J)).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "Both quotes verified verbatim. AZ requires circulator certification, not notarization, of the signature sheets. The azcentral notarization failure was MICHIGAN's, not Arizona's, so it does not undercut the no-notary finding. The elector-consent requirement (16-341(J)) is correctly grounded; the West 2024 filing's missing presidential/VP nomination forms and acceptance letter are corroborated by azcentral. Non-interpretive."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Paper. No online signature system covers an independent presidential-elector petition in Arizona. E-Qual under A.R.S. 16-318 is limited to U.S. Senate and U.S. House candidates; 16-341(N) electronic petitions are discretionary and (per the SoS) have not been authorized for presidential-elector petitions. Collect on paper signature sheets (as RFK Jr. and Cornel West did in 2024).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.88,
+      "note": "All three quotes verified verbatim. 16-318(B) unambiguously limits E-Qual to U.S. Senator/Representative. 16-341(N) is discretionary ('may authorize ... for statewide and legislative offices'); whether presidential-elector qualifies as 'statewide' is an open reading, BUT the operative VALUE is unaffected: no electronic system has been authorized for these petitions, so paper is correct under every reading (corroborated by the physical petition boxes filed in 2024). The residual statutory-scope question is flagged to the SoS but does not change the answer."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Arizona provides no filing-fee-in-lieu-of-signatures option for an independent presidential candidate; the signature petition is mandatory, and a candidate who does not file a timely, compliant nomination petition is not eligible to appear on the ballot (A.R.S. 16-341(K)).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.85,
+      "note": "Quote verified verbatim (it appears in 16-341(K), though the draft's prose loosely cites the fine provision as 16-341(M) — the verbatim quote and its eligibility-bar substance are correct). Arizona's fee-in-lieu mechanisms apply to partisan primary candidates, not to independent nomination petitions; there is no fee alternative for an independent presidential candidate. Non-interpretive."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found; per-signature ban (ARS 19-118.01) limited to statewide initiative/referendum",
+    "note": "Arizona's candidate-petition statutes (Title 16, Article 2/3, including the independent/presidential path at ARS 16-341 and the circulator rules at ARS 16-315 and 16-321) do NOT address circulator compensation at all — neither permitting nor prohibiting per-signature pay. Arizona's only per-signature ban, ARS 19-118.01, by its own terms applies solely to \"a statewide initiative or referendum petition\" (Title 19) and does not reach candidate nomination petitions, so candidate-petition per-signature compensation is unaddressed rather than authorized; circulators need not be Arizona residents but must be eligible to register to vote here and (if non-resident) register with the Secretary of State.",
+    "sosInquiry": "For an independent presidential candidate's nomination petition under ARS 16-341, may a campaign legally pay petition circulators on a per-signature basis, or is per-signature compensation prohibited or restricted for candidate (as opposed to initiative/referendum) petitions under Arizona law?",
+    "citations": [
+      {
+        "url": "https://www.azleg.gov/ars/19/00118-01.htm",
+        "quote": "A. A person shall not pay or receive money or any other thing of value based on the number of signatures collected on a statewide initiative or referendum petition. Signatures that are obtained by a paid circulator who violates this section are void and shall not be counted in determining the legal sufficiency of the petition. B. A violation of this section is a class 1 misdemeanor."
+      },
+      {
+        "url": "https://www.azleg.gov/ars/16/00341.htm",
+        "quote": "G. A nomination petition for any candidate may be circulated by a person who is not a resident of this state but who is otherwise eligible to register to vote in this state if that person registers as a circulator with the secretary of state before circulating petitions."
+      },
+      {
+        "url": "https://www.azleg.gov/ars/16/00315.htm",
+        "quote": "2. Circulator is not required to be a resident of this state but otherwise must be qualified to register to vote in this state and, if not a resident of this state, shall register as a circulator with the secretary of state."
+      },
+      {
+        "url": "https://www.azleg.gov/ars/16/00321.htm",
+        "quote": "D. The person before whom the signatures were written on the signature sheet is not required to be a resident of this state but otherwise shall be qualified to register to vote in this state pursuant to section 16-101 and, if not a resident of this state, shall register as a circulator with the secretary of state."
+      },
+      {
+        "url": "https://law.justia.com/cases/arizona/supreme-court/2023/cr-22-0154-pr.html",
+        "quote": "The Supreme Court held that Ariz. Rev. Stat. 19-118.01 does not facially violate the First Amendment where it only prohibits per-signature compensation to petition circulators."
+      }
+    ],
+    "initiativePrior": "banned"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Statutory tiered formula (ARS 16-168(E)): 1–124,999 records = $93.75 + $0.0005/record; 125,000–249,999 = $156.25 + $0.000375/record; 250,000–499,999 = $203.13 + $0.00025/record; 500,000–999,999 = $265.63 + $0.000125/record; 1,000,000+ records = $328.13 + $0.0000625/record. A full statewide file (~4.3M registered voters) falls in the top tier: ~$328.13 + $0.0000625/record (on the order of a few hundred dollars total).",
+    "whoCanObtain": "Not the general public for any purpose. Free electronic copies go to county/state party chairmen of qualifying parties. Anyone else (candidates, registered political committees, etc.) may purchase copies only for a statutorily \"authorized use\" — i.e. political/political-party activity, a political campaign, an election, redistricting, signature verification on petitions/candidate filings, or another use specifically authorized by law. Commercial use is prohibited.",
+    "useRestrictions": "Political-use-only: data \"may be used only for purposes relating to a political or political party activity, a political campaign or an election... and may not be used for a commercial purpose.\" Signature verification on petitions and candidate filings is expressly authorized. Reselling/transferring for an unauthorized purpose or posting it on the internet is prohibited. A violation of the use restriction or resale/distribution restriction \"is guilty of a class 6 felony.\" Sensitive fields (full DOB, SSN, driver license number, voter signature, email) are excluded from general reproduction but may be used for petition signature verification.",
+    "requestProcess": "Written request for an authorized use submitted to the county recorder (or the Secretary of State / officer in charge of elections); the office prepares additional copies and furnishes them within 30 days of receipt of the request upon payment of the statutory fee. (Verifying petition signatures is an explicitly permitted use, so a campaign/committee qualifies.)",
+    "hasNeededFields": "yes",
+    "downloadUrl": "",
+    "note": "Arizona does not offer a free public statewide voter file download; the file is eligibility- and use-gated (political/campaign/election use only, commercial use is a class 6 felony) and sold on a written request at a statutory tiered fee under ARS 16-168. The standard precinct-list/voter file includes full name, residence and mailing address, party, registration date, birth year and voting history — sufficient to match petition signers to registered voters — and signature verification on petitions is an explicitly authorized use, so a campaign/committee can obtain it. (Official azsos.gov voter-data request page was behind a browser challenge and could not be fetched; statute ARS 16-168 is quoted as the controlling primary source for price, eligibility, fields and penalties.)",
+    "citations": [
+      {
+        "url": "https://www.azleg.gov/ars/16/00168.htm",
+        "quote": "The county recorder, the secretary of state and other officers in charge of elections, on a request for an authorized use and within thirty days from receipt of the request, shall prepare additional copies of an official precinct list and furnish them to any person requesting them on payment of a fee equal to the following amounts for the following number of voter registration records provided: 1. For one to one hundred twenty-four thousand nine hundred ninety-nine records, $93.75 plus $0.0005 per record."
+      },
+      {
+        "url": "https://www.azleg.gov/ars/16/00168.htm",
+        "quote": "5. For one million or more records, $328.13 plus $0.0000625 per record."
+      },
+      {
+        "url": "https://www.azleg.gov/ars/16/00168.htm",
+        "quote": "Precinct registers and other lists and information derived from registration forms may be used only for purposes relating to a political or political party activity, a political campaign or an election, for revising election district boundaries or for any other purpose specifically authorized by law and may not be used for a commercial purpose as defined in section 39-121.03. The sale of registers, lists and information derived from registration forms to a candidate or a registered political committee for a use specifically authorized by this subsection does not constitute use for a commercial purpose."
+      },
+      {
+        "url": "https://www.azleg.gov/ars/16/00168.htm",
+        "quote": "for signature verification on petitions and candidate filings, for election purposes and for news gathering purposes ... A person who violates this subsection or subsection E of this section is guilty of a class 6 felony."
+      },
+      {
+        "url": "https://www.azleg.gov/ars/16/00168.htm",
+        "quote": "The electronic media copies of the precinct lists that are delivered to the party chairmen shall include for each elector the following information: 1. Name in full and appropriate title. 2. Party preference. 3. Date of registration. 4. Residence address. 5. Mailing address, if different from residence address. 6. Zip code. 7. Telephone number if given. 8. Birth year."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 18,
+    "ageRule": "No standalone \"must be 18\" clause is written for circulators, but the circulator must be \"eligible to register to vote in this state\" (A.R.S. 16-341(G), (H)) / \"qualified to register to vote in this state pursuant to section 16-101\" (A.R.S. 16-321(D)). Eligibility to register under 16-101(A)(2) requires the person \"[w]ill be eighteen years of age or more on or before the date of the regular genera",
+    "minorCanCirculate": "no",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "yes",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER: must be a registered voter / qualified elector in the relevant electoral district at time of signing (16-321(B), 16-341(F)) and use actual residence address (16-321(E)). CIRCULATOR: need NOT be a resident of Arizona and need NOT actually be registered, but must be \"qualified/eligible to register to vote in this state pursuant to section 16-101\" — i.e., a U.S. citizen who is 18+ (by the nex",
+    "gate": "AUTO-LIVE",
+    "note": "Arizona statute directly and separately addresses circulators of independent nominating petitions (which include presidential-elector petitions under 16-341). The circulator standard is \"qualified/eligible to register to vote in this state pursuant to section 16-101\" — NOT \"registered voter.\" So: (1) Registration is NOT required of the circulator (only eligibility to register). (2) Residency is expressly waived — a non-resident may circulate, but must register as a circulator with the SoS first ",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeStateResident / circulatorMustBeRegisteredVoter (independent/presidential nomination petition)",
+        "url": "https://www.azleg.gov/ars/16/00341.htm",
+        "quote": "G. A nomination petition for any candidate may be circulated by a person who is not a resident of this state but who is otherwise eligible to register to vote in this state if that person registers as a circulator with the secretary of state before circulating petitions."
+      },
+      {
+        "field": "circulator non-resident registration requirement",
+        "url": "https://www.azleg.gov/ars/16/00341.htm",
+        "quote": "H. The secretary of state shall require in the instructions and procedures manual issued pursuant to section 16-452 that persons who circulate nomination petitions pursuant to this section and who are not residents of this state but who are otherwise eligible to register to vote in this state shall register as circulators with the office of the secretary of state before circulating petitions. The secretary of state shall provide for a method of receiving service of process for those petition circulators who are registered."
+      },
+      {
+        "field": "presidential elector petition filed under 16-341",
+        "url": "https://www.azleg.gov/ars/16/00341.htm",
+        "quote": "The nomination petition for the office of presidential elector shall include a group of names of candidates equal to the number of United States senators and representatives in Congress from this state instead of separate nomination petitions for each candidate for the office of presidential elector. ... A nomination petition for the office of presidential elector shall be filed not less than eighty nor more than one hundred days before the general election."
+      },
+      {
+        "field": "circulator eligibility standard (qualified to register, not required to be resident)",
+        "url": "https://www.azleg.gov/ars/16/00321.htm",
+        "quote": "D. The person before whom the signatures were written on the signature sheet is not required to be a resident of this state but otherwise shall be qualified to register to vote in this state pursuant to section 16-101 and, if not a resident of this state, shall register as a circulator with the secretary of state.  A circulator shall verify that each of the names on the petition was signed in his presence on the date indicated, and that in his belief each signer was a qualified elector who resides at the address given as the signer's residence on the date indicated and, if for a partisan election, that each signer is a qualified signer."
+      },
+      {
+        "field": "circulatorMustBeUSCitizen / circulatorMinAge (via 16-101 qualifications incorporated by reference)",
+        "url": "https://www.azleg.gov/ars/16/00101.htm",
+        "quote": "A. Every resident of this state is qualified to register to vote if the resident: 1. Is a citizen of the United States and has provided satisfactory evidence of citizenship as prescribed in section 16-166. 2. Will be eighteen years of age or more on or before the date of the regular general election next following his registration. ... 5. Has not been convicted of treason or a felony, unless restored to civil rights. 6. Has not been adjudicated an incapacitated person as defined in section 14-5101."
+      },
+      {
+        "field": "signer requirement (registered voter in electoral district) - binds signer, not circulator",
+        "url": "https://www.azleg.gov/ars/16/00321.htm",
+        "quote": "B. For the purposes of petitions filed pursuant to sections 16-312, 16-313, 16-314 and 16-341, each signer of a nomination petition shall be a voter who at the time of signing is a registered voter in the electoral district of the office the candidate is seeking."
+      }
+    ]
+  }
+}

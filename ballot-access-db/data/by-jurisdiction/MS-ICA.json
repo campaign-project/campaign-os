@@ -1,0 +1,101 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "MS-ICA",
+ "jurisdiction": "Mississippi",
+ "abbr": "MS",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 0,
+  "headline": "No functioning citizen-initiative process. NO CURRENTLY AVAILABLE CITIZEN INITIATIVE. Mississippi's statewide citizen-initiative process (Miss. Const. art. 15, Sec. 273, an INDIRECT initiated constitutional amendment process adopted 1992) was struck down by the M"
+ },
+ "deadline": {
+  "headline": "n/a — no citizen initiative process"
+ },
+ "rules": [
+  {
+   "field": "process",
+   "gate": "BLOCKED",
+   "value": "no functioning citizen initiative",
+   "confidence": 0.9,
+   "note": "NO CURRENTLY AVAILABLE CITIZEN INITIATIVE. Mississippi's statewide citizen-initiative process (Miss. Const. art. 15, Sec. 273, an INDIRECT initiated constitutional amendment process adopted 1992) was struck down by the Mississippi Supreme Court in Butler v. Watson (May 14, 2021). The court held the signature-distributi"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "circulatorResidency": "unknown",
+  "operatingStance": "Moot. There is no operative initiative process in Mississippi, so there are no current statutory or regulatory rules governing circulator residency or per-signature pay for initiatives. The former process lived in the state constitution (Section 273) plus Title 23, Chapter 17 of the Mississippi Code; both are now inoperative following Butler v. Watson (2021). Any future restore",
+  "gate": "BLOCKED"
+ },
+ "voterFile": {
+  "tier": "FREE_DOWNLOAD",
+  "cost": "Free. The full statewide voter file and statewide voter history file are distributed weekly \"at no cost\" to anyone who signs up. (The alternative one-off public-records-request path yields the same file; the SOS does not publish a separate fee for it on this page.)",
+  "whoCanObtain": "Open to anyone who signs up for the Statewide Voter File Distribution List — no candidate/committee/party eligibility gate is stated. The SOS confirms it is \"the same type of file provided when a statewide voter file is requested through a public records request,\" i.e., it is a public record available to the general public. Voters' SSNs, birthdates, and other private info are excluded by Mississippi law and are not released.",
+  "useRestrictions": "No commercial-use prohibition, anti-solicitation clause, political-use-only limit, or penalty is stated in the distribution-program document or the SOS Elections page. The only stated limit is on the SOS's side: it \"will not resend or forward any emails of the weekly distribution list,\" and private fields (SSN, DOB) are statutorily withheld. (Use restrictions in Miss. Code §23-15-165 governing the Statewide Elections Management System could not be retrieved verbatim — legal mirrors were blocked — so the absence of restrictions is based on the primary SOS sources only.)",
+  "requestProcess": "Self-service sign-up to a recurring distribution list, then automated weekly delivery. Enroll via the \"Statewide Voter File Distribution List\" Smartsheet form (linked from the SOS \"Request Voter File\" PDF: https://app.smartsheet.com/b/form/5c8b666a679c4c148eb513c8981a4962). Enrollees then \"receive an email each week with a Sharefile link\" to download the file. No application approval, affidavit, or notarized sworn statement is described for the weekly program; any request outside the weekly distribution must go through the formal public records request process.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://app.smartsheet.com/b/form/5c8b666a679c4c148eb513c8981a4962",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "BLOCKED",
+  "sosInquiries": 1,
+  "riskNote": "NO CURRENTLY AVAILABLE CITIZEN INITIATIVE. Mississippi's statewide citizen-initiative process (Miss. Const. art. 15, Sec. 273, an INDIRECT initiated constitutional amendment process adopted 1992) was struck down by the Mississippi Supreme Court in Butler v. Watson (May 14, 2021). The court held the signature-distribution requirement — signatures had to be gathered roughly equally from each of FIVE congressional districts — was unworkable and the entire Section 273 process inv"
+ },
+ "citations": [
+  {
+   "field": "hasCitizenInitiative",
+   "url": "https://www.mpbonline.org/blogs/news/select-committee-of-mississippi-lawmakers-revisit-ballot-initiative-felony-voting-rights/",
+   "quote": "Mississippi's ballot initiative process has been in limbo since 2021, when the state Supreme Court struck it down in Butler v. Watson. The justices ruled that the constitutional requirement for signatures from five congressional districts was unworkable, since Mississippi has only had four districts since 2001."
+  },
+  {
+   "field": "hasCitizenInitiative",
+   "url": "https://mississippitoday.org/2025/02/13/mississippi-ballot-initiative-measure-set-to-die-for-fourth-straight-year/",
+   "quote": "Despite the Mississippi Constitution explicitly stating that voters still have a right to offer amendments through an initiative process, citizens have no process to change state laws or the state Constitution."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://www.usnews.com/news/best-states/mississippi/articles/2026-02-05/senate-measure-to-restore-mississippi-voters-right-to-ballot-initiative-advances",
+   "quote": "The committee voted to approve Senate Concurrent Resolution 518, which would require initiative organizers to gather signatures from at least 10% of registered voters in the state, or roughly 170,000 signatures, before it can go on a ballot... As it's currently written, England's resolution would allow a ballot initiative to change or create state law, but not the state Constitution, as the previous ballot initiative system provided. It would also prohibit initiatives related to abortion and the state's public pension system... The last day for the chamber to adopt the measure on the Senate floor is Feb. 12."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://www.usnews.com/news/best-states/mississippi/articles/2026-02-05/senate-measure-to-restore-mississippi-voters-right-to-ballot-initiative-advances",
+   "quote": "It now heads to the full Senate floor, where at least two-thirds of the chamber's members have to approve it before it can advance to a House committee. If it passes the Legislature, the initiative process would have to be ratified by voters in a statewide election."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://mississippitoday.org/?s=ballot+initiative",
+   "quote": "The bill to restore Mississippi's voters' righ to put issues on the ballot faces a Thursday night deadline for passage and is not likely to be brought back up again in the Senate."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://mississippitoday.org/?s=ballot+initiative",
+   "quote": "For five years since the state Supreme Court invalidated Mississippi's ballot initiative process, lawmakers have been unable to agree on a plan to reinstate the right to voters."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://mississippitoday.org/?s=ballot+initiative",
+   "quote": "Republican Rep. Price Wallace was known at the Mississippi Capitol for his big cowboy hat, his knowledge of agriculture issues and his work to restore the ballot initiative process."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://www.sos.ms.gov/elections-voting/initiatives",
+   "quote": "According to State law, as interpreted by the Mississippi Supreme Court, for an initiative measure to be placed on the ballot, a minimum of 106,190 certified signatures must be gathered from the congressional district as they exist at the time a petition is presented for approval. No more than twenty percent of signatures of qualified electors may come from a single congressional district."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://www.sos.ms.gov/elections-voting/initiatives",
+   "quote": "Not only must an initiative receive a majority of the total votes cast for that particular initiative, it must also receive more than 40% of the total votes cast in that election."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://www.mpbonline.org/blogs/news/select-committee-of-mississippi-lawmakers-revisit-ballot-initiative-felony-voting-rights/",
+   "quote": "Samantha Buckley, policy director at the nonpartisan Secure Democracy Foundation, told lawmakers the fix could be as simple as changing 'five' to 'four' in the constitution."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

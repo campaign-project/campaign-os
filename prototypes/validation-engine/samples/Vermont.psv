@@ -1,0 +1,6 @@
+Voter ID|First Name|Middle Initial|Last Name|Suffix|Legal Address Line 1|Legal Address Line 2|Legal Address City|Legal Address State|Legal Address Zip|Status|Date of Registration|County|Voting District
+V1001|Robert|A|Nuñez||42 Main St||Springfield|NC|62704|ACTIVE|03/01/2019|Sangamon|1
+V1002|William||Johnson||88 Oak Ave||Springfield|NC|62704|ACTIVE|06/15/2018|Sangamon|1
+V1003|Maria||Gonzalez||5 Sunset Blvd|4|Springfield|NC|62705|ACTIVE|11/02/2021|Sangamon|1
+V1004|James||O'Brien||230 N Park Rd||Springfield|NC|62704|INACTIVE|09/10/2017|Sangamon|1
+V1005|Katherine||Lee||901 River Dr||Springfield|NC|62704|PURGED|05/05/2016|Sangamon|1

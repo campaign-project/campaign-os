@@ -1,0 +1,194 @@
+{
+  "jurisdiction": "North Dakota",
+  "signaturesHeadline": "4,000 signatures (flat statutory number; no distribution)",
+  "deadlineHeadline": "4:00 p.m. on the 64th day before the general election",
+  "riskNote": "7 of 8 fields AUTO-LIVE and grounded against the SOS guide, NASS summary, and primary statute NDCC 16.1-12-02; only witnessOrNotary is on CONSERVATIVE-HOLD because the exact on-form certification block of SFN 58578 is unverifiable (sos.nd.gov form server returns HTTP 522, reproduced independently).",
+  "sosInquiries": [
+    "Does the Petition/Certificate of Nomination form (SFN 58578) for a non-established-party / independent presidential candidate require a circulator certification or notarized circulator affidavit, or is the candidate Affidavit of Candidacy (SFN 52500) the only sworn document in a complete filing? Please confirm the exact certification block printed on SFN 58578."
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "4,000 qualified North Dakota electors (flat statutory number, not a percentage; does not recompute per cycle). Independent and non-established-party presidential candidates use the same form (SFN 58578), checking the 'independent candidate' box for the independent path. Authority: NDCC 16.1-12-02(3).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.97,
+      "note": "SOS-guide quote and NASS quote both ground verbatim (SOS running-president.pdf lines 50-53; NASS report lines 803-806). Independently confirmed against primary statute NDCC 16.1-12-02 subsection 3 (FindLaw, current as of Jan 1 2024): 'If the nomination is for the office of president, there must be no fewer than four thousand signatures.' Flat number, current and correct for an independent presidential candidate."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "4:00 p.m. on the 64th day before the November general election (statutory rule, NDCC 16.1-12-02). The complete filing (petition + affidavit of candidacy + statement of interests + certificate(s) of nomination of presidential electors) must be in the physical possession of the Secretary of State's office by that deadline. The 2024 instance of this rule was September 3, 2024; the date shifts each cycle to the 64th day before that November election.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.96,
+      "note": "SOS-guide quote (lines 85-93) and NASS quote (lines 803-806) ground verbatim. Primary statute confirms: petition 'shall submit ... before four p.m. on the sixty-fourth day before the general election.' Relied value is the recurring 64th-day rule, not the one-cycle Sept 3 2024 date. Physical-possession requirement confirmed in SOS guide."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. A single statewide total of 4,000 qualified-elector signatures; no per-congressional-district or per-county distribution requirement (ND has one at-large U.S. House district). NDCC 16.1-12-02(3).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "NASS quote grounds verbatim (lines 805-806). Adversarially checked the statute: subsection 3 (president) sets only the flat 4,000 figure with no geographic distribution. The 2%-of-district rule in subsection 2 applies to sub-state district offices, NOT to president. No distribution rule appears in SOS guide, NASS summary, or the statute. None confirmed."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Circulators of this presidential nominating petition are NOT required to be ND qualified electors (no age/residency/voter-status requirement on circulators). The petition may not be circulated or signed before January 1 of the presidential election year. Signers must be qualified ND electors (U.S. citizen, 18+, 30 days' ND residency). Note: ND initiative/ballot-measure petitions under ch. 16.1-01 are different (resident circulators + notarized affidavits) and must not be conflated.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.93,
+      "note": "SOS-guide quote grounds verbatim (lines 74-77): 'Petition circulators do not need to be ND qualified electors.' Statute confirms the Jan-1 signing window and exempts presidential petitions from the general form spec (16.1-11-16). Adversarial nuance: statute 16.1-12-02(3) requires the elector NOMINEES to be qualified ND electors, but that is a requirement on the presidential electors named on the petition, not on circulators or signers, so it does not contradict this field."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Strictest posture: ASSUME the SFN 58578 petition may carry a circulator certification or affidavit block that must be completed (and possibly notarized) before filing, and prepare to satisfy it; do NOT assume the signatures need no certification. The candidate Affidavit of Candidacy (SFN 52500) is independently required in any case. Cited sources (SOS guide, NASS, statute 16.1-12-02/16.1-11-16) describe no notary requirement on the signatures, but the exact on-form certification wording is UNCONFIRMED.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.6,
+      "note": "Cited quotes ground verbatim (SOS guide line 59-61; NASS lines 803-806). Statute exempts presidential petitions from 16.1-11-16, and 16.1-11-16 itself contains no notary/circulator-affidavit clause, which supports the draft's reading. HOWEVER the precise certification block printed on form SFN 58578 could not be retrieved: the nd.gov/sos.nd.gov form server returns HTTP 522, which I reproduced independently via both curl and wick. Because the form's actual certification wording could change the answer and cannot be settled by retrieval, held conservatively and an SOS inquiry is filed."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Signatures are collected on the paper Petition/Certificate of Nomination (SFN 58578); the complete filing must be in the physical possession of the Secretary of State's office by the deadline. ND has no remote/online or in-person-digitized signature-capture system for this presidential nominating petition.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "Both SOS-guide quotes ground verbatim (lines 91-93 and 50-53). Physical-possession requirement plus paper SFN 58578 confirmed by statute (petition 'submitted' to SOS). No online-capture path exists for this petition."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No state filing fee for the independent/non-established-party presidential nominating petition and no fee-in-lieu-of-signatures alternative; the 4,000-signature petition is the sole ballot-access mechanism. The $5,000 figure in the SOS guide is the federal FECA registration trigger (a campaign-finance obligation), NOT a state ballot-access fee.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.93,
+      "note": "Both quotes ground verbatim (SOS guide lines 89-92; NASS lines 803-806). No filing fee appears in the SOS complete-filing checklist, the NASS summary, or statute 16.1-12-02. The $5,000 FECA figure is correctly characterized as federal, not a state fee. Adversarially: statute lists petition contents only, no fee."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "North Dakota's candidate-petition statutes (NDCC 16.1-11-16 \"Form of nominating petitions\" and 16.1-12-02, which sets the 4,000-signature presidential petition) regulate only the petition's contents and require signers to be qualified ND electors; they are SILENT on who may circulate, circulator residency, and circulator compensation. The state's per-signature pay ban and circulator residency/affidavit/age rules sit only in the initiative/referendum framework (NDCC 16.1-01-09, titled \"Initiative or referendum petitions\" and tied to Article III of the ND Constitution) and the SoS \"Petition Signature Gathering Guidance FOR CIRCULATORS OF INITIATED AND REFERENDUM PETITIONS\" — neither applies to candidate petitions. So candidate-petition compensation is unaddressed, not permitted or prohibited; hold conservatively rather than carrying over the initiative rule.",
+    "sosInquiry": "For an INDEPENDENT presidential candidate's nominating petition under NDCC 16.1-12-02 (the 4,000-signature petition), may a campaign pay circulators per signature, and must those circulators be North Dakota residents or qualified electors — or do the per-signature ban and circulator residency rules in NDCC 16.1-01-09 apply only to initiative/referendum petitions?",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-11-16/",
+        "quote": "1. Each nominating petition circulated by candidates for any state, district, county, or other political subdivision office must include or have attached the following information... 2. Only qualified electors of the state, district, county, or other political subdivision, as the case may be, may sign nominating petitions."
+      },
+      {
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-12-02/",
+        "quote": "3. If the nomination is for the office of president, there must be no fewer than four thousand signatures and the petition must contain the names of the presidential and vice presidential candidates along with the names of the elector nominees and alternate elector nominees for the office of the North Dakota presidential electors. The elector nominees and alternate elector nominees must be qualified electors of North Dakota."
+      },
+      {
+        "url": "https://www.sos.nd.gov/sites/www/files/documents/elections/petition-signature-gathering-guidance.pdf",
+        "quote": "PETITION SIGNATURE GATHERING GUIDANCE FOR CIRCULATORS OF INITIATED AND REFERENDUM PETITIONS ... Any person gathering signatures for a statewide petition may not be paid anything of value based on the number of signatures gathered."
+      },
+      {
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-01-09/",
+        "quote": "§ 16.1-01-09. Initiative or referendum petitions--Signature--Form--Circulation ... No petition may be circulated under the authority of article III of the Constitution of North Dakota by an individual who is less than eighteen years of age ... The chairperson also shall submit a complete list of petition circulators which must include each circulator's full name and residential address. The residential address must be in this state and identify the circulator's street address, city, and zip code."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_North_Dakota",
+        "quote": "The relevant statutes do not stipulate any requirements (such as residency or pay status) that petition circulators must meet."
+      }
+    ],
+    "initiativePrior": "banned"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "N/A — no statewide voter registration file exists for sale or download. North Dakota has no voter registration. The state's internal \"central voter file\" (NDVOICES) is restricted to election officials via a secure login; it is not offered as a purchasable/downloadable public product, so no public price list exists. If pursued at all, treat as \"varies / not publicly available.\"",
+    "whoCanObtain": "No general public voter-file product. The central voter record system (NDVOICES — North Dakota Voter Information & Central Election Systems) is accessible only to election officials (Secretary of State Elections Division and the 53 county auditors) through a secure login area. There is no candidate/committee voter-list purchase program comparable to other states, because there is no registration list.",
+    "useRestrictions": "Not applicable as a sold dataset. The central voter record is an internal election-administration system (it even flags non-citizens for officials). For petition use, the binding legal constraint is that ballot-measure/nominating petition signers must be North Dakota qualified electors (U.S. citizen, 18+, ND resident 30 days); SOS/county auditors review signatures against signer-supplied name + residential address + date. A campaign cannot obtain a state registration roster to pre-match signers, because none is published.",
+    "requestProcess": "No standard request product. There is no online download, application form, or affidavit process to buy a statewide voter file, because ND does not register voters. Practical signature verification is done by the official filing officer (Secretary of State for statewide measures; county auditors for local). Any inquiry about voter-record data goes to the SOS Elections Division (701-328-4146), but the central file is not made available to campaigns as a list.",
+    "hasNeededFields": "no",
+    "downloadUrl": "",
+    "note": "North Dakota is the only U.S. state without voter registration, so there is NO statewide voter registration file a campaign can download, request, or buy to pre-verify petition signers. ND keeps an internal central voter record (NDVOICES) for election officials only; signature verification is performed by the SOS/county auditors against signer-provided name, residential address, and date, and signers must be qualified electors.",
+    "citations": [
+      {
+        "url": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id",
+        "quote": "North Dakota is the only state without voter registration as our Voter ID law requires a valid form of ID to vote."
+      },
+      {
+        "url": "https://www.sos.nd.gov/elections/election-official",
+        "quote": "Voter Qualifications & ID Requirements – Learn more about voter ID requirements in North Dakota. North Dakota does not do voter registration but has voter ID laws in place for voting."
+      },
+      {
+        "url": "https://www.sos.nd.gov/elections/election-official",
+        "quote": "Election training videos can be found in the secure login area of NDVOICES - North Dakota Voter Information & Central Election Systems."
+      },
+      {
+        "url": "https://www.sos.nd.gov/elections/voter/voting-north-dakota/forms-voter-id",
+        "quote": "North Dakota’s voter record flags anyone marked as a non-citizen so election officials can ensure only U.S. citizens are allowed to vote."
+      },
+      {
+        "url": "https://www.sos.nd.gov/elections/voter/ballot-measures",
+        "quote": "A sponsoring committee looking to circulate a statewide ballot measure petition must first have the form of the petition approved by the Secretary of State. They then have 1 year to circulate the petition and gather signatures."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 18,
+    "ageRule": "No age requirement is stated in North Dakota's nominating-petition statutes (Ch. 16.1-11 / 16.1-12) for the CIRCULATOR — those chapters impose age/residency/citizenship only on SIGNERS (\"qualified electors\"). The only explicit \"petition may not be circulated by an individual who is less than eighteen years of age\" rule (N.D.C.C. 16.1-01-09.1(6)) is expressly limited to petitions circulated \"under ",
+    "minorCanCirculate": "unknown",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "unknown",
+    "stateResidentRequired": "unknown",
+    "signerVsCirculator": "SIGNER: must be a \"qualified elector\" of North Dakota — i.e., U.S. citizen, at least 18, and a 30-day ND resident (N.D.C.C. 16.1-11-16(2); for president, signers must be 4,000 qualified ND voters under 16.1-12-02(3)). CIRCULATOR: the nominating-petition chapters (16.1-11, 16.1-12) impose NO stated qualifications on the circulator — no age, no residency, no citizenship, no registered-voter requirem",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "For an INDEPENDENT/PRESIDENTIAL nominating (certificate of nomination by) petition in North Dakota, the strict eligibility requirements bind the SIGNER, not the circulator. Signers must be \"qualified electors\" — U.S. citizen, 18+, ND resident 30 days (N.D.C.C. 16.1-11-16(2)); a presidential petition needs 4,000 such signatures (16.1-12-02(3)), filed with the Secretary of State by 4 p.m. on the 64th day before the general election; signatures may not be gathered before January 1 of the presidenti",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "signerVsCirculator",
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-11-16/",
+        "quote": "2. Only qualified electors of the state, district, county, or other political subdivision, as the case may be, may sign nominating petitions. In addition to signing and printing the individual's name, petition signers shall include the following information: a. The date of signing. b. Complete residential address."
+      },
+      {
+        "field": "circulatorMustBeRegisteredVoter",
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-11-16/",
+        "quote": "Each nominating petition circulated by candidates for any state, district, county, or other political subdivision office must include or have attached the following information, which must be made available to each signer at the time of signing... [the section states qualifications only for signers ('Only qualified electors ... may sign'), and imposes no age, residency, citizenship, or qualified-elector requirement on the circulator, nor any circulator affidavit]."
+      },
+      {
+        "field": "note",
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-12-02/",
+        "quote": "Except for candidates for the office of president of the United States, each certificate of nomination by petition must meet the specifications for nominating petitions set forth in section 16.1-11-16... 3. If the nomination is for the office of president, there must be no fewer than four thousand signatures and the petition must contain the names of the presidential and vice presidential candidates along with the names of the elector nominees and alternate elector nominees for the office of the North Dakota presidential electors. The elector nominees and alternate elector nominees must be qualified electors of North Dakota."
+      },
+      {
+        "field": "circulatorAgeRule",
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-01-09-1/",
+        "quote": "6. A petition may not be circulated under the authority of article III of the Constitution of North Dakota, section 44-08-21, or section 44-08-21.1 by an individual who is less than eighteen years of age, nor may the affidavit called for by subsection 3 be executed by an individual who is less than eighteen years of age at the time of signing. [This 18+ circulator bar is expressly limited to Article III / recall petitions and does NOT apply to candidate nominating petitions in Ch. 16.1-11 or 16.1-12.]"
+      },
+      {
+        "field": "circulatorMustBeStateResident",
+        "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-01-09-1/",
+        "quote": "3. Each copy of a petition provided for in this section, before being filed, must have attached an affidavit executed by the circulator in substantially the following form:... I, ___, being sworn, say that I am a qualified elector; that I reside at ___; that each signature contained on the attached petition was executed in my presence; and that to the best of my knowledge and belief each individual whose signature appears on the attached petition is a qualified elector... [This qualified-elector/resident circulator affidavit is the RECALL/Article III form; the nominating-petition chapters do not contain an equivalent statutory circulator affidavit.]"
+      },
+      {
+        "field": "signerVsCirculator",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_North_Dakota",
+        "quote": "Independent and non-established party candidates for president must petition for placement on the general election ballot. The candidate must submit a petition containing the signatures of at least 4,000 qualified North Dakota voters. This petition must be filed with the secretary of state no later than 64 days before the general election."
+      }
+    ]
+  }
+}

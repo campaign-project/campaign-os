@@ -1,0 +1,26 @@
+{
+  "signaturesRequired": {
+    "agree": true,
+    "interpretationRequired": false,
+    "confidence": 0.96,
+    "note": "CA SoS 2024 guidance and Elec. Code §8400 confirm 219,403 = 1% of statewide registration (per Oct 2022 Report of Registration); recomputes each cycle off the registration prior to the preceding general election."
+  },
+  "validationModel": {
+    "agree": true,
+    "interpretationRequired": false,
+    "confidence": 0.98,
+    "note": "Elec. Code §8401(a) authorizes random sampling (min 500 or 5%) and §8401(b) mandates a full count when the sample estimate is within 90-110% of the requirement (note: nomination-paper band; ballot measures under §9115 use 95-110%)."
+  },
+  "circulatorEligibility": {
+    "agree": true,
+    "interpretationRequired": false,
+    "confidence": 0.95,
+    "note": "Controlling statute §102 (incorporated by §8451) requires only 18+, no voter registration (2013 SB 213 removed the prior requirement); SoS candidate-guide 'registered voters' language is stale, non-binding, and cannot override the Elections Code."
+  },
+  "witnessOrNotary": {
+    "agree": true,
+    "interpretationRequired": true,
+    "confidence": 0.88,
+    "note": "§§8407-8409 on their face require a sworn circulator affidavit verified before an oath-administering officer; whether CCP §2015.5's unsworn penalty-of-perjury declaration legally substitutes is an unsettled interpretation question retrieval cannot resolve."
+  }
+}

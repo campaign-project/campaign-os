@@ -1,0 +1,126 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "SD-VR",
+ "jurisdiction": "South Dakota",
+ "abbr": "SD",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 17508,
+  "headline": "Five percent of the total vote for governor in the last gubernatorial election (SD Const., Art. III, Sec. 1; SDCL 2-1-3.1). SoS-published figure for 'Referred Law': 'signatures of registered voters equal to five percent (17,508) of the total vote for governor in the last gubernatorial election.' Base year = 2022 gubernatorial election."
+ },
+ "deadline": {
+  "headline": "SDCL 2-1-3.1: 'The signatures on a petition to refer a law must be filed with the secretary of state within ninety days after the Legislature that passed the referred law adjourned sine die.' (SoS: 'Deadline for submitting referendum petition - 90 days after adjournment of legislature at which the law was passed.') The draft petition must be filed with and approved by the SoS b"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Five percent of the total vote for governor in the last gubernatorial election (SD Const., Art. III, Sec. 1; SDCL 2-1-3.1). SoS-published figure for 'Referred Law': 'signatures of registered voters equal to five percent (17,508) of the total vote for governor in the last gubernatorial election.' Base year = 2022 gubernatorial election.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct (popular/veto referendum on legislative acts)"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "SDCL 2-1-3.1: 'The signatures on a petition to refer a law must be filed with the secretary of state within ninety days after the Legislature that passed the referred law adjourned sine die.' (SoS: 'Deadline for submitting referendum petition - 90 days after adjournment of legislature at which the law was passed.') The draft petition must be filed with and approved by the SoS b"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "none specific to referendum (subject is the single referred Act). Measures necessary for the immediate preservation of the public peace, health, or safety, or support of state government and its existing public institutions (emergency legislation) are NOT subject to referendum (SD Const., Art. III, Sec. 1)."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "not_required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Per-signature pay for circulators is explicitly BANNED. SDCL 12-13-28: 'No person may employ, reward, or compensate any person to circulate a petition for an initiated measure, referred law, or proposed amendment to the South Dakota Constitution based on the number of registered voters who signed the petition.' Violation = Class 2 misdemeanor. HOWEVER, the statute expressly per",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$225 for the electronic statewide data file of all registered voters (SDCL 12-4-39(5)(f) cap). Paper statewide list up to $1,000; legislative district up to $100; county/subdivision up to $50; partial/update lists $75-$100. Make check payable to \"SD Secretary of State.\" Note: an Aug 12, 2025 administrative-rules hearing was scheduled to revise this cost structure, so confirm the current electronic-file fee with the SOS Elections office.",
+  "whoCanObtain": "Available to the public but issuance is conditioned on a signed permitted-use certification and disclosure of the political/non-commercial user. The request form requires naming \"the candidate, ballot question or party committee utilizing the voter registration file.\" Statewide lists are pulled only by the Secretary of State's office; county/legislative/municipal/school sublists must be requested from the relevant county auditor.",
+  "useRestrictions": "Strict, statutory (SDCL 12-4-41): voter registration information \"may not be sold, may not be used for any commercial purpose, and may not be placed for unrestricted access on the internet.\" Crucially, \"'commercial purpose' does not include campaign or political polling activities\" — so campaign/petition signature-verification use is permitted. Penalty: Class 1 misdemeanor plus a civil penalty up to $2,000 per violation. The requester must sign a sworn acknowledgment of these limits (no electronic signature font allowed).",
+  "requestProcess": "Written request via the official \"South Dakota Voter Registration File—Data Request Form\" (PDF), emailed/mailed/faxed to the SOS Elections Division (elections@state.sd.us; SD Secretary of State, Attn: Elections, 500 East Capitol, Ste 204, Pierre, SD 57501; phone 605-773-3537, fax 605-773-6580), with payment and a signed permitted-use statement under SDCL 12-4-41. Not an instant online download; the file is pulled and emailed/provided by SOS staff.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Signature figures are PRIMARY-SOURCE-CONFIRMED and unambiguous: SoS official ballot-question signature-requirements page gives 2026 figures verbatim — ICA 35,017 (10% of last gubernatorial vote), initiated statute 17,508 (5%), referred law (veto referendum) 17,508 (5%), all based on the 2022 gubernatorial election; these match Ballotpedia exactly. No distribution requirement (confirmed). Per-signature pay banned but productivity bonuses/quotas allowed (SDCL 12-13-28). The rea"
+ },
+ "citations": [
+  {
+   "field": "signatureRequirement / signatureBasis (initiated statute and veto referendum)",
+   "url": "https://sdsos.gov/elections-voting/upcoming-elections/ballot-question-information/signature-requirements-ballot-question-petitions.aspx",
+   "quote": "Initiated Measure: ... The petition must have signatures of registered voters equal to five percent (17,508) of the total vote for governor in the last gubernatorial election. ... Referred Law: ... It must have signatures of registered voters equal to five percent (17,508) of the total vote for governor in the last gubernatorial election and must be filed within 90 days of adjournment of the legislative session in which the measure was passed (SDCL 2-1-3.1)."
+  },
+  {
+   "field": "signatureRequirement / signatureBasis (initiated constitutional amendment)",
+   "url": "https://sdsos.gov/elections-voting/upcoming-elections/ballot-question-information/signature-requirements-ballot-question-petitions.aspx",
+   "quote": "Initiated Constitutional Amendment: This is a petition proposing to amend, repeal, or add to provisions in the South Dakota state constitution. The petition must have signatures of registered voters equal to ten percent (35,017) of the total vote for governor in the last gubernatorial election and must be filed in the Secretary of State's office no later than the first Tuesday in May before the general election (SD Const., Art. XXIII, Sec. 1). No signatures may be obtained more than 24 months preceding the election date designated on the petition."
+  },
+  {
+   "field": "deadline (codified statute — initiated statute)",
+   "url": "https://sdlegislature.gov/api/Statutes/Statute/2-1-1.2",
+   "quote": "The initiated measure petition signatures must be filed with the secretary of state by the first Tuesday in February of a general election year for the initiated measure to qualify for submission to the voters at the next general election."
+  },
+  {
+   "field": "deadline (codified statute — initiated constitutional amendment)",
+   "url": "https://sdlegislature.gov/api/Statutes/Statute/2-1-1.1",
+   "quote": "The initiated amendment petition signatures must be filed with the secretary of state by the first Tuesday in February of a general election year for the initiated amendment to qualify for submission to the voters at the next general election."
+  },
+  {
+   "field": "deadline (administered, 2026 — conflict, subject to litigation)",
+   "url": "https://sdsos.gov/elections-voting/upcoming-elections/ballot-question-information/default.aspx",
+   "quote": "2026 Information (*The current May 5, 2026 deadline is subject to litigation and may change.) Deadline for submitting initiated constitutional amendment petition with signatures - *May 5, 2026. Deadline for submitting initiated measure petition with signatures - *May 5, 2026."
+  },
+  {
+   "field": "deadline (veto referendum)",
+   "url": "https://sdlegislature.gov/api/Statutes/Statute/2-1-3.1",
+   "quote": "The signatures on a petition to refer a law must be filed with the secretary of state within ninety days after the Legislature that passed the referred law adjourned sine die."
+  },
+  {
+   "field": "circulate-before deadline (one year before general election)",
+   "url": "https://sdlegislature.gov/api/Statutes/Statute/2-1-1.2",
+   "quote": "A petition sponsor shall file, in physical and electronic copy format, a petition for an initiated measure, as it is to be circulated, with the secretary of state, before the petition may be circulated and at least one year before the next general election at which the initiated measure is proposed to be submitted to the voters."
+  },
+  {
+   "field": "perSignaturePayAllowed (banned, with permitted exceptions)",
+   "url": "https://sdlegislature.gov/api/Statutes/Statute/12-13-28",
+   "quote": "No person may employ, reward, or compensate any person to circulate a petition for an initiated measure, referred law, or proposed amendment to the South Dakota Constitution based on the number of registered voters who signed the petition. Nothing in this section prohibits any person from employing a petition circulator based on one of the following practices: (1) Paying an hourly wage or salary; (2) Establishing either express or implied minimum signature requirements for the petition circulator; (3) Terminating the petition circulator's employment, if the petition circulator fails to meet certain productivity requirements; and (4) Paying discretionary bonuses based on reliability, longevity, and productivity. Any violation of this section is a Class 2 misdemeanor."
+  },
+  {
+   "field": "circulatorResidencyRequired (statutory text still requires resident attestation)",
+   "url": "https://sdlegislature.gov/api/Statutes/Statute/2-1-10",
+   "quote": "Before filing a petition to initiate an amendment to the Constitution, for an initiated measure, or for a referred law ... each petition circulator shall sign a verification attesting that: (1) The circulator personally circulated the petition; ... (3) The circulator is a resident of South Dakota; ..."
+  },
+  {
+   "field": "circulatorResidencyRequired (residency requirement judicially enjoined / not enforced)",
+   "url": "https://www.hpslawfirm.com/blog/2023/02/hps-partners-file-lawsuit-south-dakota-federal-court-strikes-down-residency-requirement-for-ballot-initiatives-2/",
+   "quote": "In a victory for South Dakotans, a law that places a 30-day residency requirement for ballot initiative petition circulators has been permanently enjoined by a federal court. The League of Women Voters of South Dakota and the League of Women Voters of the United States filed the federal lawsuit challenging the residency requirement provision"
+  },
+  {
+   "field": "distribution / singleSubject / per-cycle figures (corroboration)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_South_Dakota",
+   "quote": "South Dakota does not have a distribution requirement for petition signatures. ... In South Dakota, all citizen-initiated measures—both constitutional amendments and state statutes—must concern only one subject. ... 2026  35,017  17,508  17,508 ... South Dakota prohibits paying signature gatherers based on the number of signatures collected. ... South Dakota does not require signature gatherers to be residents of the state. Previously, South Dakota had a requirement, but a federal court struck down the law as unconstitutional in January 2023."
+  },
+  {
+   "field": "singleSubject (SoS confirmation) / font rule",
+   "url": "https://sdsos.gov/elections-voting/upcoming-elections/ballot-question-information/default.aspx",
+   "quote": "Important Items to Note (These have changed as of July 1, 2025, pursuant to SB 91) ... A ballot question may only embrace one subject."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

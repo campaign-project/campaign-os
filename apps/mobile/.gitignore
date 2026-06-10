@@ -1,0 +1,11 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+.DS_Store
+
+# Raw voter files (PII) and indexes built from them — NEVER commit. Real data lives here only on
+# the operator's machine; only minimized, scoped artifacts move to devices over the sync channel.
+voterfiles/
+

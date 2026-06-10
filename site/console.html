@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mainframe">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CampaignOS Gather — Drive Operations</title>
+<meta name="description" content="The CampaignOS Gather operations console: the national ballot-access drive across 51 jurisdictions — cost-to-qualify, the optimizer's routing, validation throughput, and the validity-intelligence moat, in one view." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2.5' y='2.5' width='27' height='27' rx='7' fill='%23090c11' stroke='%23334' stroke-width='1.6'/><path d='M9.5 16.4l4.2 4.3 8.8-9.1' fill='none' stroke='%2336f2c0' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/><circle cx='9.5' cy='9.5' r='1.6' fill='%23ffb24d'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="console.css" />
+</head>
+<body class="cbody">
+
+<canvas id="grid-net" aria-hidden="true"></canvas>
+<div class="atmos" aria-hidden="true">
+  <div class="atmos__glow atmos__glow--mint"></div>
+  <div class="atmos__glow atmos__glow--amber"></div>
+  <div class="atmos__grid"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<div class="wrap">
+  <header class="chead">
+    <a class="cback" href="index.html">← CampaignOS</a>
+    <div class="chead__t">
+      <h1 class="chead__title">Drive Operations</h1>
+      <p class="chead__sub">CampaignOS <b>Gather</b> · national ballot-access console · <span id="clock">—</span></p>
+    </div>
+  </header>
+
+  <!-- HERO: the north-star cost tracker -->
+  <section class="mission">
+    <span class="klabel">north star · cost to qualify on the ballot in all 51 jurisdictions</span>
+    <div class="mission__big"><b id="m-proj">$—</b> <span>projected</span> <span class="mission__ceil">vs <b id="m-ceil">$1M</b> ceiling</span></div>
+    <div class="meter" role="img" aria-label="projected cost vs ceiling"><i id="m-fill"></i></div>
+    <div class="mission__row">
+      <div class="stat"><b id="m-qual">—</b><span>of <i id="m-total">51</i> jurisdictions qualified</span></div>
+      <div class="stat"><b id="m-spent">$—</b><span>committed to date</span></div>
+      <div class="stat"><b id="m-levers">—</b><span>aggressive lever stack</span></div>
+    </div>
+  </section>
+
+  <!-- main grid -->
+  <div class="grid">
+    <section class="panel panel--board">
+      <div class="panel__h"><span class="klabel">national board</span><span class="panel__sub" id="board-sub"></span></div>
+      <div class="board" id="board"></div>
+    </section>
+
+    <div class="col">
+      <section class="panel">
+        <div class="panel__h"><span class="klabel">optimizer · route the next 1,200 gatherer-hrs</span></div>
+        <div class="routing" id="routing"></div>
+        <p class="panel__note" id="routing-note"></p>
+      </section>
+      <section class="panel">
+        <div class="panel__h"><span class="klabel">compensation &amp; payments</span></div>
+        <div id="comp"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="grid grid--2">
+    <section class="panel">
+      <div class="panel__h"><span class="klabel">yield intelligence · Moat B</span><span class="panel__sub">validity by gatherer · location · format</span></div>
+      <div id="yield"></div>
+    </section>
+    <section class="panel">
+      <div class="panel__h"><span class="klabel">validation throughput</span><span class="panel__sub">scored on capture · safe to submit</span></div>
+      <div id="throughput"></div>
+    </section>
+  </div>
+
+  <footer class="cfoot" id="cfoot"></footer>
+</div>
+
+<script src="console-data.js"></script>
+<script src="app.js"></script>
+<script src="console.js"></script>
+</body>
+</html>

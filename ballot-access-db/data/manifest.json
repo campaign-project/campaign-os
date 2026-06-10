@@ -1,0 +1,46 @@
+{
+  "name": "BallotAccessDB",
+  "version": "1.1.0",
+  "schemaVersion": "1.1.0",
+  "schema": "schema/ballot-access-rule.schema.json",
+  "petitionTypes": [
+    "independent-presidential",
+    "initiated-statute",
+    "veto-referendum",
+    "initiated-constitutional-amendment",
+    "popular-referendum"
+  ],
+  "jurisdictions": 51,
+  "records": 115,
+  "generatedAt": "2026-06-08",
+  "license": "ODbL-1.0",
+  "attribution": "BallotAccessDB / CampaignOS",
+  "source": "Verified per-jurisdiction research, primary-source-grounded; see each record's citations + provenance.",
+  "coverage": {
+    "petitionType": {
+      "independent-presidential": 51,
+      "initiated-statute": 24,
+      "veto-referendum": 20,
+      "initiated-constitutional-amendment": 18,
+      "popular-referendum": 2
+    },
+    "verificationGate": {
+      "CONSERVATIVE-HOLD": 76,
+      "AUTO-LIVE": 36,
+      "BLOCKED": 3
+    },
+    "voterFileTier": {
+      "PAID": 23,
+      "LOW_COST": 30,
+      "RESTRICTED": 55,
+      "FREE_DOWNLOAD": 7
+    },
+    "perSignature": {
+      "unaddressed": 51,
+      "yes": 33,
+      "no": 31
+    },
+    "totalCitations": 1560,
+    "openSosInquiries": 134
+  }
+}

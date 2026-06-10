@@ -1,0 +1,116 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "MA-ICA",
+ "jurisdiction": "Massachusetts",
+ "abbr": "MA",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 74574,
+  "headline": "3 percent of votes cast for governor in the most recent gubernatorial election, excluding blanks (Article XLVIII). NO second signature round; instead the amendment must be approved by at least one-quarter (25%) of all members of the Legislature in two consecutive joint sessions (consecutive General Courts) before reaching the ballot."
+ },
+ "deadline": {
+  "headline": "Signatures due first Wednesday in December (filed with local registrars two weeks prior, ~Nov. 19, 2025). For petitions certified by the AG in 2025, the earliest possible ballot is November 2028, because \"constitutional amendments proposed by initiative petition require approval by at least 25 percent of two consecutive joint sessions of the Legislature.\""
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "3 percent of votes cast for governor in the most recent gubernatorial election, excluding blanks (Article XLVIII). NO second signature round; instead the amendment must be approved by at least one-quarter (25%) of all members of the Legislature in two consecutive joint sessions (consecutive General Courts) before reaching the ballot.",
+   "confidence": 0.9,
+   "note": "direct/indirect: indirect: requires approval by 25% of legislators in two consecutive joint sessions in addition to the signature step; minimum ~2-3 years from signature submission to ballot"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Signatures due first Wednesday in December (filed with local registrars two weeks prior, ~Nov. 19, 2025). For petitions certified by the AG in 2025, the earliest possible ballot is November 2028, because \"constitutional amendments proposed by initiative petition require approval by at least 25 percent of two consecutive joint sessions of the Legislature.\""
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "No more than one-quarter of the certified signatures on any petition may come from any one county (Article XLVIII, General Provisions, Part II)."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Petition must \"contain only subjects which are related or which are mutually dependent\" (Article XLVIII)."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Massachusetts ALLOWS paying signature gatherers on a per-signature (pay-per-signature) basis (Ballotpedia: \"Massachusetts allows paying signature gatherers based on the number of signatures collected\"). Massachusetts is NOT among the ~10 states (AZ, AR, FL, MT, ND, OK, OR, SD, UT, WY per Ballotpedia) that ban per-signature pay for initiatives. Multiple bills to ban pay-per-sign",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "State voter file: no published flat price — \"a fair and reasonable cost not to exceed the cost of printing or preparing computer readable documents\" (M.G.L. c.51 §47C). Municipal route (for non-qualifying candidates): each city/town charges only \"the cost of producing the record\" — in practice a few dollars per local street list/book (e.g., $2–$20 per town).",
+  "whoCanObtain": "The statewide central registry of voters is NOT a public record and is restricted by statute to: state party committees, statewide candidate committees, state ballot question committees, the jury commissioner, the adjutant general, and any other entity the Secretary designates by regulation. The SOS describes this as \"only available to statewide campaigns and political parties.\" Candidates who do not qualify (e.g., district/local candidates) must instead obtain the public municipal voter lists from each city/town election office; those local lists are available to the general public under the Public Records Law.",
+  "useRestrictions": "State voter file is provided only under a licensing agreement that \"prohibits them from sharing or selling the information,\" and the names/addresses \"shall not be a matter of public record.\" The file excludes non-public fields (phone, email, veteran status, permanent-absentee status, confidential voters, minors). Confidential voters (court order / shelter / Address Confidentiality Program) are entirely omitted. The public municipal lists carry the standard MA public-records use norms but are openly inspectable.",
+  "requestProcess": "State voter file: written request to the Secretary of the Commonwealth's Elections Division plus a mandatory signed licensing agreement that prohibits sharing or selling the data (eligibility-gated). Municipal route: written/in-person public-records request to each local election office (town/city clerk or board of registrars) for the public voter list, payable at cost of production.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sec.state.ma.us/divisions/elections/voting-information/access-to-voter-information.htm",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 1,
+  "riskNote": "Current-cycle valid-signature figures for the November 2026 ballot are taken directly from the Massachusetts Attorney General's official press release (9/03/2025): initiated statute = 74,574 first-round signatures due Dec. 3, 2025, plus 12,429 second-round signatures due July 1, 2026; these match Ballotpedia's 2026 table exactly. Base = 2022 gubernatorial election (3% = 74,574 implies a base of ~2,485,800 governor votes; 0.5% = 12,429). Veto referendum 37,245 (1.5%) is from B"
+ },
+ "citations": [
+  {
+   "field": "signatureRequirement / deadline (initiated statute, both rounds)",
+   "url": "https://www.mass.gov/news/ag-campbells-office-certifies-44-initiative-petitions",
+   "quote": "Proponents of a proposed law that was certified may now gather and file with the Secretary of the Commonwealth the signatures of 74,574 registered voters by December 3, 2025. Once these signatures are verified, the proposal will be sent to the State Legislature in January 2026 for its consideration on or before the first Wednesday of May 2026. If the Legislature does not enact a proposal, proponents must gather 12,429 additional signatures from registered voters by July 1, 2026, to place the proposed law on the November 2026 ballot."
+  },
+  {
+   "field": "initiated-constitutional-amendment (process / timeline)",
+   "url": "https://www.mass.gov/news/ag-campbells-office-certifies-44-initiative-petitions",
+   "quote": "The process for proposed constitutional amendments is different, as constitutional amendments proposed by initiative petition require approval by at least 25 percent of two consecutive joint sessions of the Legislature. Accordingly, no such proposal certified today can appear on the ballot before November 2028."
+  },
+  {
+   "field": "singleSubject / excluded matters",
+   "url": "https://www.mass.gov/news/ag-campbells-office-certifies-44-initiative-petitions",
+   "quote": "The Massachusetts Constitution requires that proposed initiatives be in the proper form for submission to voters, not be substantially the same as any measure qualified to appear on the ballot in either of the two preceding statewide elections, contain only subjects that are related to each other or mutually dependent, and not involve a set of issues that are specifically excluded from the ballot initiative process by the Massachusetts Constitution. For example, a petition cannot be certified if it relates to religion, religious practices or religious institutions; the powers, creation or abolition of the courts; the appointment, compensation or tenure of judges; a specific appropriation of funds from the state treasury; or if it infringes on certain other constitutional rights listed in Article 48, such as trial by jury, freedom of the press, freedom of speech, and free elections."
+  },
+  {
+   "field": "signatureBasis (statute and amendment: 3% / 0.5%)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Massachusetts",
+   "quote": "For an amendment or statute, submitted signatures must equal 3 percent of votes cast for governor in the most recent gubernatorial election, excluding blanks. If the legislature declines to act on a proposed statute, supporters are required to collect a second round of signatures totaling 0.5 percent of the votes last cast for governor, excluding blanks. For proposed amendments, one-quarter of the legislature must approve the petition in a joint session—a second round of signatures is not required and does not overrule rejection by more than three-quarters of the legislature."
+  },
+  {
+   "field": "signatureBasis (veto referendum: 1.5% / 2%)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Massachusetts",
+   "quote": "For a veto referendum, signatures must equal 1.5 percent of the total votes cast for governor in the most recent gubernatorial election. If the petitioners submit a written request for the suspension of the targeted law prior to the referendum election, signatures equal to 2 percent of the total votes last cast for governor are required to both suspend the law and force an election."
+  },
+  {
+   "field": "distribution (per-county cap)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Massachusetts",
+   "quote": "No more than one-quarter (18,644) of the certified signatures on the initiative or referendum petitions may come from any one county."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Massachusetts",
+   "quote": "Massachusetts allows paying signature gatherers based on the number of signatures collected."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Massachusetts",
+   "quote": "Massachusetts does not require petition circulators to be state residents."
+  },
+  {
+   "field": "signatureRequirement (current-cycle numbers and deadlines, all measure types)",
+   "url": "https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026",
+   "quote": "Massachusetts | IndICA | 11/19/2025 | Signatures must be submitted two weeks before the first Wednesday in December | 74,574 ... Massachusetts | IndISS | 11/19/2025 (Round 1) 06/17/2026 (Round 2) | Round 1: Signatures must be submitted two weeks before the first Wednesday in December Round 2: Signatures must be submitted two weeks before the first Wednesday in July | 74,574 (Round 1) 12,429 (Round 2) ... Massachusetts | VR | 09/04/2026 | Deadline for the inclusion of referendums on the ballot is 60 days before the election | 37,245"
+  },
+  {
+   "field": "certification authority / Article 48 framework",
+   "url": "https://www.mass.gov/news/ag-campbells-office-certifies-44-initiative-petitions",
+   "quote": "After a thorough review of 47 initiative petitions, Attorney General Andrea Joy Campbell's office has determined that 44 proposals meet the requirements outlined in the Massachusetts Constitution and may proceed to the next step in the process towards appearing on the November 2026 ballot. The AG's Office certified the 44 petitions, including 40 proposed laws and four proposed constitutional amendments."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

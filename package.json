@@ -1,0 +1,17 @@
+{
+  "name": "campaign-os",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "scripts": {
+    "dev": "corepack pnpm --filter @campaign-os/web dev",
+    "build": "corepack pnpm --filter @campaign-os/web build",
+    "typecheck": "corepack pnpm --filter @campaign-os/web typecheck",
+    "lint": "corepack pnpm --filter @campaign-os/web lint",
+    "db:generate": "corepack pnpm --filter @campaign-os/db generate",
+    "db:push": "corepack pnpm --filter @campaign-os/db push"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

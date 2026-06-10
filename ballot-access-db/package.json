@@ -1,0 +1,13 @@
+{
+  "name": "ballot-access-db",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "BallotAccessDB — the open knowledge graph of U.S. ballot-access rules (51 jurisdictions): requirements, deadlines, circulator + compensation rules, and voter-file acquisition, primary-source-grounded and machine-verified. Open data (ODbL) with a query API.",
+  "license": "ODbL-1.0",
+  "scripts": {
+    "build": "node --experimental-strip-types build.ts",
+    "demo": "node --experimental-strip-types cli.ts demo",
+    "stats": "node --experimental-strip-types cli.ts stats"
+  }
+}

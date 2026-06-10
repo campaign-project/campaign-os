@@ -1,0 +1,6 @@
+VoterID,FirstName,MiddleName,LastName,Suffix,StreetNum,StreetName,BldgNum,City,Zip,Status,RegistrationDate,County_Desc,Precinct
+V1001,Robert,A,Nuñez,,42,Main St,,Springfield,62704,A,03/01/2019,Sangamon,1
+V1002,William,,Johnson,,88,Oak Ave,,Springfield,62704,A,06/15/2018,Sangamon,1
+V1003,Maria,,Gonzalez,,5,Sunset Blvd,4,Springfield,62705,A,11/02/2021,Sangamon,1
+V1004,James,,O'Brien,,230,N Park Rd,,Springfield,62704,INACTIVE,09/10/2017,Sangamon,1
+V1005,Katherine,,Lee,,901,River Dr,,Springfield,62704,CANCELLED,05/05/2016,Sangamon,1

@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "GA",
+ "jurisdiction": "Georgia",
+ "abbr": "GA",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 7500,
+  "headline": "GA: do NOT rely on 7,500 — post-West v. Wittenstein strict reading is per-elector petitions (16 x 7,500 = ~120,000)"
+ },
+ "deadline": {
+  "headline": "GA: nomination petition by 12:00 Noon 2nd Tue in July; notice of candidacy 4th Mon June to following Fri (recompute each cycle)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICT: assume a separate nomination petition in the name of EACH of Georgia's 16 presidential-elector candidates, each requiring 7,500 valid signatures = up to ~120,000 valid signatures total. Do NOT plan on a single 7,500-signature statewide petition. (Per-petition number 7,500 derives from Green Party of Georgia v. Kemp; the underlying statute O.C.G.A. 21-2-170(b) still nominally states 1%. West v. Wittenstein, Ga. S. Ct. S25A0178, 9/25/2024, unanimously held each elector-candidate is a 'candidate' who must file his/her own petition.) Recompute and re-verify with the SOS each cycle.",
+   "confidence": 0.9,
+   "interpretationRequired": true,
+   "note": "All four citations ground verbatim. But the draft value ('7,500' as the operative statewide total) is NO LONGER safe. The cited ballot-access.org 9/24 article only reported that the GA Supreme Court HEARD the case and 'oral argument went badly' — it did not report a holding, yet the draft asserted the elector-petition rule as settled. On 9/25/2024 the court ruled UNANIMOUSLY (West v. Wittenstein, affirming an ALJ and two Fulton County Superior Court judges) that West and De la Cruz were disqualified because their 16 presidential electors did not each file a separate petition; the court expressly rejected the argument that the 7,500 standard caps the requirement, and the parties/court acknowledged the strict reading implies ~120,000 signatures (16 x 7,500). Strictest defensible posture for an independent presidential run = per-elector petitions. Interpretation-dependent (court invited legislative clarification; 1% statute un-repealed)."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Nomination petition (O.C.G.A. 21-2-132(e)): file no earlier than 9:00 A.M. on the fourth Monday in June and no later than 12:00 Noon on the second Tuesday in July immediately prior to the general election. Notice of candidacy for President/VP electors (O.C.G.A. 21-2-132(d)(1)): file between 9:00 A.M. on the fourth Monday in June and 12:00 Noon on the Friday following the fourth Monday in June. DATES RECOMPUTE EACH CYCLE.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim against O.C.G.A. 21-2-132 (FindLaw, current as of 3/28/2024). Subsection (e) sets the petition window (fourth Mon June to 12:00 Noon second Tue July); (d)(1) sets the notice-of-candidacy window (fourth Mon June to 12:00 Noon Friday after fourth Mon June). Mechanical date rule, non-interpretive. The 2024 instance (July 9) is a correct illustration but is cycle-specific; rely on the statutory rule, not the hardcoded date."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "No geographic distribution requirement: no per-congressional-district or per-county signature minimums. Signatures are a statewide total. Note the sheet-sorting rule (O.C.G.A. 21-2-170(d)): signers resident in different counties/municipalities must sign different sheets — an affidavit/sorting requirement, not a per-area minimum. SEPARATELY note (cross-ref signaturesRequired): post-West v. Wittenstein the petition burden is multiplied per presidential elector, which is a structural, not geographic, multiplier.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim against 21-2-170(b) and (d). It is accurate that Georgia imposes no congressional-district or county distribution minimum on the nomination petition; the only county-linked rule is the different-sheets-per-county sorting/affidavit requirement. The per-elector multiplication identified in West v. Wittenstein is captured under signaturesRequired and is not a 'distribution' requirement, so this field's value stands."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICT: The petition must be circulated/filed on behalf of, and in the name of, EACH presidential-elector candidate (not the presidential candidate personally) — West v. Wittenstein (Ga. S. Ct. S25A0178, decided 9/25/2024, unanimous) held a presidential candidate cannot petition for himself; the elector-candidates are the 'candidates' who must petition. Statute (21-2-170(d)) requires the circulator's sworn residence address (municipality, street, number) on each sheet; no explicit minimum-age or in-state-voter requirement is imposed on the circulator, but signers must be registered, eligible Georgia electors. A notary who served as a circulator of, or signed as an elector on, any sheet disqualifies those sheets. Confirm circulation/filing mechanics with the SOS.",
+   "confidence": 0.88,
+   "interpretationRequired": true,
+   "note": "Statutory quotes (circulator affidavit, signer eligibility) ground verbatim against 21-2-170. The West v. Wittenstein quote grounds verbatim against the cited ballot-access.org article — BUT that article only reported a HEARING, not a decision, and was titled 'Likely to Rule.' The draft stated the elector-petition holding as settled, which the cited source did not support. Independent verification (Georgia Recorder, 9/26/2024; corroborated by Washington Times / FOX 5) confirms the court DID rule unanimously on 9/25/2024, affirming an ALJ and two Fulton Superior Court judges, that each elector-candidate must file in his/her own name. So the draft's conclusion is now correct but for the wrong/incomplete evidentiary reason. Holding turns on the statutory meaning of 'candidate' — interpretation-dependent; the court invited legislative clarification."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Notarized circulator affidavit required on each sheet (bottom or back), subscribed and sworn before a notary public, attesting: circulator's residence address; that each signer manually signed his/her own name with full knowledge of contents; that each signature was signed within 180 days of the last filing day; and that, to the affiant's knowledge, signers are registered Georgia electors residing in the county/municipality named. No notary may sign as an elector or serve as circulator of any sheet he/she notarized — doing so disqualifies and rejects those sheets (O.C.G.A. 21-2-170(d)).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim against 21-2-170(d). The draft's added detail (180-day window, county residence attestation) is independently supported by the same subsection's (d)(2)-(4) and (e). The notary-disqualification clause is quoted verbatim. Accurate and non-interpretive."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper (wet-ink). SOS-prescribed petition form is mandatory; each signer must manually sign and print his/her name, and each sheet must carry a notarized circulator affidavit. No remote-online/digitized signature capture is available for a Georgia independent/minor-party presidential nomination petition; collect on paper and file the bound sheets with the Secretary of State (O.C.G.A. 21-2-170(a),(d)).",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim against 21-2-170(a) and (d)(2). 'No forms other than the ones so prescribed shall be used,' combined with 'manually signed his or her own name' and the notarized-affidavit requirement, supports paper/wet-ink. No statutory authorization for electronic capture exists in the cited provisions. Non-interpretive."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICT: Assume a qualifying fee IS owed at the time the notice of candidacy is filed, IN ADDITION TO (not in lieu of) the nomination-petition signatures. The SOS fixes the fee (3% of annual salary if salaried; if not salaried, a 'reasonable fee' not exceeding 3% of income) under O.C.G.A. 21-2-131(a)(2); the exact dollar amount for the presidential office is NOT confirmed from a primary source — treat as owed and confirm with the SOS. A pauper's affidavit may substitute for the FEE only, and only if accompanied by a qualifying petition signed by one-fourth of 1% of statewide registered voters (O.C.G.A. 21-2-132(g)-(h)). The fee/pauper route does NOT replace the nomination-petition signature requirement.",
+   "confidence": 0.85,
+   "interpretationRequired": true,
+   "note": "All three quotes ground verbatim (21-2-131(a)(2); 21-2-132(g); 21-2-132(h)(1)). The draft's structural conclusion (fee is additional; pauper's affidavit replaces only the fee and itself requires a 1/4-of-1% qualifying petition) is correct on the statute. Held conservative because: (1) the draft itself flags the exact 2024 fee amount as UNKNOWN — an unconfirmed value should not auto-go-live; (2) whether/how the fee applies to the office of presidential elector vs the presidential ticket, and its interaction with the per-elector petition structure from West v. Wittenstein, is interpretation-dependent. Confirm amount and applicability with the SOS."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$485.00 flat for the statewide file (Statewide Voter List). Sub-state lists also available: County Voter List $70, US Congressional District $125, State Senate District $95, State House District $75, etc. Non-refundable; no custom orders.",
+  "whoCanObtain": "General public — \"By law, voter registration lists are available to the public.\" No candidate/committee/party gating and no eligibility application; anyone may purchase. (Use is restricted to non-commercial purposes, but obtaining is not eligibility-gated.)",
+  "useRestrictions": "Commercial use is prohibited. Per O.C.G.A. § 21-2-225(c) the data \"may not be used by any person for commercial purposes,\" and under O.C.G.A. § 21-2-601 \"any person who uses the list of electors ... for commercial purposes shall be guilty of a misdemeanor.\" Verifying petition signatures (a political, non-commercial use) is permitted. No notarized affidavit is required; the restriction is statutory rather than enforced via a sworn-statement form.",
+  "requestProcess": "Online purchase via the Georgia SOS online store (georgiasecretaryofstate.net) by credit/debit card, OR a fillable PDF \"Voter List Order Form\" mailed with check/money order to the Secretary of State's Office, 2 MLK Jr. Drive, Suite 802 West Tower, Atlanta, GA 30334. Not an instant download: \"Current processing time is 2 weeks\"; the file is delivered electronically by email as a password-protected link.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://georgiasecretaryofstate.net/products/statewide-voter-list",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — rule binds signers only. O.C.G.A. § 21-2-170(d) enumerates the circulator's duties (swear the affidavit before a notary, state own residence, attest to the signatures) and imposes NO minimum age on the circulator. The only age-adjacent requirement in the statute is on the SIGNER, who must be a registered/eligible elector (effectively 18+). Statutory silence on circu",
+  "minorCanCirculate": "yes",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER (O.C.G.A. § 21-2-170(b),(c)) must be a registered, eligible Georgia elector residing in the relevant county/municipality and entitled to vote in the next election; the CIRCULATOR (§ 21-2-170(d)) faces none of these — they need only swear the affidavit before a notary, disclose their own residence address, and attest to the signatures. No registered-voter, citizenship, residency, or age requ",
+  "gate": "AUTO-LIVE",
+  "note": "Controlling source is O.C.G.A. § 21-2-170, governing nomination petitions (the vehicle by which a political body/independent slate of presidential electors gets on the GA ballot — see § 21-2-170(c) referencing \"presidential electors\"). The statute draws a sharp signer/circulator line. SIGNERS must be registered, eligible GA electors resident in the named county/municipality (subsec. (b) and (c)). The CIRCULATOR's duties are exhaustively listed in subsec. (d): subscribe and swear the affidavit be",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 4,
+  "riskNote": "Highest risk is signaturesRequired: the GA Supreme Court (West v. Wittenstein, unanimous, 9/25/2024) rejected the single-7,500-petition model and held each presidential-elector candidate must file his/her own nomination petition, implying ~120,000 valid signatures under the strictest reading; treating 7,500 as the operative total would risk ballot access. The cited ballot-access source predates the decision and overstated certainty."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-170/",
+   "quote": "Each sheet shall bear on the bottom or back thereof the affidavit of the circulator of such sheet, which affidavit must be subscribed and sworn to by such circulator before a notary public and shall set forth: (1) His or her residence address, giving municipality with street and number, if any; (2) That each signer manually signed his or her own name with full knowledge of the contents of the nomination petition; (3) That each signature on such sheet was signed within 180 days of the last day on which such petition may be filed; and (4) That, to the best of the affiant's knowledge and belief, the signers are registered electors of the state qualified to sign the petition, that their respective residences are correctly stated in the petition, and that they all reside in the county or municipality named in the affidavit."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-170/",
+   "quote": "No notary public may sign the petition as an elector or serve as a circulator of any petition which he or she notarized. Any and all sheets of a petition that have the circulator's affidavit notarized by a notary public who also served as a circulator of one or more sheets of the petition or who signed one of the sheets of the petition as an elector shall be disqualified and rejected."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-170/",
+   "quote": "No nomination petition shall be circulated prior to 180 days before the last day on which such petition may be filed, and no signature shall be counted unless it was signed within 180 days of the last day for filing the same."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Georgia",
+   "quote": "Each sheet must also contain, either on the bottom or the back, an affidavit of the circulator of the sheet signed before a notary public. This affidavit must state the following: the residence address of the circulator ... No notary public is allowed to sign a petition or act as the circulator of a petition that he or she notarized."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.ncsl.org/elections-and-campaigns/initiative-and-referendum-processes/circulators-of-initiatives",
+   "quote": "Of the 26 states that provide for an initiative or referendum process, 16 states allow campaigns to make payments to signature gatherers based on the number of signatures collected, while 10 states prohibit campaigns from paying signature gatherers based on the number of signatures collected."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.ga.gov/page/order-voter-registration-lists-and-files",
+   "quote": "| Statewide Voter List | $485.00 |"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://georgiasecretaryofstate.net/products/statewide-voter-list",
+   "quote": "By law, voter registration lists are available to the public and contain the following information: voter name, residential address, mailing address if different, race, gender, registration date and last voting date. The Statewide Voter List does not include telephone numbers, date of birth, Social Security number or Drivers License number. The Statewide Voter List includes Active and Inactive Voters."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://georgiasecretaryofstate.net/products/statewide-voter-list",
+   "quote": "This data may not be used by any person for commercial purposes. O.C.G.A. § 21-2-225 ( c ) In accordance with O.C.G.A. § 21-2-601, any person who uses the list of electors provided for in O.C.G.A. § 21-2-225 for commercial purposes shall be guilty of a misdemeanor."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.ga.gov/page/order-voter-registration-lists-and-files",
+   "quote": "Current processing time is 2 weeks from the date the order was received by the Georgia Secretary of State's Office. Requests for expedited service will not be processed."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.ga.gov/page/order-voter-registration-lists-and-files",
+   "quote": "Prior to the acceptance and processing of any order, the purchaser/customer must remit payment for all charges in the form of a valid check, money order, or credit card (online system or in person pickup)."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://georgiasecretaryofstate.net/products/statewide-voter-list",
+   "quote": "The file will contain a password protected link."
+  },
+  {
+   "field": "circulatorMinAge / circulatorMustBeRegisteredVoter / circulatorMustBeUSCitizen / circulatorMustBeStateResident",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-170/",
+   "quote": "Each sheet shall bear on the bottom or back thereof the affidavit of the circulator of such sheet, which affidavit must be subscribed and sworn to by such circulator before a notary public and shall set forth: (1) His or her residence address, giving municipality with street and number, if any; (2) That each signer manually signed his or her own name with full knowledge of the contents of the nomination petition; (3) That each signature on such sheet was signed within 180 days of the last day on which such petition may be filed; and (4) That, to the best of the affiant's knowledge and belief, the signers are registered electors of the state qualified to sign the petition, that their respective residences are correctly stated in the petition, and that they all reside in the county or municipality named in the affidavit."
+  },
+  {
+   "field": "signerVsCirculator (signer registration/residency requirement)",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-170/",
+   "quote": "A nomination petition of a candidate seeking an office which is voted upon state wide shall be signed by a number of voters equal to 1 percent of the total number of registered voters eligible to vote in the last election ... and the signers of such petition shall be registered and eligible to vote in the election at which such candidate seeks to be elected."
+  },
+  {
+   "field": "signerVsCirculator (signer declaration requirement)",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-170/",
+   "quote": "Each person signing a nomination petition shall declare therein that he or she is a duly qualified and registered elector of the state, county, or municipality entitled to vote in the next election for the filling of the office sought by the candidate supported by the petition and shall add to his or her signature his or her residence address ..."
+  },
+  {
+   "field": "circulator notary restriction (only express circulator-specific limit)",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-170/",
+   "quote": "No notary public may sign the petition as an elector or serve as a circulator of any petition which he or she notarized. Any and all sheets of a petition that have the circulator's affidavit notarized by a notary public who also served as a circulator of one or more sheets of the petition or who signed one of the sheets of the petition as an elector shall be disqualified and rejected."
+  },
+  {
+   "field": "no statutory definition of 'circulator' with eligibility criteria",
+   "url": "https://codes.findlaw.com/ga/title-21-elections/ga-code-sect-21-2-2/",
+   "quote": "As used in this chapter, the term: ... (7) “Elector” means any person who shall possess all of the qualifications for voting now or hereafter prescribed by the laws of this state, including applicable charter provisions, and shall have registered in accordance with this chapter."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

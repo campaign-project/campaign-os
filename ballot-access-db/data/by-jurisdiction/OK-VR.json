@@ -1,0 +1,126 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "OK-VR",
+ "jurisdiction": "Oklahoma",
+ "abbr": "OK",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 57664,
+  "headline": "five per centum of the legal voters; 'The ratio and per centum of legal voters hereinbefore stated shall be based upon the total number votes cast at the last general election for the Office of Governor.' (Okla. Const. Art. V, Sec. 2)"
+ },
+ "deadline": {
+  "headline": "'All signed signatures supporting a referendum petition shall be filed with the Secretary of State not later than ninety (90) days after the adjournment of the legislative session in which the measure, which is the subject of the referendum petition, was enacted.' (34 O.S. Sec. 8.F as amended by SB 1027, 2025; see also Okla. Const. Art. V, Sec. 3 — 'not more than ninety (90) da"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "five per centum of the legal voters; 'The ratio and per centum of legal voters hereinbefore stated shall be based upon the total number votes cast at the last general election for the Office of Governor.' (Okla. Const. Art. V, Sec. 2)",
+   "confidence": 0.7,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "'All signed signatures supporting a referendum petition shall be filed with the Secretary of State not later than ninety (90) days after the adjournment of the legislative session in which the measure, which is the subject of the referendum petition, was enacted.' (34 O.S. Sec. 8.F as amended by SB 1027, 2025; see also Okla. Const. Art. V, Sec. 3 — 'not more than ninety (90) da"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Per-county cap (SB 1027, 2025): signatures from a single county may not exceed eleven and five-tenths percent (11.5%) of the number of votes cast in that county during the most recent statewide general election for Governor."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Veto referendum is filed against an existing act 'against one or more items, sections, or parts of any act' (Art. V, Sec. 4); no separate single-subject petition rule beyond the act being referred."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Per-signature pay for petition circulators is EXPRESSLY BANNED for both initiatives and referendums. 34 O.S. Sec. 8.G.1 (as amended by SB 1027, 2025): 'No compensation shall be based on number of signatures collected, number of signature sheets submitted, or any other similar incentives.' The same provision adds an out-of-state funding/compensation ban: 'No person or entity who",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Free (no charge). \"The Secretary of the State Election Board shall ensure that an electronic copy of the statewide voter registration list is made available, at no cost\" via the OK Election Data Warehouse (EDW). No per-record or admin fee.",
+  "whoCanObtain": "Eligibility-gated (effective Nov. 1, 2025, per 26 O.S. § 7-103.2). Full access to the voter registration list is limited to: bona fide Oklahoma residents who are U.S. citizens; official representatives of recognized Oklahoma political parties; candidates for Oklahoma office and their official representatives; or other persons authorized by state law. A political campaign/committee qualifies as a candidate's representative. (Non-qualifying requesters may get only \"basic\" EDW access, which excludes voter registration lists.)",
+  "useRestrictions": "Yes. Requestor must acknowledge it is unlawful to use the voter registration list for commercial marketing or advertising purposes (this restriction does not apply to campaigns, political parties, government officials, or public opinion pollsters), and that it is unlawful to knowingly make the Oklahoma voter list available to a foreign national, foreign commercial interest, or foreign government entity. The eligibility attestation is made under penalty of perjury. Driver license and SSN are never released; Restricted Records / Address Confidentiality Program participants are excluded.",
+  "requestProcess": "Application form + approval. Submit the \"Request to Access Voter Registration List\" form to info@elections.ok.gov (or by fax 405-521-6457 / mail). The form requires attestation \"under penalty of perjury\" that the requestor meets the legal requirements, plus a signed acknowledgment of the use restrictions. After processing, an automated email provides a link, username, and password to download the statewide CSV from the EDW. Access is valid for one year and renewable.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://oklahoma.gov/elections/candidates/voter-registration-list.html",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Current-cycle (2026) VALID signature requirements computed from the most recent gubernatorial base (2022 general election, 1,153,284 votes cast for Governor): initiated constitutional amendment 15% = 172,993; initiated statute 8% = 92,263; veto/popular referendum 5% = 57,664. All three match Ballotpedia's 2026 figures and recompute from the verbatim Art. V, Sec. 2 formula. The signature base will reset after the November 2026 gubernatorial general election for any petition wh"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis / hasCitizenInitiative",
+   "url": "https://ballotpedia.org/Article_V,_Oklahoma_Constitution",
+   "quote": "The first power reserved by the people is the initiative, and eight per centum of the legal voters shall have the right to propose any legislative measure, and fifteen per centum of the legal voters shall have the right to propose amendments to the Constitution by petition, and every such petition shall include the full text of the measure so proposed. The second power is the referendum, and it may be ordered (except as to laws necessary for the immediate preservation of the public peace, health, or safety), either by petition signed by five per centum of the legal voters or by the Legislature as other bills are enacted. The ratio and per centum of legal voters hereinbefore stated shall be based upon the total number votes cast at the last general election for the Office of Governor."
+  },
+  {
+   "field": "deadline (referendum) / procedure",
+   "url": "https://ballotpedia.org/Article_V,_Oklahoma_Constitution",
+   "quote": "Referendum petitions shall be filed with the Secretary of State not more than ninety (90) days after the final adjournment of the session of the Legislature which passed the bill on which the referendum is demanded. ... Petitions and orders for the initiative and for the referendum shall be filed with the Secretary of State and addressed to the Governor of the state, who shall submit the same to the people."
+  },
+  {
+   "field": "re-attempt limit",
+   "url": "https://ballotpedia.org/Article_V,_Oklahoma_Constitution",
+   "quote": "Text of Section 6:  Subsequent Proposal of Rejected Measure   Any measure rejected by the people, through the powers of the initiative and referendum, cannot be again proposed by the initiative within three years thereafter by less than twenty-five per centum of the legal voters."
+  },
+  {
+   "field": "signatureRequirement (2026 figures)",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Oklahoma",
+   "quote": "| **2026** | 172,993 | 92,263 | 57,664 | ... initiated constitutional amendment (ICA): 15% of the votes cast for governor ... initiated state statute (ISS): 8% of the votes cast for governor ... veto referendum (VR): 5% of the votes cast for governor"
+  },
+  {
+   "field": "signatureBasis base year (2022 governor votes)",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Oklahoma",
+   "quote": "| 2022 | 1,153,284 | ... In Oklahoma, the number of signatures needed to place a measure on the ballot is based on the total number of votes cast for the governor in the preceding election."
+  },
+  {
+   "field": "distribution (per-county caps)",
+   "url": "https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/SB/SB1027%20ENR.PDF",
+   "quote": "H. 1. The total number of signatures collected to meet the requirements for an initiative petition or referendum petition, amending the Oklahoma Statutes, from a single county shall not exceed eleven and five-tenths percent (11.5%) of the number of votes cast in that county during the most recent statewide general election for Governor. ... 2. The total number of signatures collected ... amending the Oklahoma Constitution, from a single county shall not exceed twenty and eight-tenths percent (20.8%) of the number of votes cast in that county during the most recent statewide general election for Governor."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/SB/SB1027%20ENR.PDF",
+   "quote": "Any person who circulates the petition to collect signatures shall be a registered voter in this state and shall display a conspicuous notice in any location where the person is collecting signatures whether the person is being paid to circulate the petition and if so, by what person or entity. ... I ... say: That I am at least eighteen (18) years old, a registered voter of this state, and that all signatures on the signature sheet were signed in my presence"
+  },
+  {
+   "field": "perSignaturePayAllowed (banned) + out-of-state funding ban",
+   "url": "https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/SB/SB1027%20ENR.PDF",
+   "quote": "G. 1. Any person who circulates the petition to collect signatures shall disclose to the Secretary of State any employer or entity that is compensating the person for the circulation of the petition. No compensation shall be based on number of signatures collected, number of signature sheets submitted, or any other similar incentives. No person or entity who does not reside or do business in this state shall contribute to or compensate a person for circulation of a petition."
+  },
+  {
+   "field": "perSignaturePayAllowed (corroboration)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Oklahoma",
+   "quote": "Pay-per-signature ... Oklahoma prohibits compensation based on the number of signatures collected, the number of petition sheets submitted, \"or any other similar incentives.\" ... Out-of-state circulators ... Oklahoma requires that signature gatherers be registered voters of the state. In 2025, the legislature enacted this requirement."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Oklahoma",
+   "quote": "Oklahoma has a single-subject rule for both initiated statutes and initiated amendments. However, the language of each requirement could be construed as applying only to legislative acts and legislatively referred constitutional amendments. Court cases concering proposed citizen initiatives, however, clarified that the requirement also applied to citizen-initiated measures."
+  },
+  {
+   "field": "statusNote (SB 1027 enactment / emergency / scope)",
+   "url": "https://www.oklegislature.gov/cf_pdf/2025-26%20ENR/SB/SB1027%20ENR.PDF",
+   "quote": "An Act relating to initiative and referendum; amending 34 O.S. 2021, Sections 3, 6, 8 ... which relate to signatures for petitions and ballot title ... adding qualification for persons circulating petition for signatures ... establishing requirements for certain contributions or compensation ... declaring an emergency. ... It being immediately necessary for the preservation of the public peace, health or safety, an emergency is hereby declared to exist, by reason whereof this act shall take effect and be in full force from and after its passage and approval."
+  },
+  {
+   "field": "deadline (initiative 90-day circulation / SoS-set date)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Oklahoma",
+   "quote": "In Oklahoma, proponents may circulate a petition for a period of 90 days. For initiatives, the 90-day period for circulation begins on a day set by the secretary of state between 15 and 30 days after all challenges to the initiative petition are finalized. For referendums, signatures are due 90 days after the adjournment of the legislative session in which the targeted law was passed."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

@@ -1,0 +1,214 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "ID",
+ "jurisdiction": "Idaho",
+ "abbr": "ID",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 1000,
+  "headline": "1,000 sigs statewide (flat statutory #, not %) — no distribution requirement"
+ },
+ "deadline": {
+  "headline": "Declaration + petition due Aug 1; sigs verified & SoS certifies by Sep 1"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "1,000 signatures of qualified electors — a flat statewide number fixed by I.C. 34-708A(1), not a percentage formula. One petition with 1,000 signatures covers both president and vice president (treated as one office). Does not recompute per cycle.",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "All three quotes verified verbatim. I.C. 34-708A(1): 'a petition signed by one thousand (1,000) qualified electors'; 34-708A(2): president/VP are 'one (1) office, and only one (1) such petition need be filed.' Independently corroborated by I.C. 34-708(2)(a) ('One thousand (1,000) for any statewide office') and Ballotpedia ('At least 1,000 qualified voters'). Current as of Jan 1, 2024. No distribution/percentage element. Correct and unambiguous."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Declaration of candidacy with attached 1,000-signature petition must be filed with the Secretary of State no later than August 1 of the election year (I.C. 34-708A(1)). Signatures verified no later than September 1, and SoS certifies candidate qualifications no later than September 1 (I.C. 34-708A(3)). Date is fixed in statute, not recomputed per cycle.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Verbatim: 'must file declarations of candidacy as independent candidates no later than August 1' and 'Signatures on the petitions...shall be verified no later than September 1...The secretary of state shall certify candidate qualifications no later than September 1.' Ballotpedia agrees ('on or before August 1'). The Aug 1 filing date is the controlling, candidate-facing deadline; the two Sep 1 dates are administrative (verification + certification). Correct."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. The 1,000 signatures are a single statewide total with no geographic distribution requirement (no per-congressional-district or per-county minimums).",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "I.C. 34-708A(1) requires only 'a petition signed by one thousand (1,000) qualified electors' with no distribution language; 34-708 (statewide office) likewise sets a flat 1,000 with no distribution. The county-clerk certificate in 34-1807(4) references 'Legislative District Number' only as a verification/sorting mechanic — it is not a per-district quota. Adversarial check found no distribution requirement in either statute. Correct."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "For the independent presidential petition, circulators are NOT required to be Idaho residents (explicit carve-out, I.C. 34-708A(3)). STRICTEST POSTURE pending SoS confirmation: comply with the full 34-1807 circulator regime EXCEPT residency — i.e., assume circulators must be at least 18 (the incorporated affidavit form recites 'a resident of the State of Idaho and at least eighteen (18) years of age', residency waived but 18+ assumed to remain), and assume paid circulators must give the 34-1807(2) verbal/printed payment disclosure AND wear a 'paid petition circulator' badge. Signers must each be a qualified elector of Idaho and a resident of the county shown on the sheet.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Citations grounded verbatim. Adversarial finding: 34-1807's circulator-eligibility provisions are textually scoped to petitions 'for an initiative or referendum' — subsection (1) (18+/residency) and subsection (2) (paid-circulator disclosure + badge) both open with that phrase, and the void clauses (6),(8) reference 'initiative and referendum petitions.' 34-708A incorporates only the verification 'manner' and the affidavit 'form' (and explicitly waives residency). So whether the 18+ requirement and the paid-circulator badge/disclosure legally attach to a PRESIDENTIAL petition is a genuine interpretive question retrieval cannot settle. The draft asserts they do; that is plausible (the affidavit form itself recites 18+) but not certain for the badge/disclosure, which live outside the form. Held conservatively: comply with all of it (over-comply, zero ballot-access risk) and confirm with SoS."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Notarized circulator affidavit required on each signature sheet. The verification form incorporated by I.C. 34-708A(3) (the 34-1807(3) recall-petition form) contains a sworn circulator affidavit 'Subscribed and sworn to before me...Notary Public' with a notary seal block. In addition, the county clerk examines the sheets and attaches a certificate to the SoS certifying the signers are qualified electors (34-1807(4)). Both notarized circulator certification and county-clerk verification apply.",
+   "confidence": 0.85,
+   "interpretationRequired": false,
+   "note": "All quotes verified verbatim. The notary requirement flows directly from the affidavit FORM, which 34-708A(3) expressly incorporates ('on a form similar to that used for recall petitions...as prescribed by the secretary of state'), so the notarization is part of the incorporated form, not the initiative/referendum-only operative provisions. County-clerk examination (34-1807(4)) is part of the incorporated verification 'manner.' This is the stricter, ballot-access-safe reading; any residual ambiguity only adds verification rigor and does not risk the ballot line. Correct."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper — wet-ink signatures only. I.C. 34-1807(7): 'Any signature that is not a physical signature, including an electronic signature, is void.' No Idaho digital/remote/online petition system exists for an independent presidential petition; the prescribed recall-style paper form with notarized circulator affidavits and county-clerk verification is the only mechanism. No remote_online or in_person_digitized capture available.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "34-1807(7) verified verbatim. Notably, subsection (7) is NOT textually limited to 'initiative or referendum' (unlike subs 1, 2, 6, 8), and 34-708A verifies 'in the manner prescribed in section 34-1807,' so the wet-ink void applies. Even on the narrowest reading, paper/wet-ink is the strict, ballot-access-safe floor and there is no online alternative for this path. Over-complying with paper carries zero risk. Correct."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. No filing fee and no fee-in-lieu-of-signatures option for the independent presidential/VP path. The route under I.C. 34-708A is entirely petition-based (declaration + 1,000-signature petition); the statute specifies no fee, and 34-705 (where declarations are filed with the SoS) prescribes no fee for this filing.",
+   "confidence": 0.8,
+   "interpretationRequired": false,
+   "note": "Both quotes verified verbatim. 34-708A specifies no fee; 34-705 ('All candidates for district, state and federal offices shall file their declarations of candidacy with the secretary of state') prescribes no fee. This is an inference from statutory silence (proving a negative), but the petition path is the exclusive mechanism and no fee or fee-in-lieu option appears anywhere in 34-708A/34-708/34-705, consistent with Ballotpedia. The operationally safe posture is identical either way: complete the petition. Correct; minor residual uncertainty reflected in confidence."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "per-signature",
+  "circulatorResidency": "required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "$20 flat per report for the statewide \"Voter Registration Information\" list (or $20 for \"Voter Registration AND Voter History\"); Absentee Ballot Reports are $10. Verbatim: \"Voter Registration Information ($20/report)\", \"Voter Registration AND Voter History ($20/report)\", \"Absentee Ballot Report ($10/report)\". A separate generic public-records copy fee of 25¢/page applies to non-voter records, not to these reports.",
+  "whoCanObtain": "Effectively open to the public / any requesting party — the form has no candidate/committee/party eligibility gate. The requester must agree to the Idaho Code 34-437A(3) use restriction and certify the request under penalty (67-6624). The voter file may be used \"for any political purpose,\" so campaigns/committees clearly qualify. The form itself notes the requester's submitted info \"will become public record.\"",
+  "useRestrictions": "Anti-solicitation restriction applies. Per Idaho Code 34-437A(3) (quoted on the form): the list may not be used to mail/deliver any advertisement, offer, or solicitation for money/services/anything of value — i.e., no commercial mailing or telephone list use (also referenced via Idaho Code 74-120 on the public-records page). However, the statute expressly carves out political use: \"any such list and label may be used for any political purpose,\" which covers a campaign verifying petition signatures against registered voters. Requester signs a certification under Section 67-6624, Idaho Code, making misuse a sworn-statement violation.",
+  "requestProcess": "Online request form (no instant download; an SOS staff-fulfilled report). Submit the \"Voter Registration and Absentee Ballot Reports\" form at forms.sos.idaho.gov: choose scope (Statewide / Congressional District / Legislative District), report type (Voter Registration Information, or Voter Registration AND Voter History), then provide a signed Certification (\"Yes, I agree\" under Section 67-6624, Idaho Code) plus a printed name/signature and acknowledge the 34-437A(3) use prohibition. The report is delivered as a .CSV download link emailed to the requester. (\"Reports requested online will be provided in .CSV text format and made available as a download link sent to the email address you provide above.\")",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "Minimum age 18. The presidential independent petition statute, Idaho Code 34-708A(2), directs that signatures \"shall be verified ... in the manner prescribed in section 34-1807, Idaho Code ... except that the petition circulators are not required to be Idaho residents.\" Section 34-1807(1) provides that \"Any person who circulates any petition ... shall be a resident of the state of Idaho and at lea",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER: must be one of 1,000 \"qualified electors\" (i.e., registered Idaho voters) per 34-708A(1); the 34-1807 affidavit requires \"each signer is a qualified elector of the State of Idaho and a resident of the county.\" CIRCULATOR: must be at least 18 (34-1807(1), incorporated by 34-708A(2)); residency is EXPRESSLY waived for the presidential petition (\"the petition circulators are not required to b",
+  "gate": "AUTO-LIVE",
+  "note": "Idaho independent presidential petitions are governed by a DEDICATED statute, Idaho Code 34-708A (\"Independent candidates for president\"), which is distinct from the general independent-candidate statute (34-708) and the initiative statute (34-1807). 34-708A(2) cross-references the 34-1807 circulator/verification rules but EXPRESSLY waives the Idaho-residency requirement: \"except that the petition circulators are not required to be Idaho residents.\" So: (1) AGE - circulator must be at least 18 (",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Core numbers (1,000 sigs, Aug 1 deadline, no distribution, paper wet-ink, no fee) are statutorily grounded and AUTO-LIVE; the one open question is which 34-1807 circulator rules (paid-circulator badge/disclosure, 18+) legally attach to the presidential petition vs. only its non-resident carve-out — held conservatively, confirm with SoS."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-708/",
+   "quote": "Any person who desires to offer himself as an independent candidate for federal, state, district, or county office may do so by complying strictly with the provisions of this section. ... Each such declaration must be accompanied by a petition containing the following number of signatures of qualified electors: (a) One thousand (1,000) for any statewide office;"
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-708/",
+   "quote": "Signatures on the petitions required in this section shall be verified in the manner prescribed in section 34-1807, Idaho Code, on a form similar to that used for recall petitions under chapter 17, title 34, Idaho Code, as prescribed by the secretary of state."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-1807/",
+   "quote": "(1) Any person who circulates any petition for an initiative or referendum shall be a resident of the state of Idaho and at least eighteen (18) years of age."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-1807/",
+   "quote": "(2)(a) Any person who accepts payment to circulate a petition for an initiative or referendum shall, prior to accepting a signature: (i) Verbally notify any potential signatory that such person is accepting payment to gather signatures and provide the name of the person or entity providing payment to such person"
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-1807/",
+   "quote": "(6) Any petition on which signatures are obtained by a person not a resident of the state of Idaho and at least eighteen (18) years of age shall be void. The definition of resident in section 34-107, Idaho Code, shall apply to the circulators of initiative and referendum petitions."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Idaho",
+   "quote": "A petition circulator must be at least 18 years old and a resident of Idaho. The circulator must verify the signatures contained within the petition by affidavit, which must be signed by a notary public. Any petition upon which signatures are obtained from non-eligible individuals will be void."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+   "quote": "Voter Registration Information ($20/report)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+   "quote": "Voter Registration AND Voter History ($20/report)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+   "quote": "Absentee Ballot Report ($10/report)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+   "quote": "Reports requested online will be provided in .CSV text format and made available as a download link sent to the email address you provide above."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+   "quote": "Pursuant to Section 34-437A(3), Idaho Code: \"No person to whom a list of statewide electors is furnished and no person who acquires a list of statewide electors prepared from such list shall use any information contained therein for the purpose of mailing or delivering any advertisement or offer for any property, establishment, organization, product, or service or for the purpose of mailing or delivering any solicitation for money, services, or anything of value. Provided however, that any such list and label may be used for any political purpose.\""
+  },
+  {
+   "field": "voterFile",
+   "url": "https://forms.sos.idaho.gov/voter-registration-request-form/",
+   "quote": "I hereby certify that the above information is true, complete and correct in accordance with Section 67-6624, Idaho Code."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.idaho.gov/public-records-requests/",
+   "quote": "Voter Registration & Absentee Ballot Reports ... Please use the Voter Registration & Absentee Ballot request form."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.idaho.gov/public-records-requests/",
+   "quote": "Information requested may not be used for purposes of a mailing or telephone list, as prohibited by section 74-120, Idaho Code."
+  },
+  {
+   "field": "circulatorMustBeStateResident / circulatorAgeRule (governing presidential statute + residency carve-out)",
+   "url": "https://electionlawnavigator.org/state/idaho/statute/34-708A/",
+   "quote": "(1) Any person who desires to be an independent candidate for the office of president must file a declaration of candidacy as an independent candidate no later than August 1. Such declaration must state that such person is an independent candidate with no political party affiliation and shall have attached thereto a petition signed by one thousand (1,000) qualified electors. (2) Signatures on the petition required in this section shall be verified no later than September 1 in the manner prescribed in section 34-1807 , Idaho Code, on a form similar to that used for recall petitions under chapter 17, title 34, Idaho Code, as prescribed by the secretary of state, except that the petition circulators are not required to be Idaho residents."
+  },
+  {
+   "field": "circulatorMinAge / circulatorMustBeRegisteredVoter (incorporated 34-1807 baseline: resident + 18 only; residency waived by 34-708A, age retained)",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-1807/",
+   "quote": "(1) Any person who circulates any petition for an initiative or referendum shall be a resident of the state of Idaho and at least eighteen (18) years of age."
+  },
+  {
+   "field": "signerVsCirculator (affidavit shows 'qualified elector' binds the SIGNER, not the circulator)",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-1807/",
+   "quote": "I,...., being first duly sworn, say that I am a resident of the State of Idaho and at least eighteen (18) years of age; ... that every person who signed this sheet of the foregoing petition signed his or her name thereto in my presence; ... and that each signer is a qualified elector of the State of Idaho and a resident of the county of....."
+  },
+  {
+   "field": "general independent-candidate statute (34-708) vs presidential (34-708A) — signers must be 'qualified electors'",
+   "url": "https://codes.findlaw.com/id/title-34-elections/id-st-sect-34-708/",
+   "quote": "Each such declaration must be accompanied by a petition containing the following number of signatures of qualified electors: (a) One thousand (1,000) for any statewide office ... (3) Signatures on the petitions required in this section shall be verified in the manner prescribed in section 34-1807, Idaho Code, on a form similar to that used for recall petitions under chapter 17, title 34, Idaho Code, as prescribed by the secretary of state."
+  },
+  {
+   "field": "circulator-residency waiver preserved through 2025/2026 amendments (legislative redline)",
+   "url": "https://electionlawnavigator.org/state/idaho/statute/34-708A/prior-version/2026-04-14/",
+   "quote": "Signatures on the [petitions] petition required in this section shall be verified no later than September 1 in the manner prescribed in section 34-1807 , Idaho Code, on a form similar to that used for recall petitions under chapter 17, title 34, Idaho Code, as prescribed by the secretary of state [;] , except that the petition circulators are not required to be Idaho residents."
+  },
+  {
+   "field": "SoS guidance reciting the generic 34-1807 baseline (resident + 18) that the 34-708A presidential carve-out overrides on residency",
+   "url": "https://sos.idaho.gov/elections-division/guidelines-for-initiative-petition-circulators/",
+   "quote": "Circulator shall be a resident of the State of Idaho and at least 18 years of age. (34-1807 I.C.)"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

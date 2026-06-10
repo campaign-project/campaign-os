@@ -1,0 +1,184 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "IL",
+ "jurisdiction": "Illinois",
+ "abbr": "IL",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 25000,
+  "headline": "25,000 valid sigs (1% of last statewide vote or 25,000, whichever is less; 25,000 binds — collect a large cushion)"
+ },
+ "deadline": {
+  "headline": "~Late June of election year: 134 days before the general (2024 = June 24); SBE filing window 141-134 days out"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "1% of the number of voters who voted in the next preceding statewide general election OR 25,000 qualified Illinois voters, whichever is less. Recomputes per cycle; because 1% of statewide turnout (~60,000 in 2024 based on ~6M turnout) vastly exceeds 25,000, the 25,000 ceiling is the binding figure and has controlled every presidential cycle for decades. Practical requirement: 25,000 valid signatures of qualified Illinois voters — collect a substantial cushion above 25,000 to survive invalidation/challenge.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "FindLaw 10-3 and NASS quotes verify verbatim (NASS via PDF text extract, OCR line breaks only). Re-derived: IL 2020/2022 statewide turnout is several million, so 1% is far above 25,000 and the lesser figure (25,000) binds. Value correctly preserves the per-cycle recomputation. Strict caveat retained: 25,000 is the floor of VALID signatures; gather well above to absorb challenges."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Statutory rule: file with the Illinois State Board of Elections not less than 134 and not more than 141 days before the general election (10 ILCS 5/10-6). This computes to ~late June of the election year and RECOMPUTES each cycle. For the most recent cycle (2024 general, Nov. 5, 2024) the SBE filing window was June 17-24, 2024, with the deadline Monday, June 24, 2024 at 5:00 p.m. Do NOT reuse the June 24, 2024 date for a future cycle — re-derive from the 134/141-day rule against the specific election date.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Triple-corroborated: Ballotpedia (141/134-day quote verbatim, line 232), NASS ('no less than 134 prior' verbatim), ballot-access.org ('June 24 is the Illinois petition deadline' verbatim), and IL Candidate Guide ('Not more than 141 nor less than 134 days... 10 ILCS 5/10-6'; window 'June 17 - June 24, 2024'). Value is correct as a rule; the cycle-specific 2024 date is accurate but transient — reliedValue foregrounds the recomputing rule."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. President is a statewide/at-large office; signatures are counted 'in the aggregate' across the state with no per-congressional-district, per-county, or geographic-distribution requirement. The 5,000-per-district floor in 10 ILCS 5/10-3 applies only to district offices (e.g., congressperson after redistricting), not to the statewide presidential petition.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "FindLaw 10-3 quote ('for any office to be filled by the voters of the State at large... in the aggregate') verifies verbatim. Re-derived from full statute text: the district/subdivision 5%-8% and 5,000-signature provisions are expressly tied to district/political-subdivision offices, not at-large offices. No distribution rule applies to President."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "AUTO-LIVE",
+   "value": "Circulator must be at least 18 (or will be 18 by the upcoming general election) and a U.S. citizen; may be from outside the district, county, or state (no Illinois residency required). A circulator may NOT mix petition types: cannot circulate for an independent candidate in addition to a new-party candidate, cannot circulate for more than one new party, and cannot circulate for an established party plus an independent/new party (10 ILCS 5/10-4; Schober v. Young, 322 Ill. App. 3d 996 (4th Dist. 2001)).",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "IL Candidate Guide quotes verify verbatim (guide lines 594-596: '18 years of age... can be from outside of the district, county, or state'; 'personally witness all signatures'). Mixing prohibitions confirmed at guide lines 631-648 ('A circulator may not circulate petitions for an independent candidate(s) in addition to candidates for a new political party', etc.). Out-of-state circulators are explicitly permitted by the current official guide."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Both required. The circulator must personally witness every signature and complete/sign the circulator's statement at the bottom of each sheet (certifying address, age, citizenship, and that signatures were given in their presence by registered voters); that circulator's statement must be sworn to and signed by a notary public. Separately, the candidate must swear/affirm and sign a Statement of Candidacy and have it notarized; the notarized Statement of Candidacy must accompany the nomination papers (attached at the front of the packet).",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "All four IL Candidate Guide quotes verify verbatim (guide line 596 'must personally witness all signatures'; line 618 'This statement shall be sworn to and signed by a notary'; lines 492-494 'must swear to or affirm... sign... have the statement notarized. The Statement of Candidacy must accompany the nomination papers'). Both the circulator certification and a separate notarization are required."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Original wet-ink signatures of voters AND the original signature of the circulator are required on physical petition sheets; photocopies or duplicates are not accepted (blank petitions may be photocopied before circulation, but the signer/circulator/notary signatures must all be original). There is NO digital, remote-online, or in-person-electronic signature system for an independent or new-party presidential petition — collection and filing are entirely paper-based with the State Board of Elections.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "IL Candidate Guide quotes verify verbatim (guide line 502 'contain the original signatures of the voters and the original signature of the circulator, and shall not be photocopies or duplicates'; line 607 'Blank nomination petitions may be reproduced prior to circulation. The signatures of the signers, circulator, and the notary public must be original'). Adversarial check: no source indicates any e-signature/online option for this route; the original-signature mandate forecloses it."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Operating assumption: NO filing fee and NO fee-in-lieu-of-signatures for the independent/new-party presidential petition — ballot access is by signature petition only. This is NOT positively confirmed by the cited sources (they describe the petition requirement but do not affirmatively state that no fee exists), so it must be confirmed with the State Board before relying on it. Strict reading: treat the petition as the sole access path, budget for no fee, but verify with SBE that no fee/deposit/bond applies and confirm whether a Statement of Economic Interests is required for the federal office.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Citation integrity PASSES: both quotes (NASS petition description and FindLaw 10-3) verify verbatim. But this is a NEGATIVE claim — 'no fee exists' — and the cited quotes only describe the signature/petition requirement; neither affirmatively states the absence of a fee or fee-in-lieu. Proof-of-a-negative gap: the IL Candidate Guide contains zero references to any filing fee or dollar amount for this route (strong corroboration the value is likely correct), but retrieval cannot positively establish an absence the sources never address. Strictest defensible posture = HOLD and confirm with SBE rather than treat the no-fee claim as verified."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$500 flat for the entire-state file (committee version). Sub-state files are cheaper per the published schedule (e.g., Congressional District $75, Senate District $30, Representative District $25, Cook County / City of Chicago $100 each; \"Others\" $25 minimum). The redacted PUBLIC (non-committee) file is instead priced at statutory \"cost of duplication plus a 15% fee for administration.\" Paid by electronic funds transfer (from the committee's own account); no application is processed without payment.",
+  "whoCanObtain": "For the full (unredacted, with-residential-address) file: registered State or local political committees, for bona fide political purposes (and governmental entities for a governmental purpose). The general public can only obtain a redacted version (street numbers, DOB, SSN, phone, partial email removed) and only for the limited purposes in the National Voter Registration Act, 52 U.S.C. 20507(i). The full statewide list may not be disclosed to anyone other than a State/local political committee or a governmental entity.",
+  "useRestrictions": "Political-use-only. Data \"shall be used only for bona fide political purposes\" and \"shall not be used under any circumstances for purposes of commercial solicitation or other business purposes.\" The application warns misuse \"may result in substantial penalty, including, but not limited to, conviction of a class 4 felony (10 ILCS 5/4-8, 5-7, 6-35).\" By statute (10 ILCS 5/1A-25(c)) records may not be used for any personal, private, or commercial purpose, including intimidation/threat/deception or advertising/solicitation/sale/marketing; SBE must deny requests from anyone under a court order finding a violation. Verifying petition signatures (matching signers to registered voters) is a bona fide political purpose for a committee.",
+  "requestProcess": "Written application: download the SBE \"Request for Voter Information\" form (Revised 07-07-2025), complete it, and submit by email to bpeterson@elections.il.gov for review; SBE then provides an electronic-payment link and the file is run after payment. Political committees must check a verification box and have the candidate, treasurer, or chair sign a sworn statement of permitted (bona fide political) use. Files are delivered encrypted and password-protected, with the password given only to the original requestor. This is a request-and-approval process, not an instant download.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.elections.il.gov/VotingAndRegistrationSystems/ComputerizedVoterData.aspx",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "The circulator must be at least 18. 10 ILCS 5/10-4 requires that the circulator's statement at the bottom of each petition sheet be \"signed by a person 18 years of age or older who is a citizen of the United States.\" This governs all nomination petitions under Article 10, including independent-candidate petitions filed under 10 ILCS 5/10-3 (which is how an independent presidential candidate qualif",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "yes",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNERS must be \"qualified voters\" / \"duly registered voters\" of the relevant political subdivision (the State, for a statewide/presidential candidate) and must sign in their own proper persons (10 ILCS 5/10-3, 10-4). The CIRCULATOR has a separate, looser standard: must be 18+ and a U.S. citizen, and merely certifies (to the best of his/her knowledge and belief) that the signers were duly register",
+  "gate": "AUTO-LIVE",
+  "note": "10 ILCS 5/10-4 (\"Form of petition for nomination\") applies to \"All petitions for nomination under this Article 10,\" and Article 10 is where independent candidates qualify (10 ILCS 5/10-3 governs nomination papers for independent candidates, including statewide candidates such as an independent presidential ticket via at-large signatures). The circulator requirement is stated affirmatively and explicitly: the circulator's statement must be \"signed by a person 18 years of age or older who is a cit",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "All 7 fields citation-grounded verbatim; 6 AUTO-LIVE, 1 CONSERVATIVE-HOLD (feeAlternative — cited sources do not affirmatively state \"no fee,\" so the absence-of-fee claim is unproven by retrieval even though IL has no known fee for this route)."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-10-4/",
+   "quote": "At the bottom of each sheet of such petition shall be added a circulator's statement, signed by a person 18 years of age or older who is a citizen of the United States; stating the street address or rural route number ... certifying that the signatures on that sheet of the petition were signed in his or her presence; certifying that the signatures are genuine ... Such statement shall be sworn to before some officer authorized to administer oaths in this State."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Illinois",
+   "quote": "Petition circulators must be U.S. citizens and at least 18 years old. An individual may not circulate petitions for more than one political party, established or new, or for more than one independent candidate. ... The circulator must personally witness the signing of all signatures and sign the circulator's statement on the petition attesting to that."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Pay-per-signature_for_ballot_initiative_signature_gatherers",
+   "quote": "Pay-per-signature is a method of compensating signature gatherers, also known as circulators, who collect signatures for ballot initiatives and veto referendums. ... There are 26 states that provide for an initiative or referendum process. Sixteen (16) of those states allowed campaigns to make payments to signature gatherers based on the number of signatures collected."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.elections.il.gov/VotingAndRegistrationSystems/ComputerizedVoterData.aspx",
+   "quote": "Voter data is available to registered political committees for bona fide political purposes. Use for commercial solicitation or other business purposes is prohibited. (10 ICLS 5/4-8, 5-7, 6-35). Voter data is also available for the limited purposes enumerated in the National Voter Registration Act. See 52 USC 20507."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.elections.il.gov/VotingAndRegistrationSystems/ComputerizedVoterData.aspx",
+   "quote": "Costs (Effective Jan. 22, 2008) | Entire state $500 | Supreme/Appellate District $100 | Cook County $100 | City of Chicago $100 | Congressional District $75 | Judicial Circuit (except Cook) $40 | Legislative (Senate) District $30 | Representative District $25 | Others ($25 minimum) Call"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.elections.il.gov/VotingAndRegistrationSystems/ComputerizedVoterData.aspx",
+   "quote": "Files of computerized voter registration data are available. The Board offers two file formats that are tailored to the information needs and processing capabilities of those requesting voter data. (Date of Birth is no longer provided.)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-1a-25/",
+   "quote": "the disclosure of any portion of the centralized statewide voter registration list to any person or entity other than to a State or local political committee and other than to a governmental entity for a governmental purpose is specifically prohibited except as follows"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-1a-25/",
+   "quote": "the State Board of Elections shall make available to the public the statewide voter registration list, allowing for redaction of telephone numbers, social security numbers, street numbers of home addresses, birth dates, identifiable portions of email addresses, and other highly sensitive personal information. Information released under this subsection shall be used only for the purposes defined within the federal National Voter Registration Act, 52 U.S.C. 20507(i) ... The State Board of Elections may charge a reasonable fee under this subsection, consisting of the cost of duplication plus a 15% fee for administration."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-1a-25/",
+   "quote": "Voter registration records or data shall not be used for any personal, private, or commercial purpose, including, but not limited to, the intimidation, threat, or deception of any person or the advertising, solicitation, sale, or marketing of products or services."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / circulatorMustBeUSCitizen / minorCanCirculate",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-10-4/",
+   "quote": "At the bottom of each sheet of such petition shall be added a circulator's statement, signed by a person 18 years of age or older who is a citizen of the United States; stating the street address or rural route number, as the case may be, as well as the county, city, village or town, and state; certifying that the signatures on that sheet of the petition were signed in his or her presence; certifying that the signatures are genuine"
+  },
+  {
+   "field": "signerVsCirculator / circulatorMustBeRegisteredVoter (signer requirement, not circulator)",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-10-4/",
+   "quote": "Such petition shall be signed by the qualified voters in their own proper persons only ... and certifying that to the best of his knowledge and belief the persons so signing were at the time of signing the petition duly registered voters under Article 4, 5, or 6 of this Code of the political subdivision or district for which the candidate or candidates shall be nominated"
+  },
+  {
+   "field": "circulatorMustBeStateResident (circulator states own address, no in-state requirement)",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-10-4/",
+   "quote": "a circulator's statement, signed by a person 18 years of age or older who is a citizen of the United States; stating the street address or rural route number, as the case may be, as well as the county, city, village or town, and state"
+  },
+  {
+   "field": "scope — 10-4 applies to independent petitions under Article 10",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-10-4/",
+   "quote": "All petitions for nomination under this Article 10 for candidates for public office in this State, shall in addition to other requirements provided by law, be as follows"
+  },
+  {
+   "field": "independent candidate nomination by qualified voters (signer standard, statewide)",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-10-3/",
+   "quote": "Nomination of independent candidates (not candidates of any political party), for any office to be filled by the voters of the State at large may also be made by nomination papers signed in the aggregate for each candidate by 1% of the number of voters who voted in the next preceding Statewide general election or 25,000 qualified voters of the State, whichever is less."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

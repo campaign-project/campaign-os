@@ -1,0 +1,204 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "ME",
+ "jurisdiction": "Maine",
+ "abbr": "ME",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 4000,
+  "headline": "4,000-5,000 registered Maine voters (presidential-elector slate); any Maine voter may sign; no distribution rule — AUTO-LIVE"
+ },
+ "deadline": {
+  "headline": "CONSERVATIVE-HOLD: statute says July 25 cert / Aug 1 SOS for presidential electors, but Ballotpedia says May 25 / June 1 — treat EARLIER dates (May 25 / June 1) as the safe-harbor; signing not before Jan 1"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "At least 4,000 and not more than 5,000 registered Maine voters for the slate of presidential electors (21-A MRS sec 354(5)(A)); petitions for presidential electors may be signed by any Maine voter statewide (sec 354(2)). Flat statutory range, not a percentage of turnout.",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim at sec 354(5)(A) ('For a slate of candidates for the office of presidential elector, at least 4,000 and not more than 5,000 voters') and sec 354(2) ('except that nomination petitions for presidential electors may be signed by any Maine voter'); Ballotpedia quote also present verbatim. Current per PL 2021 c.273. Independently re-derived from the controlling statute; no refutation found. The 2026 SOS Candidate's Guide omits presidential electors because 2026 is a non-presidential midterm, so the statute is the controlling source for the figure."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICTEST/SAFE-HARBOR: deliver petitions to the municipal registrar for certification by 5 p.m. on May 25 and file with the Secretary of State by 5 p.m. on June 1 of the election year (the earlier of the two conflicting authorities — meeting these also satisfies the statute's later presidential-elector dates). Signatures may not be collected before January 1 of the election year (sec 354(6)). The statute (sec 354(7)(B), (8-A)) on its face provides a later presidential-elector carve-out of July 25 cert / August 1 SOS filing, but DO NOT rely on the later dates without SOS written confirmation.",
+   "confidence": 0.55,
+   "interpretationRequired": true,
+   "note": "All three statutory quotes grounded verbatim: sec 354(7)(B) July 25 carve-out, sec 354(8-A) August 1 carve-out, sec 354(6) Jan 1 signing floor. ADVERSARIAL CONFLICT: Ballotpedia's general-election 'Independent candidates' section states for an independent presidential candidate that signatures go to registrars by 5 p.m. May 25 and to the SOS by 5 p.m. June 1 — directly contradicting the draft's July 25/Aug 1. The statute is controlling and its carve-out expressly names 'a slate of candidates for the office of presidential elector,' which matches this access path, so the draft's legal reading is likely correct. But which deadline a candidate must actually meet hinges on a legal interpretation (whether the sec 354 presidential-elector carve-out governs the independent presidential petition), the 2026 SOS guide is silent (non-presidential year), and the downside of error is loss of ballot access — so under strictest-interpretation rules the relied value is the earlier safe-harbor date, pending SOS confirmation. Jan 1 signing floor is clean."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. No geographic distribution requirement (no per-congressional-district or per-county minimum); presidential-elector petitions may be signed by any Maine voter statewide (21-A MRS sec 354(2)).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim at sec 354(2). Independently re-derived: sec 354 imposes signature COUNT requirements (sec 354(5)) but no distribution/allocation requirement, and the only geographic qualifier (electoral-division residency of signers) is expressly waived for presidential electors. No refuting provision found."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICTEST: do not assume non-resident or non-registered-voter circulators are permitted. Safest practice is to use circulators who are Maine residents AND registered Maine voters. The statute (sec 354(7)(A)) affirmatively requires only that the circulator personally witness all signatures and swear the notarized oath; it imposes no express age/residency/voter requirement, and Ballotpedia states the circulator need not be a Maine resident — but this is a negative inference from statutory silence and should be confirmed with the SOS before relying on out-of-state or non-voter circulators.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Grounded verbatim: Ballotpedia 'The petition circulator does not have to be a Maine resident...' and sec 354(7)(A) oath language both present. The draft's claim that NO residency/voter requirement applies rests on statutory silence (sec 354 does not affirmatively state circulators may be non-voters; it simply omits the requirement) plus a contrast with the sec 903-A initiative rule. That negative inference is a legal interpretation retrieval cannot conclusively settle, and a wrong assumption can void every signature a disqualified circulator collected. Ballotpedia supports the non-residency reading, but under strictest-interpretation + catastrophic-downside this is a CONSERVATIVE-HOLD pending SOS confirmation."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Notarized circulator certification required: each nomination petition must carry the circulator's oath/affirmation before a notary public (or other authorized officer) that the circulator personally witnessed all signatures and that each signature is genuine and each signer resides in the named electoral division (21-A MRS sec 354(7)(A)). Separately, the candidate's consent must be sworn before a notary (sec 355(3)).",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim at sec 354(7)(A) (circulator oath before a notary) and sec 355(3) ('The candidate must verify by oath or affirmation before a notary public... that the declaration is true'). Independently confirmed from primary text; both a circulator notarization and a candidate-consent notarization are required. No refutation."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper / in-person (wet-ink). Petitions must be on SOS-provided forms (sec 354), signers must personally sign in a manner satisfying the registrar (sec 354(3)), and the 2026 SOS forms must be printed double-sided on 8.5 x 14 legal paper. No online/remote or digitized signature-collection system exists for candidate nomination petitions.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim: sec 354 'A nomination petition shall be on a form provided by the Secretary of State'; sec 354(3) personal-signature language; and the SOS 'Becoming a Candidate' page 'Petitions must be printed double-sided on 8.5 x 14 inch (legal size) paper.' (markdown bold markers in the fetch are rendering artifacts, not page text). Wet-ink paper, circulator-witnessed, registrar-certified. No e-petition path for candidate access found."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. There is no filing fee in lieu of, or in addition to, signatures for an independent/non-party candidate. Ballot access is by nomination petition (4,000-5,000 signatures) plus the consent form only (21-A MRS sec 353).",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim at sec 353 ('A person who seeks nomination by petition qualifies by filing a nomination petition and consent as provided in sections 354 and 355'). This is a negative finding from the controlling qualifying statute, which lists only petition + consent and references no fee; sec 354/355 likewise reference no fee. A fee alternative either exists in statute or it does not — it does not — so this is a factual negative, not a contestable legal interpretation. Well-corroborated; no fee option found in the controlling statutes."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Electronic file priced by record count (tiered): $11 for 1-1,000 records up to $2,200 for 900,001+ records. A full statewide file (Maine has ~1M+ registered voters) falls in the top tier = $2,200. Printed/PDF report: $1 first page + 25 cents/additional page ($0.75/page for mailing labels). Up to 11 free updates in the 12 months after purchase.",
+  "whoCanObtain": "Eligibility-gated and political-use-only. The Party/Campaign Use Voter File (21-A MRS §196-A(1)(B)) is available to parties, candidates, issue campaigns, GOTV efforts directly related to a campaign, and currently-serving elected/appointed officials. The requestor must submit proof they are authorized by the candidate, party, or issue campaign (e.g., an authorization letter). Members of the public may obtain the same file only via a written request to the Secretary of State for a purpose protected by the NVRA. Default CVR data is otherwise confidential, accessible only by state/municipal election officials.",
+  "useRestrictions": "Strict. Information from the CVR may not be used for any commercial purpose or any solicitation not directly related to political-party/campaign/GOTV activities (or NVRA-protected purposes); selling or distributing the data to others for commercial use is prohibited; officials may not transfer their copy to another entity. Discrimination on the basis of disability, race, color, age, sex, sexual orientation, religion, ancestry, or national origin using the data is prohibited. Civil penalties: up to $1,000 for a first offense and up to $5,000 for each subsequent offense (21-A MRS §196-A, sub-§5).",
+  "requestProcess": "Application form + payment + proof of authorization. The \"Request for Obtaining Data from Maine CVR\" form must be typed or completed in ink, signed, and submitted to the Secretary of State (Division of Elections) by mail (CVR Manager, 184 State House Station, Augusta, ME 04333-0184), fax (287-6545), or scanned email to cec.elections@maine.gov (must contain an actual handwritten signature). Campaign requestors must attach written proof of authorization from the candidate/party/campaign. Fees must be paid before data release. Office responds within 5 business days. Electronic data is delivered on physical media (thumb drive); email transfer of the data is not permitted.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.maine.gov/sos/elections-voting/voter-data",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — 21-A MRSA §354 imposes NO minimum age on the circulator. The age/voter requirements in §354(2)-(3) bind the SIGNER (\"voter\"), not the circulator. The circulator's only statutory duty (§354(7)(A)) is to swear a notarized oath that they personally witnessed every signature. Practical caveat: because the circulator must execute an oath/affirmation before a notary publi",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER must be a registered voter of the electoral division (for an independent presidential elector slate, \"any Maine voter\") per §354(2)-(3); the CIRCULATOR has NO voter-registration, residency, or stated age requirement — the circulator's sole obligation (§354(7)(A)) is to personally witness the signatures and swear a notarized oath. Maine SoS guidance (per Ballotpedia) affirmatively states the",
+  "gate": "AUTO-LIVE",
+  "note": "21-A MRSA §354 places the strict eligibility rules on the SIGNER, not the circulator. §354(2) \"By whom signed\" requires signers to be voters of the electoral division, \"except that nomination petitions for presidential electors may be signed by any Maine voter.\" The circulator's only statutory burden is in §354(7)(A): verify by oath/affirmation before a notary that the circulator personally witnessed all signatures and that each signer is a resident of the electoral division. The statute imposes",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Two genuine interpretation risks need SOS confirmation before relying live: (1) the presidential-elector filing deadline (statute carve-out July 25/Aug 1 vs. Ballotpedia's May 25/June 1 for independents) — file by the earlier dates to be safe; (2) circulator eligibility (statute is silent, so do not assume non-resident/non-voter circulators are allowed — use Maine resident registered voters). All seven citations grounded verbatim; 2028 is the next presidential year (the 2026 SOS guide is a non-presidential midterm and omits the elector deadlines/figures, so the statute controls)."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://legislature.maine.gov/statutes/21-a/title21-Asec354.html",
+   "quote": "§354. Petition requirements ... 7. Certification of petitions. ... A. The circulator of a nomination petition shall verify by oath or affirmation before a notary public or other person authorized by law to administer oaths or affirmations that the circulator personally witnessed all of the signatures to the petition and that to the best of the circulator's knowledge and belief each signature is the signature of the person whose name it purports to be ... and each person is a resident of the electoral division named in the petition."
+  },
+  {
+   "field": "compensation",
+   "url": "https://legislature.maine.gov/statutes/21-a/title21-Asec354.html",
+   "quote": "B. The names of presidential electors must be placed on the petition as a slate. The names of the candidates for President and Vice President must be placed on a petition for the nomination of presidential electors."
+  },
+  {
+   "field": "compensation",
+   "url": "https://legislature.maine.gov/statutes/21-a/title21-Asec903-A.html",
+   "quote": "5. Circulator payment. A person or organization that pays individuals to circulate petitions, other than by reimbursing travel expenses, shall provide a list of those individuals to the Secretary of State along with information indicating the method by which the individuals are being compensated when the petitions are filed pursuant to the Constitution of Maine, Article IV, Part Third, Section 17 or 18."
+  },
+  {
+   "field": "compensation",
+   "url": "https://legislature.maine.gov/statutes/21-a/title21-Asec903-A.html",
+   "quote": "4. Circulator affidavit. A person who circulates a petition shall execute an affidavit that must include: ... C. That the circulator was a resident of the State and a registered voter in the State at the time of circulating the petition"
+  },
+  {
+   "field": "compensation",
+   "url": "https://legislature.maine.gov/statutes/21-a/title21-Asec903-A.html",
+   "quote": "Title 21-A: ELECTIONS Chapter 11: BALLOT QUESTIONS ... §903-A. Circulation ... An applicant for a direct initiative or a people's veto referendum pursuant to section 901 shall provide to each person who will be circulating petitions a copy of the laws and rules governing the circulation of petitions for a direct initiative or people's veto"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/MAR24-20rev321-20Fact-20Sheet-20on-20Obtaining-20Data-20from-20CVR.doc",
+   "quote": "Title 21-A, (Elections), §196-A, governs the use and distribution of information from Maine's Central Voter Registration (CVR) system. Under this law, information contained electronically in the CVR and any information or reports generated by the system are confidential, and may be accessed only by state election officials or municipal election officials for the purposes of election and voter registration administration, except as otherwise provided in Title 21-A §196-A"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/MAR24-20rev321-20Fact-20Sheet-20on-20Obtaining-20Data-20from-20CVR.doc",
+   "quote": "Section 1- Party/Campaign Use Voter File – §196-A(1)(B) ... Available for party activities, candidate and issue campaigns, \"get-out-the-vote\" activities related directly to a campaign ... Contains the following data: voter's name, residence & mailing address, year of birth, enrollment status, electoral districts, voter status, date of registration, date of change, voter record #, voter participation history and special designations"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/MAR24-20rev321-20Fact-20Sheet-20on-20Obtaining-20Data-20from-20CVR.doc",
+   "quote": "Requestor must provide proof with the application that they are authorized by either the candidate or campaign to request the data (i.e., letter or other written correspondence authorized by the party, candidate or issue campaign)."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/MAR24-20rev321-20Fact-20Sheet-20on-20Obtaining-20Data-20from-20CVR.doc",
+   "quote": "Cost per number of records in the requested electronic file: For 900,001 or more records, $2,200; ... For 1,001 to 7,500 records, $22; or For 1 to 1,000 records, $11."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/MAR24-20rev321-20Fact-20Sheet-20on-20Obtaining-20Data-20from-20CVR.doc",
+   "quote": "Information obtained from the CVR may not be used for any commercial purpose or for solicitation of any kind not directly related to activities of a political party, so-called \"get out the vote\" efforts directly related to a campaign or other activities directly related to a campaign. Selling or distributing the information to others to use for commercial purposes is prohibited."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/MAR24-20rev321-20Fact-20Sheet-20on-20Obtaining-20Data-20from-20CVR.doc",
+   "quote": "Civil Penalties for violations of the CVR data use restrictions are set forth in 21-A MRS §196-A, sub-§5, and include fines of up to $1,000 for a first offense and up to $5,000 for each subsequent offense."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/sites/maine.gov.sos/files/content/assets/MAR24-20rev321-20Fact-20Sheet-20on-20Obtaining-20Data-20from-20CVR.doc",
+   "quote": "Municipal Clerks and Registrars, and the Secretary of State's Office, shall respond to all requests for information within 5 business days of receipt of the completed request form and payment of any applicable fees."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.maine.gov/sos/elections-voting/voter-data",
+   "quote": "Central Voter Registration System (CVR) ... CVR Data Request Form Facts and Instructions (Word) ... Request Form for Obtaining Data from CVR (PDF)"
+  },
+  {
+   "field": "signerVsCirculator / circulatorMustBeRegisteredVoter",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec354.html",
+   "quote": "2. By whom signed. A nomination petition may be signed only by voters of the electoral division which is to make the nomination, except that nomination petitions for presidential electors may be signed by any Maine voter. Other signatures are void."
+  },
+  {
+   "field": "circulatorAgeRule / circulator obligations (only duty is notarized witness oath)",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec354.html",
+   "quote": "A. The circulator of a nomination petition shall verify by oath or affirmation before a notary public or other person authorized by law to administer oaths or affirmations that the circulator personally witnessed all of the signatures to the petition and that to the best of the circulator's knowledge and belief each signature is the signature of the person whose name it purports to be; ... and each person is a resident of the electoral division named in the petition."
+  },
+  {
+   "field": "circulatorMustBeStateResident",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Maine",
+   "quote": "The petition circulator does not have to be a Maine resident. The circulator must verify before a notary public that he or she personally witnessed each signature made to the petition and that to the best of the circulator's knowledge each signature is valid."
+  },
+  {
+   "field": "signer registration check (binds signer names, not circulator)",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec354.html",
+   "quote": "C. The registrar, or clerk at the request or upon the absence of the registrar, of each municipality concerned shall certify which names on a petition appear in the central voter registration system as registered voters in that municipality and may not certify any names that do not satisfy subsection 3."
+  },
+  {
+   "field": "independent presidential signature count",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec354.html",
+   "quote": "A. For a slate of candidates for the office of presidential elector, at least 4,000 and not more than 5,000 voters;"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

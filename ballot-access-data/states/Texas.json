@@ -1,0 +1,194 @@
+{
+  "jurisdiction": "Texas",
+  "signaturesHeadline": "TX independent pres: 113,151 valid sigs for 2024 (1% of prior presidential total); non-primary voters only — number confirmed, but verify cycle recompute",
+  "deadlineHeadline": "TX deadline: 2nd Monday in May = May 13, 2024; circulate only after March 5 primary — AUTO-LIVE",
+  "riskNote": "Grounding clean on all 8 fields (every quote verbatim; 113,151 = round-up of 1% of 11,315,056 2020 TX total). Two holds: signatures (mixes the minor-party gubernatorial base into the independent rule) and circulatorEligibility (self-flagged UNKNOWN, an unprovable absence claim). Default strict pending SOS confirmation.",
+  "sosInquiries": [
+    "For an INDEPENDENT presidential candidate's petition under Tex. Elec. Code 192.032, are there any statutory or administrative qualifications on who may circulate the petition (e.g., must the circulator be a registered Texas voter, of a minimum age, or a U.S. resident), or may any person circulate it?",
+    "Does the independent presidential candidate's signature requirement of 1% of the most recent presidential vote recompute each presidential cycle off the prior presidential general election total (i.e., for 2028 it will be 1% of the 2024 Texas presidential vote), and is the 113,151 figure specific to the 2024 cycle only?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "For the independent presidential path only: at least 1% of the total vote received in Texas by all candidates for president in the most recent presidential general election. For the 2024 cycle this equaled 113,151 valid signatures of registered voters who did NOT vote in either party's presidential primary that year (recomputes each cycle off the prior presidential vote; 1% of the 2020 total of 11,315,056 rounds up to 113,151). No geographic/territory requirement on signers. (Strict scope: the minor/convention-party qualification — 5% statewide nominee threshold or 1% of the most recent gubernatorial vote — is a DIFFERENT path with a DIFFERENT base and does not apply to an independent candidate; do not conflate.)",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.9,
+      "note": "All quotes verbatim. 192.032(d)=1%; SOS=113,151; 192.032(e)=no territory; 192.032(f)/(g)=non-primary voters/invalid if signed on or before primary. Math checks: 1% of 11,315,056 (2020 TX total, confirmed via Wikipedia) = 113,150.56 -> 113,151. HOLD because the draft value bundles the convention/minor-party path (gubernatorial-vote base) into the independent rule, which is out-of-scope for accessPath=independent and could mislead; the 'recomputes each cycle' framing is also a derived gloss not stated verbatim in a citation. Independent number itself is correct."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "The application and accompanying petition must be filed with the Secretary of State no later than the second Monday in May of the presidential election year — May 13, 2024 for the 2024 cycle. The petition may not be circulated until after the March 5, 2024 presidential primary; a signature is invalid if signed on or before the date of the primary or by anyone who voted in a presidential primary that year.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.97,
+      "note": "192.032(c) 'second Monday in May' verbatim; SOS 'no later than May 13, 2024' and 'circulated beginning after March 5, 2024' verbatim. May 2024 Mondays = 6th, 13th, so 2nd Monday = May 13 (date arithmetic confirmed). 192.032(g) invalidity quote present. Correct and self-executing, no legal interpretation needed."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. There is no per-congressional-district or per-county distribution requirement for the independent presidential petition; the statute expressly provides that a signer's voter registration need not be in any particular territory, so signatures may be gathered statewide with no geographic spread.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "192.032(e) quote 'A petition signer's voter registration is not required to be in any particular territory.' verbatim. Independently confirmed against NASS (no distribution language for the TX independent presidential petition, unlike states such as Virginia which NASS lists with a 400-per-district requirement). Negative claim but directly supported by the express statutory text."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "UNKNOWN / not established by retrieval. Secs. 141.064-141.065 prescribe the circulator's DUTIES (point out and read each statement, witness each signature, ascertain dates, verify each signer's registration, and execute a notarized affidavit) but do not by themselves establish that there are NO eligibility limits. Do not represent that 'any person' may circulate; treat circulator qualifications as unconfirmed and assume the petition must be circulated by a competent adult able to witness signatures and swear the notarized affidavit, pending SOS confirmation.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.6,
+      "note": "Both cited section headers/quotes are verbatim (141.064 'A person circulating a petition must:'; 141.065(a) affidavit clause). But the field's substantive claim is a NEGATIVE/absence assertion ('no statutory provision restricts circulator eligibility') that two cited duty-sections cannot prove — the value even self-flags UNKNOWN. Cannot ground the non-existence of a restriction from these sources; strictest stance is to hold and ask the SOS rather than assert open eligibility."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Notarized circulator affidavit required. Each part of the petition must include an affidavit of the circulator, executed before a person authorized to administer oaths (notarized), stating the circulator pointed out and read each required statement to each signer, witnessed each signature, verified each signer's registration status, and believes each signature genuine. A single notarized affidavit covers all signatures gathered by that circulator if notarization is on or after the date of the last signature obtained.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "141.065(a) 'executed before a person authorized to administer oaths in this state' and 141.065(c) single-notarized-affidavit quote both verbatim. Directly on point and applies to the independent presidential petition via 192.032(b)(3)(A)->141.062. No interpretation needed."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper (wet-signature). Signers must sign in their own handwriting; the circulator must witness each signature in person and a notarized circulator affidavit is required per part. No online/remote or digitized-signature system exists for an independent presidential petition in Texas — the SOS publishes only PDF forms (Application 2-38f, Petition 2-39f).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "141.063(b) 'The signature is the only information that is required to appear on the petition in the signer's own handwriting.' verbatim; 141.064(1) read-each-statement quote verbatim; SOS 'Independent Candidate's Petition for President (PDF)' verbatim. Wet-ink/witnessed paper process follows directly from witnessing + per-part notarized affidavit. Correct."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Ballot access for an independent presidential candidate is by petition only — there is no filing fee and no fee-in-lieu-of-signatures option for this office. Sec. 192.032 requires the application to be accompanied by a qualifying petition and the consent statements, and lists no filing-fee alternative. (The fee-or-petition election available to Texas primary/partisan candidates does not apply to this independent presidential path.)",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.85,
+      "note": "192.032(b)(3) 'be accompanied by:' quote verbatim — the statutory list of what accompanies the application is exhaustive and contains only the petition and written consents, no fee or fee-in-lieu. SOS independent section (quote verbatim) describes application+petition with no fee. The absence is supported by an exhaustive statutory enumeration rather than mere silence, so 'no fee alternative' is reliable without legal interpretation."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "For an independent presidential candidate's nominating petition, Texas Election Code §192.032 incorporates the candidate-petition rules of §141.062–.065; none of those sections — nor the SOS candidate-guide FAQs or the SOS petitions page — addresses compensating circulators in any way, so per-signature pay for CANDIDATE petitions is genuinely unaddressed (not authorized and not prohibited). Circulator residency is NOT required: §141.065 imposes no residency/registration requirement on the circulator and the SOS FAQ states verbatim that the Election Code defines no eligibility requirements for circulators, so a national paid pool could legally circulate in Texas.",
+    "sosInquiry": "For an independent presidential candidate's nominating petition under Texas Election Code §§192.032 and 141.062–.065, may the campaign pay petition circulators on a per-signature basis, and are there any restrictions on paying circulators (e.g., hourly vs. per-signature) or any circulator residency/registration requirement?",
+    "citations": [
+      {
+        "url": "https://texas.public.law/statutes/tex._election_code_section_192.032",
+        "quote": "(b) An application must: (1) comply with Section 141.031 ... and (3) be accompanied by: (A) a petition that satisfies the requirements prescribed by Section 141.062 (Validity of Petition) ... (e) A petition signer's voter registration is not required to be in any particular territory."
+      },
+      {
+        "url": "https://texas.public.law/statutes/tex._election_code_section_141.065",
+        "quote": "(a) Each part of a petition must include an affidavit of the person who circulated it, executed before a person authorized to administer oaths in this state, stating that the person: (1) pointed out and read to each signer, before the petition was signed, each statement pertaining to the signer that appears on the petition; (2) witnessed each signature; (3) verified each signer's registration status; and (4) believes each signature to be genuine and the corresponding information to be correct."
+      },
+      {
+        "url": "https://www.sos.state.tx.us/elections/candidates/guide/2026/faqs.shtml",
+        "quote": "The Election Code does not define any eligibility requirements for service as a circulator. For example, a person may circulate a petition even if the circulator is not a registered voter of the area."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "PAID",
+    "cost": "Statewide file priced on a sliding per-voter scale plus base charge. \"Over 1,000,000 Voters\" tier = $328.13 base + $0.0000625 per voter. At ~18M TX registered voters that is roughly $1,450 statewide (~$328.13 + ~$1,125), plus $11 per CD-ROM/DVD if not via FTP. A $75.00 deposit must accompany the request. Custom extracts/manipulation may add data-manipulation charges quoted separately.",
+    "whoCanObtain": "Any person on request (\"The secretary of state shall furnish information in the statewide computerized voter registration list to any person on request\"). Not eligibility-gated to candidates/parties — general public may obtain it — but the requestor must swear a notarized affidavit that the data will not be used for commercial advertising/promotion.",
+    "useRestrictions": "Political/non-commercial use is permitted; commercial use is prohibited. Requestor must swear the data \"will not be used to advertise or promote commercial products or services.\" Using the list to advertise/promote commercial products or services is a Class A misdemeanor under Tex. Election Code 18.067. Confidential voters (Sec. 13.004) and SSNs are excluded.",
+    "requestProcess": "Mail or fax the SOS \"Voter Registration Public Information Request Form\" (Elections Division, P.O. Box 12060, Austin, TX 78711-2060; fax 512-475-2811) with a NOTARIZED sworn affidavit of non-commercial use plus a $75.00 deposit; full payment required before release. SOS furnishes data within 15 days. No instant online self-service download.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.sos.state.tx.us/elections/forms/pi.pdf",
+    "note": "Texas furnishes the statewide \"State Master Voter File\" to anyone who files the SOS public-information request form with a notarized non-commercial-use affidavit and pays the per-voter fee (statewide ~$1,450) plus a $75 deposit; fees are capped at actual reproduction expense (Tex. Election Code 18.066(e)). The standard fixed-width file includes last/first/middle name, permanent (residential) address fields, and a status code (Active/Suspense/Cancelled) plus VUID and DOB — exactly what is needed to match and verify petition signers against registered voters.",
+    "citations": [
+      {
+        "url": "https://www.sos.state.tx.us/elections/forms/pi.pdf",
+        "quote": "EXTRACT RATES FOR COMPUTER CD-ROM, OR DISK   1 - 124,999 Voters $ 93.75 + $ 0.0005 Per Voter ... Over 1,000,000 Voters $328.13 + $0.0000625 Per Voter"
+      },
+      {
+        "url": "https://www.sos.state.tx.us/elections/forms/pi.pdf",
+        "quote": "The attached affidavit must be signed before a notary public. A $75.00 deposit must accompany each request. ... CD-ROM will not be released and/or files will not be uploaded to the FTP until full payment is received."
+      },
+      {
+        "url": "https://www.sos.state.tx.us/elections/forms/pi.pdf",
+        "quote": "I do solemnly swear that the information obtained from the copy of the State Master Voter File will not be used to advertise or promote commercial products or services."
+      },
+      {
+        "url": "https://www.sos.state.tx.us/elections/forms/pi.pdf",
+        "quote": "Public Information Voter Data File Record Layout ... LAST NAME ... FIRST NAME ... PERM STREET NAME ... PERM CITY ... STATUS CODE ... Status Code  V Active  S Suspense  C Cancelled"
+      },
+      {
+        "url": "https://texas.public.law/statutes/tex._election_code_section_18.066",
+        "quote": "The secretary of state shall furnish information in the statewide computerized voter registration list to any person on request not later than the 15th day after the date the request is received."
+      },
+      {
+        "url": "https://texas.public.law/statutes/tex._election_code_section_18.066",
+        "quote": "To receive information under this section, a person must submit an affidavit to the secretary stating that the person will not use the information obtained in connection with advertising or promoting commercial products or services."
+      },
+      {
+        "url": "https://texas.public.law/statutes/tex._election_code_section_18.066",
+        "quote": "The secretary may prescribe a schedule of fees for furnishing information under this section. A fee may not exceed the actual expense incurred in reproducing the information requested."
+      },
+      {
+        "url": "https://texas.public.law/statutes/tex._election_code_section_18.067",
+        "quote": "A person commits an offense if the person uses information in connection with advertising or promoting commercial products or services that the person knows was obtained under Section 18.066. ... An offense under this section is a Class A misdemeanor."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the rule binds signers only. The Texas Election Code provisions that govern who circulates a petition (Sec. 141.064 \"Method of Acquiring Signature\" and Sec. 141.065 \"Affidavit of Circulator\") impose duties on \"a person circulating a petition\" / \"the person who circulated it\" but set NO minimum age. The age-adjacent eligibility (registered voter) is imposed on the SI",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER must be a registered voter (Sec. 141.063(a)(1)) who did not vote in the presidential primary and signs after primary day (Sec. 192.032(f),(g)); CIRCULATOR has no age, voter-registration, citizenship, or residency requirement — statute only assigns witnessing/verification duties (Sec. 141.064) plus a notarized affidavit (Sec. 141.065).",
+    "gate": "AUTO-LIVE",
+    "note": "Texas independent presidential petition is governed by Tex. Elec. Code Sec. 192.032, which requires the petition to satisfy Sec. 141.062 — pulling in the full Subchapter C signature/circulator framework. Three sections define the circulator: (1) Sec. 141.064 (\"A person circulating a petition must... point out and read... witness each signature... ascertain... verify each signer's registration status\"); (2) Sec. 141.065 (the circulator's notarized affidavit); and (3) Sec. 141.063 places the \"regi",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+        "url": "https://codes.findlaw.com/tx/election-code/elec-sect-141-063/",
+        "quote": "A signature on a petition is valid if: (1) except as otherwise provided by this code, the signer, at the time of signing, is a registered voter of the territory from which the office sought is elected... (b) The signature is the only information that is required to appear on the petition in the signer's own handwriting."
+      },
+      {
+        "field": "circulatorAgeRule / circulatorMustBeRegisteredVoter / circulatorMustBeUSCitizen / circulatorMustBeStateResident",
+        "url": "https://codes.findlaw.com/tx/election-code/elec-sect-141-064/",
+        "quote": "A person circulating a petition must: (1) before permitting a person to sign, point out and read to the person each statement pertaining to the signer that appears on the petition; (2) witness each signature; (3) ascertain that each date of signing is correct; and (4) before the petition is filed, verify each signer's registration status and ascertain that each registration number entered on the petition is correct."
+      },
+      {
+        "field": "circulatorAgeRule / minorCanCirculate",
+        "url": "https://codes.findlaw.com/tx/election-code/elec-sect-141-065/",
+        "quote": "Each part of a petition must include an affidavit of the person who circulated it, executed before a person authorized to administer oaths in this state, stating that the person: (1) pointed out and read to each signer... (2) witnessed each signature; (3) verified each signer's registration status; and (4) believes each signature to be genuine... (c) A single notarized affidavit by any person who obtained signatures is valid for all signatures gathered by the person..."
+      },
+      {
+        "field": "jurisdiction / signerVsCirculator",
+        "url": "https://codes.findlaw.com/tx/election-code/elec-sect-192-032/",
+        "quote": "(a) To be entitled to a place on the general election ballot, an independent candidate for president of the United States must make an application for a place on the ballot... (b) An application must... (3) be accompanied by: (A) a petition that satisfies the requirements prescribed by Section 141.062... (g) A signature on the petition is invalid if the signer: (1) signs the petition on or before the date of the presidential primary election in the presidential election year; or (2) voted in a presidential primary election during the presidential election year."
+      },
+      {
+        "field": "signerVsCirculator (official SoS interpretation)",
+        "url": "https://www.sos.state.tx.us/elections/candidates/guide/2024/ind2024.shtml",
+        "quote": "The signers of your petition must be registered voters who have not participated in the general primary election or the runoff primary election of a party that has nominated, at either election, a candidate for the office you seek. (Section 142.009, Texas Election Code)."
+      }
+    ]
+  }
+}

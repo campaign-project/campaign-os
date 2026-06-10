@@ -1,0 +1,184 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "KS",
+ "jurisdiction": "Kansas",
+ "abbr": "KS",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 5000,
+  "headline": "5,000 valid signatures (flat statewide, no distribution) — AUTO-LIVE"
+ },
+ "deadline": {
+  "headline": "12:00 noon Monday before the Aug primary; recomputes each even year (2024: Aug 5, 2024) — AUTO-LIVE"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "5,000 signatures of qualified (registered) Kansas voters. President is a state-at-large office, so the flat statewide threshold under K.S.A. 25-303(c) applies. Fixed statutory number, not a percentage; does not recompute by cycle. No district/county distribution required.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim in K.S.A. 25-303(c) ('any office to be filled by the voters of the state at large... not less than 5,000 qualified voters') and Ballotpedia's 2024 presidential page ('At least 5,000 qualified voters must sign the petition'). Adversarial check: 25-303(d)'s 4% formula and the 25 / 5,000 floor-and-cap apply only to sub-state offices, not to a state-at-large office; the 5,000 figure is fixed in statute and does not recompute. Re-derived independently and could not refute."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "12:00 noon on the Monday preceding the August primary (K.S.A. 25-305(b)); primary is the first Tuesday of August in even-numbered years (K.S.A. 25-203). For the most recent presidential cycle (2024): primary Tue Aug 6, 2024 → independent nomination petition deadline 12:00 noon Mon Aug 5, 2024. Recomputes each even year (SOS lists 12:00 p.m. Mon Aug 3, 2026 for the 2026 non-presidential cycle). Filed with the Secretary of State for national office.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim: 25-305(b) (independent nomination petitions due 'no later than 12:00 noon on the Monday preceding the date fixed for the holding of primary elections in accordance with K.S.A. 25-203'); 25-203 (primary 'first Tuesday of August in even-numbered years'); SOS page ('Independent Nominations: 12:00 p.m. Monday, August 3, 2026'). Adversarial check: President is a national office and 25-305(b) covers 'national... offices' with no presidential petition carve-out (25-305(d) carves out only WRITE-IN candidacy, not petitions), so the August deadline governs. Date arithmetic confirmed (Aug 2024 first Tuesday = Aug 6; Monday preceding = Aug 5). Value is cycle-dependent and the draft flags this; for the next presidential year (2028) the date must be recomputed. AUTO-LIVE for the cited 2024 value with the recompute caveat preserved."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "No per-district or per-county signature-distribution quota: the 5,000 signatures for a state-at-large office (25-303(c)) form a single statewide pool, and 25-303(d)'s per-division percentage applies only to sub-state offices. HOWEVER, K.S.A. 25-303(f) requires that all signers appearing on any single petition sheet reside in the same county and election district of the office sought. Strictest operational reading: organize/collate petition sheets by county so no sheet mixes signers from different counties. Confirm sheet-collation requirement with the SOS before circulating.",
+   "confidence": 0.7,
+   "interpretationRequired": true,
+   "note": "Both quotes grounded verbatim in 25-303. The 'no distribution quota' conclusion is correct and well supported (25-303(c) is a flat statewide number). But 25-303(f)'s same-county/same-election-district per-sheet rule is a genuine operational constraint whose application to a state-at-large petition (the 'election district' being the whole state, yet the 'same county' limit still binding per sheet) is an interpretation retrieval cannot fully settle. Held conservatively (collate by county) to avoid a defective-petition / signature-invalidation risk. SOS inquiry filed."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Statute (K.S.A. 25-303(f)) is silent on circulator age/residency/registration; it requires only that the candidate or 'petition circulator' personally witness each signature and append a signed verification. Because this is an unverifiable negative (an SOS rule or official form could impose qualifications not in the statute), do not rely on 'anyone may circulate.' Strictest defensible posture: have the candidate or a qualified, registered Kansas elector circulate and personally witness every signature, and confirm circulator qualifications with the SOS before deploying volunteers.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Quote grounded verbatim in 25-303(f). The asserted value is the ABSENCE of a statutory circulator qualification — a negative that retrieval cannot conclusively establish (no SOS administrative rule was located confirming the absence). Defaulting to the strictest interpretation per the over-comply mandate; held pending SOS confirmation rather than published as AUTO-LIVE. SOS inquiry filed."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "A circulator/candidate verification must be appended to each set of petition documents (K.S.A. 25-303(f)) attesting the circulator/candidate personally witnessed every signature. The statute uses the word 'affidavit,' which ordinarily implies a sworn instrument. Strictest defensible reading: treat it as a sworn affidavit and have it notarized (or execute it on the official SOS petition form exactly as prescribed) rather than assume a bare unsworn signature suffices. Confirm notarization requirement and form with the SOS.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Quote grounded verbatim. The draft concludes 'NOT notarization,' but 25-303(f) expressly calls it 'The affidavit of the candidate or a petition circulator' even while the operative clause requires only a signed verification. 'Affidavit' vs. 'signed verification' is precisely a legal-interpretation conflict retrieval cannot settle, and getting it wrong (unsworn where sworn is required) risks petition rejection. Over-comply: assume notarization may be required; hold and verify with SOS. SOS inquiry filed."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Independent nomination petitions are physical papers carried by circulators; each registered-voter signer must add place of residence and post office address, with a circulator/candidate verification appended to each set. No Kansas online/digital petition system covers an independent presidential nominating petition; petitions are filed in paper form with the Secretary of State.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim in 25-303(f) ('signatures... need not all be appended to one paper, but each registered voter signing... shall add... place of residence and post office address'). Statute plainly contemplates physical papers carried by circulators; no statutory or SOS digital-petition pathway exists for this petition type. Re-derived and could not refute. Note: this fixes COLLECTION mode as paper; it does not bear on the circulator-verification execution questions above."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. There is no filing fee that substitutes for signatures for an independent candidate; the valid nominating petition is the only route onto the general-election ballot, and the GEC/SOS fee is paid in addition to (not in lieu of) the petition. The party-primary 'petition OR filing fee' option does not extend to independent candidates.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Both quotes grounded verbatim on the SOS candidate-information page ('Independent candidates do not run in the primary and may only file to run for office by petition'; footnote 1: 'Independent candidates may file for office only by petition. Upon filing a valid petition and paying the GEC/SOS fee, the candidate's name will be placed directly on the general ballot...'). Adversarial check: the page's general line 'Candidates must file by petition or filing fee' is the party-primary option; the independent-specific footnote confirms petition is mandatory and the fee is additive, not a substitute. Correct and current; AUTO-LIVE."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "Per official Kansas SOS \"Voter Registration Data Request\" (form CVR, Rev. 3/2/26): entire state = $300/CD-ROM; per U.S. Rep / State Senate / State Rep / State Judicial / State BOE district or per county = $100 per selection; per party affiliation = $50 per selection; advance-voting lists = $300 daily subscription, $150 weekly subscription, or $50 one-time; exclude inactive voters = $50 per selection. Data delivered via Email or CD-ROM. (County-level copies are available separately from each county election officer at \"not more than the actual cost\" per K.S.A. 25-2320.)",
+  "whoCanObtain": "General public — \"Any person may make a written request.\" There is no candidate/committee eligibility gate. The only restriction is on USE (see useRestrictions), not on who may request. Driver's license number and last-4 SSN are removed before disclosure; all other registration info is public record.",
+  "useRestrictions": "Commercial use is prohibited and is a crime (class C misdemeanor) under K.S.A. 25-2320a — \"Use of voter registration lists for commercial purposes is knowingly selling, giving or receiving the information... with the intent to use such list or information for any commercial purpose.\" Crucially, the statute expressly exempts political use: \"compiling, using, giving, receiving, selling or purchasing the information on or derived from voter registration lists, solely for political campaign or election purposes, shall not constitute a commercial use.\" Signature verification for a candidate/committee petition is a political/election purpose and is permitted. The requester must sign the form certifying a right of access and acknowledging the commercial-use prohibition.",
+  "requestProcess": "Written request via the SOS \"Voter Registration Data Request\" form (CVR): select database scope, delivery method (Email or CD-ROM), and any filters; total the per-selection fees; pay by pre-paid account or credit card; and SIGN the certification (right-of-access + commercial-use acknowledgment). Mail/submit to Kansas Secretary of State, Docking State Office Building, 915 SW Harrison St., Topeka, KS 66612 (contact: Kade Urban, kade.urban@ks.gov, 785-296-0080). No notarized affidavit required; no instant online download of the bulk file. (County election officers must provide requested copies within 10 days under K.S.A. 25-2320.)",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sos.ks.gov/forms/Elections/CVR.pdf",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "K.S.A. 25-3608(a)(2) requires a petition circulator to be \"at least 18 years of age.\" This is a hard statutory floor that binds the circulator (the person who carries the petition and signs the verification), distinct from any requirement on signers.",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "yes",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER must be a \"qualified voter\"/\"duly registered voter\" residing in the relevant district (K.S.A. 25-303(c),(f); 25-205(b)). CIRCULATOR is defined separately in K.S.A. 25-3608: must be a U.S. citizen, at least 18, and a non-felon (or restored), but is expressly NOT required to be a registered voter or a Kansas resident (residents and nonresidents both permitted).",
+  "gate": "AUTO-LIVE",
+  "note": "Independent presidential candidates in Kansas qualify by an independent nomination petition signed by not less than 5,000 qualified voters statewide (K.S.A. 25-303(c)); 2026 independent filing deadline is 12:00 p.m. Aug. 3, 2026 per the SoS. The circulator qualifications are governed by a dedicated defined-term statute, K.S.A. 25-3608 (\"Petition circulator defined\"), enacted in the same 2014 act (L. 2014, ch. 98) that amended 25-303 and 25-205. K.S.A. 25-205(d) expressly cross-references \"a peti",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 3,
+  "riskNote": "Signature count, deadline, paper capture, and no-fee-substitute are solid and AUTO-LIVE; the residual risk is in execution rules (per-sheet county collation under 25-303(f), whether the circulator \"affidavit\" must be notarized, and circulator qualifications) — all held conservatively pending SOS confirmation. Note 2026 is a midterm with no presidential race, so the live presidential deadline must be recomputed for the next presidential even year (e.g., 2028)."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://sos.ks.gov/Pubs/Elections/Guides/Candidate-Petition-Circulation-Guide.pdf",
+   "quote": "Candidates and petition circulators may carry a petition through the election district if they meet the constitutional qualification to be an elector. However, they are not required by law to be registered voters in the election district. Each circulator must: 1.) witness every signature on every page; 2.) collect signatures from a single county on each page; 3.) sign, and have notarized, an affidavit that is attached to or printed on the back of the petition form."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.sos.ks.gov/elections/election-standards/Kansas-Election-Standards-Chapter-V-Petitions.pdf",
+   "quote": "According to Kansas law, circulators must: [1] be a United States citizen; [2] be at least 18 years of age; [3] have not been convicted of a felony or if convicted of a felony been pardoned or have had civil rights restored; and [4] agree to submit to the jurisdiction of the state for purposes of subpoena enforcement regarding the integrity and reliability of the petition process. [KSA 25-3608]"
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.sos.ks.gov/elections/election-standards/Kansas-Election-Standards-Chapter-V-Petitions.pdf",
+   "quote": "The U.S. Supreme Court has held that states may require petition circulators to possess the qualifications of electors in the states where they circulate petitions ... but they may not require actual registration or residency in the specific county or election district. Buckley vs. American Constitutional Law Foundation, Inc. Kansas law reflects this decision, as well as a similar Kansas federal case, that petition circulators need not be Kansas residents. [KSA 25-302a]; See Constitution Party of Kansas, et al. v. Biggs, No. 10-CV-4043 (D. Kan.)"
+  },
+  {
+   "field": "compensation",
+   "url": "https://ksrevisor.gov/statutes/chapters/ch25/025_003_0003.html",
+   "quote": "The affidavit of the candidate or a petition circulator shall be appended to each petition and shall contain ... a verification, signed by the circulator or candidate, to the effect that such circulator or candidate personally witnessed the signing of the petition by each person whose name appears thereon."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.ks.gov/forms/Elections/CVR.pdf",
+   "quote": "3. Database: o The entire state ($300/CD-ROM)  ...  4a. District: ... ($100 per selection)  ...  4b. Party affiliattion: ... ($50 per selection)  ...  5. Advance voting lists: o Daily subscription during advance voting period ($300) o Weekly subscription during advance voting period ($150 total) o One-time selection of advance voting period ($50)  6. Exclude: o Inactive voters ... ($50 per selection)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.ks.gov/forms/Elections/CVR.pdf",
+   "quote": "K.S.A. 25-2320a prohibits using information derived from voter registration records for commercial purposes. This includes using public records to sell property or services. ... Use of voter registration lists for commercial purposes is a crime. Sign below to request a record search and to indicate your understanding of the conditions outlined above."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_023_0020a.html",
+   "quote": "Use of voter registration lists for commercial purposes is a class C misdemeanor. For purposes of this section, compiling, using, giving, receiving, selling or purchasing the information on or derived from voter registration lists, solely for political campaign or election purposes, shall not constitute a commercial use of voter registration lists."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.ksrevisor.gov/statutes/chapters/ch25/025_001_0006.html",
+   "quote": "Any person may make a written request for a copy of the registration books at any time except on any election day. ... The cost of copies shall be established by the county election officer at a price which is not more than the actual cost"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.ks.gov/elections/voter-registration.html",
+   "quote": "All registered voters are listed on the state voter rolls, which are maintained in a centralized database. All information provided by the voter when registering to vote, except their driver's license number and last four social security, are public record."
+  },
+  {
+   "field": "circulatorMustBeUSCitizen, circulatorMinAge, circulatorAgeRule, minorCanCirculate",
+   "url": "https://www.ksrevisor.org/statutes/chapters/ch25/025_036_0008.html",
+   "quote": "25-3608. Petition circulator defined. (a) For purposes of this act, \"petition circulator\" shall mean a person who is: (1) A United States citizen; (2) at least 18 years of age; and (3) has not been convicted of a felony or if convicted of a felony under the law of any state or of the United States, has been pardoned or restored to such person's civil rights."
+  },
+  {
+   "field": "circulatorMustBeStateResident, circulatorMustBeRegisteredVoter",
+   "url": "https://www.ksrevisor.org/statutes/chapters/ch25/025_036_0008.html",
+   "quote": "(b) All petition circulators, whether residents or nonresidents of the state of Kansas, are required to agree to submit to the jurisdiction of the state, including its agencies, political subdivisions and election officials, for purposes of subpoena enforcement regarding the integrity and reliability of the petition process."
+  },
+  {
+   "field": "signerVsCirculator (circulator affidavit cross-references 25-3608 definition)",
+   "url": "https://www.ksrevisor.org/statutes/chapters/ch25/025_002_0005.html",
+   "quote": "The affidavit described in this paragraph of a petition circulator as defined in K.S.A. 25-3608, and amendments thereto, or of the candidate shall be appended to each petition and shall contain, at the end of each set of documents carried by each circulator, a verification, signed by the circulator or the candidate, to the effect that such circulator or the candidate personally witnessed the signing of the petition by each person whose name appears thereon."
+  },
+  {
+   "field": "signerVsCirculator (signer = qualified voter; circulator-vs-signer affidavit for independent petitions)",
+   "url": "https://www.ksrevisor.org/statutes/chapters/ch25/025_003_0003.html",
+   "quote": "Independent nominations of candidates for any office to be filled by the voters of the state at large may be made by nomination petitions signed by not less than 5,000 qualified voters for each candidate ... The affidavit of the candidate or a petition circulator shall be appended to each petition and shall contain, at the end of each set of documents carried by each circulator or candidate, a verification, signed by the circulator or candidate, to the effect that such circulator or candidate personally witnessed the signing of the petition by each person whose name appears thereon."
+  },
+  {
+   "field": "jurisdiction / independent presidential petition requirement (5,000 signatures, Aug 3 2026 deadline)",
+   "url": "https://sos.ks.gov/elections/candidate-information.html",
+   "quote": "Independent Nominations: 12:00 p.m. Monday, August 3, 2026 ... Independent candidates may file for office only by petition. ... Percent requirements for petitions are based upon the total number of registered voters in the district as provided by KSA 25-205 and 25-303."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

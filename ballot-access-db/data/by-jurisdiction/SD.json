@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "SD",
+ "jurisdiction": "South Dakota",
+ "abbr": "SD",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 3502,
+  "headline": "3,502 valid sigs (1% of combined 2022 gov vote, 350,166) — AUTO-LIVE"
+ },
+ "deadline": {
+  "headline": "First Tue in Aug, 5:00 PM CT (Aug 6, 2024) — AUTO-LIVE"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "3,502 valid signatures for the 2024 cycle (1% of the 350,166 total combined vote cast for Governor at the 2022 election). Recomputes each cycle off the most recent certified gubernatorial total. SDCL 12-7-7.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both citations grounded verbatim: SDCL 12-7-7 ('not less than one percent of the total combined vote cast for Governor at the last certified gubernatorial election') and the SOS 2024 page ('Independent: 3,502 signatures (1% of the total vote for governor in 2022 - 350,166)'). Re-derived: 1% of 350,166 = 3,501.66 -> 3,502. Ballotpedia's dedicated presidential page independently confirms the same combined-gubernatorial-vote basis (distinct from the per-party 1% basis used for partisan candidates). Operative SOS figure is correct and current."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Certificate of nomination with nominating petitions, declaration of candidacy, and VP certification must be filed with the Secretary of State by the first Tuesday in August at 5:00 p.m. central time before the election (August 6, 2024 for the 2024 general). Mailing by registered mail by the deadline is timely. Petitions may not be circulated before January 1 of the election year. SDCL 12-7-7; 12-6-4.1.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "SDCL 12-7-7 grounded verbatim ('after December thirty-first and by the first Tuesday in August at 5:00 p.m. central time before the election ... If the certificate of nomination is mailed by registered mail ... it is timely submitted'). SDCL 12-6-4.1 grounded verbatim at its section URL ('No petition or certificate of nomination ... may be circulated prior to the first day of January'). First Tuesday in August 2024 = Aug 6, 2024 (Aug 1, 2024 was a Thursday). Confirmed by Ballotpedia ('filed by 5:00 p.m. on the first Tuesday in August'). Note: the draft cites the chapter URL /Statute/12-6 for the 12-6-4.1 quote; the text lives at section 12-6-4.1, which I fetched and confirmed verbatim."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. Single statewide total (1% of the statewide combined gubernatorial vote); no per-congressional-district or per-county distribution requirement for a statewide independent presidential candidate. Filed with the Secretary of State because the office is voted on in more than one county.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "SDCL 12-7-7 grounded verbatim; the statute imposes only a single statewide 1%-of-combined-gubernatorial-vote total with no geographic distribution. Reviewed full chapter 12-6 (incl. 12-6-7) and found per-county/per-district splits only for legislative/county offices and vote-center counties, not for statewide/presidential petitions. No distribution requirement applies."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICTEST: Use only circulators who are South Dakota residents (actual fixed permanent dwelling, lives/usually sleeps there for the requisite consecutive days per SDCL 12-1-4) and at least 18 years old (SDCL 12-1-3(12)). Signers must be registered voters entitled to vote for the office; a party-affiliated voter may sign an independent's petition only if they have not previously signed another petition for that office (SDCL 12-6-8). Do NOT rely on non-resident circulators.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "All quoted text grounded verbatim: SDCL 12-1-3(12) ('a resident of the State of South Dakota as defined under 12-1-4, who is at least eighteen years of age'), 12-1-4 residency definition, and 12-6-8 signer-eligibility/cross-party provision. HOLD for two reasons: (1) SD's resident-circulator requirement has a known constitutional vulnerability (federal courts have enjoined SD resident-circulator requirements in the ballot-measure context), so whether a non-resident circulator's signatures can lawfully be rejected is a legal-interpretation question retrieval cannot settle; (2) SDCL 12-1-4 was amended by SL 2025 ch 57 and ch 58 (the latter eff. Jan 1, 2026), so the current 'thirty consecutive days' text may not be the exact version in force for the 2024 cycle the draft labels it for. The over-comply path (SD-resident, 18+ circulators) never risks ballot access, so it is the relied value; sent an SOS inquiry to confirm enforcement and the applicable residency standard."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Circulator certification under oath (verification by the circulator on each self-contained sheet), not a per-signer notarized affidavit. The circulator's verification may NOT be notarized by the candidate the petition nominates. Falsely attesting is a Class 6 felony. SDCL 12-6-8; 12-1-3(11).",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim at SDCL 12-6-8 ('The petition must be verified under oath by the persons circulating the petition. The verification ... may not be notarized by the candidate whom the petition is nominating. Any person ... who falsely attests to the verification is guilty of a Class 6 felony') and SDCL 12-1-3(11) (form contains 'the verification of the circulator'; multi-sheet petitions each separately verified). Correct and current. (Draft cites chapter URL /Statute/12-6; the operative text is at section 12-6-8, fetched and confirmed verbatim.)"
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Physical paper nominating petitions, wet-ink signatures by registered voters, verified under oath by a resident circulator on each self-contained sheet. No remote/online or in-person-digitized e-signature system exists for SD candidate petitions. SDCL 12-1-3(11); 12-6-8.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Grounded verbatim: SDCL 12-6-8 ('The circulator or the individual who signs the petition shall add the address at which the individual is currently registered to vote, the county ..., and the date of signing'; 'A nominating petition for any election shall be a self-contained sheet of paper') and 12-1-3(11) (each sheet self-contained and separately verified). The self-contained-paper-sheet + handwritten signer info + circulator oath structure confirms paper-only; no statutory e-signature petition portal for SD candidate petitions. Correct."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. No filing fee in lieu of or in addition to the signature requirement for an independent presidential candidate. Ballot access is obtained solely by filing the certificate of nomination with the required petition signatures. SDCL 12-7-7; chapter 12-6.",
+   "confidence": 0.88,
+   "interpretationRequired": false,
+   "note": "SDCL 12-7-7 grounded verbatim; it conditions nomination only on filing the certificate with the required petition signatures and prescribes no fee alternative. Reviewed full chapter 12-6 and found no filing-fee-in-lieu provision for nominating petitions. Absence-of-fee-alternative independently confirmed; no contrary provision located."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$225 for the electronic statewide data file of all registered voters (SDCL 12-4-39(5)(f) cap). Paper statewide list up to $1,000; legislative district up to $100; county/subdivision up to $50; partial/update lists $75-$100. Make check payable to \"SD Secretary of State.\" Note: an Aug 12, 2025 administrative-rules hearing was scheduled to revise this cost structure, so confirm the current electronic-file fee with the SOS Elections office.",
+  "whoCanObtain": "Available to the public but issuance is conditioned on a signed permitted-use certification and disclosure of the political/non-commercial user. The request form requires naming \"the candidate, ballot question or party committee utilizing the voter registration file.\" Statewide lists are pulled only by the Secretary of State's office; county/legislative/municipal/school sublists must be requested from the relevant county auditor.",
+  "useRestrictions": "Strict, statutory (SDCL 12-4-41): voter registration information \"may not be sold, may not be used for any commercial purpose, and may not be placed for unrestricted access on the internet.\" Crucially, \"'commercial purpose' does not include campaign or political polling activities\" — so campaign/petition signature-verification use is permitted. Penalty: Class 1 misdemeanor plus a civil penalty up to $2,000 per violation. The requester must sign a sworn acknowledgment of these limits (no electronic signature font allowed).",
+  "requestProcess": "Written request via the official \"South Dakota Voter Registration File—Data Request Form\" (PDF), emailed/mailed/faxed to the SOS Elections Division (elections@state.sd.us; SD Secretary of State, Attn: Elections, 500 East Capitol, Ste 204, Pierre, SD 57501; phone 605-773-3537, fax 605-773-6580), with payment and a signed permitted-use statement under SDCL 12-4-41. Not an instant online download; the file is pulled and emailed/provided by SOS staff.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "SDCL 12-1-3(12) defines a \"petition circulator\" as a SD resident \"who is at least eighteen years of age.\" The official SoS \"Circulating a Nominating Petition\" guide restates this under \"Circulator Requirements\": \"Must be at least eighteen years of age and a resident of the state of South Dakota.\" The 18+ minimum binds the circulator directly (not merely the signer).",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "yes",
+  "signerVsCirculator": "SIGNER: must be a registered voter (active or inactive) in SD in the jurisdiction for which the petition is circulated (SDCL 12-4-34; 12-6-8). CIRCULATOR: must be a SD resident and at least 18 years old, but EXPRESSLY does NOT need to be a registered voter (SDCL 12-1-3(12); SoS guide). So the \"registered voter\" requirement binds only the signer; the circulator's only hard requirements are age 18+ ",
+  "gate": "AUTO-LIVE",
+  "note": "South Dakota's statutory definition of \"petition circulator\" in SDCL 12-1-3(12) governs candidate nominating petitions (the umbrella definition cited by the SoS for candidate petitions, including independent presidential petitions under SDCL ch. 12-7). It requires the circulator to be (1) a resident of the State of South Dakota and (2) at least eighteen years of age. The current official SoS \"Circulating a Nominating Petition\" guide breaks the rules into \"Circulator Requirements\" vs \"Signer Requ",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "6 of 7 fields AUTO-LIVE on grounded primary statute + SOS sources; only circulatorEligibility is CONSERVATIVE-HOLD because SD's resident-circulator rule is constitutionally contested and 12-1-4 was amended (SL 2025, partly eff. 1/1/2026) so the 2024-cycle residency text is uncertain — strictest path (SD-resident, 18+ circulators) does not risk ballot access."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://sdlegislature.gov/api/Statutes/12-13-28.html?all=true",
+   "quote": "No person may employ, reward, or compensate any person to circulate a petition for an initiated measure, referred law, or proposed amendment to the South Dakota Constitution based on the number of registered voters who signed the petition. Nothing in this section prohibits any person from employing a petition circulator based on one of the following practices: (1) Paying an hourly wage or salary; ... (4) Paying discretionary bonuses based on reliability, longevity, and productivity. Any violation of this section is a Class 2 misdemeanor."
+  },
+  {
+   "field": "compensation",
+   "url": "https://sdsos.gov/elections-voting/assets/2026%20Documents/2026HowtoCirculateNomPetitionStateLegCountyCandidates.pdf",
+   "quote": "A petition circulator must be a resident of the state of South Dakota who is at least eighteen years of age. They are not required to be a registered voter."
+  },
+  {
+   "field": "compensation",
+   "url": "https://sdlegislature.gov/api/Statutes/12-1-3.html?all=true",
+   "quote": "\"Petition circulator,\" a resident of the State of South Dakota as defined under § 12-1-4, who is at least eighteen years of age who circulates nominating petitions or other petitions for the purpose of placing candidates or issues on any election ballot"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+   "quote": "Pursuant to SDCL 12-4-39, the fees for voter lists are as follows... (a) One thousand dollars per paper copy of a list of the registered voters in the state; ... (f) Two hundred twenty-five dollars for an electronic data file containing a list of the registered voters in the state."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+   "quote": "Any information obtained from the statewide voter registration file or any county voter registration file may not be sold, may not be used for any commercial purpose, and may not be placed for unrestricted access on the internet. For the purposes of this section, \"commercial purpose\" does not include campaign or political polling activities. ... Any violation of this section is a Class 1 misdemeanor. In addition to any criminal sanctions, the court may impose a civil penalty not to exceed two thousand dollars for each violation."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+   "quote": "If you are purchasing a statewide list email, mail or fax this form to: elections@state.sd.us; South Dakota Secretary of State, Attention: Elections, 500 East Capitol, Ste 204, Pierre, SD 57501; phone 605-773-3537 or fax 605-773-6580. **If you are paying by check, please make payable to SD Secretary of State for ALL purchases**"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+   "quote": "Please list the name of candidate, ballot question or party committee utilizing the voter registration file:"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+   "quote": "The county auditor shall maintain and safeguard a digital master registration file that contains: (1) The information from the voter registration card of each individual registered to vote in the county; (2) The date of the last election at which the individual has voted... The master registration file must be open to public inspection, free of charge. An individual's social security number, driver license number, South Dakota nondriver identification number, or month and day of birth is not open to public inspection."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sdsos.gov/elections-voting/assets/VoterFileRequestForm.pdf",
+   "quote": "The South Dakota Secretary of State's Office will hold an administrative rules hearing on August 12, 2025, to review and discuss proposed changes to the cost structure for voter file lists."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sdsos.gov/elections-voting/upcoming-elections/voter-registration-totals/default.aspx",
+   "quote": "Purchase the South Dakota Voter Registration File ... Please note: If you are purchasing a county, legislative, school, municipality or any other type of list, please contact the county auditor in that jurisdiction for that list. Statewide lists are pulled by the secretary of state's office."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / circulatorMustBeStateResident",
+   "url": "https://sdlegislature.gov/Statutes/12-1-3",
+   "quote": "(12) \"Petition circulator,\" a resident of the State of South Dakota as defined under § 12-1-4, who is at least eighteen years of age who circulates nominating petitions or other petitions for the purpose of placing candidates or issues on any election ballot;"
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / circulatorMinAge / circulatorMustBeStateResident (official SoS candidate-petition guide)",
+   "url": "https://sdsos.gov/elections-voting/assets/2025%20Documents/HowtoCirculateMunicipalNomPetition2025.pdf",
+   "quote": "Circulator Requirements: Must be at least eighteen years of age and a resident of the state of South Dakota. Does not need to be a registered voter. Must personally witness each signature on the petition being circulated."
+  },
+  {
+   "field": "signerVsCirculator (signer requirement)",
+   "url": "https://files-backend.assets.thrillshare.com/documents/asset/uploaded_file/5207/Rcas/5516af22-5731-488c-8a65-165b273ae0d8/How-to-circulate-a-nominating-petition.pdf",
+   "quote": "Signer Requirements - Must be a registered voter, active or inactive, in the state of South Dakota in the jurisdiction for which the petition is circulated (SDCL 9-13-9)."
+  },
+  {
+   "field": "circulatorMustBeStateResident / circulatorMinAge (statutory text, Justia mirror)",
+   "url": "https://law.justia.com/codes/south-dakota/title-12/chapter-01/section-12-1-3/",
+   "quote": "(1) \"Petition circulator,\" any resident of the State of South Dakota who is at least eighteen years of age and who circulates a nominating petition or other petition for the purpose of placing a candidate or issue on any election ballot;"
+  },
+  {
+   "field": "litigation caveat: enjoined residency requirement was for BALLOT-QUESTION petitions (SDCL 2-1-1.3), not candidate nominating petitions",
+   "url": "https://dakotafreepress.com/2023/03/17/legislature-does-not-replace-residency-requirement-for-petition-circulators-sponsors-able-to-employ-out-of-state-circulators/",
+   "quote": "2020 SB 180 rewrote SDCL 2-1-1.3 to define “petition circulator” as an adult who has resided in South Dakota for at least 30 days. In January, the state agreed with the plaintiffs who sued over 2020 SB 180 that it cannot and will not enforce that residency requirement... but one does not have to be a registered voter to circulate a petition."
+  },
+  {
+   "field": "independent presidential candidate petition is the relevant vehicle (SDCL ch. 12-7)",
+   "url": "https://sdlegislature.gov/Statutes/12-7",
+   "quote": "An independent candidate for President shall file a declaration of candidacy and a certification of the candidate's selection for Vice President with the secretary of state with the candidate's nominating petition."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

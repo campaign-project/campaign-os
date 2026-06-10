@@ -1,0 +1,189 @@
+{
+  "jurisdiction": "Missouri",
+  "signaturesHeadline": "10,000 signatures (collect a cushion; statewide statutory floor)",
+  "deadlineHeadline": "15th Monday before Nov general (Jul 29, 2024 last cycle)",
+  "riskNote": "All 6 citation sources grounded verbatim; core path (10k sigs, 15th-Monday deadline, paper+notary, elector district distribution) is AUTO-LIVE. Only the circulator-residency rule is held for legal interpretation; treat as MO-resident-required and confirm with SOS.",
+  "sosInquiries": [
+    "For an independent/new-party presidential nominating petition under RSMo 115.321/115.325, must the circulator (affiant) be a Missouri resident as an enforceable eligibility requirement, and is there any age or registered-voter requirement for circulators? Does the office reject pages whose affiant is a non-resident?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "10,000 signatures of registered Missouri voters (fixed statutory floor for a statewide office under RSMo 115.321.3; same 10,000 governs the new/minor-party statewide petition under RSMo 115.315.5). For president, ONE petition nominates the full slate of presidential electors, with the presidential and vice-presidential candidates named on each page. Operationally, collect well above 10,000 because the SOS validates signatures and invalidations are common.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "RSMo 115.321.3 ('signed by at least ten thousand registered voters of the state') and 115.315.5 ('at least ten thousand registered voters of the state obtained at large') both grounded verbatim on revisor.mo.gov. 10,000 is a fixed number for statewide office (does not recompute per cycle), unlike the district/county 2%-or-10k-whichever-is-less rule in 115.321.4. Statute says 10,000 registered voters must SIGN; 'valid' is the practical net after SOS review, so a cushion is advisable, but the threshold number 10,000 is correct and current."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "5:00 p.m. on the fifteenth Monday immediately preceding the November general election (RSMo 115.329.1). For the 2024 cycle (general Nov. 5, 2024) this is July 29, 2024 — independently confirmed by date computation. It is a recomputed rule, not a fixed date. Petition cannot be filed before 8:00 a.m. on the day after the prior general election.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "RSMo 115.329.1 grounded verbatim (window between 8:00 a.m. day after prior general and 5:00 p.m. fifteenth Monday before the general). Ballotpedia quote also grounded verbatim. Independently re-derived: counting Mondays back from Nov 5, 2024 (a Tuesday), the 15th Monday is 2024-07-29 — matches the draft exactly."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No geographic distribution quota on the SIGNATURES (the 10,000 are obtained 'at large'). There IS a distribution requirement on the ELECTOR NOMINEES: at least one qualified resident of each congressional district must be named as a presidential-elector nominee (RSMo 115.321.2). Separately, each petition page may carry signatures from only one county and pages must be numbered in sequence per county (RSMo 115.325.1) — a sheet-organization rule, not a per-county signature quota.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "RSMo 115.321.2 grounded verbatim ('At least one qualified resident of each congressional district shall be named as a nominee for presidential elector'). 'obtained at large' grounded in 115.315.5. The one-county-per-page / numbered-in-sequence rule grounded verbatim in 115.325.1. Draft correctly separates the elector-nominee district requirement from the (absent) signature distribution quota."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "STRICTEST reading: treat the circulator (affiant who obtains signatures) as required to be a resident of the State of Missouri (the statutory affidavit form in RSMo 115.325 recites 'I, ___, a resident of the state of Missouri'). Use Missouri-resident circulators to avoid any page being rejected. Each SIGNER must be a registered Missouri voter of the county shown on the page (felony to sign if not registered); no voter may sign more than one nomination for one office (RSMo 115.323).",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.6,
+      "note": "All quotes grounded verbatim in 115.325 (affidavit form) and 115.323. BUT the 'resident of the state of Missouri' language appears in a FORM TEMPLATE recital, not an operative eligibility clause; whether it is an enforceable circulator-residency REQUIREMENT (vs. a recital the affiant happens to make) is a legal-interpretation question retrieval cannot settle. Added constitutional doubt: circulator-residency requirements have been struck in other states (Buckley v. ACLF line). Strictest defensible posture is to assume MO residency is required and use only MO-resident circulators. Signer requirements (registered MO voter, one-signature-per-office) are clear and grounded."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "BOTH a circulator certification AND notarization are required on EVERY page. Each page carries a CIRCULATOR'S AFFIDAVIT (circulator swears each signer signed in his/her presence and is a registered voter), which must be 'Subscribed and sworn to before me' a Notary Public (notary signature, seal, and commission-expiration appear on the form) — RSMo 115.325.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Grounded verbatim in the 115.325 statutory form: the circulator's-presence/registered-voter recital, 'Subscribed and sworn to before me this ___ day of ___, A.D.___', 'Signature of Notary', and 'Notary Public (Seal)'. Confirms notarized circulator affidavit per page. Substantial-compliance saving clause ('disregarding clerical and merely technical errors') exists but does not eliminate the notarization requirement."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper (wet-ink). Pages of uniform size, signatures from only one county per page, numbered in sequence per county, each page bearing a notarized circulator's affidavit (RSMo 115.325.1 + the statutory form). No Missouri online/digital signature system covers an independent/new-party PRESIDENTIAL nominating petition; collect and submit on paper to the Secretary of State.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "RSMo 115.325.1 grounded verbatim (uniform pages, one county per page, numbered in sequence). 115.321 'file a petition with the secretary of state' grounded verbatim. The per-page notarized wet-ink affidavit makes paper the operative and strictest-safe capture mode. The 'no digital system exists' point is a negative assertion, but paper is unambiguously sufficient and required by the form, so reliance carries no ballot-access risk."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. There is no filing-fee alternative to (or addition to) the signature petition for an independent or new-party presidential candidate; the 10,000-signature petition (RSMo 115.321 / 115.329) is the sole qualification mechanism on this path. Chapter 115 filing fees apply to party-primary declarations of candidacy, not to independent/new-party petitions. STRICTEST operating assumption: do not rely on any fee shortcut — you must complete the petition.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.82,
+      "note": "Cited quote (115.321.5, 'placed on the official ballot as an independent candidate') grounds verbatim but speaks to ballot placement rather than fees; the 'None' conclusion is a negative claim derived from the absence of any fee-in-lieu provision in 115.321/115.329. 'None' is itself the conservative posture (assuming no fee shortcut never risks ballot access), so AUTO-LIVE is appropriate. If a campaign wanted to rely on a fee path it does NOT exist — so the value cannot mislead toward under-collecting signatures."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found (Ch. 115); circulator must be a Missouri resident",
+    "note": "Missouri's candidate/independent-petition chapter (RSMo Ch. 115, incl. 115.321 for independent presidential petitions, 115.325 form/affidavit, and 115.631 election offenses) does NOT address compensating circulators at all — per-signature pay is unaddressed, neither permitted nor prohibited by any candidate-petition primary source found. The candidate circulator's affidavit in 115.325 requires the circulator to swear they are \"a resident of the state of Missouri,\" so circulator residency IS required (a national non-resident paid pool could not lawfully circulate). Note: the per-signature rules people cite live in Ch. 116 (initiative/referendum), which does NOT govern candidate petitions and was not carried over; and even Ch. 116 (116.030 affidavit) expressly contemplates PAID circulators rather than banning per-signature pay.",
+    "sosInquiry": "For an INDEPENDENT presidential candidate's nominating petition under RSMo Chapter 115 (115.321/115.325), does Missouri law permit a campaign to pay petition circulators on a per-signature basis, and must every circulator be a Missouri resident (or registered Missouri voter) as the 115.325 affidavit's \"a resident of the state of Missouri\" language implies?",
+    "citations": [
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.321",
+        "quote": "115.321.  Independent candidate, how nominated. — 1.  Any person desiring to be an independent candidate for any office to be filled by voters throughout the state ... shall file a petition with the secretary of state. ... If independent candidates for presidential elector are to be nominated, a number of independent candidates for presidential elector equal to the number of electors to which the state is entitled shall be nominated by one petition ... 3.  If an independent candidate is to be nominated for a statewide office, the petition shall be signed by at least ten thousand registered voters of the state."
+      },
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.325",
+        "quote": "CIRCULATOR'S AFFIDAVIT ... I, ______, a resident of the state of Missouri, being first duly sworn, say ... signed this page of the foregoing petition, and each of them signed his or her name thereto in my presence; I believe that each ... is a registered voter of the state of Missouri and ______ County."
+      },
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.631",
+        "quote": "115.631.  Class one election offenses. — The following offenses, and any others specifically so described by law, shall be class one election offenses and are deemed felonies connected with the exercise of the right of suffrage. [Enumerated offenses (1)-(26) concern false affidavits, illegal voting/registration, and ballot tampering; none addresses paying petition circulators per signature.]"
+      },
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=116.080",
+        "quote": "116.080.  Qualifications of circulator — affidavit, notarization, penalty. — 1.  Each petition circulator shall be at least eighteen years of age and registered with the secretary of state. ... A petition circulator shall be deemed registered at the time such circulator delivers a signed circulator's affidavit pursuant to section 116.030, with respect to a referendum petition, or section 116.040, with respect to an initiative petition, to the office of the secretary of state."
+      },
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=116.030",
+        "quote": "I am at least 18 years of age. I do ______ do not ______ (check one) expect to be paid for circulating this petition. If paid, list the payer ______"
+      }
+    ],
+    "initiativePrior": "permitted"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Statutory fee set under Chapter 610 (Sunshine Law cost-recovery), determined by the Secretary of State / local election authority — not published as a fixed online price (varies — request quote). Ballotpedia reports the statewide file cost as \"$35\" (secondary source, unverified against an official price list).",
+    "whoCanObtain": "Not the general public. The statewide file is restricted to a candidate, a duly authorized representative of a campaign committee, or a political party committee (terms defined in RSMo 130.011). RSMo 115.157.1 bars furnishing any registration info \"to any member of the public\" except as the section provides; in even-numbered years (2026 qualifies) each election authority must, upon request, supply its jurisdiction's voter registration list \"to all candidates and party committees.\"",
+    "useRestrictions": "Political-use-only. The master voter registration list \"shall not be used for commercial purposes\" (RSMo 115.158.6) — defined to include resale or obtaining names/addresses for solicitation — and \"nothing in this chapter shall require such voter information to be released to the public over the internet\" (115.157.3). Violation of the statewide-system use restriction is a class B misdemeanor (115.158.6).",
+    "requestProcess": "Written request to the Secretary of State (statewide, electronic or printed media, for a fee under RSMo 115.157.4) or to the relevant local election authority/county clerk for its jurisdiction's list (RSMo 115.157.5). Not an instant online download — Missouri voter registration is decentralized across 116 local election jurisdictions, and the file is provided per-request for a fee; no public self-service portal is published. Contact the SOS Elections Division (573-751-2301).",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.sos.mo.gov/elections",
+    "note": "Missouri does not sell its voter file to the general public; the statewide registration list (Missouri Voter Registration System, RSMo 115.158) is furnished only to candidates, campaign committees, and party committees for a Chapter-610 cost-recovery fee, with political-use-only restrictions. The standard record includes voter name, address, year of birth, party, township/ward/precinct and a unique voter ID — sufficient to match petition signers to registered voters. No fixed price is published on the SOS site; Ballotpedia's \"$35\" is a secondary, unverified figure, so treat cost as request-quote.",
+    "citations": [
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.157",
+        "quote": "No election authority or secretary of state shall furnish to any member of the public electronic media or printout showing any registration information, except as provided in this section. ... the election authority or secretary of state shall make available electronic media or printouts showing only unique voter identification numbers, voters' names, year of birth, addresses, townships or wards, and precincts."
+      },
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.157",
+        "quote": "upon a request by a candidate, a duly authorized representative of a campaign committee, or a political party committee, the secretary of state shall furnish, for a fee determined by the secretary of state and in compliance with section 610.026, media in an electronic format or, if so requested, in a printed format"
+      },
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.157",
+        "quote": "In even-numbered years, each election authority shall, upon request, supply the voter registration list for its jurisdiction to all candidates and party committees for a charge established pursuant to chapter 610."
+      },
+      {
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.158",
+        "quote": "Any information contained in any state or local voter registration system, limited to the master voter registration list or any other list generated from the information, subject to chapter 610, shall not be used for commercial purposes; provided, however, that the information may be used for elections, for candidates, or for ballot measures, furnished at a reasonable fee. Violation of this section shall be a class B misdemeanor."
+      },
+      {
+        "url": "https://ballotpedia.org/Availability_of_state_voter_files",
+        "quote": "Missouri | Open | $35 | Name, DOB, voter identification number, address, township or ward, precinct, voting history"
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement in the statute. RSMo 115.325 prescribes the circulator's affidavit (\"Circulator's Affidavit\" / \"Signature of Affiant (Person obtaining signatures)\") and imposes only one affirmative qualification on the circulator: that the affiant be \"a resident of the state of Missouri.\" It sets no minimum age. The only age-bearing concept in the petition is on the SIGNER side (sign",
+    "minorCanCirculate": "unknown",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "yes",
+    "signerVsCirculator": "SIGNER must be a \"citizen and registered voter of the state of Missouri\" (registered voter + Missouri resident; one county per petition page). CIRCULATOR (the affiant / \"person obtaining signatures\") need only be \"a resident of the state of Missouri\" — no registered-voter, citizenship, or age requirement is imposed on the circulator by statute; the registered-voter/citizen language binds signers o",
+    "gate": "AUTO-LIVE",
+    "note": "Controlling primary source is RSMo 115.325 (Form of petition), which prescribes the statutory text of both the new-party and independent-candidate petitions and the \"Circulator's Affidavit.\" Independent presidential candidates qualify via the independent-candidate petition (RSMo 115.321(2), 10,000 registered-voter signatures statewide for statewide office; presidential electors nominated by one petition). The petition form (115.325.3) places ALL strict requirements on the SIGNER: \"We, the unders",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeStateResident",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.325",
+        "quote": "CIRCULATOR'S AFFIDAVIT ... I, ______, a resident of the state of Missouri, being first duly sworn, say (print or type names of signers) ... signed this page of the foregoing petition, and each of them signed his or her name thereto in my presence ... Signature of Affiant (Person obtaining signatures)"
+      },
+      {
+        "field": "circulatorMustBeRegisteredVoter",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.325",
+        "quote": "I believe that each has stated his or her name, registered voting address and city, town or village correctly, and that each signer is a registered voter of the state of Missouri and ______ County."
+      },
+      {
+        "field": "signerVsCirculator",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.325",
+        "quote": "We, the undersigned, citizens and registered voters of the state of Missouri, ______ County and ______ (district if appropriate), nominate ______ (name of independent candidate) ... and each for himself or herself says: I have personally signed this petition; I am a registered voter of the state of Missouri, ______ County and ______ (district if appropriate)"
+      },
+      {
+        "field": "circulatorAgeRule",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.325",
+        "quote": "I, ______, a resident of the state of Missouri, being first duly sworn, say ... Subscribed and sworn to before me this ______ day of ______, A.D.______ ... Signature of Notary ... Notary Public (Seal)"
+      },
+      {
+        "field": "jurisdiction",
+        "url": "https://revisor.mo.gov/main/OneSection.aspx?section=115.321",
+        "quote": "If independent candidates for presidential elector are to be nominated, a number of independent candidates for presidential elector equal to the number of electors to which the state is entitled shall be nominated by one petition ... 3. If an independent candidate is to be nominated for a statewide office, the petition shall be signed by at least ten thousand registered voters of the state."
+      }
+    ]
+  }
+}

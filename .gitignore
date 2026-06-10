@@ -1,0 +1,36 @@
+# ============================================================================
+# Voter PII — NEVER commit. Raw voter files and any minimized index artifacts
+# built from them stay on the operator's machine only; only scoped, minimized
+# artifacts move to devices over the authenticated sync channel. Misuse of voter
+# data is criminal in many states — this guard is load-bearing, not cosmetic.
+# ============================================================================
+voterfiles/
+**/voterfiles/
+ncvoter_*.txt
+ncvoter_*.zip
+*_Statewide.txt
+*_Statewide.zip
+*voterfile*.txt
+*voterfile*.csv
+
+# Dependencies
+node_modules
+
+# Build output / caches
+.next
+.expo
+dist
+web-build
+coverage
+.turbo
+*.tsbuildinfo
+
+# Secrets / local env
+.env
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store
+*.log
+.ndtmp/

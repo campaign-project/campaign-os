@@ -1,0 +1,193 @@
+{
+  "jurisdiction": "South Carolina",
+  "signaturesHeadline": "10,000 valid signatures (statewide cap; 5% of registered electors but capped at 10k, which always controls)",
+  "deadlineHeadline": "Noon, July 15 of general-election year (next Monday if July 15 is Sat/Sun)",
+  "riskNote": "All seven fields grounded against primary sources (verbatim) and corroborated by Ballotpedia; six AUTO-LIVE. Only captureMode held: digitized signatures are permitted but the SEC explicitly warns they may be unverifiable, so rely on paper to avoid any ballot-access risk.",
+  "sosInquiries": [
+    "For an independent presidential petition (10,000 signatures), will the State Election Commission accept digitized (touchscreen/stylus + DocuSign Certificate of Completion) signatures on the same footing as pen-and-ink for the full 10,000, and are there any volume, format, or assembly conditions that affect how digitized signatures are counted toward the 10,000-signature requirement?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "10,000 valid signatures of active, registered South Carolina voters (statewide cap). Statutory basis: 5% of qualified registered electors of the office's geographic area, capped at 10,000 for any office (S.C. Code 7-11-70). For statewide President, 5% of ~3.39M registered voters (~170k) far exceeds the cap, so 10,000 always controls. Electorate baseline = registrations 120 days before the election.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.97,
+      "note": "Both citations verbatim in sources (7-11-70 statute; scvotes.gov 'valid signatures of 10,000 active, registered'). Independently corroborated by Ballotpedia (5% / max 10,000) and by the SEC page's live registered-voter count of 3,392,645, confirming the cap controls. The cap is a fixed hard number; it could only stop controlling if SC registration fell below 200,000, which is impossible."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Noon (12:00 p.m.) on July 15 of the general-election year, filed with the State Election Commission. If July 15 falls on a Saturday or Sunday, the deadline is noon the following Monday (S.C. Code 7-13-351). For Nov 2024 this was Monday, July 15, 2024.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "7-13-351 quote verbatim in fetched statute; scvotes.gov presidential-section quote verbatim. Ballotpedia corroborates July 15. Draft correctly tracks the statute's 'Saturday or Sunday' rule (the SEC general petition section drops 'Saturday', but the statute and the presidential-specific section both include it). July 15, 2024 was indeed a Monday. Note: a Governor-declared emergency grants +5 days (7-13-351), an omitted contingency, not a defect in the standard deadline."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No geographic distribution requirement. For statewide President the petition is a single statewide aggregate with no per-county or per-district minimum. Administrative formatting only: no single petition page may contain signatures of voters from different counties (S.C. Code 7-11-80(4)) — a per-page sorting rule, not a distribution quota.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "7-11-80(4) and scvotes.gov 5% quotes both verbatim. Statute imposes no geographic spread requirement; the one-county-per-page rule is correctly characterized as formatting, not a quota."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None specified. S.C. petition statutes (7-11-70, 7-11-80, 7-11-85) impose no circulator/collector requirements (no oath, age, residency, or voter-status). The petition form collects only signer information; there is no circulator role. Validity rests on matching each signer against county registration records.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "7-11-80(3) quote verbatim. Confirmed no circulator role exists anywhere in 7-11-70/80/85. 'None specified' is the correct, accurate statement of SC law."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No circulator affidavit, witness, or notarization requirement for the petition pages. The 7-11-80 form has only the statement of purpose and voter-signature columns. Validity is determined by county boards matching signatures against original registration applications (S.C. Code 7-11-85). (Separately the candidate self-certifies qualifications and files a Statement of Economic Interests, but the petition pages need no notary/witness.)",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "7-11-85 verification quote verbatim. No notary/witness/affidavit block exists on the petition form per 7-11-80. Accurate."
+    },
+    {
+      "field": "captureMode",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "paper (original pen-and-ink petition pages on 8.5 x 14 bond paper, filed with the State Election Commission). Photocopies are NOT accepted. The SEC permits 'digitized signatures' (human-readable, drawn on touchscreen/stylus, with an accompanying Certificate of Completion) as an OPTIONAL add-on, but expressly warns the petitioner 'assumes the risk that such differences may render the signature unverifiable,' and there is no dedicated e-petition portal. Cryptographic 'digital signatures' are NOT accepted. To never risk ballot access, treat capture as paper-primary and do not rely on digitized signatures for the bulk of the 10,000.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.8,
+      "note": "All three digitized/digital quotes verbatim on scvotes.gov, so the field is fully grounded. Held because the draft's 'hybrid' label is an operational interpretation that retrieval cannot settle: the SEC explicitly disclaims reliability of digitized signatures and provides no e-petition system, so leaning on the digital path could jeopardize the ballot line. Strictest defensible mode = paper; digitized signatures are permitted-but-risky, not a true digital capture channel."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No filing fee for petition candidates and no fee-in-lieu-of-signatures option for an independent presidential petition. Filing fees apply only to candidates seeking a party nomination by primary. (A local jurisdiction could require a fee in addition to a petition, but that does not apply to a statewide presidential petition filed with the SEC.)",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.93,
+      "note": "Both scvotes.gov quotes verbatim ('candidates filing by petition do not pay a filing fee'; the local-jurisdiction caveat). No fee-in-lieu path exists for the petition route; accurate."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "South Carolina's candidate-petition statutes (Title 7, Chapter 11) and the election-offenses chapter (Title 7, Chapter 25) are entirely silent on petition circulators: they neither define a circulator role nor impose any residency/voter-registration requirement, and they neither authorize nor prohibit paying circulators (per signature or otherwise). Candidate-petition circulator compensation is therefore unaddressed by any primary source found; SC also has no statewide initiative/referendum process, so there is no initiative pay-per-signature law to carry over. A widely-repeated secondary claim that SC \"prohibits paid circulators\" and requires county residency could not be corroborated in the actual statutes and should not be relied upon.",
+    "sosInquiry": "For an independent presidential candidate's nominating petition under S.C. Code Title 7, Chapter 11, does South Carolina law restrict compensating petition circulators — specifically, may a campaign pay circulators per signature, and must a circulator be a South Carolina resident or registered voter?",
+    "citations": [
+      {
+        "url": "https://www.scstatehouse.gov/code/t07c011.php",
+        "quote": "SECTION 7-11-70. Nomination by petition. A candidate's nominating petition for any office in this State shall contain the signatures of at least five percent of the qualified registered electors of the geographical area of the office for which he offers as a candidate; provided, that no petition candidate is required to furnish the signatures of more than ten thousand qualified registered electors for any office."
+      },
+      {
+        "url": "https://www.scstatehouse.gov/code/t07c011.php",
+        "quote": "SECTION 7-11-80. Form of nominating petition. All nominating petitions for any political office or petition of any political party seeking certification as such in the State of South Carolina shall be standardized as follows: (1) Shall be on good quality original bond paper sized 8 1/2 '' X 14''. (2) Shall contain a concise statement of purpose; in the case of nomination of candidates, the name of the candidate, the office for which he offers and the date of the election for such office shall be contained in such petition. (3) Shall contain in separate columns from left to right the following: (a) Signature of voter and printed name of voter; (b) Address of residence where registered; and (c) Precinct of voter."
+      },
+      {
+        "url": "https://www.scstatehouse.gov/code/t07c025.php",
+        "quote": "SECTION 7-25-50. Bribery at elections; unlawful to accept bribery. It is unlawful for a person to procure, by the payment, delivery, or promise of money or other article of value, another to vote for or against any particular candidate or measure at any election held within this State..."
+      },
+      {
+        "url": "https://ballotpedia.org/States_without_initiative_or_referendum",
+        "quote": "South Carolina is one of the 24 states that do not have initiative and referendum. ... citizens do not have the power to initiate ballot measures at the state level."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Statewide electronic list (~3.39M records) = $2,500 (the capped maximum). Electronic per-record schedule: 1,000–5,000 = $25; 5,001–50,000 = $25 + $1 per additional 200 records; 50,001–75,000 = $275; 75,001+ = $275 + $75 per additional 25,000 records, up to $2,500 max. (District flat fees: State House $160, State Senate $300, US House $1,200.)",
+    "whoCanObtain": "Registered South Carolina voters only — \"You must be a registered South Carolina voter to purchase a list (S.C. Code 7-3-20(D)(13)).\" Not the general public; not restricted to candidates/committees, but limited to anyone who is a registered SC voter (and prohibited commercial/solicitation uses).",
+    "useRestrictions": "Yes. Obtaining or using public records for commercial solicitation directed to any person in the State is prohibited under S.C. Code 30-2-50; a person/private entity also may not knowingly obtain or use \"personal information\" from a public body for commercial solicitation. PENALTY: knowing violation of 30-2-50(A) is a misdemeanor, fine up to $500 and/or up to 1 year imprisonment. (Petition-signature verification is a permitted non-commercial political use.)",
+    "requestProcess": "Purchase online through the SEC SaleableData portal (https://vrems.scvotes.sc.gov/SaleableData); electronic file delivered via online download (or flash drive/DVD by pickup or mail). First-time purchasers are advised to contact the SEC at (803) 734-9060 / elections@elections.sc.gov. No notarized affidavit indicated, but eligibility (registered SC voter) gates access.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+    "note": "South Carolina sells the statewide voter file online through the State Election Commission, but only to registered SC voters; the electronic file contains name, residential address, registration number/date, precinct, districts, and voter participation history — everything needed to match petition signers. A full statewide electronic list costs the capped maximum of $2,500.",
+    "citations": [
+      {
+        "url": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+        "quote": "You must be a registered South Carolina voter to purchase a list (S.C. Code 7-3-20(D)(13))."
+      },
+      {
+        "url": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+        "quote": "A new fee schedule for electronic lists was implemented effective March 1, 2022, to lower the base fee from $160 to $25. The fee for electronic U.S. House District lists increased from $1,000 to $1,200."
+      },
+      {
+        "url": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+        "quote": "75,001 and more:  $275 + $75 for each additional 25,000 records or fraction thereof (up to $2,500 max)"
+      },
+      {
+        "url": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+        "quote": "Includes: Name, Address, Race, Gender, Date of Birth, Voter Registration Number and Date Registered, County, Precinct, Voting Districts, and Voter Participation History (past two statewide primaries and general elections."
+      },
+      {
+        "url": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+        "quote": "Delivery: Electronic download (online) or flash drive or DVD (pickup or mail)"
+      },
+      {
+        "url": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+        "quote": "Obtaining or using public records for commercial solicitation directed to any person in this State is prohibited under South Carolina Code Section 30-2-50 ."
+      },
+      {
+        "url": "https://scvotes.gov/resources/sale-of-voter-registration-lists/",
+        "quote": "PENALTY: A person knowingly violating the provisions of 30-2-50(A) is guilty of a misdemeanor and, upon conviction, must be fined an amount not to exceed five hundred dollars or imprisoned for a term not to exceed one year, or both."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — South Carolina's nominating-petition statute (S.C. Code Title 7, Chapter 11, Article 1) imposes NO age requirement on the circulator/collector. The age and qualification rules bind only the SIGNER (must be a \"qualified registered elector\"). SC's petition form (§7-11-80) has no circulator affidavit or witness block at all, so no minimum age is statutorily fixed for t",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER: must be a \"qualified registered elector\" of the geographical area of the office (§7-11-70); signatures are checked against the county voter-registration rolls (§7-11-85). CIRCULATOR: South Carolina law imposes NO requirements — there is no circulator/witness affidavit on the petition form (§7-11-80), and no age, residency, citizenship, or voter-registration requirement for the collector an",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "South Carolina's complete nominating-petition law is S.C. Code §§7-11-70 (signature count), 7-11-80 (petition form), and 7-11-85 (signature verification). All three address only the SIGNER: §7-11-70 requires \"qualified registered electors\" (5% of the office's electorate, capped at 10,000); §7-11-80 specifies the petition form columns (signature of voter, printed name, address of residence where registered, precinct) — notably it contains NO circulator affidavit, witness certification, or oath bl",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+        "url": "https://www.scstatehouse.gov/code/t07c011.php",
+        "quote": "SECTION 7-11-70. Nomination by petition. A candidate's nominating petition for any office in this State shall contain the signatures of at least five percent of the qualified registered electors of the geographical area of the office for which he offers as a candidate; provided, that no petition candidate is required to furnish the signatures of more than ten thousand qualified registered electors for any office."
+      },
+      {
+        "field": "circulatorAgeRule / circulatorMinAge",
+        "url": "https://www.scstatehouse.gov/code/t07c011.php",
+        "quote": "SECTION 7-11-80. Form of nominating petition. ... (3) Shall contain in separate columns from left to right the following: (a) Signature of voter and printed name of voter; (b) Address of residence where registered; and (c) Precinct of voter. (4) No single petition page shall contain the signatures of registered voters from different counties. (5) All signatures of registered voters shall be numbered consecutively."
+      },
+      {
+        "field": "signerVsCirculator (signature verification binds signer only)",
+        "url": "https://www.scstatehouse.gov/code/t07c011.php",
+        "quote": "SECTION 7-11-85. Verification of petition; bases for rejection of petitioners. Every signature on a petition ... must be checked for validity by the respective county board of voter registration and elections against the signatures of the voters on the original applications for registration on file in the board office. ... The signature of a voter may only be rejected if it is illegible and cannot be found in the records of the county board of voter registration and elections is missing from the petition, or is not that of the voter, or if the registration of the voter has been deleted ..."
+      },
+      {
+        "field": "corroboration — no circulator section, only form/signer requirements",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_South_Carolina",
+        "quote": "A petition must adhere to the following formatting requirements: 1. The petition must be printed be on good quality original bond paper sized 8 1/2 by 14 inches. 2. The petition must include a concise statement of purpose ... 3. The petition must contain the following information in separate columns (from left to right): Signature of voter and printed name of voter; Address of residence where registered; Precinct of voter. 4. No single petition page can contain the signatures of registered voters from different counties. 5. All signatures must be numbered consecutively."
+      },
+      {
+        "field": "signer signature count (presidential / statewide cap)",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_South_Carolina",
+        "quote": "An independent candidate must be nominated by petition. The petition must contain signatures equaling at least 5 percent of the qualified registered electors in the geographical area of the office being sought. No petition candidate is required to collect more than 10,000 signatures for any office."
+      }
+    ]
+  }
+}

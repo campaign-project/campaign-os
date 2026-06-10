@@ -1,0 +1,131 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "AR-IS",
+ "jurisdiction": "Arkansas",
+ "abbr": "AR",
+ "petitionType": "initiated-statute",
+ "signatures": {
+  "required": 72563,
+  "headline": "\"eight percent (8%) of the total number of votes cast for the office of governor in the last preceding general election\" (Ark. Const. Art. 5 § 1; SoS Dec-2025 handbook). Base = 2022 gubernatorial general election."
+ },
+ "deadline": {
+  "headline": "Publication: \"Wednesday, June 3, 2026.\" Filing: \"Friday, July 3, 2026 – Deadline to file statewide initiative measures with the Secretary of State.\" (not less than four (4) months before the Nov 3, 2026 General Election)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "\"eight percent (8%) of the total number of votes cast for the office of governor in the last preceding general election\" (Ark. Const. Art. 5 § 1; SoS Dec-2025 handbook). Base = 2022 gubernatorial general election.",
+   "confidence": 0.7,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Publication: \"Wednesday, June 3, 2026.\" Filing: \"Friday, July 3, 2026 – Deadline to file statewide initiative measures with the Secretary of State.\" (not less than four (4) months before the Nov 3, 2026 General Election)"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Statutory 50-county requirement: \"sufficient signatures from each of at least fifty (50) counties of the state,\" interpreted as not less than one-half the designated percentage per county (1/2 of 8% = 4%). Failure at filing = facially invalid, rejected without verification."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "none"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Per-signature pay for OBTAINING signatures is statutorily prohibited (consistent with Ballotpedia's list of ~10 states that ban per-sig pay, which includes AR). Ark. Code Ann. § 7-9-601(g), as reproduced verbatim in the SoS Dec-2025 handbook: \"(1) It is unlawful for a person to pay or offer to pay a person, or receive payment or agree to receive payment, on a basis related to t",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Up to $50 per county on electronic media (≤5,000 voters $10; 5,001–25,000 $25; >25,000 $50); printed lists ≤2¢/name. No statewide SoS file — assembled county-by-county across 75 county clerks (Ark. Code 7-5-109).",
+  "whoCanObtain": "General public. Ark. Code 7-5-109 says the county clerk \"shall provide the list\" upon request and imposes no eligibility limit (not restricted to candidates, committees, parties, or political use). The list is a public record subject only to redaction of \"secure voter\" addresses.",
+  "useRestrictions": "The statute imposes no commercial-use ban or political-use-only limit on the registered voter list itself. The one carve-out is \"secure voters\": county clerks \"shall not reproduce any address of a secure voter in any format unless otherwise authorized by law,\" and all furnished lists exclude secure-voter addresses (Ark. Code 7-5-109(a)(2), (c)). No penalty for ordinary use is specified in this section.",
+  "requestProcess": "Written / in-person request to the county clerk in each county (the statewide list is assembled county-by-county; the statewide voter registration database is maintained centrally but the statutory access mechanism is the county clerk). No notarized affidavit or sworn statement of permitted use is required by statute. Delivered on compact disc or other electronic medium, or as a printed list.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-5-109/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Arkansas has a robust direct citizen-initiative process under Art. 5 § 1 of the 1874 Constitution (originally Amendment 7): direct initiated constitutional amendments (10%), direct initiated statutes/\"initiated acts\" (8%), and veto/popular referenda against legislative acts (6%) — all computed on the total votes cast for Governor in the last preceding gubernatorial general election. Because AR elects its governor in midterm years, the current-cycle base for the November 2026 "
+ },
+ "citations": [
+  {
+   "field": "signatureBasis (initiative/referendum bases)",
+   "url": "https://codes.findlaw.com/ar/arkansas-constitution-of-1874/ar-const-art-5-sect-1/",
+   "quote": "Eight per cent of the legal voters may propose any law and ten per cent may propose a constitutional amendment by initiative petition... any number not less than six per cent of the legal voters may, by petition, order the referendum against any general Act... The total number of votes cast for the office of Governor in the last preceding general election shall be the basis upon which the number of signatures of legal voters upon state-wide initiative and referendum petitions shall be computed."
+  },
+  {
+   "field": "constitutional 15-county distribution floor",
+   "url": "https://codes.findlaw.com/ar/arkansas-constitution-of-1874/ar-const-art-5-sect-1/",
+   "quote": "Upon all initiative or referendum petitions provided for in any of the sections of this article, it shall be necessary to file from at least fifteen of the counties of the State, petitions bearing the signature of not less than one-half of the designated percentage of the electors of such county."
+  },
+  {
+   "field": "signatureRequirement (current-cycle official numbers)",
+   "url": "http://www.sos.arkansas.gov/uploads/elections/2025-2026_I_R_Handbook_-_December_2025_(00000005)_Final_copy_12.31_.25_.pdf",
+   "quote": "Constitutional Amendment – 90,704 signatures, with sufficient signatures from each of at least fifty (50) counties of the state... Initiated Act – 72,563 signatures, with sufficient signatures from each of at least fifty (50) counties of the state... Statewide Referendum – 54,422 signatures, with sufficient signatures from each of at least fifty (50) counties of the state"
+  },
+  {
+   "field": "distribution (50-county statutory requirement)",
+   "url": "http://www.sos.arkansas.gov/uploads/elections/2025-2026_I_R_Handbook_-_December_2025_(00000005)_Final_copy_12.31_.25_.pdf",
+   "quote": "In addition to the minimum number of signatures, the petition, at the time of filing, must contain the signatures of qualified electors from at least fifty (50) counties in the state. This requirement has historically been interpreted as requiring that each of these fifty (50) counties' petitions must contain the signatures of not less than one half of the designated percentage of the electors from that county (1/2 of 10% = 5% for a constitutional amendment; and 1/2 of 8% = 4% for an act; 1/2 of 6% = 3% for a referendum)."
+  },
+  {
+   "field": "deadline (initiative publication and filing for Nov 2026)",
+   "url": "http://www.sos.arkansas.gov/uploads/elections/2025-2026_I_R_Handbook_-_December_2025_(00000005)_Final_copy_12.31_.25_.pdf",
+   "quote": "Wednesday, June 3, 2026 – Deadline for publication of a statewide initiative measure in a newspaper of general (statewide) circulation, at the expense of petitioners, to place the measure on the ballot for the November 2026 General Election... Friday, July 3, 2026 – Deadline to file statewide initiative measures with the Secretary of State to place the measure on the ballot for the November 2026 General Election."
+  },
+  {
+   "field": "deadline (veto referendum)",
+   "url": "https://codes.findlaw.com/ar/arkansas-constitution-of-1874/ar-const-art-5-sect-1/",
+   "quote": "Such petition shall be filed with the Secretary of State not later than ninety days after the final adjournment of the session at which such Act was passed, except when a recess or adjournment shall be taken temporarily for a longer period than ninety days, in which case such petition shall be filed not later than ninety days after such recess or temporary adjournment."
+  },
+  {
+   "field": "deadline (veto referendum 2026 date corroboration)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Arkansas",
+   "quote": "ArkansasVR08/05/2026Signatures must be submitted within 90 days after the end of the legislative session54,422"
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "http://www.sos.arkansas.gov/uploads/elections/2025-2026_I_R_Handbook_-_December_2025_(00000005)_Final_copy_12.31_.25_.pdf",
+   "quote": "The Canvasser does not have to be a registered voter, but the canvasser must be an Arkansas resident, at least eighteen (18) years of age, and a U.S. citizen."
+  },
+  {
+   "field": "perSignaturePayAllowed (per-signature ban)",
+   "url": "http://www.sos.arkansas.gov/uploads/elections/2025-2026_I_R_Handbook_-_December_2025_(00000005)_Final_copy_12.31_.25_.pdf",
+   "quote": "(g) (1) It is unlawful for a person to pay or offer to pay a person, or receive payment or agree to receive payment, on a basis related to the number of signatures obtained on a statewide initiative petition, or statewide referendum petition, local initiative petition, or local referendum petition. (2) This subsection does not prohibit compensation for circulating petitions but only compensation for obtaining signatures when the compensation or compensation level is impacted by or related to the number of signatures obtained. (3) A signature obtained in violation of this subsection is void and shall not be counted. (4) A violation under this subsection is a Class A misdemeanor."
+  },
+  {
+   "field": "perSignaturePayAllowed (constitutional anti-restriction clause permitting paid circulation generally)",
+   "url": "https://codes.findlaw.com/ar/arkansas-constitution-of-1874/ar-const-art-5-sect-1/",
+   "quote": "Unwarranted Restrictions Prohibited. No law shall be passed to prohibit any person or persons from giving or receiving compensation for circulating petitions, nor to prohibit the circulation of petitions, nor in any manner interfering with the freedom of the people in procuring petitions; but laws shall be enacted prohibiting and penalizing perjury, forgery, and all other felonies or other fraudulent practices, in the securing of signatures or filing of petitions."
+  },
+  {
+   "field": "statusNote (active litigation on 2025 acts)",
+   "url": "http://www.sos.arkansas.gov/uploads/elections/2025-2026_I_R_Handbook_-_December_2025_(00000005)_Final_copy_12.31_.25_.pdf",
+   "quote": "NOTE 2 – At the time this publication was revised, litigation was ongoing concerning Acts 218, 240, 241, 274, and 453 of 2025, Act 236 of 2023, and Ark. Code Ann. § 7-9-103, 113, 126, and 601."
+  },
+  {
+   "field": "distribution (facial invalidity if 50-county minimum not met at filing)",
+   "url": "http://www.sos.arkansas.gov/uploads/elections/2025-2026_I_R_Handbook_-_December_2025_(00000005)_Final_copy_12.31_.25_.pdf",
+   "quote": "At the time of filing, the petition must contain the requisite number of signatures, or the petition will be determined to be facially invalid and rejected without the verification of any signatures. In other words, an initiated amendment petition must contain at least 90,704 signatures (also referred to as the initial count) and the required minimum numbers from each of at least fifty (50) counties, or it will be rejected without the verification of any signatures."
+  },
+  {
+   "field": "signatureRequirement (Ballotpedia corroboration of 2026 figures)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Arkansas",
+   "quote": "ArkansasCICA07/03/2026Signatures must be submitted at least four months before the general election90,704ArkansasCISS07/03/2026Signatures must be submitted at least four months before the general election72,563"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

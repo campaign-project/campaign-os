@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mainframe">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CampaignOS — the operating system for democracy</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2.5' y='2.5' width='27' height='27' rx='7' fill='%23090c11' stroke='%23334' stroke-width='1.6'/><path d='M9.5 16.4l4.2 4.3 8.8-9.1' fill='none' stroke='%2336f2c0' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/><circle cx='9.5' cy='9.5' r='1.6' fill='%23ffb24d'/></svg>" />
+<meta name="description" content="CampaignOS is the open-source, AI-native operating system for presidential campaigns. Stand up a complete, credible national campaign in an afternoon — site, policy, volunteers, events, and donations. The Linux of democratic participation, owned by everyone." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- atmospheric layers -->
+<canvas id="grid-net" aria-hidden="true"></canvas>
+<div class="atmos" aria-hidden="true">
+  <div class="atmos__glow atmos__glow--mint"></div>
+  <div class="atmos__glow atmos__glow--amber"></div>
+  <div class="atmos__grid"></div>
+  <div class="atmos__scan"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ===================== MENUBAR ===================== -->
+<header class="menubar" id="menubar">
+  <a class="brand" href="#top" aria-label="CampaignOS home">
+    <span class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="26" height="26">
+        <rect x="2.5" y="2.5" width="27" height="27" rx="7" class="mk-box"/>
+        <path d="M9.5 16.4l4.2 4.3 8.8-9.1" class="mk-check"/>
+        <circle cx="9.5" cy="9.5" r="1.6" class="mk-dot"/>
+      </svg>
+    </span>
+    <span class="brand__word">Campaign<b>OS</b></span>
+  </a>
+
+  <nav class="menubar__nav" aria-label="Primary">
+    <a href="#thesis">Thesis</a>
+    <a href="#launch">Launch</a>
+    <a href="#modules">Modules</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#govern">Governance</a>
+  </nav>
+
+  <div class="menubar__right">
+    <span class="sysclock" id="sysclock" aria-hidden="true">SYS ----.--.-- // --:--:--</span>
+    <a class="ghost-btn" href="#join">
+      <span class="star">★</span> Star · <b id="starcount">14.2k</b>
+    </a>
+  </div>
+
+  <button class="menubar__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="hero">
+  <div class="hero__inner">
+
+    <div class="hero__copy">
+      <div class="kicker reveal" data-reveal>
+        <span class="dot-live"></span> open source · multi-tenant · self-hostable · AGPL / Apache
+      </div>
+
+      <h1 class="hero__title">
+        <span class="reveal" data-reveal style="--d:.05s">The operating</span>
+        <span class="reveal" data-reveal style="--d:.12s">system for</span>
+        <span class="reveal hero__title--accent" data-reveal style="--d:.19s">democracy.</span>
+      </h1>
+
+      <p class="hero__lede reveal" data-reveal style="--d:.30s">
+        CampaignOS is the open-source, AI-native spine for <b>presidential campaigns</b>.
+        Stand up a complete, credible national campaign in an afternoon — site, policy,
+        volunteers, events, and donations — instead of stitching together eleven tools and
+        three consultants. The Linux of democratic participation, owned by everyone.
+      </p>
+
+      <div class="hero__cta reveal" data-reveal style="--d:.40s">
+        <a class="btn btn--solid" href="#join">
+          Launch a campaign <span class="btn__arrow">→</span>
+        </a>
+        <a class="btn btn--line" href="#launch">See how fast →</a>
+      </div>
+
+      <dl class="metrics reveal" data-reveal style="--d:.50s" id="metrics">
+        <div class="metric"><dt>states organized</dt><dd data-count="50">0</dd></div>
+        <div class="metric"><dt>median min. to launch</dt><dd data-count="38">0</dd></div>
+        <div class="metric"><dt>volunteers activated</dt><dd data-count="1240000">0</dd></div>
+        <div class="metric metric--amber"><dt>tools replaced</dt><dd data-static>11 → 1</dd></div>
+      </dl>
+    </div>
+
+    <!-- boot console -->
+    <div class="console reveal" data-reveal style="--d:.34s" aria-hidden="true">
+      <div class="console__bar">
+        <span class="console__dot"></span><span class="console__dot"></span><span class="console__dot"></span>
+        <span class="console__name">tty/campaign-os — boot</span>
+      </div>
+      <pre class="console__body" id="boot"></pre>
+    </div>
+
+  </div>
+
+  <a class="scroll-hint" href="#thesis" aria-label="Scroll">
+    <span>scroll</span>
+    <svg viewBox="0 0 16 24" width="14" height="20"><path d="M8 1v18M2 14l6 6 6-6" /></svg>
+  </a>
+</section>
+
+<!-- ===================== THESIS ===================== -->
+<section class="band thesis" id="thesis">
+  <div class="band__head reveal" data-reveal>
+    <span class="sec-num">01 / thesis</span>
+    <h2>Campaigns run on <span class="strike">eleven disconnected tools</span> coordination debt.</h2>
+    <p class="band__sub">
+      Website builder, volunteer app, donor platform, policy docs, spreadsheets, a CRM, and three
+      consultants. The seams between them are where small campaigns drown. CampaignOS collapses the
+      stack into one shared operating layer — public trust, internal execution, and regulated operations
+      on a single spine.
+    </p>
+  </div>
+
+  <div class="split">
+    <div class="split__col reveal" data-reveal>
+      <span class="split__tag split__tag--bad">before · fragmented</span>
+      <ul class="frag">
+        <li>Squarespace</li><li>Mobilize</li><li>NGP VAN</li><li>ActBlue</li>
+        <li>Google Docs</li><li>Mailchimp</li><li>Twilio</li><li>Airtable</li>
+        <li>Slack</li><li>a compliance binder</li><li>vibes</li>
+      </ul>
+    </div>
+    <div class="split__arrow reveal" data-reveal aria-hidden="true">⟶</div>
+    <div class="split__col split__col--good reveal" data-reveal>
+      <span class="split__tag split__tag--good">after · one spine</span>
+      <div class="spine">
+        <code class="spine__root">campaign://</code>
+        <div class="spine__row"><b>CRM</b> people · orgs · interactions · consent</div>
+        <div class="spine__row"><b>PolicyHub</b> sources · citations · versions</div>
+        <div class="spine__row"><b>VolunteerOS</b> missions · events · field</div>
+        <div class="spine__row"><b>Compliance</b> limits · disclaimers · exports</div>
+        <div class="spine__row spine__row--ai"><b>AI</b> drafts · summarizes · field scripts</div>
+        <div class="spine__row spine__row--audit"><b>Audit</b> append-only · who · what · why</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LAUNCH / SPEED ===================== -->
+<section class="band launch" id="launch">
+  <div class="band__head reveal" data-reveal>
+    <span class="sec-num">02 / launch</span>
+    <h2>From zero to a running campaign <span class="hl-mint">before lunch.</span></h2>
+    <p class="band__sub">
+      Pick a template, answer a handful of questions, and CampaignOS provisions the whole stack
+      in one pass — public site, policy hub, volunteer signup, events, donations, and AI copilots.
+      No eleven tools. No three consultants. No six-week setup.
+    </p>
+  </div>
+
+  <div class="rag">
+    <!-- launch steps -->
+    <ol class="pipe reveal" data-reveal id="pipe">
+      <li data-step><span class="pipe__i">01</span> Choose a template</li>
+      <li data-step><span class="pipe__i">02</span> Provision the tenant</li>
+      <li data-step><span class="pipe__i">03</span> Publish site + <b>policy index</b></li>
+      <li data-step><span class="pipe__i">04</span> Import sources &amp; data</li>
+      <li data-step><span class="pipe__i">05</span> Open <b>volunteer signup</b></li>
+      <li data-step><span class="pipe__i">06</span> Schedule the first events</li>
+      <li data-step><span class="pipe__i">07</span> Go live</li>
+    </ol>
+
+    <!-- live campaign preview -->
+    <div class="answer reveal" data-reveal>
+      <div class="answer__q">
+        <span class="answer__qlabel">template</span>
+        <span>Presidential campaign · Hartwell</span>
+      </div>
+
+      <div class="answer__status" id="launch-status">
+        <span class="answer__spinner"></span>
+        <span id="launch-status-text">provisioning your campaign…</span>
+      </div>
+
+      <div class="preview" id="preview">
+        <div class="psite">
+          <div class="psite__bar"><span class="psite__lock">▸</span> campaign://hartwell-for-president</div>
+          <div class="psite__hero">
+            <b>Hartwell for President</b>
+            <span>A country that actually works.</span>
+          </div>
+          <div class="psite__rows">
+            <div class="psite__row" data-pi="1"><span>policy</span> 12 positions published · source-backed</div>
+            <div class="psite__row" data-pi="2"><span>volunteers</span> <b id="vol-count">0</b> signed up today</div>
+            <div class="psite__row" data-pi="3"><span>events</span> Town Hall · Sat 10:00 · 84 rsvp</div>
+            <div class="psite__row" data-pi="4"><span>donations</span> open · compliance checks on</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="golive" id="golive">
+        <span class="dot-live"></span> <b>campaign live</b> — provisioned in <b>38 seconds</b>, not six weeks
+      </div>
+    </div>
+  </div>
+
+  <ul class="guards reveal" data-reveal>
+    <li><b>50-state ready</b> field, ballot access, and delegate ops out of the box.</li>
+    <li><b>import day one</b> your voter file, donor list, and existing policy docs.</li>
+    <li><b>AI copilots</b> drafting, summaries, and field scripts in every module.</li>
+    <li><b>hosted or self-host</b> our cloud, or your own Postgres in minutes.</li>
+    <li><b>compliance on</b> contribution limits and disclaimers by default.</li>
+    <li><b>yours to leave</b> full data export anytime — no lock-in, no per-seat tax.</li>
+  </ul>
+</section>
+
+<!-- ===================== MODULES ===================== -->
+<section class="band modules" id="modules">
+  <div class="band__head reveal" data-reveal>
+    <span class="sec-num">03 / system modules</span>
+    <h2>Six modules. One CRM spine. Every record knows who owns it.</h2>
+    <p class="band__sub">
+      Mount only what your campaign needs. Each module attaches to shared people, interactions,
+      consent, and audit records — so the system can always answer <i>who changed this, who it affects,
+      and what evidence supports it.</i>
+    </p>
+    <p class="band__sub" style="margin-top:12px;font-family:var(--mono);font-size:13px;color:var(--muted)">
+      ▸ Live now: <a href="console.html" style="color:var(--mint)">Drive Operations console</a> ·
+      <a href="gather.html" style="color:var(--mint)">Gather field app</a> ·
+      <a href="ballot-access.html" style="color:var(--mint)">51-jurisdiction risk board</a>
+    </p>
+  </div>
+
+  <div class="grid" id="module-grid">
+    <article class="card" tabindex="0" style="--c:var(--mint)">
+      <div class="card__top"><span class="card__id">mod.policy</span><span class="card__status">online</span></div>
+      <h3>PolicyHub</h3>
+      <p>The most transparent policy platform ever built. Summary, proposal, cost estimate, criticisms, responses — every claim citation-backed and version-tracked.</p>
+      <div class="card__foot">sources · citations · versions</div>
+    </article>
+
+    <a class="card" href="gather.html" style="--c:var(--mint)">
+      <div class="card__top"><span class="card__id">mod.field</span><span class="card__status">live app</span></div>
+      <h3>VolunteerOS</h3>
+      <p>Turn supporters into reliable organizers. Missions, canvassing, phone banking, signature gathering — offline-tolerant and built for one tap at a time in the field.</p>
+      <div class="card__foot">→ open the Gather field app (next best move)</div>
+    </a>
+
+    <a class="card" href="ballot-access.html" style="--c:var(--sky)">
+      <div class="card__top"><span class="card__id">mod.ballot</span><span class="card__status">live board</span></div>
+      <h3>BallotAccessOS</h3>
+      <p>50-state requirement tracking with source URL, effective date, and verification status. Signature goals, petition packets, risk scoring, deadline countdowns.</p>
+      <div class="card__foot">→ open the live 51-jurisdiction risk board</div>
+    </a>
+
+    <article class="card" tabindex="0" style="--c:var(--amber)">
+      <div class="card__top"><span class="card__id">mod.content</span><span class="card__status">gated</span></div>
+      <h3>ContentOS</h3>
+      <p>Email, social, speeches, press. AI drafts from approved material; humans approve before publish. Full revision history and AI provenance on every artifact.</p>
+      <div class="card__foot">draft · review · approve · log</div>
+    </article>
+
+    <article class="card" tabindex="0" style="--c:var(--mint)">
+      <div class="card__top"><span class="card__id">mod.crm</span><span class="card__status">core</span></div>
+      <h3>Campaign CRM</h3>
+      <p>The spine. People, organizations, relationships, and a shared interaction timeline. Supporters, donors, volunteers, and voters as one canonical record.</p>
+      <div class="card__foot">people · orgs · interactions</div>
+    </article>
+
+    <article class="card" tabindex="0" style="--c:var(--amber)">
+      <div class="card__top"><span class="card__id">mod.fund</span><span class="card__status">gated</span></div>
+      <h3>FundraisingOS</h3>
+      <p>Compliance-aware donations. Contribution limits checked, employer/occupation validated, treasurer review queues, and reporting exports — conservative by default.</p>
+      <div class="card__foot">limits · review · exports</div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== ROADMAP ===================== -->
+<section class="band roadmap" id="roadmap">
+  <div class="band__head reveal" data-reveal>
+    <span class="sec-num">04 / release timeline</span>
+    <h2>Shipping one accountable milestone at a time.</h2>
+  </div>
+
+  <ol class="tl">
+    <li class="tl__item reveal" data-reveal>
+      <span class="tl__tag">M0</span>
+      <div class="tl__card">
+        <h4>Public Foundation <span class="tl__state tl__state--done">shipped</span></h4>
+        <p>Landing, campaign profile, policy index, volunteer signup, events, admin login, the tenant model, and the source/citation schema. Credible from day one.</p>
+      </div>
+    </li>
+    <li class="tl__item reveal" data-reveal>
+      <span class="tl__tag">M1</span>
+      <div class="tl__card">
+        <h4>PolicyHub &amp; Volunteer Intake <span class="tl__state tl__state--done">shipped</span></h4>
+        <p>Policy editor, version history, source upload, citations, and the approved-source AI assistant with citation validation and refusal behavior.</p>
+      </div>
+    </li>
+    <li class="tl__item reveal" data-reveal>
+      <span class="tl__tag">M2</span>
+      <div class="tl__card">
+        <h4>Events &amp; Missions <span class="tl__state tl__state--live">in&nbsp;progress</span></h4>
+        <p>RSVP, check-in, mission assignment, organizer and volunteer dashboards, RBAC, and the human-approval workflow for AI-generated scripts.</p>
+      </div>
+    </li>
+    <li class="tl__item reveal" data-reveal>
+      <span class="tl__tag">M3</span>
+      <div class="tl__card">
+        <h4>Content Approval System <span class="tl__state">queued</span></h4>
+        <p>Multi-channel drafts, AI generation from approved sources, mandatory review, provenance metadata, disclaimer checklists, and a message archive.</p>
+      </div>
+    </li>
+    <li class="tl__item reveal" data-reveal>
+      <span class="tl__tag">M4</span>
+      <div class="tl__card">
+        <h4>Ballot Access Lite <span class="tl__state">queued</span></h4>
+        <p>State-by-state requirements with verification metadata, deadline + signature trackers, petition packets, and green/yellow/red operational risk.</p>
+      </div>
+    </li>
+    <li class="tl__item reveal" data-reveal>
+      <span class="tl__tag">M5</span>
+      <div class="tl__card">
+        <h4>PWA Volunteer App <span class="tl__state">queued</span></h4>
+        <p>Mobile-first home, assigned missions, nearby events, training, canvassing + phone scripts, offline-tolerant screens, push-ready architecture.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ===================== GOVERNANCE / MANIFESTO ===================== -->
+<section class="band govern" id="govern">
+  <div class="band__head reveal" data-reveal>
+    <span class="sec-num sec-num--amber">05 / governance</span>
+    <h2>Owned by everyone. Captured by no one.</h2>
+  </div>
+
+  <blockquote class="manifesto reveal" data-reveal>
+    <p>
+      Democratic infrastructure should not be a black box rented from a vendor, a party, or a donor.
+      CampaignOS is built so that <b>no single campaign, party, donor, or company can ever permanently
+      control it.</b> The source is open. The roadmap is public. The audit log is append-only.
+    </p>
+    <cite>— CampaignOS governance charter, §0</cite>
+  </blockquote>
+
+  <div class="govgrid">
+    <div class="gov reveal" data-reveal><span>↳</span><b>Public roadmap &amp; RFCs</b><p>Major changes to architecture, AI safety, and compliance go through an open RFC process.</p></div>
+    <div class="gov reveal" data-reveal><span>↳</span><b>Working groups</b><p>Policy, compliance, AI safety, security, mobile, fundraising, and field organizing.</p></div>
+    <div class="gov reveal" data-reveal><span>↳</span><b>Contributor ladder</b><p>Code and non-code contributions are first-class. Translators and researchers count.</p></div>
+    <div class="gov reveal" data-reveal><span>↳</span><b>Conflict-of-interest policy</b><p>Code owners and trademark policy guard against ecosystem capture.</p></div>
+    <div class="gov reveal" data-reveal><span>↳</span><b>Self-host or hosted</b><p>Run it on your own Postgres + pgvector, or use the hosted service. Data portability guaranteed.</p></div>
+    <div class="gov reveal" data-reveal><span>↳</span><b>Conservative by default</b><p>It tracks compliance and warns — it is not legal counsel, and it never pretends to be.</p></div>
+  </div>
+</section>
+
+<!-- ===================== JOIN / CTA ===================== -->
+<section class="band join" id="join">
+  <div class="join__inner reveal" data-reveal>
+    <span class="sec-num">06 / deploy</span>
+    <h2>Democracy is open source.<br/>Clone it.</h2>
+    <p class="join__sub">Three commands to a running campaign. No vendor lock-in, no per-seat tax, no black box.</p>
+
+    <div class="clone">
+      <button class="clone__copy" id="clone-copy" aria-label="Copy commands">copy</button>
+      <pre id="clone-cmd"><span class="cl-c">$</span> git clone https://github.com/campaign-os/campaign-os
+<span class="cl-c">$</span> pnpm install &amp;&amp; pnpm db:push
+<span class="cl-c">$</span> pnpm dev <span class="cl-d"># → campaign://localhost:3000</span></pre>
+    </div>
+
+    <div class="join__cta">
+      <a class="btn btn--solid" href="#top">Read the source <span class="btn__arrow">→</span></a>
+      <a class="btn btn--line" href="#top">Join a working group</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="foot">
+  <div class="foot__brand">
+    <span class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="22" height="22">
+        <rect x="2.5" y="2.5" width="27" height="27" rx="7" class="mk-box"/>
+        <path d="M9.5 16.4l4.2 4.3 8.8-9.1" class="mk-check"/>
+        <circle cx="9.5" cy="9.5" r="1.6" class="mk-dot"/>
+      </svg>
+    </span>
+    <span class="brand__word">Campaign<b>OS</b></span>
+  </div>
+  <nav class="foot__links" aria-label="Footer">
+    <a href="#launch">Launch</a>
+    <a href="#modules">Modules</a>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#govern">Governance</a>
+    <a href="#join">Deploy</a>
+  </nav>
+  <div class="foot__meta">
+    <span>AGPL-3.0 / Apache-2.0</span>
+    <span class="sep">·</span>
+    <span>built by no one in particular, owned by everyone</span>
+    <span class="sep">·</span>
+    <span>v0.1</span>
+  </div>
+  <p class="foot__disclaim">CampaignOS is nonpartisan civic infrastructure. It tracks compliance and surfaces warnings; it is not legal advice.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+  "jurisdiction": "California (CA) — illustrative StateBallotRule DRAFT",
+  "accessPath": "independent presidential nomination papers (slate of 54 electors)",
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "value": "219,403 (1% of statewide registration)",
+      "citations": [
+        {
+          "url": "https://elections.cdn.sos.ca.gov/statewide-elections/2024-general/president-elector-independent.pdf",
+          "quote": "signed by at least 219,403 registered voters"
+        }
+      ]
+    },
+    {
+      "field": "validationModel",
+      "value": "random sample; mandatory full count if estimate is 90-110% of requirement",
+      "citations": [
+        {
+          "url": "https://california.public.law/codes/elections_code_section_8401",
+          "quote": "the elections official shall examine and verify each signature"
+        }
+      ]
+    },
+    {
+      "field": "circulatorEligibility",
+      "value": "18+; a circulator need not be a registered voter",
+      "citations": [
+        {
+          "url": "https://california.public.law/codes/elections_code_section_102",
+          "quote": "is 18 years of age or older"
+        }
+      ]
+    },
+    {
+      "field": "witnessOrNotary",
+      "value": "sworn circulator affidavit",
+      "conservativeFallback": "assume NOTARIZATION is required (stricter than a perjury declaration) until the SOS confirms otherwise",
+      "citations": [
+        {
+          "url": "https://california.public.law/codes/elections_code_section_8409",
+          "quote": "Subscribed and sworn to before me"
+        }
+      ]
+    },
+    {
+      "field": "captureMode",
+      "value": "digital signatures accepted statewide",
+      "citations": [
+        {
+          "url": "https://elections.cdn.sos.ca.gov/statewide-elections/2024-general/president-elector-independent.pdf",
+          "quote": "California accepts electronic petition signatures submitted from any mobile device"
+        }
+      ]
+    }
+  ]
+}

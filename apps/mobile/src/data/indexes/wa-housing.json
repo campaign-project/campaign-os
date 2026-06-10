@@ -1,0 +1,77 @@
+{
+  "_generated": "build-indexes.mts (synthetic demo)",
+  "campaignId": "wa-housing",
+  "jurisdiction": "Washington",
+  "scopedZips": [
+    "98105",
+    "98115"
+  ],
+  "builtAt": "2026-06-09",
+  "version": "f4734ed6773a",
+  "real": false,
+  "source": {
+    "adapter": "Washington",
+    "format": "psv",
+    "layoutDocUrl": "https://www.sos.wa.gov/_assets/elections/vrdb-database-fields.pdf",
+    "downloadUrl": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+    "verifiedAsOf": "2026-06-07",
+    "confidence": "high"
+  },
+  "voterCount": 6,
+  "voters": [
+    {
+      "id": "WA-4500",
+      "name": "Robert A Smith",
+      "address": "4500 University Way NE, Seattle WA 98105",
+      "status": "active",
+      "registeredOn": "2018-09-12",
+      "county": "King",
+      "district": "1"
+    },
+    {
+      "id": "WA-0005",
+      "name": "Maria Gonzalez",
+      "address": "5 Ravenna Blvd #4, Seattle WA 98115",
+      "status": "active",
+      "registeredOn": "2021-03-04",
+      "county": "King",
+      "district": "1"
+    },
+    {
+      "id": "WA-0017",
+      "name": "Elizabeth Carter",
+      "address": "17 Brooklyn Ave NE, Seattle WA 98105",
+      "status": "active",
+      "registeredOn": "2019-11-20",
+      "county": "King",
+      "district": "1"
+    },
+    {
+      "id": "WA-0230",
+      "name": "James O'Brien",
+      "address": "230 NE 45th St, Seattle WA 98105",
+      "status": "inactive",
+      "registeredOn": "2016-07-25",
+      "county": "King",
+      "district": "1"
+    },
+    {
+      "id": "WA-0088",
+      "name": "Grace Kim",
+      "address": "88 NE Campus Pkwy, Seattle WA 98105",
+      "status": "active",
+      "registeredOn": "2022-09-01",
+      "county": "King",
+      "district": "1"
+    },
+    {
+      "id": "WA-1200",
+      "name": "Daniel Foster",
+      "address": "1200 NE 50th St, Seattle WA 98115",
+      "status": "active",
+      "registeredOn": "2017-02-11",
+      "county": "King",
+      "district": "1"
+    }
+  ]
+}

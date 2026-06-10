@@ -1,0 +1,140 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "ND-IS",
+ "jurisdiction": "North Dakota",
+ "abbr": "ND",
+ "petitionType": "initiated-statute",
+ "signatures": {
+  "required": 15582,
+  "headline": "two percent of the resident population of the state at the last federal decennial census (Article III, Section 4). Base = 2020 U.S. Census ND resident population of 779,094. 2% = 15,581.88, rounded up to 15,582."
+ },
+ "deadline": {
+  "headline": "Petition form must first be approved by the Secretary of State; sponsors then have 1 year to circulate. The completed petition \"must be filed 120 days before the Primary or General Elections in order to be placed on the respective ballot for that election\" (ND Secretary of State). Constitution Article III, Section 5: \"An initiative petition shall be submitted not less than one "
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "two percent of the resident population of the state at the last federal decennial census (Article III, Section 4). Base = 2020 U.S. Census ND resident population of 779,094. 2% = 15,581.88, rounded up to 15,582.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Petition form must first be approved by the Secretary of State; sponsors then have 1 year to circulate. The completed petition \"must be filed 120 days before the Primary or General Elections in order to be placed on the respective ballot for that election\" (ND Secretary of State). Constitution Article III, Section 5: \"An initiative petition shall be submitted not less than one "
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none — North Dakota does not have a geographic distribution requirement"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "No single-subject rule. Initiated measures are not governed by subject-matter restrictions in North Dakota, and are not required to specify a funding source for mandated expenditures."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Per-signature pay for circulators is EXPLICITLY BANNED for initiative, referendum, and recall petitions. NDCC 16.1-01-12(1)(j) makes it unlawful to \"Pay or offer to pay any individual, measure committee, or other organization, or receive payment or agree to receive payment, on a basis related to the number of signatures obtained for circulating an initiative, referendum, or rec",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "N/A — no statewide voter registration file exists for sale or download. North Dakota has no voter registration. The state's internal \"central voter file\" (NDVOICES) is restricted to election officials via a secure login; it is not offered as a purchasable/downloadable public product, so no public price list exists. If pursued at all, treat as \"varies / not publicly available.\"",
+  "whoCanObtain": "No general public voter-file product. The central voter record system (NDVOICES — North Dakota Voter Information & Central Election Systems) is accessible only to election officials (Secretary of State Elections Division and the 53 county auditors) through a secure login area. There is no candidate/committee voter-list purchase program comparable to other states, because there is no registration list.",
+  "useRestrictions": "Not applicable as a sold dataset. The central voter record is an internal election-administration system (it even flags non-citizens for officials). For petition use, the binding legal constraint is that ballot-measure/nominating petition signers must be North Dakota qualified electors (U.S. citizen, 18+, ND resident 30 days); SOS/county auditors review signatures against signer-supplied name + residential address + date. A campaign cannot obtain a state registration roster to pre-match signers, because none is published.",
+  "requestProcess": "No standard request product. There is no online download, application form, or affidavit process to buy a statewide voter file, because ND does not register voters. Practical signature verification is done by the official filing officer (Secretary of State for statewide measures; county auditors for local). Any inquiry about voter-record data goes to the SOS Elections Division (701-328-4146), but the central file is not made available to campaigns as a list.",
+  "hasNeededFields": "no",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "All figures are primary-source-grounded and settled, so AUTO-LIVE. CURRENT CYCLE (2026 election): constitutional amendment = 31,164 valid signatures (4% of 2020 census 779,094); initiated statute = 15,582 (2%); veto referendum = 15,582 (2%). These numbers are FIXED for the entire 2021-2030 decade because ND ties the requirement to the decennial census, not to votes cast — they will not change until the 2030 census. Base year = 2020 (population 779,094). Verified independently"
+ },
+ "citations": [
+  {
+   "field": "hasCitizenInitiative",
+   "url": "https://ballotpedia.org/Article_III,_North_Dakota_Constitution",
+   "quote": "While the legislative power of this state shall be vested in a legislative assembly consisting of a senate and a house of representatives, the people reserve the power to propose and enact laws by the initiative, including the call for a constitutional convention; to approve or reject legislative Acts, or parts thereof, by the referendum; to propose and adopt constitutional amendments by the initiative; and to recall certain elected officials. This article is self-executing and all of its provisions are mandatory. Laws may be enacted to facilitate and safeguard, but not to hamper, restrict, or impair these powers."
+  },
+  {
+   "field": "measures[initiated-statute].signatureBasis",
+   "url": "https://ballotpedia.org/Article_III,_North_Dakota_Constitution",
+   "quote": "Text of Section 4: The petition may be submitted to the secretary of state if signed by electors equal in number to two percent of the resident population of the state at the last federal decennial census."
+  },
+  {
+   "field": "measures[initiated-constitutional-amendment].signatureBasis",
+   "url": "https://ballotpedia.org/Article_III,_North_Dakota_Constitution",
+   "quote": "Text of Section 9: A constitutional amendment may be proposed by initiative petition. If signed by electors equal in number to four percent of the resident population of the state at the last federal decennial census, the petition may be submitted to the secretary of state. All other provisions relating to initiative measures apply hereto."
+  },
+  {
+   "field": "measures[*].signatureRequirement",
+   "url": "https://www.sos.nd.gov/elections/voter/ballot-measures",
+   "quote": "Constitutional Measure - changes the constitution of the State of North Dakota which can only be accomplished by a vote of the people. Petitions require 4% of the population (31,164 signatures)Initiated Measure - changes North Dakota Century Code which can be accomplished by a vote of the people or by the state legislature. Petitions require 2% of the population (15,582 signatures)"
+  },
+  {
+   "field": "measures[*].deadline",
+   "url": "https://www.sos.nd.gov/elections/voter/ballot-measures",
+   "quote": "A sponsoring committee looking to circulate a statewide ballot measure petition must first have the form of the petition approved by the Secretary of State. They then have 1 year to circulate the petition and gather signatures. However, the petition must be filed 120 days before the Primary or General Elections in order to be placed on the respective ballot for that election."
+  },
+  {
+   "field": "measures[initiated-constitutional-amendment].deadline",
+   "url": "https://ballotpedia.org/Article_III,_North_Dakota_Constitution",
+   "quote": "An initiative petition shall be submitted not less than one twenty hundred days before the statewide election at which the measure is to be voted upon. A referendum petition may be submitted only within ninety days after the filing of the measure with the secretary of state."
+  },
+  {
+   "field": "measures[veto-referendum].deadline",
+   "url": "https://ballotpedia.org/Article_III,_North_Dakota_Constitution",
+   "quote": "A referendum petition may be submitted only within ninety days after the filing of the measure with the secretary of state. The submission of a petition shall suspend the operation of any measure enacted by the legislative assembly except emergency measures and appropriation measures for the support and maintenance of state departments and institutions."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://ballotpedia.org/Article_III,_North_Dakota_Constitution",
+   "quote": "Text of Section 3: The petition shall be circulated only by electors. They shall swear thereon that the electors who have signed the petition did so in their presence. Each elector signing a petition shall also write in the date of signing and his post-office address."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://codes.findlaw.com/nd/title-16-1-elections/nd-cent-code-sect-16-1-01-12/",
+   "quote": "Pay or offer to pay any individual, measure committee, or other organization, or receive payment or agree to receive payment, on a basis related to the number of signatures obtained for circulating an initiative, referendum, or recall petition. This subsection does not prohibit the payment of salary and expenses for circulation of the petition on a basis not related to the number of signatures obtained, as long as the circulators file the intent to remunerate before submitting the petitions ... Any signature obtained in violation of this subdivision is void and may not be counted."
+  },
+  {
+   "field": "distribution",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_North_Dakota",
+   "quote": "North Dakota does not have a distribution requirement for petition signatures."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_North_Dakota",
+   "quote": "initiated measures and amendments are not governed by subject restrictions in North Dakota. In addition, they are not required to specify a funding source for mandated expenditures."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_North_Dakota",
+   "quote": "A prohibition against the circulation of a petition to initiate a constitutional amendment that would directly appropriate public funds or require lawmakers to directly appropriate funds for a specific purpose was approved by the North Dakota legislature in 2013."
+  },
+  {
+   "field": "note",
+   "url": "https://www.census.gov/library/stories/state-by-state/north-dakota.html",
+   "quote": "The Peace Garden State grew 15.8% from 2010 to 2020, to a population of 779,094."
+  },
+  {
+   "field": "measures[initiated-statute].singleSubject",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_North_Dakota",
+   "quote": "Since North Dakota does not have a voter registration system, the number of signatures required is tied to the population reported by the last decennial census. As such, any US Citizen who is at least 18 years old and who has resided in the state for at least thirty days may sign an initiative petition. For statutes and veto referendums, the number of signatures required is 2 percent of the population. For constitutional amendments, it is 4 percent of the population."
+  },
+  {
+   "field": "compensationNote",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_North_Dakota",
+   "quote": "In North Dakota, no law could be found that prohibited a circulator from signing his/her own petition... circulators are required to be at least 18 years of age or older and to be an elector in the state of North Dakota. Moreover, paid circulators must be registered with the secretary of state. Volunteers do not have to register."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

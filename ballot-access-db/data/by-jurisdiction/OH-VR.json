@@ -1,0 +1,126 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "OH-VR",
+ "jurisdiction": "Ohio",
+ "abbr": "OH",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 248093,
+  "headline": "Ohio Const. Art. II, Sec. 1c: \"the signatures of six per centum of the electors shall be required upon a petition to order the submission to the electors of the state for their approval or rejection, of any law, section of any law or any item in any law appropriating money passed by the General Assembly.\" Base = total votes cast for governor at the last preceding election (Nov. 8, 2022 = 4,134,877)."
+ },
+ "deadline": {
+  "headline": "Art. II, Sec. 1c: \"When a petition, signed by six per centum of the electors of the state and verified as herein provided, shall have been filed with the secretary of state within ninety days after any law shall have been filed by the governor in the office of the secretary of state\" — i.e. within 90 days of the law's filing. Measure is submitted \"at the next succeeding regular"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Ohio Const. Art. II, Sec. 1c: \"the signatures of six per centum of the electors shall be required upon a petition to order the submission to the electors of the state for their approval or rejection, of any law, section of any law or any item in any law appropriating money passed by the General Assembly.\" Base = total votes cast for governor at the last preceding election (Nov. 8, 2022 = 4,134,877).",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct (referendum proceeds directly to the electors)"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Art. II, Sec. 1c: \"When a petition, signed by six per centum of the electors of the state and verified as herein provided, shall have been filed with the secretary of state within ninety days after any law shall have been filed by the governor in the office of the secretary of state\" — i.e. within 90 days of the law's filing. Measure is submitted \"at the next succeeding regular"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Art. II, Sec. 1g: signatures from at least 44 of Ohio's 88 counties, each county totaling at least 3% (half of 6%) of that county's gubernatorial vote."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Constitution does not impose a single-subject rule on referenda (a referendum targets an existing law, section, or appropriation item). Emergency laws (tax levies, appropriations for current state expenses, and emergency public-peace/health/safety laws under Art. II, Sec. 1d) are NOT subject to referendum."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "unknown",
+  "operatingStance": "Ohio does NOT ban per-signature/per-piece pay for initiative circulators (it is not among the ~10 states that ban it: AZ, AR, FL, MT, ND, OK, OR, SD, UT, WY). Ohio law instead requires DISCLOSURE: under ORC 3501.38(E) (and the mandatory circulator statement under ORC 3501.38 / 3519.05) the circulator must disclose whether they were paid or were a volunteer, completed in the cir",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "FREE_DOWNLOAD",
+  "cost": "Free. The entire statewide voter registration file is downloadable at no charge from the Ohio Secretary of State's Voter Files Download Page (no fee, no account, no form).",
+  "whoCanObtain": "General public — anyone. The statewide voter file is treated as a public record and posted online for open download with no eligibility gate (no candidate/committee/registered-user restriction).",
+  "useRestrictions": "No use-restriction gate is imposed at the point of download (no affidavit, click-through use agreement, or commercial-use prohibition on the SoS download page itself). General Ohio public-records/voter-registration law applies; the SoS states the files are published \"in accordance with Ohio law.\" No purpose attestation is required to obtain the file, which is ideal for petition-signature matching.",
+  "requestProcess": "Instant online download. Go to the SoS Voter Files Download Page, select \"Statewide Voter Files,\" and click each of the four files to download directly. No request, form, approval, or payment.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www6.ohiosos.gov/ords/f?p=VOTERFTP:STWD:::#stwdVtrFiles",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Signature counts computed from the certified Nov. 8, 2022 gubernatorial total of 4,134,877 votes cast for governor (the \\\"last preceding\\\" gubernatorial election; the 2026 governor's race has not yet occurred). 10% (ICA) = 413,488; 3% per round (indirect statute) = 124,046; 6% (veto referendum) = 248,093. These match Ballotpedia's published 2026 figures (413,487 / 124,046 / 248,093) — the 1-signature difference on the ICA is rounding/truncation of the 10% computation (413,487"
+ },
+ "citations": [
+  {
+   "field": "measures[0].signatureBasis (ICA 10%)",
+   "url": "https://ballotpedia.org/Article_II,_Ohio_Constitution",
+   "quote": "The first aforestated power reserved by the people is designated the initiative, and the signatures of ten per centum of the electors shall be required upon a petition to propose an amendment to the constitution."
+  },
+  {
+   "field": "measures[0].deadline (ICA 125 days)",
+   "url": "https://ballotpedia.org/Article_II,_Ohio_Constitution",
+   "quote": "the secretary of state shall submit for the approval or rejection of the electors, the proposed amendment, in the manner hereinafter provided, at the next succeeding regular or general election in any year occurring subsequent to one hundred twenty-five days after the filing of such petition."
+  },
+  {
+   "field": "measures[1].signatureBasis (indirect statute 3% + 3%)",
+   "url": "https://ballotpedia.org/Article_II,_Ohio_Constitution",
+   "quote": "When at any time, not less than ten days prior to the commencement of any session of the General Assembly, there shall have been filed with the secretary of state a petition signed by three per centum of the electors and verified as herein provided, proposing a law ... it shall be submitted by the secretary of state to the electors for their approval or rejection, if such submission shall be demanded by supplementary petition verified as herein provided and signed by not less than three per centum of the electors in addition to those signing the original petition, which supplementary petition must be signed and filed with the secretary of state within ninety days after the proposed law shall have been rejected by the General Assembly or after the expiration of such term of four months, if no action has been taken thereon"
+  },
+  {
+   "field": "measures[2].signatureBasis (veto referendum 6%)",
+   "url": "https://ballotpedia.org/Article_II,_Ohio_Constitution",
+   "quote": "The second aforestated power reserved by the people is designated the referendum, and the signatures of six per centum of the electors shall be required upon a petition to order the submission to the electors of the state for their approval or rejection, of any law, section of any law or any item in any law appropriating money passed by the General Assembly."
+  },
+  {
+   "field": "measures[2].deadline (referendum 90 days from filing of law)",
+   "url": "https://ballotpedia.org/Article_II,_Ohio_Constitution",
+   "quote": "When a petition, signed by six per centum of the electors of the state and verified as herein provided, shall have been filed with the secretary of state within ninety days after any law shall have been filed by the governor in the office of the secretary of state, ordering that such law, section of such law or any item in such law appropriating money be submitted to the electors of the state for their approval or rejection"
+  },
+  {
+   "field": "distribution (44 counties, half the percentage each) and base",
+   "url": "https://ballotpedia.org/Article_II,_Ohio_Constitution",
+   "quote": "Upon all initiative, supplementary, and referendum petitions provided for in any of the sections of this article, it shall be necessary to file from each of one-half of the counties of the state, petitions bearing the signatures of not less than one-half of the designated percentage of the electors of such county. ... The basis upon which the required number of petitioners in any case shall be determined shall be the total number of votes cast for the office of governor at the last preceding election therefore."
+  },
+  {
+   "field": "base figure (2022 gubernatorial total votes = 4,134,877)",
+   "url": "https://en.wikipedia.org/wiki/2022_Ohio_gubernatorial_election",
+   "quote": "Total votes ... 4,134,877"
+  },
+  {
+   "field": "current-cycle signature requirements (2026): ICA 413,487; indirect statute 124,046/round; veto referendum 248,093",
+   "url": "https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026",
+   "quote": "| Ohio | CICA | 07/01/2026 | Signatures must be submitted at least 125 days before the general election | 413,487 |   ... | Ohio | IndISS | 12/26/2025 (Round 1)  07/01/2026 (Round 2) | Round 1: Signatures must be submitted at least 10 days before the legislative session begins  Round 2: Signatures must be submitted at least 125 days before the general election | 124,046 (Round 1)  124,046 (Round 2) |   ... | Ohio | VR | 08/05/2026 | Signatures must be verified at least 90 days before the general election | 248,093 |"
+  },
+  {
+   "field": "singleSubject (ORC 3519.01(A))",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Ohio",
+   "quote": "Only one proposal of law or constitutional amendment to be proposed by initiative petition shall be contained in an initiative petition to enable the voters to vote on that proposal separately."
+  },
+  {
+   "field": "perSignaturePayAllowed / disclosure of paid status",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Ohio",
+   "quote": "Ohio law requires that circulators disclose their paid/volunteer status in their circulator affidavit, which is completed after signatures have been collected."
+  },
+  {
+   "field": "circulatorResidencyRequired (statute requires; federal injunction)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Ohio",
+   "quote": "The section continues to require petitioners for all other types of petitions to be residents of the state. Judge Michael Watson of the U.S. District Court for the Southern District of Ohio enjoined Ohio's petition circulator residency requirement as violating the First Amendment on November 13, 2013."
+  },
+  {
+   "field": "emergency laws not subject to referendum (Art. II, Sec. 1d)",
+   "url": "https://ballotpedia.org/Article_II,_Ohio_Constitution",
+   "quote": "Laws providing for tax levies, appropriations for the current expenses of the state government and state institutions, and emergency laws necessary for the immediate preservation of the public peace, health or safety, shall go into immediate effect. ... The laws mentioned in this section shall not be subject to the referendum."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

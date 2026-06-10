@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "KY",
+ "jurisdiction": "Kentucky",
+ "abbr": "KY",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 5000,
+  "headline": "5,000 registered voters statewide (no distribution) + $500 fee, both required — KRS 118.315"
+ },
+ "deadline": {
+  "headline": "File by Fri after 1st Tue in Sept = Sep 8, 2028, 4:00 p.m. local (earliest affix/file Nov 3, 2027)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "5,000 registered voters statewide. Independent (or political group/organization) presidential ticket files a Nominating Petition (SBE 64 / SBE 64-2) under KRS 118.315, signed by the candidates for President and Vice President and a minimum of 5,000 registered voters (KRS 118.315(2): 5,000 petitioners for an office for which all electors of the state are entitled to vote). Each petitioner must include signature-affixation date, date of birth, and residence address (not a P.O. box); omission of any voids that signature. Signatures may not be affixed before the first Wednesday after the first Monday in November of the year preceding the election (Nov. 3, 2027 for the 2028 cycle).",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "KRS 118.315(2) verbatim: '...shall contain five thousand (5,000) petitioners' for statewide office; SOS 2028 packet verbatim confirms '5,000 registered voters' and affix date Nov 3, 2027. Statute is current (eff. June 27, 2025). Adversarial: the new 118.315(2) carve-out 'excluding President of the United States in accordance with KRS 118.591(1)' refers ONLY to the presidential-preference-PRIMARY petition (party endorsement path under KRS 118.591) — it does not alter the independent general-election count. Verified by reading KRS 118.591 in full."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Not later than the Friday following the first Tuesday in September preceding the election, by 4:00 p.m. local time. For 2028 = September 8, 2028, 4:00 p.m. local time. Earliest date to file (and to affix signatures) = first Wednesday after first Monday in November of the prior year = November 3, 2027. Statutory basis: KRS 118.365(6) (window) and KRS 118.365(8) (4 p.m. cutoff). Recomputes each cycle.",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "KRS 118.365(6) and (8) verbatim-grounded. Independently re-derived 2028: first Tuesday in Sept 2028 = Sept 5; Friday following = Sept 8, 2028 — matches the SOS 2028 packet's stated 'September 8, 2028' (4:00 p.m. local). No interpretation; arithmetic, statute, and official packet all agree."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. The 5,000 signatures are a single statewide total with no geographic distribution (no per-congressional-district or per-county quota). Petition is for an office 'for whom all the electors of the state are entitled to vote'; signers are 'voters of the same district or jurisdiction from which the candidates seek nomination' (the whole state).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "KRS 118.315(2) sets one flat 5,000 statewide number for statewide office and lists no distribution requirement; SOS petition form's 'undersigned petitioners' clause verbatim confirms a single statewide pool. No distribution language anywhere in the statute or form."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICT: Each signer must be a Kentucky registered voter from the jurisdiction (the state) and must personally list the signature date, date of birth, and a residential address that is NOT a P.O. box; omission of any of these voids that signature (KRS 118.315(2)). Candidates must not be registered members of a political party, and must not have been registered party members on January 1 immediately preceding the election. Do NOT rely on any assumption that a person who merely collects signatures is free of residency/age/registration constraints until confirmed with the State Board of Elections, since that is an absence-of-law inference not settled by retrieval.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Core signer-eligibility and candidate-party-disaffiliation facts are verbatim-grounded (KRS 118.315(1)-(2)) and correct. HOLD is conservative-only: the draft's claim that 'no statutory age or residency rule is imposed on a person who merely collects signatures' is a negative inference (no circulator block on SBE 64/64-2, no statute found), which retrieval cannot conclusively settle vs. a possible SBE administrative regulation. Over-comply: do not promise an unrestricted out-of-state circulator without SBE confirmation. Inquiry filed."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICT: No notary/witness affidavit and no per-petition circulator certification appears on the SBE 64 / SBE 64-2 petition; the only sworn element is the candidates' declaration that they possess the constitutional and statutory qualifications (KRS 118.315(2); declaration on the form). The SOS general guideline states notarization applies only 'If the filing form requires notarization' — treat as: confirm with SBE that the presidential Nominating Petition is NOT a notarized form before relying on the no-notary conclusion.",
+   "confidence": 0.78,
+   "interpretationRequired": true,
+   "note": "The actual SBE 64/64-2 form (read in full) has no notarization line and no circulator/witness attestation on the petitioner pages — only the candidate declaration, verbatim-grounded. The draft's conclusion is supported by the primary form. HOLD is conservative because correctness rests on reading the SOS conditional guideline ('If the filing form requires notarization...') as not triggered by this form — an interpretation best confirmed with the office rather than assumed. Inquiry filed."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Independent presidential petition is collected on the State Board of Elections' prescribed paper Nominating Petition (SBE 64 and SBE 64-2, KRS 118.315) and filed with the Secretary of State's Election Division in person or by mail. No online/remote or in-person-digitized signature system exists for this petition; signatures must be physically affixed to the paper petition.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "SOS packet verbatim: 'Filing Form SBE 64 and SBE 64-2 ... Nominating Petition' and 'Candidates may file in person or by mail at the following address: Office of the Secretary of State, Election Division...'. No e-signature path appears in statute or packet. Strictest reading is paper-only, which the value already states."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "A $500.00 filing fee is required IN ADDITION to the 5,000 signatures (it is NOT a fee-in-lieu-of-signatures option). Independent/political-group/organization presidential candidates pay $500, payable to the Kentucky State Treasurer, filed with the Secretary of State together with the Nominating Petition. No fee alternative to signature-gathering exists.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "SOS 2028 packet lists BOTH 'Signatures Required: ... 5,000 registered voters' AND 'Filing Fee $500.00' for the same independent presidential filing, with 'Checks should be made payable to the Kentucky State Treasurer.' (verbatim) — confirming the fee is additive, not an alternative. No in-lieu provision anywhere."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Low flat statewide fee set by form SBE-84 (the fee schedule, formerly in 31 KAR 3:010, was last published as: CD-R minimum $25; $1.00 per 1,000 records up to 100,000, $0.50 per 1,000 over 100,000, \"$450 statewide\"; current exact figure must be confirmed on form SBE-84 itself).",
+  "whoCanObtain": "Eligibility-gated. By statute (KRS 117.025(3)(i)) the State Board of Elections \"shall furnish ... any and all precinct lists to duly qualified candidates, political party committees or officials thereof, or any committee that advocates or opposes an amendment or public question.\" It \"may also furnish the precinct lists to other persons at the board's discretion.\" A petition/ballot-access candidate qualifies (a \"duly qualified candidate\" = anyone who has filed a letter of intent with the Registry of Election Finance or nomination papers with the SOS/county clerk).",
+  "useRestrictions": "Commercial use is prohibited by statute (\"The board shall not furnish precinct lists to persons who intend to use the lists for commercial use\"). 31 KAR 3:010 defines commercial use to include use/transfer for profit, solicitation of donations, or sale/advertisement of any good, service, or publication; political (including political fundraising), scholarly, journalistic, governmental, and news-media uses are exempted. The current regulation also bars furnishing data to requesters outside the U.S. or where the data would reasonably be expected to leave the U.S. Requester must affirm non-commercial use via sworn statement on form SBE-84.",
+  "requestProcess": "Written application: submit completed form SBE-84 (\"Request for Voter Registration Data\") to the State Board of Elections (140 West Walnut Street, Frankfort, KY 40601) with payment. The form requires a signed sworn statement that the requester has read KRS 117.025(3)(h)/(i) and 31 KAR 3:010, does not intend commercial use, and will not sell or give the lists for commercial use. A candidate's authorized representative must attach a candidate-signed statement on campaign letterhead. Not an instant online download.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://elect.ky.gov/Candidates/Pages/Request-Voter-Registration-Data.aspx",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — Kentucky's nominating-petition statutes impose NO age (or any other) requirement on the person who carries/collects the petition. KRS 118.315 and the related petition statutes regulate only the candidate (who must sign and swear a declaration of qualifications) and the signers/petitioners (who must be registered/qualified voters and must each write their own signatu",
+  "minorCanCirculate": "yes",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "The strict requirements bind the SIGNER only: each petitioner must be a registered voter (\"electors qualified to vote\") from the candidate's district/jurisdiction, and must personally record their signature date, residence address, and date of birth (omission voids that signature) — KRS 118.315(2). The CIRCULATOR (person who carries the petition and gathers signatures) is not mentioned anywhere; K",
+  "gate": "CONSERVATIVE-HOLD",
+  "note": "Independent presidential ballot access in Kentucky runs through the general nomination-by-petition statute, KRS 118.315 (5,000 valid registered-voter signatures statewide for a presidential/statewide office; signatures gatherable starting the first Wednesday after the first Monday in November of the year preceding the election). The statute's eligibility text is directed entirely at (a) the candidate and (b) the signers (\"registered voters from the district or jurisdiction\" / \"electors qualified",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "All 8 fields grounded against primary sources (KRS 118.315, KRS 118.365, SOS 2028 President/Independent packet); quotes verbatim. Adversarial check cleared the KRS 118.591(1) cross-reference in current 118.315(2): 118.591 governs the presidential PREFERENCE PRIMARY petition (party path), NOT the independent general-election petition — no conflict. Two HOLDs are conservative-only (negative inferences about circulator rules / conditional notarization guideline), not refutations; substantive values stand."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=56459",
+   "quote": "The form of the petition shall be prescribed by the State Board of Elections. It shall be signed by the candidate and by registered voters from the district or jurisdiction from which the candidate seeks nomination. ... A petition of nomination for a state officer, or any officer for whom all the electors of the state are entitled to vote, shall contain five thousand (5,000) petitioners ... Each petitioner shall include the date he or she affixes the signature, address of residence, and date of birth."
+  },
+  {
+   "field": "compensation",
+   "url": "https://web.sos.ky.gov/CandidateFilingDocuments/President_Independent.pdf",
+   "quote": "The Nominating Petition shall be signed by the candidate for President and the candidate for Vice President and by a minimum of 5,000 registered voters from the district or jurisdiction from which the candidates seek nomination. Petitioners shall be registered voters and shall include the date the petition was signed, date of birth and residence address."
+  },
+  {
+   "field": "compensation",
+   "url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=27762",
+   "quote": "Any person who makes or offers to make an expenditure to any person to sign a petition to have a public question placed on the ballot, or any person who solicits, accepts, or receives any such expenditure as payment or consideration to sign a petition to have a public question placed on the ballot, shall be guilty of a Class B misdemeanor."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Kentucky",
+   "quote": "The state code does not specify petition circulator requirements. Specifically, there are no residency requirements for circulators."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/ky/title-x-elections/ky-rev-st-sect-117-025/",
+   "quote": "(i) Furnish at a reasonable price any and all precinct lists to duly qualified candidates, political party committees or officials thereof, or any committee that advocates or opposes an amendment or public question. The State Board of Elections may also furnish the precinct lists to other persons at the board's discretion, at a reasonable price to be determined by the board. The board shall not furnish precinct lists to persons who intend to use the lists for commercial use"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/031/003/010/",
+   "quote": "Section 6. Requests for Voter Registration Lists. A request for voter registration lists shall be made by submitting a completed Request for Voter Registration Data, form SBE-84, to the State Board of Elections with payment of fees established in form SBE-84."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://apps.legislature.ky.gov/law/kar/titles/031/003/010/",
+   "quote": "\"Duly qualified candidate\" means any person who has filed: (a) A letter of intent with the Kentucky Registry of Election Finance; or (b) Nomination papers with the Office of the Secretary of State or county clerk."
+  },
+  {
+   "field": "voterFile",
+   "url": "http://kyrules.elaws.us/rule/31kar3:010",
+   "quote": "(7) The minimum charge for CD-R shall be twenty-five (25) dollars. (8) The charge for CD-R shall be one (1) dollar per 1,000 records up to 100,000 records; fifty (50) cents per thousand records over 100,000 records; $450 statewide."
+  },
+  {
+   "field": "voterFile",
+   "url": "http://kyrules.elaws.us/rule/31kar3:010",
+   "quote": "\"CD-R\" means a compact computer disc with read-only memory containing the voter's name and address, county code, precinct code, gender, party, zip code, date of birth, date of registration, and five (5) year voting history generated from the statewide voter registration database."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.bing.com/search?q=Kentucky+%22Request+for+Voter+Registration+Data%22+SBE-84",
+   "quote": "Qualified candidates, political parties, and committees which advocate for or against an amendment or public question are eligible to request voter information. Every request must be submitted to the [State Board of Elections]"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://elect.ky.gov/Resources/Documents/31%20KAR%203.010.pdf",
+   "quote": "I further state that I have read KRS 117.025(3)(h) and 31 KAR 3:010, (quoted above), that I do not intend to use the voter registration lists for commercial use, that I will not sell or give the voter registration [lists for commercial use]"
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+   "url": "https://codes.findlaw.com/ky/title-x-elections/ky-rev-st-sect-118-315/",
+   "quote": "(2) The form of the petition shall be prescribed by the State Board of Elections. It shall be signed by the candidate and by registered voters from the district or jurisdiction from which the candidate seeks nomination. ... Each petitioner shall include the date he or she affixes the signature, address of residence, and date of birth. Failure of a voter to include the signature affixation date, date of birth, and address of residence shall result in the signature not being counted."
+  },
+  {
+   "field": "circulatorAgeRule / minorCanCirculate",
+   "url": "https://codes.findlaw.com/ky/title-x-elections/ky-rev-st-sect-118-315/",
+   "quote": "(1) A candidate for any office to be voted for at any regular election may be nominated by a petition of electors qualified to vote for him or her, complying with the provisions of subsection (2) of this section."
+  },
+  {
+   "field": "circulatorMustBeStateResident / no circulator requirements (secondary-source affirmation)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Kentucky",
+   "quote": "The state code does not specify petition circulator requirements. Specifically, there are no residency requirements for circulators."
+  },
+  {
+   "field": "signer requirement (signer self-attestation, Ballotpedia)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Kentucky",
+   "quote": "The signer of a petition must include the date he or she signs, his or her residence address, and his or her date of birth. ... Candidates are required to sign their own petitions."
+  },
+  {
+   "field": "presidential petition (KRS 118.591 — requirements on signers/candidate, not circulator)",
+   "url": "https://codes.findlaw.com/ky/title-x-elections/ky-rev-st-sect-118-591/",
+   "quote": "(1) Any person seeking the endorsement by a political party for the office of President of the United States ... may file with the Secretary of State certified petitions signed by five thousand (5,000) persons who, at the time they sign, are registered and qualified voters in the Commonwealth and are affiliated, by registration, with the same political party as the candidate for whom petitions are filed."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

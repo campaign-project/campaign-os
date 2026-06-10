@@ -1,0 +1,190 @@
+{
+  "jurisdiction": "Indiana",
+  "signaturesHeadline": "IN: 2% of last SoS vote (36,943 for 2024 cycle); formula stable, integer recomputes off 2026 SoS race for 2028 — HOLD on exact number",
+  "deadlineHeadline": "IN: two-step — county certify by noon local ~June 30, then Election Div by noon ET ~July 15 (2024 dates July 1 / July 15); dates shift each cycle — HOLD on literal dates",
+  "riskNote": "All 8 fields grounded verbatim in the official IN SoS 2024 Candidate Guide; primary risks are (a) signature count and deadline dates are 2024-cycle-specific and recompute for 2028, and (b) two inferences not stated verbatim — that the 4,500/500 rule is primary-only and that out-of-state/non-registered circulators are permitted — both held conservatively; never submit assuming non-resident circulators are safe without office confirmation.",
+  "sosInquiries": [
+    "For an independent/minor-party presidential petition of nomination (CAN-19), may the petition carrier be a non-Indiana resident and/or a person who is not a registered Indiana voter, provided the carrier completes the petition-carrier certification (name, address, DOB) on every page per IC 3-8-2-7?",
+    "Please confirm that the 4,500-signature / 500-per-congressional-district requirement applies ONLY to major-party (Democratic/Republican) primary candidates for President, and that an independent/minor-party presidential petition of nomination has NO per-county or per-congressional-district distribution minimum — only the statewide 2% aggregate.",
+    "For the 2028 presidential cycle, what is the certified signature requirement (2% of the 2026 Secretary of State vote) and the exact county-certification and Election Division filing deadlines?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Formula: 2% of the total votes cast for Secretary of State in the most recent SoS general election, statewide, with any fraction in excess of a whole number disregarded (IC 3-8-6-3). For the 2024 cycle this equals 36,943 (2% of 1,847,179). For 2028 this MUST be recomputed off the 2026 SoS race and is expected to differ; collect a buffer above the formula minimum.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "gate_reason": "value is correct and grounded but cycle-dependent",
+      "note": "All three primary-source quotes verified verbatim in the fresh pdftotext extraction (lines 1979-1988, 6771) and the Ballotpedia quote verified at line 244. Math checks: 0.02 x 1,847,179 = 36,943.58 -> floored to 36,943. HOLD reason: today is 2026-06-07; the literal 36,943 is the 2024-cycle figure and is NOT current for a 2028 run (recomputes off the 2026 SoS vote). Strictest defensible posture = rely on the formula, recompute when 2026 SoS totals certify, and over-collect."
+    },
+    {
+      "field": "deadline",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Two-step statutory rule (IC 3-8-6-10; IC 3-8-6-12): (1) submit petitions to county voter registration offices for certification by 12:00 noon prevailing local time on June 30 of the election year (moves to the next business day if June 30 is a weekend); (2) file the certified petition (CAN-19) plus consent (CAN-20) with the Indiana Election Division by 12:00 noon ET on July 15. For the 2024 cycle the county deadline was noon Mon July 1, 2024 and the Election Division deadline was noon ET Mon July 15, 2024; first day to submit was Jan 10, 2024. Confirm exact 2028 dates with the Election Division.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "gate_reason": "value correct and grounded but dates are cycle-specific",
+      "note": "Both primary-source quotes verified verbatim (lines 1013, 2001-2008) including the IC 3-8-6-10/-12 cites and the weekend-shift note; Ballotpedia corroborated at line 244 (county no later than noon June 30, SoS by July 15). The two-step structure and times (noon local for county, noon ET for the Division) match exactly. HOLD reason: the literal July 1 / July 15, 2024 dates are 2024-cycle-specific and not current for 2028. Note: Ballotpedia also flags a separate elector-filing deadline (2nd Tuesday in September) — that is a downstream step, not a defect in this field, but the campaign must calendar it separately."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "For an independent/minor-party PRESIDENTIAL petition of nomination there is no statutory per-county or per-congressional-district minimum stated in the guide; the requirement is the single statewide 2% aggregate. HOWEVER, because 'none' is an inference (the guide affirmatively states the 4,500/500 rule only for major-party primary candidates and is silent on any distribution rule for the petition of nomination), confirm with the Election Division before relying on a zero-distribution assumption. Operationally, geographic spread is still prudent since signatures are certified county-by-county.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.85,
+      "gate_reason": "correctness hinges on reading the 4,500/500 rule as primary-only",
+      "note": "Quotes grounded: the President 2%-entire-state EXAMPLE (lines 1986-1988) and the 4,500/500 text (lines 614-616). The 4,500/500 language is explicitly framed as 'Democratic or Republican candidates seeking nomination in the 2024 primary election' (lines 614, 620, 626), strongly supporting the draft's claim that it does NOT apply to petition-of-nomination candidates. But the guide never affirmatively says 'President petition of nomination has no distribution requirement' — so 'None' is a (well-supported) interpretation, not a verbatim statement. Held conservatively per the inquiry; campaign should still spread collection geographically because certification is per-county."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Anyone may circulate a petition of nomination; the circulator (petition carrier) must complete the petition-carrier certification (signed affirmation under penalties of perjury plus printed name, address, and date of birth) on EVERY petition page before submission, or the page is rejected if not cured by the filing deadline (IC 3-8-2-7). Do NOT operationally assume out-of-state or non-registered circulators are safe until confirmed with the Election Division — the guide says 'anyone may circulate' but does not affirmatively address residency or voter-registration status.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.8,
+      "gate_reason": "non-resident/non-voter permissibility is inferred, not stated verbatim",
+      "note": "Verbatim quote grounded at lines 759-760 ('Anyone may circulate a petition of nomination... must complete petition carrier certification on every petition form'). The draft's value is correct as to the carrier-certification requirement (IC 3-8-2-7, lines 845-847). HOLD reason: the draft extends 'anyone may circulate' to assert no residency and no voter-status restriction — that specific permission for non-residents/non-voters is an inference, not stated in the guide. Strictest defensible posture: rely on 'anyone may circulate + full carrier cert on every page' and resolve the residency question with the office before deploying out-of-state circulators."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No notarization. A petition carrier (circulator) certification is required instead: the carrier must complete and sign, on each signature page, an affirmation under penalties of perjury that they have no reason to believe any signer is ineligible, with the carrier's printed name, address, and date of birth (IC 3-8-2-7). Signatures are separately validated by the county voter registration office. An incomplete carrier affidavit causes the page to be rejected if not cured by the filing deadline.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "gate_reason": "grounded, correct, no interpretation",
+      "note": "Both quotes verified verbatim: the per-page affirmation-under-penalty-of-perjury with name/address/DOB and IC 3-8-2-7 cite (lines 845-847), and 'A petition carrier is required to fully complete and affix their signature to the affidavit at the bottom of each page' (line 1862 and 7 other occurrences). No notarization requirement appears anywhere in the guide. Value is current and correct; no cycle dependence."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Paper only. Indiana requires original wet-ink signatures on the paper CAN-19 petition of nomination; photocopies, electronic, digital, and digitized signatures are all rejected (IC 3-5-4-1.7(b)). There is no online/digital petition system for an independent presidential petition; the process is paper end-to-end with county certification and physical filing with the Election Division.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.97,
+      "gate_reason": "grounded, correct, no interpretation",
+      "note": "Quote verified verbatim at line 755 ('photocopies of signatures, electronic signatures, digital signatures, or digitized signatures will not be accepted. (IC 3-5-4-1.7(b))'). Confirms a strict wet-signature paper regime. Value is current and correct; no cycle dependence."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Indiana provides no filing-fee option in lieu of (or in addition to) the petition signatures for an independent or minor-party presidential candidate; ballot access is by petition of nomination only.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.93,
+      "gate_reason": "grounded, correct, no interpretation",
+      "note": "Quote verified verbatim at line 344 ('A minor party (other than the Libertarian Party), or independent candidate in Indiana is nominated for placement on the general election ballot by petition of nomination'). Adversarial check confirmed: the only 'fee' anywhere in the 153-page guide is an unrelated photocopying fee (line 3423), and 'in lieu' appears nowhere — so there is no fee alternative. Value is current and correct."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "AUTO-LIVE",
+    "perSignatureAllowed": "no",
+    "paidCirculatorsAllowed": "yes",
+    "circulatorResidency": "not_required",
+    "payMethod": "hourly-only",
+    "operatingStance": "NO per-signature (prohibited) — pay hourly/bonus; advocate to legalize",
+    "model": "per-signature prohibited (Level 6 felony); flat/hourly pay expressly allowed",
+    "note": "Candidate-petition compensation IS addressed by statute, not carried over from initiative law (Indiana has no statewide initiative process). IC 3-14-2-1(5) makes it a Level 6 felony to pay \"based on the number of signatures obtained to place a candidate or public question on a ballot,\" but expressly permits paying circulators on a non-per-signature basis (hourly/flat). No circulator residency/voter-registration requirement exists in the petition-carrier statute (IC 3-6-12); only signers must be registered Indiana voters.",
+    "sosInquiry": "For an independent presidential candidate's petition of nomination under IC 3-8-6, does IC 3-14-2-1(5) permit paying circulators (petition carriers) on an hourly or flat-fee basis so long as compensation is not tied directly or indirectly to the number of signatures collected, and is there any residency or Indiana voter-registration requirement for the petition carriers themselves?",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-14-2-1/",
+        "quote": "Sec. 1. A person who knowingly does any of the following commits a Level 6 felony: ... (5) Pays or offers to pay an individual any property based on the number of signatures obtained to place a candidate or public question on a ballot. This subdivision does not prohibit payment for gathering signatures not based, either directly or indirectly, on the number of signatures obtained to place a candidate or public question on a ballot."
+      },
+      {
+        "url": "https://www.in.gov/sos/elections/files/2026-Candidate-Guide.FINAL.pdf",
+        "quote": "5) Paying or offering to pay an individual any property based on the number of signatures obtained to place a candidate or public question on a ballot. This does not prohibit payment for gathering signatures not based, either directly or indirectly, on the number of signatures obtained to place a candidate or public question on a ballot. (IC 3-14-2-1)"
+      },
+      {
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-6-12-2/",
+        "quote": "As used in this chapter, \"petition carrier\" refers to an individual who circulates a petition that is required to place a candidate or a public question on the ballot. The term includes a candidate circulating a petition for the candidate's placement on the ballot."
+      },
+      {
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-6-12-7/",
+        "quote": "Sec. 7. (a) The petition carrier must sign and date the following statement at the bottom of each signature page: \"I affirm under the penalties for perjury that I have no reason to believe that any individual whose signature appears on this page is ineligible to sign this petition or did not properly complete and sign this page.\". (b) The petition carrier must also print the following information below the affirmation stated in subsection (a): (1) The petition carrier's name. (2) The petition carrier's full address, including the ZIP code. (3) The petition carrier's date of birth."
+      },
+      {
+        "url": "https://statecodesfiles.justia.com/indiana/2015/title-3/article-8/chapter-6/chapter-6.pdf",
+        "quote": "Sec. 6. (a) The signatures to a petition of nomination need not be appended to one (1) paper, but a petitioner may not be counted unless the petitioner is registered and qualified to vote in conformity with section 8 of this chapter."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "No published flat statewide price. Indiana does not sell a single downloadable statewide voter file to campaigns; voter registration data is obtained from the 92 county voter registration offices (or, where authorized, a copy/extract of the computerized statewide list under IC 3-7-26.4), with fees set per county/per request. Varies — request quote.",
+    "whoCanObtain": "Restricted, political/election use only. The computerized statewide voter registration list (SVRS) is not a public commercial product; copies/extracts are made available for political purposes (e.g., to candidates, political party committees, and similar election-related requesters) and not for sale to the general public for commercial use. Routine voter data is requested at the county voter registration office level.",
+    "useRestrictions": "Strict: the statewide voter registration list and voter data may be used only for political/election purposes; commercial use and use for solicitation are prohibited. Indiana law (IC 3-7-26.4, with offenses in IC Title 3, Article 14) makes unauthorized acquisition or misuse of the list a criminal offense. A requester is typically required to certify the data will not be used for commercial purposes.",
+    "requestProcess": "Written request to the county voter registration office (or to the Election Division for authorized statewide-list access), generally accompanied by a sworn/certified statement of permitted (non-commercial, political) use. Not an instant online download — the Indiana SOS Election Division website provides no public order form or downloadable statewide file. Process and fee must be confirmed directly with the Election Division / county.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.in.gov/sos/elections/",
+    "note": "Indiana does NOT offer a public, instantly downloadable statewide voter file: a full map of the SOS Election Division site (108 URLs) and the relevant pages show only aggregate statistics (counts by county, turnout/registration reports) and voter-list-maintenance info — no \"purchase/request voter file\" page. The statewide list (SVRS) is restricted under IC 3-7-26.4 to election/political use; a campaign typically obtains the underlying name + residential address + registration status data at the county voter registration office level via written request with a certification of non-commercial use. Pricing is not published online — confirm fee and process directly with the Indiana Election Division (317-232-3939) or the county registration office. Statute text could not be retrieved verbatim because Justia/FindLaw returned HTTP 403 and the Indiana General Assembly code site (iga.in.gov) is a key-gated JavaScript app; the IC 3-7-26.4 framework is stated from the official site structure and established law, and should be verified against the live statute before relying on it.",
+    "citations": [
+      {
+        "url": "https://www.in.gov/sos/elections/statistics-and-maps/",
+        "quote": "Number of Registered Voters: 4,674,413 (as of January 2, 2024). ... Number of Voters by County and Statewide ... Number of Precincts by County and Statewide"
+      },
+      {
+        "url": "https://www.in.gov/sos/elections/voter-information/voter-list-maintenance-information",
+        "quote": "A person’s voter registration record is never removed from the statewide voter registration system. Instead, the record is flagged as “active,” “inactive,” or “cancelled.”"
+      },
+      {
+        "url": "https://www.in.gov/sos/elections/voter-information/register-to-vote/voter-registration-and-turnout-statistics",
+        "quote": "2024 General Election Registration and Turnout Data ... 2024 Primary Election Registration and Turnout Data"
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — Indiana's petition-of-nomination statute (IC 3-8-6) imposes NO age (or any other) requirement on the person who carries the petition and collects signatures. The statute does not define or regulate a \"circulator\" at all. Every eligibility requirement in the chapter binds the PETITIONER (signer), who must be \"registered and qualified to vote\" (IC 3-8-6-3, -5(a)(5), -",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "The strict registered/qualified-voter requirement binds the SIGNER (petitioner) only; the CIRCULATOR/collector has no statutory requirements in IC 3-8-6.",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "Indiana is a \"government-certification\" petition state, NOT a \"circulator-affidavit\" state. I read the entire operative chapter (IC 3-8-6, secs. 3, 4, 5, 6, 7, 8, 10) on FindLaw (current as of Jan 2, 2024). The chapter contains no concept of a \"circulator,\" \"witness,\" or affidavit by the person who gathers signatures (the only affidavit is a narrow IC 3-8-6-6(b) \"affidavit of assistance\" for helping a SIGNER with a disability physically write their own info — not a circulator oath). Instead, IC ",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorAgeRule / no circulator role — validity rests on government certification of signers, not a circulator affidavit",
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-8-6-8/",
+        "quote": "For a petition of nomination to be considered valid by the officer required to receive the petition, the county voter registration office in the county where the petitioner is registered must certify that each petitioner is a voter at the residence address listed in the petition at the time the petition is being processed. The certification must accompany and be part of each petition. The certification must indicate that each petitioner is eligible to vote for the candidates being nominated by the petition."
+      },
+      {
+        "field": "signerVsCirculator — requirements bind the petitioner (signer); only signer info is required on each petition paper, no circulator/witness signature",
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-8-6-6/",
+        "quote": "The signatures to a petition of nomination need not be appended to one (1) paper, but a petitioner may not be counted unless the petitioner is registered and qualified to vote in conformity with section 8 of this chapter. Each petition must contain the following: (1) The signature of each petitioner. (2) The name of each petitioner legibly printed. (3) The residence address of each petitioner as set forth on the petitioner's voter registration record."
+      },
+      {
+        "field": "circulatorMustBeRegisteredVoter — the registered/qualified-voter requirement is imposed on the petitioner (signer), not on a collector",
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-8-6-5/",
+        "quote": "A petition of nomination must state all of the following: ... (5) That the petitioners desire and are registered and qualified to vote for each candidate."
+      },
+      {
+        "field": "signer-only signing requirement — each petitioner signs personally (or has mark attested / authorizes assistance for a disability); no provision for a circulator to sign or swear",
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-8-6-7/",
+        "quote": "Each petitioner on a petition of nomination must, in conformity with section 6 of this chapter: (1) sign the petitioner's name; (2) have the petitioner's mark attested; or (3) authorize an individual to sign on behalf of the petitioner with a disability."
+      },
+      {
+        "field": "signature threshold binds voters/signers (context: who must sign)",
+        "url": "https://codes.findlaw.com/in/title-3-elections/in-code-sect-3-8-6-3/",
+        "quote": "A petition of nomination must be signed by the number of voters equal to two percent (2%) of the total vote cast at the last election for secretary of state in the election district that the candidate seeks to represent."
+      }
+    ]
+  }
+}

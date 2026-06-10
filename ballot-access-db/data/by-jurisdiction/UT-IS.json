@@ -1,0 +1,136 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "UT-IS",
+ "jurisdiction": "Utah",
+ "abbr": "UT",
+ "petitionType": "initiated-statute",
+ "signatures": {
+  "required": 70373,
+  "headline": "Utah Code 20A-7-201(1)(a): 'legal signatures equal to 4% of the number of active voters in the state on January 1 immediately following the last regular general election' (base = active voters as of January 1, 2025)."
+ },
+ "deadline": {
+  "headline": "Indirect-initiative packet due date governed by 20A-7-206.1 (per the Lt. Governor's official 2026 requirements sheet). General submission framework in 20A-7-105(5)(a)(i) (earlier of 30 days after first signature, 316 days after application filed, or Feb 15 before next general election) also applies. To be transmitted to the Legislature, the LG must declare sufficiency at least "
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Utah Code 20A-7-201(1)(a): 'legal signatures equal to 4% of the number of active voters in the state on January 1 immediately following the last regular general election' (base = active voters as of January 1, 2025).",
+   "confidence": 0.9,
+   "note": "direct/indirect: indirect (submitted to the Legislature for approval or rejection)"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Indirect-initiative packet due date governed by 20A-7-206.1 (per the Lt. Governor's official 2026 requirements sheet). General submission framework in 20A-7-105(5)(a)(i) (earlier of 30 days after first signature, 316 days after application filed, or Feb 15 before next general election) also applies. To be transmitted to the Legislature, the LG must declare sufficiency at least "
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "From at least 26 of the 29 Utah State Senate districts, signatures equal to 4% of the active voters in that district on the same Jan 1 (20A-7-201(1)(a)(ii)). Per the Lt. Governor's official 2026 figures, the per-district 4% thresholds range from 1,488 (Senate 10) to 2,858 (Senate 19)."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Yes — same as the direct initiative: 20A-7-202(5)(a)(iv) and (6) (Utah Const. Art. VI, Sec. 22 single-subject standard)."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "not_required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Utah BANS per-signature pay for initiative AND referendum petitions; compensation must be hourly. Utah Code 20A-1-1004(1) circulator verification sheet (eff. 5/6/2026) states verbatim: \"I understand that if I have been or will be paid to gather signatures for this petition, my compensation must be based on an hourly rate if the petition is an initiative or referendum petition, ",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$1,050.00 flat for a one-time statewide purchase (no subscriptions, updates, or refunds). Separate election-period reports (Who Has Voted / Who Has Been Sent an Absentee Ballot) are $35.00 per election each; precinct-level results are free.",
+  "whoCanObtain": "General public. Per the Lt. Governor's Office, \"portions of a voter registration form is available to the public, unless a voter has requested that his or her voter information is classified as an At-Risk record.\" No candidate/party/registered-user gating for the public statewide file.",
+  "useRestrictions": "At-Risk-classified voter records are withheld: \"These records cannot be provided to members of the public, political parties, or candidates.\" Universally protected data (DOB, driver license / state ID / SSN, and—absent voter consent beginning Jan 2027—email and phone) is never released to the public. The statewide file's contents and release are governed by Utah Code 20A-2-602 (contents), 20A-2-601 (age range only, not exact DOB), and 20A-2-607 (timing). County/district lists must be obtained from the relevant county clerk(s).",
+  "requestProcess": "Online request form submitted to the Lieutenant Governor's Office at https://cs.utah.gov/s/elections-request. Not an instant download: \"You will receive an email that allows you to download the database within one business day of your purchase.\" Note the pre-election blackout under Utah Code 20A-2-607 (see note).",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://cs.utah.gov/s/elections-request",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 1,
+  "riskNote": "All numbers are primary-source-grounded and cross-confirmed. The current-cycle valid-signature requirements (140,749 for the 8% direct initiative and referendum; 70,373 for the 4% indirect initiative) are taken verbatim from the Lt. Governor's official '2026 Signature Requirements for Statewide Petitions in Utah' PDF, computed from the statutory base of 1,759,353 active voters as of January 1, 2025 (the Jan 1 following the Nov 2024 general election). The formula, distribution"
+ },
+ "citations": [
+  {
+   "field": "hasCitizenInitiative / statusNote",
+   "url": "https://le.utah.gov/xcode/ArticleVI/UC_AVI_S1_1800010118000101.html",
+   "quote": "The legal voters of the State of Utah, in the numbers, under the conditions, in the manner, and within the time provided by statute, may: (A) initiate any desired legislation and cause it to be submitted to the people for adoption upon a majority vote of those voting on the legislation, as provided by statute; or (B) require any law passed by the Legislature, except those laws passed by a two-thirds vote of the members elected to each house of the Legislature, to be submitted to the voters of the State, as provided by statute, before the law may take effect."
+  },
+  {
+   "field": "statusNote (pending constitutional amendment / 60% tax threshold)",
+   "url": "https://le.utah.gov/xcode/ArticleVI/UC_AVI_S1_2026112320250507.html",
+   "quote": "Notwithstanding Subsection (2)(a)(i)(A), initiated legislation that is subject to a vote that occurs after November 1, 2026, shall be adopted upon approval of at least 60% of those voting on the legislation if the initiated legislation includes: (A) the imposition of a new tax; ... Takes effect on November 23, 2026, if approved by a majority of those voting on it at the general election on November 3, 2026."
+  },
+  {
+   "field": "initiated-statute (direct) signatureBasis + distribution",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S201_2026050620260506.html",
+   "quote": "A person seeking to have an initiative submitted to a vote of the people for approval or rejection shall, after filing an initiative application, obtain: (i) legal signatures equal to 8% of the number of active voters in the state on January 1 immediately following the last regular general election; and (ii) from at least 26 Utah State Senate districts, legal signatures equal to 8% of the number of active voters in that district on January 1 immediately following the last regular general election."
+  },
+  {
+   "field": "initiated-statute (indirect) signatureBasis + distribution",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S201_2026050620260506.html",
+   "quote": "A person seeking to have an initiative submitted to the Legislature for approval or rejection shall, after filing an initiative application, obtain: (i) legal signatures equal to 4% of the number of active voters in the state on January 1 immediately following the last regular general election; and (ii) from at least 26 Utah State Senate districts, legal signatures equal to 4% of the number of active voters in that district on January 1 immediately following the last regular general election."
+  },
+  {
+   "field": "signatureRequirement (computed current-cycle figures, base year 2025)",
+   "url": "https://vote.utah.gov/wp-content/uploads/2025/01/2026-Petition-Sig-Requirements.pdf",
+   "quote": "A regular initiative petition must obtain the signatures of at least 8% of the total number of active voters as of January 1, 2025. Additionally, the initiative must meet the signature thresholds in at least 26 out of 29 Senate districts. ... An Initiative submitted to the legislature must obtain the signatures of at least 4% of the total number of active voters as of January 1, 2025. ... Total 1759353  140749  70373"
+  },
+  {
+   "field": "popular-referendum signatureBasis + distribution",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S301_2023050320230503.html",
+   "quote": "A person seeking to have a law passed by the Legislature submitted to a vote of the people shall, after filing a referendum application, obtain: (i) legal signatures equal to 8% of the number of active voters in the state on January 1 immediately following the last regular general election; and (ii) from at least 15 Senate districts, legal signatures equal to 8% of the number of active voters in that Senate district on January 1 immediately following the last regular general election."
+  },
+  {
+   "field": "referendum signatureRequirement + distribution (official figures)",
+   "url": "https://vote.utah.gov/wp-content/uploads/2025/01/2026-Petition-Sig-Requirements.pdf",
+   "quote": "A referendum petition must obtain the signatures of at least 8% of the total number of active voters as of January 1, 2025. Additionally, a referendum must meet the signature thresholds in at least 15 out of 29 Senate districts."
+  },
+  {
+   "field": "initiative deadline (Feb 15)",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S105_2026050620260525.html",
+   "quote": "The sponsors, or an agent of the sponsors, shall submit a signed and verified packet to the county clerk of the county in which the packet was circulated before 5 p.m. no later than the earlier of: (i) for a statewide initiative: (A) the first business day that is at least 30 calendar days after the day on which the first individual signs the initiative packet; (B) the last business day that is no more than 316 calendar days after the day on which the application for the initiative petition is filed; or (C) the February 15 immediately before the next regular general election immediately after the application is filed under Section 20A-7-202"
+  },
+  {
+   "field": "initiative deadline (LG confirmation)",
+   "url": "https://vote.utah.gov/initiatives-and-referenda/",
+   "quote": "February 15 was the final day signatures could be submitted. ... County clerks had until March 8, 2026 at the latest to complete verification."
+  },
+  {
+   "field": "referendum deadline (application + packet)",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S302_2026050620260506.html",
+   "quote": "Individuals wishing to circulate a referendum petition shall file a referendum application with the lieutenant governor no later than 5 p.m. on the first business day that is at least five calendar days after the day on which the legislative session at which the law passed ends."
+  },
+  {
+   "field": "referendum packet deadline (40 days after session)",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S105_2026050620260525.html",
+   "quote": "for a statewide referendum: (A) the first business day that is at least 30 calendar days after the day on which the first individual signs the referendum packet; or (B) the first business day that is at least 40 calendar days after the day on which the legislative session at which the law passed ends"
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S202_2026050620260506.html",
+   "quote": "The lieutenant governor shall reject an initiative application ... and not issue signature sheets if: (a) the proposed law: ... (iv) contains more than one subject as evaluated in accordance with Subsection (6) ... To evaluate whether the proposed law contains more than one subject under Subsection (5)(a)(iv), the lieutenant governor shall apply the same standard provided in Utah Constitution, Article VI, Section 22, which prohibits a bill from passing that contains more than one subject."
+  },
+  {
+   "field": "perSignaturePayAllowed (banned for initiatives/referenda - hourly only)",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter1/C20A-1-S1004_2026050620260506.html",
+   "quote": "I understand that if I have been or will be paid to gather signatures for this petition, my compensation must be based on an hourly rate if the petition is an initiative or referendum petition, or on an hourly rate or rate per valid signature if the petition is another type of petition."
+  },
+  {
+   "field": "circulatorResidencyRequired (no - 18+ only; signer must be legal voter)",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S105_2026050620260525.html",
+   "quote": "A Utah voter may sign a statewide petition if the voter is a legal voter. ... The sponsors shall ensure that the individual in whose presence each signature sheet was signed: (i) is at least 18 years old; (ii) verifies each signature sheet by completing the verification printed on the last page of each packet"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

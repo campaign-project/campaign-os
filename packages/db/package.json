@@ -1,0 +1,16 @@
+{
+  "name": "@campaign-os/db",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "generate": "prisma generate --schema prisma/schema.prisma",
+    "push": "prisma db push --schema prisma/schema.prisma"
+  },
+  "dependencies": {
+    "@prisma/client": "latest"
+  },
+  "devDependencies": {
+    "prisma": "latest",
+    "typescript": "latest"
+  }
+}

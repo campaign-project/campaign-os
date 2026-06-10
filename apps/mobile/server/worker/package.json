@@ -1,0 +1,15 @@
+{
+  "name": "gather-sync-worker",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "schema:local": "wrangler d1 execute gather --local --file schema.sql",
+    "schema:remote": "wrangler d1 execute gather --remote --file schema.sql",
+    "deploy": "wrangler deploy",
+    "check": "wrangler deploy --dry-run --outdir /tmp/gather-worker-build"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250601.0",
+    "wrangler": "^4.0.0"
+  }
+}

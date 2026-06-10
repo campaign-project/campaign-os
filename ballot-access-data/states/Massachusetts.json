@@ -1,0 +1,186 @@
+{
+  "jurisdiction": "Massachusetts",
+  "signaturesHeadline": "10,000 certified voter signatures, statewide aggregate (fixed by statute, no distribution quota) — AUTO-LIVE",
+  "deadlineHeadline": "SOS final filing = last Tuesday in August, 5:00 p.m. (solid); local-submission sub-deadline CONFLICTED in draft — HOLD",
+  "riskNote": "All 7 fields ground verbatim to primary sources; 6 are AUTO-LIVE. Only the deadline field is held: the draft is internally inconsistent (calls Aug 20, 2024 the \"28-days-prior submission deadline,\" but Aug 20 is 7 days before the Aug 27 filing, and Ballotpedia says 14 days) — the statute-vs-guidance conflict on the local-submission window is a legal-interpretation question; strictest read protects ballot access by treating local submission as due by the 28th day prior.",
+  "sosInquiries": [
+    "For an INDEPENDENT (non-party) presidential-elector nomination petition filed under M.G.L. c. 53 sec. 10 (last Tuesday in August of a presidential year), what is the exact deadline to SUBMIT signed nomination papers to local registrars for certification, and the deadline for registrars to COMPLETE certification — is it the sec. 7 'twenty-eighth day prior / seventh day prior' state-office schedule, or the 14-day schedule, and please confirm the 2028 calendar dates?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "10,000 certified voter signatures, statewide aggregate. Fixed by statute (M.G.L. c. 53 sec. 6 lists 'presidential electors, ten thousand'); not a recomputed percentage. An independent ('Unenrolled') presidential candidate qualifies by filing nomination papers for a slate of presidential electors carrying 10,000 certified signatures. Practitioner guidance: collect well above 10,000 because registrars disqualify non-matching signatures; sec. 7 lets registrars certify the required number increased by two-fifths.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.97,
+      "note": "Verbatim in M.G.L. c. 53 sec. 6 ('signed in the aggregate by not less than the following number of voters: for governor and lieutenant governor, attorney general, United States senator, and presidential electors, ten thousand'). Cross-confirmed by Ballotpedia ('At least 10,000 voters must sign this petition') and its historical table (1992-2012 all 10,000, 'Fixed by statute'). The two-fifths language is verbatim in sec. 7. Adversarial check: legal minimum to QUALIFY is 10,000 certified; the +two-fifths is a registrar certification cap / over-collection mechanic, correctly framed as guidance. Current and correct."
+    },
+    {
+      "field": "deadline",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Final filing with the Secretary of the Commonwealth: on or before the LAST TUESDAY IN AUGUST of the presidential-election year, by 5:00 p.m. (M.G.L. c. 53 sec. 10) — this part is solid. STRICTEST local-submission read (over-comply): submit signed nomination papers to local registrars no later than the 28th day before the SOS final filing date, by 5:00 p.m., and ensure local certification is COMPLETE no later than the 7th day before final filing (M.G.L. c. 53 sec. 7 state-office schedule). Treat the earliest applicable date as binding until the SOS confirms which sub-schedule (28-day vs 14-day) governs the presidential-elector petition. Do NOT rely on 'August 20' as a 28-day submission deadline — that date is the 7-day certification mark, not the submission deadline.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.6,
+      "note": "All citations ground verbatim (sec. 10 'last Tuesday in August'; sec. 10 'before five o'clock'; sec. 7 '28th day... seventh day'; Ballotpedia '14th day preceding'; Ballotpedia table '...8/27/2024'). BUT the draft's value is internally inconsistent: it says local submission is 'at least 28 days before' the SOS filing AND that 'For 2024 the local-submission deadline was August 20, 2024' — arithmetically Aug 20 is exactly 7 days before Aug 27 (the 7-day CERTIFICATION mark), not 28 days (which is July 30). Sources also conflict on the submission window: sec. 7 says 28th day for a 'state office,' while Ballotpedia says the 14th day for the presidential petition. Whether the sec. 7 state-office 28/7 schedule even applies to a presidential-elector paper (filed separately under sec. 10) is a legal-interpretation question retrieval cannot settle. Held; reliedValue set to the strictest (earliest) defensible submission window."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. The 10,000 requirement is a single statewide aggregate ('signed in the aggregate by not less than ... ten thousand'). No per-congressional-district or per-county minimum. Signatures are collected per-city/town only procedurally (each local board certifies only its own voters; signatures from more than one city or town may not appear on the same sheet), but no geographic distribution quota applies.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "Verbatim sec. 6 ('in the aggregate') and sec. 7 ('Signatures shall not be certified ... from more than one city or town per sheet'). Independently confirmed by the 2026 SOS Candidates Guide: 'You do not, however, need to gather signatures from every city and town in your district, or from a certain number of communities in your district.' No distribution requirement exists. Correct and current."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Massachusetts imposes no statutory eligibility requirement (age/residency/voter-status) on the CIRCULATOR of a nomination paper, and no circulator-registration or circulator-affidavit. The binding constraints are on the SIGNERS: each must be a MA registered voter, signing in person their own name substantially as registered, with their registered address. For a non-party ('Unenrolled') candidate, signatures may be gathered from ANY registered voter (no party-affiliation restriction). A voter physically unable to write may authorize another to sign in the voter's presence. Conservative practice: still use eligible MA-registered circulators since reliance is on signer validity, not circulator status.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.85,
+      "note": "Signer rules verbatim in sec. 7 ('Every voter signing a nomination paper shall sign in person as registered ... any voter who is prevented by physical disability ... may authorize some person'). 2026 SOS Guide verbatim: 'If you are running as a non-party candidate, you can gather signatures from any registered voter in your district' and 'Voters should sign their name as they are registered ... Voters must sign their own name.' Adversarial check: MA law is silent on circulators (no affirmative permission, just no restriction); the value correctly states the ABSENCE of a circulator rule and the value direction is safe (the load-bearing constraint, signer validity, is stated correctly), so no ballot-access risk from relying on it."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No notarized circulator affidavit and no circulator certification/oath required. Validity rests on official certification: local boards of registrars certify each signer as a registered voter of their city/town. Separately, a non-party ('Unenrolled') candidate must file with the Secretary a registrar-issued certificate stating the candidate is not enrolled in any political party (M.G.L. c. 53 sec. 6) — this is a certificate ABOUT THE CANDIDATE, not a circulator/witness affidavit on the signature sheets.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Verbatim sec. 6 (Unenrolled certificate from registrars) and sec. 7 (registrars 'check each name ... certify ... and only names so checked shall be deemed ... qualified'). 2026 SOS Guide confirms the non-party Voter Registration Certificate is included on the nomination papers, distinct from any witness oath. No circulator oath/notary exists in the MA scheme. Correct and current."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Signatures must be collected on official pre-printed paper nomination papers (yellow or beige for non-party/independent candidates) obtained from the Secretary; signers sign in person ('wet') and papers are physically submitted to local registrars for certification, then physically filed with the Secretary (mail accepted only if it physically arrives by the deadline; postmarks do not count). The SOS guidance states the papers cannot be provided electronically. No digital/remote-online pathway exists for an independent presidential petition in Massachusetts.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.94,
+      "note": "All three quotes verbatim in the 2026 SOS Candidates Guide: 'papers cannot be provided electronically'; 'Nomination papers for party candidates are white in color, while nomination papers for non-party candidates are yellow or beige'; 'the papers must physically arrive at the election office by the deadline. Postmark dates are not enough...'. Consistent with sec. 7 (per-sheet, in-person signing). Paper-only is correct and current. (The MA online-petition / e-signature pathway covers only certain local/initiative contexts, not this petition.)"
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No filing fee for ballot access in Massachusetts and no fee-in-lieu-of-signatures option; the 10,000 certified signatures are the sole ballot-access qualification. (Separate non-ballot-access obligations exist — FEC statement of candidacy, state OCPF/Ethics filing — but these are not a ballot-access fee and not an alternative to signatures.)",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "Ballotpedia's 2024 independent-candidate filing table grounds verbatim in page HTML: columns 'Filing fee' = N/A and 'Filing fee formula' = N/A for Massachusetts (row: Massachusetts | 10,000 | Fixed by statute | N/A | N/A | 8/27/2024). No fee or fee-in-lieu appears in M.G.L. c. 53. Note: the quoted string was collapsed in the markdown extraction but is fully present in the page HTML, so grounding holds. Correct and current."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "Massachusetts candidate-petition law (M.G.L. c. 53 and the Secretary of the Commonwealth's 2026 Candidate's Guide) regulates only the SIGNERS (must be registered voters in the district) and certification by local officials; it does NOT impose any registration/residency requirement on, or oath from, the circulator, and contains NO provision addressing compensation of circulators — so paying per signature on a candidate/independent-presidential nomination paper is unaddressed, not affirmatively permitted. The Massachusetts pay-per-signature and residency rules discussed in Ballotpedia/NCSL apply to ballot-initiative/referendum petitions only and do not carry over to candidate petitions.",
+    "sosInquiry": "For an unenrolled candidate's presidential nomination papers under M.G.L. c. 53, does Massachusetts law or regulation permit or prohibit compensating signature gatherers/circulators on a per-signature basis, and must a circulator be a Massachusetts registered voter or resident?",
+    "citations": [
+      {
+        "url": "https://www.sec.state.ma.us/divisions/elections/getting-on-the-ballot/how-to-run-for-president.htm",
+        "quote": "Signatures must be collected from registered voters and certified by the local election offices in each city and town where you gathered the signatures. ... you will need to submit to the Elections Division at least 10,000 certified signatures"
+      },
+      {
+        "url": "https://www.sec.state.ma.us/divisions/elections/download/getting-on-the-ballot/Candidates-Guide-2026.pdf",
+        "quote": "If you are running as a non-party candidate, you can gather signatures from any registered voter in your district. ... Voters must sign their own name. ... Any person can submit your nomination papers to the local election office."
+      },
+      {
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter53/Section7",
+        "quote": "Every voter signing a nomination paper shall sign in person ... The registrars shall check each name on the nomination paper and shall forthwith certify the number of signatures checked which are names of voters both in the city or town and in the district for which the nomination is made"
+      },
+      {
+        "url": "https://ballotpedia.org/Laws_governing_ballot_initiative_signature_gatherers",
+        "quote": "Pay-per-signature is a method of compensating signature gatherers ... who collect signatures for ballot initiatives and veto referendums. ... There are 26 states that provide for an initiative or referendum process. Sixteen (16) of those states allowed campaigns to make payments to signature gatherers based on the number of signatures collected. Ten (10) of those states prohibited"
+      }
+    ],
+    "initiativePrior": "permitted"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "State voter file: no published flat price — \"a fair and reasonable cost not to exceed the cost of printing or preparing computer readable documents\" (M.G.L. c.51 §47C). Municipal route (for non-qualifying candidates): each city/town charges only \"the cost of producing the record\" — in practice a few dollars per local street list/book (e.g., $2–$20 per town).",
+    "whoCanObtain": "The statewide central registry of voters is NOT a public record and is restricted by statute to: state party committees, statewide candidate committees, state ballot question committees, the jury commissioner, the adjutant general, and any other entity the Secretary designates by regulation. The SOS describes this as \"only available to statewide campaigns and political parties.\" Candidates who do not qualify (e.g., district/local candidates) must instead obtain the public municipal voter lists from each city/town election office; those local lists are available to the general public under the Public Records Law.",
+    "useRestrictions": "State voter file is provided only under a licensing agreement that \"prohibits them from sharing or selling the information,\" and the names/addresses \"shall not be a matter of public record.\" The file excludes non-public fields (phone, email, veteran status, permanent-absentee status, confidential voters, minors). Confidential voters (court order / shelter / Address Confidentiality Program) are entirely omitted. The public municipal lists carry the standard MA public-records use norms but are openly inspectable.",
+    "requestProcess": "State voter file: written request to the Secretary of the Commonwealth's Elections Division plus a mandatory signed licensing agreement that prohibits sharing or selling the data (eligibility-gated). Municipal route: written/in-person public-records request to each local election office (town/city clerk or board of registrars) for the public voter list, payable at cost of production.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.sec.state.ma.us/divisions/elections/voting-information/access-to-voter-information.htm",
+    "note": "There is no instant statewide download in Massachusetts. The full statewide voter file is statutorily non-public and licensed only to statewide political committees/parties (a statewide candidate committee qualifies and signs a no-share/no-sell license; price = cost of preparation). Every other campaign verifies signers using the public municipal voter lists, which include name + residential address + active/inactive registration status + party + DOB + voter ID — exactly the fields needed to match petition signers — obtained town-by-town at the cost of production.",
+    "citations": [
+      {
+        "url": "https://www.sec.state.ma.us/divisions/elections/voting-information/access-to-voter-information.htm",
+        "quote": "Under state law, the statewide list of registered voters is not a public record. This state voter file is only available to statewide campaigns and political parties. Any statewide campaign seeking access to the voter file must sign a licensing agreement, which prohibits them from sharing or selling the information."
+      },
+      {
+        "url": "https://www.sec.state.ma.us/divisions/elections/voting-information/access-to-voter-information.htm",
+        "quote": "The public voter list includes, for each voter: Name; Address; Party; Date of Birth; Active/Inactive status; Voter ID number ... The voter list can be requested as a paper voter list or an electronic voter file. The Public Records Law allows the election office to charge only for the cost of producing the record."
+      },
+      {
+        "url": "https://www.sec.state.ma.us/divisions/elections/voting-information/access-to-voter-information.htm",
+        "quote": "Candidates who do not qualify to receive the state voter file may request municipal voter files from the individual cities and towns in their district."
+      },
+      {
+        "url": "https://www.mass.gov/info-details/mass-general-laws-c51-ss-47c",
+        "quote": "The names and addresses contained in said central registry shall not be a matter of public record; provided however, that they shall be available to state party committees, statewide candidate committees, state ballot question committees, the jury commissioner, adjutant general and any other individual, agency or entity that the state secretary shall designate by regulation consistent with the purposes of this section, at a fair and reasonable cost not to exceed the cost of printing or preparing computer readable documents."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the rule binds signers only. Mass. Gen. Laws ch. 53, §§ 5-8 (the entire nomination-paper scheme for independent/unenrolled candidates, including presidential electors) imposes NO age, residency, citizenship, or registration requirement on the person who carries the petition and collects signatures. The only person-eligibility requirement in the scheme falls on the S",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER must be a registered Massachusetts voter who signs in person \"as registered or substantially as registered\" (MGL c. 53 § 7) and signatures must be from voters in the relevant district (§ 6, 10,000 for presidential electors); the CIRCULATOR has NO statutory qualifications — no affidavit, no age/residency/citizenship/registration requirement. Signature verification is done by local registrars",
+    "gate": "AUTO-LIVE",
+    "note": "Independent presidential candidates in MA petition for the general-election ballot via nomination papers requiring 10,000 voter signatures (signatures are for the slate of presidential electors). Primary-source review of the full nomination-paper statute (MGL c. 53 §§ 5, 6, 7, 8) shows all person-eligibility requirements bind the SIGNER (must be a registered voter signing as registered, § 7), while NO requirement of any kind is placed on the circulator. Unlike most states, Massachusetts nominati",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter53/Section7",
+        "quote": "Every voter signing a nomination paper shall sign in person as registered or substantially as registered, and shall state the address where he or she is currently registered, but any voter who is prevented by physical disability from writing may authorize some person to write his or her name and residence in his or her presence."
+      },
+      {
+        "field": "signature requirement binds signer (10,000 for presidential electors)",
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter53/Section6",
+        "quote": "Nominations of candidates for any offices to be filled at a state election may be made by nomination papers, stating the facts required by section eight and signed in the aggregate by not less than the following number of voters: for governor and lieutenant governor, attorney general, United States senator, and presidential electors, ten thousand"
+      },
+      {
+        "field": "circulatorAgeRule / no circulator qualifications in contents statute",
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter53/Section8",
+        "quote": "This information, in addition to the district name or number, if any, shall be specified on the nomination paper before any signature of a purported registered voter is obtained and the circulation of nomination papers without such information is prohibited."
+      },
+      {
+        "field": "no sworn circulator/witness required for nomination papers (only for caucus/convention certificates)",
+        "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVIII/Chapter53/Section5",
+        "quote": "Every certificate of nomination shall state such facts as are required by section eight and shall be signed and sworn to by the presiding officer and by the secretary of the caucus or convention, who shall add to their signatures their residences."
+      },
+      {
+        "field": "circulatorMustBeStateResident / corroborating secondary source",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Massachusetts",
+        "quote": "The relevant statutes do not stipulate specific circulator requirements (such as residency or pay status)."
+      },
+      {
+        "field": "independent presidential 10,000-signature petition for general election",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Massachusetts",
+        "quote": "An independent presidential candidate must petition for placement on the general election ballot. At least 10,000 voters must sign this petition."
+      }
+    ]
+  }
+}

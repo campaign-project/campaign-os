@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://campaignos.org/schema/ballot-access-rule-1.0.0.json",
+  "title": "BallotAccessRule",
+  "description": "One jurisdiction's verified ballot-access rule for an independent presidential nominating petition. The canonical open record published by BallotAccessDB.",
+  "type": "object",
+  "required": ["schemaVersion", "id", "jurisdiction", "abbr", "petitionType", "signatures", "deadline", "verification", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": "1.1.0" },
+    "id": { "type": "string", "description": "Stable record id: the 2-letter abbr for independent-presidential records; abbr+'-'+typecode otherwise (e.g. MI-ICA)." },
+    "jurisdiction": { "type": "string", "description": "Full jurisdiction name (50 states + District of Columbia)." },
+    "abbr": { "type": "string", "pattern": "^[A-Z]{2}$", "description": "USPS-style 2-letter code." },
+    "petitionType": { "type": "string", "enum": ["independent-presidential", "initiated-constitutional-amendment", "initiated-statute", "veto-referendum", "popular-referendum", "candidate-statewide"], "description": "Petition type the rule governs. v1 = independent-presidential; v1.1 = ballot initiatives + referenda." },
+    "signatures": {
+      "type": "object",
+      "required": ["required"],
+      "additionalProperties": false,
+      "properties": {
+        "required": { "type": "integer", "minimum": 0, "description": "Controlling valid-signature requirement (curated; recomputes per cycle for percentage states)." },
+        "headline": { "type": "string", "description": "Verbatim verified headline (basis, caps, distribution)." }
+      }
+    },
+    "deadline": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "headline": { "type": "string", "description": "Verbatim verified filing deadline (recomputes each cycle)." } }
+    },
+    "rules": {
+      "type": "array",
+      "description": "Per-field verified rules from the knowledge graph.",
+      "items": {
+        "type": "object",
+        "required": ["field", "gate"],
+        "additionalProperties": false,
+        "properties": {
+          "field": { "type": "string", "description": "e.g. signaturesRequired, deadline, distributionRule, circulatorEligibility, witnessOrNotary, captureMode, feeAlternative." },
+          "gate": { "type": "string", "enum": ["AUTO-LIVE", "CONSERVATIVE-HOLD", "BLOCKED"] },
+          "value": { "type": "string", "description": "The relied-upon value (verbatim or paraphrased)." },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "interpretationRequired": { "type": "boolean" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "compensation": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "perSignatureAllowed": { "type": "string", "enum": ["yes", "no", "unaddressed"] },
+        "paidCirculatorsAllowed": { "type": "string" },
+        "payMethod": { "type": "string" },
+        "circulatorResidency": { "type": "string" },
+        "operatingStance": { "type": "string" },
+        "gate": { "type": "string", "enum": ["AUTO-LIVE", "CONSERVATIVE-HOLD", "BLOCKED"] }
+      }
+    },
+    "voterFile": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tier": { "type": "string", "enum": ["FREE_DOWNLOAD", "LOW_COST", "PAID", "RESTRICTED", "UNKNOWN"] },
+        "cost": { "type": "string" },
+        "whoCanObtain": { "type": "string" },
+        "useRestrictions": { "type": "string" },
+        "requestProcess": { "type": "string" },
+        "hasNeededFields": { "type": "string" },
+        "downloadUrl": { "type": "string" },
+        "layoutDocUrl": { "type": "string" },
+        "verifiedAsOf": { "type": "string" }
+      }
+    },
+    "circulator": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Who may COLLECT signatures (the circulator) — distinct from who may sign. From the circulator-eligibility sweep.",
+      "properties": {
+        "minAge": { "type": "integer", "minimum": 0, "description": "minimum circulator age; 0 = no age requirement (rule binds signers only)" },
+        "ageRule": { "type": "string" },
+        "minorCanCirculate": { "type": "string", "enum": ["yes", "no", "unknown"] },
+        "registeredVoterRequired": { "type": "string", "enum": ["yes", "no", "unknown"] },
+        "usCitizenRequired": { "type": "string", "enum": ["yes", "no", "unknown"] },
+        "stateResidentRequired": { "type": "string", "enum": ["yes", "no", "unknown"] },
+        "signerVsCirculator": { "type": "string" },
+        "gate": { "type": "string", "enum": ["AUTO-LIVE", "CONSERVATIVE-HOLD", "BLOCKED"] },
+        "note": { "type": "string" },
+        "verifiedAsOf": { "type": "string" }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "required": ["gate"],
+      "additionalProperties": false,
+      "properties": {
+        "gate": { "type": "string", "enum": ["AUTO-LIVE", "CONSERVATIVE-HOLD", "BLOCKED"], "description": "Strictest gate across all fields — the record's overall trust state." },
+        "sosInquiries": { "type": "integer", "minimum": 0, "description": "Open Secretary-of-State written inquiries for unsettled questions." },
+        "riskNote": { "type": "string" }
+      }
+    },
+    "citations": {
+      "type": "array",
+      "description": "Primary-source citations backing the record.",
+      "items": {
+        "type": "object",
+        "required": ["url"],
+        "additionalProperties": false,
+        "properties": {
+          "field": { "type": "string" },
+          "url": { "type": "string" },
+          "quote": { "type": "string" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["verifiedAsOf", "method"],
+      "additionalProperties": false,
+      "properties": {
+        "verifiedAsOf": { "type": "string", "description": "ISO date the record was last verified." },
+        "method": { "type": "string", "description": "How it was verified." },
+        "source": { "type": "string" }
+      }
+    }
+  }
+}

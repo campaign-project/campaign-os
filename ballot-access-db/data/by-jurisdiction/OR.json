@@ -1,0 +1,214 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "OR",
+ "jurisdiction": "Oregon",
+ "abbr": "OR",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 23744,
+  "headline": "~23,744 valid signatures (1% of 2020 presidential vote, 2,374,321); confirm SOS-certified count"
+ },
+ "deadline": {
+  "headline": "Filing deadline Aug 25, 2026 (70th day before 11/3 election); submit by ~Aug 11 for guaranteed verification"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Petition path (Individual Electors): valid signatures of active registered Oregon electors equal to not less than 1% of the total votes cast for all candidates for presidential electors at the last general election (ORS 249.735). For the 2024/2026 baseline (2020 Oregon presidential total = 2,374,321) that is approximately 23,744 (1% rounded up), but the operative requirement is the EXACT figure certified by the Secretary of State for the cycle; collect a comfortable cushion above 23,744. Names of the presidential electors must be filed with the petition. Alternative: nomination by an Assembly of at least 1,000 electors gathered in one place for no longer than 12 hours.",
+   "confidence": 0.9,
+   "interpretationRequired": true,
+   "note": "All three citations confirmed verbatim: NASS PDF (lines 902-905: '...signatures of individual electors equal to not less than 1% of the total votes cast for all candidates for presidential electors...names of the presidential electors must be filed with the petition'), Ballotpedia ('...at least 1 percent of the total votes cast for presidential electors...'), Wikipedia total 2,374,321 (the official Total row). Independent re-derivation: 1% of 2,374,321 = 23,743.21, rounds up to 23,744 -> draft's ~23,744 is correct. CONSERVATIVE-HOLD because the precise operative count is set/certified by the SOS each cycle (draft itself flags this); the '~23,744' is a derived estimate, not the certified figure. The 1% legal rule itself is unambiguous; only the exact number needs SOS confirmation. Strictest defensible stance: treat 23,744 as a floor, over-collect, and verify the certified number before relying on it."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "70th day before the general election (ORS 249.722). For the November 3, 2026 general election that date is August 25, 2026. The certificate of nomination / petition signatures and the names of presidential electors must be filed by this deadline. SOS strongly advises submitting signatures earlier for verification time (the 2024 advice was 8/13/24); the 2026 guaranteed-verification signature submission date is on or about August 11, 2026 (signatures must be received at least 10 business days before the filing deadline).",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "Independently verified the date math: Election Day 2026 = Tuesday Nov 3, 2026; 70 days before = Tuesday Aug 25, 2026 (exact match). SOS 2026 calendar row confirmed: 'August 25, 2026 / Last day for nonaffiliated or minor political party candidate, other than elected incumbent...to file certificate of nomination / 249.722 / -70' (calendar lines 1514-1558; reassembled across the PDF table columns, every token verbatim). NASS 70th-day quote verbatim (PDF lines 902-905). Ballotpedia 8/13/24 advice verbatim (line 592). The Aug 11, 2026 guaranteed-verification date is corroborated in the SOS calendar (lines 1398-1400) and the manual's 10-business-day rule (lines 1066-1067). Statutory date, no interpretation."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None for a nonaffiliated/independent presidential candidate. The 1%-of-presidential-vote petition is a single statewide total with no per-county or per-congressional-district distribution quota. Signers should sign a petition sheet designated for their county of residence for sorting/verification only, which is not a distribution requirement. The 100-signatures-per-congressional-district rule applies to major-party statewide partisan petitions-in-lieu-of-fee and to nonpartisan statewide offices (Labor Commissioner, appellate judges), NOT to the nonaffiliated presidential petition.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Both citations confirmed. NASS quote verbatim (flat statewide 1%, no distribution language). SOS manual county-sheet quote is verbatim but split across the PDF two-column break: 'Sign a petition sheet that is designated for' (line 1903) + 'their county of residence, if applicable.' (line 1932) form one continuous bullet. Independently confirmed the draft's congressional-district caveat is correct: the 100-per-CD rule appears at manual lines 740-742 (major-party statewide partisan petition) and lines 1384-1401 (nonpartisan statewide: Labor Commissioner, appellate judges), and is absent from the Individual Electors presidential petition definition. Line 1796 confirms county sorting is a verification convenience ('sheets are sorted by county if required'), not a quota. No real interpretation needed; primary sources are unambiguous."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Do NOT assume any circulator-eligibility leniency. Confirmed by the manual: every circulator must personally witness each signature and complete the circulator certification with a legal signature and date; an insufficient certification rejects the sheet; circulator pay status must be designated on the SEL 114 prospective-petition form. The candidate must be registered to vote as a nonaffiliated voter at least 180 days before the filing deadline (deadline to register nonaffiliated = February 26, 2026). UNVERIFIED and treated strictly: the manual does NOT affirmatively state there is no circulator age/residency/voter-registration requirement (the draft infers this from silence), and it does NOT affirmatively state that paid circulators must register with the SOS for candidate petitions. Pending SOS confirmation, assume circulators may need to meet eligibility requirements and that paid circulators may need to register.",
+   "confidence": 0.85,
+   "interpretationRequired": true,
+   "note": "All three citations confirmed verbatim (manual lines 1816-1819 circulator definition; lines 917-918 prospective petition / pay status; lines 904-906 180-day nonaffiliated registration; cross-confirmed Feb 26, 2026 at quick-guide line 8 and manual line 907). 'Personally witness each signature' also verbatim (lines 1826/1830). DISAGREE / interpretationRequired because the VALUE makes two claims weaker than the sources support: (1) 'no age/residency/voter-registration requirement' is inferred from ABSENCE of a stated rule -- absence is not proof none exists (the draft openly flags this), and (2) 'Paid circulators must be registered with the SOS' is NOT affirmatively stated in the manual (the manual only references 'a paid circulator's registration' in the legal-signature definition, lines 1842/1979). Strictest defensible interpretation: do not rely on circulator leniency; assume eligibility limits and paid-circulator registration may apply until SOS confirms. Routed to sosInquiries."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Individual Electors petition path: NO notarization. The circulator must personally witness each signature and complete a circulator certification (legal signature + date) on each signature sheet; an incomplete/insufficient certification rejects the sheet. Notarization is required only for the alternative Assembly of Electors path (SEL 115 certificate of nomination executed and notarized by the assembly's presiding officer and secretary) and for the minor-party SEL 110 form.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "All three citations confirmed verbatim: certification-by-signing quote (manual lines 1977-1978), 'Personally witness each signature collected' (lines 1826/1830, split across columns), and 'Notarized form SEL 115...executed by the presiding officer and secretary of the assembly' (lines 1056-1057). Independently confirmed the SEL 110 minor-party notarization claim (manual lines 296, 893-894, 2257). The Individual Electors path nowhere requires notarization. Correct and current; no interpretation."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. The candidate files the prospective petition / certificate of nomination and gathers wet-ink signatures on Elections Division-issued paper signature-sheet templates; circulators must personally witness and certify each sheet. The manual states minor party and nonaffiliated candidates in the general election must file paper forms. ORESTAR is used only for the separate Voters' Pamphlet statement and fee-based primary/nonpartisan filings, not for collecting the nonaffiliated presidential nominating-petition signatures. No remote-online or digitized signature system covers an independent presidential petition.",
+   "confidence": 0.94,
+   "interpretationRequired": false,
+   "note": "Both citations confirmed verbatim: 'Minor party or nonaffiliated candidates in the general election must file paper forms.' (manual line 379) and 'The Elections Division will provide signature sheet templates for candidates filing by individual electors' process.' (lines 920-921). Quick guide independently confirms ORESTAR is used only for the Voters' Pamphlet statement (lines 35-39), not for nominating-petition signatures. Correct; no interpretation."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "There is NO filing-fee alternative to the signature requirement for a nonaffiliated presidential candidate. Ballot access at the general election is obtained ONLY by (1) the Individual Electors petition (1% of presidential vote) or (2) an Assembly of at least 1,000 electors. No fee-in-lieu path exists. A separate optional Voters' Pamphlet filing fee exists solely to appear in the pamphlet (payable or substitutable with a separate pamphlet petition) and is not a route onto the ballot.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "All three citations confirmed: quick-guide Individual Electors quote verbatim incl. source typo 'By submit' (lines 10-12); NASS Assembly-of-1,000 quote verbatim (PDF lines 907-908); Voters'-Pamphlet pay-or-petition quote verbatim (quick-guide lines 35-39). Independently confirmed the two-and-only-two ballot routes for nonaffiliated candidates (quick-guide lines 9-13; manual Individual Electors / Assembly sections) with no fee-in-lieu option onto the ballot. The Voters' Pamphlet fee is explicitly a separate publication matter, not ballot access. Correct; no interpretation."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "hourly-only",
+  "circulatorResidency": "not_required",
+  "operatingStance": "NO per-signature (prohibited) — pay hourly/bonus; advocate to legalize",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$500 flat for the statewide voter list (set by statute, ORS 247.945(4) and confirmed on the SOS page). A less-than-statewide (county/partial) list is $25 set-up fee plus 2.5 cents per 100 records.",
+  "whoCanObtain": "General public — \"any person.\" There is no eligibility gate (no candidate/committee/party requirement). Oregon law expressly directs the Secretary of State to deliver a statewide list to \"any person\" upon request.",
+  "useRestrictions": "Commercial use is prohibited by ORS 247.955: no person supplied a list under ORS 247.940/247.945 \"shall use any information in the list for commercial purposes,\" except resale to candidates or political committees for political purposes only. Campaign/political use (including petition signature verification) is permitted. The file by statute excludes the elector's signature, SSN, driver license number, birth month/day, and Address Confidentiality Program participants (ORS 247.948(2)); candidates/officeholders may suppress their residence address (ORS 247.948(3)).",
+  "requestProcess": "Written/online request to the Oregon Secretary of State, Elections Division (form SEL 510, \"Request for Statewide and Less Than Statewide Voter List\"). The statewide electronic list is delivered via SFTP; allow 10 business days. Not an instant self-service download. Hardcopy/labels/non-electronic statewide formats are not provided by SOS — those must be requested from county elections officials.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sos.oregon.gov/elections/Pages/request-for-voter-list.aspx",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — the rule binds signers only. The Oregon candidate-petition statutes (ORS 249.061 and ORS 249.740) impose NO minimum age on the circulator. The only duties placed on the circulator are to (a) personally witness each signature and (b) certify their belief that each signer is a qualified elector. There is no statutory floor of 18 (or any age) for circulators. The \"regi",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER: must be an \"elector\" (an active registered voter) in the electoral district — for a non-affiliated/independent presidential candidate \"any elector may sign\" (ORS 249.076(2)), and signers provide a residence/mailing address (ORS 249.064(2)). CIRCULATOR: must only (a) personally witness each signature and (b) certify a belief that each signer is a qualified elector (ORS 249.061(4); ORS 249.7",
+  "gate": "AUTO-LIVE",
+  "note": "For an INDEPENDENT/non-affiliated presidential candidate, Oregon's path is a \"certificate of nomination made by individual electors\" (ORS 249.740) requiring signatures equal to >=1% of total presidential-elector votes cast at the last presidential election. The circulator's ONLY statutory obligations are the certification duties in ORS 249.740(4) (and the parallel ORS 249.061(4) for candidate nominating petitions generally): witness each signature and believe each signer is a registered elector ",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Core ballot-access rule is solid and grounded; treat the precise signature count and circulator eligibility details as unconfirmed (over-collect signatures; do not assume any circulator-eligibility leniency) until SOS confirms."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://oregon.public.law/statutes/ors_260.569",
+   "quote": "A person may not pay or receive money or another thing of value based on the number of: (1) Signatures a person obtains for purposes of nominating a candidate for elective public office; or (2) Signed voter registration cards a person collects."
+  },
+  {
+   "field": "compensation",
+   "url": "https://oregon.public.law/rules/oar_165-014-0260",
+   "quote": "Prohibition on Paying or Receipt of Payment based on the Number of Signatures Obtained on an Initiative, Referendum, Candidate Nominating Petition or Voter Registration Cards ... A person may not pay or receive money or another thing of value based on the number of: signatures a person obtains for purposes of nominating a candidate for elective public office"
+  },
+  {
+   "field": "compensation",
+   "url": "https://oregon.public.law/rules/oar_165-014-0260",
+   "quote": "paying an hourly wage or salary, using express minimum signature requirements (quota), terminating those who do not meet the productivity requirements, adjusting salaries prospectively relative to productivity, and paying discretionary bonuses based on reliability, longevity and productivity, provided no payments are made on a per signature basis."
+  },
+  {
+   "field": "compensation",
+   "url": "https://oregon.public.law/statutes/ors_249.740",
+   "quote": "whether one or more persons will be paid money or other valuable consideration for obtaining signatures"
+  },
+  {
+   "field": "compensation",
+   "url": "https://oregon.public.law/statutes/ors_250.048",
+   "quote": "A person may not pay money or other valuable consideration to another person for obtaining signatures...unless the person obtaining the signatures: (a) Registers with the Secretary of State...and (b) Completes the training program"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.oregon.gov/elections/Pages/request-for-voter-list.aspx",
+   "quote": "Any person may get an electronic copy (via SFTP) of a statewide or less than statewide voter list from the Office of the Secretary of State, Elections Division."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.oregon.gov/elections/Pages/request-for-voter-list.aspx",
+   "quote": "Fee for statewide voter list is $500. Fee to provide a less than statewide list consists of: $25 set up fee, plus 2.5 cents per 100 records provided"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.oregon.gov/elections/Pages/request-for-voter-list.aspx",
+   "quote": "Allow 10 business days for our staff to complete your request."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oregon.public.law/statutes/ors_247.945",
+   "quote": "Upon request, the Secretary of State shall deliver to any person a statewide list of electors. Except as provided in ORS 247.940 (Statewide list of electors) (4), the secretary shall charge a fee of $500 for delivering a list under this subsection."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oregon.public.law/statutes/ors_247.955",
+   "quote": "no person to whom a list of electors is made available or supplied under ORS 247.940 or 247.945 shall use any information in the list for commercial purposes."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oregon.public.law/statutes/ors_247.955",
+   "quote": "A person shall not be considered to use for commercial purposes any information contained in a list of electors ... if the person obtains the list of electors for the purposes of resale to candidates or political committees for political purposes only."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oregon.public.law/statutes/ors_247.948",
+   "quote": "the following information about an elector ... shall be included in lists delivered under ORS 247.940 ... and 247.945: ... (B) ... the residence address of an elector; ... (A) The major political party or minor political party, if any, with which an elector is affiliated; ... (D) The year in which an elector was born; ... (I) Whether or not an elector voted in previous elections"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oregon.public.law/statutes/ors_247.948",
+   "quote": "the following information about an elector ... may not be disclosed by the Secretary of State or a county clerk: ... (f) The signature of an elector."
+  },
+  {
+   "field": "circulatorAgeRule / circulatorMustBeRegisteredVoter / circulatorMustBeStateResident (independent presidential path)",
+   "url": "https://oregon.public.law/statutes/ors_249.740",
+   "quote": "The circulator shall certify on each signature sheet that the circulator: (a) Witnessed the signing of the signature sheet by each individual whose signature appears on the signature sheet; and (b) Believes each individual is an elector registered in the electoral district."
+  },
+  {
+   "field": "circulator duties (general candidate petition)",
+   "url": "https://oregon.public.law/statutes/ors_249.061",
+   "quote": "The circulator shall certify on each signature sheet that the circulator: (a) Witnessed the signing of the signature sheet by each individual whose signature appears on the signature sheet; and (b) Believes each individual is an elector qualified to sign the petition."
+  },
+  {
+   "field": "signerVsCirculator — who may sign (signer requirement, independent candidate)",
+   "url": "https://oregon.public.law/statutes/ors_249.076",
+   "quote": "Any elector may sign: ... (b) A nominating petition or certificate of nomination of any nonaffiliated candidate; and (c) Nominating petitions or certificates of nomination for more than one candidate for the same office."
+  },
+  {
+   "field": "definition of elector (applies to signer)",
+   "url": "https://oregon.public.law/statutes/ors_249.002",
+   "quote": "“Elector” means an individual qualified to vote under Article II, section 2, Oregon Constitution."
+  },
+  {
+   "field": "circulatorMustBeStateResident / circulatorMustBeRegisteredVoter — affirmative confirmation circulators are unrestricted (SoS-derived)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Oregon",
+   "quote": "Circulators must personally witness each signature collected and complete a circulator certification after witnessing all signatures collected on a sheet. Circulators may be paid or unpaid, but the signature sheet must note the pay status of the circulator. The relevant statutes do not note additional requirements that circulators must meet (including residency requirements)."
+  },
+  {
+   "field": "signer requirement (registered voter)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Oregon",
+   "quote": "Signers of candidate petitions are required to provide an original signature and residence or mailing address. ... Only active registered voters may sign any petition."
+  },
+  {
+   "field": "independent presidential nomination path (individual electors, 1% signatures)",
+   "url": "https://oregon.public.law/statutes/ors_249.740",
+   "quote": "A certificate of nomination made by individual electors shall contain a number of signatures of electors in the electoral district equal to not less than one percent of the total votes cast in the electoral district for which the nomination is intended to be made, for all candidates for presidential electors at the most recent presidential election."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

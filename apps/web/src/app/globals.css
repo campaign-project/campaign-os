@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #20211f;
+  --paper: #fbfaf6;
+  --civic: #17695f;
+  --signal: #d94f2b;
+  --field: #d5e86a;
+  --porcelain: #ffffff;
+  --muted: #eee9dd;
+  --line: rgba(32, 33, 31, 0.1);
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "IBM Plex Sans Condensed", "Aptos", sans-serif;
+}
+
+@theme inline {
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-civic: var(--civic);
+  --color-signal: var(--signal);
+  --color-field: var(--field);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --shadow-dossier: 0 28px 80px rgba(20, 23, 31, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 78% -10%, rgba(23, 105, 95, 0.14), transparent 28rem),
+    radial-gradient(circle at 0% 18%, rgba(217, 79, 43, 0.09), transparent 24rem),
+    linear-gradient(180deg, #fffdf7 0%, #f4efe4 100%),
+    var(--paper);
+  font-family: var(--font-body);
+  letter-spacing: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  color: var(--paper);
+  background: var(--signal);
+}
+
+.dossier-border {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.86) inset,
+    0 14px 34px rgba(32, 33, 31, 0.06);
+}
+
+.shadow-dossier {
+  box-shadow: 0 24px 70px rgba(32, 33, 31, 0.12);
+}
+
+.surface {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 18px 42px rgba(32, 33, 31, 0.07);
+  backdrop-filter: blur(18px);
+}
+
+.quiet-panel {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.02)),
+    #20211f;
+  box-shadow: 0 24px 70px rgba(32, 33, 31, 0.16);
+}
+
+:focus-visible {
+  outline: 3px solid var(--field);
+  outline-offset: 3px;
+}
+
+.reveal {
+  animation: reveal 760ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.mobile-topbar {
+  border-bottom: 1px solid rgba(32, 33, 31, 0.08);
+  background:
+    linear-gradient(180deg, rgba(251, 250, 246, 0.96), rgba(251, 250, 246, 0.86)),
+    rgba(251, 250, 246, 0.92);
+  box-shadow: 0 18px 40px rgba(32, 33, 31, 0.08);
+  backdrop-filter: blur(18px);
+}
+
+.mobile-brand-mark {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border-radius: 0.8rem;
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 30% 24%, var(--field), transparent 32%),
+    linear-gradient(135deg, var(--ink), #0f3d37);
+  box-shadow: 0 14px 30px rgba(32, 33, 31, 0.2);
+}
+
+.mobile-nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(4.8rem, 1fr);
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  scrollbar-width: none;
+}
+
+.mobile-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-nav-item {
+  display: grid;
+  min-height: 3.55rem;
+  place-items: center;
+  gap: 0.2rem;
+  border-radius: 1rem;
+  color: rgba(32, 33, 31, 0.55);
+  background: rgba(255, 255, 255, 0.48);
+  transition:
+    color 180ms ease,
+    background 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.mobile-nav-item span {
+  max-width: 4.4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.mobile-nav-item:hover {
+  color: var(--ink);
+  background: rgba(213, 232, 106, 0.58);
+}
+
+.mobile-nav-item-active {
+  color: var(--ink);
+  background: var(--field);
+  box-shadow: 0 12px 26px rgba(32, 33, 31, 0.12);
+  transform: translateY(-1px);
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px) rotate(-0.4deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) rotate(0);
+  }
+}

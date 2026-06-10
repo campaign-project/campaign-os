@@ -1,0 +1,181 @@
+{
+  "jurisdiction": "Hawaii",
+  "signaturesHeadline": "5,223 sigs (1% of 522,236 — 2024 vote); recomputes each cycle",
+  "deadlineHeadline": "Aug 9, 2028, 4:30pm (90th day before Nov 7, 2028 general)",
+  "riskNote": "Core numbers (sigs, deadline, no-distribution, fee, paper) are fully grounded and AUTO-LIVE; the two negative findings on circulators and witness/notary are statutory-silence inferences subject to the chief election officer's prescribed petition form (HRS 11-113(c)(2)(B) \"other information as determined by the chief election officer\"), so they are held pending confirmation of the actual form.",
+  "sosInquiries": [
+    "For the HRS 11-113(c)(2) presidential petition: does the chief-election-officer-prescribed petition form impose any circulator eligibility requirement (age, Hawaii residency, or voter-registration status) on the person who collects signatures?",
+    "For the HRS 11-113(c)(2) presidential petition: does the prescribed petition form or its instructions require any per-page circulator affidavit, witness signature, or notarization on the petition itself (separate from the pre-issuance notarized Declaration of Intent and the sworn application filed at submission)?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "5,223 signatures of currently registered Hawaii voters (1% of the 522,236 votes cast in the 2024 presidential election). Formula-based: not less than 1% of votes cast at the last presidential election; recomputes each cycle.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.97,
+      "note": "Grounded: OoE page states verbatim '5,223 signatures of currently registered voters' and 'In the 2024 presidential election 522,236 votes were cast'; HRS 11-113(c)(2)(B) states 'not less than one per cent of the votes cast in the State at the last presidential election.' Independently re-derived: 1% of 522,236 = 5,222.36, rounded up to 5,223 — matches OoE. Current and correct for an independent/unqualified-group presidential petition."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "4:30 p.m. on the 90th day prior to the general election (HRS 11-113(c)(2)); for the 2028 cycle, August 9, 2028, 4:30 pm per the Office of Elections.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.96,
+      "note": "Grounded: HRS verbatim 'not later than 4:30 p.m. on the ninetieth day prior to the general election'; OoE page verbatim 'deadline to file a presidential petition is August 9, 2028, 4:30 pm.' Independently verified: 2028 general election is Tue Nov 7, 2028; 90 days prior = Wed Aug 9, 2028 — matches the OoE date exactly. Formula recomputes each cycle."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Single statewide total (1% of statewide presidential votes); HRS 11-113 imposes no per-congressional-district or per-county distribution requirement.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "Grounded: HRS 11-113(c)(2)(B) requires only 'signatures... which constitute not less than one per cent of the votes cast in the State' — full statutory text contains no district/county language. Ballotpedia confirms a single statewide 1% threshold. Correct negative finding."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Do not rely on 'no circulator requirements' as a planning assumption. Strictest defensible posture: signers must be currently registered Hawaii voters (confirmed by statute/OoE); for circulators, obtain and inspect the chief-election-officer-prescribed petition form before assuming no age/residency/voter-status requirement, since HRS 11-113(c)(2)(B) authorizes the CEO to add 'other information as determined.'",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.6,
+      "note": "Grounded: Ballotpedia (state/county petitions page) verbatim 'Hawaii Revised Statutes do not address requirements for petition circulators. Specifically, there are no residency requirements for circulators'; OoE confirms signers must be registered HI voters. Adversarial: the cited Ballotpedia text addresses party-formation/fee-waiver petitions generally, not specifically the 11-113 presidential petition, and 11-113(c)(2)(B) expressly lets the CEO prescribe additional form content. Statutory silence on circulators does not foreclose a form-level requirement; retrieval cannot settle this without the actual prescribed form. Held to avoid risking ballot access."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Confirmed and required: a pre-issuance notarized Declaration of Intent from each prospective candidate, plus a sworn application filed at submission. Strictest posture on the petition itself: the statute's enumerated petition contents include no per-page witness/notary, but verify the CEO-prescribed petition form for any circulator affidavit/witness attestation before assuming none.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.62,
+      "note": "Grounded: HRS verbatim requires 'a notarized statement from each prospective candidate of that prospective candidate's intent... Prior to being issued the petition form' and a 'sworn application'; OoE confirms the notarized Declaration of Intent. The candidate-side notarization claim is fully correct. Adversarial: the negative claim that the petition itself bears no witness/notary rests on the statute's enumerated contents (signatures, names, statement of support, address, date) — but 11-113(c)(2)(B) permits CEO-added form content, so the petition-level negative is not fully settleable by retrieval. Held pending inspection of the prescribed form."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Physical petition form prescribed and provided by the chief election officer, issued only after the notarized Declaration(s) of Intent and application are submitted. No remote_online or in_person_digitized path exists for the independent presidential petition.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.93,
+      "note": "Grounded: HRS verbatim 'A petition that shall be upon the form prescribed and provided by the chief election officer'; OoE verbatim 'Upon receipt of the completed application form and notarized statements of intent, the Office of Elections will issue the petition.' No statutory or OoE basis for any electronic/online signature collection for this path. Correct."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No filing fee for the HRS 11-113 presidential petition and no fee-in-lieu-of-signatures option for president. The HRS ch. 12 filing-fee / petition-in-lieu scheme applies to state/county nomination-paper candidates, not to the presidential petition.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "Grounded: OoE 'To request a presidential petition, submit the following' lists only the application and notarized Declaration — no fee; HRS 11-113 contains no fee provision. Ballotpedia's affidavit/petition-in-lieu-of-fee quote is on the state/county political-candidates page and is expressly tied to 'the district in which the candidate is seeking election' (HRS ch. 12), confirming it does not apply to president. Correct distinction; correct negative finding."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found; HRS silent on paying circulators",
+    "note": "Hawaii's election code does NOT address compensation of nominating-petition circulators. The controlling statute for an independent/unqualified-party presidential petition, HRS §11-113, prescribes the petition form, the 1%-of-last-presidential-vote signature threshold, and required signer data, but says nothing about whether circulators may be paid per signature or at all. The election-fraud statute (HRS §19-3) prohibits bribing electors/voters, not paying petition circulators. Hawaii's only pay-per-signature law context is the initiative/referendum debate, which does not apply (Hawaii has no statewide initiative process and is not among the 10 states banning per-signature initiative pay). Because candidate-petition circulator compensation is unaddressed, treat per-signature pay as not clearly authorized.",
+    "sosInquiry": "For an independent/unqualified-party presidential nominating petition under HRS §11-113, does Hawaii law permit compensating signature gatherers on a per-signature basis, and are there any residency or registration requirements for the persons who collect/witness those signatures?",
+    "citations": [
+      {
+        "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0011/HRS_0011-0113.htm",
+        "quote": "In the case of candidates of parties or groups not qualified to place candidates on the primary or general election ballots, the person desiring to place the names on the general election ballot shall file with the chief election officer ... A petition that shall be upon the form prescribed and provided by the chief election officer containing the signatures of currently registered voters which constitute not less than one per cent of the votes cast in the State at the last presidential election."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Hawaii",
+        "quote": "The Hawaii Revised Statutes do not address requirements for petition circulators. Specifically, there are no residency requirements for circulators."
+      },
+      {
+        "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0019/HRS_0019-0003.htm",
+        "quote": "Every person who, directly or indirectly, personally or through another, gives, procures, or lends, or agrees or offers to give, procure, or lend, ... any money or office or place of employment or valuable consideration to or for any elector, person for an elector, person in order to induce any elector to vote or refrain from voting"
+      },
+      {
+        "url": "https://ballotpedia.org/Pay-per-signature",
+        "quote": "Pay-per-signature is a method of compensating signature gatherers, also known as circulators, who collect signatures for ballot initiatives and veto referendums. ... There are 26 states that provide for an initiative or referendum process. Sixteen (16) of those states allowed campaigns to make payments to signature gatherers based on the number of signatures collected. Ten (10) of those states prohibited campaigns from paying signature gatherers based on the number of signatures collected."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Per-county flat fee. Verified: Maui County = $100.00 flat (plus $7.35 postage). Honolulu/City & County and the other counties (Hawaii, Kauai) charge a comparable flat fee per the same statewide form but do not publish the exact figure online — contact the county clerk for the current amount.",
+    "whoCanObtain": "Restricted to election or governmental use. The applicant must swear (on the county-clerk-approved \"Affidavit on Application for Statewide Voter Registration Data\") that the data will be used \"only for election or governmental purposes.\" In practice this covers candidates, candidate/noncandidate committees, political parties, and government agencies; it is not a general open-public download. The request is approved/signed off by the County Clerk(s).",
+    "useRestrictions": "Strict election/government-use-only restriction enforced by sworn affidavit. The applicant \"affirms under penalty of law that the voter registration data shall be used only for election or governmental purposes and not for any other purposes unless specifically authorized by law.\" Commercial/non-election use is not permitted. The form carries a Chapter 19 HRS warning that knowingly providing false information may be a Class C felony (up to 5 years imprisonment and/or $10,000 fine). The data already excludes phone numbers, birth dates, and Social Security numbers; SSN/DOB are available only to government agencies showing justified need (HAR §3-172-31(c)). Voters may apply under HRS §11-14.5 to suppress their own residence address for safety/privacy reasons.",
+    "requestProcess": "Submit the county-clerk \"Affidavit on Application for Statewide Voter Registration Data\" (per HRS §11-97 and HAR §3-172-31(c)) with payment to the County Elections Division; staff review and provide the file on USB/CD for pickup or mail in ~1-2 weeks.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.honolulu.gov/elections/reports-certificates/",
+    "note": "Hawaii administers voter registration at the county level (Honolulu, Hawaii, Maui, Kauai); the statewide voter file is obtained from a County Elections Division by submitting a sworn \"election or governmental purposes only\" affidavit and paying a per-county flat fee (Maui = $100). The file includes name, district/precinct, voter status, and residential address (address is part of the register and released for election purposes under HRS §11-97), so it supports matching petition signers to registered voters, but it omits phone numbers, dates of birth, and SSNs.",
+    "citations": [
+      {
+        "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol01_Ch0001-0042F/HRS0011/HRS_0011-0097.htm",
+        "quote": "A voter's full name, district/precinct designation, and voter status shall be public; but all other personal information, as provided on the voter registration affidavit, shall be confidential except for election or government purposes in accordance with rules adopted by the chief election officer, pursuant to chapter 91."
+      },
+      {
+        "url": "https://www.honolulu.gov/elections/reports-certificates/",
+        "quote": "Hawaii's voter registration data is an electronic file available for purchase, for election purposes only. No phone numbers, birth dates or Social Security numbers are provided."
+      },
+      {
+        "url": "https://www.mauicounty.gov/DocumentCenter/View/136272/Affidavit-on-Application-for-Voter-Registration-Data-2021",
+        "quote": "The cost to purchase voter registration data from Maui County is $100.00. Include an additional $7.35 for postage (USPS Priority Mail Flat Rate Envelope) or a pre-paid shipping label."
+      },
+      {
+        "url": "https://www.honolulu.gov/liq/wp-content/uploads/sites/9/2022/12/LIQ-LIC-139_Affidavit_on_Application_for_Statewide_Voter_Registration_Data_FILLABLE.pdf",
+        "quote": "The undersigned fully understands and hereby affirms under penalty of law that the voter registration data shall be used only for election or governmental purposes and not for any other purposes unless specifically authorized by law."
+      },
+      {
+        "url": "https://www.honolulu.gov/liq/wp-content/uploads/sites/9/2022/12/LIQ-LIC-139_Affidavit_on_Application_for_Statewide_Voter_Registration_Data_FILLABLE.pdf",
+        "quote": "WARNING: PURSUANT TO CHAPTER 19 OF THE HAWAII REVISED STATUTES, ANY PERSON KNOWINGLY PROVIDING FALSE INFORMATION MAY BE GUILTY OF A CLASS C FELONY, PUNISHABLE BY UP TO 5 YEARS IMPRISONMENT AND/OR $10,000 FINE."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — rule binds signers only. HRS § 11-113(c)(2)(B) requires the presidential petition to contain \"the signatures of currently registered voters\" and \"a statement that the persons signing intend to support those candidates,\" but imposes NO requirement (and no affidavit) on the person who carries/circulates the petition or collects signatures. Hawaii's nomination-paper sc",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER must be a currently registered Hawaii voter; CIRCULATOR has no requirements.",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "Hawaii imposes NO circulator eligibility requirements for an independent/non-qualified-party presidential nominating petition. HRS § 11-113(c)(2)(B) governs the petition and binds only the SIGNERS (must be currently registered Hawaii voters); it contains no circulator/witness affidavit or verification — unlike most states, Hawaii's nomination-paper system (cf. HRS § 12-3) has no circulator certification at all. The Office of Elections' detailed presidential-petition page (application, declaratio",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorAgeRule / signer requirement",
+        "url": "https://codes.findlaw.com/hi/division-1-government/hi-rev-st-sect-11-113/",
+        "quote": "A petition that shall be upon the form prescribed and provided by the chief election officer containing the signatures of currently registered voters which constitute not less than one per cent of the votes cast in the State at the last presidential election. The petition shall contain the names of the candidates, a statement that the persons signing intend to support those candidates, the address of each signatory, the date of the signer's signature, and other information as determined by the chief election officer."
+      },
+      {
+        "field": "no circulator provision in presidential statute",
+        "url": "https://sammade.github.io/aloha-io/title-2/chapter-11/section-11-113/",
+        "quote": "In the case of candidates of parties or groups not qualified to place candidates on the primary or general election ballots, the person desiring to place the names on the general election ballot shall file with the chief election officer ... (B) A petition that shall be upon the form prescribed and provided by the chief election officer containing the signatures of currently registered voters ... The petition shall contain the names of the candidates, a statement that the persons signing intend to support those candidates, the address of each signatory, the date of the signer's signature, and other information as determined by the chief election officer."
+      },
+      {
+        "field": "official guidance — only signer requirement, no circulator mentioned",
+        "url": "https://elections.hawaii.gov/presidential-elections/",
+        "quote": "The petition must contain 5,223 signatures of currently registered voters in the State of Hawaii. This constitutes not less than one percent of the votes cast in the State at the last presidential election."
+      },
+      {
+        "field": "Hawaii nomination-paper system uses candidate + signer certification, no circulator/witness oath",
+        "url": "https://codes.findlaw.com/hi/division-1-government/hi-rev-st-sect-12-3/",
+        "quote": "(1) A statement by the registered voters signing the form that they are eligible to vote for the candidate; (2) A statement by the registered voters signing the form that they nominate the candidate for the office identified on the nomination paper issued to the candidate; ... (6) A sworn certification by self-subscribing oath by the candidate that the candidate qualifies under the law for the office the candidate is seeking and that the candidate has determined that, except for the information provided by the registered voters signing the nomination papers, all of the information on the nomination papers is true and correct"
+      }
+    ]
+  }
+}

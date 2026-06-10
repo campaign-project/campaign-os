@@ -1,0 +1,6 @@
+Mapping Value,First Name,Middle Name,Last Name,Suffix,Residential Address,House Number,Street Name,Residence City,Residence State,Residential Zip Code,Voter Status,Effective Voter Registration Date,Residential County
+V1001,Robert,A,Nuñez,,42 Main St,42,Main St,Springfield,NC,62704,active,2019-03-01,Sangamon
+V1002,William,,Johnson,,88 Oak Ave,88,Oak Ave,Springfield,NC,62704,active,2018-06-15,Sangamon
+V1003,Maria,,Gonzalez,,5 Sunset Blvd,5,Sunset Blvd,Springfield,NC,62705,active,2021-11-02,Sangamon
+V1004,James,,O'Brien,,230 N Park Rd,230,N Park Rd,Springfield,NC,62704,INACTIVE,2017-09-10,Sangamon
+V1005,Katherine,,Lee,,901 River Dr,901,River Dr,Springfield,NC,62704,purged,2016-05-05,Sangamon

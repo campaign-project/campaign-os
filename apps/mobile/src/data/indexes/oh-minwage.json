@@ -1,0 +1,77 @@
+{
+  "_generated": "build-indexes.mts (synthetic demo)",
+  "campaignId": "oh-minwage",
+  "jurisdiction": "Ohio",
+  "scopedZips": [
+    "43201",
+    "43210"
+  ],
+  "builtAt": "2026-06-09",
+  "version": "0eeba808ac95",
+  "real": false,
+  "source": {
+    "adapter": "Ohio",
+    "format": "csv",
+    "layoutDocUrl": "https://www6.ohiosos.gov/ords/f?p=111:2::FILE_LAYOUT:NO:RP,2::",
+    "downloadUrl": "https://www6.ohiosos.gov/ords/f?p=VOTERFTP:HOME",
+    "verifiedAsOf": "2026-06-07",
+    "confidence": "medium"
+  },
+  "voterCount": 6,
+  "voters": [
+    {
+      "id": "OH-0421",
+      "name": "Robert A Smith",
+      "address": "42 Main St, Columbus OH 43210",
+      "status": "active",
+      "registeredOn": "2019-03-01",
+      "county": "Franklin",
+      "district": "1"
+    },
+    {
+      "id": "OH-0005",
+      "name": "Maria Gonzalez",
+      "address": "5 Sunset Blvd #4, Columbus OH 43210",
+      "status": "active",
+      "registeredOn": "2021-11-02",
+      "county": "Franklin",
+      "district": "1"
+    },
+    {
+      "id": "OH-0017",
+      "name": "Elizabeth Carter",
+      "address": "17 Elm Lane, Columbus OH 43210",
+      "status": "active",
+      "registeredOn": "2020-01-20",
+      "county": "Franklin",
+      "district": "1"
+    },
+    {
+      "id": "OH-0230",
+      "name": "James O'Brien",
+      "address": "230 N High St, Columbus OH 43201",
+      "status": "inactive",
+      "registeredOn": "2017-09-10",
+      "county": "Franklin",
+      "district": "1"
+    },
+    {
+      "id": "OH-0311",
+      "name": "Aisha Rahman",
+      "address": "311 W 9th Ave, Columbus OH 43210",
+      "status": "active",
+      "registeredOn": "2022-02-14",
+      "county": "Franklin",
+      "district": "1"
+    },
+    {
+      "id": "OH-0077",
+      "name": "David Nguyen",
+      "address": "77 Chittenden Ave, Columbus OH 43201",
+      "status": "active",
+      "registeredOn": "2016-08-30",
+      "county": "Franklin",
+      "district": "1"
+    }
+  ]
+}

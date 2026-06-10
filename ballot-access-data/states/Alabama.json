@@ -1,0 +1,188 @@
+{
+  "jurisdiction": "Alabama",
+  "signaturesHeadline": "AL: 5,000 valid signatures (fixed statutory, independent presidential)",
+  "deadlineHeadline": "AL: 74 days before general election (Aug 23, 2024) — NOT Sept 6 (draft is WRONG)",
+  "riskNote": "Signature count is solid (5,000 confirmed in §17-14-31(a)); the draft DEADLINE is materially wrong — it cites Sept 6 (a repealed pre-2012 date / a party convention-certificate date Ballotpedia conflated), but the enacted law (SB324, eff. 2024) sets the independent presidential petition deadline at 74 days before the election = Aug 23, 2024. Treat the deadline as Aug 23, 2024 and verify the exact 2028 date with the SOS before relying.",
+  "sosInquiries": [
+    "For an INDEPENDENT PRESIDENTIAL candidate filing a §17-14-31 petition of 5,000 qualified voters, please confirm the exact filing deadline for the next general election: is it 74 days before Election Day (as amended by SB324, 2024), and what is that calendar date?",
+    "Please confirm there are NO circulator qualification requirements (age, residency, voter-registration) for an independent presidential petition under Alabama law, and that no circulator affidavit, witness, or notarization is required on petition pages beyond Rule 820-2-4-.05's per-signer information."
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "5,000 valid signatures of qualified Alabama voters — a FIXED statutory number for an independent presidential candidate under Ala. Code §17-14-31(a). This is distinct from the 3%-of-last-gubernatorial-vote rule (42,458 statewide for 2024) that governs OTHER independent candidates under §17-9-3.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.96,
+      "note": "Both Ballotpedia quotes verified verbatim (page line 232). Independently confirmed against the primary source: enacted SB324 §17-14-31(a) — presidential candidates may be nominated 'by written petition signed by at least 5,000 qualified voters of this state.' The draft correctly separates this from the §17-9-3 3%/42,458 general-independent rule (SOS PDF quote also verified verbatim, lines 11-18)."
+    },
+    {
+      "field": "deadline",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "74 days before the general election. For 2024 this was August 23, 2024 (election day Nov 5, 2024). DO NOT rely on September 6 — that is the WRONG date for an independent presidential petition.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": false,
+      "confidence": 0.93,
+      "note": "Citation quotes verified verbatim, BUT the asserted VALUE (Sept 6) is wrong. The Sept 6 Ballotpedia quote describes the party national-convention certificate-of-nomination deadline (Ballotpedia line 226) and Ballotpedia conflated it onto the independent petition (line 232); Ballot Access News notes Sept 6 was Alabama's old deadline pre-2012. Enacted SB324 (LegiScan: Passed/Enacted 2024-05-03), amending §17-14-31(b), sets the deadline for presidential certificates AND petitions at '74 days before the date of the election' (strikethrough shows change from the prior '82nd day' = Aug 15). 74 days before Nov 5, 2024 = Aug 23, 2024 — independently corroborated by Ballot Access News, WVUA23, and 1819News reporting RFK Jr.'s Aug 23 deadline. Strictest-defensible value set to the earliest applicable deadline (Aug 23, 2024) to never risk a missed filing; exact 2028 date must be re-derived (74 days before that Election Day) and confirmed with the SOS."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. The 5,000-signature independent presidential petition is a single statewide total with no per-congressional-district or per-county distribution requirement.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Ballotpedia quote verified verbatim (line 232). Confirmed against §17-14-31(a): 'petition signed by at least 5,000 qualified voters of this state' — a flat statewide count with no geographic allocation. No distribution language anywhere in the presidential petition statute."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "UNKNOWN / no circulator-specific qualifications are specified in Alabama law. Signatures must be gathered in person; signers must be registered Alabama voters. (Conservative posture: do not assume circulators are unrestricted — verify with SOS.)",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.85,
+      "note": "Ballotpedia quote ('All petition signatures must be gathered in person, but the code does not specify requirements for petition circulators') verified verbatim (line 398). SOS PDF 'signatures of registered Alabama voters' verified verbatim (line 11). Reviewed full Rule 820-2-4-.05 (Cornell) and enacted SB324 — neither imposes circulator age/residency requirements. The draft's UNKNOWN/no-specified-requirement framing is itself the strict, safe statement, so it is left AUTO-LIVE; an SOS inquiry is queued to close the gap."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Petition pages require only a per-page identifying statement, pagination, and per-signer information (name, residential address, date of birth, signature) under Rule 820-2-4-.05. No circulator affidavit, witness, or notarization is required.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "SOS PDF quote (Rule 820-2-4-.05(3) per-signer info) verified verbatim (lines 63-66). Cornell LII text of Rule 820-2-4-.05 verified verbatim and read in full (subsections 1-3) — contains no notary/affidavit/witness requirement. Enacted SB324 likewise imposes none for the presidential petition."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Signatures must be gathered in person on paper petitions; a photocopiable sample form is provided by the SOS. No digital/remote-online signature system exists for an Alabama independent presidential petition.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Ballotpedia 'gathered in person' quote verified verbatim (line 398); SOS PDF 'sample petition form, which may be photo copied' verified verbatim (lines 70-72). No source indicates any electronic submission path; in-person paper is confirmed."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. There is no filing/qualifying fee for an independent candidate and no fee-in-lieu-of-signatures alternative; the 5,000-signature petition is the sole ballot-access mechanism.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "SOS PDF 'There is no qualifying fee' verified verbatim (line 4). §17-14-31(a) provides the petition as the only independent path (no fee alternative mentioned). Note: the draft's quote attributes 'There is no qualifying fee' to a sentence about choosing not to run as a party candidate — the exact phrase appears verbatim at line 4 of the SOS PDF, so grounding holds."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "Alabama's candidate-petition law (Ala. Code 17-9-3) and the Secretary of State's independent-candidacy administrative rules (Ala. Admin. Code ch. 820-2-4) are entirely signer-centric: they govern petition format, the information requested of each signer, and random-sample signature verification, but say NOTHING about circulators — neither their compensation (per-signature or otherwise), nor whether circulators may be paid at all, nor any circulator residency/registration requirement. Compensation of circulators on a candidate petition is therefore UNADDRESSED in Alabama's election code and SOS rules; Alabama has no statewide initiative process, so no initiative pay-per-signature rule carries over.",
+    "sosInquiry": "For an INDEPENDENT presidential candidate's nominating petition under Ala. Code 17-9-3, may a campaign pay signature circulators on a per-signature basis; may circulators be paid at all (hourly/salary); and must a circulator be an Alabama resident or registered Alabama voter?",
+    "citations": [
+      {
+        "url": "https://www.law.cornell.edu/regulations/alabama/Ala-Admin-Code-r-820-2-4-.05",
+        "quote": "An election petition shall request the following information for each person signing said petition: name, residential address, date of birth, and signature. A signature shall not be deemed invalid for lacking any portion of the requested information if the disclosed information is sufficient for determining the validity of a signature."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Alabama",
+        "quote": "All petition signatures must be gathered in person, but the code does not specify requirements for petition circulators."
+      },
+      {
+        "url": "https://www.law.cornell.edu/regulations/alabama/title-820/chapter-820-2-4",
+        "quote": "§ 820-2-4-.05 - Petition Requirements § 820-2-4-.06 - Random Sample Of Signatures § 820-2-4-.07 - Random Sampling Formula For Verification Of Elections Petitions § 820-2-4-.08 - Certification Of Election Petition"
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Alabama",
+        "quote": "An independent presidential candidate must petition for placement on the general election ballot. At least 5,000 qualified state voters must sign this petition."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "PAID",
+    "cost": "$1,000 cap statewide (HB67, eff. 2026-06-01); legacy rate $0.01/name, $1.00 min (~$38,000 statewide pre-cap)",
+    "whoCanObtain": "General public — \"Anyone can request the voter list through a form on the secretary of state's website.\" Statute (§17-4-38) directs the SoS to \"provide access to lists and voter history information ... to anyone making application.\" No candidate/committee or political-use eligibility gate. Typical buyers are political parties, candidates, consultants, and voter-integrity groups. (Legislators get their district free; courts get a statewide copy for jury lists; other states can get a reciprocal copy once a year.)",
+    "useRestrictions": "HB67 (eff. June 1, 2026) prohibits commercial use of the voter list and bars the SoS from releasing voters' phone numbers, driver license numbers, voter ID numbers, email addresses, and month/day of birth (SSNs and emails were already withheld). Purchase certification states all sales are final and the file expires 7 days after purchase. (Specific penalty language not captured from the statute text; PDF was non-extractable.)",
+    "requestProcess": "Two routes: (1) Instant online purchase + download via the SoS portal at alabamainteractive.org (operated by Alabama Interactive, LLC) — buyer selects geography (city, county, district, or entire state), pays, and has 7 days to download; (2) a mailed/paper \"Voter Registration Information Request\" form to the Elections Division for city/municipal-district requests. No notarized affidavit or approval step is described for the standard purchase — the requester self-certifies the purchase terms online.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.alabamainteractive.org/sos/voter/voterWelcome.action",
+    "note": "Alabama sells the statewide voter file to anyone via an instant online portal; HB67, effective June 1, 2026 (days before this research date), caps the price at $1,000 (down from ~$38,000 at the old $0.01/name rate) and prohibits commercial use and release of phone numbers. The file includes name, address, race, gender, date of birth, and 10-election voting history — sufficient to match petition signers to registered voters.",
+    "citations": [
+      {
+        "url": "https://www.al.com/news/2026/04/alabama-just-slashed-the-price-of-its-statewide-voter-list.html",
+        "quote": "The Legislature passed HB67 by Rep. Jamie Kiel, R-Russellville, which puts a $1,000 cap on the cost of lists. That's a fraction of the current cost for a statewide list, which could run about $38,000 under the old law."
+      },
+      {
+        "url": "https://www.al.com/news/2026/04/alabama-just-slashed-the-price-of-its-statewide-voter-list.html",
+        "quote": "Under the old law, the secretary of state charges 1 cent per name on the list. For those buying the statewide list - 3.8 million registered voters - that's about $38,000. ... The bill takes effect June 1."
+      },
+      {
+        "url": "https://www.al.com/news/2026/04/alabama-just-slashed-the-price-of-its-statewide-voter-list.html",
+        "quote": "Anyone can request the voter list through a form on the secretary of state's website. The form allows the requester to choose the area for which they are requesting the file - a city, county, or district - or the entire state. The records include name, address, race, gender, date of birth and the voter's history of participation going back the last 10 elections."
+      },
+      {
+        "url": "https://www.alabamainteractive.org/sos/voter/voterWelcome.action",
+        "quote": "Code of Alabama (1975), section 17-4-38 provides that the Office of the Secretary of State shall provide access to lists and voter history information contained on the central computer to anyone making application, and there shall be a uniform charge for the production of voter lists."
+      },
+      {
+        "url": "https://www.alabamainteractive.org/sos/voter/voterWelcome.action",
+        "quote": "I acknowledge that I have 7 days from the time of purchasing my list to download and save the information I have purchased, after which the information I have purchased will expire."
+      },
+      {
+        "url": "https://www.alreporter.com/2025/11/18/wes-allen-backs-bill-to-protect-voter-data-and-lower-the-cost-of-alabamas-voter-list/",
+        "quote": "The bill also caps the cost of Alabama's voter list at $1,000 and prohibits its use for commercial purposes."
+      },
+      {
+        "url": "https://www.alreporter.com/2025/11/18/wes-allen-backs-bill-to-protect-voter-data-and-lower-the-cost-of-alabamas-voter-list/",
+        "quote": "Alabama's current fee schedule of a penny per voter record, with a $1.00 minimum fee, is based on Alabama law that authorizes a uniform charge for production of voter lists and decades of precedent."
+      },
+      {
+        "url": "https://www.alreporter.com/2025/11/18/wes-allen-backs-bill-to-protect-voter-data-and-lower-the-cost-of-alabamas-voter-list/",
+        "quote": "HB67 prohibits the release of voters' driver license numbers, voter identification numbers, email addresses, month and day of birth, and phone numbers."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the rule binds signers only. Ala. Code § 17-9-3(a)(3) requires only that the petition be \"signed by electors qualified to vote\" / \"qualified electors,\" which restricts the SIGNERS. The statute imposes no circulator affidavit, no witness, and no age requirement on the person who carries/collects the petition. Alabama law (and the SoS guide) does not require a circula",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER: must be a \"qualified elector\" / \"elector qualified to vote in the election\" — i.e., a registered Alabama voter (Ala. Code § 17-9-3(a)(3); SoS guide says \"registered Alabama voters\"). CIRCULATOR: no requirements whatsoever — the statute and SoS guide are silent on who may collect signatures; there is no circulator affidavit, registration, age, citizenship, or residency requirement. The only",
+    "gate": "AUTO-LIVE",
+    "note": "Alabama's strict eligibility requirements bind ONLY the signers, not the circulator. Ala. Code § 17-9-3(a)(3) is the operative independent-candidacy petition statute: it requires the petition be \"signed by electors qualified to vote in the election\" and that \"the number of qualified electors signing the petition shall equal or exceed three percent of the qualified electors who cast ballots for the office of Governor in the last general election.\" There is no circulator/witness/affiant role creat",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorAgeRule / minorCanCirculate / circulatorMustBeRegisteredVoter / signerVsCirculator",
+        "url": "https://law.onecle.com/alabama/title-17/17-9-3.html",
+        "quote": "Each candidate who has been requested to be an independent candidate for a specified office by written petition signed by electors qualified to vote in the election to fill the office when the petition has been filed with the judge of probate, in the case of a county office and with the Secretary of State in all other cases, on or before 5:00 P.M. on the date of the first primary election... The number of qualified electors signing the petition shall equal or exceed three percent of the qualified electors who cast ballots for the office of Governor in the last general election for the state, county, district, or other political subdivision in which the candidate seeks to qualify."
+      },
+      {
+        "field": "circulatorMustBeRegisteredVoter / circulatorMustBeUSCitizen / circulatorMustBeStateResident (no circulator requirements specified)",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Alabama",
+        "quote": "All petition signatures must be gathered in person, but the code does not specify requirements for petition circulators."
+      },
+      {
+        "field": "signerVsCirculator (signer = registered AL voter; circulator unmentioned) + petition form requirements (no circulator affidavit)",
+        "url": "https://www.sos.alabama.gov/sites/default/files/election-2024/Independent-Candiate-Info.pdf",
+        "quote": "A ballot access petition for an independent candidate must contain signatures of registered Alabama voters. The number of valid signatures on the petition must equal or exceed at least 3 percent of the qualified electors who cast ballots for the office of governor in the last general election... Requested information for each person signing which includes name, residential address, date of birth and signature. A signature shall not be deemed invalid for lacking any portion of the requested information if the disclosed information is sufficient for determining the validity of a signature. [Alabama Administrative Code, Rule 820-2-4.05(3)]"
+      }
+    ]
+  }
+}

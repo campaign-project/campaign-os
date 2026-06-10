@@ -1,0 +1,126 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "NV-ICA",
+ "jurisdiction": "Nevada",
+ "abbr": "NV",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 148788,
+  "headline": "Nevada Constitution Art. 19, Sec. 2(2): \"An initiative petition ... shall be proposed by a number of registered voters equal to 10 percent or more of the number of voters who voted at the last preceding general election ... but the total number of registered voters signing the initiative petition shall be equal to 10 percent or more of the voters who voted in the entire State at the last preceding general election.\" Base = total votes cast at the 2024 general election."
+ },
+ "deadline": {
+  "headline": "Constitution Art. 19, Sec. 2(4): petition \"shall be filed with the Secretary of State not less than 90 days before any regular general election.\" Per Ballotpedia (2026 cycle): \"06/24/2026 ... Signatures must be filed by 15 days after the primary election\" (petitions due with county officials 15 days after the 2026 primary, who forward to SoS)."
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Nevada Constitution Art. 19, Sec. 2(2): \"An initiative petition ... shall be proposed by a number of registered voters equal to 10 percent or more of the number of voters who voted at the last preceding general election ... but the total number of registered voters signing the initiative petition shall be equal to 10 percent or more of the voters who voted in the entire State at the last preceding general election.\" Base = total votes cast at the 2024 general election.",
+   "confidence": 0.7,
+   "note": "direct/indirect: direct (proceeds directly to voters; but must be approved at TWO consecutive general elections per Art. 19, Sec. 2(4))"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Constitution Art. 19, Sec. 2(4): petition \"shall be filed with the Secretary of State not less than 90 days before any regular general election.\" Per Ballotpedia (2026 cycle): \"06/24/2026 ... Signatures must be filed by 15 days after the primary election\" (petitions due with county officials 15 days after the 2026 primary, who forward to SoS)."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Constitution literally requires signatures in \"not less than 75 percent of the counties.\" That county-based rule was struck as unconstitutional (ACLU v. Lomax, 9th Cir. 2006); the OPERATIVE requirement (NRS / SB 133 (2011)) is signatures equal to 10% of statewide votes distributed EQUALLY across each of Nevada's 4 congressional districts (statewide total / 4, rounded up, in EAC"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Yes. NRS 295.009: \"A petition for initiative or referendum embraces but one subject and matters necessarily connected therewith and pertaining thereto, if the parts of the proposed initiative or referendum are functionally related and germane to each other in a way that provides sufficient notice of the general subject of, and of the interests likely to be affected by, the prop"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Per-signature pay for initiative/referendum circulators is PERMITTED in Nevada. Ballotpedia's Pay-per-signature page lists Nevada in the \\\"Permitted\\\" column, citing NRS Chapter 295; Nevada is NOT among the ~10 states that ban per-signature compensation (AZ, AR, FL, MT, ND, OK [added 2025], OR, SD, UT, WY). Nevada \\\"law does not require a circulator's paid/volunteer status to b",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Statutory rate = 1 cent ($0.01) per name (NRS 293.440(1)). For the full statewide file (~2.07M active voters) this works out to roughly $20,000; Ballotpedia lists the statewide-list price as \"$20,000.\" A campaign normally requests a filtered subset (e.g., one county/district) and pays $0.01 per record, so verifying petition signers in a targeted geography is typically well under $100. Major/minor political-party central/executive committees can obtain the list without charge.",
+  "whoCanObtain": "Effectively open / general public (\"NevVoter is accessible to the public\"), but the Secretary of State \"retains full authority in granting, denying or revoking access at any time.\" A campaign or committee qualifies. The SOS verifies the applicant's qualification when the request form is filed. Major-party state/county central committees and minor-party executive committees may obtain copies without charge under NRS 293.440(1).",
+  "useRestrictions": "Yes — political/election-use-only. Per NRS 293.440(6)(b) (and as restated on the SOS page): \"any person, candidate, party or organization who receives information requested on this form is prohibited from using such information for purposes not related to an election and from selling such information for any reason.\" The statute also bars selling the list \"for compensation or other valuable consideration.\"",
+  "requestProcess": "Two-step: (1) create a web account in the Nevada SOS Online Services portal; (2) download, complete, sign, and file the \"Official Request for List of Registered Voters Form\" with the SOS (by email, fax, mail, or in person). The form attests to permitted election-related use. Access is granted/denied after verification, typically the next business day up to 7 business days, and the applicant is notified by email. (Not an instant anonymous download — application form + approval.)",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.nvsos.gov/sos/elections/voters/nevvoter-statewide-list",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Primary-source grounding is strong: verbatim text of Nevada Constitution Article 19, Sections 1, 2 and 3 was obtained (the initiative/referendum provisions), plus NRS 295.009 (single subject). Current-cycle signature numbers (2026: 148,788 amendment/veto-referendum; 102,362 indirect statute) are corroborated by two independent Ballotpedia pages and are internally consistent (10% of votes cast). The Nevada Secretary of State's own site (nvsos.gov) and the Nevada Legislature si"
+ },
+ "citations": [
+  {
+   "field": "veto-referendum signatureBasis + deadline",
+   "url": "https://ballotpedia.org/Article_19,_Nevada_Constitution",
+   "quote": "Whenever a number of registered voters of this state equal to 10 percent or more of the number of voters who voted at the last preceding general election shall express their wish by filing with the secretary of state, not less than 120 days before the next general election, a petition in the form provided for in Section 3 of this Article that any statute or resolution or any part thereof enacted by the legislature be submitted to a vote of the people"
+  },
+  {
+   "field": "initiative signatureBasis + distribution",
+   "url": "https://ballotpedia.org/Article_19,_Nevada_Constitution",
+   "quote": "An initiative petition shall be in the form required by Section 3 of this Article and shall be proposed by a number of registered voters equal to 10 percent or more of the number of voters who voted at the last preceding general election in not less than 75 percent of the counties in the State, but the total number of registered voters signing the initiative petition shall be equal to 10 percent or more of the voters who voted in the entire State at the last preceding general election."
+  },
+  {
+   "field": "initiated-statute deadline (indirect)",
+   "url": "https://ballotpedia.org/Article_19,_Nevada_Constitution",
+   "quote": "If the initiative petition proposes a statute or an amendment to a statute, the person who intends to circulate it shall file a copy with the Secretary of State before beginning circulation and not earlier than January 1 of the year preceding the year in which a regular session of the Legislature is held. After its circulation, it shall be filed with the Secretary of State not less than 30 days prior to any regular session of the Legislature."
+  },
+  {
+   "field": "initiated-constitutional-amendment deadline + two-elections rule",
+   "url": "https://ballotpedia.org/Article_19,_Nevada_Constitution",
+   "quote": "If the initiative petition proposes an amendment to the Constitution, the person who intends to circulate it shall file a copy with the Secretary of State before beginning circulation and not earlier than September 1 of the year before the year in which the election is to be held. After its circulation it shall be filed with the Secretary of State not less than 90 days before any regular general election ... If a majority of such voters votes approval of such amendment, the Secretary of State shall publish and resubmit the question of approval or disapproval to a vote of the voters at the next succeeding general election in the same manner as such question was originally submitted."
+  },
+  {
+   "field": "signatureRequirement (current-cycle figures)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "| Year | Amendment | Statute | Veto referendum | Statute affirmation | | 2026 | 148,788 | 102,362 | 148,788 | 148,788 | | 2024 | 102,362 | 135,561 | 102,362 | 102,362 |"
+  },
+  {
+   "field": "signatureRequirement corroboration (2026 deadlines page)",
+   "url": "https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026",
+   "quote": "Nevada | CICA | 06/24/2026 | Signatures must be filed by 15 days after the primary election | 148,788 ... Nevada | IndISS | 11/20/24 | Signatures must be filed by 15 days after the general election | 102,362 ... Nevada | VR | 06/24/2026 | Signatures must be filed by 15 days after the primary election | 102,362"
+  },
+  {
+   "field": "distribution (operative congressional-district rule)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "Under Nevada's distribution requirement, proponents must collect signatures equal to 10 percent of the total votes cast in the last general election, distributed evenly throughout all of the state's congressional districts. ... He/she then divides that number by the number of congressional districts. The resulting figure, rounded up to the nearest whole number, is the number of signatures that must be collected in each of the state's four congressional districts."
+  },
+  {
+   "field": "distribution history (county rule struck)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "In 2006, the Ninth Circuit Court of Appeals ruled that the state's prior \"13 counties rule\" was unconstitutional in ACLU v. Lomax. ... On July 13, 2011, the Governor of Nevada, Brian Sandoval (R), signed Senate Bill 133, which retained congressional districts as the basis of the distribution requirement."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "In Nevada, each proposed measure must address only one subject. ... \"A petition for initiative or referendum embraces but one subject and matters necessarily connected therewith and pertaining thereto, if the parts of the proposed initiative or referendum are functionally related and germane to each other in a way that provides sufficient notice of the general subject of, and of the interests likely to be affected by, the proposed initiative or referendum.\""
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "Nevada does not require that petition circulators reside in the state."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://ballotpedia.org/Pay-per-signature",
+   "quote": "Nevada | Permitted | Nevada Revised Statutes, Chapter 295 ... Sixteen (16) of those states allowed campaigns to make payments to signature gatherers based on the number of signatures collected. Ten (10) of those states prohibited campaigns from paying signature gatherers based on the number of signatures collected."
+  },
+  {
+   "field": "circulator affidavit / in-person requirement",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "The affidavits must contain a statement that the circulator is at least 18 years of age and the circulator's address. The circulator is required to sign these affidavits before a public notary. He/she must swear to and sign a statement, under the penalty of law, that he/she personally witnessed every act of signing the petition. ... Nevada law does mandate that signatures be collected in person."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

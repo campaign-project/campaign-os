@@ -1,0 +1,6 @@
+ncid	first_name	middle_name	last_name	name_suffix_lbl	res_street_address	res_city_desc	state_cd	zip_code	status_cd	registr_dt	county_desc	nc_house_abbrv
+V1001	Robert	A	Nuñez		42 Main St	Springfield	NC	62704	A	03/01/2019	Sangamon	1
+V1002	William		Johnson		88 Oak Ave	Springfield	NC	62704	A	06/15/2018	Sangamon	1
+V1003	Maria		Gonzalez		5 Sunset Blvd	Springfield	NC	62705	A	11/02/2021	Sangamon	1
+V1004	James		O'Brien		230 N Park Rd	Springfield	NC	62704	INACTIVE	09/10/2017	Sangamon	1
+V1005	Katherine		Lee		901 River Dr	Springfield	NC	62704	R	05/05/2016	Sangamon	1

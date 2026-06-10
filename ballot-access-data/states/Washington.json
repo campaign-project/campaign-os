@@ -1,0 +1,201 @@
+{
+  "jurisdiction": "Washington",
+  "signaturesHeadline": "1,000 registered WA voters (flat; conv. attendees)",
+  "deadlineHeadline": "Cert+petition to SOS by 1st Fri of Aug (2028: Aug 4)",
+  "riskNote": "7 fields grounded; 6 AUTO-LIVE, 1 CONSERVATIVE-HOLD (circulator eligibility — absence-of-rule cannot be retrieval-confirmed). Watch SOS \"last Saturday in July\" vs statutory \"fourth Saturday\" convention-window discrepancy (differs in 2028: Jul 29 vs Jul 22).",
+  "sosInquiries": [
+    "Beyond requiring that each petition signer be a registered Washington voter who attends a qualifying state convention, does Washington impose any separate qualification (age, residency, voter-registration, or affidavit) on the person who circulates/collects an independent or minor-party presidential nominating petition?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "1,000 signatures of registered Washington voters (flat statewide number; not a percentage). An independent (or minor-party) presidential candidate is nominated by convention, and the certificate of nomination must be accompanied by nominating petition(s) bearing the signatures of at least 1,000 registered Washington voters. These voters must attend a state convention held in support of the candidate; a candidate holding multiple conventions may aggregate signatures across conventions to reach 1,000.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.97,
+      "note": "All 3 citations grounded verbatim. RCW 29A.56.640(5): 'at least one thousand registered voters of the state of Washington'; RCW 29A.56.610 confirms multi-convention aggregation and 100-attendee minimum; SOS page confirms 1,000 signatures. Statute last amended 2013, no newer amendment found; SOS 2028 page still describes same process. Flat number, no interpretation needed."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "First Friday of August of the presidential election year (for 2028 = August 4, 2028). The certificate of nomination (with the petition(s)) must be submitted to the Secretary of State not later than the first Friday of August. Conventions must be held no earlier than the first Saturday in May and no later than the fourth Saturday in July per RCW 29A.56.610 (for 2028: May 6 to July 22). Date recomputes each cycle.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "note": "RCW 29A.56.640(7) 'not later than the first Friday of August' and RCW 29A.56.610 convention-window quote grounded verbatim; SOS quote grounded. Submission deadline value is correct and verified. NOTE discrepancy: SOS website says conventions run to the 'last Saturday in July' while the controlling statute (RCW 29A.56.610) says 'fourth Saturday in July' — these differ in years with five July Saturdays (2028: 4th=Jul 22 vs last=Jul 29). The draft value correctly uses the stricter statutory 'fourth Saturday'. Updated illustrative date from 2024 (Aug 2) to 2028 cycle (Aug 4)."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Washington requires a flat statewide total of 1,000 registered-voter signatures with no geographic distribution requirement across congressional districts or counties.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "note": "RCW 29A.56.640(5) grounded verbatim; statute requires only a statewide total of 1,000 'registered voters of the state of Washington' with no district/county distribution language anywhere in RCW 29A.56.610-.640. Correct."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Each person who signs the nominating petition must be a registered Washington voter and must attend a qualifying state convention (the convention must be attended by at least 100 registered voters), and no person may sign more than one nominating petition for an office for an election. Treat any circulator as needing to be a registered Washington voter unless the SOS confirms otherwise. UNKNOWN whether a distinct circulator-qualification rule (age/residency/voter-status of the petition collector, as opposed to the signer) exists beyond these signer/attendee requirements.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.6,
+      "note": "RCW 29A.56.630 and 29A.56.610 grounded verbatim (signer must be registered WA voter; no person signs more than one petition; convention needs 100 registered voters). However the field's core claim is an absence-of-law assertion ('no separate statutory circulator qualification') which retrieval cannot affirmatively confirm; the draft itself marks this UNKNOWN. Per strict-interpretation rule, hold and adopt the strictest defensible reading (circulator treated as needing registered-WA-voter status) pending SOS confirmation."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No notarized circulator affidavit is required on the petition itself. Verification attaches to the certificate of nomination: it must be verified by the oath of the convention's presiding officer and secretary, and must contain a sworn statement from both nominees consenting to the nomination. The certificate must also contain proof of publication of the convention notice (published in a newspaper of general circulation at least ten days before the convention).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "note": "RCW 29A.56.640(2) (sworn consent of nominees) and (4) (verified by oath of presiding officer and secretary) grounded verbatim; RCW 29A.56.620 (newspaper notice at least ten days before convention) grounded verbatim. No petition-level notarized circulator affidavit appears in statute. Correct."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. The petition is gathered on paper from registered voters who physically attend the state convention, and the certificate of nomination plus petitions are submitted to the Secretary of State by mail or by in-person appointment. There is no remote-online or digitized signature system covering an independent presidential nominating petition in Washington (Washington is not among the jurisdictions that allow electronic signing of candidate nominating petitions).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "note": "SOS quote (voters must attend a state convention) grounded verbatim; 2024 candidate guide PDF grounded verbatim ('Call (360) 902-4180 to schedule an in-person appointment, or submit by mail to:' — split across PDF lines 102-103 but exact). Ballotpedia electronic-signing list grounded (Arizona/New Mexico online, Denver/DC eSign) and does NOT include Washington, confirming no e-signature path. Guide's 'online' references are voters' pamphlet only, not petition signing. Correct."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. There is no filing fee for a presidential candidate in Washington, and there is no fee-in-lieu-of-signatures alternative; the signature/convention requirement is the sole path.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "note": "SOS quote 'There is no filing fee' grounded verbatim; 2024 guide independently confirms 'Washington state does not collect filing fees for the offices of President and Vice President.' No fee-in-lieu provision exists in RCW 29A.56.610-.640. Correct."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found; WA per-signature ban is initiative/referendum-only",
+    "note": "Washington's candidate (minor party/independent presidential) nominating-petition statutes (RCW 29A.56.630 and 29A.56.640) and the candidate-petition crime statute (RCW 29A.84.311) are SILENT on circulator compensation — they regulate signers (must be registered WA voters), not circulators, and impose no circulator residency or pay rules. Washington's pay-per-signature ban (RCW 29A.84.250(2), with the 29A.84.280 finding) applies by its express terms ONLY to \"initiative or referendum petitions,\" so it does not automatically reach candidate petitions; candidate-petition compensation is therefore unaddressed rather than clearly permitted or prohibited.",
+    "sosInquiry": "For a minor-party/independent presidential candidate's nominating petitions under RCW 29A.56.630/.640, may the campaign compensate signature gatherers on a per-signature basis, and is there any circulator residency or registered-voter requirement — given that RCW 29A.84.250(2)'s per-signature ban is written only for initiative/referendum petitions?",
+    "citations": [
+      {
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.84.250",
+        "quote": "(2) Provides or receives consideration for soliciting or procuring signatures on an initiative or referendum petition if any part of the consideration is based upon the number of signatures solicited or procured, or offers to provide or agrees to receive such consideration any of which is based on the number of signatures solicited or procured"
+      },
+      {
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.84.280",
+        "quote": "The legislature finds that paying a worker, whose task it is to secure the signatures of voters on initiative or referendum petitions, on the basis of the number of signatures the worker secures on the petitions encourages the introduction of fraud in the signature gathering process."
+      },
+      {
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.84.311",
+        "quote": "Every person who: (1) Knowingly provides false information on his or her declaration of candidacy or petition of nomination; or (2) Conceals or fraudulently defaces or destroys a certificate that has been filed with an elections officer under chapter 29A.20 RCW or a declaration of candidacy or petition of nomination that has been filed with an elections officer ... is guilty of a class C felony"
+      },
+      {
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.56.630",
+        "quote": "The petition shall also contain a statement that the person signing the petition is a registered voter of the state of Washington and shall have a space for the voter to sign his or her name and to print his or her name and address. No person may sign more than one nominating petition under this chapter for an office for an election."
+      },
+      {
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.56.640",
+        "quote": "(5) Be accompanied by a nominating petition or petitions bearing the signatures and addresses of at least one thousand registered voters of the state of Washington"
+      }
+    ],
+    "initiativePrior": "permitted"
+  },
+  "voterFile": {
+    "tier": "LOW_COST",
+    "cost": "Free in practice. No fee is shown or collected on the request form; the governing statute requires lists be furnished \"at actual reproduction cost,\" which for the emailed electronic CSV extract is effectively $0. Conservatively: free / actual reproduction cost.",
+    "whoCanObtain": "General public — the WA Secretary of State \"shall promptly furnish current lists of registered voters in his or her possession, at actual reproduction cost, to any person requesting such information\" (RCW 29A.08.720(2)). No candidate/committee/registered-user eligibility gate.",
+    "useRestrictions": "Strong. The list \"shall not be used for the purpose of mailing or delivering any advertisement or offer... or... any solicitation for money, services, or anything of value.\" However \"the lists and labels may be used for any political purpose\" — defined to include support of/opposition to candidates and ballot measures — which covers petition-signature verification for a campaign. Penalty for prohibited (commercial/solicitation) use is a class C felony (up to 5 years imprisonment and/or $10,000 fine) plus $5-per-item civil liability and possible class action (RCW 29A.08.740).",
+    "requestProcess": "Online webform on the SOS \"Washington Voter Registration Database Extract\" page. Requester submits name, email, phone, and mailing address and checks a box agreeing to lawful use under RCW 29A.08.720, 29A.08.740, and 42.56.070(8). \"You will be sent an email with a download link upon approval.\" Fulfillment \"can take up to five business days... in most cases, the request is satisfied immediately.\" No notarized affidavit; just a click-through use agreement.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+    "note": "Washington publishes one statewide Voter Registration Database (VRDB) extract — \"a comprehensive list of all active registered voters\" with district/precinct info and one to two years of voting history — orderable free via an online form; a download link is emailed upon approval (usually immediate). Use for political purposes (including signature verification) is expressly permitted; commercial/solicitation use is a class C felony. Note WA records no party preference, so the file contains no party affiliation.",
+    "citations": [
+      {
+        "url": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+        "quote": "The Voter Registration Database (VRDB) is a comprehensive list of **all** active registered voters, including the current year and previous year of voting history and district/precinct information."
+      },
+      {
+        "url": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+        "quote": "Requests for the VRDB made below can take up to five business days to be fulfilled; in most cases, the request is satisfied immediately."
+      },
+      {
+        "url": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+        "quote": "You will be sent an email with a download link upon approval."
+      },
+      {
+        "url": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+        "quote": "The county auditor or secretary of state shall promptly furnish current lists of registered voters in his or her possession, at actual reproduction cost, to any person requesting such information. The lists shall not be used for the purpose of mailing or delivering any advertisement or offer for any property, establishment, organization, product, or service or for the purpose of mailing or delivering any solicitation for money, services, or anything of value. However, the lists and labels may be used for any political purpose."
+      },
+      {
+        "url": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+        "quote": "\"Political purpose\" means a purpose concerned with the support of or opposition to any candidate for any partisan or nonpartisan office or concerned with the support of or opposition to any ballot proposition or issue."
+      },
+      {
+        "url": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+        "quote": "Any person who uses registered voter data furnished under RCW 29A.08.720 for the purpose of mailing or delivering any advertisement or offer... or... any solicitation for money, services, or anything of value is guilty of a class C felony punishable by imprisonment in a state correctional facility for a period of not more than five years or a fine of not more than ten thousand dollars or both such fine and imprisonment, and is liable to each person provided such advertisement or solicitation... at five dollars for each item mailed or delivered to the person's residence."
+      },
+      {
+        "url": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+        "quote": "Washington voter registration does not record party preferences; this database does not contain any information about political affiliation."
+      },
+      {
+        "url": "https://www.sos.wa.gov/elections/data-research/reports-data-and-statistics/washington-state-voter-registration-database-vrdb",
+        "quote": "The Secretary of State's Office maintains one statewide list of voters that serves as the official list of registered voters for Washington."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement. Washington's minor-party/independent presidential nomination uses a CONVENTION model (RCW ch. 29A.56), not a conventional circulator-affidavit petition. The statute and the official SoS petition form impose requirements ONLY on the SIGNER (must be a registered WA voter who personally attended a nominating convention). There is no \"circulator\" role with any statutory ",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER must be a registered Washington voter who personally attended a nominating convention; CIRCULATOR has no statutory eligibility requirement (no circulator affidavit exists — the convention's presiding officer and secretary verify the certificate instead).",
+    "gate": "AUTO-LIVE",
+    "note": "Washington does NOT use a circulator-affidavit petition for independent/minor-party presidential candidates; it uses a CONVENTION + nominating-petition model under RCW ch. 29A.56 (recodified from RCW 29A.20). A minor party or independent candidate must hold one or more conventions attended by at least 100 registered WA voters each, and submit petitions bearing the signatures of at least 1,000 registered WA voters who personally attended a convention (RCW 29A.56.610, 29A.56.640(5)), plus a Certif",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.56.630",
+        "quote": "A nominating petition submitted under this chapter shall clearly identify the name of the minor party or independent candidate convention as it appears on the certificate of nomination... The petition shall also contain a statement that the person signing the petition is a registered voter of the state of Washington and shall have a space for the voter to sign his or her name and to print his or her name and address. No person may sign more than one nominating petition under this chapter for an office for an election."
+      },
+      {
+        "field": "signerVsCirculator / circulatorMustBeRegisteredVoter",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.56.640",
+        "quote": "A certificate evidencing nominations made at a convention must: ... (4) Be verified by the oath of the presiding officer and secretary; (5) Be accompanied by a nominating petition or petitions bearing the signatures and addresses of at least one thousand registered voters of the state of Washington;"
+      },
+      {
+        "field": "signerVsCirculator",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.56.610",
+        "quote": "To be valid, a convention must be attended by at least one hundred registered voters, but a minor party or independent candidate holding multiple conventions may add together the number of signatures of different individuals from each convention in order to obtain and submit to the secretary of state the signatures of at least one thousand registered voters of the state of Washington."
+      },
+      {
+        "field": "circulatorAgeRule (no circulator verification step)",
+        "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=29A.56.670",
+        "quote": "Upon the receipt of the certificate of nomination, the secretary of state shall check the certificate and canvass the signatures on the accompanying nominating petitions to determine if the requirements of RCW 29A.56.640 have been met."
+      },
+      {
+        "field": "signerVsCirculator (petition voter's oath, no circulator section)",
+        "url": "https://www.sos.wa.gov/sites/default/files/2023-05/minorparty_ind_prescandidatesguide2024.pdf",
+        "quote": "I, the undersigned, declare that, • I am a registered voter of the State of Washington. • I personally attended a nominating convention held on ______________________ , 2024 in the city of ______________________________. • I support with my signature the nominees listed above. • I have not signed another nominating petition for this election year."
+      },
+      {
+        "field": "process overview / signer requirement",
+        "url": "https://www.sos.wa.gov/elections/candidates/filing-resources/running-president-united-states",
+        "quote": "To appear on the General Election ballot either as a nominee of a minor party or as an independent candidate, candidates must demonstrate support by Washington voters through petition of 1,000 signatures of registered voters. These voters must attend a state convention held in support of the party or candidate."
+      }
+    ]
+  }
+}

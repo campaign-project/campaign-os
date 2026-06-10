@@ -1,0 +1,12 @@
+{
+  "name": "@campaign-os/optimizer-proto",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Ballot-access optimizer prototype (RFC-001 §7–8): marginal-value routing of volunteer-hours",
+  "scripts": {
+    "start": "node --experimental-strip-types optimize.ts",
+    "yield": "node --experimental-strip-types yielddemo.ts",
+    "store": "node --experimental-strip-types yieldstoredemo.ts"
+  }
+}

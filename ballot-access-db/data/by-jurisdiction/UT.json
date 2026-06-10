@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "UT",
+ "jurisdiction": "Utah",
+ "abbr": "UT",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 1000,
+  "headline": "1,000 valid registered-voter signatures statewide (flat statutory number) + $500 fee"
+ },
+ "deadline": {
+  "headline": "DISPUTED: signatures due June 15 (20A-9-502(5)(a)); Aug 15 only for running-mate/VP filing — treat June 15 as binding for signatures"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "1,000 signatures of registered voters statewide — a flat statutory number set by Utah Code 20A-9-502(5)(a)(ii)(A) for an office filled by the voters of the entire state (President); not a percentage and does not recompute by cycle. Each must be a VALID signature certified by the county clerks.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim. FindLaw 20A-9-502(5)(a)(ii)(A) (current as of Jan 1, 2025) sets 'at least 1,000 registered voters residing within the state' for statewide offices; Ballotpedia independently confirms 1,000 for an independent presidential candidate. President is an office filled by Utah voters statewide. Note clerks count/certify only valid holographic signatures of registered voters (502(5)(b)-(c)), so collect a cushion above 1,000."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICTEST READING: submit the 1,000 signatures to the county clerks AND file the certificate of nomination + $500 fee with the Lieutenant Governor no later than 5 p.m. on JUNE 15 of the general election year. The August 15 date in 20A-9-504(2) on its face governs only (a) selection of the unaffiliated running mate and (b) the VP candidate's compliance with 20A-9-202(7) — NOT the signature/petition submission. Operate to the earlier June 15 date to avoid any risk to ballot access; confirm with the Lt. Governor's office before relying on August 15 for signatures.",
+   "confidence": 0.8,
+   "interpretationRequired": true,
+   "note": "DISAGREE with the draft's headline that Aug 15 is the presidential SIGNATURE/petition deadline. Primary text conflicts: 20A-9-502(5)(a) sets the signature-submission deadline at 'no later than 5 p.m. on June 15,' and 20A-9-503(1) ties certificate filing + fee to that same 502(5)(a) deadline (June 15). 20A-9-504(2)(a) only requires the presidential candidate to 'select a running mate' by Aug 15, and 504(2)(b) requires the VP to satisfy 20A-9-202(7) by Aug 15 — neither sets the signature deadline. Ballotpedia (secondary) says petition filed 'no later than August 15,' contradicting the plain June 15 statutory text. The draft itself flags the June 15 vs Aug 15 tension and that the Lt. Gov used discretion amid 2024 litigation. Correctness hinges on a legal interpretation retrieval cannot settle; strictest defensible posture is the earlier June 15 for signatures. Aug 15 grounds verbatim but the VALUE's interpretation (Aug 15 = signature deadline) is not supported by the statute it cites."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. No geographic distribution requirement — a single flat statewide total of 1,000 valid registered-voter signatures, with no minimum per congressional district or county. Packets are submitted to the county clerk where the majority of that packet's signatures were collected, but that is an administrative routing rule, not a distribution quota; the 1,000 total is statewide.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Quote grounds verbatim in current 20A-9-502(5)(a)(ii). The statute imposes only a single statewide 1,000 threshold for a statewide office; the per-political-division minimums in (5)(a)(ii)(B) apply only to sub-state offices, not President. The 'county clerk where the majority of signatures were collected' language is a submission-routing rule, correctly characterized as not a distribution requirement."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Circulator (the person who witnesses each signature and signs the verification) must be at least 18 years old; need NOT be a registered voter. Residency: the CURRENT statute (FindLaw, current to Jan 1, 2025) requires only age 18 in 20A-9-502(3)(a)(i) and contains no circulator residency requirement, so a non-resident may circulate. CAUTION: the draft's basis for non-residency is the superseded 2015 ut.elaws.us snapshot (which had a presidential-specific residency waiver against a now-removed general residency rule). Confirm current residency rules with the Lt. Governor before staffing non-resident circulators; using Utah-resident circulators is the zero-risk posture. Signers must be registered to vote in Utah (or intend to register before certification) and may sign for only one candidate for the office.",
+   "confidence": 0.78,
+   "interpretationRequired": true,
+   "note": "Age-18 and not-required-to-be-a-registered-voter sub-claims ground in current 20A-9-502(3)(a) and are correct. The non-residency conclusion is also TRUE under current law, but the CITED basis is stale: the ut.elaws.us quote ('A person who is not a resident may sign the verification...for president') is from a January 2015 snapshot whose structure (general residency requirement under 20A-2-105 + presidential carve-out in 502(3)(b)) no longer matches the current statute, which dropped the residency clause entirely (now no residency requirement for any office). So the draft reaches a right answer via outdated authority and a presidential-specific rationale that no longer exists. Because the current contours rest on confirming that no residency requirement survives, treat as CONSERVATIVE-HOLD; strictest safe posture is to not depend on non-resident circulators without office confirmation."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Both required: (1) the candidate's certificate of nomination is a sworn statement that must be NOTARIZED ('Subscribed and sworn to before me... Notary Public (or other officer qualified to administer oaths)'); and (2) each signature packet must include a circulator VERIFICATION attesting that each signer signed in the circulator's presence — signed by the circulator (with residence address and date) but not separately notarized. False verification is a class A misdemeanor.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim in current 20A-9-502: 502(1)(a) ends with the notary jurat (notarized candidate certificate), and 502(1)(c) sets out the circulator 'Verification' signed by the circulator. 502(4) makes false signing/verification a class A misdemeanor. The notarized-affidavit-plus-non-notarized-circulator-verification structure is correctly stated for the current statute."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper / wet-ink. The statute mandates handwritten 'holographic' signatures on printed 8-1/2 x 11 signature sheets, each signed in the circulator's physical presence; the county clerk counts/certifies only persons who signed 'with a holographic signature' (20A-9-502(1)(b)(viii)(C), (5)(c)). Treat digital/online capture as NOT available for the unaffiliated presidential certificate-of-nomination petition.",
+   "confidence": 0.88,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim in current 20A-9-502 (the 'Holographic Signature of Registered Voter' column heading and the clerk counting 'only those persons who signed with a holographic signature'). The holographic mandate makes wet-ink/paper the legally safe answer, and the draft's conclusion is already the strictest posture. Caveat retained: the draft could not confirm from a primary source that any Utah state-approved signature app covers this specific path, so reliance on digital capture is unverified and should be avoided — which the relied value reflects."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "A $500 filing fee is required IN ADDITION TO the 1,000-signature petition — it is NOT an alternative that can substitute for collecting signatures. An individual filing a certificate of nomination for President pays the $500 fee at filing alongside the petition (20A-9-503(4)(a)); filing and fee are due with the certificate per 20A-9-503(1).",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Both quotes ground verbatim. 20A-9-503(4)(a) requires a $500 filing fee for a presidential certificate of nomination; nothing in 502/503 lets the fee substitute for the 1,000 signatures (503(1) requires the candidate to file the certificate, file the declaration, AND pay the fee, on top of the 502 signature requirement). The fee is additive, not a fee-in-lieu alternative — correctly stated. Ballotpedia independently confirms both the $500 fee and the 1,000 signatures."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$1,050.00 flat for a one-time statewide purchase (no subscriptions, updates, or refunds). Separate election-period reports (Who Has Voted / Who Has Been Sent an Absentee Ballot) are $35.00 per election each; precinct-level results are free.",
+  "whoCanObtain": "General public. Per the Lt. Governor's Office, \"portions of a voter registration form is available to the public, unless a voter has requested that his or her voter information is classified as an At-Risk record.\" No candidate/party/registered-user gating for the public statewide file.",
+  "useRestrictions": "At-Risk-classified voter records are withheld: \"These records cannot be provided to members of the public, political parties, or candidates.\" Universally protected data (DOB, driver license / state ID / SSN, and—absent voter consent beginning Jan 2027—email and phone) is never released to the public. The statewide file's contents and release are governed by Utah Code 20A-2-602 (contents), 20A-2-601 (age range only, not exact DOB), and 20A-2-607 (timing). County/district lists must be obtained from the relevant county clerk(s).",
+  "requestProcess": "Online request form submitted to the Lieutenant Governor's Office at https://cs.utah.gov/s/elections-request. Not an instant download: \"You will receive an email that allows you to download the database within one business day of your purchase.\" Note the pre-election blackout under Utah Code 20A-2-607 (see note).",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://cs.utah.gov/s/elections-request",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "Utah Code 20A-9-502(3)(a)(i) requires the candidate to ensure that the person in whose presence each signature sheet is signed (the circulator) \"is at least 18 years old.\" The current circulator verification sheet, Utah Code 20A-1-1004(1) (VERIFICATION OF SIGNATURE-GATHERER), independently requires the signature-gatherer to attest under penalty of perjury \"I am at least 18 years old.\" So the minim",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER requirements (strict): must be a registered voter in Utah, or intend to become registered before the county clerk certifies signatures, and reside within the relevant political division (the state, for a statewide/presidential office) — see 20A-9-502(1)(b)(v)-(vi), (4)(a)(i)(C), (5)(a)(ii)(A), (5)(c). CIRCULATOR requirements (loose): only that the circulator be at least 18 years old, witnes",
+  "gate": "AUTO-LIVE",
+  "note": "For an INDEPENDENT (unaffiliated) PRESIDENTIAL candidate, ballot access via certificate of nomination is governed by Utah Code 20A-9-502 (current version effective 5/25/2026) and the circulator verification sheet at Utah Code 20A-1-1004 (current version effective 5/6/2026). The ONLY affirmative eligibility requirement the statute imposes on the CIRCULATOR (called the \"signature-gatherer\" / the person in whose presence each sheet is signed) is that the person be AT LEAST 18 YEARS OLD. The statute",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Only real exposure is the deadline: statute sets June 15 for signature submission while 504 sets Aug 15 for the running-mate/VP step; collect and submit signatures by June 15 to never risk the ballot line. Circulator non-residency relied on a 2015 snapshot; current statute dropped the residency clause but confirm before staffing non-resident circulators."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter9/C20A-9-S502_2025050720250507.pdf",
+   "quote": "20A-9-502 Certificate of nomination -- Contents -- Circulation -- Verification -- Criminal penalty -- Removal of petition signature. (3)(a) The candidate shall circulate the nomination petition and ensure that the person in whose presence each signature sheet is signed: (i) is at least 18 years old; and (ii) verifies each signature sheet by completing the verification bound to one or more signature sheets that are bound together."
+  },
+  {
+   "field": "compensation",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter9/C20A-9-S502_2025050720250507.pdf",
+   "quote": "I will be out of the state of Utah during the entire candidate filing period [applies if filing via a designated agent for an office other than president of the United States] ... at least 1,000 registered voters residing within the state when the nomination is for an office to be filled by the voters of the entire state"
+  },
+  {
+   "field": "compensation",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter7/C20A-7-S104_2024050120240501.pdf",
+   "quote": "20A-7-104 Signature gatherers -- Payments -- Badges ... (1) A person may not pay a person to gather signatures under this chapter based on a rate per signature, on a rate per verified signature, or on the initiative or referendum qualifying for the ballot. (2) A person that pays a person to gather signatures under this section shall base the payment solely on an hourly rate."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.utah.gov/obtain-voter-registration-or-election-data/",
+   "quote": "Fee: $1,050.00 for a one-time purchase. Refunds, subscriptions, or updates without a fee are not offered."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.utah.gov/obtain-voter-registration-or-election-data/",
+   "quote": "State law requires that portions of a voter registration form is available to the public, unless a voter has requested that his or her voter information is classified as an At-Risk record."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.utah.gov/obtain-voter-registration-or-election-data/",
+   "quote": "The database includes the following information allowed by Utah Code 20A-2-602: Full legal name ... Complete residential address, including the unit type and number ... Mailing address, including the city ... Party affiliation or status as unaffiliated ... Status as an active or inactive voter"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.utah.gov/obtain-voter-registration-or-election-data/",
+   "quote": "Access to At-Risk Voter Registrations: Utah law allows certain categories of individuals to classify their voter registrations as “At-risk”. These records cannot be provided to members of the public, political parties, or candidates."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.utah.gov/obtain-voter-registration-or-election-data/",
+   "quote": "Delivery: You will receive an email that allows you to download the database within one business day of your purchase. Please note that the database file size is large (~150MB)."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.utah.gov/obtain-voter-registration-or-election-data/",
+   "quote": "Per Utah Code 20A-2-607, current voter registration information will not be provided to any requestor or entity until May 25, 2026. Any requests for information received prior to May 25, 2026, will be fulfilled using data from March 8, 2026."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.utah.gov/voter-privacy-information/",
+   "quote": "Voter registration records are generally considered public information, and a list of voters is available to the public upon request."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / minorCanCirculate",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter9/C20A-9-S502_2026050620260525.html",
+   "quote": "(3)(a) The candidate shall circulate the nomination petition and ensure that the person in whose presence each signature sheet is signed: (i) is at least 18 years old; and (ii) verifies each signature sheet by completing the verification bound to one or more signature sheets that are bound together. (b) A person may not sign the circulator verification if the person signed a signature sheet bound to the verification."
+  },
+  {
+   "field": "circulatorMinAge / circulatorMustBeStateResident / circulatorMustBeRegisteredVoter",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter1/C20A-1-S1004_2026050620260506.html",
+   "quote": "(1) The final page of each petition packet shall contain a circulator verification sheet featuring the following printed or typed statement to be completed by the individual who gathers signatures for the petition: VERIFICATION OF SIGNATURE-GATHERER I, _____________________, hereby state, under penalty of perjury, that: I am at least 18 years old; ... I completed the signature gatherer training available on the lieutenant governor's website at www.vote.utah.gov before gathering signatures for this petition. Yes ____ No ____ (Check one) ... (Printed Name) (Signature) (Residence Address) (Date)"
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter (training rejection) ",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter1/C20A-1-S1004_2026050620260506.html",
+   "quote": "(2) A clerk shall reject a petition packet if: (a) all or any portion of the circulator verification sheet described in this section is not completed by the individual who gathered signatures for the petition; or (b) the individual who gathered signatures for the petition checked \"No\" in response to the signature gatherer training statement."
+  },
+  {
+   "field": "signerVsCirculator (signer must be registered voter)",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter9/C20A-9-S502_2026050620260525.html",
+   "quote": "It is a class A misdemeanor for anyone to knowingly sign a certificate of nomination signature sheet with any name other than the person's own name or more than once for the same candidate or if the person is not registered to vote in this state and does not intend to become registered to vote in this state before the county clerk certifies the signatures."
+  },
+  {
+   "field": "signerVsCirculator (signer residency / threshold for statewide-presidential office)",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter9/C20A-9-S502_2026050620260525.html",
+   "quote": "(5)(a)(ii) submit each signature packet to the county clerk where the majority of the signatures in the packet were collected, with signatures totaling: (A) at least 1,000 registered voters residing within the state when the nomination is for an office to be filled by the voters of the entire state ... (c) In reviewing the signature packets, the county clerk shall count and certify only those persons who signed with a holographic signature, who: (i) are registered voters within the political division that the candidate seeks to represent; and (ii) did not sign any other certificate of nomination for that office."
+  },
+  {
+   "field": "presidential filing fee / agent",
+   "url": "https://le.utah.gov/xcode/Title20A/Chapter9/C20A-9-S503_2024022820240501.html",
+   "quote": "(4) An individual filing a certificate of nomination for president of the United States under this section: (a) shall pay a filing fee of $500; and (b) may use a designated agent to file the nomination petition."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

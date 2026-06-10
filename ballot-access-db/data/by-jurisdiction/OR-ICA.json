@@ -1,0 +1,151 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "OR-ICA",
+ "jurisdiction": "Oregon",
+ "abbr": "OR",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 160551,
+  "headline": "8% of the total number of votes cast for all candidates for Governor at the election at which a Governor was elected for a term of four years next preceding the filing of the petition (per Or. Const. Art. IV, sec. 1(2)(c)). Base = 2022 gubernatorial election total of 2,006,888 votes for the 2024 and 2026 cycles."
+ },
+ "deadline": {
+  "headline": "An initiative petition shall be filed not less than four months before the election at which the proposed law or amendment to the Constitution is to be voted upon (Or. Const. Art. IV, sec. 1(2)(e)). SoS: signatures must be submitted for verification no later than four months prior to the next regularly scheduled general election. For the Nov 3, 2026 ballot the deadline is July "
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "8% of the total number of votes cast for all candidates for Governor at the election at which a Governor was elected for a term of four years next preceding the filing of the petition (per Or. Const. Art. IV, sec. 1(2)(c)). Base = 2022 gubernatorial election total of 2,006,888 votes for the 2024 and 2026 cycles.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "An initiative petition shall be filed not less than four months before the election at which the proposed law or amendment to the Constitution is to be voted upon (Or. Const. Art. IV, sec. 1(2)(e)). SoS: signatures must be submitted for verification no later than four months prior to the next regularly scheduled general election. For the Nov 3, 2026 ballot the deadline is July "
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "A proposed law or amendment to the Constitution shall embrace one subject only and matters properly connected therewith (Or. Const. Art. IV, sec. 1(2)(d))."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "not_required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Oregon constitutionally BANS per-signature pay. Or. Const. Art. IV, sec. 1b (adopted by Measure 26, Nov. 5, 2002): 'It shall be unlawful to pay or receive money or other thing of value based on the number of signatures obtained on an initiative or referendum petition. Nothing herein prohibits payment for signature gathering which is not based, either directly or indirectly, on ",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$500 flat for the statewide voter list (set by statute, ORS 247.945(4) and confirmed on the SOS page). A less-than-statewide (county/partial) list is $25 set-up fee plus 2.5 cents per 100 records.",
+  "whoCanObtain": "General public — \"any person.\" There is no eligibility gate (no candidate/committee/party requirement). Oregon law expressly directs the Secretary of State to deliver a statewide list to \"any person\" upon request.",
+  "useRestrictions": "Commercial use is prohibited by ORS 247.955: no person supplied a list under ORS 247.940/247.945 \"shall use any information in the list for commercial purposes,\" except resale to candidates or political committees for political purposes only. Campaign/political use (including petition signature verification) is permitted. The file by statute excludes the elector's signature, SSN, driver license number, birth month/day, and Address Confidentiality Program participants (ORS 247.948(2)); candidates/officeholders may suppress their residence address (ORS 247.948(3)).",
+  "requestProcess": "Written/online request to the Oregon Secretary of State, Elections Division (form SEL 510, \"Request for Statewide and Less Than Statewide Voter List\"). The statewide electronic list is delivered via SFTP; allow 10 business days. Not an instant self-service download. Hardcopy/labels/non-electronic statewide formats are not provided by SOS — those must be requested from county elections officials.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sos.oregon.gov/elections/Pages/request-for-voter-list.aspx",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "Oregon has a robust DIRECT citizen-initiative process for both statutes (6%) and constitutional amendments (8%), plus a citizen veto referendum (4%), all keyed to the votes cast for all candidates for Governor at the most recent 4-year-term gubernatorial election. Current cycle base = 2022 governor total of 2,006,888 votes, producing the 2024/2026 targets: ICA 160,551 (8% = 160,551.04), IS 120,413 (6% = 120,413.28), veto referendum 80,276 (4% = 80,275.52) valid signatures. Ve"
+ },
+ "citations": [
+  {
+   "field": "measures[initiated-statute].signatureBasis",
+   "url": "https://ballotpedia.org/Article_IV,_Oregon_Constitution",
+   "quote": "An initiative law may be proposed only by a petition signed by a number of qualified voters equal to six percent of the total number of votes cast for all candidates for Governor at the election at which a Governor was elected for a term of four years next preceding the filing of the petition."
+  },
+  {
+   "field": "measures[initiated-constitutional-amendment].signatureBasis",
+   "url": "https://ballotpedia.org/Article_IV,_Oregon_Constitution",
+   "quote": "An initiative amendment to the Constitution may be proposed only by a petition signed by a number of qualified voters equal to eight percent of the total number of votes cast for all candidates for Governor at the election at which a Governor was elected for a term of four years next preceding the filing of the petition."
+  },
+  {
+   "field": "measures[veto-referendum].signatureBasis",
+   "url": "https://ballotpedia.org/Article_IV,_Oregon_Constitution",
+   "quote": "A referendum on an Act or part thereof may be ordered by a petition signed by a number of qualified voters equal to four percent of the total number of votes cast for all candidates for Governor at the election at which a Governor was elected for a term of four years next preceding the filing of the petition. A referendum petition shall be filed not more than 90 days after the end of the session at which the Act is passed."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://ballotpedia.org/Article_IV,_Oregon_Constitution",
+   "quote": "An initiative petition shall include the full text of the proposed law or amendment to the Constitution. A proposed law or amendment to the Constitution shall embrace one subject only and matters properly connected therewith."
+  },
+  {
+   "field": "measures[*].deadline",
+   "url": "https://ballotpedia.org/Article_IV,_Oregon_Constitution",
+   "quote": "An initiative petition shall be filed not less than four months before the election at which the proposed law or amendment to the Constitution is to be voted upon."
+  },
+  {
+   "field": "signatureRequirement",
+   "url": "https://sos.oregon.gov/elections/Pages/statelaw.aspx",
+   "quote": "For a constitutional initiative, valid signatures totaling at least 8% of the total votes cast for governor at the last election is required. For a statutory initiative, valid signatures totaling at least 6% of the total votes cast for governor at the last election is required."
+  },
+  {
+   "field": "measures[veto-referendum].signatureRequirement",
+   "url": "https://sos.oregon.gov/elections/Pages/statelaw.aspx",
+   "quote": "For a referendum petition, valid signatures totaling at least 4% of the total votes cast for governor at the last election is required"
+  },
+  {
+   "field": "measures[*].deadline",
+   "url": "https://sos.oregon.gov/elections/Pages/statelaw.aspx",
+   "quote": "Signatures must be submitted to the Elections Division for verification no later than four months prior to the date of the next regularly scheduled general election."
+  },
+  {
+   "field": "measures[veto-referendum].deadline",
+   "url": "https://sos.oregon.gov/elections/Pages/statelaw.aspx",
+   "quote": "After gathering the required number of signatures, chief petitioners submit them to the Elections Division for verification, no later than 90 days after the Legislature adjourns sine die."
+  },
+  {
+   "field": "signatureRequirement",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Oregon",
+   "quote": "| 2026 | 160,551 | 120,413 | 80,276 |"
+  },
+  {
+   "field": "signatureRequirement.base",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Oregon",
+   "quote": "| 2022 | 2,006,888 |"
+  },
+  {
+   "field": "measures[initiated-constitutional-amendment].deadline",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Oregon",
+   "quote": "For measures targeting the November 3, 2026, ballot, the deadline is Wednesday, July 2, 2026. If signatures are submitted at least 165 days before an election and the petition is found insufficient, additional signatures can be submitted prior to the final deadline. The signature verification deadline is August 2, 2026."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://ballotpedia.org/Article_IV,_Oregon_Constitution",
+   "quote": "Text of Section 1b:  Payment for Signatures   It shall be unlawful to pay or receive money or other thing of value based on the number of signatures obtained on an initiative or referendum petition. Nothing herein prohibits payment for signature gathering which is not based, either directly or indirectly, on the number of signatures obtained."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Oregon",
+   "quote": "Oregon prohibits paying signature gatherers based on the number of signatures collected."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Oregon",
+   "quote": "Oregon does not require petition circulators to reside in the state."
+  },
+  {
+   "field": "statusNote.prospectivePetition",
+   "url": "https://oregon.public.law/statutes/ors_250.045",
+   "quote": "The prospective petition for a state measure to be initiated: (A) Shall contain the signatures of at least 1,000 electors; and (B) May not contain the signatures of more than 2,000 electors."
+  },
+  {
+   "field": "statusNote.prospectivePetition",
+   "url": "https://sos.oregon.gov/elections/Pages/statelaw.aspx",
+   "quote": "After chief petitioners gather and submit 1,000 sponsorship signatures, the Elections Division forwards the text of the prospective petition to the attorney general for the drafting of a ballot title, which impartially summarizes the petition and its major effect."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

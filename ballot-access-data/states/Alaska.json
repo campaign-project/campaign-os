@@ -1,0 +1,181 @@
+{
+  "jurisdiction": "Alaska",
+  "signaturesHeadline": "HOLD: packet self-contradicts (3,409 narrative vs 3,614 dates page) — rely on the higher 3,614",
+  "deadlineHeadline": "HOLD: rule is 90th day before general; controlling 2028 packet date = Aug 16, 2028 (draft mis-anchored on expired Aug 7, 2024)",
+  "riskNote": "Same official packet states two different signature counts (3,409 vs 3,614) and the draft's headline deadline is an expired 2024 date; both need DOE confirmation, so default to strictest (collect to 3,614, treat Aug 16, 2028 as the deadline) until resolved.",
+  "sosInquiries": [
+    "For the 2028 cycle, the B05P presidential candidate packet states two different signature minimums for an independent presidential petition: the narrative text says 'at least 3,409' (1% of the 340,981 ballots cast for President in 2024), while the Election Law Dates page says 'at least 3,614 signatures.' Which figure is controlling, and what total of valid signatures must an independent presidential candidate collect to be certified for the November 14, 2028 ballot?",
+    "Please confirm the exact filing deadline for an independent presidential candidate petition for the 2028 general election: is it 5:00 p.m. prevailing time on August 16, 2028 (the 90th day before the November 14, 2028 general election), and does registered/certified mail postmarked on or before that date satisfy the deadline if received within 15 days?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "At least 3,614 valid signatures of qualified Alaska voters (the higher of the two conflicting figures the official B05P packet publishes). The statutory formula is 1% of the ballots cast for President at the last presidential general election; 1% of the certified 2024 total (340,981) computes to 3,409.81, which the packet narrative rounds to 'at least 3,409.' However, the same packet's Election Law Dates page states the petition must have 'at least 3,614 signatures.' Until the Division resolves the contradiction, collect to the higher 3,614 floor to avoid any risk of falling short.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.9,
+      "note": "Both quotes verbatim-confirmed in B05P.pdf (downloaded and text-extracted; narrative at lines 67-72, dates page at lines 119-123). 340,981 confirmed as the certified 2024 AK presidential total. The draft picks 3,409 as the value and labels 3,614 a mere 'packet inconsistency' to be overridden by the formula. Adversarially, 3,614 implies a base of ~361,400, not 2024's 340,981, so it looks erroneous/stale — BUT it is published by the same controlling official source. Strict, never-risk-ballot-access posture requires relying on the HIGHER figure (3,614) pending DOE confirmation, not silently overriding it down to 3,409. Note also the 'at least one percent' floor arguably rounds UP to 3,410, not down to 3,409. Interpretation (which figure governs) cannot be settled by retrieval."
+    },
+    {
+      "field": "deadline",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "File not earlier than January 1 of the presidential election year and not later than the 90th day before the presidential general election (AS 15.30.026(a)); by 6 AAC 25.074(a) the cutoff is 5:00 p.m. prevailing time on that 90th day, in person or by registered/certified mail (return receipt requested) postmarked on or before the 90th day and received within 15 days. For the upcoming (2028) cycle, the controlling B05P packet states this date is August 16, 2028 (90 days before the November 14, 2028 general election). Treat August 16, 2028, 5:00 p.m. prevailing time as the operative deadline.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.92,
+      "note": "Statute + regulation quotes verbatim-confirmed (B05P lines 64-67/482-487; Cornell LII 6 AAC 25.074(a)). The statutory rule is correct. BUT the draft's headline value anchors on 'August 7, 2024' — the 90th day before the Nov 5, 2024 general, an EXPIRED date for the wrong (already-completed) cycle — while burying the actual controlling date (August 16, 2028, stated twice in the packet, lines 44/67/113/119) as a parenthetical 'for reference.' Arithmetic verified: Nov 14, 2028 minus 90 days = Aug 16, 2028. For a forward-looking 2028 ballot rule, relying on a past 2024 date is unsafe; relied value corrected to the 2028 packet date. Which cycle/date governs is an interpretation retrieval alone shouldn't decide."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. The statute requires only a statewide signature total (1% of the last presidential vote); there is no per-congressional-district or per-county distribution requirement. Alaska has a single at-large U.S. House district.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "Quote verbatim-confirmed in B05P.pdf (line 68). Independently re-derived: AS 15.30.026(a) and 6 AAC 25.074 impose a single statewide 1% requirement with no geographic distribution language anywhere in the statute, regulation, or subscriber pages. Alaska is a single at-large district, so a distribution requirement would be structurally meaningless. No adversarial counter found."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "No separate circulator requirement is found in AS 15.30.026, AS 15.30.025, or 6 AAC 25.074. The only confirmed person-eligibility requirement is that each SIGNER (subscriber) must be a qualified voter of the State of Alaska and must provide a printed name, Alaska residence address, an identifier (last 4 SSN, voter #, DOB, ADL #, or AK State ID #), signature, and date. Treat the existence/absence of a distinct circulator rule as UNCONFIRMED and verify with the Division before relying on it.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.7,
+      "note": "Both quotes verbatim-confirmed in B05P.pdf (subscriber petition text line 366-367; subscriber-provide line 92-94). The signer requirement is solidly grounded. However, the field's core claim is a NEGATIVE/absence inference ('no separate circulator rule exists anywhere'), which two cited sources cannot conclusively establish — a separate signature-verification or petition-circulation regulation could exist outside these two documents. Under strict posture this absence is interpretation-required and should be confirmed, not asserted as settled. Strictest defensible framing: rely only on the affirmatively-grounded signer requirement; treat circulator rules as unconfirmed."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No notarized affidavit and no per-signature circulator/witness certification is required. The only required certification is a written statement signed by the submitting candidate or party, filed at submission, acknowledging the number of petition booklets or subscriber pages included (6 AAC 25.074(b)). Individual subscriber signatures are not separately notarized or witnessed.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "Both quotes verbatim-confirmed (B05P signed-statement text line 97-99; Cornell LII 6 AAC 25.074(b)). Independently re-derived from the regulation: 25.074(b) requires only the single 'written statement signed by the submitting candidate or party.' The subscriber pages and statute contain no notary or per-signature witness/circulator-affidavit field. The receipt form (B05P lines 221-222/346-347) likewise asks only for the candidate/party signature. No adversarial counter found. Correct."
+    },
+    {
+      "field": "captureMode",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "paper. The petition is circulated on paper subscriber pages/booklets and filed as a single paper instrument, delivered either in person (by 5:00 p.m. prevailing time on the deadline) or by registered/certified mail (return receipt requested) postmarked on or before the 90th-day deadline and received within 15 days. Assume paper-only for this independent presidential petition.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.85,
+      "note": "Core paper claim is grounded: Cornell LII 6 AAC 25.074(a) (registered/certified mail) and B05P 'mailed to the Division of Elections Director's Office' both verbatim-confirmed. 6 AAC 25.074 plus the physical subscriber pages clearly contemplate a paper instrument. HOWEVER, the draft's added NEGATIVE assertion — 'there is NO digital/remote-online system' and 'Alaska's e-signature system is limited to initiative/referendum measures, not candidate petitions' — is NOT supported by either cited quote and is an interpretive inference about scope. Strict posture: rely only on the grounded paper requirement (which is the safe operational answer); flag the no-digital-system claim as unverified by the citations."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. There is no filing fee and no fee-in-lieu-of-signatures for ballot access via the independent presidential petition; signatures are the sole qualification mechanism under AS 15.30.026. The separate 'appropriate fee' in the Division's calendar relates only to placement in the Official Election Pamphlet under AS 15.58.030(a), not to getting on the ballot.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "Pamphlet-fee quote verbatim-confirmed in B05P.pdf (Election Law Dates page, lines 125-129). Independently re-derived: AS 15.30.026 conditions ballot access solely on the petition signatures; no filing fee or fee-in-lieu appears anywhere in the statute, regulation, or packet for the petition itself. The packet's only fee reference is expressly tied to the Official Election Pamphlet (AS 15.58.030(a)), a distinct downstream step. The value correctly distinguishes the two. No adversarial counter found."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "Alaska's independent-presidential petition lives in AS 15.30.026 (National Elections), which sets only the signer/qualified-voter requirement and a resident \"state campaign chair\" — it is entirely SILENT on petition circulators: no compensation rule (no per-signature cap and no prohibition), and no circulator residency/registration requirement. The familiar \"$1 a signature\" cap and pay-to-sign prohibition sit in a different chapter (AS 15.45.110, Initiative/Referendum/Recall) and do not by their terms reach candidate petitions, so candidate-petition circulator compensation is unaddressed.",
+    "sosInquiry": "For an independent U.S. presidential candidate's nominating petition under AS 15.30.026, does any Alaska statute or regulation restrict how petition circulators may be compensated (e.g., may a campaign pay circulators per signature), and must a circulator be an Alaska resident or registered voter?",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-30-026/",
+        "quote": "A person who desires to be an independent candidate for President of the United States must file with the director ... a petition signed by qualified voters of the state equal in number to at least one percent of the number of voters who cast ballots in an election under this chapter for President of the United States at the last presidential general election. ... (b)(3) the name, Alaska mailing address, and signature of the candidate's state campaign chair, who must be a state resident."
+      },
+      {
+        "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-45-110/",
+        "quote": "(c) A circulator may not receive payment or agree to receive payment that is greater than $1 a signature, and a person or an organization may not pay or agree to pay an amount that is greater than $1 a signature, for the collection of signatures on a petition. ... (e) A person or organization that violates (c) or (d) of this section is guilty of a class B misdemeanor."
+      },
+      {
+        "url": "https://codes.findlaw.com/ak/title-15-elections/",
+        "quote": "Chapter 30. National Elections ... Chapter 45. Initiative, Referendum, and Recall"
+      }
+    ],
+    "initiativePrior": "permitted"
+  },
+  "voterFile": {
+    "tier": "LOW_COST",
+    "cost": "~$20 for the statewide voter list (price estimate per the U.S. EAC compilation; the Alaska Division of Elections does not publish a per-record fee schedule online and quotes/processes orders through a divisional office). Treat $20 as an estimate, not a guaranteed published figure.",
+    "whoCanObtain": "General public — Alaska voter registration records are an \"Open\" file. Names, addresses, and party affiliation are public and available to anyone who purchases the list (candidates, parties, committees, and the public alike). A voter may individually elect to keep their residential address confidential by providing a separate mailing address (AS 15.07.195(b)).",
+    "useRestrictions": "No statutory eligibility gate, but per the EAC compilation, \"even the least restrictive states prohibit the commercial use of voter file information.\" The file excludes confidential PII (DOB/age, SSN, DL number, voter ID number, place of birth, signature) under AS 15.07.195(a). Specific penalty/affidavit language for commercial-use prohibition was not located on the primary Division of Elections page during this research.",
+    "requestProcess": "Written/in-person request to a Division of Elections divisional office — NOT an instant online download. The Division's Research page states lists are \"available for purchase\" and to \"contact any divisional office for assistance.\" No public self-serve download portal for the bulk statewide file was found.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.elections.alaska.gov/research/",
+    "note": "Alaska's statewide voter list is an \"Open\" public record at a low cost (~$20 per the U.S. EAC), obtained by request to a Division of Elections divisional office rather than instant download. The standard file includes voter name, residential address, and party affiliation — sufficient to match petition signers to registered voters — while DOB, SSN, DL number, voter ID number, place of birth, and signature are statutorily confidential (AS 15.07.195).",
+    "citations": [
+      {
+        "url": "https://www.elections.alaska.gov/research/",
+        "quote": "Lists and ReportsVoter lists are available for purchase. To purchase a list, or for other requests, contact any divisional office for assistance."
+      },
+      {
+        "url": "https://www.eac.gov/sites/default/files/voters/Available_Voter_File_Information.pdf",
+        "quote": "Alaska           Open          $20         Names, addresses, party affiliation.          Age or DOB, any part of SSN, DL number, voter ID number, place of birth, signature."
+      },
+      {
+        "url": "https://www.eac.gov/sites/default/files/voters/Available_Voter_File_Information.pdf",
+        "quote": "In general, even the least restrictive states prohibit the commercial use of voter file information, however the amount of PII (such as DOB or SSN) included in the voter file may remain significant and valuable to a variety of malicious actors."
+      },
+      {
+        "url": "https://ballotpedia.org/Availability_of_state_voter_files",
+        "quote": "[Alaska](https://www.elections.alaska.gov/research/#akcl) | Open | $20 | Name, address, political party | DOB, SSN, DL number, voter number, place of birth, signature"
+      },
+      {
+        "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-07-195/",
+        "quote": "(a) The following information set out in state voter registration records is confidential and is not open to public inspection: (1) the voter's age or date of birth; (2) the voter's social security number, or any part of that number; (3) the voter's driver's license number; (4) the voter's voter identification number; (5) the voter's place of birth; (6) the voter's signature."
+      },
+      {
+        "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-07-195/",
+        "quote": "(b) In addition to the information in (a) of this section, a voter may elect in writing to keep the voter's residential address confidential and not open to public inspection if the voter provides a separate mailing address."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement for the independent presidential petition. The independent presidential petition is governed solely by AS 15.30.026 (Chapter 30, National Elections), which imposes requirements only on the SIGNERS (\"qualified voters of the state\") and is entirely silent as to who may circulate/collect signatures. There is no circulator-qualification statute, no circulator affidavit, a",
+    "minorCanCirculate": "unknown",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "unknown",
+    "stateResidentRequired": "unknown",
+    "signerVsCirculator": "SIGNER: must be a \"qualified voter[] of the state\" / registered Alaska voter (AS 15.30.026(a); form B05P \"We, the undersigned qualified voters of the State of Alaska\"). CIRCULATOR: no statutory requirement at all — Chapter 30 has no circulator-qualification provision, and the petition form has no circulator affidavit. (Contrast: AS 15.45.105 imposes U.S.-citizen / 18+ / state-resident on circulato",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "For Alaska's INDEPENDENT PRESIDENTIAL nominating petition (AS 15.30.026), there is NO circulator-eligibility statute. The full text of Chapter 30 (AS 15.30.010-.100), reproduced verbatim in the Division of Elections' current 2028 Presidential Candidate Packet (form B05P, Rev. 1/07/2025), contains no circulator provision; the official Subscribers' Page for Independent Candidates has only signer columns (printed name, Alaska residence address, identifier, signature, date) and NO circulator affidav",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorAgeRule / minorCanCirculate / circulatorMustBeRegisteredVoter (independent presidential petition statute — binds SIGNERS only, silent on circulators)",
+        "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-30-026/",
+        "quote": "(a) A person who desires to be an independent candidate for President of the United States must file with the director ... a petition signed by qualified voters of the state equal in number to at least one percent of the number of voters who cast ballots ... The petition must state that the signers desire the named candidate ... to appear on the ballot as an independent candidate for president ... (b) In order to appear on the ballot, a candidate who has qualified for ballot status under (a) of this section shall certify the following information to the director ... (1) the names of the electors ...; (2) the name of a candidate for Vice-President ...; and (3) the name, Alaska mailing address, and signature of the candidate's state campaign chair, who must be a state resident."
+      },
+      {
+        "field": "signerVsCirculator (official petition form has signer columns only — NO circulator affidavit/certification block)",
+        "url": "https://www.elections.alaska.gov/doc/forms/B05P.pdf",
+        "quote": "STATE OF ALASKA SUBSCRIBERS' PAGE — PETITION FOR INDEPENDENT CANDIDATES. We, the undersigned qualified voters of the State of Alaska, hereby petition that [name] appear on the ballot as an independent candidate for President of the United States at the next succeeding presidential general election under AS 15.30.026. PRINTED NAME | ALASKA RESIDENCE ADDRESS | IDENTIFIER (Last 4 SSN, Voter #, DOB, ADL # or AK State ID #) | SIGNATURE | DATE SIGNED"
+      },
+      {
+        "field": "circulatorMustBeUSCitizen / circulatorMustBeStateResident / circulatorMinAge (contrast: Alaska's ONLY statutory circulator-qualification rule is in Chapter 45 and applies to INITIATIVE/REFERENDUM booklets, not candidate/presidential petitions)",
+        "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-45-105/",
+        "quote": "Sec. 15.45.105. Qualifications of circulator. To circulate a petition booklet, a person shall be (1) a citizen of the United States; (2) 18 years of age or older; and (3) a resident of the state as determined under AS 15.05.020."
+      },
+      {
+        "field": "note (full Chapter 30 text reproduced in official 2028 packet contains NO circulator provision)",
+        "url": "https://www.elections.alaska.gov/doc/forms/B05P.pdf",
+        "quote": "EXCERPT FROM ALASKA STATUTE TITLE 15 — Chapter 30. National Elections. Article 1. President. Section 10. Provision for selection of electors 20. Number and manner of selecting candidates 25. Qualifications for limited political parties 30. Qualifications of electors 40. Requirements of party pledge 50. Interpretation of votes cast ... 60. Notification of electors 70. Place and time of meeting 80. Filing of vacancies 90. Duties of electors 100. Compensation of electors"
+      }
+    ]
+  }
+}

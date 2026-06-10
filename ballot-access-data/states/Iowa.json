@@ -1,0 +1,202 @@
+{
+  "jurisdiction": "Iowa",
+  "signaturesHeadline": "3,500 signatures (flat statutory; not a %) + 100 each from 19 counties — AUTO-LIVE",
+  "deadlineHeadline": "5:00 p.m. on 81st day before Nov general election (2024 = Aug 16, 2024) — AUTO-LIVE",
+  "riskNote": "Core petition burden (3,500 sigs, 19-county floor, 81-day deadline, notarized affidavit, paper-only) is fully grounded in Iowa Code 45.1/44.4/45.5 and AUTO-LIVE. Two fields held conservatively: circulator-eligibility (relying on a complete ABSENCE of circulator rules is a negative inference not provable by retrieval; sub-regulatory IAC ch. 721 rules not pulled) and the NPPO convention alternative (the \"one attendee per county\"/\"true independents have no convention option\" claims rest on Ballotpedia + un-retrieved Iowa Code ch. 44 classification). Strict posture: rely on the petition route only; never treat the convention as a shortcut.",
+  "sosInquiries": [
+    "Re circulators: For an independent/NPPO presidential nomination petition under Iowa Code ch. 45, is there ANY requirement or attestation imposed on the person who circulates the petition (age, Iowa residency, voter-registration status, or a circulator oath/affidavit), whether in statute or in the Iowa Administrative Code (e.g., IAC ch. 721)? Please confirm there are no circulator requirements beyond each signer being an eligible elector.",
+    "Re NPPO/independent classification: Can a candidate with NO party or NPPO affiliation (a 'Nominated by Petition' candidate) for President/VP qualify by convention/caucus under Iowa Code ch. 44, or is the 3,500-signature/19-county petition the ONLY available route for a truly unaffiliated candidate? Separately, for an NPPO convention nomination, please confirm the exact attendance requirements (minimum total electors and whether at least one attendee is required from each of all 99 counties) and the filing deadline for the certificate of nomination."
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "3,500 signatures of eligible electors — a flat statutory minimum (not a percentage; does not recompute per cycle), including at least 100 eligible electors each from at least 19 counties (embedded distribution floor). Iowa Code 45.1(1). Same number applies to the unaffiliated 'Nominated by Petition' candidate and to an NPPO candidate using the petition route (45.4 routes petition candidates through ch. 45).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.96,
+      "note": "45.1(1) verbatim: 'not less than three thousand five hundred eligible electors, including at least one hundred eligible electors each from at least nineteen counties of the state.' Confirmed a flat number, not a percentage, in the statute itself; current (last amended 2022; 2021 amendment to subsec.1 applies to ballots in/after 2022). Ballotpedia corroborates. AUTO-LIVE."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "5:00 p.m. on the 81st day before the November general election; earliest filing = 99 days before. For 2024 (Nov 5, 2024): deadline 5:00 p.m. Aug 16, 2024, filing window opened July 29, 2024. Iowa Code 44.4(1)(b), incorporated for petition candidates by 45.4. Recomputes each cycle.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.97,
+      "note": "44.4(1)(b) verbatim: '...not more than ninety-nine days nor later than 5:00 p.m. on the eighty-first day before the date of the general election to be held in November.' 45.4 incorporation verbatim. Date arithmetic independently verified: Nov 5, 2024 - 81 days = Aug 16, 2024; -99 days = July 29, 2024; Nov 5 2024 is a Tuesday. AUTO-LIVE."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Yes — county distribution requirement: at least 100 eligible electors EACH from at least 19 counties (a subset of the 3,500 total). Stated by county, not by congressional district. Iowa Code 45.1(1).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.97,
+      "note": "45.1(1) verbatim: 'including at least one hundred eligible electors each from at least nineteen counties of the state.' By county, not district — confirmed. Ballotpedia corroborates. AUTO-LIVE."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Requirements fall on SIGNERS, who must each be an 'eligible elector': U.S. citizen, Iowa resident, at least 17 (must be 18 by Election Day), need not be a registered voter but must meet all qualifications to register; not a disqualified felon, not judged incompetent to vote, not claiming the right to vote elsewhere. Any eligible elector in Iowa may sign for a statewide/presidential office. STRICT HOLD on the asserted COMPLETE ABSENCE of any circulator requirement/attestation — do not operationally assume zero circulator rules until the SOS confirms (see sosInquiries).",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.78,
+      "note": "Signer-eligibility facts ground verbatim on the SOS candidate FAQ (citizen/resident/17-must-be-18; 'not required to be a registered voter'; statewide-office signing). However, the claim that there is NO circulator age/residency/voter-status requirement and NO attestation step is a negative inference: chapter 45 and the FAQ do not affirmatively foreclose a sub-regulatory rule (IAC ch. 721 not retrieved). Per strict 'never risk ballot access' posture, HOLD the no-circulator-rules conclusion pending SOS confirmation; the signer facts themselves are reliable."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Petition pages are NOT notarized and need no circulator/witness certification. The candidate's affidavit of candidacy MUST be notarized — nomination papers are rejected if the affidavit lacks the signature of a notary public under ch. 9B (or other officer empowered to witness oaths). Each signature line must include the signer's signature and residential address (street, number, city) to be counted; no per-signature witnessing required. Iowa Code 45.5(2)(c),(5)(d); SOS FAQ.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "SOS FAQ verbatim: 'A candidate's affidavit of candidacy must be notarized. Nomination petitions do not need to be notarized.' 45.5(5)(d) verbatim on notary requirement; 45.5(2)(c) verbatim on signature+residential-address counting rule. Consistent and current. AUTO-LIVE."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Wet-ink paper petitions (8.5 x 11 inch pages, securely bound into a single bundle; unbound petitions returned without examination) plus a paper notarized affidavit of candidacy, filed with the Secretary of State. No online/remote-signature system for an independent/NPPO presidential petition. Iowa Code 45.5(1),(3); SOS lists the paper President/VP nomination petition PDF.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "45.5(1) verbatim ('eight and one-half by eleven inches...substantially the form prescribed') and 45.5(3) verbatim ('securely fastened together to form a single bundle. Nomination petitions that are not bound shall be returned without further examination'). SOS nomination-papers page lists the paper 'Nomination Petition-President & Vice President' PDF under General Election. Chapter 45 has no e-signature provision; physical bound-bundle requirement forecloses remote capture. AUTO-LIVE."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "No filing fee and no fee-in-lieu-of-signatures option — the 3,500-signature/19-county petition is the mandatory, SAFE route for the unaffiliated presidential candidate; rely on it exclusively. Do NOT rely on a convention/caucus alternative as an available shortcut: the claim that an NPPO may instead convene (>=500 electors, one attendee per county, certificate filed by the 81st-day deadline) and that a 'Nominated by Petition' unaffiliated candidate has NO convention option rests on Ballotpedia plus un-retrieved Iowa Code ch. 44 and is a legal-classification interpretation (see sosInquiries).",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.7,
+      "note": "No-fee part grounds verbatim (SOS FAQ: 'There are no candidate filing fees in Iowa') and is reliable. Convention details ground verbatim on Ballotpedia ('At least 500 eligible voters must attend... at least one attendee from each of the state's counties') but NOT on the retrieved SOS FAQ, which states only that NPPOs may nominate by convention without the 500/per-county specifics. The '>=1 attendee per county' = all 99 counties is an extreme, un-statute-confirmed bar, and the categorical 'true independents have no convention option' is a legal classification not settled by retrieval (ch. 44 not pulled). HOLD: rely solely on the petition route, which is the strictest/safest posture."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "Iowa's candidate-petition / election code (Ch. 45) and the Iowa SOS candidate guidance impose NO compensation rule on circulators of candidate nominating petitions — paying per signature is neither authorized nor prohibited; it is unaddressed for candidate petitions, so do not assume it is permitted. Iowa's pay-per-signature literature applies only to ballot initiatives/veto referendums, and Iowa is not even one of those states (no statewide citizen-initiative process), so nothing affirmatively permits per-signature pay here. Circulator residency is not required.",
+    "sosInquiry": "For an independent presidential candidate's nominating petition under Iowa Code Ch. 45, may a campaign compensate petition circulators on a per-signature basis (and are paid circulators otherwise permitted), and must a circulator be an Iowa resident or registered voter?",
+    "citations": [
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Iowa",
+        "quote": "The state code does not establish circulator requirements. Specifically, there are no residency requirements for circulators."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Iowa",
+        "quote": "In Iowa, most candidates are required to file nomination petitions with the Iowa Secretary of State. Any eligible elector may sign a candidate's nomination petition. Eligible electors do not have to be registered to vote, but they do need to be U.S. citizens, Iowa residents, and 18 years of age or older."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Iowa",
+        "quote": "An independent candidate for president must petition for placement on the general election ballot. At least 3,500 eligible voters from at least 19 of the state's counties must sign the petition. The petition must include the names of candidates for president, vice president, and presidential electors. The petition must be filed with the secretary of state by 5:00 p.m. on the 81st day prior to the general election."
+      },
+      {
+        "url": "https://ballotpedia.org/Pay-per-signature",
+        "quote": "Pay-per-signature is a method of compensating signature gatherers, also known as circulators, who collect signatures for ballot initiatives and veto referendums. The method involves paying signature gatherers at a rate based on the number of signatures collected."
+      },
+      {
+        "url": "https://ballotpedia.org/Pay-per-signature",
+        "quote": "There are 26 states that provide for an initiative or referendum process. Sixteen (16) of those states allowed campaigns to make payments to signature gatherers based on the number of signatures collected. Ten (10) of those states prohibited campaigns from paying signature gatherers based on the number of signatures collected."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Per-record formula (one-time list): $10.00 minimum data charge for 20,000 records or less, plus $0.50 per 1,000 records for lists over 20,000 records (statewide ≈ 2.3M registered voters → roughly $10 + ~$1,150 ≈ ~$1,160 one-time). E-mail delivery is \"same as Data Charge(s)\"; CD-ROM adds $2.00; paper adds $0.10/page. Alternatively, a \"Statewide voter list with updates\" subscription is $1,500/year.",
+    "whoCanObtain": "Anyone may purchase, BUT use is statutorily restricted to permitted purposes only (Iowa Code 48A.38): to request a registrant's vote at an election, for a genuine political purpose, for bona fide political research, or for a bona fide official purpose by an elected official. A political campaign/committee verifying petition signatures qualifies under \"genuine political purpose.\" Statewide and congressional-district lists must be obtained from the Secretary of State's Office.",
+    "useRestrictions": "Use is limited to the four permitted purposes above. \"Using the information for any commercial purpose is a serious misdemeanor under Iowa law.\" Social Security numbers, driver license numbers, and non-operator ID numbers are statutorily excluded from any list.",
+    "requestProcess": "Written request via the official \"Request a Voter List\" PDF form, submitted (mail/email/fax) to the State Registrar of Voters at the Secretary of State's Office. The form requires selecting jurisdiction, list type/election-participation history, party, voter status, and format. Credit card (Visa/MasterCard) payment is handled by phone after the office determines the purchase amount; cash and check also accepted. Lists can take up to 14 days to prepare and are delivered by email, CD-ROM, or paper.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://sos.iowa.gov/voter-registration-list-requests",
+    "note": "Iowa sells the statewide voter file through the Secretary of State (State Registrar of Voters) under Iowa Code 48A.38. It is not an instant free download: it requires a written request form, costs are per-record (roughly ~$1,160 one-time for the full statewide list, or $1,500/year for a subscription with updates), and use is legally gated to political/research/official purposes with commercial use a serious misdemeanor — hence RESTRICTED. The standard list includes name, residential address, party, and voter status (active/inactive/pending), which is sufficient to match petition signers to registered voters.",
+    "citations": [
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Iowa law allows for the purchase of voter registration lists (See Iowa Code section 48A.38.) Requests can be made with the Secretary of State's Office or with a county auditor. Statewide and congressional district lists must be obtained from the Secretary of State's Office."
+      },
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Information from voter registration records can be used only: To request a registrant's vote at an election, For a genuine political purpose, For bona fide political research, or For a bona fide official purpose by an elected official."
+      },
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Using the information for any commercial purpose is a serious misdemeanor under Iowa law."
+      },
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Minimum Data Charge *20,000 records or less | $10.00"
+      },
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Additional Data Charges *for lists with more than 20,000 records | $0.50 per 1,000 records"
+      },
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Statewide voter list with updates | $1,500/year"
+      },
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Per Iowa law, Social Security numbers, driver license numbers, and non-operator ID numbers are not included on any list."
+      },
+      {
+        "url": "https://sos.iowa.gov/voter-registration-list-requests",
+        "quote": "Lists are produced as soon as possible, but it can take up to 14 days to prepare a list."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — rule binds signers only. Iowa Code Chapter 45 (Nominations by Petition) does not establish or regulate a \"circulator\" or \"witness\" at all. Iowa nomination petitions are NOT verified by a circulator affidavit; the only affidavit required is the candidate's own notarized \"affidavit of candidacy\" (Iowa Code §45.5(5), requiring the candidate's name, office, the candidat",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "The strict requirements bind the SIGNER only: each signer must be an \"eligible elector\" (registered/qualified voter), must add a residential address, and must reside in the appropriate district (Iowa Code §45.1, §45.6). The CIRCULATOR (signature collector) is not a defined or regulated role in Iowa nomination-petition law at all — there is no circulator/witness affidavit, so no age, voter-registra",
+    "gate": "AUTO-LIVE",
+    "note": "Iowa is an unusual, circulator-friendly state for nominating petitions: Chapter 45 has NO circulator affidavit and never defines or restricts the person who collects signatures. For an independent presidential nominating petition (a \"nomination by petition\"), §45.1(1) requires 3,500 eligible-elector signatures (incl. ≥100 each from ≥19 counties). All eligibility requirements — eligible elector status, residence in the district — fall on the SIGNERS (§45.1, §45.6). The only verification mechanism",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorAgeRule / signerVsCirculator / circulatorMustBeRegisteredVoter",
+        "url": "https://www.legis.iowa.gov/docs/code/2024/45.5.rtf",
+        "quote": "5. The nomination papers shall be rejected if the affidavit lacks any of the following: a. The candidate's name. b. The name of the office sought, including the district, if any. c. The signature of the candidate. d. The signature of a notary public under chapter 9B or other officer empowered to witness oaths."
+      },
+      {
+        "field": "circulatorAgeRule (no circulator affidavit; papers = petition + affidavit of candidacy)",
+        "url": "https://www.legis.iowa.gov/docs/code/2024/45.5.rtf",
+        "quote": "1. Nomination papers shall include a petition and an affidavit of candidacy."
+      },
+      {
+        "field": "signerVsCirculator (requirements bind signers)",
+        "url": "https://www.legis.iowa.gov/docs/code/2024/45.6.rtf",
+        "quote": "The following requirements shall be observed in the signing and preparation of nomination petitions: ... 2. Each signer shall add the signer's residential address, with street and number, if any, and city. 3. All signers, for all nominations, of each separate part of a nomination petition, shall reside in the appropriate ward, city, county, school district or school district director district, legislative district, or other district as required by section 45.1."
+      },
+      {
+        "field": "signature requirement for independent presidential petition (signers must be eligible electors)",
+        "url": "https://www.legis.iowa.gov/docs/code/2024/45.1.rtf",
+        "quote": "1. Nominations for candidates for president and vice president, governor and lieutenant governor, and for United States senator may be made by nomination petitions signed by not less than three thousand five hundred eligible electors, including at least one hundred eligible electors each from at least nineteen counties of the state."
+      },
+      {
+        "field": "signer eligibility statement on petition (identifies signers, not circulator)",
+        "url": "https://www.legis.iowa.gov/docs/code/2024/45.5.rtf",
+        "quote": "a. A statement identifying the signers of the petition as eligible electors of the appropriate ward, city, county, school district or school district director district, or legislative district and of the state of Iowa."
+      }
+    ]
+  }
+}

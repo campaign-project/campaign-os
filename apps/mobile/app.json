@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "Gather",
+    "slug": "gather",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "ios": { "supportsTablet": true },
+    "android": {},
+    "assetBundlePatterns": ["**/*"],
+    "plugins": [
+      ["expo-location", { "locationWhenInUsePermission": "Show your position on the turf map so you can see the movement happening around you." }]
+    ]
+  }
+}

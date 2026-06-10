@@ -1,0 +1,204 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "CO",
+ "jurisdiction": "Colorado",
+ "abbr": "CO",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 12000,
+  "headline": "12,000 total (1,500 in EACH of 8 CDs) — fixed per-district, not 5,000"
+ },
+ "deadline": {
+  "headline": "117th day before general election; time-of-day in conflict (SOS 3pm vs statute 5pm) — use 3pm"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "12,000 total — at least 1,500 valid signatures of registered Colorado electors in EACH of the state's 8 congressional districts (1,500 x 8 = 12,000). Fixed per-district number, not a percentage and not a flat statewide number. Signers must be registered Colorado voters who have not signed a petition for any other candidate for the same office.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both citations verbatim. SOS PresidentPetition.html: '1,500 signatures in each of the 8 congressional district (12,000 total)'; C.R.S. 1-4-802(1)(c)(I): 'At least one thousand five hundred in each congressional district for the office of president and vice president'. Independently confirmed: CO has 8 CDs post-2020 census, so 1,500x8=12,000. The draft's flag that Ballotpedia's stale '5,000' is incorrect is itself correct — Ballotpedia line 235 still says '5,000 eligible voters' which is the pre-redistricting flat figure superseded by the per-CD schedule. Current and correct."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "File the completed petition no later than 3:00 p.m. on the 117th day before the general election. The 117-day rule is confirmed by both the statute (C.R.S. 1-4-802(1)(f)(I)) and SOS guidance; the time-of-day is in conflict (SOS guidance says 3:00 p.m.; statutory text effective 1/1/2025 says 5 p.m.). Use the EARLIER 3:00 p.m. cutoff, which satisfies both. Circulation cannot begin earlier than the 173rd day before the general election (C.R.S. 1-4-802(1)(d)(I)). For 2024 the deadline fell on 7/11/24; recomputes each cycle off the November general-election date.",
+   "confidence": 0.8,
+   "interpretationRequired": true,
+   "note": "All three citations verbatim. Findlaw shows the statute is split: text effective UNTIL 1/1/2025 = '3 p.m.', text effective 1/1/2025 = '5 p.m.'. The SOS web guidance still states 3:00 p.m. This is a genuine source conflict on time-of-day that retrieval cannot settle (which controls for a 2026+ cycle — updated statute or the not-yet-updated SOS page). Strictest defensible reading: file by 3:00 p.m., which complies under either rule. The 117-day count itself is not in dispute. Ballotpedia 7/11/24 / 8/7/24 dates match the footnote verbatim and are consistent with a 117-day computation off 11/5/2024."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "YES — distribution required: at least 1,500 signatures in EACH of the 8 congressional districts. Signers must be eligible electors residing within the district in which the office is to be elected. Per-CD minimum, not a statewide aggregate; signatures cannot be concentrated in one district.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "C.R.S. 1-4-802(1)(c) verbatim: 'Every petition for the office of president and vice president ... must be signed by eligible electors residing within the district or political subdivision in which the officer is to be elected', combined with 1-4-802(1)(c)(I)'s 'in each congressional district' establishes a binding per-CD minimum. SOS quote verbatim. Note: 'in each congressional district' is the operative distribution language; the residency clause and the per-CD minimum together fully support the value. Current and correct."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "AUTO-LIVE",
+   "value": "A petition circulator must be a citizen of the United States and at least 18 years of age. No Colorado residency requirement and no voter-registration requirement is imposed on the circulator. Paid vs. volunteer circulators must wear an identifying badge (PAID CIRCULATOR / VOLUNTEER CIRCULATOR).",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "C.R.S. 1-4-905(1) verbatim: 'A person shall not circulate a petition to nominate a candidate unless the person is a citizen of the United States and at least eighteen years of age.' SOS quote verbatim. Adversarial check: 1-4-905 imposes no residency/registration requirement on circulators (only US citizenship + 18+); the badge requirement in 1-4-905(6) confirms the parenthetical. Current and correct."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "BOTH a notarized circulator affidavit AND a notarized candidate acceptance are required. (1) Each petition SECTION must have attached a signed, dated, notarized circulator affidavit; the circulator must appear in the physical presence of the notary; an improperly notarized affidavit is invalid and the section cannot be accepted (C.R.S. 1-4-905(2)-(3)). (2) Before filing, the petition must have attached a notarized acceptance of nomination by the candidate (or by both joint president/VP candidates) (C.R.S. 1-4-906); SOS guidance requires the candidate/VP acceptance forms to be notarized.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "All three citations verbatim. 1-4-905(2)(a): 'Each petition section must have attached a signed, notarized, and dated affidavit executed by the person who circulated the petition section'; 1-4-905(2)(b)(I)(A) confirms physical-presence; 1-4-905(2)(b)(II) makes a violating affidavit invalid; 1-4-905(3) bars acceptance without the notarized affidavit. 1-4-906 verbatim on the notarized candidate acceptance. SOS notarization quote verbatim. Current and correct."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. The unaffiliated presidential petition is paper-only: SOS must approve the petition format before circulation, the petition is circulated on paper, each section requires a wet-ink notarized circulator affidavit (circulator physically present before the notary), and the completed petition plus notarized acceptance forms are hand-delivered to the SOS Elections Division in Denver (1700 Broadway, Suite 550). No online/remote-signing or digitized-capture system covers an unaffiliated presidential nominating petition in Colorado.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "All three citations verbatim. SOS: 'Petition formats must be approved by the Secretary of State's office prior to circulation' and 'Hand deliver petition and acceptance forms to:' (Denver address printed on page). 1-4-905(2)(b)(I)(A) physical-presence notarization verbatim. The negative existence claim (no e-signing) is strongly supported by the wet-ink/physical-presence/hand-delivery requirements; no contrary source found. Current and correct for the unaffiliated presidential route."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None for the unaffiliated presidential route. There is no filing-fee-in-lieu-of-signatures option for an unaffiliated presidential candidate; the nominating petition (1,500/CD, 12,000 total) is the only path onto the general-election ballot. The petition-or-fee CHOICE applies only to major-party presidential PRIMARY candidates (C.R.S. 1-4-1204), not to general-election access for an independent. Minor-party note: forming a NEW minor party requires a separate statewide petition of at least 10,000 registered electors filed by the 2nd Friday in January of the election year; a QPO candidate petitions under the same 1-4-802 schedule. An individual independent uses the 1-4-802 unaffiliated path and pays no fee.",
+   "confidence": 0.85,
+   "interpretationRequired": false,
+   "note": "Citations verbatim: SOS 'Submit the notarized acceptance of petition nomination forms with the completed petition.' and QPO FAQ 'Be signed by at least 10,000 registered electors in Colorado; and' (also confirms '2nd Friday in January of the election year'). Adversarial check: the SOS PresidentPetition.html unaffiliated workflow lists no fee step and no fee-in-lieu option; 1-4-802 sets signatures as the sole requirement with no fee alternative. The 1-4-1204 primary fee/petition choice is a separate major-party primary mechanism not available to an independent. Current and correct. (The cited SOS quote supports the 'petition is the path' framing rather than a fee, which is the correct grounding for a negative-existence claim.)"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "$50.00 flat for the Statewide Registered Voter List (EX-003), delivered on data disc (per report). Alternatively, a full Election Cycle Subscription Service (weekly-updated EX-003 plus other extracts for the entire statewide election cycle) is $1,000.00. Free public online lookups exist only for individual voters, not the bulk file.",
+  "whoCanObtain": "General public — no eligibility gate. Colorado voter registration records are statutorily \"public records subject to examination by any person.\" The Elections Data Request Form asks only for requestor name/company and contact info; it is not limited to candidates, committees, or parties.",
+  "useRestrictions": "Social Security numbers, driver's license/state ID numbers, the SOS-assigned unique voter ID, and electronic copies of voter signatures are statutorily excluded from any release (C.R.S. 1-2-302(8)); preregistrant (under-18) information is kept confidential. Colorado law (C.R.S. 1-2-227 and related statutes) restricts use of voter registration data to election/political purposes and prohibits using it for commercial solicitation; the released file does not contain SSN or signature data, so it supports name/address matching but not signature-image comparison.",
+  "requestProcess": "Application form by mail. Complete the Colorado Department of State \"Elections Data Request Form\" (PDF), check the box for \"Statewide Registered Voter List (EX-003),\" enclose a check or money order payable to the Colorado Secretary of State, and mail it to the SOS Elections Division (1700 Broadway, Suite 550, Denver, CO 80290). Requests are returned via first-class mail within 72 hours; for expedited carriers the requestor must include a pre-paid mailer. Subscription service provides electronic download access.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.coloradosos.gov/pubs/elections/forms/dataRequests.pdf",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "C.R.S. § 1-4-905(1): \"A person shall not circulate a petition to nominate a candidate unless the person is a citizen of the United States and at least eighteen years of age.\" The circulator must be at least 18. The affidavit (§ 1-4-905(2)(a)) further requires a sworn statement \"that the affiant was a citizen of the United States and at least eighteen years of age at the time the section of the pet",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "yes",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER (§ 1-4-904): must be an \"eligible elector\" (registered voter) and, for president, must reside within the congressional district where signatures are gathered (§ 1-4-802(1)(c)). CIRCULATOR (§ 1-4-905(1)): need only be a U.S. citizen and at least 18 — NOT required to be a registered voter or a Colorado resident.",
+  "gate": "AUTO-LIVE",
+  "note": "Colorado's circulator-eligibility rule for candidate nominating petitions is set by C.R.S. § 1-4-905(1), which applies to the general petition procedures in Part 9 of Article 4. Unaffiliated presidential petitions are governed by § 1-4-802 (which expressly covers \"president of the United States,\" requiring 1,500 signatures per congressional district) and use these same Part 9 circulation/affidavit procedures. The circulator statute imposes ONLY two affirmative requirements: (1) U.S. citizenship ",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "7 of 8 fields verify clean for an unaffiliated presidential candidate; only the deadline TIME-OF-DAY is in genuine source conflict (SOS page 3:00 p.m. vs statute effective 1/1/2025 5 p.m.) — treat 3:00 p.m. as the binding cutoff and confirm with SOS before any cycle."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-905/",
+   "quote": "(1) A person shall not circulate a petition to nominate a candidate unless the person is a citizen of the United States and at least eighteen years of age."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-905/",
+   "quote": "(6)(a) A circulator who is not to be paid for circulating a petition shall display an identification badge that includes the words “VOLUNTEER CIRCULATOR” in bold-faced type that is clearly legible. (b) A circulator who is to be paid for circulating a petition shall display an identification badge that includes the words “PAID CIRCULATOR” in bold-faced type that is clearly legible and the name and telephone number of the individual employing the circulator."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-905-5/",
+   "quote": "(2)(a) It is unlawful for any petition entity to provide payment to a circulator to circulate a petition to nominate a candidate, to recall an elected officer, or to create a minor party without first obtaining a license from the secretary of state."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-905-5/",
+   "quote": "(c) “Petition entity” means any person or committee that directly or indirectly provides payment to a circulator to circulate a petition to nominate a candidate, to recall an elected officer in accordance with article 12 of this title 1, or to create a minor party in accordance with part 13 of this article 4."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.sos.state.co.us/pubs/elections/Candidates/PresidentPetition.html",
+   "quote": "In order to be eligible to circulate a petition, a person must be a citizen of the United States and at least 18 years of age. [1] ... [1] 1-4-905(1), C.R.S."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.coloradosos.gov/pubs/elections/petitionEntities/faqs.html",
+   "quote": "Information needed for each registration includes: Circulator's name; Circulator's permanent physical address (this may be outside Colorado)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.coloradosos.gov/pubs/info_center/fees/elections.html",
+   "quote": "Statewide Registered Voter List (EX-003) | $50.00"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.coloradosos.gov/pubs/info_center/fees/elections.html",
+   "quote": "Election Cycle Subscription Service ... which includes electronic download access to the following files for the 2023-2024 election cycle: Statewide Registered Voter List (EX-003) updated weekly ... | $1,000"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.coloradosos.gov/pubs/elections/forms/dataRequests.pdf",
+   "quote": "Public Elections Data Request on Data Disc for $50.00 per report ... Statewide Registered Voter List (EX-003)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.coloradosos.gov/pubs/elections/forms/dataRequests.pdf",
+   "quote": "PLEASE ENCLOSE A CHECK OR MONEY ORDER PAYABLE TO THE COLORADO SECRETARY OF STATE ... Requests will be returned via first class mail within 72 hours depending on request."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-2-227/",
+   "quote": "Such registration records, whether paper or digital, are public records subject to examination by any person, and such person has the right to make copies of the records during office hours."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-2-302/",
+   "quote": "The electors on the computerized statewide voter registration list shall be identified by name, place of residence, precinct number, date of birth ... and the date of registration."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-2-302/",
+   "quote": "shall not sell, disclose, or otherwise release a social security number, a driver's license or a state-issued identification number, or the unique identification number assigned by the secretary of state to the voter ... or electronic copies of signatures ... to any individual other than the elector who created such signature absent such elector's consent"
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / circulatorMustBeUSCitizen / minorCanCirculate",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-905/",
+   "quote": "(1) A person shall not circulate a petition to nominate a candidate unless the person is a citizen of the United States and at least eighteen years of age."
+  },
+  {
+   "field": "circulatorMustBeStateResident / affidavit content (no Colorado-residency requirement)",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-905/",
+   "quote": "Each petition section must have attached a signed, notarized, and dated affidavit executed by the person who circulated the petition section, which must include: The affiant's printed name, the address at which the affiant resides, including the street name and number, the city or town, the county, and the date of signature; ... a statement that the affiant was a citizen of the United States and at least eighteen years of age at the time the section of the petition was circulated and signed by the listed electors"
+  },
+  {
+   "field": "signerVsCirculator (signer must be eligible elector)",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-904/",
+   "quote": "(1) Every petition shall be signed only by eligible electors. ... (2)(b) Petitions to nominate candidates from a minor political party or unaffiliated candidates in a partisan election may be signed by any eligible elector who has not signed any other petition for any other candidate for the same office."
+  },
+  {
+   "field": "applicability to unaffiliated presidential petition / signer residency in district",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-802/",
+   "quote": "Every petition for the office of president and vice president, for statewide office, ... must be signed by eligible electors residing within the district or political subdivision in which the officer is to be elected. ... (I) At least one thousand five hundred in each congressional district for the office of president and vice president"
+  },
+  {
+   "field": "circulator badge requirement (practical)",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-4-905/",
+   "quote": "(6)(a) A circulator who is not to be paid for circulating a petition shall display an identification badge that includes the words “VOLUNTEER CIRCULATOR” in bold-faced type that is clearly legible. (b) A circulator who is to be paid for circulating a petition shall display an identification badge that includes the words “PAID CIRCULATOR” in bold-faced type that is clearly legible and the name and telephone number of the individual employing the circulator."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "FL-ICA",
+ "jurisdiction": "Florida",
+ "abbr": "FL",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 880062,
+  "headline": "Florida Constitution Art. XI, sec. 3: petition \"signed by a number of electors in each of one half of the congressional districts of the state, and of the state as a whole, equal to eight percent of the votes cast in each of such districts respectively and in the state as a whole in the last preceding election in which presidential electors were chosen.\" Base = votes cast in the 2024 general (presidential) election: statewide 11,000,768."
+ },
+ "deadline": {
+  "headline": "Constitution Art. XI, sec. 5(b): \"shall be submitted to the electors at the general election provided the initiative petition is filed with the custodian of state records no later than February 1 of the year in which the general election is held.\" Statute 100.371(1)(a): filed with the Secretary of State \"no later than February 1 of the year the general election is held\" — and a"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Florida Constitution Art. XI, sec. 3: petition \"signed by a number of electors in each of one half of the congressional districts of the state, and of the state as a whole, equal to eight percent of the votes cast in each of such districts respectively and in the state as a whole in the last preceding election in which presidential electors were chosen.\" Base = votes cast in the 2024 general (presidential) election: statewide 11,000,768.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Constitution Art. XI, sec. 5(b): \"shall be submitted to the electors at the general election provided the initiative petition is filed with the custodian of state records no later than February 1 of the year in which the general election is held.\" Statute 100.371(1)(a): filed with the Secretary of State \"no later than February 1 of the year the general election is held\" — and a"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "In at least one half of Florida's congressional districts. Florida has 28 congressional districts, so signatures meeting the 8%-of-district threshold are required in at least 14 of the 28 districts. Per-district 8% thresholds (2024 base, per the Division of Elections 2026 table) range from 23,949 (CD-24) to 37,769 (CD-17); e.g., CD-1 = 34,050, CD-10 = 24,382, CD-17 = 37,769."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Constitution Art. XI, sec. 3: an initiative \"except for those limiting the power of government to raise revenue, shall embrace but one subject and matter directly connected therewith.\" (Single-subject rule applies; the only carve-out is amendments limiting government's power to raise revenue.)"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "required",
+  "operatingStance": "per-signature pay BANNED for initiatives. See above.",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Free — \"There is no fee associated with this complimentary disk.\" The statewide monthly voter extract is provided at no charge by the Division of Elections. (An off-cycle/late request is processed as a public records request and \"subject to administrative fees for processing.\")",
+  "whoCanObtain": "General public — voter registration and voting history are public record under Florida law; the extract is \"publicly available.\" No eligibility gate (need not be a candidate/committee/party); no political-use-only restriction on this file.",
+  "useRestrictions": "No commercial-/political-use restriction is imposed on the extract itself — the data is public record. The statutory exemptions (s. 97.0585, Fla. Stat.) carve OUT, and prohibit release of, SSN, driver-license/state-ID number, the source of the registration application (voter-registration use only), the signature image (viewable but not copyable), and records of Address Confidentiality Program participants / high-risk professionals. No anti-solicitation penalty clause specific to this file was found on the official pages.",
+  "requestProcess": "Written request by email (VoterExtract address) or mail to the Division of Elections; must include contact info, phone/email, and a mailing address. Delivered as a monthly extract on disk by mail (or pick-up). Must be received >=24 hours before the scheduled monthly generation date; a one-time annual standing request can cover all monthly extracts for the calendar year. Not an instant online download, and this contact request \"IS NOT available by email or online\" for the address detail.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://dos.fl.gov/elections/data-statistics/voter-registration-statistics/voter-extract-request/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Florida citizen initiative = constitutional amendment only (direct). Current-cycle (2024 presidential base) statewide requirement: 880,062 valid signatures = 8% of 11,000,768 votes cast in the 2024 general election (official Division of Elections figure). Distribution: 8% of votes cast in each of at least 14 of Florida's 28 congressional districts. Deadline: petition fully verified/certified by Feb 1 of the general-election year (Art. XI, sec. 5(b); 100.371(1)(a)) — the Feb 1"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis / distribution / singleSubject",
+   "url": "https://www.flsenate.gov/Laws/Constitution",
+   "quote": "SECTION 3. Initiative.—The power to propose the revision or amendment of any portion or portions of this constitution by initiative is reserved to the people, provided that, any such revision or amendment, except for those limiting the power of government to raise revenue, shall embrace but one subject and matter directly connected therewith. It may be invoked by filing with the custodian of state records a petition containing a copy of the proposed revision or amendment, signed by a number of electors in each of one half of the congressional districts of the state, and of the state as a whole, equal to eight percent of the votes cast in each of such districts respectively and in the state as a whole in the last preceding election in which presidential electors were chosen."
+  },
+  {
+   "field": "deadline",
+   "url": "https://www.flsenate.gov/Laws/Constitution",
+   "quote": "(b) A proposed amendment or revision of this constitution, or any part of it, by initiative shall be submitted to the electors at the general election provided the initiative petition is filed with the custodian of state records no later than February 1 of the year in which the general election is held."
+  },
+  {
+   "field": "deadline / deemed-filed",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/100.371",
+   "quote": "Constitutional amendments proposed by initiative shall be placed on the ballot for the general election, provided the initiative petition has been filed with the Secretary of State no later than February 1 of the year the general election is held. A petition shall be deemed to be filed with the Secretary of State upon the date the secretary determines that valid and verified petition forms have been signed by the constitutionally required number and distribution of voters under this code."
+  },
+  {
+   "field": "signatureRequirement (current 2026/2024-base figures)",
+   "url": "https://dos.fl.gov/media/708909/congressional-district-signature-requirements-for-2026.pdf",
+   "quote": "Statewide  Votes Cast in 2024 General Election (last presidential) 11,000,768  For Judicial / Fiscal Reviews (25% of 8% of Votes) *220,016  For Ballot Position (8% of Votes Cast) *880,062"
+  },
+  {
+   "field": "distribution (28 districts; one half = 14)",
+   "url": "https://dos.fl.gov/media/708909/congressional-district-signature-requirements-for-2026.pdf",
+   "quote": "Note: Statewide totals are calculated from statewide voter turnout. Due to rounding, the sum of the 28 Congressional Districts signature thresholds in the table above will be slightly more than the statewide totals* in the table below."
+  },
+  {
+   "field": "distribution / SoS summary of requirement",
+   "url": "https://dos.fl.gov/elections/laws-rules/constitutional-amendments/",
+   "quote": "In addition to other requirements, a sponsor must obtain valid petitions signed by a number of Florida voters in each of one half of the congressional districts of the state, and of the state as a whole, equal to eight percent of the votes cast in each of such districts respectively and in the state as a whole in the last preceding election in which presidential electors were chosen."
+  },
+  {
+   "field": "perSignaturePayAllowed (banned, spreading ban)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/100.371",
+   "quote": "A sponsor may not compensate a petition circulator based on the number of petition forms gathered or the time within which a number of petition forms are gathered. This prohibition includes, but is not limited to, paying a specified amount per petition form gathered, basing an hourly rate on the number of petition forms gathered over a specified period of time, or providing any other benefit or form of compensation based on the number of petition forms gathered."
+  },
+  {
+   "field": "circulatorResidencyRequired (yes)",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/100.371",
+   "quote": "A person may not collect signatures or initiative petitions if he or she: 1. Has been convicted of a felony violation and has not had his or her right to vote restored. 2. Is not a citizen of the United States. 3. Is not a resident of this state."
+  },
+  {
+   "field": "statusNote (constitutional-amendment-only / 60% approval)",
+   "url": "https://dos.fl.gov/elections/laws-rules/constitutional-amendments/",
+   "quote": "Proposed amendments to the Florida Constitution may be made proposed by a legislative joint resolution, a statewide initiative petition, or a proposal from the Constitution Revision Commission or the Taxation and Budget Reform Commission. A proposed amendment requires at least 60% approval from voters to pass [see Florida Constitution, Article XI, Fla. Const.]."
+  },
+  {
+   "field": "one-initiative-per-sponsor / committee registration",
+   "url": "https://www.flsenate.gov/Laws/Statutes/2025/100.371",
+   "quote": "The sponsor of an initiative amendment may not sponsor more than one amendment and must, before circulating any petition forms, register as a political committee pursuant to s. 106.03"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

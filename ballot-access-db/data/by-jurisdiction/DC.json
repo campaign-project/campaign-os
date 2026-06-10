@@ -1,0 +1,189 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "DC",
+ "jurisdiction": "District of Columbia",
+ "abbr": "DC",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 4583,
+  "headline": "1% of DC registered electors (144th-day count); 4,583 in 2024; recomputes each cycle; max 2x"
+ },
+ "deadline": {
+  "headline": "90th day before election, by 5:00 p.m., in person (Aug 7, 2024)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "A non-major-party (independent or unqualified-party) presidential candidate must file a nominating petition signed by at least 1% of the District's registered qualified electors as shown by the Board's records as of the 144th day before the presidential election, under D.C. Code 1-1001.08(f). The exact count RECOMPUTES each cycle from the 144th-day registration total (for the 2024 cycle this equaled 4,583 valid signatures; do not rely on this fixed number for any other cycle). The Board accepts at most 2x the minimum for filing (DCMR 3-1503.2). Strictest reading: confirm the cycle-specific number with the Board and treat 1% as the governing rate.",
+   "confidence": 0.9,
+   "interpretationRequired": true,
+   "note": "All 4 citations verified verbatim. The 1% rate is correct and current and directly grounded in statute 1-1001.08(f) and DCMR 1503.1; the 2x cap is grounded in 1503.2; the 4,583 figure for 2024 is corroborated by ballot-access.org. HOLD because (a) the operative signature COUNT is cycle-dependent and must be re-derived from the Board's 144th-day registration, so a fixed number is not a safe live value, and (b) the draft's framing that an 'independent' runs via 1-1001.08(f) is a legal characterization — the statute literally addresses 'a political party which does not qualify under subsection (d),' not 'independent' (DCMR 3-1502.2(a) supports the independent designation but the routing should be confirmed)."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "The nominating petition (with supporting affidavits and each presidential elector's Declaration of Candidacy) must be filed in person at the Board's office no later than 5:00 p.m. on the 90th day before the presidential election (D.C. Code 1-1001.08(f); DCMR 3-1505.2; 5:00 p.m. cutoff per 1-1001.08(q)). For the November 5, 2024 general election this deadline was August 7, 2024.",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "All 3 citations verified verbatim. Independently confirmed by date arithmetic: Aug 7, 2024 is exactly 90 days before Nov 5, 2024 (24 + 30 + 31 + 5 = 90). The 5:00 p.m. in-person requirement is grounded in DCMR 1505.2 and 1-1001.08(q). Current and correct; no interpretation needed."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. The 1% requirement is computed District-wide against all registered qualified electors of the District; there is no per-ward, per-precinct, or per-district geographic distribution requirement for the presidential elector petition. DC has no congressional districts or counties.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Citation verified verbatim. Statute 1-1001.08(f) imposes a single District-wide 1% count with no geographic spread. The ward-based signature thresholds elsewhere in 1-1001.08 apply to Council/State Board of Education seats, NOT to presidential electors. Correct and current."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "AUTO-LIVE",
+   "value": "Only a qualified petition circulator may circulate; signatures on any sheet circulated by an unqualified circulator are invalid (D.C. Code 1-1001.08(b)(2)). Circulators must be at least 18 (DCMR 3-1504.1(c)). Residency is NOT required: non-resident circulators are permitted but must first complete and file, in person at the Board's office, a Non-Resident Petition Circulator Registration Form (swearing they are 18+, providing proof of residence, and consenting to the Board's subpoena power) before circulating (DCMR 3-1504).",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "All 3 citations verified verbatim. Statute requires qualified circulators and invalidates signatures otherwise; DCMR 3-1504 expressly authorizes non-resident circulators subject to prior in-person registration and 18+ oath. Correct and current."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Each petition sheet must carry a circulator's affidavit made under penalty of perjury (NOT notarized) stating the circulator is qualified and has personally circulated the sheet, personally witnessed each signer sign, and inquired about each signer's voter status (D.C. Code 1-1001.08(b)(3)). Any sheet lacking a completed circulator's affidavit is not counted (DCMR 3-1505.4). Notarization is required only from a voter who submits a written request to disallow their own signature, not for the circulator's certification.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Both citations verified verbatim. Statute specifies an affidavit 'made under penalty of perjury' (self-executing, no notary). DCMR 1505.4 confirms sheets without a completed circulator affidavit are not counted, and that the only notarized item is a voter's written request to disallow their own signature. Correct and current."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Signed petition sheets must be filed with the Board in hard copy and in person (D.C. Code 1-1001.08(b)(3A); DCMR 3-1505.2). Only blank/unsigned petition forms may move electronically (Board to candidate; candidate to circulator; circulator to candidate). There is no remote-online or in-person-digitized signature system for the independent/non-qualified-party presidential petition; signed sheets are filed on paper.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Both citations verified verbatim. Statute 1-1001.08(b)(3A) requires petition sheets be 'filed with the Board in hard copy,' permitting only electronic transmission of (blank) forms among Board/candidate/circulator; DCMR 1505.2 requires in-person filing. Conclusion (paper, in person) is directly grounded. The 'eSign device' aside is extra context but does not affect the grounded conclusion."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. The District imposes no filing fee for presidential ballot access and offers no fee option in lieu of (or in addition to) the signature petition. Ballot access is obtained solely by the nominating petition meeting the 1% requirement (D.C. Code 1-1001.08(f); DCMR 3-1503.1).",
+   "confidence": 0.88,
+   "interpretationRequired": false,
+   "note": "Both citations verified verbatim. This is a negative claim (no fee alternative exists). The statute and DCMR Chapter 3-15 establish the nominating petition as the sole ballot-access mechanism; no fee or fee-in-lieu provision appears anywhere in the reviewed primary sources. Consistent across all sources; correct and current."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Varies — no flat statutory/regulatory price published. The list is provided in response to a written \"data request\" processed as a D.C. FOIA request (3 DCMR § 510.1), so the charge is the FOIA duplication/processing cost for producing the electronic file. For a single statewide electronic file this is typically nominal (DC FOIA permits only reasonable search/duplication fees and routinely waives small amounts); request a quote/fee estimate from DCBOE to confirm.",
+  "whoCanObtain": "General public — \"any person.\" 3 DCMR § 510.1: \"Upon written request, the Board shall provide to any person a list of the registered qualified electors of the District of Columbia or any ward, precinct or ANC SMD therein.\" There is no candidate/committee or political-use eligibility gate for the standard public list.",
+  "useRestrictions": "No general political-use-only or anti-solicitation restriction is imposed on the public list by 3 DCMR § 510 (access is via FOIA to \"any person\"). The released record excludes confidential fields — § 510.5 makes social security numbers, dates of birth, email/phone, the registering agency, and any court-/Address-Confidentiality-protected address non-public. A voter's signature image \"may be viewed by the public but may not be copied or traced except by Board officials for election administration purposes\" (§ 510.8). Inactive registrants' names \"shall not be sold by the Board ... except upon specific request of the purchaser and the fact that the registrations are designated as inactive is made known to the purchaser\" (D.C. Code § 1-1001.07(j)(5)(D)).",
+  "requestProcess": "Written request to the DC Board of Elections (DCBOE), processed under the D.C. Freedom of Information Act (3 DCMR § 510.1; DCMR Title 3 Chapter 20). No notarized affidavit or political-use sworn statement is required for the standard public list; not an instant self-serve online download. The Board may furnish selective lists (by party, ward, precinct, ANC SMD, voter history, etc.) per § 510.2 and will produce it on electronic/magnetic media per § 510.3.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.dcboe.org/data,-maps,-forms",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 17,
+  "ageRule": "A circulator must be a \"qualified petition circulator,\" statutorily defined as \"a person who is at least 17 years of age and who will be 18 years of age on or before the next general election\" (DC Code § 1-1001.02(26)). This is the SAME age threshold as a \"qualified elector\" — 17+ and turning 18 by the next general election. So a 17-year-old who will be 18 by the next general election may circulat",
+  "minorCanCirculate": "yes",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER (DC Code § 1-1001.08(f)): must be a \"registered qualified elector of the District of Columbia\" — i.e., a registered voter, DC resident, and (per the qualified-elector definition) a US citizen. CIRCULATOR (DC Code § 1-1001.02(26)): need only be a \"qualified petition circulator\" — 17+/turning 18 by the next general election AND either a DC resident OR a non-resident who registers with the Boa",
+  "gate": "AUTO-LIVE",
+  "note": "A 17-year-old (who will be 18 by the next general election) CAN circulate. The controlling statute (DC Code § 1-1001.08(b)(2)) requires that \"Only qualified petition circulators may circulate nominating petitions in support of candidates for elected office pursuant to this subchapter,\" and § 1-1001.08(b)(3) requires the circulator's affidavit to attest the circulator \"is a qualified petition circulator.\" The independent presidential petition is governed by this subchapter (the candidate-for-pres",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "All citations grounded verbatim. Core operative rules verified against primary DC Code/DCMR. Two caveats: the per-cycle signature COUNT must be recomputed from the Board's 144th-day registration (do not hardcode 4,583 for a future cycle), and the statute's path is worded \"political party which does not qualify,\" not \"independent\" — independent status is supported by DCMR 3-1502.2(a) but is a characterization worth confirming with the Board. DC's requirement is the most severe presidential requirement of all 51 jurisdictions and is the subject of ongoing reform lobbying/constitutional criticism (no change to current law)."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.14",
+   "quote": "Any person who: (A) For any consideration, compensation, gratuity, reward or thing of value or promise thereof, signs or promises to sign or declines to sign, or promises not to sign any initiative, referendum, or recall petition; or (B) pays or offers or promises to pay, or gives or offers or promises to give any consideration, compensation, gratuity, reward, or thing of value to any person to induce the person to sign or not to sign, the person's signatures upon any initiative, referendum, or recall petition"
+  },
+  {
+   "field": "compensation",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.02",
+   "quote": "The term \"qualified petition circulator\" means a person who is at least 17 years of age and who will be 18 years of age on or before the next general election and either: (A) A District resident; or (B) A resident of another jurisdiction who has registered with the Board as a petition circulator and consented to being subject to the subpoena power of the Board and the jurisdiction of the Superior Court of the District of Columbia for the enforcement of subpoenas without respect to the individual's place of residence."
+  },
+  {
+   "field": "compensation",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.08",
+   "quote": "Only qualified petition circulators may circulate nominating petitions in support of candidates for elected office pursuant to this subchapter. The Board shall consider invalid the signatures on any petition sheet that was circulated by a person who, at the time of circulation, was not a qualified petition circulator."
+  },
+  {
+   "field": "compensation",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.08",
+   "quote": "A political party which does not qualify under subsection (d) of this section may have the names of its candidates for President and Vice President of the United States printed on the general election ballot provided a petition nominating the appropriate number of candidates for presidential electors signed by at least 1 per centum of registered qualified electors of the District of Columbia, as shown by the records of the Board as of the 144th day before the date of the presidential election, is presented to the Board on or before the 90th day before the date of the presidential election."
+  },
+  {
+   "field": "compensation",
+   "url": "https://dcrules.elaws.us/dcmr/3-1602",
+   "quote": "The second page of the nominating petition form shall include a circulator's affidavit, providing space for the circulator of a nominating petition to record his or her name and address. By signing the affidavit, the circulator swears under oath or affirms that he or she: (a) Is a qualified petition circulator; (b) Personally circulated the petition sheet; (c) Personally witnessed the signing of each signature on the petition sheet"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dcregs.dc.gov/Common/DCMR/RuleList.aspx?DownloadFile={438748BA-839D-4B97-A9B3-DA9225FB2BF0}",
+   "quote": "510.1 Upon written request, the Board shall provide to any person a list of the registered qualified electors of the District of Columbia or any ward, precinct or ANC SMD therein. Responses to these data requests shall be processed in accordance with Freedom of Information Act (see Chapter 20 of this title)."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dcregs.dc.gov/Common/DCMR/RuleList.aspx?DownloadFile={438748BA-839D-4B97-A9B3-DA9225FB2BF0}",
+   "quote": "510.3 The Board shall make requested voter registration information available to the public on electronic or magnetic medium, or on any media in use by the Board at the time of the request."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dcregs.dc.gov/Common/DCMR/RuleList.aspx?DownloadFile={438748BA-839D-4B97-A9B3-DA9225FB2BF0}",
+   "quote": "510.5 The following items of information contained in voter registration records are confidential and shall not be considered public information subject to disclosure to the general public: (a) Full or partial social security numbers; (b) Dates of birth; (c) Email addresses or phone numbers; (d) The identity of the voter registration agency at which the voter registered; and (e) The residence and mailing addresses of any registered qualified elector whose residence address has been made confidential pursuant to this section."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://dcregs.dc.gov/Common/DCMR/RuleList.aspx?DownloadFile={438748BA-839D-4B97-A9B3-DA9225FB2BF0}",
+   "quote": "510.9 A registered qualified elector’s address shall be considered public information unless made confidential."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.07",
+   "quote": "Their names shall not be sold by the Board either in hard copy form or electronic media, except upon specific request of the purchaser and the fact that the registrations are designated as inactive is made known to the purchaser."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / minorCanCirculate / circulatorMustBeStateResident / circulatorMustBeRegisteredVoter",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.02",
+   "quote": "(26) The term \"qualified petition circulator\" means a person who is at least 17 years of age and who will be 18 years of age on or before the next general election and either: (A) A District resident; or (B) A resident of another jurisdiction who has registered with the Board as a petition circulator and consented to being subject to the subpoena power of the Board and the jurisdiction of the Superior Court of the District of Columbia for the enforcement of subpoenas without respect to the individual's place of residence."
+  },
+  {
+   "field": "circulator requirement applies (qualified petition circulator only)",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.08",
+   "quote": "(2) Only qualified petition circulators may circulate nominating petitions in support of candidates for elected office pursuant to this subchapter. The Board shall consider invalid the signatures on any petition sheet that was circulated by a person who, at the time of circulation, was not a qualified petition circulator."
+  },
+  {
+   "field": "circulator affidavit content",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.08",
+   "quote": "Each petition shall contain an affidavit, made under penalty of perjury, in a form to be determined by the Board and signed by the circulator of that petition which shall state that the circulator is a qualified petition circulator and has: (A) Personally circulated the petition; (B) Personally witnessed each person sign the petition; (C) Inquired from each signer whether the signer is a registered voter in the same party as the candidate..."
+  },
+  {
+   "field": "signerVsCirculator (independent presidential petition signer requirement)",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.08",
+   "quote": "(f) A political party which does not qualify under subsection (d) of this section may have the names of its candidates for President and Vice President of the United States printed on the general election ballot provided a petition nominating the appropriate number of candidates for presidential electors signed by at least 1 per centum of registered qualified electors of the District of Columbia, as shown by the records of the Board as of the 144th day before the date of the presidential election, is presented to the Board on or before the 90th day before the date of the presidential election."
+  },
+  {
+   "field": "circulatorMustBeUSCitizen (citizenship attaches to qualified elector / signer, not to circulator definition)",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.02",
+   "quote": "(2) The term \"qualified elector\" means a person who: (A) Is at least 17 years of age and who will be 18 years of age on or before the next general election; (B) Is a citizen of the United States; except, that this subparagraph shall not apply in a local election; (C) Has maintained a residence in the District for at least 30 days preceding the next election..."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

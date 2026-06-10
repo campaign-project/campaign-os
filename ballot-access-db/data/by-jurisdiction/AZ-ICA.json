@@ -1,0 +1,115 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "AZ-ICA",
+ "jurisdiction": "Arizona",
+ "abbr": "AZ",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 383923,
+  "headline": "fifteen percent of the qualified electors, where the basis is the whole number of votes cast for all candidates for governor at the general election last preceding the filing (2022 general: 2,559,485 total gubernatorial votes). 2,559,485 x 15% = 383,922.75, rounded up to 383,923"
+ },
+ "deadline": {
+  "headline": "All petitions submitted under the power of the initiative ... shall be filed with the secretary of state not less than four months preceding the date of the election at which the measures so proposed are to be voted upon (for the Nov. 3, 2026 general election the SoS filing deadline is July 2, 2026)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "fifteen percent of the qualified electors, where the basis is the whole number of votes cast for all candidates for governor at the general election last preceding the filing (2022 general: 2,559,485 total gubernatorial votes). 2,559,485 x 15% = 383,922.75, rounded up to 383,923",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "All petitions submitted under the power of the initiative ... shall be filed with the secretary of state not less than four months preceding the date of the election at which the measures so proposed are to be voted upon (for the Nov. 3, 2026 general election the SoS filing deadline is July 2, 2026)"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Every initiative measure shall embrace but one subject and matters properly connected therewith, which subject shall be expressed in the title (Ariz. Const. art. 4, pt. 1, sec. 1(9))"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "not_required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Per-signature pay is explicitly BANNED for statewide initiatives and referenda. ARS 19-118.01(A): \"A person shall not pay or receive money or any other thing of value based on the number of signatures collected on a statewide initiative or referendum petition. Signatures that are obtained by a paid circulator who violates this section are void and shall not be counted in determ",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Statutory tiered formula (ARS 16-168(E)): 1–124,999 records = $93.75 + $0.0005/record; 125,000–249,999 = $156.25 + $0.000375/record; 250,000–499,999 = $203.13 + $0.00025/record; 500,000–999,999 = $265.63 + $0.000125/record; 1,000,000+ records = $328.13 + $0.0000625/record. A full statewide file (~4.3M registered voters) falls in the top tier: ~$328.13 + $0.0000625/record (on the order of a few hundred dollars total).",
+  "whoCanObtain": "Not the general public for any purpose. Free electronic copies go to county/state party chairmen of qualifying parties. Anyone else (candidates, registered political committees, etc.) may purchase copies only for a statutorily \"authorized use\" — i.e. political/political-party activity, a political campaign, an election, redistricting, signature verification on petitions/candidate filings, or another use specifically authorized by law. Commercial use is prohibited.",
+  "useRestrictions": "Political-use-only: data \"may be used only for purposes relating to a political or political party activity, a political campaign or an election... and may not be used for a commercial purpose.\" Signature verification on petitions and candidate filings is expressly authorized. Reselling/transferring for an unauthorized purpose or posting it on the internet is prohibited. A violation of the use restriction or resale/distribution restriction \"is guilty of a class 6 felony.\" Sensitive fields (full DOB, SSN, driver license number, voter signature, email) are excluded from general reproduction but may be used for petition signature verification.",
+  "requestProcess": "Written request for an authorized use submitted to the county recorder (or the Secretary of State / officer in charge of elections); the office prepares additional copies and furnishes them within 30 days of receipt of the request upon payment of the statutory fee. (Verifying petition signatures is an explicitly permitted use, so a campaign/committee qualifies.)",
+  "hasNeededFields": "yes",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "Primary sources are the Arizona Constitution Article 4, Part 1, Section 1 (self-executing initiative/referendum provision) and ARS Title 19, both from the official azleg.gov legislature site, and they fully and unambiguously establish the formulas (15%/10%/5%), the base (votes cast for all gubernatorial candidates at the last preceding general election), the deadlines (initiative: not less than four months before the election; referendum: not more than 90 days after legislati"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis (initiative 10%/15%)",
+   "url": "https://www.azleg.gov/viewDocument/?docName=https://www.azleg.gov/const/4/1.p1.htm",
+   "quote": "The first of these reserved powers is the initiative.  Under this power ten percent of the qualified electors shall have the right to propose any measure, and fifteen percent shall have the right to propose any amendment to the constitution."
+  },
+  {
+   "field": "signatureBasis (referendum 5%)",
+   "url": "https://www.azleg.gov/viewDocument/?docName=https://www.azleg.gov/const/4/1.p1.htm",
+   "quote": "The second of these reserved powers is the referendum. Under this power the legislature, or five percent of the qualified electors, may order the submission to the people at the polls of any measure, or item, section or part of any measure, enacted by the legislature"
+  },
+  {
+   "field": "base (votes cast for governor)",
+   "url": "https://www.azleg.gov/viewDocument/?docName=https://www.azleg.gov/const/4/1.p1.htm",
+   "quote": "The whole number of votes cast for all candidates for governor at the general election last preceding the filing of any initiative or referendum petition on a state or county measure shall be the basis on which the number of qualified electors required to sign such petition shall be computed."
+  },
+  {
+   "field": "deadline (initiative + referendum)",
+   "url": "https://www.azleg.gov/viewDocument/?docName=https://www.azleg.gov/const/4/1.p1.htm",
+   "quote": "All petitions submitted under the power of the initiative shall be known as initiative petitions, and shall be filed with the secretary of state not less than four months preceding the date of the election at which the measures so proposed are to be voted upon.  All petitions submitted under the power of the referendum ... shall be filed with the secretary of state not more than ninety days after the final adjournment of the session of the legislature which shall have passed the measure to which the referendum is applied."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://www.azleg.gov/viewDocument/?docName=https://www.azleg.gov/const/4/1.p1.htm",
+   "quote": "Every initiative measure shall embrace but one subject and matters properly connected therewith, which subject shall be expressed in the title; but if any subject shall be embraced in an initiative measure which shall not be expressed in the title, such initiative measure shall be void only as to so much thereof as shall not be embraced in the title."
+  },
+  {
+   "field": "perSignaturePayAllowed (banned)",
+   "url": "https://www.azleg.gov/ars/19/00118-01.htm",
+   "quote": "A person shall not pay or receive money or any other thing of value based on the number of signatures collected on a statewide initiative or referendum petition.  Signatures that are obtained by a paid circulator who violates this section are void and shall not be counted in determining the legal sufficiency of the petition."
+  },
+  {
+   "field": "circulatorResidencyRequired (no; registration required for non-residents/paid)",
+   "url": "https://www.azleg.gov/ars/19/00118.htm",
+   "quote": "For statewide initiative and referendum measures only, all circulators who are not residents of this state and all paid circulators must register as circulators with the secretary of state before circulating petitions pursuant to this title."
+  },
+  {
+   "field": "signatureRequirement (current-cycle figures + deadlines, corroboration)",
+   "url": "https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026",
+   "quote": "Arizona | CICA | 07/02/2026 | Signatures must be submitted at least four months before the general election | 383,923 ... Arizona | CISS | 07/02/2026 | ... | 255,949 ... Arizona | VR | 08/20/2026 | Signatures must be submitted within 90 days after the end of the legislative session | 127,975"
+  },
+  {
+   "field": "distribution (none currently; pending 2026 LRCA)",
+   "url": "https://ballotpedia.org/Arizona_2026_ballot_measures",
+   "quote": "Arizona Signature Distribution Requirement for Initiatives Amendment (2026) | LRCA | Initiative process | Require that a percentage of signatures for initiative petitions come from each county in Arizona"
+  },
+  {
+   "field": "base year vote total (2022 governor canvass)",
+   "url": "https://en.wikipedia.org/wiki/2022_Arizona_gubernatorial_election",
+   "quote": "1,287,891 | 50.32 ... 1,270,774 | 49.65 ... 820 | 0.03 (Hobbs, Lake, write-in; total votes cast for all candidates for governor = 2,559,485)"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

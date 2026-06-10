@@ -1,0 +1,79 @@
+{
+  "_generated": "build-indexes.mts (synthetic demo)",
+  "campaignId": "nc-independent",
+  "jurisdiction": "North Carolina",
+  "scopedZips": [
+    "28202",
+    "28203",
+    "28204",
+    "28205"
+  ],
+  "builtAt": "2026-06-09",
+  "version": "74fa3ec2dc70",
+  "real": false,
+  "source": {
+    "adapter": "North Carolina",
+    "format": "tsv",
+    "layoutDocUrl": "https://s3.amazonaws.com/dl.ncsbe.gov/data/layout_ncvoter.txt",
+    "downloadUrl": "https://s3.amazonaws.com/dl.ncsbe.gov/data/ncvoter_Statewide.zip",
+    "verifiedAsOf": "2026-06-07",
+    "confidence": "high"
+  },
+  "voterCount": 6,
+  "voters": [
+    {
+      "id": "NC-0100",
+      "name": "Robert A Smith",
+      "address": "100 N Tryon St, Charlotte NC 28202",
+      "status": "active",
+      "registeredOn": "2018-04-10",
+      "county": "Mecklenburg",
+      "district": "1"
+    },
+    {
+      "id": "NC-0005",
+      "name": "Maria Gonzalez",
+      "address": "5 W Trade St, Charlotte NC 28202",
+      "status": "active",
+      "registeredOn": "2020-09-12",
+      "county": "Mecklenburg",
+      "district": "1"
+    },
+    {
+      "id": "NC-0017",
+      "name": "Elizabeth Carter",
+      "address": "17 S College St, Charlotte NC 28202",
+      "status": "active",
+      "registeredOn": "2019-05-20",
+      "county": "Mecklenburg",
+      "district": "1"
+    },
+    {
+      "id": "NC-0230",
+      "name": "James O'Brien",
+      "address": "230 E 7th St, Charlotte NC 28204",
+      "status": "inactive",
+      "registeredOn": "2016-03-15",
+      "county": "Mecklenburg",
+      "district": "1"
+    },
+    {
+      "id": "NC-0311",
+      "name": "Aisha Rahman",
+      "address": "311 W 9th St, Charlotte NC 28202",
+      "status": "active",
+      "registeredOn": "2021-11-01",
+      "county": "Mecklenburg",
+      "district": "1"
+    },
+    {
+      "id": "NC-0077",
+      "name": "David Nguyen",
+      "address": "77 Brevard St, Charlotte NC 28204",
+      "status": "active",
+      "registeredOn": "2017-08-30",
+      "county": "Mecklenburg",
+      "district": "1"
+    }
+  ]
+}

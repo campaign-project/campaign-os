@@ -1,0 +1,126 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "AK-VR",
+ "jurisdiction": "Alaska",
+ "abbr": "AK",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 34098,
+  "headline": "Art. XI Sec. 3 / AS 15.45.140(a) (same standard as the initiative, applied to referenda): 10 percent of those who voted in the preceding general election; resident in at least three-fourths of the house districts; and at least 7 percent of those who voted in the preceding general election in each of those house districts."
+ },
+ "deadline": {
+  "headline": "A referendum petition may be filed only within ninety days after adjournment of the legislative session at which the act was passed (Art. XI Sec. 5). The lieutenant governor places it on the ballot for the first statewide election held more than 180 days after adjournment of that session. (Ballotpedia 2026 deadlines: 08/18/2026 — signatures must be submitted within 90 days afte"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Art. XI Sec. 3 / AS 15.45.140(a) (same standard as the initiative, applied to referenda): 10 percent of those who voted in the preceding general election; resident in at least three-fourths of the house districts; and at least 7 percent of those who voted in the preceding general election in each of those house districts.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct (popular/veto referendum on an act passed by the legislature)"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "A referendum petition may be filed only within ninety days after adjournment of the legislative session at which the act was passed (Art. XI Sec. 5). The lieutenant governor places it on the ballot for the first statewide election held more than 180 days after adjournment of that session. (Ballotpedia 2026 deadlines: 08/18/2026 — signatures must be submitted within 90 days afte"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Resident in at least three-fourths of the house districts of the state (30 of 40 house districts), and in each of those districts at least 7 percent of those who voted in the preceding general election in that district."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Art. XI Sec. 7: the referendum shall not be applied to dedications of revenue, to appropriations, to local or special legislation, or to laws necessary for the immediate preservation of the public peace, health, or safety."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "required",
+  "operatingStance": "Per-signature pay is PERMITTED but CAPPED. AS 15.45.110(c): a circulator may not receive (and a person or organization may not pay) more than $1 per signature for the collection of signatures on a petition. AS 15.45.110(d) separately bars paying anyone to sign or refrain from signing. Violation of (c) or (d) is a class B misdemeanor (AS 15.45.110(e)). The circulator affidavit (",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "~$20 for the statewide voter list (price estimate per the U.S. EAC compilation; the Alaska Division of Elections does not publish a per-record fee schedule online and quotes/processes orders through a divisional office). Treat $20 as an estimate, not a guaranteed published figure.",
+  "whoCanObtain": "General public — Alaska voter registration records are an \"Open\" file. Names, addresses, and party affiliation are public and available to anyone who purchases the list (candidates, parties, committees, and the public alike). A voter may individually elect to keep their residential address confidential by providing a separate mailing address (AS 15.07.195(b)).",
+  "useRestrictions": "No statutory eligibility gate, but per the EAC compilation, \"even the least restrictive states prohibit the commercial use of voter file information.\" The file excludes confidential PII (DOB/age, SSN, DL number, voter ID number, place of birth, signature) under AS 15.07.195(a). Specific penalty/affidavit language for commercial-use prohibition was not located on the primary Division of Elections page during this research.",
+  "requestProcess": "Written/in-person request to a Division of Elections divisional office — NOT an instant online download. The Division's Research page states lists are \"available for purchase\" and to \"contact any divisional office for assistance.\" No public self-serve download portal for the bulk statewide file was found.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.elections.alaska.gov/research/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Constitutional text (Art. XI Secs. 1-7), statute (AS 15.45.105, .110, .130, .140, .190), and the Lt. Governor's official figures are all primary-source-grounded and mutually consistent, so the RULES are settled. HOLD is assigned only on the precise current-cycle NUMBER: the authoritative figure currently in force is 34,098 valid signatures across at least 30 of 40 house districts (10% of 2022 general election turnout; 7% per district), confirmed by the Lt. Governor's Dec. 31,"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis/distribution (constitution)",
+   "url": "https://akleg.gov/docs/pdf/Alaska_Constitution.pdf",
+   "quote": "After certification of the application, a petition containing a summary of the subject matter shall be prepared by the lieutenant governor for circulation by the sponsors. If signed by qualified voters who are equal in number to at least ten percent of those who voted in the preceding general election, who are resident in at least three-fourths of the house districts of the State, and who, in each of those house districts, are equal in number to at least seven percent of those who voted in the preceding general election in the house district, it may be filed with the lieutenant governor. [Amend 1970, 1998, and 2004]"
+  },
+  {
+   "field": "signatureBasis/deadline (statute, initiative filing window)",
+   "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-45-140/",
+   "quote": "(a) The sponsors must file the initiative petition within one year from the time the sponsors received notice from the lieutenant governor that the petitions were ready for delivery to them. The petition may be filed with the lieutenant governor only if it meets all of the following requirements: it is signed by qualified voters (1) equal in number to 10 percent of those who voted in the preceding general election; (2) resident in at least three-fourths of the house districts of the state; and (3) who, in each of the house districts described in (2) of this subsection, are equal in number to at least seven percent of those who voted in the preceding general election in the house district. (b) If the petition is not filed within the one-year period provided for in (a) of this section, the petition has no force or effect."
+  },
+  {
+   "field": "signatureRequirement (current-cycle official figure)",
+   "url": "https://ltgov.alaska.gov/newsroom/2025/12/lt-governor-nancy-dahlstrom-certifies-proper-filing-of-ballot-initiative-petition-24eseg/",
+   "quote": "After a thorough review, the Division of Elections confirmed that 42,837 qualified signatures were verified across 40 house districts, exceeding the required minimum of 34,098 qualified signatures across 30 house districts."
+  },
+  {
+   "field": "ballot placement / 120-day rule (initiative)",
+   "url": "https://ltgov.alaska.gov/newsroom/2025/12/lt-governor-nancy-dahlstrom-certifies-proper-filing-of-ballot-initiative-petition-24eseg/",
+   "quote": "the initiative will appear as a proposition on the ballot at the first statewide election held after 120 days have passed since the adjournment of the legislative session (AS 15.45.190). Practically, this means that unless the 2026 legislative session adjourns on or before April 20, 2026, or substantially similar legislation is enacted before the election, the proposition will appear on the November 3, 2026, general election ballot."
+  },
+  {
+   "field": "deadline (initiative election placement, constitution)",
+   "url": "https://akleg.gov/docs/pdf/Alaska_Constitution.pdf",
+   "quote": "An initiative petition may be filed at any time. The lieutenant governor shall prepare a ballot title and proposition summarizing the proposed law, and shall place them on the ballot for the first statewide election held more than one hundred twenty days after adjournment of the legislative session following the filing. If, before the election, substantially the same measure has been enacted, the petition is void."
+  },
+  {
+   "field": "deadline (veto referendum, constitution)",
+   "url": "https://akleg.gov/docs/pdf/Alaska_Constitution.pdf",
+   "quote": "A referendum petition may be filed only within ninety days after adjournment of the legislative session at which the act was passed. The lieutenant governor shall prepare a ballot title and proposition summarizing the act and shall place them on the ballot for the first statewide election held more than one hundred eighty days after adjournment of that session."
+  },
+  {
+   "field": "singleSubject / subject-matter restrictions (constitution)",
+   "url": "https://akleg.gov/docs/pdf/Alaska_Constitution.pdf",
+   "quote": "The initiative shall not be used to dedicate revenues, make or repeal appropriations, create courts, define the jurisdiction of courts or prescribe their rules, or enact local or special legislation. The referendum shall not be applied to dedications of revenue, to appropriations, to local or special legislation, or to laws necessary for the immediate preservation of the public peace, health, or safety."
+  },
+  {
+   "field": "circulatorResidencyRequired (statute)",
+   "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-45-105/",
+   "quote": "To circulate a petition booklet, a person shall be (1) a citizen of the United States; (2) 18 years of age or older; and (3) a resident of the state as determined under AS 15.05.020."
+  },
+  {
+   "field": "perSignaturePayAllowed (statute, $1 cap)",
+   "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-45-110/",
+   "quote": "(a) The petitions may be circulated throughout the state only in person. ... (c) A circulator may not receive payment or agree to receive payment that is greater than $1 a signature, and a person or an organization may not pay or agree to pay an amount that is greater than $1 a signature, for the collection of signatures on a petition. (d) A person or organization may not knowingly pay, offer to pay, or cause to be paid money or other valuable thing to a person to sign or refrain from signing a petition. (e) A person or organization that violates (c) or (d) of this section is guilty of a class B misdemeanor."
+  },
+  {
+   "field": "circulator affidavit / pay disclosure (statute)",
+   "url": "https://codes.findlaw.com/ak/title-15-elections/ak-st-sect-15-45-130/",
+   "quote": "Before being filed, each petition shall be certified by an affidavit by the person who personally circulated the petition. ... The affidavit must state in substance (1) that the person signing the affidavit meets the residency, age, and citizenship qualifications for circulating a petition under AS 15.45.105; (2) that the person is the only circulator of that petition; (3) that the signatures were made in the circulator's actual presence; ... (8) whether the circulator has received payment or agreed to receive payment for the collection of signatures on the petition, and, if so, the name of each person or organization that has paid or agreed to pay the circulator for collection of signatures on the petition."
+  },
+  {
+   "field": "signatureRequirement + deadlines (corroboration, Ballotpedia 2026)",
+   "url": "https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026",
+   "quote": "Alaska | IndISS | 01/20/2026 | Signatures must be submitted before the start of the legislative session | 34,098 ... Alaska | VR | 08/18/2026 | Signatures must be submitted within 90 days after the legislative session adjourns | 34,098"
+  },
+  {
+   "field": "application sponsor requirement / process (lt gov press release)",
+   "url": "https://ltgov.alaska.gov/newsroom/2025/10/lieutenant-governor-nancy-dahlstrom-certifies-application-for-ballot-initiative-25uscv/",
+   "quote": "To qualify for the ballot, the initiative must collect signatures equal to 10 percent of the votes cast in the last general election, distributed across at least three-quarters of Alaska's House districts."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

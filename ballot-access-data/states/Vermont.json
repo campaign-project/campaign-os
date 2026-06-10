@@ -1,0 +1,196 @@
+{
+  "jurisdiction": "Vermont",
+  "signaturesHeadline": "VT: 1,000 valid signatures, flat statewide, no distribution — AUTO-LIVE",
+  "deadlineHeadline": "VT deadline CONFLICT: statute/SoS say Aug 1; NASS says June — HOLD to earlier June deadline for planning",
+  "riskNote": "Signature count and capture mode are firm; the only material ballot-access risk is the deadline (two authoritative sources conflict — plan to the earlier June date) and unverified-by-omission claims (circulator eligibility) that should be confirmed with the VT SoS before relying on them.",
+  "sosInquiries": [
+    "For an INDEPENDENT presidential/VP candidate filing under 17 V.S.A. 2402(d)(1)(A), is the 2028 filing deadline 5:00 p.m. on August 1 (per 2402 and your 2024 candidate form), and NOT the 'second Thursday after the first Monday in June' deadline that the NASS July-2024 summary lists for Vermont? Please confirm the controlling deadline and statute.",
+    "Does Vermont impose ANY eligibility requirement (age, in-state residency, voter registration) on the PERSON who circulates an independent presidential nomination petition, or may a non-resident / non-registered person circulate so long as every SIGNER is a registered Vermont voter? Is there any circulator affidavit, oath, or registration step?",
+    "Is there any approved electronic or remote method to collect or submit signatures for an independent presidential nomination petition, or must all signatures be wet-ink on paper, certified by each town clerk, and physically filed at the SoS office before the deadline?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "1,000 valid signatures (flat statewide number, not a percentage), per 17 V.S.A. 2402(b)(1)(A). Only signatures certified by a town clerk as belonging to registered voters count toward the 1,000.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.97,
+      "note": "GROUNDED: 2402(b)(1)(A) '...for presidential and vice presidential offices, 1,000' verified verbatim on FindLaw; SoS 2024 form 'For President - 1,000' verified verbatim in extracted PDF text. Independently re-derived: flat statutory number, no percentage, does not recompute per cycle. Town-clerk-certification-only counting confirmed by 2402(a)(4)(B)(ii). Correct and current."
+    },
+    {
+      "field": "deadline",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "PLAN to the EARLIER of the two conflicting authorities: file no later than the second Thursday after the first Monday in June of the election year (the NASS-stated date), even though the controlling presidential-specific statute 17 V.S.A. 2402(d)(1)(A) and the VT SoS form both state 5:00 p.m. on August 1. Filing window opens the fourth Monday in April. All signatures must be town-clerk-certified BEFORE filing, so begin certification weeks earlier. Treat August 1 as the statutory backstop but do not rely on it without SoS confirmation given the documented NASS conflict.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.8,
+      "note": "GROUNDED: statute quote (2402(d)(1)(A) 'not earlier than the fourth Monday in April and not later than 5:00 p.m. on the August 1...') verified verbatim on FindLaw; SoS form 'between Monday, April 22 and 5:00 p.m. on Thursday, August 1, 2024' verified verbatim; NASS quote (June deadline) verified verbatim in NASS PDF. ADVERSARIAL: the draft correctly diagnoses that NASS conflated the independent-presidential path with the 2356/2381 minor-party/general-independent June path (NASS's own citation list is 2103,2319,2356,2381,2382,2385 — it does NOT cite 2402). Ballotpedia INDEPENDENTLY corroborates 'fourth Monday in April...no later than August 1.' So August 1 is almost certainly correct. BUT: a national SoS-association source conflicts on a deadline, no human counsel is available, and missing the true deadline forfeits ballot access while filing early costs nothing — strictest defensible posture is to plan to the earlier June date and confirm with the SoS. Note 2103(13): if the deadline falls on a weekend/holiday it extends to the next business day (Aug 1 2024 was a Thursday, so no shift that cycle); the deadline is date-defined, not a fixed weekday, so re-check the actual calendar date each cycle."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Vermont requires a flat statewide total of 1,000 signatures for President/VP with no geographic distribution requirement (no per-district or per-county minimums). Signatures may be collected anywhere in the state and need not all be on one paper (17 V.S.A. 2402(b)(2)); the only locality dimension is administrative town-clerk certification.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "GROUNDED: '(2) Signatures need not all be contained on one paper' and the flat 1,000 figure both verified verbatim on FindLaw. ADVERSARIAL: re-read all of 2402 — no subsection imposes any geographic/county/district distribution; the per-town element is purely the clerk-certification mechanism, not a distribution minimum. Correct."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Strictest posture: use only circulators who are themselves Vermont-resident REGISTERED VOTERS until the SoS confirms no circulator restriction. The grounded SIGNER rule is firm: each signer must, at the time of signing, be registered and qualified to vote for the candidate and must indicate their town of residence next to the signature (17 V.S.A. 2354(b)); any number of voters may sign and there is no limit on petitions a voter may sign (2354(a), SoS form). The draft's claim of 'no circulator-eligibility requirement' is an inference from statutory silence, not an affirmative grant, so do not rely on out-of-state or unregistered circulators without confirmation.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.7,
+      "note": "GROUNDED: 2354(b)(1)-(2) signer/town-of-residence quote verified verbatim on FindLaw; SoS form 'no restrictions on the number of petitions a voter may sign. 17 V.S.A. 2354' verified verbatim. ADVERSARIAL: the SIGNER requirements are explicit and correct. The 'no circulator requirement' conclusion rests on ABSENCE of statutory text — retrieval cannot prove a negative, and a restriction could live elsewhere in Title 17 ch. 49 or in SoS administrative guidance. Because mis-assuming out-of-state circulators are permissible could taint signatures and risk ballot access, hold to the strict interpretation and confirm with SoS."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No notarized affidavit and no circulator oath. The operative requirement is TOWN-CLERK certification: before filing, the town clerk of each town where signers appear to be voters must certify on the statement of nomination that the named signers are registered voters in that town and the total number of valid signers; only so-certified signatures count (17 V.S.A. 2402(a)(4)(B)(i)-(ii)). The candidate's statement also attests each signer is qualified and the residence shown is correct (2402(c)). Comply by routing every petition page through the relevant town clerk for certification BEFORE filing.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.92,
+      "note": "GROUNDED: 2402(a)(4)(B)(i)-(ii) town-clerk-certification quote verified verbatim on FindLaw; SoS form certification-before-filing language verified verbatim. ADVERSARIAL: the AFFIRMATIVE compliance mechanism (town-clerk pre-certification) is explicit and is itself the strict/verification-heavy posture, so the actionable requirement is firm. The 'no notary' element is an absence inference, but nothing in 2402, 2354, or the SoS form suggests an additional notary/oath; the compliance action (get town-clerk certification) is unchanged regardless. Treated as AUTO-LIVE on the affirmative requirement."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. The statement of nomination is a paper form circulated for wet-ink signatures, taken to each town clerk for certification against the voter checklist, then physically filed with the Secretary of State in Montpelier ('filed' = 'deposited in the regularly maintained office of the official', 17 V.S.A. 2103(13); a document is not filed until received at the office). No remote/online digital signature-collection system exists for an independent presidential petition; forms are print-sign-file PDFs.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "GROUNDED: SoS form certify-before-file and 'deposited in the regularly maintained office...' (2103(13)) quotes verified verbatim; 2103(13) full text independently confirmed on FindLaw (also adds the not-filed-until-received and weekend-extension rules). ADVERSARIAL: the 'no online system' element is an absence inference, but the strict/safe posture is identical to the stated value (assume paper, wet-ink, physical filing). Aligned with strict interpretation; AUTO-LIVE."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No filing fee for an independent presidential candidate and no fee-in-lieu-of-signatures option — the 1,000-signature petition (plus consent forms and three electors) is the sole ballot-access path. The $2,000 fee applies only to MAJOR-PARTY candidates seeking the presidential PRIMARY ballot, not to independent general-election candidates.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "GROUNDED: Ballotpedia quote ('...A primary candidate must also pay a $2,000 filing fee. An independent candidate...must file a petition containing the signatures of 1,000 registered voters.') verified verbatim; SoS form '1,000' requirement verified verbatim and contains no fee reference. ADVERSARIAL: 2402 imposes no fee on independents; the strict compliance action is to collect 1,000 certified signatures, which holds whether or not a fee theoretically existed, so no ballot-access risk arises from the 'no fee' conclusion. Correct; AUTO-LIVE."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "Vermont's candidate-petition statutes (17 V.S.A. §§ 2402, 2353, 2354) regulate only the signers (registered/qualified voters, town of residence) and impose NO requirements on petition circulators — there is no circulator-affirmation, no residency requirement, and crucially NO statute addressing whether circulators on an independent/presidential nominating petition may be compensated or paid per signature. Compensation of candidate-petition circulators is therefore unaddressed (not affirmatively permitted), so per-signature pay is NOT clearly authorized and falls under CONSERVATIVE-HOLD; this is distinct from any initiative/ballot-measure rule, which does not apply to candidate petitions.",
+    "sosInquiry": "For an independent candidate's presidential nominating petition (17 V.S.A. § 2402), does Vermont law permit a campaign to pay petition circulators on a per-signature basis, and are there any restrictions on paying circulators (hourly/salary) or any residency/registered-voter requirement for who may circulate the statement of nomination?",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2402/",
+        "quote": "(b)(1) To constitute a valid nomination, a statement shall contain signatures of voters qualified to vote in an election for the office in question, equal in number to at least: (A) for presidential and vice presidential offices, 1,000... (c) A statement shall state that each signer is qualified to vote in an election for the office in question and that the voter's residence is as set forth next to the voter's name."
+      },
+      {
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2354/",
+        "quote": "(a) Any number of voters may sign the same petition. (b)(1) A voter's signature shall not be valid unless at the time he or she signs, the voter is registered and qualified to vote for the candidate whose petition he or she signs. (2) Each voter shall indicate his or her town of residence next to his or her signature."
+      },
+      {
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2353/",
+        "quote": "The name of any person shall be printed upon the primary ballot as a candidate for nomination by any major political party for the office indicated, if a petition containing the requisite number of signatures made by registered voters, in substantially the following form, is filed with the proper official... and I certify that I am at the present time a registered voter and am qualified to vote for a candidate for this office."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Vermont",
+        "quote": "The relevant statutes do not stipulate any particular requirements on petition circulators."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "LOW_COST",
+    "cost": "Free (no fee). The statewide voter checklist is provided at no charge upon submission of the signed affidavit.",
+    "whoCanObtain": "Any person (\"Any person wishing to obtain a copy of all of the statewide voter checklist\"). Not limited to candidates/committees/parties — but the requester must swear/affirm permitted use. (Confidential fields are excluded for everyone; full confidential data is reserved to elections officials for elections purposes.)",
+    "useRestrictions": "Sworn, under penalty of perjury: (1) will NOT use the checklist for commercial purposes; and (2) will not knowingly disclose it to any foreign government or federal agency/commission (or persons acting for them) in circumvention of the prohibited purposes in 17 V.S.A. § 2154(b)(2) (voter registration based on the data, public disclosure of voter info, or cross-matching to other federal/state databases). Selling/licensing the data to third parties may trigger \"data broker\" registration duties under 9 V.S.A. § 2430(4)/§ 2446. Verifying petition signatures (matching signers to registered voters) is a permitted, non-commercial use.",
+    "requestProcess": "Written request via a signed, sworn affidavit/affirmation (\"Request for Electronic Copy of the Vermont Statewide Checklist\") filed with the VT Secretary of State, Elections Division. Submitted by email (sos.elections@vermont.gov) or physical mail. Not an instant online download — the requester selects either a one-time file at \"the next monthly issuing\" or enrollment on a \"monthly email list.\" Affirmation is made under penalty of perjury per 13 V.S.A. ch. 65.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://outside.vermont.gov/dept/sos/Elections_Division/voters/faq/request_electronic_copy_vermont_statewide_checklist.pdf",
+    "note": "Vermont provides the full statewide voter checklist (the official registration list) free to any requester who files a signed sworn affidavit; it is emailed as a one-time or monthly file (CSV, or .TXT on request), not an instant self-serve download. The file includes name, residential address, and party affiliation (registration status is inherent — the checklist IS the registered-voter list), while DOB month/day, DL/ID number, phone, email, and last-4 SSN are confidential and excluded — sufficient to match petition signers to registered voters.",
+    "citations": [
+      {
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/voters/faq/request_electronic_copy_vermont_statewide_checklist.pdf",
+        "quote": "Pursuant to 17 V.S.A. §2154, I request an electronic copy of the statewide checklist. I swear (or affirm) under penalty of perjury pursuant to chapter 65 of Title 13 of the Vermont Statutes that; 1. I will not use the information in the statewide checklist for commercial purposes, or 2. Knowingly disclose the checklist to any foreign government or to a federal agency or commission ..."
+      },
+      {
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/voters/faq/request_electronic_copy_vermont_statewide_checklist.pdf",
+        "quote": "Please check ONE of the below options: [ ] Email me a one-time statewide voter file at the next monthly issuing. [ ] Put me on the monthly email list. I want to receive the statewide voter file every month. [ ] Please check this box if you would like to receive the statewide voter file in .TXT format. Please return this signed form to the Vermont Secretary of State. Send via email to sos.elections@vermont.gov or physical mail to: Vermont Secretary of State; Election Division, 128 State St, Montpelier VT 05602"
+      },
+      {
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2154/",
+        "quote": "(c)(1) Any person wishing to obtain a copy of all of the statewide voter checklist must swear or affirm, under penalty of perjury pursuant to 13 V.S.A. chapter 65, that the person will not: (A) use the checklist for commercial purposes; or (B) knowingly disclose the checklist to any foreign government or to a federal agency or commission ... (2) The affirmation shall be filed with the Secretary of State."
+      },
+      {
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2154/",
+        "quote": "(b)(1) A registered voter's month and day of birth, driver's license or nondriver identification number, telephone number, e-mail address, and the last four digits of his or her Social Security number shall be kept confidential and are exempt from public inspection and copying under the Public Records Act."
+      },
+      {
+        "url": "https://sos.vermont.gov/elections/voters/voter-faqs/voter-registration-faqs",
+        "quote": "I would like to receive the Vermont Statewide Voter Checklist—is there a fee? To receive a copy of the Checklist, please complete and return the signed affidavit to the Vermont Secretary of State"
+      },
+      {
+        "url": "https://www.eac.gov/sites/default/files/voters/Available_Voter_File_Information.pdf",
+        "quote": "All voter registration information, except what is confidential. SSN, month and day of birth. Names, addresses, party affiliation."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement. Vermont's nominating-petition statute (17 V.S.A. § 2402) and the petition-form statute (§ 2353) impose qualification requirements (registered voter, qualified to vote) ONLY on the SIGNER, and contain no provision regulating the person who carries or collects the petition. There is no circulator affidavit/oath in the statute or on the official Secretary of State indep",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER must be a registered Vermont voter qualified to vote for the office (17 V.S.A. § 2402(b)(1), (c); confirmed by the form's per-signer certification), verified by each town clerk. The CIRCULATOR is not addressed anywhere in the statute or form — no age, residency, registration, citizenship, or affidavit requirement attaches to the person who collects the signatures.",
+    "gate": "AUTO-LIVE",
+    "note": "Independent presidential ballot access in Vermont is by \"statement of nomination\" under 17 V.S.A. § 2402 (1,000 signatures for President/VP). (Note: § 2702, in the Presidential Elections chapter, is the MAJOR-PARTY PRIMARY petition route — 1,000 voters + $2,000 fee — not the independent route; the independent route is § 2402.) The statute imposes its qualification requirements exclusively on SIGNERS: § 2402(b)(1) requires \"signatures of voters qualified to vote in an election for the office in q",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2402/",
+        "quote": "(b)(1) To constitute a valid nomination, a statement shall contain signatures of voters qualified to vote in an election for the office in question, equal in number to at least: (A) for presidential and vice presidential offices, 1,000"
+      },
+      {
+        "field": "signerVsCirculator",
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2402/",
+        "quote": "(c) A statement shall state that each signer is qualified to vote in an election for the office in question and that the voter's residence is as set forth next to the voter's name."
+      },
+      {
+        "field": "circulatorAgeRule (verification is by town clerk, not a circulator affidavit)",
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2402/",
+        "quote": "(a)(4)(B)(i) The original statement of nomination shall include a certification by the town clerk of each town where the signers appear to be voters that the persons whose names appear as signers of the statement are registered voters in the town and of the total number of valid signers from the town."
+      },
+      {
+        "field": "minorCanCirculate / circulatorMustBeStateResident (no circulator clause in petition-form statute, signer certification only)",
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2353/",
+        "quote": "I join in a petition to place on the primary ballot of the .......... party the name of ..........; and I certify that I am at the present time a registered voter and am qualified to vote for a candidate for this office."
+      },
+      {
+        "field": "signerVsCirculator (official 2026 SoS independent petition form — signer certification only, no circulator affidavit)",
+        "url": "https://outside.vermont.gov/dept/sos/Elections_Division/election_info_resources/candidates/2026_general_election_independent_petition_consent_financial_disclosure_statewide_general_assembly.pdf",
+        "quote": "INDEPENDENT CANDIDATES PETITION/STATEMENT OF NOMINATION ... and I certify that I am at the present time a Vermont registered voter and I am qualified to vote for a candidate for this office. SIGNATURE / PRINT NAME HERE / TOWN OF RESIDENCE"
+      },
+      {
+        "field": "note (independent presidential signature threshold = 1,000 under § 2402, filing window)",
+        "url": "https://codes.findlaw.com/vt/title-17-elections/vt-st-tit-17-sect-2402/",
+        "quote": "(d)(1) A statement of nomination and a completed and signed consent form shall be filed: (A) in the case of nomination for President or Vice President of the United States, not earlier than the fourth Monday in April and not later than 5:00 p.m. on the August 1 preceding the presidential general election"
+      }
+    ]
+  }
+}

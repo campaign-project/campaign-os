@@ -1,0 +1,189 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "TN",
+ "jurisdiction": "Tennessee",
+ "abbr": "TN",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 275,
+  "headline": "275 signatures (25 × 11 electors), statewide, no distribution — VERIFIED"
+ },
+ "deadline": {
+  "headline": "Noon CT, 3rd Thursday in August (Aug 15, 2024) — physical receipt, no postmark — VERIFIED"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "275 signatures (25 registered voters per elector × 11 electors). Signers must be registered voters anywhere in Tennessee; no per-county or per-district distribution. Candidate must also sign. Recomputes after each census-driven reapportionment of TN's electoral votes.",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "Both citations verbatim: FindLaw TCA 2-5-101(b)(1) ('twenty-five (25) or more registered voters for each elector allocated to the state'; 'must designate the full number of electors') and SOS guide ('at least two hundred seventy-five (275) voters registered anywhere within the State'). Independently corroborated by Ballotpedia (lines 98, 229: '25 voters per state elector (275 total)') and that TN was allocated 11 electoral votes in 2012/2016/2020/2024. Math 25×11=275 is current through 2030 census cycle. Per-elector formula recompute claim is correct."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "12:00 noon Central time on the third Thursday in August of the election year (Aug 15, 2024 for that cycle). Original petition plus one certified duplicate must be physically received by the deadline; a postmark does not suffice. If the deadline falls on a Saturday, Sunday, or state holiday it moves to noon on the previous business day (TCA 2-5-101(g)(2)). Recomputes each cycle.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "SOS quotes verbatim ('third Thursday in August'; 'A postmark will not suffice'). TCA 2-5-101(g)(2) text confirmed verbatim on FindLaw: deadline on Sat/Sun/state holiday moves to noon previous business day. Ballot Access News (2024-08-13) and Ballotpedia independently confirm Aug 15, 2024 and the third-Thursday rule (changed from third Tuesday in 2021). Third-Thursday-in-August derives from the general (a)(1) rule (third Thursday of third calendar month before a November election) and is stated explicitly in the SOS guide."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "No distribution requirement on petition signatures — the 275 signers may be registered voters anywhere in Tennessee. A separate distribution rule applies only to the elector slate: 11 electors total, 1 resident from each of the 9 congressional districts plus 2 at-large electors who may reside anywhere in the state.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both SOS quotes verbatim ('voters registered anywhere within the State'; '1 elector from each of Tennessee's 9 congressional districts, and 2 additional electors who may be residents of any part of the state'). The signer-vs-elector distinction is explicit in the guide, not an inference. Ballotpedia corroborates 9 congressional districts and 11 electors. Structural fact, not a contested legal interpretation."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "BLOCKED",
+   "value": "none",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Field has ZERO citations, so it cannot be grounded per gate rules. The assertion (statute/guide silent on circulator qualifications) is consistent with the full TCA 2-5-101 text I read and with the SOS guide — no circulator provision appears — but a negative claim with no supporting citation is unverifiable as drafted. Strictest posture: do NOT assume circulators are unrestricted; confirm with TN SOS before using non-resident or paid circulators. SOS inquiry added."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "As read, TCA 2-5-101 and the SOS guide impose no per-sheet witness/notary/circulator-affidavit requirement; the only signer-verification rule is that each signer include the residence address shown on the signer's voter registration card (TCA 2-5-101(b)(2)). TREAT AS UNCONFIRMED until the TN SOS confirms no notarization/oath is required, since this rests on statutory silence.",
+   "confidence": 0.78,
+   "interpretationRequired": true,
+   "note": "Cited quote is verbatim from TCA 2-5-101(b)(2) ('must include the address of the signer's residence as shown on the signer's voter registration card in order for that person's signature to be counted'). I confirmed the full statute text contains no witness/notary/affidavit provision. BUT the cited quote only establishes the signer-address rule; the 'no notary required' conclusion is an inference from statutory silence that retrieval cannot fully settle — hence held conservatively. SOS inquiry added."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Physical paper petition only: candidate picks up the petition from the Division of Elections (in person or by mail) and files the wet-ink original plus one certified duplicate by the deadline; a postmark does not suffice and faxed/emailed documents are not accepted. No remote-online or in-person-digitized e-signature system exists for this petition.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Both SOS quotes verbatim (90-day pick-up window, in person or mailed; 'A postmark will not suffice'; certified-duplicate photocopy definition). Physical-receipt requirement plus the write-in section's 'No faxed or emailed documents will be accepted' support paper-only. No e-signature pathway found in any source. Current factual matter."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. No filing fee for an independent presidential nominating petition, and no fee-in-lieu-of-signatures option. The petition signatures are the sole path to the general-election ballot.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "SOS quote 'There are no filing fees.' is verbatim; filing-location quote (note the source's own 'with with' typo) is verbatim. No fee-in-lieu provision appears in TCA 2-5-101 or the SOS guide. The 'no fee-in-lieu' claim is supported by the affirmative 'no filing fees' statement plus absence of any alternative path; uncontested."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "unknown",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Low flat fee, NOT free. Uniform pricing set by the State Election Commission (per Davidson County/Nashville Election Commission, updated Aug 4, 2025): Computer Disk = $40 setup fee (100,000 voters or less) / $75 setup fee (100,001+ voters); Computer Printouts = $30 per 1,000 voters. The full statewide file (~4.5M registrants) on disk therefore falls in the $75 setup-fee tier. The statewide list compiled by the Coordinator of Elections is \"sold at a price established by the secretary of state\" (TCA 2-2-138(e)); that statewide-specific figure is not separately published online — confirm exact amount with the Division of Elections when ordering.",
+  "whoCanObtain": "Political use only. Available to any person — but ONLY upon certifying on a state-provided form that the list \"will be used for political purposes only\" (TCA 2-2-138(e)). Candidates, campaigns, committees, and parties qualify; general commercial/non-political requesters do not. Records exclude Social Security and driver-license numbers, and \"Safe at Home\" program participants appear only by an ID number.",
+  "useRestrictions": "Political-purposes-only restriction is mandatory and is the gating condition. A false certification of permitted use is a Class B misdemeanor punishable by a $500 fine (TCA 2-2-138(d)(2)). Vendors with access to the data may use it only to service the election commission/coordinator; non-authorized vendor use is a Class B misdemeanor and grounds for decertification (TCA 2-2-138(b)(2)). The data remains the property of the county election commission and the state.",
+  "requestProcess": "Written request to the Division of Elections / State Coordinator of Elections (for the statewide list) or a county election commission (for county lists), accompanied by a signed certification/affidavit form (provided by the State Election Commission) attesting the list will be used for political purposes only, plus payment. No instant online self-service download is published on the SOS Elections site; ordering is by direct contact (e.g., Davidson County directs requesters to contact the election commission). Delivered as a non-proprietary, non-encrypted data file (disk/electronic media) or paper printout.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sos.tn.gov/elections",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — rule binds signers only. Tennessee's nominating-petition statutes (T.C.A. §§ 2-5-101, 2-5-102, 2-5-103, 2-1-107) impose no age requirement on the person who collects signatures. The statutory petition form prescribed in § 2-5-102 contains no circulator/witness affidavit, oath, or verification section at all — only the election-official issuance block, the candidate ",
+  "minorCanCirculate": "yes",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER: must be a registered voter whose residence address matches the address on their voter registration card (T.C.A. § 2-5-101(b) and § 2-1-107); for an independent presidential petition, 275 such registered voters total (25 per elector). CIRCULATOR: not defined or regulated anywhere in the petition statutes — no registration, citizenship, residency, age, or affidavit requirement; the statutory",
+  "gate": "CONSERVATIVE-HOLD",
+  "note": "Tennessee's independent presidential nominating petition requires 275 registered voters' signatures (25 per each of the 11 electors), filed by the candidate by noon on the third Thursday in August (T.C.A. § 2-5-101; SoS Qualifying Procedures). The statute and the official SoS guide are entirely SILENT on who may circulate/collect signatures. Crucially, the prescribed petition form (T.C.A. § 2-5-102) contains NO circulator affidavit, witness attestation, oath, or verification — signatures are sim",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "BLOCKED",
+  "sosInquiries": 2,
+  "riskNote": "Core ballot-access facts (275 sigs, Aug deadline, paper, no fee) are grounded and independently corroborated; two negative-fact fields (circulator eligibility, no notary) rest on statutory silence — circulator field has zero citations (BLOCKED) and notary held conservative; confirm both with TN SOS before relying on unrestricted circulators or unwitnessed pages."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-5-101/",
+   "quote": "(b)(1) Nominating petitions shall be signed by the candidate and twenty-five (25) or more registered voters who are eligible to vote to fill the office. Nominating petitions for independent presidential candidates shall be signed by the candidate and twenty-five (25) or more registered voters for each elector allocated to the state. Each independent candidate must designate the full number of electors allocated to the state."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-5-101/",
+   "quote": "(f)(1) It is unlawful for any person to qualify as a candidate in a primary election with more than one (1) political party in which such person seeks the same office. (2) It is unlawful for any person to qualify as an independent candidate and as a primary candidate for the same office in the same year."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Tennessee",
+   "quote": "The relevant statutes do not address petition circulator requirements."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Tennessee",
+   "quote": "An independent presidential candidate must petition for placement on the general election ballot. This petition must contain 275 signatures."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.ctas.tennessee.edu/eli/nominating-petitions",
+   "quote": "the nominating petition must be signed by the candidate as well as a minimum of 25 or more registered voters who are eligible to fill the office."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-2-138/",
+   "quote": "Such list, and any other voter registration information such as voter history, if compiled, shall be available for purchase for a price not to exceed the cost of production. This list shall be available to any person who certifies on a form provided by the state election commission that such list will be used for political purposes. The state election commission shall establish a uniform cost for this information."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-2-138/",
+   "quote": "Any list of registered voters compiled by the coordinator of elections shall be sold at a price established by the secretary of state. ... This list shall be available for purchase to any person who certifies on a form provided by the state election commission that such list will be used for political purposes only."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-2-138/",
+   "quote": "A false certification made pursuant to this subsection (d) is a Class B misdemeanor, punishable only by a fine of five hundred dollars ($500)."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.nashville.gov/departments/elections/candidates/order-voter-list",
+   "quote": "As required by Tennessee election law, voter registration data may be purchased for political purposes. Uniform pricing as established by the State Election Commission is as follows: Computer Disk $40.00 – computer set up fee (100,000 voters or less) $75.00 – computer set up fee (100,001 voters or more) Computer Printouts $30.00 – paper list (per 1,000 voters)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://ovr.govote.tn.gov/",
+   "quote": "Voter registration records are public records, open to inspection by any citizen of Tennessee (excluding social security and driver's license numbers)."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-5-101/",
+   "quote": "(b)(1) Nominating petitions shall be signed by the candidate and twenty-five (25) or more registered voters who are eligible to vote to fill the office. Nominating petitions for independent presidential candidates shall be signed by the candidate and twenty-five (25) or more registered voters for each elector allocated to the state. ... (2) The signer of a petition must include the address of the signer's residence as shown on the signer's voter registration card in order for that person's signature to be counted."
+  },
+  {
+   "field": "circulatorAgeRule / no circulator affidavit in prescribed form",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-5-102/",
+   "quote": "(a) Nominating petitions shall be in substantially the following form: ... This petition was issued by ____ (signature of administrator of elections, deputy or election commissioner) ... NOMINATING SIGNATURES (Must be registered voters who are eligible to vote to fill this office) Signature of Voter | Address of Residence as Shown on Voter Registration"
+  },
+  {
+   "field": "signer requirement (binds signer, not circulator)",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-1-107/",
+   "quote": "(a) Any person signing a petition required under this title, whether for nomination of a candidate, for a referendum or for any other purpose, shall include the address of such person's residence. The signer of a petition must include the address of such person's residence as shown on such person's voter registration card in order for that person's signature to be counted... (b) Any person who signed a permanent registration card shall sign any petition signed under this title"
+  },
+  {
+   "field": "no verification/witness step (officials certify, no circulator)",
+   "url": "https://codes.findlaw.com/tn/title-2-elections/tn-code-sect-2-5-103/",
+   "quote": "(a) Each independent or primary candidate for an office elected by the voters of the entire state shall file the candidate's original nominating petition in the office of the state election commission and a certified duplicate with the coordinator of elections... (b) The chair of the state election commission shall... certify to the chairs of the county election commissions the names of all candidates who have qualified under this section"
+  },
+  {
+   "field": "official SoS guide silent on circulators",
+   "url": "https://sos.tn.gov/elections/guides/qualifying-procedures-for-president-of-the-united-states",
+   "quote": "A candidate must obtain the signatures and addresses of at least two hundred seventy-five (275) voters registered anywhere within the State of Tennessee. ... The original petition and one certified duplicate must be filed by the deadline. ... The qualifying deadline to file the petition is 12:00 noon Central time on the third Thursday in August."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

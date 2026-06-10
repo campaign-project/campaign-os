@@ -1,0 +1,201 @@
+{
+  "jurisdiction": "Nebraska",
+  "signaturesHeadline": "2,500 valid signatures (flat statutory) — count grounded; signer-eligibility scope unresolved (HOLD)",
+  "deadlineHeadline": "Petition due Aug 1 of the presidential general-election year (LIVE)",
+  "riskNote": "Core figures (2,500 / Aug 1 / no distribution / no fee / paper / notarized affidavit) are grounded in current statute and consensus-confirmed; the one live risk is signer eligibility — Ballotpedia says signers must not have voted in any party primary, a condition absent from the current grounded statutory petition form (32-620.01), so confirm with the SOS before collecting.",
+  "sosInquiries": [
+    "For an independent/nonpartisan presidential nominating petition under Neb. Rev. Stat. 32-620(3), is a person eligible to sign if they voted in a 2024 party primary, or must signers be registered voters who did NOT vote in any party's primary? (The 32-620.01 form recites only registered-voter qualification; Ballotpedia states a no-primary-vote restriction.)"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "2,500 valid signatures (flat statutory number under Neb. Rev. Stat. 32-620(3)(b), not a percentage). STRICT signer-eligibility reading until SOS confirms: each signer must be a registered, qualified Nebraska voter AND (per Ballotpedia's gloss) must not have voted in any party's primary that year. Collect only from voters meeting the stricter condition and over-collect to a healthy cushion.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": true,
+      "confidence": 0.72,
+      "note": "GROUNDED: 32-620(3)(b) quote 'A petition signed by not less than two thousand five hundred registered voters' verified verbatim on FindLaw (current as of 2024-01-01); 32-620.01 signer-qualification quote verified verbatim. CONSENSUS: Ballotpedia independently confirms 2,500 registered voters for the independent general-election path. ADVERSARIAL: Ballotpedia adds that signers must be voters 'who did not vote in the primary election of any party' — a restriction ABSENT from the grounded current statutory petition form (32-620.01), which recites only registered/qualified-voter status. Could not reach the official Nebraska Legislature site (Cronet failures) or Justia (CAPTCHA) for a third primary-source confirmation, so the signer-eligibility scope is unresolved. The headline count (2,500) and type (flat statutory, not recomputed) are solid; the signer-eligibility discrepancy forces a strict HOLD on collection criteria."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "August 1 in the year of the presidential general election (for 2024 this was Thursday, August 1, 2024; no weekend/holiday adjustment). The completed application + petition must be filed with the Secretary of State by that date.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "GROUNDED: 32-620 quote 'shall be filed with the Secretary of State by August 1 in the year of the presidential general election' verified verbatim; the 60-day decline-affidavit quote (32-620(4)) also verified verbatim. CONSENSUS: Ballotpedia independently states the petition 'must be filed with the secretary of state by August 1 of the election year.' No statutory ambiguity; the date is fixed and current. Write-in path (second Friday before the election) is correctly flagged as a separate, non-applicable deadline."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. The 2,500-signature requirement is statewide with no per-congressional-district or per-county distribution/quota for the independent (nonpartisan) presidential petition; the county field on the form is identification only.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "GROUNDED: 32-620(3)(b) and the 32-620.01 form county-identification language verified verbatim — neither imposes a distribution quota. CONSENSUS/ADVERSARIAL: Ballotpedia confirms the 100-signatures-per-congressional-district rule applies to the PRIMARY-ballot petition only (party candidates), not the independent general-election petition, exactly as the draft distinguishes. No distribution requirement exists for the independent path."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Circulator must be at least 18 years of age. The statute imposes no Nebraska-residency or registered-voter requirement on the circulator; the circulator must personally witness each signature and disclose paid vs. volunteer status. (Registered-voter/residency requirements apply to signers, not the circulator.)",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "GROUNDED: 32-628(3) affidavit quote 'he or she is at least eighteen years of age, that each person whose name appears on the petition personally signed the petition in the presence of the affiant' and the 32-628(4) paid/volunteer-circulator statements verified verbatim. The grounded statutory affidavit recites ONLY the 18-years-of-age qualification for the circulator — no residency or registration clause — so the draft's value is a faithful, non-interpretive reading of the current primary text."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "NOTARIZED circulator affidavit required on every sheet bearing signatures (below the signatures), plus the boldface 'WARNING TO PETITION SIGNERS' statement above the signatures. The affidavit must be subscribed and sworn before a notary public.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "GROUNDED: 32-628(3) quotes verified verbatim — 'Every sheet of a petition which contains signatures shall have upon it, below the signatures, an affidavit' and 'Subscribed and sworn to before me, a notary public, this ______ day of _________ 20____ at_____________, Nebraska. Notary Public ___________________________'. The boldface WARNING is in 32-628(2). Notarization is unambiguous and current; a witness-only attestation is NOT sufficient."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Wet-signature paper process only: statutory sheet layout (>=2.5-inch signature space, <=20 signatures/page, lines >=1/4 inch apart), in-person circulator witnessing each signature, and a notarized per-sheet circulator affidavit. No online/e-signature system covers the Nebraska independent presidential petition; completed petition is returned to the SOS Elections Division by mail or in person.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "GROUNDED: 32-628 quotes 'Petitions shall provide for no more than twenty signatures per page' and the in-person witnessing language verified verbatim; SOS candidate page quote 'Return the completed candidate filing forms and fees to the following address: Secretary of State Attn: Elections Division PO Box 94608 Lincoln, NE 68509-4608' verified verbatim. The statutory requirements (physical layout, in-person witnessing, notarized affidavit) are incompatible with a remote-online flow, supporting 'paper' as current and correct."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No filing fee and no fee-in-lieu-of-signatures option for the independent (nonpartisan) presidential petition; the 2,500-signature petition is the sole access mechanism under 32-620(3).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "GROUNDED: 32-608(2)(a) fee-bearing-office enumeration verified verbatim — it lists U.S. Senator, state officers, Representatives in Congress, county and city/village officers, etc., and does NOT include President/Vice President; 32-620(3) signature-only requirement verified verbatim. CORROBORATION (32-621, fetched): when a new party forms after the primary, 'all candidates except candidates for President or Vice President of the United States shall pay the filing fee as provided in section 32-608' — independently confirming President/VP are fee-exempt. No fee may be substituted for signatures."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "yes",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found; paid circulators permitted, residency not required, per-signature pay only addressed in the initiative context",
+    "note": "For an independent/nonpartisan presidential nominating petition, Nebraska's candidate-petition statutes (Neb. Rev. Stat. §§32-628, 32-629, 32-630, applied via §32-617/§32-620.01) clearly PERMIT paid circulators (§32-628(4) requires a red-print \"paid circulator\" disclosure) and impose NO residency/registered-voter requirement on circulators (only age 18+ under §32-629(2)); however, those candidate-petition statutes do NOT address per-signature compensation of circulators at all — the only Nebraska authority on per-signature pay (the 2008 ban and its 2015 repeal by LB 367, plus the struck-down \"hired and salaried\" ban in former §§32-702–32-713) arises in the ballot-initiative context and does not by its terms govern candidate petitions. Per-signature pay for candidate-petition circulators is therefore unaddressed; the §32-630(3)(e)-(f) prohibitions cover paying SIGNERS, not circulators.",
+    "sosInquiry": "For an independent/nonpartisan candidate's nominating petition for President (Neb. Rev. Stat. §§32-617, 32-620.01, 32-628 to 32-630), may a campaign lawfully compensate petition circulators on a per-signature basis, and are there any restrictions on how circulators of candidate petitions may be paid or any residency requirement for them?",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/ne/chapter-32-elections/ne-rev-st-sect-32-628.html",
+        "quote": "Each sheet of a petition shall have upon its face and in plain view of persons who sign the petition a statement in letters not smaller than sixteen-point type in red print on the petition. If the petition is circulated by a paid circulator, the statement shall be as follows: This petition is circulated by a paid circulator. If the petition is circulated by a circulator who is not being paid, the statement shall be as follows: This petition is circulated by a volunteer circulator."
+      },
+      {
+        "url": "https://codes.findlaw.com/ne/chapter-32-elections/ne-rev-st-sect-32-628.html",
+        "quote": "Any person who falsely swears to a circulator's affidavit on a petition, who accepts money or other things of value for signing a petition, or who offers money or other things of value in exchange for a signature upon any petition shall be guilty of a Class IV felony."
+      },
+      {
+        "url": "https://codes.findlaw.com/ne/chapter-32-elections/ne-rev-st-sect-32-629.html",
+        "quote": "Only a person who is at least eighteen years of age shall qualify as a valid circulator of a petition and may circulate petitions. Petition circulators shall comply with section 32-630."
+      },
+      {
+        "url": "https://codes.findlaw.com/ne/chapter-32-elections/ne-rev-st-sect-32-630.html",
+        "quote": "No person shall: ... (e) Accept money or other thing of value for signing any petition; or (f) Offer money or other thing of value in exchange for a signature upon any petition."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Nebraska",
+        "quote": "To get on the general election ballot, an independent presidential candidate must file with the secretary of state a petition containing the signatures of at least 2,500 registered voters."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_Law_Update:_Nebraska_and_Wyoming_remove_bans_on_pay-per-signature",
+        "quote": "On April 7, 2015, Nebraska's unicameral legislature unanimously approved Legislative Bill 367, eliminating the state's seven-year-old ban on paying signature petition circulators based on the number of signatures collected."
+      }
+    ],
+    "initiativePrior": "permitted"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "$500 flat for the statewide Nebraska Voter Registration file (annual affidavit + fee); once paid and the affidavit is approved, you may request updated files for one full year. Payable by cash or check/money order to the Secretary of State. (A new file is generated the first day of each month.)",
+    "whoCanObtain": "Any requester who completes and signs the affidavit (Public Service Request Form) attesting to a permitted use. Not open-access/instant download to the general public — the file is gated behind a sworn permitted-use affidavit and the $500 fee, and use is limited to elections, political activities, voter registration, law enforcement, and jury selection.",
+    "useRestrictions": "Permitted uses only: elections, political activities, voter registration, law enforcement, jury selection. The file \"shall not be posted, displayed, or used for commercial purposes or made accessible on the Internet.\" Recipient must disclose any security breach of the stored data to the Secretary of State without delay. Verifying petition signatures (matching signers to registered voters) is a permitted election/political-activity use.",
+    "requestProcess": "Application/affidavit + approval + payment. Complete the \"Public Service Request Form for the Nebraska Central Voter Registration System\" (voter-file-affidavit.pdf), submit it to the Elections Division with the $500 fee; upon payment and approval of the affidavit you may request the file (refreshed monthly) for one year. Submit to: Nebraska Secretary of State Elections Division, sos.elect@nebraska.gov / 402-471-2555 / P.O. Box 94608, Lincoln, NE 68509-4608.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://sos.nebraska.gov/elections/voter-file-requests",
+    "note": "Nebraska sells the full statewide voter registration file for a flat $500 via an annual sworn-affidavit process through the Secretary of State Elections Division; it is not a free or instant public download. The standard file includes Name, Residential address, Mailing address, Registration status, Voter ID, party affiliation, and voter history — covering everything needed to verify petition signers (name + residential address + registration status).",
+    "citations": [
+      {
+        "url": "https://sos.nebraska.gov/elections/voter-file-requests",
+        "quote": "The Nebraska Voter Registration file can be requested from our office by completing the Public Service Request Form for the Nebraska Central Voter Registration System."
+      },
+      {
+        "url": "https://sos.nebraska.gov/elections/voter-file-requests",
+        "quote": "The cost of the file is $500 and can be purchased with cash or a check/money order made out to the Secretary of State."
+      },
+      {
+        "url": "https://sos.nebraska.gov/elections/voter-file-requests",
+        "quote": "It is our practice to request a new voter file affidavit and fee annually. Upon payment of the fee and approval of the voter file affidavit, you may request an updated file at any time for one full year. We run a new file on the first day of each month."
+      },
+      {
+        "url": "https://sos.nebraska.gov/elections/voter-file-requests",
+        "quote": "The file shall contain all relevant registrant information limited to: Name, Residential address, Mailing address, Phone number, Registration status, Voter ID, Birth year, Date of voter registration, Precinct, Polling place, Party affiliation, District details, Voter history"
+      },
+      {
+        "url": "https://sos.nebraska.gov/elections/voter-file-requests",
+        "quote": "The file shall be used solely for the purposes related to: Elections, Political activities, Voter registration, Law enforcement, Jury selection"
+      },
+      {
+        "url": "https://sos.nebraska.gov/elections/voter-file-requests",
+        "quote": "The file shall not be posted, displayed, or used for commercial purposes or made accessible on the Internet."
+      },
+      {
+        "url": "https://sos.nebraska.gov/elections/voter-file-requests",
+        "quote": "Any person who acquires a list of registered voters shall, following discovery or notification of a breach in the security of the storage of the information, disclose the breach in security to the Secretary of State without delay."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 18,
+    "ageRule": "Circulators must be at least eighteen (18) years of age. This is set affirmatively by the statutory circulator's affidavit in Neb. Rev. Stat. 32-628(3), which the circulator must swear to: the circulator \"deposes and says... that he or she is at least eighteen years of age.\" The 2026 NE Secretary of State Candidate Filing Guide restates it as a hard rule: \"Circulators must be at least eighteen yea",
+    "minorCanCirculate": "no",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "unknown",
+    "stateResidentRequired": "unknown",
+    "signerVsCirculator": "Registered-voter requirement binds the SIGNER only: Neb. Rev. Stat. 32-630(3)(c) prohibits a person from signing \"if he or she is not a registered voter and qualified to sign,\" and the SoS guide says \"The signer must be registered to vote on or before the date the petition is filed.\" The CIRCULATOR's only statutory eligibility requirement is age 18+ (plus duties: personally witness each signature,",
+    "gate": "AUTO-LIVE",
+    "note": "For an independent presidential petition, the petition must contain 2,500 signatures of registered voters who did not vote in any party primary (Neb. Rev. Stat. 32-624/Ballotpedia), filed with the Secretary of State by Aug. 1 (general-petition rules in Ch. 32, Art. 6 apply). The ONLY affirmative eligibility requirement Nebraska places on the CIRCULATOR is being at least 18 years old (Neb. Rev. Stat. 32-628(3), restated in the SoS guide). The circulator must also (i) personally witness every sign",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+        "url": "https://codes.findlaw.com/ne/chapter-32-elections/ne-rev-st-sect-32-630/",
+        "quote": "(2) Each circulator of a petition shall personally witness the signatures on the petition and shall sign the circulator's affidavit. (3) No person shall: ... (c) Sign a petition if he or she is not a registered voter and qualified to sign the same except as provided in subdivision (1) of section 32-629"
+      },
+      {
+        "field": "circulatorMinAge / circulatorAgeRule",
+        "url": "https://codes.findlaw.com/ne/chapter-32-elections/ne-rev-st-sect-32-628/",
+        "quote": "________________, (name of circulator) being first duly sworn, deposes and says that he or she is the circulator of this petition containing ____ signatures, that he or she is at least eighteen years of age, that each person whose name appears on the petition personally signed the petition in the presence of the affiant ... and that the affiant stated to each signer the object of the petition as printed on the petition before he or she affixed his or her signature to the petition. ... Subscribed and sworn to before me, a notary public"
+      },
+      {
+        "field": "circulator paid/volunteer disclosure",
+        "url": "https://codes.findlaw.com/ne/chapter-32-elections/ne-rev-st-sect-32-628/",
+        "quote": "(4) Each sheet of a petition shall have upon its face ... If the petition is circulated by a paid circulator, the statement shall be as follows: This petition is circulated by a paid circulator. If the petition is circulated by a circulator who is not being paid, the statement shall be as follows: This petition is circulated by a volunteer circulator."
+      },
+      {
+        "field": "circulatorMinAge / minorCanCirculate (official SoS guide)",
+        "url": "https://sos.nebraska.gov/sites/default/files/doc/elections/Candidates/Candidate_Filing_Guide.pdf",
+        "quote": "Rules for circulators of petition forms are as follows: 1. Circulators must be at least eighteen years of age. 2. Circulators must witness each signature added to the petition they are circulating... they also must sign an oath attesting to the fact that they did this. ... 5. When the circulator is finished collecting signatures on the petition form, they must sign the oath on the form in the presence of a notary public. ... Rules for signers of petition forms are as follows: 1. The signer must be registered to vote on or before the date the petition is filed with the Secretary of State's office."
+      },
+      {
+        "field": "signer requirement (independent presidential petition)",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Nebraska",
+        "quote": "An independent presidential candidate must petition for access to the general election ballot. The petition must be filed with the secretary of state by August 1 of the election year and must contain the signatures of 2,500 registered voters who did not vote in the primary election of any party."
+      }
+    ]
+  }
+}

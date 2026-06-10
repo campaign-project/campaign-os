@@ -1,0 +1,199 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "CA",
+ "jurisdiction": "California",
+ "abbr": "CA",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 219403,
+  "headline": "CA: 219,403 valid sigs (1% of statewide reg.); independent pres. qualifies via slate of 54 electors. AUTO-LIVE."
+ },
+ "deadline": {
+  "headline": "CA: nomination papers due 5:00pm Aug 9, 2024 (E-88); circulate from Apr 26, 2024 (E-193). AUTO-LIVE."
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "219,403 valid signatures for the 2024 cycle, equal to 1% of statewide voter registration as of the last Report of Registration prior to the November 2022 General Election; recomputes each presidential cycle. No direct independent presidential line — the candidate qualifies by nominating a slate of 54 presidential electors (plus 54 alternates) via independent nomination, with the nomination papers carrying the signatures. Cal. Elections Code 8400, 8303, 8550; 2187(c)(6).",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "All three quotes verbatim in sources. SoS PDF states '219,403... (equivalent to 1%... prior to the November 2022 General Election)' and the 54-elector qualification path. ELEC 8400 independently confirms 1% of registered voters for statewide office; Ballotpedia independently confirms 219,403 and '1% of the total number of registered voters in the state' for 2024 independent presidential. Path-via-electors framing is correct."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "For the Nov 5, 2024 General Election: nomination papers circulate from Apr 26, 2024 (E-193) and must be delivered to the county elections official no later than 5:00 p.m. on Aug 9, 2024 (E-88); electors' Declarations of Candidacy also due 5:00 p.m. Aug 9, 2024 (E-88). Statutory rule: 88 days before the general election; recomputes per cycle. Cal. Elections Code 8403(a)(2), 8550.",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "SoS quotes verbatim. ELEC 8403(a)(2) independently confirms: for offices with no filing fee, papers circulated/delivered to county no earlier than 193 days and no later than 5 p.m. 88 days before the election. Ballotpedia confirms 8/9/2024 deadline and '5:00 p.m. 88 days prior to the election.'"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. The 1% requirement is a single statewide total; there is no per-congressional-district or per-county distribution requirement for the independent presidential (presidential elector) nomination. Signatures are gathered and delivered county-by-county to the county where signers reside for verification, but no minimum-per-county quota applies.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Quotes verbatim. ELEC 8400 sets a single statewide 1% number for statewide office with no geographic-distribution clause; ELEC 8403(c) addresses only a void-if-insufficient mechanism and per-county delivery for verification, not a per-county minimum. No distribution rule found in primary law."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Circulators must be 18 years of age or older (Cal. Elections Code 102, 8451). The strictest reliable statement of eligibility is the age-18 requirement only. A registered voter who is a candidate may circulate and sign their own nomination papers (106(a)). Do NOT rely on a 'circulator must be a registered California voter' requirement — it is not supported by 102/8451; confirm any residency/registration condition with the SoS before screening circulators.",
+   "confidence": 0.9,
+   "interpretationRequired": true,
+   "note": "The grounded SoS quote supports ONLY age 18+. The draft's added claim that circulators 'must be registered voters of California (per 102/8451)' is contradicted by the actual statutes: ELEC 102 reads 'A person shall not circulate... unless the person is 18 years of age or older' and ELEC 8451 says 'Circulators shall meet the requirements of Section 102' — neither imposes a voter-registration requirement (ELEC 104(b)(3) likewise lists only age 18+ for the circulator declaration). Holding because the value asserts an unsupported, stricter-than-law requirement; relied value corrected to the defensible age-18 floor."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "No notarization is required. Each section of the nomination paper must carry a circulator declaration signed in the circulator's own hand, certified under penalty of perjury (Cal. Elections Code 104); there is no notary/affidavit-before-officer requirement. All signers must be registered California voters (100, 8400), and signed papers are delivered to the county elections official where signers reside for verification before forwarding to the Secretary of State.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Both quotes verbatim. SoS summary specifies no notary. ELEC 104 independently confirms the integrity mechanism is a circulator declaration 'under penalty of perjury under the laws of the State of California' — not notarization. Draft's core 'no notarization' conclusion is correct (draft does not name 104 but asserts nothing false)."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Signatures are collected on physical nomination papers circulated to registered voters and delivered to county elections officials for verification. There is no remote-online or digitized signature system for the independent presidential (presidential elector) petition in California; the SoS Summary describes only paper nomination papers and Declarations of Candidacy filed by mail, in-person drop box, or at a county elections office.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Both quotes verbatim in the SoS PDF. SoS process is entirely physical circulation/delivery; ELEC 8400/8403 contemplate paper nomination papers. No e-signature path exists for this petition."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. No filing fee is required to file the nomination papers, and California provides no fee-in-lieu-of-signatures alternative for the independent presidential (presidential elector) nomination — the signature petition is the sole path.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Quote verbatim: SoS PDF 'No filing fee is required from any person in order to file nomination papers.' Ballotpedia 2024 table lists filing fee 'N/A' for CA independent presidential. The no-fee/no-fee-in-lieu framing is consistent (the no-fee status is precisely why the longer E-193 circulation window in 8403(a)(2) applies)."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$100 flat application fee for the statewide voter registration information file (one price for the whole state, regardless of record count). Single-voter records (≤10) are $30.00/record up to a $100 max. County-specific files vary by county.",
+  "whoCanObtain": "Eligibility-gated, NOT general public. Per the SoS: \"any candidate for federal, state, or local office, any committee for or against any initiative or referendum measure for which legal publication is made, any person for election, scholarly, journalistic, or political purposes, and any person for governmental purposes, as determined by the Secretary of State.\" A petition-signature-verification campaign/committee qualifies under the election/political-purpose and candidate/committee categories.",
+  "useRestrictions": "Strong. Use is limited to permitted (election/political/scholarly/journalistic/governmental) purposes only; commercial use is prohibited. Misuse is a crime: Elections Code 18109(a) makes it \"a misdemeanor for a person in possession of information ... obtained pursuant to Article 5 ... knowingly to use or permit the use of all or any part of that information for any purpose other than as permitted by law,\" and 18109(b) makes obtaining/using the data without first complying with the application requirements of 2188 a misdemeanor. The application must state intended use and is certified \"under penalty of perjury.\" Confidential-voter (Safe at Home, etc.) records are excluded entirely.",
+  "requestProcess": "Application form + approval (not an instant download). Submit the \"California Voter Registration File Request\" application (PDF) to the SoS. Elections Code 2188 requires a signed application stating the requestor's name, residence/business address, ID number, the specific information requested, and a statement of intended use, certified \"under penalty of perjury.\" SoS reviews to confirm the use is legally permitted: \"requests can take 7-14 business days to review and process.\" No refunds once sent.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sos.ca.gov/elections/voter-registration/voter-registration-information-file-request",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "The circulator must be 18 or older. The Circulator's Affidavit prescribed by Cal. Elec. Code § 8409 (the form for an independent nomination paper, which governs independent presidential candidates via the presidential-elector nomination process in § 8300/§ 8304) requires the circulator to \"solemnly swear (or affirm) all of the following: 1. That I am 18 years of age or older.\" A person under 18 ma",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "unknown",
+  "signerVsCirculator": "SIGNER: must be a registered \"voter of the County\" (§ 8409 signer's statement); the 1% statewide signature threshold runs on registered voters (§ 8400). CIRCULATOR: only 18+, a stated residence address, and an eyewitness to the signing (§ 8409 circulator's affidavit) — no registration requirement.",
+  "gate": "AUTO-LIVE",
+  "note": "Independent presidential candidates in California are nominated through a group of candidates for presidential electors under Elec. Code Division 8, Part 2, Chapter 3 (§ 8300 et seq.); § 8300 expressly covers \"presidential elector,\" and § 8304 ties the elector group to the presidential/VP names on the ballot. The nomination paper and its Circulator's Affidavit are prescribed by § 8409. That affidavit requires the circulator to swear ONLY: (1) \"That I am 18 years of age or older,\" (2) a residence",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "6 of 7 fields verified live; only circulatorEligibility is held — draft's \"circulators must be registered CA voters\" is NOT supported by ELEC 102/8451 (age 18+ is the only requirement), so do not rely on a voter-registration screen for circulators."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=ELEC&division=8.&title=&part=2.&chapter=4.&article=",
+   "quote": "CHAPTER 4. Circulators [8451 - 8454] ... 8451. Circulators shall meet the requirements of Section 102. ... 8452. A county elections official or a deputy county elections official may not circulate nomination papers, and circulators shall not obtain signatures within 100 feet of any election booth or polling place. ... 8454. (a) Circulators obtaining signatures to the nomination paper of any candidate may, at any time not more than 148 nor less than 88 days prior to the election, obtain signatures to the nomination paper of the candidate. (b) Circulators obtaining signatures to the nomination paper of any candidate for presidential elector may, at any time not more than 193 nor less than 88 days prior to the election, obtain signatures to the nomination paper of the candidate."
+  },
+  {
+   "field": "compensation",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=102.",
+   "quote": "102. A person shall not circulate a state or local initiative, referendum, or recall petition or nominating paper unless the person is 18 years of age or older."
+  },
+  {
+   "field": "compensation",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=ELEC&division=0.5.&title=&part=&chapter=2.&article=",
+   "quote": "101. (a) ... (3) \"THIS PETITION MAY BE CIRCULATED BY A PAID SIGNATURE GATHERER OR A VOLUNTEER. YOU HAVE THE RIGHT TO ASK.\" ... [This paid-gatherer disclosure requirement, like the Official Top Funders rules in Section 107, applies only to a \"state or local initiative, referendum, or recall petition\" and is not extended to candidate nominating papers.] ... 106. (b) Any person engaged in obtaining signatures to the nomination papers of a candidate for any office or to any recall, initiative or referendum petition, may, if otherwise qualified to sign the papers or petition, sign the papers or petition."
+  },
+  {
+   "field": "compensation",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=9021.",
+   "quote": "DIVISION 9. MEASURES SUBMITTED TO THE VOTERS [9000 - 9611] ... 9021. (a) A person who meets the requirements of Section 102 may circulate a statewide initiative or referendum petition anywhere within the state. ... [This is the initiative/referendum statute Ballotpedia cites for California's \"pay-per-signature permitted\" status; it governs ballot measures, not candidate nominating papers.]"
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Pay-per-signature",
+   "quote": "California | Permitted | California Election Code, Section 9021 ... California Senate Bill 660 (Vetoed): The legislation would have banned paying signature gatherers based on the number of signatures collected. Gov. Gavin Newsom (D) vetoed [it]. ... California Assembly Bill 1451 (Vetoed) ... California Assembly Bill 1947 (Vetoed): ... The legislation would have banned paying signature gatherers based on the number of signatures collected."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.ca.gov/elections/voter-registration/voter-registration-information-file-request",
+   "quote": "A qualified requestor can request the statewide voter registration information file from the Secretary of State. This file contains voter registration data for all California voters. ... The application fee for a statewide voter registration information file is $100."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.ca.gov/elections/voter-registration/voter-registration-information-file-request",
+   "quote": "State law allows the following individuals or groups of individuals to access, with some exceptions*, voter registration information: any candidate for federal, state, or local office, any committee for or against any initiative or referendum measure for which legal publication is made, any person for election, scholarly, journalistic, or political purposes, and any person for governmental purposes, as determined by the Secretary of State."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.ca.gov/elections/voter-registration/voter-registration-information-file-request",
+   "quote": "Voter Registration Data File (Voter File): The following information is contained in this file: the voter' name, date of birth, registration date, residential and mailing address, precinct, contact information, and political party preference. This file is always included for an approved request. Data on active voters is automatically included in this file. Data on inactive voters must be specifically requested on the application."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.ca.gov/elections/voter-registration/voter-registration-information-file-request",
+   "quote": "Once received, requests can take 7-14 business days to review and process. The Secretary of State will determine whether the application is complete and whether state law permits the proposed use of the voter registration information."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=2188.",
+   "quote": "(b) The application shall set forth all of the following: ... (6) A statement of the intended use of the information requested. ... (e) The applicant shall certify to the truth and correctness of the content of the application, under penalty of perjury, with the signature of his or her name at length"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=18109.",
+   "quote": "(a) It is a misdemeanor for a person in possession of information ... obtained pursuant to Article 5 (commencing with Section 2183) of Chapter 2 of Division 2 of this code or Section 7924.000 of the Government Code, knowingly to use or permit the use of all or any part of that information for any purpose other than as permitted by law."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / minorCanCirculate",
+   "url": "https://california.public.law/codes/elections_code_section_8409",
+   "quote": "CIRCULATOR'S AFFIDAVIT — I, ________, solemnly swear (or affirm) all of the following: 1. That I am 18 years of age or older. 2. That my residence address, including street and number, is ___. ... 3. That I secured signatures in the County of ______ to the nomination paper of ________ as candidate for the office of ______; ... that I saw all the signatures on this section of the nomination paper being signed and that, to the best of my information and belief, each signature is the genuine signature of the person whose name it purports to be."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter (signer vs circulator distinction)",
+   "url": "https://california.public.law/codes/elections_code_section_8409",
+   "quote": "SIGNER'S STATEMENT — I, undersigned, am a voter of the County of ______, State of California. I hereby nominate __________ ... as a candidate for the office of _______ to be voted for at the election ... I have not signed the nomination paper of any other candidate for the same office."
+  },
+  {
+   "field": "jurisdiction / applies to independent presidential candidates",
+   "url": "https://california.public.law/codes/elections_code_section_8300",
+   "quote": "A candidate for a partisan office, including that of presidential elector, may be nominated subsequent to, or by other means than, a primary election pursuant to this chapter."
+  },
+  {
+   "field": "presidential-elector group ties to president/VP on ballot",
+   "url": "https://california.public.law/codes/elections_code_section_8304",
+   "quote": "When a group of candidates for presidential electors designates the presidential and vice presidential candidates for whom all of the group pledge themselves to vote, the names of the presidential candidate and vice presidential candidate designated by that group shall be printed on the ballot pursuant to Chapter 2 (commencing with Section 13100) of Division 13."
+  },
+  {
+   "field": "signer requirement / signature threshold binds voters",
+   "url": "https://law.onecle.com/california/elections/8400.html",
+   "quote": "Nomination papers for a statewide office for which the candidate is to be nominated shall be signed by voters of the state equal to not less in number than 1 percent of the entire number of registered voters of the state at the time of the close of registration prior to the preceding general election."
+  },
+  {
+   "field": "circulator affidavit notarization (no registration gate)",
+   "url": "https://law.onecle.com/california/elections/8407.html",
+   "quote": "The affidavit of any circulator obtaining signatures under this chapter shall be verified free of charge by any officer authorized to administer oaths."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

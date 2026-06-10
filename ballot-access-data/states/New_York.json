@@ -1,0 +1,188 @@
+{
+  "jurisdiction": "New York",
+  "signaturesHeadline": "45,000 valid signatures (statutory cap; 1% of 2022 gov vote = 59,123, so 45,000 controls). 500 from each of half the CDs. Collect a large buffer.",
+  "deadlineHeadline": "RECOMPUTE PER CYCLE: file 23 weeks before Election Day (was May 28, 2024). 2028 date NOT yet live — do not rely on the 2024 date.",
+  "riskNote": "3 of 7 fields on CONSERVATIVE-HOLD: deadline is a stale 2024 date that must be recomputed for the live cycle; circulator eligibility relies on a court injunction (use NY-registered witnesses to be safe); fee-alternative is an unverified absence claim. Core signature/distribution/capture/witness rules are AUTO-LIVE.",
+  "sosInquiries": [
+    "For an independent presidential nominating petition in the upcoming presidential cycle, what is the exact first and last day to file the petition with the State Board of Elections (the 24-week / 23-week window dates), and the exact deadline for each candidate's certificate of acceptance?",
+    "Is there any filing fee, bond, or other alternative to the 45,000-signature independent nominating petition for a presidential candidate, or is ballot access for an independent presidential candidate available by petition only?",
+    "Is the Schmidt v. Kosinski permanent injunction (allowing non-registered/non-resident U.S.-citizen petition witnesses to sign the appended statement) still in full effect for the upcoming cycle, and will signatures witnessed under it be accepted without challenge?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "45,000 valid signatures, OR 1% of the total votes (excluding blank/void) cast for Governor at the last gubernatorial election, whichever is less. 45,000 is the operative cap: 1% of the 2022 gubernatorial vote (5,912,286 total) = 59,123, which exceeds 45,000, so 45,000 controls for the 2024 cycle. Collected by an independent body on a single statewide independent nominating petition naming the presidential/VP candidates and the slate of electors. Recomputes each cycle.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.96,
+      "note": "Citations verbatim at ELN 6-142, SBOE running-president, and ballot-access.org. Independently re-derived: 1% of 5,912,286 (2022 NY gov total, Hochul 3,140,415 + Zeldin 2,762,581 + minor) = 59,122.86 > 45,000, so the 'whichever is less' clause yields 45,000. Confirmed correct and current for 2024; will remain 45,000 unless gubernatorial turnout falls below ~4.5M. Strict guidance: collect a wide buffer (Diane Sare filed 70,000 for the 45,000 requirement)."
+    },
+    {
+      "field": "deadline",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Statutory rule (ELN 6-158(9)): an independent nominating petition for an office filled at the general election must be filed not earlier than 24 weeks and not later than 23 weeks preceding the election. STRICTEST READING: treat the 23-weeks-before-Election-Day Tuesday as the hard filing deadline. For 2024 that was May 28, 2024; for any future presidential cycle this MUST be recomputed and confirmed with the SBOE before relying on it. Each named candidate (incl. president/VP) must file an acknowledged certificate of acceptance no later than the 3rd day after the last day to file the petition. EL 1-106 weekend/holiday rollover may apply.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "All citations verbatim (ELN 6-158(9), SBOE running-president acceptance rule, ballot-access.org May 28 corroboration). Date arithmetic independently confirmed: Nov 5, 2024 minus 23 weeks = Tue May 28, 2024 (= 23rd Tuesday preceding); minus 24 weeks = May 21, 2024. HOLD because the value is a PAST 2024-cycle date and the rule recomputes each cycle — the live actionable deadline for the next presidential election is not yet established and must be recomputed/confirmed. Over-comply: do not let a candidate rely on the stale 2024 date."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Yes - a congressional-district distribution requirement applies. At least 500 signatures, OR 1% of enrolled voters (whichever is less), must come from each of one-half of the state's congressional districts (i.e., from at least half of NY's congressional districts). In practice 500 per district controls, since 1% of enrolled voters in any CD far exceeds 500.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "Verbatim at ELN 6-142(1) and SBOE running-president. Independently confirmed: 1% of enrolled voters per CD vastly exceeds 500, so 500 is the binding per-district minimum across at least half the CDs. Current and correct."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "STRICTEST DEFENSIBLE: use witnesses who are duly qualified (registered) New York voters who have not previously signed a petition for another candidate for the same office. (Signers must themselves be NY registered voters qualified to vote for the office who have not signed a designating petition for it.) The Schmidt v. Kosinski permanent injunction (EDNY) expands eligibility to non-registered/non-resident U.S. citizens who sign the special appended statement, and the SBOE currently publishes this expansion - but a campaign should NOT bet ballot access on the injunction; default to registered-NY-voter witnesses.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.85,
+      "note": "Base rule grounded verbatim at ELN 6-140(1)(b); the Schmidt expansion grounded verbatim at SBOE petition-information and running-president pages (SBOE itself states the witness requirements 'have changed' pursuant to the injunction). HOLD because correctness of the EXPANDED rule hinges on the continued force of a court injunction that retrieval cannot guarantee for a future cycle; the over-comply posture for ballot access is to rely only on the base statutory witness rule. SOS inquiry added to confirm the injunction's continued effect."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Each petition sheet requires a signed Statement of Witness by a qualified witness, accepted for all purposes as the equivalent of an affidavit and carrying perjury penalties (ELN 6-140(1)(b)). In lieu of the witness statement, the sheet may instead bear a notarial acknowledgment signed by a notary public or commissioner of deeds who swore each signer (ELN 6-140(2)). A non-resident/non-registered witness (per Schmidt v. Kosinski) uses a special appended statement instead. No separate notarization is required when a qualified witness signs.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.94,
+      "note": "Both quotes verbatim in ELN 6-140 (the witness-affidavit-equivalent clause and the 'In lieu of the signed statement of a witness... notary public or commissioner of deeds shall be accepted' clause). Stable statutory text; current and correct. The witness-OR-notary alternative is squarely on the face of the statute."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Petitions must be on paper, signed in ink, and circulated by hand; the State Board of Elections expressly states electronic signatures are not acceptable. No digital/online petition system covers an independent presidential nominating petition in New York.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.96,
+      "note": "Verbatim at SBOE petition-information ('These forms can be printed and filled out by hand. Electronic signatures are not acceptable.') and ELN 6-140(1)(a) ('Each sheet... shall be signed in ink'). Current and correct; no e-signature path exists."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Treat ballot access as petition-only. Assume NO filing-fee, bond, or other alternative to the 45,000-signature independent nominating petition exists for an independent presidential candidate; do not rely on any fee shortcut. (Confirm absence directly with the SBOE.)",
+      "grounded": false,
+      "interpretationRequired": true,
+      "agree": true,
+      "confidence": 0.7,
+      "note": "The cited running-president quote describes petition CONTENTS, not fees - it does not state 'no fee alternative,' so the value's core assertion ('None') is NOT grounded by the quote provided; it is an absence/negative inference. The conclusion is very likely correct (NY independent presidential access is petition-only with no statutory fee-in-lieu), but a negative cannot be verified verbatim from the supplied citation. HOLD and confirm with SBOE. The strict posture (petition-only) is conservative regardless."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "AUTO-LIVE",
+    "perSignatureAllowed": "no",
+    "paidCirculatorsAllowed": "yes",
+    "circulatorResidency": "required",
+    "payMethod": "hourly-only",
+    "operatingStance": "NO per-signature (prohibited) — pay hourly/bonus; advocate to legalize",
+    "model": "per-signature prohibited (candidate/independent petitions) — hourly/salary OK; circulator must be NY voter",
+    "note": "Candidate-petition compensation IS specifically addressed. NY Election Law 17-122(4) makes it a misdemeanor to pay circulators for procuring signatures on \"an independent nominating petition for public office\" on a per-name basis or at a fixed amount per name, and 17-122(5) criminalizes even representing such per-name pay; paying circulators by hourly/salary/flat fee is not prohibited. Separately, 6-140(1)(b) requires each petition sheet to be witnessed by \"a duly qualified voter of the State of New York\" (or a NY notary/commissioner of deeds), so circulators must be NY voters and a non-resident national paid pool could not validly witness presidential independent petitions.",
+    "sosInquiry": "For an independent (unaffiliated) candidate's nominating petition for President of the United States in New York, does Election Law 17-122 prohibit paying petition circulators per signature, and is paying circulators on an hourly or salaried basis (with non-per-name bonuses) permitted? Also, must the subscribing witness/circulator be a duly qualified New York voter under 6-140?",
+    "citations": [
+      {
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/17-122",
+        "quote": "Any person who: ... 4. Pays or agrees to pay money or other valuable consideration, to any person for his services in canvassing for or otherwise procuring the signatures of voters to a petition for the designation of a candidate or candidates for party nomination or for election to a party position to be voted for at a primary election, or to a petition for opportunity to ballot at a primary election, or to an independent nominating petition for public office, upon the basis of the number of names to such petition procured by such person, or at a fixed amount per name; or, 5. Represents to any person as an inducement for signing ... an independent nominating petition for public office, that the person soliciting such signature is to be compensated upon the basis of the number of names procured by such a person, or at a fixed amount per name; ... is guilty of a misdemeanor."
+      },
+      {
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/6-140",
+        "quote": "There shall be appended at the bottom of each sheet a signed statement of a witness who is a duly qualified voter of the state and who has not previously signed a petition for another candidate for the same office. ... I, ...... (name of witness) state: I am a duly qualified voter of the State of New York and now reside at ......... (residence address). Each of the individuals whose names are subscribed to this petition sheet ... subscribed the same in my presence on the dates above indicated"
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "No per-record price published. FOIL paper copies are $0.25/page; statutory printed registration lists are \"sold at a charge not exceeding the cost of publication\" (Election Law 5-602(3)). The electronic statewide voter data file is provided in response to the FOIL request; obtain a quote — historically a nominal/low fee. Treat as varies — request quote.",
+    "whoCanObtain": "Effectively restricted to election-related users. Any requester may ask, but the request must certify an \"elections purpose\" under Election Law 3-103(5); the SBOE notes this is read broadly to include \"campaigning, voter outreach, fundraising and academic research.\" Petition signature verification by a candidate/committee clearly qualifies.",
+    "useRestrictions": "Election Law 3-103(5): information derived from voter registration records \"shall not be used for non-election purposes.\" Requester must affirm election-purpose use; non-election use (e.g. commercial solicitation) is prohibited.",
+    "requestProcess": "Written FOIL request submitted via the SBOE GovQA \"FOIL Access Center\" portal to the Records Access Officer (Director of Public Information). The request must include a written statement that the data will be used for an \"elections purpose\" in compliance with Election Law 3-103(5). Statewide file delivered as a zipped ASCII comma-delimited file with a file layout. Agency must respond within 5 business days.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://elections.ny.gov/freedom-information-law-foil-requests",
+    "note": "New York does not offer an instant public download of the statewide voter file; it is obtained from the NYS Board of Elections via a written FOIL request that certifies an \"elections purpose\" per Election Law 3-103(5). The full statewide file (millions of records, ASCII comma-delimited with name, residence address, and registration/enrollment status) is sufficient to match and verify petition signers, but pricing for the electronic file is not published online — request a quote.",
+    "citations": [
+      {
+        "url": "https://elections.ny.gov/freedom-information-law-foil-requests",
+        "quote": "New York State Election Law Sec 3-103(5) prohibits using information derived from voter registration records for non-election purposes. When submitting a request for voter registration data it must include a statement that the information requested will be used for an “elections purpose” in compliance with New York State Election Law Section 3-103(5). (An “elections purpose” has traditionally been interpreted broadly and among other things includes, campaigning, voter outreach, fundraising and academic research.)"
+      },
+      {
+        "url": "https://elections.ny.gov/freedom-information-law-foil-requests",
+        "quote": "Statewide and multidistrict files contain a large number of records - the entire state exceeds millions of records - requesters must have software capable of handling very large files. The file will be provided in ASCII, comma delimited format and a file layout will be provided. The file will be zipped using a MS-compatible compression program."
+      },
+      {
+        "url": "https://elections.ny.gov/freedom-information-law-foil-requests",
+        "quote": "FOIL requests for records maintained by the New York State Board of Elections must be submitted in writing to the Board's Records Access Officer. Requests should be submitted online by using the link below. The New York State Board of Elections uses the GovQA platform to receive, process, and respond to FOIL requests."
+      },
+      {
+        "url": "https://elections.ny.gov/freedom-information-law-foil-requests",
+        "quote": "When requested, copies will be made by this agency at a charge of $ .25 per page."
+      },
+      {
+        "url": "https://newyork.public.law/laws/n.y._election_law_section_3-103",
+        "quote": "The information contained in the statewide voter registration list shall not be used for non-election purposes."
+      },
+      {
+        "url": "https://newyork.public.law/laws/n.y._election_law_section_5-602",
+        "quote": "Other copies shall be sold at a charge not exceeding the cost of publication."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 18,
+    "ageRule": "No explicit age number is stated in the petition-witness statute itself, but NY Election Law § 6-140(1)(b) requires the witness (circulator) to be \"a duly qualified voter of the state.\" Under § 5-102(1), a \"qualified voter\" must be \"eighteen years of age or over.\" Therefore the circulator must be at least 18. (Alternative: a notary public or commissioner of deeds may witness in lieu of a qualified",
+    "minorCanCirculate": "no",
+    "registeredVoterRequired": "yes",
+    "usCitizenRequired": "yes",
+    "stateResidentRequired": "yes",
+    "signerVsCirculator": "SIGNER must be a \"registered voter of the political unit for which a nomination... is being made\" (§ 6-140(1)(a); § 6-138(1)) — i.e. registered within the relevant district. CIRCULATOR (the \"subscribing witness\" who appends the statement of witness) must be \"a duly qualified voter of the state\" of New York (§ 6-140(1)(b)) — a broader statewide registration requirement that, via § 5-102, also impor",
+    "gate": "AUTO-LIVE",
+    "note": "New York requires the circulator (statutorily the \"subscribing witness\" who signs the statement of witness appended to each petition sheet) of an independent nominating petition to be \"a duly qualified voter of the state\" of New York, per Election Law § 6-140(1)(b). This is a real, affirmative statutory circulator requirement (not silence) — hence AUTO-LIVE. \"Duly qualified voter of the state\" means a registered voter who, under § 5-102(1), is a US citizen, at least 18 years old, and a NY reside",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / circulatorMustBeStateResident",
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/6-140",
+        "quote": "There shall be appended at the bottom of each sheet a signed statement of a witness who is a duly qualified voter of the state and who has not previously signed a petition for another candidate for the same office."
+      },
+      {
+        "field": "circulatorMustBeStateResident (witness statement form)",
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/6-140",
+        "quote": "I, ...................... (name of witness) state: I am a duly qualified voter of the State of New York and now reside at ......................................... (residence address)."
+      },
+      {
+        "field": "circulatorAlternative (notary/commissioner of deeds in lieu of qualified-voter witness)",
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/6-140",
+        "quote": "2. In lieu of the signed statement of a witness who is a duly qualified voter of the state, the following statement signed by a notary public or commissioner of deeds shall be accepted: On the dates above indicated before me personally came each of the voters whose signatures appear on this petition sheet ... who, being by me duly sworn, each for himself or herself, said that the foregoing statement made and subscribed by him or her, was true."
+      },
+      {
+        "field": "signerVsCirculator (signer requirement)",
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/6-140",
+        "quote": "I, the undersigned, do hereby state that I am a registered voter of the political unit for which a nomination for public office is hereby being made, that my present place of residence is truly stated opposite my signature hereto..."
+      },
+      {
+        "field": "signerVsCirculator (signer must be registered voter of the political unit)",
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/6-138",
+        "quote": "Independent nominations for public office shall be made by a petition containing the signatures of registered voters of the political unit for which a nomination is made who are registered to vote."
+      },
+      {
+        "field": "circulatorMinAge / circulatorMustBeUSCitizen (definition of qualified voter imported into the witness requirement)",
+        "url": "https://www.nysenate.gov/legislation/laws/ELN/5-102",
+        "quote": "No person shall be qualified to register for and vote at any election unless he is a citizen of the United States and is or will be, on the day of such election, eighteen years of age or over, and a resident of this state and of the county, city or village for a minimum of thirty days next preceding such election."
+      }
+    ]
+  }
+}

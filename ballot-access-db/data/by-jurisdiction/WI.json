@@ -1,0 +1,204 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "WI",
+ "jurisdiction": "Wisconsin",
+ "abbr": "WI",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 4000,
+  "headline": "2,000–4,000 valid elector signatures (flat statutory band; AUTO-LIVE)"
+ },
+ "deadline": {
+  "headline": "5 p.m. first Tuesday in August of the presidential year (Aug 6 in 2024); circulate from July 1; file with WEC — AUTO-LIVE"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Not less than 2,000 nor more than 4,000 valid signatures of electors — a flat statutory band specific to independent presidential electors voting for the same president/VP candidates (Wis. Stat. 8.20(4)). It is NOT a percentage of votes cast and does not recompute by cycle. Collect a cushion above 2,000 to survive challenges, but do not file more than 4,000.",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "Both citations verified VERBATIM. eLaws 8.20(4): 'For independent presidential electors intending to vote for the same candidates for president and vice president, the number of required signatures shall be not less than 2,000 nor more than 4,000 electors.' NASS July-2024 report (downloaded, pdftotext): 'nomination papers containing between 2,000 and 4,000 signatures.' Adversarial check: 2025 Act 126 amended 8.20 but only as to circulator qualifications, not signature counts; no later act changes the band. Value current and correct."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Nomination papers may be circulated no sooner than July 1 and must be filed no later than 5:00 p.m. on the first Tuesday in August preceding the presidential election (Wis. Stat. 8.20(8)(am)), filed with the Wisconsin Elections Commission. For 2024 this was 5:00 p.m. on August 6, 2024. The date recomputes each presidential cycle.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both citations verified VERBATIM. eLaws 8.20(8)(am): 'may be circulated no sooner than July 1 and may be filed not later than 5 p.m. on the first Tuesday in August preceding a presidential election.' Lisbon WI Type-A notice (downloaded, pdftotext, line 12-14): 'Independent candidates for President or Vice President may circulate nomination papers beginning July 1, 2024, and must file nomination papers with the Wisconsin Elections Commission no later than 5:00 p.m. on August 6, 2024.' NASS corroborates filing 'no later than the first Tuesday in August.' Current and correct."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None for the independent presidential petition. The 2,000–4,000 signatures may be gathered anywhere in Wisconsin (signers must be electors eligible to vote in the state) with no per-congressional-district or per-county minimum. (Separate, materially different path: forming a recognized political party requires 10,000 electors including at least 1,000 in each of at least 3 congressional districts — this is NOT the independent path.)",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Both citations verified VERBATIM. eLaws 8.20(5): 'Signers of each nomination paper shall reside in the same jurisdiction or district which the candidate named therein will represent, if elected.' NASS report: 'A political organization may also become a recognized political party by filing... a petition containing the signatures of at least 10,000 electors, including at least 1,000 electors residing in each of at least 3 separate congressional districts.' Adversarial check: statute imposes only a same-jurisdiction (statewide, for president) residency requirement and no district/county allocation for the independent petition; the distribution rule applies only to the distinct party-formation path. Correct; the contrast is properly flagged."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICTEST: treat every circulator as required to be a QUALIFIED ELECTOR OF WISCONSIN — i.e., a U.S. citizen, age 18+, a Wisconsin resident at their residence for 28+ days, not serving a felony sentence, not adjudicated incompetent to vote, who intends to support the candidate and signs the s.8.15(4)(a) circulator certification (no notarization). A non-resident-circulator allowance MAY exist for presidential papers, but do not rely on it without written WEC confirmation. If a circulator lists an out-of-state address, WEC strikes the entire page.",
+   "confidence": 0.8,
+   "interpretationRequired": true,
+   "note": "The eLaws quotes (8.15(4)(a) non-resident allowance; 8.20(3) certification-appended) match VERBATIM — but eLaws is a JAN-2017 snapshot and is STALE. 2025 Wisconsin Act 126 (signed/effective 2026-03-30) AMENDED 8.10, 8.15, 8.20, 8.40, 9.10 to require circulators be a 'qualified elector of this state,' removing the old non-resident allowance. WEC's official 2026-04-08 Act 126 memo (fetched) says the change applies 'except Presidential nomination papers,' and notes presidential circulators 'may still be adult U.S. citizens who are not Wisconsin residents but who would be qualified to vote under Wisconsin law.' So the draft's bottom-line outcome is likely correct FOR THE PRESIDENTIAL PATH — but it now hinges entirely on a non-obvious statutory carve-out the stale citation never surfaces, and the general headline is now 'must reside in Wisconsin.' Per over-comply mandate (never risk ballot access), HOLD to the strict WI-resident reading and confirm the carve-out with WEC in writing."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "No notarization required. Each nomination paper requires a circulator certification (signed and dated by the circulator at the bottom of the sheet under s.8.15(4)(a)) attesting that the circulator personally circulated the paper and personally obtained each signature, knows the signers are electors of the required jurisdiction, knows they signed knowingly on the stated dates, and that falsifying the certification is punishable under Wis. Stat. 12.13(3)(a). The certification may be made by the candidate or any qualified circulator.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "eLaws 8.15(4)(a) quote verified VERBATIM, incl. 'personally circulated the nomination paper and personally obtained each of the signatures... aware that falsifying the certification is punishable under s. 12.13 (3) (a)... may be made by the candidate or any qualified circulator.' Adversarial check: Wisconsin uses circulator certification, not a notary/witness; Act 126 changes WHO may certify (qualifications) but does not add a notarization requirement. The no-notary conclusion is unaffected and correct. (Note the linked qualified-circulator definition is the field handled under circulatorEligibility.)"
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Wisconsin requires physical paper nomination papers (EL-167 for independent president/VP) with wet-ink signatures: each signer must legibly print name, list municipality of residence, street and number, and date of signing next to their signature, and a circulator must physically circulate each sheet and sign the certification. There is NO official online/remote-electronic petition for an independent presidential petition; the official filing is paper, delivered to the Wisconsin Elections Commission.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "Both citations verified VERBATIM. eLaws 8.20(5): 'each signer shall legibly print his or her name in a space provided next to his or her signature and shall list his or her municipality of residence for voting purposes, the street and number, if any, on which the signer resides, and the date of signing.' eLaws 8.15(4)(a): 'personally circulated the nomination paper and personally obtained each of the signatures.' WEC pages confirm paper EL-167 forms and in-person filing. No e-signature path exists. Correct."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. Wisconsin imposes no filing fee for ballot access and provides no fee-in-lieu-of-signatures alternative for independent presidential candidates — qualification is by nomination-paper signatures only (2,000–4,000) plus a declaration of candidacy under s.8.21. (Separately, 2025 Act 43 imposes a fee only to WITHDRAW a name from the ballot — that is not a ballot-access fee and does not create a fee path.)",
+   "confidence": 0.88,
+   "interpretationRequired": false,
+   "note": "Both citations verified VERBATIM. eLaws 8.20(6): 'Nomination papers shall be accompanied by a declaration of candidacy under s. 8.21.' NASS report lists qualification by signatures only with no fee. Adversarial check: I checked for any fee path. The only fee found (WEC FAQ, 2025 Act 43) is for REMOVING a name from the ballot via sworn statement — a withdrawal fee, not an access fee or fee-in-lieu of signatures. No fee-in-lieu exists. Correct."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$25 base fee per report + $5 per 1,000 voter records (rounded up to the next thousand), capped at $12,500. A full statewide file (~3.5M+ registered voters) reaches/approaches the $12,500 cap. Custom requests add $75 per half-hour of programming. Nomination-paper PDF scans are free.",
+  "whoCanObtain": "General public — no eligibility gate and no political-use limitation; anyone may create a Badger Voters account (via My Wisconsin ID) and purchase the file. Data is provided free only to Wisconsin election officials in their official capacity, law enforcement for law-enforcement purposes, government subunits of another state for official purposes, or ERIC (for list maintenance).",
+  "useRestrictions": "No use restrictions. Per the WEC's Badger Voters FAQ, \"Wisconsin law does not place any restrictions on the use of data obtained through this website,\" and commercial use is expressly permitted. Confidential electors (Wis. Stat. 6.47) and protected judicial officers (Wis. Stat. 757.07) are excluded from all data; no DOB, driver license, or SSN is ever provided.",
+  "requestProcess": "Instant online self-service download. On BadgerVoters.wi.gov a requester creates an account, builds a query (statewide or by district/county/municipality/ward), gets an automated quote (record count + cost), pays by credit/debit card, eCheck, or ACH, and immediately downloads a CSV (large files are zipped). No application approval, written request, or sworn affidavit required.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://badgervoters.wi.gov/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "A circulator of a presidential/vice-presidential nomination paper must be at least 18 years old. Under Wis. Stat. 8.40(2) as amended by 2025 Wisconsin Act 126, the circulator must be \"a qualified elector of this state, or if not a qualified elector of this state, ... a U.S. citizen age 18 or older who, if he or she were a resident of this state, would not be disqualified from voting under s. 6.03.",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "yes",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER must be a qualified elector of the jurisdiction; CIRCULATOR of a PRESIDENTIAL petition need only be a U.S. citizen aged 18+ (no WI residency or voter-registration requirement, due to the Act 126 presidential carve-out).",
+  "gate": "AUTO-LIVE",
+  "note": "CRITICAL PRESIDENTIAL CARVE-OUT. As of 2026, 2025 Wisconsin Act 126 (Assembly Bill 223; enacted March 27, 2026, effective March 30, 2026) amended Wis. Stat. 8.40(2) to require that circulators of nomination papers be \"qualified electors of this state\" -- BUT it expressly EXEMPTS the offices of president and vice president of the United States. For a presidential/VP nomination paper, the circulator may be (a) a qualified elector of Wisconsin, OR (b) if not a qualified elector of Wisconsin, \"a U.S",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "All fields grounded; one HOLD — 2025 Act 126 (eff. 2026-03-30) made circulators be qualified WI-resident electors, with a presidential-papers carve-out the stale eLaws citation does not surface, so circulatorEligibility is held to the strictest (WI-resident) reading pending WEC confirmation."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/wi/elections-ch-5-to-12/wi-st-12-13/",
+   "quote": "(ze) Compensate a person who obtains voter registration forms from other persons at a rate that varies in relation to the number of voter registrations obtained by the person."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/wi/elections-ch-5-to-12/wi-st-8-15/",
+   "quote": "that he or she, the circulator, is a qualified elector of this state, or if not a qualified elector of this state, is a U.S. citizen age 18 or older who, if he or she were a resident of this state, would not be disqualified from voting under s. 6.03; that he or she intends to support the candidate"
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/wi/elections-ch-5-to-12/wi-st-8-20/",
+   "quote": "The certification of a qualified circulator under s. 8.15(4)(a) shall be appended to each nomination paper."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.kenoshacountywi.gov/m/newsflash/Home/Detail/3525",
+   "quote": "Act 126, which was signed into law last month, amends statutes to require a circulator of nomination papers for all offices other than U.S. president to be a “qualified elector of the state.” Previously, circulators could be residents of other states who would have otherwise been eligible to vote in Wisconsin if they lived in the state."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://badgervoters.wi.gov/faq",
+   "quote": "Voter lists and custom requests have a base fee of $25. Additionally, there is a fee of $5 for every thousand records returned by the request, rounded up to a thousand if less than one thousand, or to the nearest thousand if more. The fee is capped at $12,500. If the request would cost more than that amount, it will instead cost $12,500."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://badgervoters.wi.gov/faq",
+   "quote": "Custom requests incur an additional charge of $75 per half hour of development time required to complete the request."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://docs.legis.wisconsin.gov/code/admin_code/el/3/50",
+   "quote": "(4) The charge for reports in electronic format is a $25 base fee per report; plus $5 for the first 1,000 voter registration data records, or up to 1,000 voter registration data records; plus $5 for each additional 1,000 voter registration data records, rounded to the nearest thousand. The maximum charge for an electronic report is $12,500."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://badgervoters.wi.gov/faq",
+   "quote": "Can I use the list for commercial purposes? Wisconsin law does not place any restrictions on the use of data obtained through this website."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://badgervoters.wi.gov/faq",
+   "quote": "There is no provision in law for data to be provided without charge except to Wisconsin election officials in their official capacity, law enforcement agencies for law enforcement purposes, subunits of the state government of another state for official purposes, or the Electronic Registration Information Center, Inc. for the purpose of maintaining the official registration list."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://badgervoters.wi.gov/faq",
+   "quote": "A voter record includes a voter’s name, address, and any contact information they provided with their registration; as well as the electoral districts that voter is in, what elections they voted in, and whether they voted at the polls or absentee back to 2006."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://badgervoters.wi.gov/",
+   "quote": "This site allows you to: Create a request for voter data from the Wisconsin Voter Registration System (WisVote) ... Pay for the data using a credit card or through an automated clearing house (ACH) using a checking or savings account ... Download the requested file upon successful payment"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://docs.legis.wisconsin.gov/statutes/statutes/6/ii/36",
+   "quote": "(6) The commission shall establish by rule the fee for obtaining a copy of the official registration list, or a portion of the list, including access to the subscription service established under s. 5.05 (14) (b)."
+  },
+  {
+   "field": "circulatorMustBeStateResident / minorCanCirculate / circulatorMustBeUSCitizen",
+   "url": "https://docs.legis.wisconsin.gov/document/statutes/8.40",
+   "quote": "except as provided in par. (b), the circulator is a qualified elector of this state, or if not a qualified elector of this state, that the circulator is a U.S. citizen age 18 or older who, if he or she were a resident of this state, would not be disqualified from voting under s. 6.03"
+  },
+  {
+   "field": "presidential exception (circulator need not be a qualified WI elector for president/VP)",
+   "url": "https://docs.legis.wisconsin.gov/document/proposaltext/2025/REG/AB223",
+   "quote": "Under the bill, nomination papers and petitions for the candidacy of candidates for the offices of president and vice president of the United States may be circulated by any person eligible to vote in Wisconsin or by any U.S. citizen aged 18 or older who, if he or she were a Wisconsin resident, would not be disqualified from voting in the state."
+  },
+  {
+   "field": "Act 126 requires WI qualified-elector circulators for all offices OTHER than U.S. president",
+   "url": "https://www.kenoshacountywi.gov/m/newsflash/Home/Detail/3525",
+   "quote": "Act 126 amends statutes to require a circulator of nomination papers for all offices other than U.S. president to be a 'qualified elector of the state.'"
+  },
+  {
+   "field": "new residency/qualified-voter requirement and effective date",
+   "url": "https://www.wispolitics.com/2026/wisconsin-elections-commission-reminders-for-candidate-nomination-paper-deadline-challenge-period/",
+   "quote": "A new statute requiring circulators of nomination papers to reside in Wisconsin and be qualified to vote in the state. (Enacted March 30, 2026)."
+  },
+  {
+   "field": "presidential/VP exception confirmed by enacting legislator's office",
+   "url": "https://urbanmilwaukee.com/pressrelease/governor-tony-evers-signs-rep-jim-piwowarczyks-residency-requirements-for-persons-circulating-nomination-papers-or-recall-petitions-into-law/",
+   "quote": "a limited exception for presidential and vice-presidential candidates, aligning Wisconsin's policies with federal election practices"
+  },
+  {
+   "field": "signer must be elector of the jurisdiction (circulator certification language)",
+   "url": "https://docs.legis.wisconsin.gov/document/statutes/8.40",
+   "quote": "The certification of a qualified circulator stating his or her residence with street and number, if any, shall appear at the bottom of each separate sheet of each petition ... the circulator knows that they are electors of the jurisdiction or district in which the petition is circulated"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

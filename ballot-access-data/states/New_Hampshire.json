@@ -1,0 +1,193 @@
+{
+  "jurisdiction": "New Hampshire",
+  "signaturesHeadline": "NH: 3,000 sigs (1,500 per CD, 2 districts) + $250 fee — both required",
+  "deadlineHeadline": "NH: Decl. of Intent Jun 3-12, 2026; papers to SOS by 5pm Wed Sep 2, 2026",
+  "riskNote": "Core numbers/dates verbatim-grounded in RSA 655:42/655:43/655:19-a and confirmed against the SOS 2026 page; only soft spot is circulator eligibility, which rests on statutory silence (no circulator rule exists) rather than an affirmative statement — held conservatively pending SOS confirmation.",
+  "sosInquiries": [
+    "Does New Hampshire impose ANY eligibility requirement (age, NH residency, registered-voter status, or in-state status) on the PERSON who circulates/collects signatures on a presidential candidate's nomination papers under RSA 655:40-45, or is the only personal qualification the one applied to the signer? Please confirm there is no circulator affidavit or circulator-residency rule for the independent/nomination-paper presidential route."
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "3,000 signatures of registered voters, 1,500 from each of New Hampshire's 2 U.S. congressional districts. Flat statutory number under RSA 655:42, I (which expressly names 'president' alongside U.S. senator and governor); it is not a percentage and does not recompute by cycle. The separate new/minor political-organization path requires signatures equal to 3% of total ballots cast at the previous state general election, computed by the SOS as 18,808 for 2026 (RSA 655:42, III).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.96,
+      "note": "RSA 655:42, I quote found verbatim in primary source and expressly lists 'president' at 3,000 / 1,500-per-district. 18,808 political-org figure confirmed verbatim on SOS page. Note: the SOS citation used is the GOVERNOR line ($100 AND 3,000), not a president-specific line (the SOS running-for-office page does not enumerate president), but the statute directly grounds the president figure, so the value is correct."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Two steps for 2026: (1) Declaration of Intent (RSA 655:17-b, presidential) filed with the Secretary of State during the candidate filing window June 3-12, 2026 (RSA 655:14 / 655:14-a: 'first Wednesday in June' = June 3 through 'Friday of the following week' = June 12). (2) Certified nomination papers filed with the Secretary of State no later than 5:00 p.m. Wednesday Sept 2, 2026 (RSA 655:43, I: 'Wednesday one week before the primary'; 2026 primary is Tue Sept 8). Intermediate local deadlines (RSA 655:41): papers to town/ward Supervisors of the Checklist by 5:00 p.m. Aug 5, 2026 (Wed 5 weeks before primary); supervisor certification complete by 5:00 p.m. Aug 26, 2026 (Wed 2 weeks before primary). A filing on the last day must be made in person before the Secretary of State (RSA 655:16 / 655:43, II).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "All four dates independently recomputed against a 2026 calendar and confirmed: June 3 is the first Wednesday in June; June 12 is the Friday of the following week; Sept 2 is the Wednesday one week before the Sept 8 (Tue) primary; Aug 5 = 5 weeks before; Aug 26 = 2 weeks before. RSA 655:43, I and 655:14 quotes found verbatim; SOS page lists June 3-12 filing period and the Aug 5 / Aug 26 / Sept 2 deadlines verbatim."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Yes — geographic distribution by congressional district. Of the 3,000 total, 1,500 must come from each of New Hampshire's 2 U.S. congressional districts, and signers must be registered in the respective district (RSA 655:42, I). Nomination papers must be ordered/grouped by municipality when filed with the Secretary of State (RSA 655:22-a / 655:43, I; SOS page).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.96,
+      "note": "RSA 655:42, I quote and SOS '1,500 from each congressional district ... grouped by municipality' quote both found verbatim. Independently corroborated by RSA 655:22-a (petitions ordered alphabetically by municipality) and 655:43, I ('grouped by municipality')."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "No circulator-specific eligibility requirement is prescribed by statute, BUT this rests on statutory silence rather than an affirmative authorization. RSA 655:40-45 regulates only SIGNERS: each signer must be registered to vote at the state general election, no voter may sign more than one nomination paper for the same office, and each voter must personally sign and date an individual nomination paper; certification of signers is done by the local Supervisors of the Checklist (RSA 655:41), not by a circulator. Strictest defensible operating posture until SOS confirms: do not assume non-resident or non-voter circulators are unrestricted — treat circulator status as UNCONFIRMED, and where practical have signatures gathered by NH-registered voters and never rely on a circulator-collected sheet as a substitute for the signer's own personal signature and date.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.78,
+      "note": "RSA 655:40 signer-rule quote found verbatim. Correctness of 'no circulator requirement' hinges on the inference that statutory silence equals no requirement — retrieval cannot settle whether an unwritten SOS administrative practice or form imposes anything on the collector. Held conservatively and routed to an SOS inquiry; the value itself does not over-promise (it flags UNKNOWN), which is the safe direction."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Petition/nomination-paper sheets are NOT notarized and carry NO circulator affidavit; signer validation is done by the Supervisors of the Checklist of the town/ward where the signer is domiciled or registered, who certify whether the signer is a registered voter there (city clerk may perform this) — RSA 655:41. SEPARATELY, the presidential candidate's own Declaration of Intent MUST be signed by the candidate AND notarized by a notary public — RSA 655:17-b, I. So: notarized candidate Declaration of Intent = YES (required); notarized/witnessed petition sheets or circulator certification = NO (supervisor-of-checklist certification instead).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.93,
+      "note": "Both RSA quotes found verbatim — 655:41, I (supervisor certification) and 655:17-b, I ('signed by the candidate, and notarized by a notary public'). The load-bearing, candidate-facing requirement (notarize the Declaration of Intent) is stated expressly in statute and points in the safe/strict direction, so AUTO-LIVE. The 'no petition notarization' element follows from the statutory scheme (certification runs through supervisors, with no circulator oath anywhere in 655:40-45)."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper (wet-ink). RSA 655:40 requires that each voter personally sign and date an individual paper nomination form, dated in the year of the election. Papers are physically submitted to the local Supervisors of the Checklist for certification (RSA 655:41) and the certified papers filed in paper with the Secretary of State, grouped by municipality (RSA 655:43, I). There is no digital/online e-petition system for an independent/nomination-paper presidential nomination in New Hampshire; downloadable PDF forms exist but collection and submission remain paper.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.93,
+      "note": "RSA 655:40 quote ('Each voter shall sign and date an individual nomination paper. Nomination papers shall be dated in the year of the election.') found verbatim; SOS 'submit signed nomination papers to Supervisors of the Checklist' quote found verbatim. No statute or SOS material authorizes e-signature for this route; treating capture as paper is the strict/safe reading."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "A fee is required IN ADDITION TO signatures, not as an alternative. A presidential candidate seeking nomination by nomination papers pays a single $250 fee to the Secretary of State at the time of filing the Declaration of Intent, covering both the presidential and vice-presidential candidate (RSA 655:19-a). This does NOT substitute for the 3,000 signatures — both the $250 fee and the full signature count are required. There is no signature-for-fee swap and no indigence petition-in-lieu path for the nomination-paper route (the RSA 655:48 indigence/petition option applies only to the separate presidential PRIMARY $1,000 fee, not to nomination papers).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.92,
+      "note": "RSA 655:19-a quote found verbatim. Adversarial check confirmed: the only fee-waiver/petition-in-lieu mechanism in Chapter 655 (RSA 655:48, II) is tied to the presidential PRIMARY, not the nomination-paper general-election route, so the draft's 'no swap option' is correct. Both fee and signatures are independently required."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition circulator compensation statute found",
+    "note": "New Hampshire's candidate nomination-paper statutes (RSA 655:40–45) and the bribery statute (RSA 659:40) do NOT address compensating circulators of candidate nomination papers — neither permitting nor prohibiting per-signature pay; candidate-petition compensation is unaddressed. NH nomination papers have no statutory \"circulator\" role at all (each registered voter signs and dates an individual paper; certification is by the supervisors of the checklist), so there is no circulator residency requirement on the books, but who may lawfully gather/handle signatures is itself unaddressed.",
+    "sosInquiry": "For an independent presidential candidate's nomination papers under RSA 655:40–45, does New Hampshire law permit a campaign to compensate the people who gather signatures, and specifically may they be paid on a per-signature basis, or must any such pay be hourly/salaried — and is there any residency or registered-voter requirement for the person collecting signatures?",
+    "citations": [
+      {
+        "url": "https://gc.nh.gov/rsa/html/LXIII/655/655-40.htm",
+        "quote": "655:40 General Provisions. – As an alternative to nomination by party primary, a candidate may have his or her name placed on the ballot for the state general election by submitting the requisite number of nomination papers. ... Nomination papers shall be signed by such persons only as are registered to vote at the state general election. No voter shall sign more than one nomination paper for each office to be voted for ... Each voter shall sign and date an individual nomination paper."
+      },
+      {
+        "url": "https://gc.nh.gov/rsa/html/LXIII/655/655-41.htm",
+        "quote": "655:41 Certification. – I. Each nomination paper shall be submitted to the supervisors of the checklist of the town or ward in which the signer is domiciled or is registered, and a majority of the supervisors shall certify whether or not the signer is a registered voter in said town or ward."
+      },
+      {
+        "url": "https://gc.nh.gov/rsa/html/LXIII/655/655-45.htm",
+        "quote": "655:45 Nomination Papers Protected. – No person shall falsely make or file or knowingly deface or destroy any nomination paper, or any part thereof, or sign any nomination paper contrary to the provisions of law knowing the same, or any part thereof, to be falsely made or suppress any nomination paper, or any part thereof, which has been duly filed."
+      },
+      {
+        "url": "https://gc.nh.gov/rsa/html/LXIII/655/655-42.htm",
+        "quote": "655:42 Number. – I. It shall require the names of 3,000 registered voters, 1,500 from each United States congressional district in the state, to nominate by nomination papers a candidate for president, United States senator, or governor."
+      },
+      {
+        "url": "https://gencourt.state.nh.us/rsa/html/LXIII/659/659-40.htm",
+        "quote": "659:40 Bribing; Intimidation; Suppression. – I. No person shall directly or indirectly bribe any person not to register to vote or any voter not to vote or to vote for or against any question submitted to voters or to vote for or against any ticket or candidate for office at any election."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Statutory fee (RSA 654:31, IV): $25 + $0.50 per thousand names (or portion thereof) in excess of 2,500 + shipping, PLUS the amount each town/city would otherwise have charged for its own checklist. For the full statewide roll (~1M+ registered voters) this works out to roughly $8,300 in practice per the Concord Monitor; an absentee-voter version runs ~$2,000. Per-district/town lists are far cheaper (a few hundred dollars or less). The $25 base + $0.50/1,000 formula is the published statutory price.",
+    "whoCanObtain": "Eligibility-gated. The Secretary of State will provide the statewide voter list only to (a) a political party (as defined in RSA 664:2, IV), (b) a political committee (RSA 664:2, III), or (c) a candidate for county, state, or federal office (statewide, or limited to the candidate's district). The general public CANNOT purchase the statewide database — the public may only view it (no printing/copying) at the State Records and Archives Center, or purchase individual town/ward public checklists from local supervisors of the checklist / town clerks.",
+    "useRestrictions": "Commercial use is prohibited (RSA 654:31, VI): \"No person shall use or permit the use of checklist or voter information ... for commercial purposes.\" Knowing violation is a misdemeanor if a natural person, a felony if any other person. The Secretary of State may insert inauthentic (\"salted\") entries into provided copies to detect/enforce against misuse. Political and election-related use (voter contact, GOTV, persuasion, nonprofit membership growth) is permitted; the data may be freely shared since it is public, but never for selling property/services unrelated to an election or campaign.",
+    "requestProcess": "Written request to the Secretary of State (Election Division). No instant online download. The statute frames it as \"upon request\" by an eligible party/committee/candidate; fee is paid per RSA 654:31, IV. (Local town/ward checklists are obtained separately from each town/city clerk or supervisors of the checklist.)",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://gc.nh.gov/rsa/html/lxiii/654/654-31.htm",
+    "note": "A campaign verifying petition signatures qualifies as a candidate/committee and can purchase the full statewide list from the NH Secretary of State under RSA 654:31, IV — it includes name, domicile address, mailing address, town/city, voter history, and party affiliation, which is sufficient to match signers to registered voters. It is restricted (not a public download), the practical statewide cost is roughly $8,300, and use is limited to non-commercial (election/political) purposes with criminal penalties for misuse.",
+    "citations": [
+      {
+        "url": "https://gc.nh.gov/rsa/html/lxiii/654/654-31.htm",
+        "quote": "IV. The secretary of state shall, upon request, provide to a political party, as defined in RSA 664:2, IV, or to a political committee, as defined in RSA 664:2, III, a list of the name, domicile address, mailing address, town or city, voter history, and party affiliation, if any, of every registered voter in the state. The secretary of state shall, upon request, provide to a candidate for county, state, or federal office a list of the name, domicile address, mailing address, town or city, voter history, and party affiliation, if any, of every registered voter in the state or in the candidate's district."
+      },
+      {
+        "url": "https://gc.nh.gov/rsa/html/lxiii/654/654-31.htm",
+        "quote": "The secretary of state shall charge a fee of $25 plus $0.50 per thousand names or portion thereof in excess of 2,500 plus shipping charges for each copy of the list provided under this section. In addition, the secretary of state shall charge and collect on behalf of and remit to the supervisors of the checklist of each city and town the amount that such supervisors would have charged had the public checklist of their city or town been purchased from them."
+      },
+      {
+        "url": "https://gc.nh.gov/rsa/html/lxiii/654/654-31.htm",
+        "quote": "VI. No person shall use or permit the use of checklist or voter information provided by any supervisors of the checklist or city or town clerk or by the secretary of state for commercial purposes. Whoever knowingly violates any of the provisions of this section shall be guilty of a misdemeanor if a natural person or guilty of a felony if any other person. The secretary of state may insert inauthentic entries into copies of the public checklist provided under this section for purposes of facilitating enforcement of this paragraph."
+      },
+      {
+        "url": "https://gc.nh.gov/rsa/html/lxiii/654/654-31.htm",
+        "quote": "III. Any person may view the data that would be available on the public checklist ... on the statewide centralized voter registration database maintained by the secretary of state at the state records and archives center during normal business hours, but the person viewing data at the state records and archives center may not print, duplicate, transmit, or alter the data."
+      },
+      {
+        "url": "https://www.concordmonitor.com/2024/10/15/nh-sells-voter-data-to-political-candidates-here-s-what-they-do-with-it-55945677/",
+        "quote": "Pricing varies, but the cost of the statewide voter roll hovers around $8,300. The same sort of checklist exists for absentee voters – that typically costs $2,000."
+      },
+      {
+        "url": "https://www.concordmonitor.com/2024/10/15/nh-sells-voter-data-to-political-candidates-here-s-what-they-do-with-it-55945677/",
+        "quote": "The main restriction is that it can’t be used for commercial purposes. People can use it to solicit votes, or nonprofit organizations can use it to increase their membership, but it can’t be used to sell anything."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the statute imposes no requirements on the person who collects signatures. New Hampshire's independent-presidential nomination-papers scheme (RSA 655:40–655:45, applied to president by RSA 655:53) has NO circulator/witness role at all. There is no circulator affidavit. Each voter signs and dates an individual single-signer nomination paper (RSA 655:40), and signatur",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER requirements (strict): must be registered to vote at the NH state general election and domiciled/registered in the town or ward (RSA 655:40, 655:41). CIRCULATOR/COLLECTOR requirements: NONE — NH nomination papers have no circulator or witness role; each voter signs an individual paper and a government official (supervisors of the checklist / city clerk) certifies it, so no age, citizenship,",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "New Hampshire's nomination-papers process for an independent presidential candidate (RSA 655:40–655:45, made applicable to president by RSA 655:53) does NOT use a circulator/witness model. RSA 655:40 requires \"Each voter shall sign and date an individual nomination paper,\" and that papers be \"signed by such persons only as are registered to vote at the state general election\" — a SIGNER requirement. Authentication is performed by government officials, not a private circulator: RSA 655:41 directs",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMinAge / minorCanCirculate / signer-only requirement",
+        "url": "https://www.gencourt.state.nh.us/rsa/html/lxiii/655/655-mrg.htm",
+        "quote": "655:40 General Provisions. – As an alternative to nomination by party primary, a candidate may have his or her name placed on the ballot for the state general election by submitting the requisite number of nomination papers... Nomination papers shall be signed by such persons only as are registered to vote at the state general election. No voter shall sign more than one nomination paper for each office to be voted for... Each voter shall sign and date an individual nomination paper. Nomination papers shall be dated in the year of the election."
+      },
+      {
+        "field": "circulatorMustBeRegisteredVoter / certification by government officials, not a circulator",
+        "url": "https://www.gencourt.state.nh.us/rsa/html/lxiii/655/655-mrg.htm",
+        "quote": "655:41 Certification. – I. Each nomination paper shall be submitted to the supervisors of the checklist of the town or ward in which the signer is domiciled or is registered, and a majority of the supervisors shall certify whether or not the signer is a registered voter in said town or ward... II. The city clerk may perform the responsibilities of the supervisors of the checklist under this section."
+      },
+      {
+        "field": "applicability to independent presidential candidates",
+        "url": "https://www.gencourt.state.nh.us/rsa/html/lxiii/655/655-mrg.htm",
+        "quote": "655:53 By Nomination Papers. – Candidates for president may be nominated by nomination papers as provided in RSA 655:40 through 655:45."
+      },
+      {
+        "field": "signer signature count / signer-bound requirement",
+        "url": "https://www.gencourt.state.nh.us/rsa/html/lxiii/655/655-mrg.htm",
+        "quote": "655:42 Number. – I. It shall require the names of 3,000 registered voters, 1,500 from each United States congressional district in the state, to nominate by nomination papers a candidate for president, United States senator, or governor."
+      },
+      {
+        "field": "corroboration of signer requirement; no circulator mentioned",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_New_Hampshire",
+        "quote": "To qualify for placement on the general election ballot, an independent presidential candidate must submit a petition containing the signatures of at least 3,000 registered voters and pay a $250 filing fee."
+      }
+    ]
+  }
+}

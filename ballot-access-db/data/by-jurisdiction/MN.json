@@ -1,0 +1,214 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "MN",
+ "jurisdiction": "Minnesota",
+ "abbr": "MN",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 2000,
+  "headline": "2,000 signatures (statutory cap; 1% of statewide turnout vastly exceeds 2,000)"
+ },
+ "deadline": {
+  "headline": "77 days before GE — HOLD: draft date Aug 20 2024 is stale; 2028 cycle = Aug 22 2028"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "2,000 signatures from eligible Minnesota voters (Minn. Stat. 204B.08, subd. 3(a): 1% of last statewide general-election turnout or 2,000, whichever is less — 1% far exceeds 2,000, so 2,000 is the operative number).",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "Statute quote verbatim at revisor.mn.gov/statutes/cite/204B.08 subd. 3(a). Ballotpedia verbatim ('At least 2,000 eligible voters must sign the petition'). 1% of ~3M MN voters is ~30,000, so 'whichever is less' fixes 2,000 as the cap. Current (2025 statutes)."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Petition must be RECEIVED by 5:00 p.m. on the day at least 77 days before general election day (Minn. Stat. 204B.09, subd. 1(c)). This recomputes each cycle: for the Nov. 7, 2028 GE the date is Aug. 22, 2028 (NOT the draft's Aug. 20, 2024, which was the 2024-cycle date). Confirm exact date/time with the SOS before relying.",
+   "confidence": 0.9,
+   "interpretationRequired": true,
+   "note": "Statutory rule grounded verbatim (204B.09 subd. 1(c): 'may file petitions at least 77 days before the general election day' + 'No affidavit or petition shall be accepted later than 5:00 p.m. on the last day for filing'). BUT the draft's relied VALUE 'August 20, 2024' is stale: today is 2026-06-07 and the next presidential election is Nov 7, 2028, where 77 days before = Aug 22, 2028 (verified by date arithmetic). Relying on the 2024 date for a current candidate would be wrong. Also a latent interpretation: statute phrases the cutoff as 'may file...at least 77 days before' (an earliest-by phrasing) rather than an express last-day; practitioners read the deadline as 77 days before, but exact day/time inclusivity warrants SOS confirmation."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. A single statewide signature total applies (Minn. Stat. 204B.08, subd. 3(a)); no congressional-district, county, or other geographic distribution requirement. Signers need only be eligible Minnesota voters.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "204B.08 subd. 3(a) sets one statewide number with no per-district/per-county quota anywhere in 204B.07-204B.08. Grounded verbatim. Correct and current."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "SIGNERS must be individuals eligible to vote for the candidate (eligible MN voters), may not sign more than one petition for the same office, and each must subscribe to the 204B.07 subd. 4 oath (both quotes grounded verbatim). No statutory CIRCULATOR age/residency/voter-status rule was located in 204B.07-204B.08 — but treat 'no circulator requirement' as unconfirmed (absence of a rule) and verify with the SOS rather than assuming none.",
+   "confidence": 0.8,
+   "interpretationRequired": true,
+   "note": "Signer requirements and oath are grounded verbatim (204B.08 subd. 2; 204B.07 subd. 4) and correct. The circulator conclusion is a negative inference from statutory silence — defensible, but an absence is inherently harder to verify than a stated rule (SOS guidance or rule could impose one), so I hold it pending SOS confirmation. Strict posture: do not represent to volunteers that there is definitely no circulator restriction."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Petition signatures: NO notarization or witness/circulator certification ('Notarization or certification of the signatures on a nominating petition is not required.', 204B.07 subd. 4). Candidate affidavit: YES, each nominated president/VP candidate must submit a signed, NOTARIZED affidavit of candidacy (204B.07 subd. 2(c)), signed before a notarial officer (204B.09 subd. 1(b)).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "204B.07 subd. 4 signature-notarization quote grounded verbatim. The affidavit quote is verbatim as a prefix ('...affidavit of candidacy for president or vice president'); the statute continues '...that includes the following information:' — the draft truncated, not misquoted. 204B.09 subd. 1(b) confirms notarial signing. Correct and current."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. No online/digital petition system exists; signatures collected on paper pages bearing the oath, each signer writing residence/mailing address (204B.07 subd. 4). Petition and notarized affidavits submitted by mail or hand and received by 5:00 p.m. on the last filing day; electronic submission statutorily barred (204B.09 subd. 1(e), notwithstanding ch. 325L) except a narrow emergency fax/scan option for out-of-state candidates (subd. 1a(b)).",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "204B.09 subd. 1(e) mail/hand-notwithstanding-325L quote grounded verbatim; 204B.07 subd. 4 signer-address quote grounded verbatim. Subd. 1(e) literally names 'Affidavits,' but subd. 2 also bars electronic for nominating petitions and no online petition system exists, so paper-only is correct in practice and current."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "Not applicable / no fee. Presidential electors pay no filing fee (204B.11 subd. 1(b): 'For the office of presidential elector...no filing fee is required'); the 2,000-signature nominating petition is itself the access mechanism. The separate 204B.11 subd. 2 'petition in place of a filing fee' (2,000 for president) is not the operative route because no fee applies.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Both 204B.11 quotes grounded verbatim (subd. 1(b) no-fee; subd. 2(a) 2,000-signature fee substitute). Draft correctly distinguishes the inapplicable fee-substitution path. Correct and current."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$46 flat for a statewide report; $30 for any sub-state area. Pay by check, money order, or exact-change cash (no credit cards). Statutorily framed as \"the cost of reproduction.\"",
+  "whoCanObtain": "Eligibility-gated: only a person registered to vote in Minnesota may obtain a copy (\"This information is only available to registered Minnesota voters\"; MN Stat. 201.091 Subd. 5 limits copies to \"any voter registered in Minnesota\"). Anyone may inspect the public information list in person without cost, but obtaining/purchasing a copy requires being a registered MN voter.",
+  "useRestrictions": "Political/election/law-enforcement use only. Use \"for purposes unrelated to elections, political activities, or law enforcement\" is prohibited (201.091 Subd. 4(b),(c) & Subd. 5). A recipient must NOT publish any of the data on the Internet in any searchable list/database, and must NOT sell, loan, provide access to, or otherwise surrender the information to others (201.091 Subd. 4(e)) — though an organization may share it with its own volunteers/employees for permitted purposes. Misuse is enforceable under Minnesota election law; the underlying restrictions are statutory.",
+  "requestProcess": "Written request: complete the Secretary of State \"Voter Information Request Form\" (registered-voter-list-request-form.pdf) and mail or drop off the form with payment to the Office of the Secretary of State, Voter Registration Lists, 332 Minnesota Street, Suite N201, St. Paul, MN 55101. The requester must provide identification and state in writing that the data will not be used for non-permitted purposes (a sworn statement of permitted use, per 201.091 Subd. 4(c)). Data is then delivered via an emailed download link active for 7 days. Not an instant self-service online download.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sos.state.mn.us/election-administration-campaigns/data-maps/registered-voter-list-requests/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — the rule binds signers only. Minnesota's nominating petition statutes (Minn. Stat. ch. 204B) do not create a \"circulator\" role at all. There is no circulator affidavit/verification: Minn. Stat. 204B.07, subd. 4 expressly states \"Notarization or certification of the signatures on a nominating petition is not required.\" Because no one must witness/verify/affirm the si",
+  "minorCanCirculate": "yes",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER must be an individual \"eligible to vote for the candidate\" (a qualified MN voter — 18+, citizen, resident) and must take the oath under 204B.07 subd. 4; CIRCULATOR (collector) has NO statutory requirements at all — there is no circulator affidavit because notarization/certification of signatures \"is not required\" (204B.07 subd. 4).",
+  "gate": "AUTO-LIVE",
+  "note": "Minnesota imposes NO requirements on the petition circulator/collector for an independent presidential nominating petition. The statutory scheme (Minn. Stat. 204B.07, 204B.08, 204B.09) regulates (a) the form of the petition and the candidate's notarized affidavit of candidacy, and (b) the qualifications and sworn oath of each SIGNER — but creates no circulator role whatsoever. Decisively, 204B.07 subd. 4 provides that \"Notarization or certification of the signatures on a nominating petition is n",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Signatures/fee/notary/distribution/capture all AUTO-LIVE and grounded; the only ballot-access risk is the deadline field, whose stated value (Aug 20, 2024) is for a past cycle — relying on it for a 2028 candidate would be wrong; recompute per cycle and confirm with SOS."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.07",
+   "quote": "Following the information required by subdivisions 1 and 2 and before the space for signing, each separate page that is part of the petition shall include an oath in the following form: \"I solemnly swear (or affirm) that I know the contents and purpose of this petition, that I do not intend to vote at the primary election for the office for which this nominating petition is made, and that I signed this petition of my own free will.\" Notarization or certification of the signatures on a nominating petition is not required."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.07",
+   "quote": "Other presidential electors or alternates are nominated by petition pursuant to this section."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.08",
+   "quote": "A nominating petition may be signed only by individuals who are eligible to vote for the candidate who is nominated. No individual may sign more than one nominating petition for candidates for the same office unless more than one candidate is to be elected to that office."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.revisor.mn.gov/rules/8205.1020/",
+   "quote": "8205.1020 CIRCULATING PETITIONS. Subpart 1. Applicability. This part applies to any petition required for any election in this state, including nominating petitions, recall petitions, and proposed recall petitions. Subp. 2. Photocopies. Petitioners may circulate photocopies of a sample petition page."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.revisor.mn.gov/statutes/cite/211B.13",
+   "quote": "A person who willfully, directly or indirectly, advances, pays, gives, promises, or lends any money, food, liquor, clothing, entertainment, or other thing of monetary value ... to or for a person, in order to induce a voter to refrain from voting, or to vote in a particular way, at an election, is guilty of a felony."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.state.mn.us/election-administration-campaigns/data-maps/registered-voter-list-requests/",
+   "quote": "Reports covering the whole state are $46. Reports covering any area within the state are $30."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.state.mn.us/election-administration-campaigns/data-maps/registered-voter-list-requests/",
+   "quote": "Note: This information is only available to registered Minnesota voters, and may only be used for purposes related to elections, political activities, or law enforcement. (Minnesota Statutes 201.091)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.state.mn.us/election-administration-campaigns/data-maps/registered-voter-list-requests/",
+   "quote": "Use the Voter Information Request Form to place an order. The completed form and payment may be mailed or dropped off to: Office of the Secretary of State, Voter Registration Lists, First National Bank Building, 332 Minnesota Street, Suite N201, Saint Paul, MN 55101."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.state.mn.us/election-administration-campaigns/data-maps/registered-voter-list-requests/",
+   "quote": "An email will be sent with a link to the requested voter data after the order is processed. This link will be active for seven days. CD-ROMs are no longer available."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.revisor.mn.gov/statutes/cite/201.091",
+   "quote": "The county auditors and the secretary of state must provide copies of the public information lists in electronic or other media to any voter registered in Minnesota within five business days of receiving a complete written or electronic request accompanied by payment of the cost of reproduction."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.revisor.mn.gov/statutes/cite/201.091",
+   "quote": "The county auditor shall make available for inspection a public information list which must contain the name, address, year of birth, and voting history of each registered voter in the county."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.revisor.mn.gov/statutes/cite/201.091",
+   "quote": "No individual who inspects the public information list or who acquires a list of registered voters prepared from the public information list may use any information contained in the list for purposes unrelated to elections, political activities, or law enforcement."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.revisor.mn.gov/statutes/cite/201.091",
+   "quote": "a recipient of a public information list must not: (1) publish any of the information from the list on the Internet on any list, database, or other similar searchable format; or (2) sell, loan, provide access to, or otherwise surrender any information obtained from the list to any person or entity"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.revisor.mn.gov/statutes/cite/201.091",
+   "quote": "A list provided for public inspection or purchase, or in response to a law enforcement inquiry, must not include a voter's date of birth or any part of a voter's Social Security number, driver's license number, identification card number, military identification card number, or passport number."
+  },
+  {
+   "field": "circulatorAgeRule / circulatorMustBeRegisteredVoter / no circulator affidavit",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.07",
+   "quote": "Notarization or certification of the signatures on a nominating petition is not required. Immediately after the signature, the signer shall write on the petition the signer's residence address including street and number, if any, and mailing address if different from residence address."
+  },
+  {
+   "field": "signer oath (binds signer, not circulator)",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.07",
+   "quote": "Subd. 4.Oath and address of signer. Following the information required by subdivisions 1 and 2 and before the space for signing, each separate page that is part of the petition shall include an oath in the following form: \"I solemnly swear (or affirm) that I know the contents and purpose of this petition, that I do not intend to vote at the primary election for the office for which this nominating petition is made, and that I signed this petition of my own free will.\""
+  },
+  {
+   "field": "signerVsCirculator (signer qualifications)",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.08",
+   "quote": "Subd. 2.Qualifications of signers. A nominating petition may be signed only by individuals who are eligible to vote for the candidate who is nominated."
+  },
+  {
+   "field": "presidential petition scope + threshold/deadline",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.09",
+   "quote": "Other candidates for presidential electors may file petitions at least 77 days before the general election day pursuant to section 204B.07."
+  },
+  {
+   "field": "signature threshold",
+   "url": "https://www.revisor.mn.gov/statutes/cite/204B.08",
+   "quote": "for a federal or state office voted on statewide, one percent of the total number of individuals voting in the state at the last preceding state general election, or 2,000, whichever is less"
+  },
+  {
+   "field": "secondary corroboration — no circulator requirement",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Minnesota",
+   "quote": "Independent and minor party presidential candidates must petition for placement on the general election ballot. At least 2,000 eligible voters must sign the petition, which must be filed with the secretary of state no later than 77 days prior to the general election."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

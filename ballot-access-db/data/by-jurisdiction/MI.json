@@ -1,0 +1,207 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "MI",
+ "jurisdiction": "Michigan",
+ "abbr": "MI",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 44620,
+  "headline": "Signatures DISPUTED: draft says 30,000; statute (1% of 2022 gov vote) = ~44,620 -- HOLD high"
+ },
+ "deadline": {
+  "headline": "Deadline LIVE: 4:00 p.m. 110th day before general = Thu Jul 18, 2024"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "At least 1% of the total votes cast for all gubernatorial candidates at the last gubernatorial election (MCL 168.590b(2)). For the 2024 cycle the 2022 governor's race totaled 4,461,972 votes, so the strict statutory floor is approximately 44,620 valid signatures -- NOT the flat 30,000 the draft headlines. Plus the distribution requirement (>=100 in >=1/2 of congressional districts). Collect to the higher number and confirm the exact operative figure and Graveline's applicability with the Bureau of Elections before relying.",
+   "confidence": 0.86,
+   "interpretationRequired": true,
+   "note": "Citations ground verbatim, but the value is self-contradictory and likely understated. The draft headlines 30,000 while its own MCL 168.590b(2) citation states a 1%-of-gubernatorial-vote FORMULA. Independent re-derivation: the 2022 MI governor general election totaled 4,461,972 votes (Whitmer 2,430,505 + Dixon 1,960,635 + others); 1% = 44,620 -- materially above 30,000. The flat 30,000 is the pre-amendment number; the Ballotpedia '30,000' text appears stale. Separately, Graveline v. Benson (6th Cir. 2021) struck the 30,000+distribution+deadline combination for statewide INDEPENDENT candidates (district court set 12,000 interim). The true operative 2024 number (44,620 statutory vs. 30,000 stale vs. 12,000 Graveline interim vs. an administrative figure) is a legal-interpretation question retrieval cannot settle. Strictest defensible posture: collect to the highest statutory floor (~44,620); over-collecting cannot jeopardize ballot access."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "4:00 p.m. on the 110th day before the general November election. For 2024 that is Thursday, July 18, 2024 (110 days before Nov 5, 2024). MCL 168.590c(2). Signatures must be collected within the 180 days immediately before filing (MCL 168.590b(3)).",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "MCL 168.590c(2) text grounded verbatim ('not later than 4 p.m. of the one hundred-tenth day before the general election'); 180-day window grounded in 590b(3); Ballotpedia corroborates. Date arithmetic independently confirmed: Nov 5, 2024 minus 110 days = Thursday, July 18, 2024. Correct, current, no interpretation needed."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "Yes. At least 100 registered electors must sign in each of at least one-half (1/2) of the state's congressional districts (MCL 168.590b(4), which expressly lists 'the office of president of the United States').",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "MCL 168.590b(4) grounded verbatim and expressly names president; Ballotpedia corroborates. Adversarial caveat: Graveline v. Benson found the geographic-distribution requirement part of the unconstitutional combination for statewide STATE offices -- whether it survives as applied to independent PRESIDENTIAL is unsettled. But the rule is on the books and complying with it cannot harm ballot access (over-compliance), so it is gated live rather than held. The Graveline question is flagged in the SOS inquiry attached to signaturesRequired."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "AUTO-LIVE",
+   "value": "Circulator must be at least 18 and a U.S. citizen; no Michigan residency required, but a non-resident circulator must mark the designated box on the certificate to accept Michigan jurisdiction (MCL 168.544c(3); HB 5152, 2014, removed residency requirements). Petition signers must be registered/qualified electors of the city/township in the petition heading.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "MCL 168.544c certificate text grounded verbatim (18+, U.S. citizen, signed in presence), as is the non-resident-box language and the 544c(3) reference to a 'qualifying petition for an office named in section 590b(4)' (which lists president). Ballotpedia confirms HB 5152 removed all circulator residency requirements. Correct and current."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "No notarization of the petition. Each sheet carries a CERTIFICATE OF CIRCULATOR self-attestation (false statement = misdemeanor); the circulator must sign and date it before filing (MCL 168.544c(5)); it is not sworn before a notary. (The candidate's separate Affidavit of Identity includes a campaign-finance statement signed before a notary -- a distinct document, not the petition.)",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "MCL 168.544c(5) sign-and-date-before-filing rule and the misdemeanor warning grounded verbatim; Ballotpedia confirms the AOI campaign-finance statement is the notarized component (a separate document). No petition notarization required. Correct and current."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Wet-ink paper petition sheets signed in the circulator's physical presence; no remote/online or digitized signature path for an independent presidential qualifying petition in Michigan.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "MCL 168.544c 'each signature on the petition was signed in his or her presence' grounded verbatim; Ballotpedia signer-address requirement grounded. No statutory authorization for electronic collection located. Paper-only is correct."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None for the independent (no-party) presidential qualifying-petition path -- access is by petition only; no filing fee may substitute. (The $100 fee-in-lieu-of-petition exists only for major-party state LEGISLATIVE nominating petitions.)",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Ballotpedia grounded verbatim: '$100 in lieu of filing a nominating petition' applies to a major party state legislative candidate only; the independent path requires an affidavit of identity plus a qualifying petition with no fee alternative. Sore-loser provision separately confirms an independent cannot use a partisan path/fee. Correct."
+  },
+  {
+   "field": "newOrMinorPartyPath",
+   "gate": "AUTO-LIVE",
+   "value": "Materially different. A new party qualifies under MCL 168.685: petitions equal to not less than 1% of the total votes cast for all gubernatorial candidates at the last gubernatorial election, same distribution rule (>=100 in >=1/2 of congressional districts), same 4 p.m. 110th-day deadline, signatures within 180 days; chairperson and secretary file a signed certificate with the petitions, and the party nominates its presidential candidate by convention. Same circulator-certificate/paper mechanics (685(4) incorporates the 544c form).",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "MCL 168.685(1) long quote grounded verbatim (1% formula, 100-in-1/2-districts distribution, 110-day deadline, 180-day window, certificate filing) and 685(4) 'balance...as set forth in section 544c' grounded verbatim. Correct and current. Note: 685's use of the SAME 1% formula corroborates that the independent statewide signature requirement is the 1% formula (~44,620), reinforcing the doubt on the signaturesRequired '30,000' figure."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "No published flat statewide price; varies — request quote. By statute the requester pays \"the cost of making, certifying, and delivering the tape, disk, or listing\" (MCL 168.522); when obtained from the state via FOIA, the Dept. of State \"may charge a fee to cover the cost of complying\" (labor + media). Note: the separate $15/record \"Record sales\" program is for DRIVER/VEHICLE records only, NOT voter data.",
+  "whoCanObtain": "Broadly available — the statute requires the file be delivered \"to any person, upon request\" (MCL 168.522). Not gated to candidates/committees/parties; the statewide Qualified Voter File data is obtained from the Bureau of Elections via written/FOIA request (it is NOT sold through the SOS commercial \"Record sales / List sales\" program, which covers only driver and vehicle records).",
+  "useRestrictions": "Statutorily protected/exempt fields are stripped from any released list — no driver-license/state-ID number, no month/day of birth, no phone number, no last-4 SSN, and no digitized signature (MCL 168.509gg; MCL 168.522(2) bars these from the list, though it may include year of birth). For the SOS's separate bulk data programs the state warns data \"cannot be used for marketing or solicitation purposes... violations can be prosecuted as felony infractions.\"",
+  "requestProcess": "Written request to the Michigan Department of State / Bureau of Elections (election-data FOIA request). FOIA requests \"must be submitted in writing\" — online via MiLogin, or by mail/email to the MDOS FOIA Coordinator. (Local lists may alternatively be requested from a city/township/village clerk under MCL 168.522.) No instant online public download of the statewide file.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.michigan.gov/sos/resources/transparency",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "Circulators must be 18 or older. The statutory Certificate of Circulator that every petition circulator must sign (MCL 168.544c(1)) requires the circulator to assert \"that he or she is 18 years of age or older and a United States citizen.\" This is an affirmative requirement on the circulator (collector), distinct from the signer requirements. Under MCL 168.544c(16) these provisions \"apply to all p",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "yes",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER must be a \"qualified and registered elector\" of the relevant district (MCL 168.590b(1)-(2)) and, for president, the petition must include at least 100 registered electors in each of at least half the congressional districts (168.590b(4)); each signer must be a registered elector of the city/township in the petition heading (168.544c(6)). CIRCULATOR (collector) need only be 18+ and a U.S. ci",
+  "gate": "AUTO-LIVE",
+  "note": "Primary source is MCL 168.544c, whose statutorily-prescribed Certificate of Circulator is the controlling text for who may circulate. It affirmatively states the circulator \"is 18 years of age or older and a United States citizen.\" Critically, the same certificate (1) lets a non-resident circulate (a check-box line: if \"the circulator is not a resident of Michigan, the circulator shall make a cross or check mark on the line provided\" and accepts Michigan jurisdiction), and (2) provides a line fo",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Only the signature count is unsafe: the draft's flat 30,000 conflicts with its own 1%-formula citation (MCL 168.590b(2)), which on the 2022 gubernatorial total of 4,461,972 yields ~44,620, and Graveline v. Benson (6th Cir. 2021) separately struck the 30,000+distribution+deadline combination for statewide independents -- collect to the highest plausible number (~44,620) and confirm the exact per-cycle figure and Graveline's effect with the Bureau of Elections; all other fields verified live."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-544c.html",
+   "quote": "The undersigned circulator of the above petition asserts that he or she is 18 years of age or older and a United States citizen; that each signature on the petition was signed in his or her presence ... (16) The provisions of this section except as otherwise expressly provided apply to all petitions circulated under authority of the election law."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-544c.html",
+   "quote": "_____ If the circulator is not a resident of Michigan, the circulator shall make a cross or check mark on the line provided ... the undersigned circulator asserts that he or she is not a resident of Michigan and agrees to accept the jurisdiction of this state for the purpose of any legal proceeding or hearing that concerns a petition sheet executed by the circulator"
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.michiganpublic.org/politics-government/2025-09-10/per-signature-payments-for-petition-circulators-could-be-outlawed-in-michigan",
+   "quote": "A Michigan Senate committee moved forward bills Wednesday to outlaw political petition circulators being paid by the signature as part of a package of election fraud and disinformation deterrents."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.michiganpublic.org/politics-government/2025-09-10/per-signature-payments-for-petition-circulators-could-be-outlawed-in-michigan",
+   "quote": "In 2022, five Republican candidates for governor were disqualified from the Michigan primary ballot because of fraudulent petition signatures gathered by paid circulators."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.michiganpublic.org/politics-government/2025-09-10/per-signature-payments-for-petition-circulators-could-be-outlawed-in-michigan",
+   "quote": "The bills now go to the Senate floor. Similar bills cleared the Senate last year, but were never taken up by the House before the session ended in December."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-168-522",
+   "quote": "A clerk of a city, township, or village who maintains a computerized file of registered voters and who does not have direct access to the qualified voter files shall make, certify, and deliver to any person, upon request, a computer tape, disk, or listing, as specified by the person, of the names and addresses of the registered electors ... upon the payment to the clerk of the cost of making, certifying, and delivering the tape, disk, or listing."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-168-522",
+   "quote": "A computer tape, disk, or listing provided under subsection (1) shall include, upon request, the year of birth of an elector but shall not include the month and day of birth of an elector. A computer tape, disk, or listing provided under subsection (1) shall not include a person's driver's license or state personal identification card number or any other information that is exempt from disclosure under section 509gg or other section of this chapter."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-168-509gg",
+   "quote": "The secretary of state, a designated voter registration agency, or a county, city, township, or village clerk shall not release a copy of that portion of a registration record that contains any of the following: ... (c) A registered elector's driver license or state personal identification card number. (d) The month and day of birth of a registered elector. (e) The telephone number provided by a registered elector. (f) The digitized signature of an elector ..."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.michigan.gov/sos/resources/transparency",
+   "quote": "Michigan's Freedom of Information Act (FOIA), MCL 15.231 et seq, provides that certain persons can receive copies or make inspections of most public records of public bodies upon written request. ... The department may charge a fee to cover the cost of complying with a person's FOIA request."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.michigan.gov/sos/resources/communities/businesses",
+   "quote": "All records are $15 each; $16 if certified."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.michigan.gov/sos/resources/communities/businesses",
+   "quote": "Bulk information sales don't include customer phone numbers or email addresses, and data cannot be used for marketing or solicitation purposes. MDOS checks compliance on all sales and violations can be prosecuted as felony infractions."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / circulatorMustBeUSCitizen",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-544c.html",
+   "quote": "CERTIFICATE OF CIRCULATOR The undersigned circulator of the above petition asserts that he or she is 18 years of age or older and a United States citizen; that each signature on the petition was signed in his or her presence..."
+  },
+  {
+   "field": "circulatorMustBeStateResident",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-544c.html",
+   "quote": "If the circulator is not a resident of Michigan, the circulator shall make a cross or check mark on the line provided, otherwise each signature on this petition sheet is invalid and the signatures will not be counted by a filing official. By making a cross or check mark on the line provided, the undersigned circulator asserts that he or she is not a resident of Michigan and agrees to accept the jurisdiction of this state..."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-544c.html",
+   "quote": "(County of Registration, if Registered to Vote, of a Circulator who is not a Resident of Michigan)"
+  },
+  {
+   "field": "applies to independent presidential qualifying petition",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-544c.html",
+   "quote": "(3) If the circulator of a petition under section 482, a qualifying petition for an office named in section 590b(4), or a petition to form a new political party under section 685 is not a resident of this state, the circulator shall indicate where provided on the certificate of circulator that he or she agrees to accept the jurisdiction of this state... (16) The provisions of this section except as otherwise expressly provided apply to all petitions circulated under authority of the election law."
+  },
+  {
+   "field": "signerVsCirculator (signer must be qualified registered elector; president named)",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-590b.html",
+   "quote": "a qualifying petition for an office shall be signed by a number of qualified and registered electors of the district... (4) ...a qualifying petition for the office of president of the United States... shall be signed by at least 100 registered electors in each of at least 1/2 of the congressional districts of the state."
+  },
+  {
+   "field": "signer must be registered elector of city/township in heading",
+   "url": "https://codes.findlaw.com/mi/chapter-168-michigan-election-law/mi-comp-laws-168-544c.html",
+   "quote": "(6) Except as provided in section 544d, a petition sheet must not be circulated in more than 1 city or township and each signer of a petition sheet must be a registered elector of the city or township indicated in the heading of the petition sheet."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

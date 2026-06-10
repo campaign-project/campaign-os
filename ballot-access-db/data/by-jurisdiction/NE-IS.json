@@ -1,0 +1,101 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "NE-IS",
+ "jurisdiction": "Nebraska",
+ "abbr": "NE",
+ "petitionType": "initiated-statute",
+ "signatures": {
+  "required": 88012,
+  "headline": "7% of the registered voters of the state (Neb. Const. art. III, sec. 2: \"If the petition be for the enactment of a law, it shall be signed by seven percent of the registered voters of the state\"). Base = registered voters as of the signature-filing deadline."
+ },
+ "deadline": {
+  "headline": "\"filed with the Secretary of State who shall submit the measure thus proposed to the electors of the state at the first general election held not less than four months after such petition shall have been filed\" (Neb. Const. art. III, sec. 2). For the Nov. 3, 2026 general election, on or before July 3, 2026 (four months prior)."
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "7% of the registered voters of the state (Neb. Const. art. III, sec. 2: \"If the petition be for the enactment of a law, it shall be signed by seven percent of the registered voters of the state\"). Base = registered voters as of the signature-filing deadline.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "\"filed with the Secretary of State who shall submit the measure thus proposed to the electors of the state at the first general election held not less than four months after such petition shall have been filed\" (Neb. Const. art. III, sec. 2). For the Nov. 3, 2026 general election, on or before July 3, 2026 (four months prior)."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "5% of the registered voters in each of two-fifths (38) of the 93 counties — same constitutional distribution clause as for amendments (Neb. Const. art. III, sec. 2)."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Yes — \"Initiative measures shall contain only one subject.\" (Neb. Const. art. III, sec. 2.)"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Per-signature pay for INITIATIVE/REFERENDUM circulators is ALLOWED in Nebraska. The prior statutory ban on pay-per-signature was removed by LB 367 (2015); Nebraska is NOT one of the ~10 states banning per-sig pay for initiatives. Nebraska law requires that each circulator's PAID or VOLUNTEER status be disclosed on the petition form in large red lettering (Neb. Rev. Stat. ch. 32",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$500 flat for the statewide Nebraska Voter Registration file (annual affidavit + fee); once paid and the affidavit is approved, you may request updated files for one full year. Payable by cash or check/money order to the Secretary of State. (A new file is generated the first day of each month.)",
+  "whoCanObtain": "Any requester who completes and signs the affidavit (Public Service Request Form) attesting to a permitted use. Not open-access/instant download to the general public — the file is gated behind a sworn permitted-use affidavit and the $500 fee, and use is limited to elections, political activities, voter registration, law enforcement, and jury selection.",
+  "useRestrictions": "Permitted uses only: elections, political activities, voter registration, law enforcement, jury selection. The file \"shall not be posted, displayed, or used for commercial purposes or made accessible on the Internet.\" Recipient must disclose any security breach of the stored data to the Secretary of State without delay. Verifying petition signatures (matching signers to registered voters) is a permitted election/political-activity use.",
+  "requestProcess": "Application/affidavit + approval + payment. Complete the \"Public Service Request Form for the Nebraska Central Voter Registration System\" (voter-file-affidavit.pdf), submit it to the Elections Division with the $500 fee; upon payment and approval of the affidavit you may request the file (refreshed monthly) for one year. Submit to: Nebraska Secretary of State Elections Division, sos.elect@nebraska.gov / 402-471-2555 / P.O. Box 94608, Lincoln, NE 68509-4608.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sos.nebraska.gov/elections/voter-file-requests",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "GATE = CONSERVATIVE-HOLD (strictest reading), despite settled primary-source rules, for two reasons. (1) INDETERMINATE TARGET: the signature requirement is a percentage of registered voters AS OF THE FILING DEADLINE, which fluctuates and cannot be known in advance — proponents must over-collect. The figures here are computed from the most recent OFFICIAL statewide count, 1,257,308 registered voters (NE SoS \\\"Vr Statistics Count Report,\\\" processed 05/01/2026): ICA 10% = 125,7"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis (ICA 10% / ISS 7%) + distribution + deadline + singleSubject",
+   "url": "https://ballotpedia.org/Article_III,_Nebraska_Constitution",
+   "quote": "If the petition be for the enactment of a law, it shall be signed by seven percent of the registered voters of the state, and if the petition be for the amendment of the Constitution, the petition therefore shall be signed by ten percent of such registered voters. In all cases the registered voters signing such petition shall be so distributed as to include five percent of the registered voters of each of two-fifths of the counties of the state, and when thus signed, the petition shall be filed with the Secretary of State who shall submit the measure thus proposed to the electors of the state at the first general election held not less than four months after such petition shall have been filed... Initiative measures shall contain only one subject."
+  },
+  {
+   "field": "veto-referendum signatureBasis (5% / 10% suspension) + deadline + distribution + singleSubject",
+   "url": "https://ballotpedia.org/Article_III,_Nebraska_Constitution",
+   "quote": "Petitions invoking the referendum shall be signed by not less than five percent of the registered voters of the state, distributed as required for initiative petitions, and filed in the office of the Secretary of State within ninety days after the Legislature at which the act sought to be referred was passed shall have adjourned sine die or for more than ninety days... No more than one act or portion of an act of the Legislature shall be the subject of each referendum petition... When the referendum is invoked as to any act or part of act, other than emergency acts or those for the immediate preservation of the public peace, health, or safety, by petition signed by not less than ten percent of the registered voters of the state distributed as aforesaid, it shall suspend the taking effect of such act or part of act until the same has been approved by the electors of the state."
+  },
+  {
+   "field": "signatureBasis (registered voters supersedes votes-cast-for-Governor)",
+   "url": "https://ballotpedia.org/Article_III,_Nebraska_Constitution",
+   "quote": "The part of Section 2 which refers to registered voters repeals the reference in Section 4 below which refers to those voting in the preceding gubernatorial election. As per Section 2 above, the number of signatures required for placement of an initiative petition on the ballot by the Nebraska Constitution is equal to 10 percent of the number of registered voters on the date the signatures are to be turned in. This was litigated in Duggan v. Beermann, 245 Neb. 907, 515 N.W.2d 788 (1994)."
+  },
+  {
+   "field": "signatureRequirement base (official current-cycle registered-voter total)",
+   "url": "https://sos.nebraska.gov/sites/default/files/doc/elections/vrstats/2026VR/Statewide-May-2026.pdf",
+   "quote": "Vr Statistics Count Report — Count of Voters Eligible to Vote — Nebraska — Processed: 05/01/2026 — Grand Total 1257308"
+  },
+  {
+   "field": "distribution requirement (38 counties) + per-sig pay allowed + circulator residency not required + badge disclosure",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nebraska",
+   "quote": "Initiative proponents are required to collect signatures from 5 percent of the registered voters in each of two-fifths (38) of Nebraska's 93 counties... Nebraska allows paying signature gatherers based on the number of signatures collected. In 2015, Nebraska Legislative Bill 367 removed the state's ban on pay-per-signature practices... Nebraska does not require that petition circulators reside in the state... The state does require that circulators be at least eighteen years of age... Nebraska law requires that the circulator's paid or volunteer status be disclosed on the petition form in large red lettering."
+  },
+  {
+   "field": "deadline (four months before general election) + circulation window",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nebraska",
+   "quote": "However, according to state law, completed signature petitions are due at least four months prior to the next general election, and submitted signatures become invalid at the next general election occurring at least four months following the submission of the preliminary petition form."
+  },
+  {
+   "field": "current-cycle signature approximations (corroboration)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nebraska",
+   "quote": "July 3, 2026 | 1,270,544 | 127,054 | 88,938 | 63,527 | 127,054"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

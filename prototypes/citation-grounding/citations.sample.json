@@ -1,0 +1,38 @@
+[
+  {
+    "id": "co-notary",
+    "field": "witnessOrNotary",
+    "url": "https://colorado.public.law/statutes/crs_1-4-905",
+    "quote": "shall not accept for filing any section of a petition which does not have attached to it the notarized affidavit required by this section"
+  },
+  {
+    "id": "co-sig-per-cd",
+    "field": "signaturesRequired",
+    "url": "https://colorado.public.law/statutes/crs_1-4-802",
+    "quote": "At least one thousand five hundred in each congressional district for the office of president and vice president"
+  },
+  {
+    "id": "co-circulator-age",
+    "field": "circulatorEligibility",
+    "url": "https://colorado.public.law/statutes/crs_1-4-905",
+    "quote": "shall not circulate a petition to nominate a candidate unless the person is a citizen of the United States and at least eighteen years of age"
+  },
+  {
+    "id": "co-FABRICATED",
+    "field": "captureMode",
+    "url": "https://colorado.public.law/statutes/crs_1-4-905",
+    "quote": "petitions may be signed electronically from any mobile device anywhere in the state of Colorado"
+  },
+  {
+    "id": "ca-8401-fullcount",
+    "field": "validationModel",
+    "url": "https://codes.findlaw.com/ca/elections-code/elec-sect-8401.html",
+    "quote": "the elections official shall examine and verify each signature filed"
+  },
+  {
+    "id": "az-equal-scope",
+    "field": "digitalScope",
+    "url": "https://www.azleg.gov/ars/16/00318.htm",
+    "quote": "This section applies only to candidates for the office of United States senator or representative in Congress"
+  }
+]

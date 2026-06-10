@@ -1,0 +1,212 @@
+{
+  "jurisdiction": "Virginia",
+  "signaturesHeadline": "VA: 5,000 sigs total, ≥200 per congressional district (11 districts) — AUTO-LIVE",
+  "deadlineHeadline": "VA: noon of 74th day before election (2024 cycle = Aug 23, 2024) — AUTO-LIVE",
+  "riskNote": "7 of 9 fields AUTO-LIVE on grounded primary statute (Va. Code 24.2-543). Two HOLDs: captureMode (operative value \"paper\" confirmed, but draft's form ID ELECT-543(P) is WRONG — current 2024 indep/3rd-party petition is ELECT-242(P); HB89 source CAPTCHA-blocked) and feeAlternative (negative/absence claim not provable from a single quote). No field BLOCKED; all relied values are ballot-access-safe.",
+  "sosInquiries": [
+    "For an independent/third-party presidential elector petition under Va. Code 24.2-543, is there any filing fee or fee-in-lieu-of-signatures alternative to the 5,000-signature petition, or is petition the sole ballot-access path? (Confirming no fee provision exists anywhere in Title 24.2 for this petition.)",
+    "For the 2024+ cycle, what is the correct current Department of Elections form number for the independent/third-party Petition of Qualified Voters for Electors for President and Vice President — is it ELECT-242(P)? And is any online/electronic filing path available, or is original wet-signature paper still required?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "5,000 signatures of Virginia qualified voters total, with at least 200 from each of Virginia's 11 congressional districts. The 5,000 total is the binding figure (11 x 200 = 2,200 < 5,000). Basis: Va. Code Sec. 24.2-543(A).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.97,
+      "note": "Statute quote verbatim at vacode.org/24.2-543.txt: 'signed by at least 5,000 qualified voters and include signatures of at least 200 qualified voters from each congressional district.' Ballotpedia quote verbatim. Independently confirmed VA has 11 congressional districts (in effect since 2022 elections; 118th/119th Congress). Binding-total reasoning correct."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Noon of the 74th day before the presidential election (statutory, recomputes each cycle). For the Nov 5, 2024 general election that date was August 23, 2024. Basis: Va. Code Sec. 24.2-543(A).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.96,
+      "note": "Statute quote verbatim: 'filed with the State Board by noon of the seventy-fourth day before the presidential election.' Independently computed: 74 days before 2024-11-05 = 2024-08-23 (Friday) — matches draft. Forward-looking operative rule is the 74th-day formula, not the fixed 2024 date."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Yes — distribution requirement: at least 200 qualified-voter signatures from each of Virginia's 11 congressional districts (within the 5,000 total). Elector slate must also include one elector residing in each congressional district plus two at-large. Basis: Va. Code Sec. 24.2-543(A).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.96,
+      "note": "Both quotes verbatim at vacode.org/24.2-543.txt ('include signatures of at least 200 qualified voters from each congressional district' and 'including one elector residing in each congressional district and two from the Commonwealth at large'). Correct."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Each signature must be witnessed by either (a) a constitutionally qualified candidate for President (who may witness his own petition), or (b) a Virginia resident who is not a minor and not a felon whose voting rights have not been restored. The witness need not be a registered voter. Basis: Va. Code Sec. 24.2-543(A).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Statute quote verbatim. The 'need not be a registered voter' gloss is well-supported by plain text (statute requires only residency + non-minor + non-disqualified-felon, not registration). Minor reading, but settled by the text itself."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Two layers: (1) per-page circulator/witness affidavit (VA residency, not a minor, not a disqualified felon) on EACH petition page; (2) a subscribed and notarized oath by each selected elector, filed with the petition. Basis: Va. Code Sec. 24.2-543(A).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.94,
+      "note": "Both quotes verbatim ('whose affidavit to that effect appears on each page of the petition' and 'a subscribed and notarized oath by each elector'). Corroborated by the official VA elector oath form ELECT-242(C) for independent/third-party electors."
+    },
+    {
+      "field": "captureMode",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "paper. The independent/third-party Petition of Qualified Voters for Electors for President and Vice President is collected on the Department of Elections' prescribed paper form with original wet signatures and per-page witness affidavits; no online/remote filing path was available for the 2024 cycle. NOTE: the operative form number is ELECT-242(P), NOT 'ELECT-543(P)' as the draft stated. Basis: Va. Code Sec. 24.2-543(A) + VA Dept. of Elections candidate forms page.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": false,
+      "confidence": 0.8,
+      "note": "HOLD for a factual defect, not a legal interpretation. Core value 'paper' is independently grounded by the statute (wet signatures + per-page affidavits) AND the official VA forms page (which lists only paper letter/legal petition forms for the 2024 indep/3rd-party general path). BUT (1) the draft's form ID 'ELECT-543(P)' is WRONG — the current 2024 form is ELECT-242(P); ELECT-543(P) survives only in stale 2020 Korean-language filenames; (2) the HB89/TrackBill citation is CAPTCHA-blocked and could not be grounded, so the prospective-online-system claim is unverified. Relying on 'paper' is the strictest/safest posture for ballot access."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "None (treat as petition-only). Va. Code Sec. 24.2-543 contains no filing fee and no fee-in-lieu-of-signatures alternative for the independent/non-party presidential elector petition; verify with the state before relying on any fee path. Basis: Va. Code Sec. 24.2-543(A).",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.78,
+      "note": "HOLD because this is a negative/absence claim. The grounded statute quote shows the petition path but does not affirmatively state 'no fee'; proving the absence of any fee-in-lieu alternative anywhere in Title 24.2 from a single quote is an inference retrieval did not fully settle. The value is very likely correct (VA presidential ballot access is petition-only), so the strictest defensible posture (assume no fee escape, plan for full petition) is also the safe one. SOS inquiry added."
+    },
+    {
+      "field": "minorPartyPathNote",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "The new/minor-party (party-name) path uses the SAME statute (Sec. 24.2-543) and SAME numeric requirements (5,000 signatures, 200 per congressional district, noon of the 74th day, same witness/notary rules). The only material difference is the ballot LABEL: to appear under a chosen party name the group must additionally have had, for at least six months before filing, a state central committee of registered voters from each congressional district, a party plan and bylaws, and a designated chairman and secretary; otherwise the candidate and electors are designated 'Independent'. Basis: Va. Code Sec. 24.2-543(A).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.93,
+      "note": "Both quotes verbatim at vacode.org/24.2-543.txt (six-month organizational requirement for party name; 'Independent' designation fallback). The same-statute/same-numeric-requirements claim is directly correct — there is no separate numeric scheme for the party-name path."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found; per-signature neither authorized nor prohibited",
+    "note": "Virginia's controlling statute for an independent/non-party presidential petition is Va. Code § 24.2-242 (enacted 2024 c. 801, which repealed the former § 24.2-543/§ 24.2-542); it, the general independent-candidate petition statute § 24.2-506, and the election-offenses chapter (§§ 24.2-1000 to 24.2-1019) are silent on circulator compensation — paying candidate-petition circulators (per signature or at all) is neither expressly authorized nor prohibited, so compensation is UNADDRESSED. Circulator residency is NOT required: both § 24.2-242 and § 24.2-506 expressly allow nonresident petition circulators (who must sign a consent-to-jurisdiction statement and remain subject to subpoena), and the witness need only be a non-minor and not a disqualified felon, so a national paid pool could legally circulate there.",
+    "sosInquiry": "For an independent (non-party) presidential candidate's petition under Va. Code § 24.2-242, may the campaign pay petition circulators per signature collected, and are there any restrictions on compensating circulators (e.g., per-signature bans, registration, or disclosure requirements)?",
+    "citations": [
+      {
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter2.1/section24.2-242/",
+        "quote": "The petition shall be signed by at least 5,000 qualified voters and include signatures of at least 200 qualified voters from each congressional district. The petition shall be signed by petitioners on and after January 1 of the year of the presidential election and contain the residence address of each petitioner. The signature of each petitioner shall be witnessed either by an individual who is a constitutionally qualified candidate for President, who may witness his own petition, or by an individual who is not a minor or a felon whose voting rights have not been restored and whose affidavit to that effect appears on each page of the petition. Each individual circulating a petition who is not a legal resident of the Commonwealth shall sign a statement on the affidavit that he consents to the jurisdiction of the courts of Virginia in resolving any disputes concerning the circulation of petitions, or signatures contained therein, by that individual."
+      },
+      {
+        "url": "https://lis.virginia.gov/cgi-bin/legp604.exe?241+ful+CHAP0801",
+        "quote": "That §§ 24.2-202 through 24.2-205 and Article 6 (§§ 24.2-542, 24.2-542.1, and 24.2-543) of Chapter 5 of Title 24.2 of the Code of Virginia are repealed."
+      },
+      {
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter5/section24.2-506/",
+        "quote": "Each signature on the petition shall have been witnessed by a person who is not a minor or a felon whose voting rights have not been restored and whose affidavit to that effect appears on each page of the petition. Each such person circulating a petition who is not a legal resident of the Commonwealth shall sign a statement on the affidavit that he consents to the jurisdiction of the courts of Virginia in resolving any disputes concerning the circulation of petitions, or signatures contained therein, by that person."
+      },
+      {
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter10/",
+        "quote": "§ 24.2-1007 Soliciting or accepting bribe to influence or procure vote"
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Not a flat published rate — invoice-calculated by list type + number of records, then reduced 90% (effective 7/1/2025). Statewide Registered Voter List example: ~$600 (down from ~$6,000 pre-cut). Quote the exact figure on the invoice.",
+    "whoCanObtain": "Eligibility-gated / political-use-only. Per Code of Va. 24.2-405 and the ELECT Client Services page: candidates for election or party nomination; political party committees/officials; PACs registered with ELECT or the FEC; incumbent officeholders; nonprofits promoting voter participation/registration; and Virginia/federal courts (jury selection). NOT sold to the general public or commercial interests. A petitioning campaign/candidate qualifies.",
+    "useRestrictions": "Strong, statutory. Lists may be used \"for political purposes only\" (parties/PACs) and \"furnished to no one else and used for no other purpose\" (24.2-405(A)). No internet publishing: recipients may not post the data \"on the Internet ... as a list, database, or other similar searchable format\" or give it to a third party for that purpose (24.2-405(E)). Statewide lists contain no SSN. Misuse/improper sale of voter lists is penalized under Title 24.2 (e.g., 24.2-1004/1005 election-law penalties).",
+    "requestProcess": "Application form + eligibility approval + invoice. Download the Voter List Request Form and email to info@elections.virginia.gov (or contact Andrea Walker, 804-864-8905), specifying client type, product (RVL), and statewide scope. ELECT verifies requester qualification, then issues an itemized invoice; once signed/paid the data is delivered. Process can take up to 10 business days. No instant online download.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://www.elections.virginia.gov/candidatepac-info/client-services/",
+    "note": "Virginia restricts statewide voter-file purchase to eligible political actors (candidates, parties, PACs, incumbents, voter-participation nonprofits) for political/permitted use only; a petitioning campaign qualifies via the Registered Voter List (RVL). The RVL includes full name, residence address, and registration status — sufficient to match petition signers to registered voters. As of 7/1/2025, ELECT cut all voter-list prices by 90%, putting a full statewide RVL around $600.",
+    "citations": [
+      {
+        "url": "https://www.elections.virginia.gov/candidatepac-info/client-services/",
+        "quote": "Pursuant to Code of Virginia §§ 24.2-405, 24.2-406, 24.2-407, 24.2-407.1, and 24.2-706, the Virginia Department of Elections (ELECT) provides, at a reasonable cost to qualified persons or entities, several different lists of those who voted and registered voters."
+      },
+      {
+        "url": "https://www.elections.virginia.gov/candidatepac-info/client-services/",
+        "quote": "Registered Voter List (RVL) and Newly Registered Voter List (NRV) – full name, residence address, mailing address, gender, full date of birth, registration date, date last registration form received, registration status, locality, precinct, voting districts and voter identification number."
+      },
+      {
+        "url": "https://www.elections.virginia.gov/candidatepac-info/client-services/",
+        "quote": "Persons Who Qualify to Obtain Data ... Candidates for election or political party nomination; Political party committees or officials; Political action committees (PACs) which are currently registered with the ELECT or with the Federal Election Commission; Incumbent office holders; Non-profit organizations which promote voter participation and voter registration"
+      },
+      {
+        "url": "https://www.elections.virginia.gov/candidatepac-info/client-services/",
+        "quote": "Information within a list of registered voters provided by the Department of Elections may not be posted, or provided to a third party for posting, on the internet as a list, database, or other similar searchable format."
+      },
+      {
+        "url": "https://www.elections.virginia.gov/candidatepac-info/client-services/",
+        "quote": "Qualification of the requester to purchase a list must be verified. Upon verification, an invoice is sent to the potential client itemizing the requested data. The process can take up to 10 business days to be completed."
+      },
+      {
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter4/section24.2-405/",
+        "quote": "The Department of Elections shall provide, at a reasonable price, lists of registered voters for their districts to (i) candidates for election or political party nomination to further their candidacy, (ii) political party committees or officials thereof for political purposes only ... The lists shall be furnished to no one else and used for no other purpose."
+      },
+      {
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter4/section24.2-405/",
+        "quote": "No recipient of a list furnished under this section shall publish on the Internet any of the information contained in such list as a list, database, or other similar searchable format or provide information contained in a list furnished under this section to a third party for such purpose."
+      },
+      {
+        "url": "https://virginiamercury.com/2025/06/24/virginia-slashes-voter-data-costs-ahead-of-2025-elections/",
+        "quote": "For example, a statewide list that currently costs $6,000 will soon be available for $600."
+      },
+      {
+        "url": "https://virginiamercury.com/2025/06/24/virginia-slashes-voter-data-costs-ahead-of-2025-elections/",
+        "quote": "“Prices are calculated based on the amount of information requested,” the Department of Elections noted. “Once the price is calculated using current methods, the cost to the purchaser will be reduced by 90 percent.”"
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 18,
+    "ageRule": "Yes — there is a circulator age requirement. Va. Code § 24.2-242(B) (the controlling statute for independent/non-party presidential elector petitions, enacted 2024 c. 801) requires each petitioner's signature to be \"witnessed either by an individual who is a constitutionally qualified candidate for President ... or by an individual who is not a minor or a felon whose voting rights have not been re",
+    "minorCanCirculate": "no",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNERS must be \"qualified voters\" (registered Virginia voters), and at least 5,000 total including 200 from each congressional district. The CIRCULATOR (witness who signs the per-page affidavit) need only be (a) not a minor and (b) not a felon whose voting rights have not been restored — no registration, citizenship, or Virginia-residency requirement; the statute expressly allows nonresident circ",
+    "gate": "AUTO-LIVE",
+    "note": "For an INDEPENDENT/non-party PRESIDENTIAL candidate in Virginia, the petition is the \"naming electors by petition\" process under Va. Code § 24.2-242 (Chapter 2.1, Presidential Electors; enacted 2024 c. 801, effective 7/1/2024 — this replaced the repealed § 24.2-542 and is cross-referenced by the ballot statute § 24.2-614). Its circulator/witness rule in subsection B is explicit and nearly identical to the general independent-candidate rule in § 24.2-506. CIRCULATOR (the witness who signs the aff",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMinAge / circulatorAgeRule / minorCanCirculate / circulatorMustBeRegisteredVoter / circulatorMustBeStateResident / circulatorMustBeUSCitizen",
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter2/section24.2-242/",
+        "quote": "The signature of each petitioner shall be witnessed either by an individual who is a constitutionally qualified candidate for President, who may witness his own petition, or by an individual who is not a minor or a felon whose voting rights have not been restored and whose affidavit to that effect appears on each page of the petition. Each individual circulating a petition who is not a legal resident of the Commonwealth shall sign a statement on the affidavit that he consents to the jurisdiction of the courts of Virginia in resolving any disputes concerning the circulation of petitions, or signatures contained therein, by that individual. The signatures of qualified voters collected by a nonresident petition circulator who fails to sign such statement, or who later fails to appear or produce documents when properly served with a subpoena to do so, shall not be counted toward the minimum number of signatures required pursuant to this subsection."
+      },
+      {
+        "field": "signerVsCirculator (signers must be qualified voters)",
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter2/section24.2-242/",
+        "quote": "A group of qualified voters, not constituting a political party as defined in § 24.2-101, may have the names of nominated electors selected by them ... The petition shall be signed by at least 5,000 qualified voters and include signatures of at least 200 qualified voters from each congressional district."
+      },
+      {
+        "field": "circulatorMinAge (definition of minor / age of majority)",
+        "url": "https://law.lis.virginia.gov/vacode/title1/chapter2/section1-204/",
+        "quote": "For the purposes of all laws of the Commonwealth including common law, case law, and the acts of the General Assembly, unless an exception is specifically provided in this Code, a person shall be an adult, shall be of full age, and shall reach the age of majority when he becomes 18 years of age."
+      },
+      {
+        "field": "controlling statute cross-reference (independent presidential petition uses § 24.2-242)",
+        "url": "https://law.lis.virginia.gov/vacodefull/title24.2/chapter6/article2/",
+        "quote": "The ballot shall contain the name of each political party and the party group name, if any, specified by the individuals naming electors by petition pursuant to § 24.2-242."
+      },
+      {
+        "field": "parallel general independent-candidate circulator rule (§ 24.2-506)",
+        "url": "https://law.lis.virginia.gov/vacode/title24.2/chapter5/section24.2-506/",
+        "quote": "Each signature on the petition shall have been witnessed by a person who is not a minor or a felon whose voting rights have not been restored and whose affidavit to that effect appears on each page of the petition. Each such person circulating a petition who is not a legal resident of the Commonwealth shall sign a statement on the affidavit that he consents to the jurisdiction of the courts of Virginia in resolving any disputes concerning the circulation of petitions, or signatures contained therein, by that person."
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "DE",
+ "jurisdiction": "Delaware",
+ "abbr": "DE",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 7600,
+  "headline": "DE: 1% of statewide registration (Dec 31 prior yr) — HOLD on the \"~7,600\" number; rely on the formula, confirm exact count w/ Commissioner"
+ },
+ "deadline": {
+  "headline": "DE: Petition + sworn non-affiliation declaration due by close of business Sept 1 of election year (circulate Jan 1–Jul 15) — LIVE"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Not less than 1% of the total number of voters registered statewide in Delaware as of December 31 of the year immediately preceding the general election year (15 Del. C. 3002(b)). This is a recomputed percentage with no fixed statutory number; do NOT plan to a specific count such as ~7,600. Treat the required number as the 1% formula applied to the certified statewide registration total for the actual cycle, and confirm the exact figure with the State Election Commissioner before relying on it. Path: unaffiliated-candidate nominating petition; president is a statewide office.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Legal rule fully grounded: statute quote (15 Del. C. 3002(b)) and DE elections-office quote both appear VERBATIM at the cited pages; Ballotpedia corroborates the 1% statewide basis. Adversarial re-derivation confirms the 1% formula is correct and current. HOLD is driven solely by the embedded, self-disclaimed estimate 'roughly 7,600 signatures (~760,000 registrants).' This number is NOT from a primary source and I could not independently verify it (web search was intermittently unavailable). Recent DE statewide registration has run well above 760k (plausibly ~770k-790k+), so 1% could be ~7,700-7,900 — meaning 7,600 may UNDERSTATE the requirement, a ballot-access risk. Stripped the hard number; relied value is the formula only."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "The nominating petition and the sworn unaffiliated-candidate declaration of non-affiliation must be filed on or before the close of the official business day on September 1 of the general election year, with the State Election Commissioner (president is a statewide office) per 15 Del. C. 3002(b). Separately, the petition may be circulated and executed only between January 1 and July 15 of the election year (15 Del. C. 3002(d)).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Statute quote (3002(b)) appears VERBATIM at delcode.delaware.gov/title15/c030; Ballotpedia quote (Sept 1 filing; Jan 1-Jul 15 circulation) appears VERBATIM in the saved page (line 231). Independently re-derived: 3002(b) text confirms Sept 1 close-of-business filing; 3002(d) confirms the Jan 1-Jul 15 circulation window. Clean calendar facts, no interpretation. Added the circulation window to reliedValue because it is a hard companion constraint the draft mentioned only under distributionRule."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. A single statewide 1% threshold applies with no per-county or per-congressional-district minimum quota. Signatures are collected on county-segregated petition sheets — each signer must sign the petition prepared for the county in which that voter is registered, and each county's petition is filed with and verified by that county's Department of Elections (15 Del. C. 3002(d)). This is an organizational/filing rule, not a minimum-per-county distribution requirement.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Statute quote (3002(d): 'Such petition shall be circulated and executed between January 1 and July 15... Each registered voter signing shall do so upon a petition prepared for the county in which that registered voter is registered, and the petition shall be filed with the Department. The signatures and other information thereon shall be verified by the department receiving the petition.') appears VERBATIM. Re-derivation confirms no per-county minimum exists in Chapter 30; the county-segregation is purely organizational. Characterization is accurate."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Treat circulators conservatively: use circulators who are adults, Delaware residents, and themselves registered Delaware voters, and who can appear before a notary to swear they witnessed each signature (15 Del. C. 3002(c)(4)), pending written confirmation from the State Election Commissioner. The statute imposes no EXPRESS age/residency/voter-registration requirement on the circulator, but its silence does not rule out requirements in the Commissioner's prescribed petition form or regulations; the strict assumption avoids any risk of signature/petition rejection. Each SIGNER must be a registered Delaware voter on the date of signing (3002(e)(1)).",
+   "confidence": 0.78,
+   "interpretationRequired": true,
+   "note": "Citation grounded: the quote '(1) The signer was not a registered voter on the date the signer signed the petition;' appears VERBATIM in 3002(e). The draft's value is 'UNKNOWN' for circulator qualifications, which matches the statute text (3002 has no circulator-eligibility clause; only the notarized witness statement in 3002(c)(4)). HOLD because correctness hinges on absence-of-evidence: retrieval cannot confirm that the Commissioner's prescribed form/regs impose no circulator requirements, and 'UNKNOWN' is not a safe operational value. Over-comply with the strictest plausible practice and ask the Commissioner directly (see sosInquiries)."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Yes. The nominating petition must contain a sworn notarized statement of the person circulating the petition that they witnessed the placing of each signature (15 Del. C. 3002(c)(4)). Separately, the candidate must file a sworn declaration (with the State Election Commissioner for a statewide/presidential candidate) stating non-affiliation with any political party for at least 90 days before filing (3002(b)). Each signer must also acknowledge that knowingly entering false information may subject the signer to perjury prosecution (3002(c)(3)).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both statute quotes appear VERBATIM at delcode.delaware.gov/title15/c030: 3002(c)(4) notarized circulator-witness statement, and 3002(b) the sworn non-affiliation declaration to the State Election Commissioner for statewide candidates. The perjury acknowledgment (3002(c)(3)) is also present in the retrieved text. Re-derivation confirms all three. Correct and current."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Wet-ink paper petition only. Each signer provides signature, printed name, registration address, Social Security number, and date (15 Del. C. 3002(c)(2)), on county-segregated paper petition sheets with a notarized circulator certification, filed with and verified against the permanent registration record by the county Department of Elections. The Department provides the unaffiliated petition as a downloadable PDF to be printed, circulated, and physically filed; there is no digital/online submission path for this petition.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Statute quote ('Signature, printed name, address at which registered, social security number and date on which signed by signer;') appears VERBATIM in 3002(c)(2); elections-office quote ('Complete Petition for Unaffiliated Candidate to Secure Ballot Status by September 1st of a general election year.') appears VERBATIM. The operative value 'paper' is correct and is also the strict/safe answer. The 'NO digital system' claim is a negative I cannot exhaustively prove, but it is strongly supported (SSN + notarized wet-ink witness + downloadable PDF form), and it does not loosen any requirement, so AUTO-LIVE on the value 'paper'."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. There is no filing fee in lieu of, or in addition to, signatures for the unaffiliated (independent) path; the signature petition is the sole means of ballot qualification. Filing fees (no more than 1% of the office's total term salary, set by the party, 15 Del. C. 3103) apply only to major-party primary candidates, not to the unaffiliated petition route or to a presidential candidate using it.",
+   "confidence": 0.88,
+   "interpretationRequired": false,
+   "note": "Both elections-office quotes appear VERBATIM: 'Set filing fees of no more than 1% of the total salary for the term of an office. ( 3103)' (listed under major political parties) and 'File An Unaffiliated Candidate Declaration' (under unaffiliated candidates, with no fee). Re-derivation confirms the unaffiliated path in Chapter 30 has no fee and no fee-in-lieu-of-signatures option. Correct."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$25.00 flat per request for most requestors (incl. \"Public\"); free of charge (\"No Cost\") for qualified candidates per 15 Del. C. §304(e) and for major/minor political parties per §304(a)-(c). One file format/scope per request.",
+  "whoCanObtain": "Anyone may request via the Voter Registration File Request form, which has four requestor types: Major/Minor Political Party; Candidate; Public; and General Assembly/State Agencies/County or Local Government. Free copies are reserved for ballot-qualified candidates (or a member of their committee) and political parties; the public and others pay the set fee. Not FOIA-able (Title 29 Ch. 100 expressly does not apply).",
+  "useRestrictions": "Strict, sworn under penalty of perjury: information \"will not be used for commercial solicitation or for any other purpose not related to the electoral process,\" and the requestor may not make it available to the public/third parties or publish/republish it in a way that allows such use. A material misstatement on the form may constitute grounds for conviction of perjury.",
+  "requestProcess": "Written/PDF application form (Voter Registration File Request, VRFM006) submitted to the State Election Commissioner with payment (check/cash/money order) or \"No Cost\" box checked. Requires a signed affirmation/oath sworn under penalty of perjury. File is delivered via secure (encrypted) email; allow up to 10 business days; limit of 1 active request at a time. Form: https://elections.delaware.gov/public/forms/pdfs/statewide_vreg_order_form.pdf",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://elections.delaware.gov/candidates/purchasereports.shtml",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — rule binds signers only. 15 Del. C. § 3002 imposes no minimum age (or any other personal qualification) on the circulator. The only requirement placed on the circulator is § 3002(c)(4): \"A sworn notarized statement of the person circulating the petition that person witnessed the placing of each signature on the petition.\" Because the petition must be notarized, the ",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "unknown",
+  "signerVsCirculator": "SIGNER must be a registered Delaware voter (§ 3002(c)(2), (d), (e)); CIRCULATOR need only witness signatures and provide a sworn notarized statement (§ 3002(c)(4)) — no registration/residency/citizenship/age requirement on the circulator.",
+  "gate": "CONSERVATIVE-HOLD",
+  "note": "For an unaffiliated (independent) PRESIDENTIAL candidate, Delaware ballot access runs through the statewide unaffiliated-candidate nominating petition in 15 Del. C. ch. 30 § 3002 (Chapter 43 on Presidential Electors references the \"unaffiliated presidential candidate\" but adds no separate petition/circulator rule). The circulator's role is defined narrowly and affirmatively in § 3002(c)(4): the circulator (\"the person circulating the petition\") must provide \"a sworn notarized statement\" that the",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Core legal rule (1% statewide, Sept 1 deadline, notarized circulator affidavit, paper-only, no fee) is fully grounded in 15 Del. C. 3002 + DE elections office; two holds — the specific ~7,600 signature count is unverified and possibly low (use the 1% formula, not a fixed number), and circulator eligibility is statutorily silent (assume strict: adult DE registered-voter circulators) pending Commissioner confirmation."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://delcode.delaware.gov/title15/c030/index.html",
+   "quote": "The nominating petition shall contain such information and be on a form as prescribed by the State Election Commission. The following information shall, however, be contained in the petition: ... (4) A sworn notarized statement of the person circulating the petition that person witnessed the placing of each signature on the petition."
+  },
+  {
+   "field": "compensation",
+   "url": "https://delcode.delaware.gov/title15/c030/index.html",
+   "quote": "Such petition shall be circulated and executed between January 1 and July 15 of the year in which the general election is held. Each registered voter signing shall do so upon a petition prepared for the county in which that registered voter is registered, and the petition shall be filed with the Department."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Delaware",
+   "quote": "Filed petitions must contain a sworn, notarized statement that the circulator witnessed the signing of each signature and that, to the best of the circulator's knowledge and belief, the signers are registered voters of the election district in which the candidate is running. The code does not specify any requirements for circulators."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Delaware",
+   "quote": "An independent presidential candidate must petition for access to the general election ballot. The petition must contain signatures equaling at least 1 percent of the total number of registered voters in the state as of December 31 of the year preceding the election. This petition must be filed with the state election commissioner by September 1 in the year of the election. This petition must be circulated between January 1 and July 15 of the year in which the election is taking place."
+  },
+  {
+   "field": "compensation",
+   "url": "https://delcode.delaware.gov/title15/c051/sc02/index.html",
+   "quote": "Whoever bribes or attempts to bribe anyone expecting to hold any official position under the election or registration laws of this State, either as registrar, inspector, judge or otherwise, by giving money or the promise of money, office or the promise of office or position either under the state or federal government, to perform any service for any political party in this State or to favor any candidate for political office shall be fined not more than $1,000 and may be imprisoned not more than 6 months."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://elections.delaware.gov/candidates/purchasereports.shtml",
+   "quote": "NOTE: There is no charge for voter registration lists for filed or nominated candidates."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://elections.delaware.gov/public/forms/pdfs/statewide_vreg_order_form.pdf",
+   "quote": "7. Payment Information (Cost is $25.00 per request. Select one payment option) ... No Cost (See Title 15, Chapter 3, §304(e))"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://elections.delaware.gov/public/forms/pdfs/statewide_vreg_order_form.pdf",
+   "quote": "I swear or affirm, under penalty of perjury, that: The Voter Registration information and any accompanying documents received as part of this request will not be used for commercial solicitation or for any other purpose not related to the electoral process, or make the information available to the public or third parties or publish or republish the information in a way that allows it to be used in that manner."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://elections.delaware.gov/public/forms/pdfs/statewide_vreg_order_form.pdf",
+   "quote": "Files and lists provided to major and minor political parties pursuant to subsections (a) through (d) of this section and to candidates for elective office pursuant to subsection (e) of this section shall be limited to voter names, addresses, political party affiliations, voting history, legislative district information, telephone numbers, and years of birth."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://delcode.delaware.gov/title15/c003/index.html",
+   "quote": "(e) The State Election Commissioner shall, upon request, provide free of charge to any candidate for election who has qualified to appear on an upcoming primary or general election ballot a file and/or list of registered voters for the jurisdiction for which that person has qualified as a candidate."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://delcode.delaware.gov/title15/c003/index.html",
+   "quote": "(g) The State Election Commissioner, in collaboration with the Department, shall establish a reasonable cost for files and lists of registered voters requested by persons or organizations not eligible to receive lists in accordance with this section."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://delcode.delaware.gov/title15/c003/index.html",
+   "quote": "Files and lists provided to the public shall be limited to voter names, addresses, political party affiliations, voting history, legislative district information, and years of birth. The Delaware Freedom of Information Act, Chapter 100 of Title 29, shall not apply to information contained in voter lists and files created and maintained pursuant to this title."
+  },
+  {
+   "field": "circulatorAgeRule / circulatorMustBeRegisteredVoter / signerVsCirculator",
+   "url": "https://delcode.delaware.gov/title15/c030/index.html",
+   "quote": "(4) A sworn notarized statement of the person circulating the petition that person witnessed the placing of each signature on the petition."
+  },
+  {
+   "field": "signerVsCirculator / circulatorMustBeRegisteredVoter",
+   "url": "https://delcode.delaware.gov/title15/c030/index.html",
+   "quote": "Each registered voter signing shall do so upon a petition prepared for the county in which that registered voter is registered, and the petition shall be filed with the Department. The signatures and other information thereon shall be verified by the department receiving the petition."
+  },
+  {
+   "field": "signerVsCirculator (signer qualifications)",
+   "url": "https://delcode.delaware.gov/title15/c030/index.html",
+   "quote": "Signatures may be rejected for the following reasons: (1) The signer was not a registered voter on the date the signer signed the petition; (2) The signer's place of residence or the signer's Social Security number do not match those appearing in the permanent registration record; (3) The signer did not list that signer's own Social Security number;"
+  },
+  {
+   "field": "note (presidential path runs through § 3002 unaffiliated-candidate petition)",
+   "url": "https://delcode.delaware.gov/title15/c030/index.html",
+   "quote": "By September 1 of a general election year, the candidate shall file nominating petitions, as prescribed in this chapter, signed by not less than 1% of the total number of voters registered, as of December 31 of the year immediately preceding the general election year in the State"
+  },
+  {
+   "field": "note (Chapter 43 recognizes unaffiliated presidential candidate but adds no petition/circulator rule)",
+   "url": "https://delcode.delaware.gov/title15/c043/sc01/index.html",
+   "quote": "an elector chosen or appointed in this State for the election of a President and Vice President of the United States under this chapter shall cast the elector's vote for the presidential and vice presidential nominees, or their legal successors, of the political party or unaffiliated presidential candidate that nominated the elector."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

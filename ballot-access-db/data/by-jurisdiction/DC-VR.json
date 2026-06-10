@@ -1,0 +1,116 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "DC-VR",
+ "jurisdiction": "District of Columbia",
+ "abbr": "DC",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 23812,
+  "headline": "Same as initiative: \"5% of the registered qualified electors in the District; provided, that the total signatures submitted include 5% of the registered qualified electors in each of 5 or more of the 8 wards.\" (D.C. Code § 1-1001.16(i)(1)). Base = official count 30 days before submission (§ 1-1001.16(i)(2)); 476,223 as of Jan 31, 2026."
+ },
+ "deadline": {
+  "headline": "\"A proposer of a referendum measure shall secure the proper number of valid signatures... and shall file such petition with the Board before the act, or part thereof, which is the subject of the referendum has become law according to the provisions of §§ 1-204.04 and 1-206.02(c). No act is subject to referendum if it has taken effect according to the provisions of § 1-206.02(c)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Same as initiative: \"5% of the registered qualified electors in the District; provided, that the total signatures submitted include 5% of the registered qualified electors in each of 5 or more of the 8 wards.\" (D.C. Code § 1-1001.16(i)(1)). Base = official count 30 days before submission (§ 1-1001.16(i)(2)); 476,223 as of Jan 31, 2026.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "\"A proposer of a referendum measure shall secure the proper number of valid signatures... and shall file such petition with the Board before the act, or part thereof, which is the subject of the referendum has become law according to the provisions of §§ 1-204.04 and 1-206.02(c). No act is subject to referendum if it has taken effect according to the provisions of § 1-206.02(c)"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "5% of registered qualified electors in each of 5 or more of the 8 wards (same as initiative)."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "No single-subject rule. Referendum may not be used on emergency acts, acts levying taxes, or acts appropriating funds for the general operating budget (§ 1-1001.02(11))."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "circulatorResidency": "not_required",
+  "operatingStance": "DC does NOT ban paying circulators per-signature. The DC election code's compensation crime, § 1-1001.14(b)(3), targets paying the SIGNER (the voter), not the circulator's pay structure: it is a crime to (A) sign or promise to sign / decline to sign a petition \\\"For any consideration, compensation, gratuity, reward or thing of value,\\\" or (B) to pay/offer to pay \\\"any person to",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Varies — no flat statutory/regulatory price published. The list is provided in response to a written \"data request\" processed as a D.C. FOIA request (3 DCMR § 510.1), so the charge is the FOIA duplication/processing cost for producing the electronic file. For a single statewide electronic file this is typically nominal (DC FOIA permits only reasonable search/duplication fees and routinely waives small amounts); request a quote/fee estimate from DCBOE to confirm.",
+  "whoCanObtain": "General public — \"any person.\" 3 DCMR § 510.1: \"Upon written request, the Board shall provide to any person a list of the registered qualified electors of the District of Columbia or any ward, precinct or ANC SMD therein.\" There is no candidate/committee or political-use eligibility gate for the standard public list.",
+  "useRestrictions": "No general political-use-only or anti-solicitation restriction is imposed on the public list by 3 DCMR § 510 (access is via FOIA to \"any person\"). The released record excludes confidential fields — § 510.5 makes social security numbers, dates of birth, email/phone, the registering agency, and any court-/Address-Confidentiality-protected address non-public. A voter's signature image \"may be viewed by the public but may not be copied or traced except by Board officials for election administration purposes\" (§ 510.8). Inactive registrants' names \"shall not be sold by the Board ... except upon specific request of the purchaser and the fact that the registrations are designated as inactive is made known to the purchaser\" (D.C. Code § 1-1001.07(j)(5)(D)).",
+  "requestProcess": "Written request to the DC Board of Elections (DCBOE), processed under the D.C. Freedom of Information Act (3 DCMR § 510.1; DCMR Title 3 Chapter 20). No notarized affidavit or political-use sworn statement is required for the standard public list; not an instant self-serve online download. The Board may furnish selective lists (by party, ward, precinct, ANC SMD, voter history, etc.) per § 510.2 and will produce it on electronic/magnetic media per § 510.3.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.dcboe.org/data,-maps,-forms",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 1,
+  "riskNote": "Citizen initiative power exists under Title IV of the Home Rule Act and is implemented by D.C. Code § 1-1001.16. The governing threshold is 5% of citywide registered qualified electors PLUS a ward-distribution requirement of 5% in each of at least 5 of the 8 wards. Numbers recompute each cycle off \\\"the latest official count of registered qualified electors made by the Board 30 days prior to the submission of the signatures\\\" (§ 1-1001.16(i)(2)). Computed from the most recent"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.16",
+   "quote": "In order for any initiative measure or referendum measure to qualify for the ballot for consideration by the electors of the District, the proposer of the initiative measure or referendum measure shall secure the valid signatures of registered qualified electors upon the initiative or referendum measure equal in number to 5% of the registered qualified electors in the District; provided, that the total signatures submitted include 5% of the registered qualified electors in each of 5 or more of the 8 wards."
+  },
+  {
+   "field": "signatureBasis",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.16",
+   "quote": "The number of registered qualified electors that is used for computing the requirements described in paragraph (1) of this subsection shall be consistent with the latest official count of registered qualified electors made by the Board 30 days prior to the submission of the signatures for the particular initiative or referendum petition."
+  },
+  {
+   "field": "signatureRequirement",
+   "url": "https://web.archive.org/web/20260219011025id_/https://www.dcboe.org/getmedia/f6270dd4-375a-43c5-b795-b8198d2227aa/Data-Statistics-Report-1_2026.pdf",
+   "quote": "D.C. BOARD OF ELECTIONS MONTHLY REPORT OF VOTER REGISTRATION STATISTICS CITYWIDE REGISTRATION SUMMARY AS OF JANUARY 31, 2026 ... TOTALS 359,123 24,497 4,511 85,006 3,086 476,223"
+  },
+  {
+   "field": "distribution",
+   "url": "https://web.archive.org/web/20260219011025id_/https://www.dcboe.org/getmedia/f6270dd4-375a-43c5-b795-b8198d2227aa/Data-Statistics-Report-1_2026.pdf",
+   "quote": "WARD ... 1 ... 57,917 / 2 ... 52,414 / 3 ... 56,922 / 4 ... 61,011 / 5 ... 68,825 / 6 ... 68,363 / 7 ... 61,037 / 8 ... 49,734"
+  },
+  {
+   "field": "deadline",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.16",
+   "quote": "A proposer of an initiative measure shall have 180 calendar days, beginning on the 1st calendar day immediately following the date upon which the Board certifies, according to subsection (f) of this section, that the petition form of such initiative measure is in its final form to secure the proper number of valid signatures needed on the initiative petition to qualify such a measure for the ballot, pursuant to subsection (i) of this section and to file such petition with the Board."
+  },
+  {
+   "field": "deadline",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.16",
+   "quote": "A proposer of a referendum measure shall secure the proper number of valid signatures needed on the referendum petition to qualify such a measure for the ballot pursuant to subsection (i) of this section, and shall file such petition with the Board before the act, or part thereof, which is the subject of the referendum has become law according to the provisions of §§ 1-204.04 and 1-206.02(c)."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.02",
+   "quote": "The term \"qualified petition circulator\" means a person who is at least 17 years of age and who will be 18 years of age on or before the next general election and either: (A) A District resident; or (B) A resident of another jurisdiction who has registered with the Board as a petition circulator and consented to being subject to the subpoena power of the Board and the jurisdiction of the Superior Court of the District of Columbia for the enforcement of subpoenas without respect to the individual's place of residence."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.14",
+   "quote": "Any person who: (A) For any consideration, compensation, gratuity, reward or thing of value or promise thereof, signs or promises to sign or declines to sign, or promises not to sign any initiative, referendum, or recall petition; or (B) pays or offers or promises to pay, or gives or offers or promises to give any consideration, compensation, gratuity, reward, or thing of value to any person to induce the person to sign or not to sign, the person's signatures upon any initiative, referendum, or recall petition ... shall be fined not more than $10,000 or be imprisoned not more than 1 year, or both."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.02",
+   "quote": "The term \"initiative\" means the process by which the electors of the District of Columbia may propose laws (except laws appropriating funds) and present such proposed laws directly to the registered qualified electors of the District of Columbia for their approval or disapproval."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://code.dccouncil.gov/us/dc/council/code/sections/1-1001.16",
+   "quote": "Upon receipt of each proposed initiative or referendum measure, the Board shall refuse to accept the measure if the Board finds that it is not a proper subject of initiative or referendum ... or ... (D) The measure presented would negate or limit an act of the Council of the District of Columbia pursuant to § 1-204.46."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

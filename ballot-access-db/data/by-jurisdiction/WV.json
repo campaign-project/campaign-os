@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "WV",
+ "jurisdiction": "West Virginia",
+ "abbr": "WV",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 7947,
+  "headline": "7,947 sigs (1% of 2020 WV presidential vote; min 25) — recomputes each cycle"
+ },
+ "deadline": {
+  "headline": "Aug 1 — nomination certificate + $2,500 fee to Secretary of State"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Signatures equal to at least 1% of the entire vote cast for president in the last preceding presidential election (statewide), but in no event fewer than 25. For the 2024 cycle the threshold was 7,947 (1% of West Virginia's 2020 presidential vote of 794,731). Recomputes each presidential cycle.",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "All three citations verified verbatim: §3-5-23 ('not less than one percent... but in no event... less than 25'; also a second sentence keyed to 'any statewide, congressional, or presidential candidate'), NASS report ('equal to at least 1% of the entire vote cast for president in the last preceding presidential election'), and WV Watch ('Kennedy... needed 7,947 signatures'). Independently re-derived: 1% of WV 2020 presidential total (794,731) = 7,947 exactly. Cross-confirmed by Ballotpedia ('1 percent of the total votes cast in the state for president in the most recent election'). The 25 floor is statutory."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "August 1 preceding the November general election. The nomination certificate (petition) and filing fee must be filed with the Secretary of State no later than August 1 (e.g., August 1, 2024 for the 2024 cycle).",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "§3-5-24(a) verbatim: 'All certificates nominating candidates for office under section twenty-three... shall be filed not later than August 1 preceding the November general election.' NASS report verbatim ('no later than August 1st preceding the general election'). Cross-confirmed by Ballotpedia ('by August 1 in the year of the election')."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None for a presidential (statewide) candidate. The 1% threshold is a single statewide total against the entire presidential vote; there is no per-congressional-district or per-county minimum. Separate petition forms per county exist solely for county-clerk verification, with no minimum-per-county quota.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "§3-5-23 quote verified verbatim. Statute measures 1% against the statewide vote with no geographic-distribution language; 'Offices to be filled by the voters of more than one county shall use separate petition forms... for each county' is administrative (verification), not a quota. Ballotpedia describes only a flat statewide 1% with no district distribution (the only 'distribution' reference is to Electoral College apportionment). No source found imposing a per-county/per-district signature minimum."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "STRICT: The circulator must obtain Official Credentials (Form P-1) from the clerk of the county commission for EACH county in which they canvass and must exhibit those credentials to every voter solicited. Until the SOS confirms otherwise, assume the strictest reading — that a circulator should be a West Virginia resident and a registered voter (matching the residency framing of the credential and the signer requirements) — rather than relying on the absence of an explicit circulator age/residency rule.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Credentialing requirement verified verbatim in §3-5-23(b) and on the credentials form (extracted from media/413). The statute imposes residency/registration on SIGNERS, not expressly on circulators, and the draft honestly flags this as UNKNOWN. But the credential authorizes soliciting 'voters residing in [county],' leaving genuinely unsettled whether a non-resident/non-registered person may circulate — an interpretation retrieval cannot resolve. Per over-comply mandate, HOLD and query the SOS. (Also: the credentials doc is officially 'Official Form P-1,' which the draft's P-3-centric framing conflates.)"
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "No notarized circulator affidavit is required. Each signer personally signs in their own handwriting (or by a duly witnessed mark). The official paper petition (Form P-3) contains only signer rows plus a 'County Use' VLD/INV validity column; county-commission clerks verify signatures against county voter-registration records. There is no sworn circulator certification.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Both §3-5-23 quotes verified verbatim ('personally signed by duly registered voters, in their own proper handwriting or by their marks duly witnessed' and the clerk-comparison-to-registration-records provision in subsection (e)). P-3 form text extracted directly confirms only signer fields plus a 'County Use / VLD INV' column and no notary/circulator-oath block. Statute imposes no circulator oath or notarization."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Signatures are collected on the Secretary of State's paper 'Minor Party or Independent Candidate Nomination Petition' (Official Form P-3), with separate forms per county, and verified by county clerks. There is NO digital/remote-online or in-person-digitized petition system for an independent presidential candidate in West Virginia.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "Form P-3 PDF (media/414) text extracted and matches the quote verbatim: 'MINOR PARTY OR INDEPENDENT CANDIDATE NOMINATION PETITION... we, the undersigned, are registered voters of ____ County... Official form P-3/Issued by the Office of the Secretary of State (WV Code §3-5-23).' §3-5-23 verbatim: 'Offices to be filled by the voters of more than one county shall use separate petition forms... for each county.' No statute, form, or SOS source indicates any electronic/online signature option; paper is the only mode."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "A filing fee is required IN ADDITION to (not in lieu of) the signature petition. The fee equals 1% of the annual salary of the office, capped at $2,500; for president/vice president the fee is $2,500, paid when the nomination certificate is filed. A separate impecuniosity path (§3-5-8a) lets a candidate unable to pay petition in lieu of the fee (four signatures per dollar of fee), but the standard independent-presidential path is petition PLUS the $2,500 fee.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "NASS quote verbatim ('must also pay a fee equivalent to 1% of the annual salary... must not exceed $2500'). §3-5-24(c) verbatim ('Each candidate shall pay the filing fee required by section eight... at the time of the filing of the nomination certificate'). §3-5-8(a)(1) independently confirms the $2,500 cap for president/VP. Ballotpedia confirms the fee is additive ('In addition, the candidate must pay a $2,500 filing fee') and the §3-5-8a waiver ('four signatures for each dollar of the filing fee'). The draft's framing of the waiver as 'additional signatures' is slightly loose (it substitutes for the FEE, not the nomination petition) but does not affect the relied value for the standard path."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "unknown",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$500 flat for the full \"Statewide Voter Registration List\" (paper or delimited text/CSV/Excel/PDF). Other tiers: $1,000 Election Cycle Subscription Service; $500 Master Voter History List Export; $200 each for Statewide Early Voters / Absentee Requests / Absentee Received lists; partial/county/district lists and updates are billed at $25/hour (current hourly rate, estimated before fulfillment). Payment (cash, check, prepaid account, or credit card) is due before delivery.",
+  "whoCanObtain": "Effectively any person or organization for noncommercial use. WV Code §3-2-30(a) provides \"Any person may examine the active, inactive, rejected and canceled voter registration records,\" and §3-2-30(e) directs the Secretary of State to make statewide voter lists available for sale. The request form is not gated to candidates, committees, or parties; the only condition is a signed certification of noncommercial, non-solicitation use. A campaign/committee verifying petition signatures qualifies as a permitted noncommercial use.",
+  "useRestrictions": "Yes. WV Code §3-2-30(f): \"No voter registration lists or data files containing voter names, addresses or other information derived from voter data files obtained pursuant to the provisions of this article may be used for commercial or charitable solicitations or advertising, sold or reproduced for resale.\" The purchaser must sign a certification to this effect. The distributed file also excludes telephone number, e-mail address, SSN, and DMV driver's/non-operator ID numbers by statute.",
+  "requestProcess": "Written request via the official \"Voter Registration Data Services Request Form\" (from the SoS \"Request for Voter Registration Data Instructions\"), submitted by mail, fax, or e-mail (svrs@wvsos.com) to the Elections Division. The form includes a required signed certification (a sworn-style statement of permitted use) that the purchaser will not use the list for commercial/charitable solicitation, advertising, sale, or resale. Not an instant online download. Total cost is payable before delivery; requests filled first-come, first-served.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sos.wv.gov/media/656/download?inline=",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement is stated in the statute. W. Va. Code §3-5-23(b) defines the circulator as \"[t]he person or persons soliciting or canvassing signatures\" and imposes only one affirmative duty on them — to \"first obtain from the clerk of the county commission credentials which must be exhibited to each voter canvassed or solicited.\" No minimum age (and no 18+ language) appears anywhere",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "unknown",
+  "signerVsCirculator": "SIGNER must be a duly registered WV voter residing within the political division represented by the office (for president, the state) — §3-5-23(c),(d). CIRCULATOR (\"person...soliciting or canvassing signatures\") has no stated registration/residency/citizenship/age requirement; the circulator's only express duty is to obtain and exhibit credentials issued by the county clerk under §3-5-23(b).",
+  "gate": "CONSERVATIVE-HOLD",
+  "note": "Independent/group presidential candidates in WV qualify via the \"certificate nomination\" (petition) process in W. Va. Code §3-5-23 (1% of last presidential vote, min 25; $2,500 fee; due Aug 1). The circulator-vs-signer split is clear in the statute: subsection (b) is the only provision addressing the circulator (\"[t]he person or persons soliciting or canvassing signatures... must first obtain from the clerk of the county commission credentials which must be exhibited to each voter canvassed or s",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "7 of 8 fields AUTO-LIVE on strong primary+consensus grounding; only circulatorEligibility is CONSERVATIVE-HOLD (statute is silent on whether a non-resident/non-registered person may circulate beyond the county-clerk credential requirement — an interpretation gap). No field is BLOCKED. Note the credentials doc is officially \"Form P-1,\" not \"P-3\" as the captureMode/witness fields imply for the credential."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://code.wvlegislature.gov/3-5-23/",
+   "quote": "(b) The person or persons soliciting or canvassing signatures of duly qualified voters on the certificate or certificates, may solicit or canvass duly registered voters residing within the county, district, or other political division represented by the office sought, but must first obtain from the clerk of the county commission credentials which must be exhibited to each voter canvassed or solicited"
+  },
+  {
+   "field": "compensation",
+   "url": "https://code.wvlegislature.gov/3-5-23/",
+   "quote": "(c) The certificate shall be personally signed by duly registered voters, in their own proper handwriting or by their marks duly witnessed, who must be residents within the county, district, or other political division represented by the office sought wherein the canvass or solicitation is made by the person or persons duly authorized."
+  },
+  {
+   "field": "compensation",
+   "url": "https://code.wvlegislature.gov/3-5-23/",
+   "quote": "(h) In addition to penalties prescribed elsewhere for violation of this chapter, any person violating the provisions of this section is guilty of a misdemeanor and, upon conviction, shall be fined not more than $1,000, or confined in jail not more than one year, or both fined and confined: Provided, That a criminal penalty may not be imposed upon anyone who signs a nomination certificate and votes in the primary election held after the date the certificate was signed."
+  },
+  {
+   "field": "compensation",
+   "url": "https://code.wvlegislature.gov/3-5-24/",
+   "quote": "(a) All certificates nominating candidates for office under section twenty-three of this article shall be filed not later than August 1 preceding the November general election"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://code.wvlegislature.gov/59-1-2B/",
+   "quote": "(a) ... the Secretary of State shall charge the following fees for data originating in the statewide voter registration system ... (1) Election Cycle Subscription Service $1,000 (2) Statewide Voter Registration List $500 (3) Master Voter History List Export $500 (4) Statewide Early Voters List $200 (5) Statewide Absentee Requests List $200 (6) Statewide Absentee Received List $200 (7) Partial Voter Registration List Current hourly rate"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://code.wvlegislature.gov/3-2-30/",
+   "quote": "(e) The Secretary of State shall make voter lists available for sale subject to the limitations as provided in subsection (a) of this section. The fees for the voter lists shall be as prescribed in section two-b, article one, chapter fifty-nine of this code."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://code.wvlegislature.gov/3-2-30/",
+   "quote": "(f) No voter registration lists or data files containing voter names, addresses or other information derived from voter data files obtained pursuant to the provisions of this article may be used for commercial or charitable solicitations or advertising, sold or reproduced for resale."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://code.wvlegislature.gov/3-2-30/",
+   "quote": "(1) The name, residence address, political party affiliation and status of the registrant;"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.wv.gov/media/656/download?inline=",
+   "quote": "The attached \"Voter Registration Data Services Request Form\" must be used when requesting voter data. The request may be mailed, faxed, or e-mailed using the contact information below. The total cost due is payable before delivery of voter data. Requests are filled on a first-come, first-served basis."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.wv.gov/media/656/download?inline=",
+   "quote": "Your voter list will automatically include the following voter information: ✓ Name ✓ Residence Address (+ County) ✓ Party Affiliation ✓ Status (Active or Inactive) ✓ Registration Date"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://sos.wv.gov/media/656/download?inline=",
+   "quote": "I, (name of purchaser) for (organization, if any) understand that West Virginia law prohibits the sale and use of the list of registered voters for commercial or charitable solicitations or advertising, and that I or my organization may not sell the list or reproduce it for resale. I hereby certify that the purposes for which the names and addresses of voters will be used are not in violation of this prohibition."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / circulatorAgeRule / signerVsCirculator",
+   "url": "https://code.wvlegislature.gov/3-5-23/",
+   "quote": "The person or persons soliciting or canvassing signatures of duly qualified voters on the certificate or certificates, may solicit or canvass duly registered voters residing within the county, district, or other political division represented by the office sought, but must first obtain from the clerk of the county commission credentials which must be exhibited to each voter canvassed or solicited"
+  },
+  {
+   "field": "signerVsCirculator (signer requirement)",
+   "url": "https://code.wvlegislature.gov/3-5-23/",
+   "quote": "The certificate shall be personally signed by duly registered voters, in their own proper handwriting or by their marks duly witnessed, who must be residents within the county, district, or other political division represented by the office sought wherein the canvass or solicitation is made by the person or persons duly authorized."
+  },
+  {
+   "field": "signerVsCirculator (signer requirement)",
+   "url": "https://code.wvlegislature.gov/3-5-23/",
+   "quote": "The certificates shall state the name and residence of each of the candidates; that he or she is legally qualified to hold the office; that the subscribers are legally qualified and duly registered as voters and desire to have the candidates placed on the ballot"
+  },
+  {
+   "field": "circulator credentialing duty",
+   "url": "https://code.wvlegislature.gov/3-5-23/",
+   "quote": "The clerk of each county commission, upon proper application made as herein provided, shall issue such credentials and shall keep a record thereof."
+  },
+  {
+   "field": "jurisdiction / petition route for independent presidential candidates",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_West_Virginia",
+   "quote": "An independent presidential candidate must petition for placement on the general election ballot. The petition must contain signatures equaling at least 1 percent of the total votes cast in the state for president in the most recent election."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

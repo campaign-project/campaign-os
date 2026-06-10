@@ -1,0 +1,14 @@
+{
+  "name": "@campaign-os/validation-engine-proto",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Signature validation engine (RFC-001 §5 validation layer) — match petition signers to the voter file + apply per-state validity law; deterministic, no-LLM",
+  "scripts": {
+    "start": "node --experimental-strip-types engine.ts",
+    "selftest": "node --experimental-strip-types engine.ts --selftest",
+    "loader": "node --experimental-strip-types loaddemo.ts",
+    "stream": "node --experimental-strip-types streamdemo.ts",
+    "freshness": "node --experimental-strip-types freshness.ts"
+  }
+}

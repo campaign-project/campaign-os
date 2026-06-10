@@ -1,0 +1,204 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "OK",
+ "jurisdiction": "Oklahoma",
+ "abbr": "OK",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 34599,
+  "headline": "3% of last gubernatorial vote (34,599 for 2024); recomputes each cycle — HOLD on the stale number"
+ },
+ "deadline": {
+  "headline": "July 15 of presidential election year (fixed statutory date) — LIVE"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "At least 3% of the total votes cast in the last General Election for Governor. The signature count recomputes each presidential cycle off the most recent gubernatorial general election; rely on this formula, not a fixed number. (For the 2024 cycle the figure was 34,599 = 3% of 1,153,284, but that is a prior-cycle number and the 2028 figure depends on the Nov. 2026 gubernatorial vote, not yet held as of 2026-06-07.)",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUNDED: packet lines 101-111 (3% language + Total Votes 1,153,284 / 34,599) and NASS lines 867-868 confirmed verbatim. Independently re-derived: 1,153,284 x 3% = 34,598.52 -> 34,599, and 2022 gubernatorial total of 1,153,284 confirmed against Ballotpedia citing OK SEB certified results. The 3% RULE is correct and current. HOLD reason is temporal currency, not citation failure: 34,599 is the 2024-cycle figure; the live number for the next cycle is not yet determinable. Strictest treatment is to rely on the formula and avoid presenting the stale count as the current requirement."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "July 15 of the presidential election year. An independent presidential candidate must file the Statement of Candidacy (with petition or filing fee) with the Secretary of the State Election Board no later than July 15 of a presidential election year (26 O.S. Sec. 10-101.1(A)(1)). For 2024 the last day was Monday, July 15, 2024.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "GROUNDED: packet line 144 (statute: 'no later than July 15 of a presidential election year'), line 35 ('Monday, July 15, 2024'), and NASS line 869 confirmed verbatim. Fixed statutory date, not a cycle-variable number, so it remains live. The draft's '30 days' detail is correctly the Secretary's petition-sufficiency determination window (packet lines 38, 166), not a separate candidate deadline; it does not affect the July 15 filing deadline."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Strictest defensible: treat the single-county-per-page rule as a binding mandatory format requirement — each petition page must contain only registered voters from one Oklahoma county; do not mix counties on a sheet. Do NOT assume any relief beyond this: presence/absence of a per-county or per-district signature-distribution quota is not established by the form and should be confirmed with the Election Board before relying on 'no quota.'",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "GROUNDED: packet lines 113 and 163 ('Each page... shall contain the names of registered voters from a single county') confirmed verbatim. But the draft's headline conclusion ('no geographic distribution quota') is a NEGATIVE INFERENCE (proving absence of a requirement) that retrieval cannot settle. The single-county-per-page rule IS confirmed; whether a distribution minimum exists elsewhere in 26 O.S. is not. Hold and over-comply by treating the per-page county rule as strict and not assuming quota relief."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Confirmed: circulator must be at least 18 years old and attest all signatures were signed in their presence; signers must be registered Oklahoma voters of the county listed on the page (packet lines 358, 373). STRICTEST treatment of the unconfirmed part: assume the circulator may also need to be a registered Oklahoma voter/resident — do NOT rely on the claim that there is 'no residency requirement beyond age 18' until confirmed with the Election Board.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "GROUNDED: packet line 373 ('at least eighteen (18) years old and that all signatures... were signed in my presence') and line 358 (signer voter-certification) confirmed verbatim. The age-18 and in-presence requirements are solid. But the draft's assertion that the packet imposes 'no separate Oklahoma-residency requirement on the circulator' is a NEGATIVE INFERENCE; circulator residency/voter-registration status is genuinely ambiguous from the form. Hold and assume the stricter requirement pending office confirmation."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Notarization required in two places: (1) the candidate's Statement of Candidacy oath must be witnessed by a notary public; and (2) each petition page's circulator affidavit ('TO BE COMPLETED BY PERSON CIRCULATING PETITION') must be signed and sworn before a notary public.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "GROUNDED: packet line 152 ('the candidate's signature shall be witnessed by a notary public'), line 372 ('TO BE COMPLETED BY PERSON CIRCULATING PETITION'), and line 379 ('Signed and sworn to before me on') all confirmed verbatim. Both notarization points are directly stated in the statute text and the prescribed form. No interpretation needed."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Oklahoma uses a paper petition on the form prescribed by the Secretary of the State Election Board (packet Page 10), circulated and signed in wet ink, organized by county, with a notarized circulator affidavit. There is no online/remote or digitized-signature system for an independent presidential petition; the only non-petition alternative is the paper filing fee. Submission is by mail, private delivery service, or in person.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "GROUNDED: packet line 114 ('Candidates must use the provided petition form (Page 10)') and lines 58-60 ('may be submitted by mail, private delivery service or in person') confirmed verbatim. No evidence of any electronic/online signature path; paper-only is the correct and current capture mode."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "Yes — a filing fee may be submitted in lieu of the petition. For the current/2024 cycle the fee is $5,000 per Presidential Elector; Oklahoma has 7 electors, so the total is $35,000, payable by cashier's check or certified check to the Secretary of the State Election Board (campaign checks, personal checks, and cash are not accepted). Statutory per-elector basis: 26 O.S. Sec. 10-101.1 referencing the fee in Sec. 20-102.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUNDED: packet lines 90-96 ('thirty-five thousand dollars ($35,000.00)... five thousand dollars ($5,000.00) for each Presidential Elector... seven (7) Presidential Electors... Campaign checks, personal checks, and cash cannot be accepted') and line 168 ('in lieu of the petition... a filing fee... may be submitted') confirmed verbatim. Minor currency caveat: the per-elector fee is statutorily tied to 26 O.S. Sec. 20-102; the $5,000/$35,000 figures are the packet's stated amounts for the current cycle, so they are grounded for now but worth reconfirming each cycle (captured in the SOS inquiry)."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Free (no charge). \"The Secretary of the State Election Board shall ensure that an electronic copy of the statewide voter registration list is made available, at no cost\" via the OK Election Data Warehouse (EDW). No per-record or admin fee.",
+  "whoCanObtain": "Eligibility-gated (effective Nov. 1, 2025, per 26 O.S. § 7-103.2). Full access to the voter registration list is limited to: bona fide Oklahoma residents who are U.S. citizens; official representatives of recognized Oklahoma political parties; candidates for Oklahoma office and their official representatives; or other persons authorized by state law. A political campaign/committee qualifies as a candidate's representative. (Non-qualifying requesters may get only \"basic\" EDW access, which excludes voter registration lists.)",
+  "useRestrictions": "Yes. Requestor must acknowledge it is unlawful to use the voter registration list for commercial marketing or advertising purposes (this restriction does not apply to campaigns, political parties, government officials, or public opinion pollsters), and that it is unlawful to knowingly make the Oklahoma voter list available to a foreign national, foreign commercial interest, or foreign government entity. The eligibility attestation is made under penalty of perjury. Driver license and SSN are never released; Restricted Records / Address Confidentiality Program participants are excluded.",
+  "requestProcess": "Application form + approval. Submit the \"Request to Access Voter Registration List\" form to info@elections.ok.gov (or by fax 405-521-6457 / mail). The form requires attestation \"under penalty of perjury\" that the requestor meets the legal requirements, plus a signed acknowledgment of the use restrictions. After processing, an automated email provides a link, username, and password to download the statewide CSV from the EDW. Access is valid for one year and renewable.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://oklahoma.gov/elections/candidates/voter-registration-list.html",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — the rule binds signers only. Oklahoma's Election Code (Title 26) sets no age, registration, residency, or citizenship qualification for the person who carries an independent-presidential nominating petition. The independent-president petition statute, 26 O.S. § 26-10-101.1(A)(4), only requires that the petition bear \"signatures of registered voters\" and that \"the fo",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "unknown",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "unknown",
+  "signerVsCirculator": "SIGNER: must be a registered Oklahoma voter (26 O.S. § 26-10-101.1(A)(4)(c), incorporating the 3%-of-last-gubernatorial-vote figure from § 26-1-108; each petition page limited to registered voters of a single county). CIRCULATOR: no statutory qualification at all — the Election Code is silent on who may carry/collect the petition and delegates the petition form to the Secretary of the State Electi",
+  "gate": "CONSERVATIVE-HOLD",
+  "note": "Primary source: official Oklahoma Statutes, Title 26 (Elections), downloaded from the Oklahoma Senate (oksenate.gov). The controlling provision for an independent presidential nominating petition is 26 O.S. § 26-10-101.1 (\"Candidates pledged to Independent candidate for President\"). It requires (a) a Statement of Candidacy filed with the Secretary of the State Election Board by July 15 of the presidential year, witnessed by a notary as to the candidate's own oath, and (b) an accompanying petitio",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 3,
+  "riskNote": "All 7 citations grounded verbatim in primary sources. Hard mechanics (deadline, notary, paper-only capture, $35,000 fee) are AUTO-LIVE. Holds are on the cycle-stale signature number and three negative-inference claims (no distribution quota, circulator residency) that retrieval cannot settle — over-comply by treating the formula (not 34,599) as live and assuming no distribution/residency relief beyond what the form states."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://news.ballotpedia.org/2025/05/28/oklahoma-enacts-pay-per-signature-ban-residency-requirement-signature-distribution-requirement-and-funding-disclosure-rules-for-ballot-initiative-petitions/",
+   "quote": "Oklahoma Governor Kevin Stitt (R) signed Senate Bill 1027 (SB 1027) on May 27, enacting changes to the state's initiative and referendum processes."
+  },
+  {
+   "field": "compensation",
+   "url": "https://news.ballotpedia.org/2025/05/28/oklahoma-enacts-pay-per-signature-ban-residency-requirement-signature-distribution-requirement-and-funding-disclosure-rules-for-ballot-initiative-petitions/",
+   "quote": "Senate Bill 1027 also prohibits signature gatherers from being paid per signature, making Oklahoma the 10th state to enact such a ban."
+  },
+  {
+   "field": "compensation",
+   "url": "https://news.ballotpedia.org/2025/05/28/oklahoma-enacts-pay-per-signature-ban-residency-requirement-signature-distribution-requirement-and-funding-disclosure-rules-for-ballot-initiative-petitions/",
+   "quote": "The bill also made Oklahoma the ninth state with an initiative process to enact a residency requirement for signature gatherers, requiring signature gatherers to be registered voters in the state."
+  },
+  {
+   "field": "compensation",
+   "url": "https://oklahoma.gov/content/dam/ok/en/elections/candidate-filing-archives/2026-candidate-filing-archives/2026-petition-info/2026-candidate-petition-instructions.pdf",
+   "quote": "It shall be the responsibility of the circulator to ensure that voters sign the petition page for the correct county. (See OKLA. ADMIN. CODE 230:20-9-2)."
+  },
+  {
+   "field": "compensation",
+   "url": "https://oklahoma.gov/content/dam/ok/en/elections/candidate-filing-archives/2026-candidate-filing-archives/2026-petition-info/2026-candidate-petition-instructions.pdf",
+   "quote": "A signature on a petition in support of a Declaration of Candidacy filed by a candidate for a federal, state, or county office shall be the original, personally handwritten signature of a registered voter eligible to vote for the candidate and office."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Oklahoma",
+   "quote": "In order to qualify for placement on the general election ballot, an independent candidate must submit a petition containing signatures equaling at least 3 percent of the total votes cast in the last general election for governor."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Oklahoma",
+   "quote": "The Oklahoma Code did not stipulate any requirements for circulators of petitions, specifically with no residency requirements for circulators."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oklahoma.gov/elections/candidates/voter-registration-list.html",
+   "quote": "Effective Nov. 1, 2025: In compliance with 26 O.S. § 7-103.2, access to Oklahoma's voter registration list will be limited to the following: Bona fide residents of Oklahoma who are U.S. citizens, or Official representatives of recognized political parties in Oklahoma, or Candidates for offices in Oklahoma and their official representatives, or Other persons, as authorized by state law."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oklahoma.gov/elections/candidates/voter-registration-list.html",
+   "quote": "Users who meet the requirements of 26 O.S. § 7-103.2 and wish to access the voter registration list through the EDW may apply for \"full\" access to the EDW by submitting a Request to Access Voter Registration List Form to info@elections.ok.gov."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oklahoma.gov/content/dam/ok/en/elections/ok-election-data-warehouse/edw-form-vrlist.pdf",
+   "quote": "The Secretary of the State Election Board shall ensure that an electronic copy of the statewide voter registration list is made available, at no cost, to those individuals and organizations that meet the requirements of 26 O.S. § 7-103.2."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oklahoma.gov/content/dam/ok/en/elections/ok-election-data-warehouse/edw-form-vrlist.pdf",
+   "quote": "There is no charge to access the EDW, but you must submit a Request to Download Files Form. Access is valid for one year, but may be renewed."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oklahoma.gov/content/dam/ok/en/elections/ok-election-data-warehouse/edw-form-vrlist.pdf",
+   "quote": "I attest under penalty of perjury that I meet the legal requirements to obtain the Oklahoma voter registration list; I understand that it is unlawful to use the voter registration list for commercial marketing or advertising purposes. However, this restriction shall not include the use of the voter registration list by campaigns, political parties, government officials, or public opinion pollsters; I understand that is unlawful to knowingly make the Oklahoma voter list available or provide such list to a foreign national, foreign commercial interest, or foreign government entity;"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oklahoma.gov/elections/candidates/voter-registration-list.html",
+   "quote": "Files may be downloaded, but must be imported into user software in order to sort information. Lists or labels cannot be produced directly from these files. Data is written in CSV format and is refreshed every weeknight."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://oklahoma.gov/content/dam/ok/en/elections/ok-election-data-warehouse/readme-vrlist.pdf",
+   "quote": "Status……………………………………………………………….. \"A\" active, \"I\" inactive ... PoliticalAff ... City …Residence city/municipality ... Zip ... RegistrationDate"
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+   "url": "https://oksenate.gov/sites/default/files/2019-12/os26.pdf",
+   "quote": "the Statement of Candidacy shall be accompanied by a petition supporting a candidate's filing, ... the form of the petition shall be prescribed by the Secretary of the State Election Board. Each page of the petition must contain the names of registered voters from a single county, the petition shall bear the same number of signatures of registered voters that is required to form a recognized political party as described in Section 1-108 of this title (26 O.S. § 26-10-101.1(A)(4))"
+  },
+  {
+   "field": "signer requirement (3% / registered voters)",
+   "url": "https://oksenate.gov/sites/default/files/2019-12/os26.pdf",
+   "quote": "petitions seeking recognition of a political party, in a form to be prescribed by the Secretary of the State Election Board, shall be filed with such Secretary, bearing the signatures of registered voters equal to at least three percent (3%) of the total votes cast in the last General Election for Governor. Each page of such petitions must contain the names of registered voters from a single county. (26 O.S. § 26-1-108)"
+  },
+  {
+   "field": "general candidate petition — signer-only requirement",
+   "url": "https://oksenate.gov/sites/default/files/2019-12/os26.pdf",
+   "quote": "A declaration of candidacy must be accompanied by: 1. A petition supporting a candidate's filing signed by not fewer than two percent (2%) of the number of registered voters in the district, county or state, as appropriate for the office sought (26 O.S. § 26-5-112(A)) — the statute conditions the SIGNERS (registered voters) but states no qualification for the person circulating the petition."
+  },
+  {
+   "field": "circulatorAgeRule / minorCanCirculate (statutory silence)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Oklahoma",
+   "quote": "In order to qualify for placement on the general election ballot, an independent candidate must submit a petition containing signatures equaling at least 3 percent of the total votes cast in the last general election for governor. — Ballotpedia describes only signer (registered-voter) requirements and identifies no circulator eligibility rule for Oklahoma presidential petitions."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

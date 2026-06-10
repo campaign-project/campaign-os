@@ -1,0 +1,111 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "CO-VR",
+ "jurisdiction": "Colorado",
+ "abbr": "CO",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 124238,
+  "headline": "Article V, Section 1(3): the people reserve power to approve or reject at the polls any act of the general assembly; the referendum petition requires the same number of signatures as an initiative — \"at least five percent of the total number of votes cast for all candidates for the office of secretary of state at the previous general election\" (SoS: same 124,238 figure applies to statewide referendum petitions for 2023-2026)."
+ },
+ "deadline": {
+  "headline": "Veto-referendum (referendum on an act of the general assembly) signatures must be submitted within 90 days after the final adjournment of the legislative session at which the act was passed (Colo. Const. Art. V, Sec. 1(3)). Ballotpedia 2026 deadlines table lists 08/11/2026 for a Colorado veto referendum, noting \"Signatures must be submitted within 90 days after the end of the l"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Article V, Section 1(3): the people reserve power to approve or reject at the polls any act of the general assembly; the referendum petition requires the same number of signatures as an initiative — \"at least five percent of the total number of votes cast for all candidates for the office of secretary of state at the previous general election\" (SoS: same 124,238 figure applies to statewide referendum petitions for 2023-2026).",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Veto-referendum (referendum on an act of the general assembly) signatures must be submitted within 90 days after the final adjournment of the legislative session at which the act was passed (Colo. Const. Art. V, Sec. 1(3)). Ballotpedia 2026 deadlines table lists 08/11/2026 for a Colorado veto referendum, noting \"Signatures must be submitted within 90 days after the end of the l"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "none (single-subject rule applies to initiated measures, not to referenda on existing acts)"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Colorado expressly permits paid circulators. CRS 1-40-112(2)(b) requires a paid circulator to wear a \\\"PAID CIRCULATOR\\\" badge with the employer's name and phone number; volunteers wear a \\\"VOLUNTEER CIRCULATOR\\\" badge. Entities that pay circulators are \\\"petition entities\\\" that must obtain a license from the Secretary of State before compensating circulators (CRS 1-40-135). C",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "$50.00 flat for the Statewide Registered Voter List (EX-003), delivered on data disc (per report). Alternatively, a full Election Cycle Subscription Service (weekly-updated EX-003 plus other extracts for the entire statewide election cycle) is $1,000.00. Free public online lookups exist only for individual voters, not the bulk file.",
+  "whoCanObtain": "General public — no eligibility gate. Colorado voter registration records are statutorily \"public records subject to examination by any person.\" The Elections Data Request Form asks only for requestor name/company and contact info; it is not limited to candidates, committees, or parties.",
+  "useRestrictions": "Social Security numbers, driver's license/state ID numbers, the SOS-assigned unique voter ID, and electronic copies of voter signatures are statutorily excluded from any release (C.R.S. 1-2-302(8)); preregistrant (under-18) information is kept confidential. Colorado law (C.R.S. 1-2-227 and related statutes) restricts use of voter registration data to election/political purposes and prohibits using it for commercial solicitation; the released file does not contain SSN or signature data, so it supports name/address matching but not signature-image comparison.",
+  "requestProcess": "Application form by mail. Complete the Colorado Department of State \"Elections Data Request Form\" (PDF), check the box for \"Statewide Registered Voter List (EX-003),\" enclose a check or money order payable to the Colorado Secretary of State, and mail it to the SOS Elections Division (1700 Broadway, Suite 550, Denver, CO 80290). Requests are returned via first-class mail within 72 hours; for expedited carriers the requestor must include a pre-paid mailer. Subscription service provides electronic download access.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.coloradosos.gov/pubs/elections/forms/dataRequests.pdf",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "All core figures and rules are grounded in primary/authoritative Colorado sources: the Secretary of State's official signature-requirements and filing-guide pages (which quote Colo. Const. Art. V, Sec. 1 verbatim) and the statute (CRS Title 1, Article 40) via FindLaw. Current-cycle signature requirement = 124,238 valid signatures (5% x 2,484,758 votes cast for SoS in the Nov 8, 2022 general election), applicable 2023-2026 for both initiatives and statewide referenda. Constitu"
+ },
+ "citations": [
+  {
+   "field": "signatureRequirement / signatureBasis",
+   "url": "https://www.sos.state.co.us/pubs/elections/Initiatives/signatureRequirements.html",
+   "quote": "According to Article V, Section 1(2) of the Colorado Constitution, the number of signatures required for a statewide initiative petition is \"at least five percent of the total number of votes cast for all candidates for the office of secretary of state at the previous general election\". Article V, Section 1(3) of the Colorado Constitution also requires the same number of signatures for a statewide referendum petition. The total number of votes cast for all candidates for the office of secretary of state at the November 8, 2022 General Election was 2,484,758. As a result, the signature requirement for statewide initiative petitions and statewide referendum petitions for 2023 through 2026 is: 124,238"
+  },
+  {
+   "field": "distribution (constitutional amendments)",
+   "url": "https://www.sos.state.co.us/pubs/elections/Initiatives/signatureRequirements.html",
+   "quote": "Initiatives that wish to make a change to the Colorado constitution must be signed by at least 2% of the total registered electors in each of the 35 Colorado state senate districts in addition to meeting the requirements outlined above (Article V, Section 1(2.5) of the Colorado constitution)."
+  },
+  {
+   "field": "signatureRequirement (computation)",
+   "url": "https://www.coloradosos.gov/pubs/elections/Initiatives/guide/7-Filing.html",
+   "quote": "In the November 8, 2022 General Election, there were 2,484,758 votes cast for the office: (2,484,758) x (.05) = (124,238). Therefore, the signature requirement for state initiatives for 2023-2026 is: 124,238"
+  },
+  {
+   "field": "deadline",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-40-108/",
+   "quote": "No petition for any ballot issue is of any effect unless filed with the secretary of state within six months from the date that the titles and submission clause have been fixed and determined pursuant to the provisions of sections 1-40-106 and 1-40-107 and unless filed with the secretary of state no later than three months before the election at which it is to be voted upon."
+  },
+  {
+   "field": "deadline (circulation window)",
+   "url": "https://www.coloradosos.gov/pubs/elections/Initiatives/guide/7-Filing.html",
+   "quote": "Starting on the date the Title Board set the final language, proponents have six months to circulate petitions. However, the Colorado Constitution requires petitions to be filed no later than three months (August) before an election."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://www.coloradosos.gov/pubs/elections/Initiatives/guide/2-BallotTitle.html",
+   "quote": "Every proposed constitutional amendment or statutory proposition must be limited to a single subject, which must be clearly expressed in its title. In other words, the text of the measure must concern only one subject and one distinct purpose. For additional information relating to the single-subject requirement, see Article V, Section 1(5.5) of the Colorado Constitution and section 1-40-106.5, C.R.S."
+  },
+  {
+   "field": "circulatorResidencyRequired / perSignaturePayAllowed",
+   "url": "https://codes.findlaw.com/co/title-1-elections/co-rev-st-sect-1-40-112/",
+   "quote": "(1) No person shall circulate a petition for an initiative or referendum measure unless the person is a citizen of the United States and at least eighteen years of age at the time the petition is circulated. (2)(b) A circulator who is to be paid for circulating a petition concerning a ballot issue shall display an identification badge that includes the words \"PAID CIRCULATOR\" in bold-faced type that is clearly legible and the name and telephone number of the individual employing the circulator. ... (4) Repealed by Laws 2018, Ch. 113, sec. 3, eff. Aug. 8, 2018."
+  },
+  {
+   "field": "perSignaturePayAllowed (petition entity licensing)",
+   "url": "https://www.coloradosos.gov/pubs/elections/Initiatives/guide/5-PetitionEntities.html",
+   "quote": "The Colorado Revised Statutes define a petition entity as any person or issue committee that provides compensation to a circulator to circulate a ballot petition. ... It is unlawful for any petition entity to provide compensation to a circulator to circulate a petition without first obtaining a license from the Secretary of State."
+  },
+  {
+   "field": "deadline (corroboration, all measure types)",
+   "url": "https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026",
+   "quote": "Colorado | CICA | 08/03/2026 ... Colorado | CISS | 08/03/2026 ... Colorado | VR | 08/11/2026 ... Signatures must be submitted within 90 days after the end of the legislative session"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

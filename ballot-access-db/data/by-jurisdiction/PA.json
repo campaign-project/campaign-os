@@ -1,0 +1,184 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "PA",
+ "jurisdiction": "Pennsylvania",
+ "abbr": "PA",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 5000,
+  "headline": "President: 5,000 valid signatures (court-fixed) + $200 fee — AUTO-LIVE"
+ },
+ "deadline": {
+  "headline": "Deadline HOLD: not a fixed Aug 1 — first day of Aug, rolled to next business day (Aug 3 in 2026); confirm per cycle"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "5,000 valid signatures of qualified registered electors of Pennsylvania for President (statewide nomination papers under 25 P.S. § 2911 et seq.). The 2% statutory calculation in § 2911(b) is not enforced per Constitution Party of Pa. v. Cortés (E.D. Pa. Feb. 1, 2018); DOS applies a fixed 5,000 for President, U.S. Senator, and Governor, and 2,500 for all other statewide offices.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Quote verbatim in NASS PDF (PA section) and in the PB 2024 instructions both narratively (\"...except for the offices of President of the United States, United States Senator, or Governor, which require 5,000 signatures\") and in the signature table (\"President of the United States 5,000\"). Re-confirmed UNCHANGED in the active 2026 DOS instructions (same 5,000 language) and independently corroborated by Ballotpedia. Court-order basis stated correctly."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Do NOT treat the deadline as a fixed \"August 1.\" The statutory/consent-decree deadline is the first day of August, administered by DOS and rolled to the next business day when Aug 1 falls on a weekend/holiday: it was August 1, 2024 (Thu) for the 2024 presidential cycle but August 3, 2026 (Mon, because Aug 1, 2026 is a Saturday) for the 2026 cycle. For the next presidential cycle (2028), Aug 1 is a Tuesday, so the operative date is likely Aug 1, 2028 — but this MUST be confirmed against DOS's published 2028 calendar before relied upon. Filing is with the Bureau of Elections / Secretary of the Commonwealth, Room 201 North Office Building, Harrisburg, by 5:00 P.M. on that date. Strictest posture: assume the earliest plausible date (first business day of August), never assume any date later than the first of August is safe.",
+   "confidence": 0.9,
+   "interpretationRequired": true,
+   "note": "Quotes are grounded verbatim in PB 2024 instructions, but they are 2024-specific (circulation Feb 14–Aug 1, 2024). The draft generalizes this to \"August 1 of the election year,\" which is FALSE: the active 2026 DOS instructions set the deadline to August 3, 2026 (Aug 1 is a Saturday). The deadline recomputes per cycle and is calendar-dependent; correctness for a current/2028 independent presidential candidate cannot be settled by retrieving the 2024 document. Held to strictest interpretation."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None for President. There is no per-congressional-district or per-county minimum for a statewide presidential nomination paper — only the single statewide total of 5,000. Signers are organized by county solely as a clerical matter (each two-sided sheet must contain signers from one county, with that county noted); there is no per-county/per-district minimum. The historical \"severe distribution requirement\" applied only to statewide STATE offices, not to President.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "\"County of Signers\" quote and the 5,000 table entry are verbatim in PB 2024. The 2026 instructions confirm the same county-per-page clerical rule with no per-county minimum for statewide. Ballotpedia citation note 19 independently confirms the distribution requirement attaches to statewide STATE office, not President. No distribution minimum for President is correct and current."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "No in-state residency requirement and no circulator affidavit requirement for political-body nomination papers (covers independent/minor-party presidential papers) — both eliminated by amendment to 25 P.S. § 2911(d); the circulator need not be a PA resident. UNKNOWN whether any minimum-age or voter-registration qualification applies to the circulator: DOS instructions specify only that residency and the affidavit were removed and are silent on circulator age/registration. Strictest posture: do not assume any person may circulate; treat circulator age/registration as an open question pending DOS confirmation.",
+   "confidence": 0.85,
+   "interpretationRequired": true,
+   "note": "\"...eliminated the in-state residency requirement and the affidavit requirement for circulators of nomination papers for all political bodies\" is verbatim in PB 2024 and re-confirmed verbatim in the 2026 instructions. The grounded claim is correct and current. Held only because the draft itself flags an UNKNOWN (circulator age/registration) that retrieval cannot resolve; an SOS inquiry is added rather than asserting \"anyone may circulate.\""
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Circulator: a \"Statement of Circulator\" must be filled in and signed on every sheet after all signatures are obtained, but the notarized circulator affidavit was eliminated (no notarization of the circulator statement). Candidate: must file a Candidate's Affidavit, normally notarized; under Act 2020-15 (signed Apr 20, 2020) the candidate may instead submit an unsworn Candidate's Declaration along with the affidavit in lieu of notarization.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "\"Every sheet... Statement of Circulator filled in and signed\" and the Act 2020-15 unsworn-statement language are verbatim in PB 2024; the candidate notarization/declaration language is verbatim on the live DOS third-party page. All re-confirmed UNCHANGED in the active 2026 instructions. Correct and current."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Signatures must be collected on the official two-sided printed nomination paper (legal-size 8.5 x 14, printed 2-sided head-to-head); each signer personally signs with printed name, residence, and date (wet ink). Filing is in person or by mail; no online/digital signature-collection system exists for political-body/presidential nomination papers — DOS provides only blank printable forms.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "\"Nomination papers must be printed 2-sided on 8 1/2 x 14\\\" paper, head to head\" verbatim on the live DOS third-party page; \"Each signer must personally sign... printed name, place of residence and the date of signing\" verbatim in PB 2024. The 2026 instructions confirm \"Pages are double-sided.\" Paper-only with no e-signature option is correct and current."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "$200.00 filing fee for President, required IN ADDITION TO (not in lieu of) the 5,000 signatures — there is no signature-vs-fee alternative; both are required. The fee must accompany the nomination papers, paid by certified check or money order payable to the \"Commonwealth of Pennsylvania\" (no personal checks or cash).",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "\"For Statewide offices (President of the United States...) — $200.00\" and the CERTIFIED CHECK/MONEY ORDER payment language are verbatim in PB 2024; NASS confirms \"a $200 fee, and nomination papers containing the signatures of 5000 qualified electors.\" The 2026 instructions and the live DOS page confirm the certified-check/money-order requirement. PA has no fee-vs-signature substitution; fee is additive. Correct and current."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "$20.00 flat — for one county, multiple counties, or all counties statewide (single per-export fee)",
+  "whoCanObtain": "General public — any \"requestor\" may purchase the Full Voter Export online; no candidate/committee/party eligibility gate. Use is, however, legally limited to elections, political activities, and law enforcement (see useRestrictions). A campaign/committee verifying petition signatures qualifies squarely under \"elections / political activities.\"",
+  "useRestrictions": "Non-commercial use only. The requestor must affirm that the data \"will not be used for commercial or other purposes, except purposes related to elections, political activities and law enforcement, as required by 25 Pa.C.S. sections 1207(b) & 1404(c)(2).\" Commercial use of the registration list is prohibited by statute and carries penalties under the PA Election Code.",
+  "requestProcess": "Online self-service purchase at the PA Department of State's PAVoterServices \"Purchase PA Full Voter Export\" page: select county/counties (or Select All), agree to the affirmation of permitted (non-commercial) use, pay the $20.00 by card; the export file is then delivered by email to the address provided. No application approval, notarized affidavit, or paper form is required for the statewide download (county-only subsets can alternatively be obtained from the county election office, also ~$20 electronic).",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.pavoterservices.pa.gov/Pages/PurchasePAFullVoterExport.aspx",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — the nomination-paper statute (25 P.S. § 2911(d)) imposes no age qualification on the person who appends the circulator's statement. The statute requires only \"the statement of some person, not necessarily a signer.\" Age qualifications in the Election Code attach to SIGNERS (who must be \"qualified electors,\" i.e., voting-eligible, generally 18+), not to the circulato",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER must be a \"qualified elector of the State or district\" (registered voter, resident of PA) per § 2911(a),(c). CIRCULATOR of an independent/political-body nomination PAPER need only be \"some person, not necessarily a signer\" (§ 2911(d)) — no registered-voter, no party, no statutory age requirement; and the former in-state-residency element was struck down as unconstitutional (no resident requ",
+  "gate": "AUTO-LIVE",
+  "note": "For an INDEPENDENT/political-body presidential candidate, the correct track is the nomination PAPER under 25 P.S. § 2911 (Pennsylvania Election Code § 951) — NOT the partisan-primary nomination PETITION (§ 2869). This distinction is decisive: (1) § 2911(d) requires each sheet to have appended \"the statement of some person, not necessarily a signer, and not necessarily the same person on each sheet.\" The circulator need NOT be a signer, need NOT be a qualified elector/registered voter, need NOT b",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "All 8 fields grounded verbatim, but every citation is the 2024 (presidential-cycle) DOS instructions; today is 2026 (a midterm with no presidential race) so the next live cycle is 2028. Substantive rules (5,000 sigs, no distribution, paper-only, fee-plus-sigs, circulator no-residency/no-affidavit) re-confirmed unchanged in the 2026 instructions, but the date-specific deadline is stale and the circulator age/registration qualification is unknown — these two are held."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/pa/title-25-ps-elections-electoral-districts/pa-st-sect-25-2911/",
+   "quote": "Each sheet shall have appended thereto the statement of some person, not necessarily a signer, and not necessarily the same person on each sheet, setting forth, subject to the penalties of 18 Pa.C.S. § 4904 (relating to unsworn falsification to authorities)--(1) Deleted by 2019, Oct. 31, P.L. 552, No. 77, § 3, imd. effective;"
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/pa/title-25-ps-elections-electoral-districts/pa-st-sect-25-2911/",
+   "quote": "In addition to the party nominations made at primaries, nomination of candidates for any public office may also be made by nomination papers signed by qualified electors of the State, or of the electoral district for which the nomination is made, and filed in the manner herein provided."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/programs/voting-and-elections/running-for-office/2025/nomination-papers-2025/pb%20nomination%20paper%20instructions%20final%202025.pdf",
+   "quote": "Statement of Circulator - Every nomination paper page must have the \"Statement of Circulator\" filled in and signed after all signatures have been obtained. Recent amendments to section 951(d) of the Pennsylvania Election Code, 25 P.S. § 2911(d), have eliminated the in-state residency requirement and the affidavit requirement for circulators of nomination papers for all political bodies."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.pa.gov/content/dam/copapwp-pagov/en/dos/programs/voting-and-elections/running-for-office/2025/nomination-papers-2025/pb%20nomination%20paper%20instructions%20final%202025.pdf",
+   "quote": "Rather, candidates for all statewide offices must gather 2,500 signatures, except for the offices of President of the United States, United States Senator, or Governor, which require 5,000 signatures."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Pay-per-signature_for_ballot_initiative_signature_gatherers",
+   "quote": "Pay-per-signature is a method of compensating signature gatherers, also known as circulators, who collect signatures for ballot initiatives and veto referendums, involving paying signature gatherers at a rate based on the number of signatures collected."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.pavoterservices.pa.gov/Pages/PurchasePAFullVoterExport.aspx?Langcode=en-US",
+   "quote": "As provided by 25 Pa.C.S. Section 1404(b)(1) (relating to Public Information Lists), as well as the SURE Regulations at 4 Pa. Code Section 184.14(b) (relating to Public Information Lists), the Department of State will provide the Full Voter Export List to requestors."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.pavoterservices.pa.gov/Pages/PurchasePAFullVoterExport.aspx?Langcode=en-US",
+   "quote": "This version of the Public Information List is a full export of all voters in the county and contains the following fields: voter ID number, name, sex, date of birth, date registered, status (i.e., active or inactive), date status last changed, party, residential address, mailing address, polling place, date last voted, all districts in which the voter votes (i.e., congressional, legislative, school district, etc.), voter history, and date the voter's record was last changed."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.pavoterservices.pa.gov/Pages/PurchasePAFullVoterExport.aspx?Langcode=en-US",
+   "quote": "The cost of the Full Voter Export list is 20.00. Upon successful payment an email will be sent to the provided email address."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.bedfordcountypa.org/document_center/Elections/requestvoterlists.pdf",
+   "quote": "Effective July 12, 2006, the Full Voter Export is available for a charge of $20.00 for a request for any county or all counties in the Commonwealth of Pennsylvania."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.reddit.com/r/Pennsylvania/comments/ti9278/did_you_know_you_can_download_the_entire_state/",
+   "quote": "I affirm that any information obtained from the records requested from the Department of State will not be used for commercial or other purposes, except purposes related to elections, political activities and law enforcement, as required by 25 Pa.C.S. sections 1207(b) & 1404(c)(2)."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / circulatorAgeRule / signerVsCirculator",
+   "url": "https://codes.findlaw.com/pa/title-25-ps-elections-electoral-districts/pa-st-sect-25-2911/",
+   "quote": "Each sheet shall have appended thereto the statement of some person, not necessarily a signer, and not necessarily the same person on each sheet, setting forth, subject to the penalties of 18 Pa.C.S. § 4904 (relating to unsworn falsification to authorities)--... (2) the person's residence, giving city, borough or township with street and number, if any; (3) that the signers signed with full knowledge of the contents of the nomination paper; ... and (7) that, to the best of the person's knowledge and belief, the signers are qualified electors of the State, or of the electoral district, as the case may be."
+  },
+  {
+   "field": "signerVsCirculator (signer must be qualified elector)",
+   "url": "https://codes.findlaw.com/pa/title-25-ps-elections-electoral-districts/pa-st-sect-25-2911/",
+   "quote": "nomination of candidates for any public office may also be made by nomination papers signed by qualified electors of the State... Each person signing a nomination paper shall declare therein that he is a qualified elector of the State or district, as the case may be."
+  },
+  {
+   "field": "contrast — primary PETITION circulator must be registered party elector (NOT the independent track)",
+   "url": "https://codes.findlaw.com/pa/title-25-ps-elections-electoral-districts/pa-st-sect-25-2869/",
+   "quote": "Each sheet shall have appended thereto the statement of the circulator of each sheet, setting forth, subject to the penalties of 18 Pa.C.S. § 4904 ...--(a) that he or she is a qualified elector of the Commonwealth, who is duly registered and enrolled as a member of the party designated in said petition..."
+  },
+  {
+   "field": "circulatorMustBeStateResident (out-of-state circulator ban struck down)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Pennsylvania",
+   "quote": "On March 2, 2015, United States District Court Judge Stewart Dalzell ruled that three of Pennsylvania's petition requirements were unconstitutional 'as applied to the Green Party and Libertarian Party.' These three requirements were as follows: 1. 'the ban on out-of-state circulators' 2. 'the requirement that each petition sheet be notarized' 3. 'the prohibition on a voter signing for more than one minor party in any given election'"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

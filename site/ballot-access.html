@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mainframe">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CampaignOS — Ballot Access Risk Board</title>
+<meta name="description" content="Live 51-jurisdiction ballot-access risk board for a presidential campaign: signature requirements, deadlines, and machine-verified rule status — green / amber / blocked." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2.5' y='2.5' width='27' height='27' rx='7' fill='%23090c11' stroke='%23334' stroke-width='1.6'/><path d='M9.5 16.4l4.2 4.3 8.8-9.1' fill='none' stroke='%2336f2c0' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/><circle cx='9.5' cy='9.5' r='1.6' fill='%23ffb24d'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="ballot-access.css" />
+</head>
+<body>
+
+<canvas id="grid-net" aria-hidden="true"></canvas>
+<div class="atmos" aria-hidden="true">
+  <div class="atmos__glow atmos__glow--mint"></div>
+  <div class="atmos__glow atmos__glow--amber"></div>
+  <div class="atmos__grid"></div>
+  <div class="atmos__scan"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<header class="menubar" id="menubar">
+  <a class="brand" href="index.html" aria-label="CampaignOS home">
+    <span class="brand__mark" aria-hidden="true">
+      <svg viewBox="0 0 32 32" width="26" height="26">
+        <rect x="2.5" y="2.5" width="27" height="27" rx="7" class="mk-box"/>
+        <path d="M9.5 16.4l4.2 4.3 8.8-9.1" class="mk-check"/>
+        <circle cx="9.5" cy="9.5" r="1.6" class="mk-dot"/>
+      </svg>
+    </span>
+    <span class="brand__word">Campaign<b>OS</b></span>
+  </a>
+  <nav class="menubar__nav" aria-label="Primary">
+    <a href="index.html">← home</a>
+    <a href="index.html#modules">modules</a>
+  </nav>
+  <div class="menubar__right">
+    <span class="sysclock" id="sysclock" aria-hidden="true">SYS ----.--.-- // --:--:--</span>
+    <span class="ghost-btn"><span class="dot-live"></span> BallotAccessOS</span>
+  </div>
+</header>
+
+<main class="ba">
+
+  <section class="ba__head reveal" data-reveal>
+    <span class="sec-num">ballot access / risk board</span>
+    <h1>50 states + DC, one operating picture.</h1>
+    <p class="ba__sub">
+      Every jurisdiction's independent-presidential ballot-access rule — signature requirement,
+      filing deadline, and verification status — <b>machine-verified with no human counsel</b>:
+      researched from primary sources, every citation grounded, then adversarially re-checked.
+      Anything uncertain is held at the <span class="hl-amber">strictest</span> reading until the
+      election office answers. Not legal advice.
+    </p>
+  </section>
+
+  <dl class="ba-summary reveal" data-reveal id="summary"></dl>
+
+  <div class="ba-controls reveal" data-reveal>
+    <div class="ba-lens" id="lens" role="tablist" aria-label="Hold sensitivity">
+      <button class="seg" data-lens="critical" role="tab" aria-selected="true">critical only</button>
+      <button class="seg" data-lens="all" role="tab" aria-selected="false">all holds</button>
+    </div>
+    <div class="chips" id="chips" role="tablist" aria-label="Filter by status"></div>
+    <div class="ba-controls__right">
+      <input id="search" class="ba-search" type="search" placeholder="filter states…" aria-label="Filter states" />
+      <select id="sort" class="ba-sort" aria-label="Sort">
+        <option value="risk">sort: risk first</option>
+        <option value="name">sort: A–Z</option>
+        <option value="sos">sort: most SoS inquiries</option>
+      </select>
+    </div>
+  </div>
+  <p class="ba-lenscap" id="lenscap"></p>
+
+  <div class="board" id="board" aria-live="polite"></div>
+  <p class="ba-empty" id="empty" hidden>no jurisdictions match.</p>
+
+</main>
+
+<footer class="foot">
+  <div class="foot__meta">
+    <span>machine-verified · no human counsel · conservative fail-safe</span>
+    <span class="sep">·</span>
+    <span id="genstamp">51 jurisdictions</span>
+    <span class="sep">·</span>
+    <span>not legal advice</span>
+  </div>
+</footer>
+
+<script src="ballot-access-data.js"></script>
+<script src="app.js"></script>
+<script src="ballot-access.js"></script>
+</body>
+</html>

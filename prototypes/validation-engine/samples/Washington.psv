@@ -1,0 +1,6 @@
+StateVoterID|FName|MName|LName|NameSuffix|RegStNum|RegStName|RegUnitNum|RegCity|RegState|RegZipCode|StatusCode|Registrationdate|CountyCode|LegislativeDistrict
+V1001|Robert|A|Nuñez||42|Main St||Springfield|NC|62704|Active|2019-03-01|Sangamon|1
+V1002|William||Johnson||88|Oak Ave||Springfield|NC|62704|Active|2018-06-15|Sangamon|1
+V1003|Maria||Gonzalez||5|Sunset Blvd|4|Springfield|NC|62705|Active|2021-11-02|Sangamon|1
+V1004|James||O'Brien||230|N Park Rd||Springfield|NC|62704|INACTIVE|2017-09-10|Sangamon|1
+V1005|Katherine||Lee||901|River Dr||Springfield|NC|62704|CANCELLED|2016-05-05|Sangamon|1

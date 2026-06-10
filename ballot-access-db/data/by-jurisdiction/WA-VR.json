@@ -1,0 +1,125 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "WA-VR",
+ "jurisdiction": "Washington",
+ "abbr": "WA",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 154455,
+  "headline": "Referendum (veto/popular referendum on an act of the legislature). Const. Art. II Sec. 1(b): 'The number of valid signatures of registered voters required on a petition for referendum of an act of the legislature or any part thereof, shall be equal to or exceeding four percent of the votes cast for the office of governor at the last gubernatorial election preceding the filing of the text of the referendum measure with the secretary of state.' Base = 2024 gubernatorial vote (~"
+ },
+ "deadline": {
+  "headline": "Referendum: March 12, 2026 - June 10, 2026 (per SoS filing deadlines page). Constitutional rule (Art. II Sec. 1(d)): 'Referendum petitions against measures passed by the legislature shall be filed with the secretary of state not later than ninety days after the final adjournment of the session of the legislature which passed the measure on which the referendum is demanded.'"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Referendum (veto/popular referendum on an act of the legislature). Const. Art. II Sec. 1(b): 'The number of valid signatures of registered voters required on a petition for referendum of an act of the legislature or any part thereof, shall be equal to or exceeding four percent of the votes cast for the office of governor at the last gubernatorial election preceding the filing of the text of the referendum measure with the secretary of state.' Base = 2024 gubernatorial vote (~",
+   "confidence": 0.9
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Referendum: March 12, 2026 - June 10, 2026 (per SoS filing deadlines page). Constitutional rule (Art. II Sec. 1(d)): 'Referendum petitions against measures passed by the legislature shall be filed with the secretary of state not later than ninety days after the final adjournment of the session of the legislature which passed the measure on which the referendum is demanded.'"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Single-subject rule (Art. II Sec. 19) is directed at legislation/initiatives; a referendum refers an existing legislative act, so the single-subject constraint attaches to the underlying act rather than being imposed anew on the referendum petition."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Per-signature (pay-per-signature) compensation of circulators is ALLOWED for initiatives. Washington statute (former RCW 29.79.490, recodified at RCW 29A.84.250) on its face prohibited paying circulators on a per-signature basis, but that ban was struck down as unconstitutional in LIMIT v. Maleng, 874 F. Supp. 1138 (W.D. Wash. 1994), and is unenforceable. Washington thus is NOT",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Free in practice. No fee is shown or collected on the request form; the governing statute requires lists be furnished \"at actual reproduction cost,\" which for the emailed electronic CSV extract is effectively $0. Conservatively: free / actual reproduction cost.",
+  "whoCanObtain": "General public — the WA Secretary of State \"shall promptly furnish current lists of registered voters in his or her possession, at actual reproduction cost, to any person requesting such information\" (RCW 29A.08.720(2)). No candidate/committee/registered-user eligibility gate.",
+  "useRestrictions": "Strong. The list \"shall not be used for the purpose of mailing or delivering any advertisement or offer... or... any solicitation for money, services, or anything of value.\" However \"the lists and labels may be used for any political purpose\" — defined to include support of/opposition to candidates and ballot measures — which covers petition-signature verification for a campaign. Penalty for prohibited (commercial/solicitation) use is a class C felony (up to 5 years imprisonment and/or $10,000 fine) plus $5-per-item civil liability and possible class action (RCW 29A.08.740).",
+  "requestProcess": "Online webform on the SOS \"Washington Voter Registration Database Extract\" page. Requester submits name, email, phone, and mailing address and checks a box agreeing to lawful use under RCW 29A.08.720, 29A.08.740, and 42.56.070(8). \"You will be sent an email with a download link upon approval.\" Fulfillment \"can take up to five business days... in most cases, the request is satisfied immediately.\" No notarized affidavit; just a click-through use agreement.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sos.wa.gov/washington-voter-registration-database-extract",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "Washington citizen ballot-measure rules are statute-only (initiated statutes) plus referendum; NO citizen constitutional initiative. CURRENT-CYCLE OFFICIAL FIGURES (Secretary of State, Submitted Signature Statistics page, update date 1/23/2026): initiative requires 308,911 valid signatures; referendum requires 154,455. These derive from the constitutional formulas of 8% (initiative) and 4% (referendum) of votes cast for governor at the 2024 general election (base ~3,861,387; "
+ },
+ "citations": [
+  {
+   "field": "hasCitizenInitiative/signatureBasis(initiative)",
+   "url": "https://codes.findlaw.com/wa/washington-constitution/wa-const-art-2-sect-1/",
+   "quote": "(a) Initiative: The first power reserved by the people is the initiative. Every such petition shall include the full text of the measure so proposed. In the case of initiatives to the legislature and initiatives to the people, the number of valid signatures of legal voters required shall be equal to eight percent of the votes cast for the office of governor at the last gubernatorial election preceding the initial filing of the text of the initiative measure with the secretary of state."
+  },
+  {
+   "field": "deadline(initiative)",
+   "url": "https://codes.findlaw.com/wa/washington-constitution/wa-const-art-2-sect-1/",
+   "quote": "Initiative petitions shall be filed with the secretary of state not less than four months before the election at which they are to be voted upon, or not less than ten days before any regular session of the legislature."
+  },
+  {
+   "field": "signatureBasis(referendum)",
+   "url": "https://codes.findlaw.com/wa/washington-constitution/wa-const-art-2-sect-1/",
+   "quote": "The number of valid signatures of registered voters required on a petition for referendum of an act of the legislature or any part thereof, shall be equal to or exceeding four percent of the votes cast for the office of governor at the last gubernatorial election preceding the filing of the text of the referendum measure with the secretary of state."
+  },
+  {
+   "field": "deadline(referendum)",
+   "url": "https://codes.findlaw.com/wa/washington-constitution/wa-const-art-2-sect-1/",
+   "quote": "Referendum petitions against measures passed by the legislature shall be filed with the secretary of state not later than ninety days after the final adjournment of the session of the legislature which passed the measure on which the referendum is demanded."
+  },
+  {
+   "field": "signatureRequirement(current-cycle, both types)",
+   "url": "https://www.sos.wa.gov/elections/initiatives-referenda/submitted-signature-statistics",
+   "quote": "The number of signatures required for an initiative is 308,911 and the number for a referendum is 154,455."
+  },
+  {
+   "field": "filing deadlines(current-cycle, verbatim)",
+   "url": "https://www.sos.wa.gov/elections/initiatives",
+   "quote": "Initiatives to the People: January 5, 2026 - July 2, 2026; Initiatives to the Legislature: March 11, 2026 - December 31, 2026; Referendum: *March 12, 2026 - *June 10, 2026"
+  },
+  {
+   "field": "distribution",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Washington",
+   "quote": "Washington does not have a distribution requirement for petition signatures."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Washington",
+   "quote": "Washington has a single-subject rule for ballot measures. The relevant law restricts bills in the legislature. However, this restriction has been found to apply to initiatives as well."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Washington",
+   "quote": "Washington does not require signature gatherers to be residents of the state."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Washington",
+   "quote": "Washington allows paying signature gatherers based on the number of signatures collected. Statute provides for such a ban, but the law was struck down in LIMIT v. Maleng in 1994."
+  },
+  {
+   "field": "numberRequired-basis(8%)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Washington",
+   "quote": "Initiatives to the People require signatures equal to eight (8) percent of the votes cast for the office of governor in the last election. Initiatives to the Legislature also require signatures equal to eight (8) percent of the"
+  },
+  {
+   "field": "signatureRequirement-corroboration(2026-2029)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Washington",
+   "quote": "2028 | 308,911 | 308,911 | 154,456 ... 2027 | 308,911 | 308,911 | 154,456"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

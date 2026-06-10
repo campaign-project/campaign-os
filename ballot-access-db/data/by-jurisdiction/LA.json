@@ -1,0 +1,184 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "LA",
+ "jurisdiction": "Louisiana",
+ "abbr": "LA",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 5000,
+  "headline": "5,000 sigs / 500 per CD (SoS standard; bare statute reads 2,500/250 — collect 5,000/500)"
+ },
+ "deadline": {
+  "headline": "File 3rd Tue Jul–1st Fri after 3rd Tue Aug (2024: Jul 16–Aug 23); petition to registrars by Jul 24 (T-30)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "5,000 signatures of registered voters, with at least 500 from each of Louisiana's 6 congressional districts (collect to this higher standard).",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Citations grounded verbatim (SoS packet + NASS both say 5,000/500). BUT the draft's legal derivation is wrong: RS 18:465(C)(1) — the cross-referenced statewide provision RS 18:1254(B) routes independents into — actually reads 'two thousand five hundred, not less than two hundred fifty of which shall be from each of the congressional districts' (verified at codes.findlaw.com/la, current as of 2023-01-01). So the bare statute yields 2,500/250, not 5,000/500. This is a statute-vs-administering-agency conflict that retrieval cannot settle. Strictest defensible value = 5,000/500 (the SoS's own published, administered standard, which also moots the lower reading), so relied value = 5,000/500. Do NOT rely on 2,500/250."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "File during the period beginning the third Tuesday in July and ending 4:30 p.m. on the first Friday following the third Tuesday in August (2024 cycle: Jul 16, 8:00 a.m. – Aug 23, 4:30 p.m.); the petition must additionally be submitted to parish registrars for certification no later than 30 days before the period ends (2024: July 24). Treat July-24-type certification cutoff as the binding earliest deadline and re-confirm exact cycle dates with the SoS.",
+   "confidence": 0.85,
+   "interpretationRequired": true,
+   "note": "Triple-confirmed against primary sources: RS 18:1254(A) (legis.la.gov, current), RS 18:1255(A) (independently fetched — 'period beginning on the third Tuesday in July and ending at 4:30 p.m. on the first Friday following the third Tuesday in August'), and the SoS packet. The draft correctly flags and rejects NASS's conflicting 'first Friday following the first Tuesday in September' — Louisiana primary law controls and says August. HOLD (not AUTO-LIVE) because: (a) the value embeds cycle-specific 2024 calendar dates that recompute each cycle; (b) a NASS source conflict exists on record; (c) the registrar-certification sub-deadline (~30 days before close) is the true operational cutoff and must be re-derived per cycle. Strictest framing = honor the earlier certification cutoff."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "At least 500 of the 5,000 signatures from each of the 6 congressional districts (collect to this higher per-district standard). Separately, the slate must comprise 8 electors: one registered voter from each of the 6 CDs plus 2 at-large.",
+   "confidence": 0.6,
+   "interpretationRequired": true,
+   "note": "Same statute-vs-agency conflict as signaturesRequired: bare RS 18:465(C)(1) sets 250 per CD for statewide candidates, while the SoS packet (grounded verbatim) says 500 per CD for the presidential independent slate. The 8-elector slate composition (1 per CD + 2 at-large) is independently confirmed verbatim in RS 18:1254(C) and is correct. Per-district signature minimum held to strictest = 500/CD. Note the draft's 'recomputes if number of districts changes' is sound conditional reasoning but not separately verified."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "No verified express age/residency/registration qualification on circulators (draft says UNKNOWN). Do NOT assume circulators may be unqualified; treat circulator age/residency as UNKNOWN and confirm with SoS, and rely only on the verified facts that signers must be registered voters in the relevant CD and that the person obtaining signatures must certify their genuineness (RS 18:465(D)).",
+   "confidence": 0.55,
+   "interpretationRequired": true,
+   "note": "The supporting SoS-packet quote (8-elector slate composition) is grounded verbatim but does not itself speak to circulators. Independent check of RS 18:465(D) confirms a circulator-certification duty and no stated circulator age/residency — but this is a proving-a-negative claim that retrieval cannot conclusively confirm (a requirement could live in another Title 18 provision or SoS rule). Draft's own 'UNKNOWN' label is appropriate. HOLD as interpretation/absence-of-law; relied value preserves the UNKNOWN and adds an SoS inquiry."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Each of the 8 electors files a notarized Affidavit of Acceptance of Nomination; each Notice of Candidacy must be executed before a notary public OR witnessed by two persons registered to vote for presidential elector (armed-forces officer may witness for candidates serving out of state). The petition itself requires the persons who obtained signatures to certify the signatures are genuine and statements true and correct, and parish registrars certify signature validity (per RS 18:465(D), the independent-path provision).",
+   "confidence": 0.7,
+   "interpretationRequired": true,
+   "note": "Notary/affidavit and notice-of-candidacy quotes are grounded verbatim in the SoS packet and are correct. The circulator-certification quote is grounded verbatim at the cited legis URL, BUT that URL (d=81289) is RS 18:1280.22 — the PARTY presidential-primary provision — not the independent path; the correct parallel for the independent petition is RS 18:465(D), which I independently confirmed contains materially identical certification language ('the candidate and all persons who obtained signatures... shall certify... all of the signatures... are genuine'). Substance is right; citation is mis-targeted. HOLD due to the mixed-relevance citation; relied value re-anchored to RS 18:465(D)."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Fully grounded verbatim in the SoS packet: documents 'may be filed by mail, by courier, or in person' and 'FAXED DOCUMENTS ARE NOT ACCEPTED.' Petition is collected on paper and certified manually by parish registrars. No online/remote signature path exists for an independent presidential petition. No legal interpretation required."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Yes — a qualifying fee is available IN LIEU OF the petition. For risk/budget purposes assume $1,000 (current RS 18:1254(A), post-2024/2025 amendments, grounded verbatim on legis.la.gov), even though the 2024 SoS packet and NASS state $500; confirm the operative fee with the SoS for the specific cycle. The petition path remains available as a fee-free alternative. Fee payable only by cash, certified/cashier's check, or money order.",
+   "confidence": 0.8,
+   "interpretationRequired": true,
+   "note": "All three citations grounded verbatim: SoS packet ($500, 2024) and NASS ($500, 2024) agree for the 2024 cycle; current legis.la.gov RS 18:1254(A) reads 'qualifying fee of one thousand dollars' (independently confirmed — amendments incl. Acts 2024 1st Ex. Sess. No. 1 and Acts 2025). The draft correctly flags this change. HOLD because the operative fee is cycle/timing-dependent and the sources disagree by amendment date; strictest assumption for a campaign = budget the higher $1,000 and/or use the petition. fee-in-lieu-of-petition structure itself is correct."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$.01 (1 cent) per name, minimum $20.00, maximum $5,000.00 per list, plus a $5.00 state fee per order (plus a $5.00 credit-card convenience fee if paying by card). A full statewide file (~3M voters) hits the $5,000 cap.",
+  "whoCanObtain": "General public. Anyone may purchase by creating an account on the Secretary of State \"Commercial Requests\" voter list portal. The process is published under \"Become a Candidate > Purchase Voter Lists,\" but no candidate/committee/party eligibility gate is stated in the published ordering process.",
+  "useRestrictions": "Voter email addresses are protected by law and are NOT provided; home and mailing addresses, name, sex, race, party, age, voter status, registration date/number, phone, and last-vote/voting history ARE provided. Louisiana law (La. R.S. 18:154) separately limits use of voter registration data (generally to political, religious, charitable, governmental, election, or research purposes and bars certain commercial solicitation), but the exact statutory wording and penalties could not be retrieved from a primary source in this session and are not quoted here. All purchases are final and non-refundable.",
+  "requestProcess": "Online application: create an account on the voter list portal, define selection criteria, receive a cost estimate, and pay in advance. List is delivered electronically (emailed PDF or tab-delimited text file; printable address labels optional). Download link expires 7 days after purchase. Custom selections (e.g., specific precincts/districts) are processed by Election Services staff. No instant free download; pricing is fixed by administrative rule and non-negotiable.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sos.la.gov/ElectionsAndVoting/BecomeACandidate/PurchaseVoterLists/Pages/default.aspx",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement appears in the statute. La. R.S. 18:465(D) describes the circulator only as \"the person who obtained the signature on [the candidate's] behalf,\" who must witness each signature and certify the petition. The statute imposes no minimum age on that witness/circulator. The only age-bearing qualification — being a \"registered to vote\" / \"qualified voter,\" which implies 18+",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "unknown",
+  "signerVsCirculator": "SIGNER: must be a registered/qualified voter eligible to vote on the office (for an independent presidential-elector slate, 5,000 registered voters with at least 500 from each congressional district) per R.S. 18:465(B),(C),(E)(2) and 18:1254. CIRCULATOR (\"the person who obtained the signature on his behalf\"): only required to witness each signature and certify the petition's genuineness — no voter",
+  "gate": "CONSERVATIVE-HOLD",
+  "note": "Independent presidential candidates qualify a full slate of presidential electors by nominating petition (or a $1,000 fee). La. R.S. 18:1254(B) provides the petition \"shall be signed, filed, and certified as provided in Chapter 5 of this Title for state candidates voted on throughout the State,\" and 18:1254(C) ties the form to R.S. 18:465(D). So the controlling circulator rule is R.S. 18:465(D): each signature must be \"dated and witnessed by the candidate or the person who obtained the signature",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 4,
+  "riskNote": "Signature/distribution count is a statute-vs-agency conflict: RS 18:465(C)(1) literally says 2,500/250 for statewide candidates, but the SoS packet and NASS both say 5,000/500 for the presidential independent slate — collect 5,000/500 (strictest) to avoid rejection. Fee changed $500 (2024 packet) -> $1,000 (current statute); confirm operative fee/dates with SoS each cycle, and the petition path is always available as a fee-free alternative."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://www.legis.la.gov/Legis/Law.aspx?d=81596",
+   "quote": "each signature on the nominating petition shall be dated and witnessed by the candidate or the person who obtained the signature on his behalf. The candidate and all persons who obtained signatures on his behalf shall certify on the nominating petition that to the best of their knowledge, information, and belief all of the signatures on the nominating petition are genuine and all of the statements contained in the nominating petition are true and correct."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.legis.la.gov/Legis/Law.aspx?d=81596",
+   "quote": "A person may only be nominated as a candidate in a primary election by persons who are registered to vote on the office he seeks who sign a nominating petition for him no more than one hundred twenty days before the qualifying period opens for candidates in the primary election."
+  },
+  {
+   "field": "compensation",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=81263",
+   "quote": "Except as otherwise specifically provided in this Part, a nominating petition for a slate of candidates for the offices of presidential elector shall be signed, filed, and certified as provided in Chapter 5 of this Title for state candidates voted on throughout the State."
+  },
+  {
+   "field": "compensation",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=81263",
+   "quote": "Nominating petitions for the office of presidential elector shall be in the form prescribed by R.S. 18:465(D), except that in lieu of including the recognized political party with which the candidates are affiliated, the petition shall contain, in not more than three words, the political principle which the candidates represent."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.la.gov/ElectionsAndVoting/BecomeACandidate/PurchaseVoterLists/Pages/default.aspx",
+   "quote": "A database of public information of registered voters is only available for purchase using specifically defined selection criteria. The voter list is available through email as a PDF or tab delimited text file. ... You can receive a cost estimate and purchase a list of registered voters through our online application. The purchaser is responsible for defining the selection criteria, reviewing the estimate and paying in advance of receipt of the requested list."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.la.gov/ElectionsAndVoting/PublishedDocuments/VoterListChargesAndInfo.pdf",
+   "quote": "Text File (Can be converted to an Excel format, instructions provided) $.01 (1 cent) per name with a minimum cost of $20.00 and a maximum cost of $5,000.00. ... Parish, Ward/Precinct, Name, Residence/Mailing Addresses, Districts ... Sex, Race, Political Party, Age, Voter Status, Registration Date, Registration Number, Phone Number, Last Vote Date, Residence Walk List Order, and Name Order"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.la.gov/ElectionsAndVoting/PublishedDocuments/VoterListChargesAndInfo.pdf",
+   "quote": "All lists are provided electronically via the voter list portal. An account must be created to place and purchase the order. A $5.00 state fee is added to each order. Voter lists are available for 7 days after purchase. If the list is not downloaded during this time, the link will expire."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.la.gov/ElectionsAndVoting/Pages/PurchaseVoterListsFAQ.aspx?OwnershipName=PurchaseVoterListsFAQ&faqid=0",
+   "quote": "Pricing is established by administrative rule and is non-negotiable. ... Credit card payments are subject to an additional statutory convenience fee of $5.00. ... Home addresses and mailing addresses included? Yes. ... Email addresses available? No.  Voter's email addresses are protected by law. ... The purchase of a voter list is final and the cost is non-refundable."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.la.gov/ElectionsAndVoting/PublishedDocuments/RecordFormatSheet.pdf",
+   "quote": "Main Record Layout ... Personal_FirstName ... Personal_LastName ... Residence_HouseNumber ... Residence_StreetName ... Residence_City ... Residence_State ... Residence_ZipCode5 ... Registration_PoliticalParty ... Registration_VoterStatus ... Registration_Date ... Registration_Number"
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / signerVsCirculator / circulatorAgeRule",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=81596",
+   "quote": "Form. Each sheet of the nominating petition shall set forth the candidate's name... The name of each voter who signed the nominating petition shall be typed or legibly written on the petition, and each signature on the nominating petition shall be dated and witnessed by the candidate or the person who obtained the signature on his behalf. The candidate and all persons who obtained signatures on his behalf shall certify on the nominating petition that to the best of their knowledge, information, and belief all of the signatures on the nominating petition are genuine and all of the statements contained in the nominating petition are true and correct."
+  },
+  {
+   "field": "signerVsCirculator (registered-voter requirement binds the SIGNER)",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=81596",
+   "quote": "Method of nominating candidates. A person may only be nominated as a candidate in a primary election by persons who are registered to vote on the office he seeks who sign a nominating petition for him... each voter who signs a nominating petition shall date his signature and shall provide the ward and precinct in which he is registered to vote, his residence address..."
+  },
+  {
+   "field": "signerVsCirculator (certification checks SIGNER registration, not circulator)",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=81596",
+   "quote": "The registrar for each parish shall... promptly certify the nominating petitions... by determining and certifying on each nominating petition which of the signers who provided a residence address in the parish signed the nominating petition timely and are registered to vote on the office the candidate seeks."
+  },
+  {
+   "field": "note (independent presidential elector petition uses Chapter 5 / R.S. 18:465 form)",
+   "url": "https://legis.la.gov/Legis/Law.aspx?d=81263",
+   "quote": "Except as otherwise specifically provided in this Part, a nominating petition for a slate of candidates for the offices of presidential elector shall be signed, filed, and certified as provided in Chapter 5 of this Title for state candidates voted on throughout the State. C. Nominating petitions for the office of presidential elector shall be in the form prescribed by R.S. 18:465(D)..."
+  },
+  {
+   "field": "note (signer count for independent presidential petition)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Louisiana",
+   "quote": "An independent presidential candidate may petition for placement on the general election ballot. At least 5,000 registered voters must sign the petition. At least 500 signatures must come from each of the state's congressional districts. Alternatively, an independent candidate may pay a filing fee in lieu of submitting a petition. The fee amounts to $500."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

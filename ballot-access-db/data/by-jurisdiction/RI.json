@@ -1,0 +1,179 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "RI",
+ "jurisdiction": "Rhode Island",
+ "abbr": "RI",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 1000,
+  "headline": "1,000 signatures (flat statewide aggregate) — AUTO-LIVE"
+ },
+ "deadline": {
+  "headline": "File w/ local board 60 days before general (Sep 6 in 2024) — HOLD: date recomputes each cycle"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "1,000 signatures of registered voters, in the aggregate (a flat statewide number, not a percentage). Per RI Gen. Laws § 17-14-7(a), nomination papers of an independent candidate for presidential elector must be signed, in the aggregate, by at least 1,000 voters. Fixed statutory figure; does not recompute per cycle.",
+   "confidence": 0.97,
+   "interpretationRequired": false,
+   "note": "All three citations ground VERBATIM: findlaw §17-14-7(a) ('signed, in the aggregate, by at least one thousand (1,000) voters'); SOS Nominations page table ('President of the United States | 1000'); Ballotpedia presidential page ('This petition must contain 1,000 signatures'). Adversarial check: the §17-14-7 'for the 2020 election only' reduction to 500 applied ONLY to US Senator and Representative in Congress, NOT to presidential elector, and has expired — so president remains at 1,000. Current and correct."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Operative candidate deadline: signed nomination papers must be returned to the local Board of Canvassers no later than 60 days before the general election (RI Gen. Laws § 17-14-11(a)). For Nov 5, 2024 that date was September 6, 2024 (matching the SOS official calendar). Separately, local boards must file certified papers with the Secretary of State no later than 54 days before the election (§ 17-14-12; Sept 12, 2024). STRICT reliance: treat the 60-day-before-general local-board filing as binding and RECONFIRM the exact calendar date against the SOS election calendar for each cycle — the specific date recomputes annually.",
+   "confidence": 0.82,
+   "interpretationRequired": true,
+   "note": "Facts grounded: findlaw §17-14-11(a) ('shall be filed not later than sixty (60) days prior to the general election') VERBATIM; SOS page ('Presidential Electors | September 6') VERBATIM; §17-14-12 54-day boards-to-SOS deadline VERBATIM on findlaw. Date math confirms Nov 5 2024 −60d = Sep 6, −54d = Sep 12. Held (not AUTO-LIVE) for two reasons: (1) the cited justia URL for §17-14-12 returned a CAPTCHA and could not be grounded at the cited URL (the fact is grounded on findlaw instead) — citation-integrity gap; (2) 'September 6' is cycle-specific and recomputes, and two distinct deadlines exist (60-day candidate→local board vs 54-day local board→SOS) — relying on a stale calendar date could risk ballot access, so the durable statutory rule plus a per-cycle reconfirmation is the strictest defensible posture."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. No per-congressional-district or per-county signature quota; the requirement is a single statewide aggregate of 1,000 voters (RI Gen. Laws § 17-14-7(a)). A procedural per-sheet organization rule applies (not a distribution quota): each nomination-paper sheet lists one city/town at the top and may carry only signatures of voters registered in that city/town, because that sheet is verified by that locality's Board of Canvassers.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both citations ground VERBATIM: findlaw §17-14-7(a) (aggregate 1,000); SOS page ('Signers on a nomination paper must be from the city or town listed at the top of the nomination paper'). Adversarial check confirmed the city/town rule is an organizational/verification mechanism, not a geographic distribution minimum — there is no minimum-per-locality quota. Characterization is accurate."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "AUTO-LIVE",
+   "value": "The signature collector (circulator) may be any person 18 years of age or older (410-RICR-20-00-10 §10.4(A)). No circulator residency requirement, no requirement that the circulator be a registered voter, and no restriction on paid circulators. Signers must be RI registered voters eligible to vote for the office and need not be members of the candidate's party.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Both citations ground VERBATIM against the CURRENT regulation (amendment effective 07/22/2024): reg §10.4(A) ('A collector, who may be any person 18 years of age or older, must personally witness...'); Ballotpedia political-candidates page ('The relevant statutes do not specify any additional circulator requirements (such as residency or pay status)'). Note for downstream use: this same regulation requires the collector to execute a NOTARIZED affidavit (see witnessOrNotary). Current and correct."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Notarized circulator affidavit required. The collector must personally witness each signature and must sign and attest BEFORE A NOTARY PUBLIC that each signer appeared personally and signed in the collector's presence; the collector must also provide their printed name, residence address, and telephone number on the nomination paper (410-RICR-20-00-10 §10.4(A), adopted under RI Gen. Laws § 17-14-10).",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Citation grounds VERBATIM in the current 07/22/2024 regulation, including the (sic) truncated phrase 'in the presence of the.' which appears in the source itself. 'shall sign and attest before a notary public' confirms notarization is mandatory, not optional witnessing. Current and correct."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. In-person, paper-based process: the candidate (or authorized designee for federal/presidential papers) obtains physical nomination papers from the Department of State's Elections Division (148 W. River Street, Providence); signers sign in person with name and residence as on the voting list; the collector witnesses each signature in close physical proximity and executes a notarized affidavit; signed papers are returned to local Boards of Canvassers for manual verification. No online/remote-digital or digitized petition system exists for a presidential petition in RI.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "All three citations ground VERBATIM: SOS page ('Federal offices: You must obtain your nomination papers from the Department of State's Elections Division, 148 W. River Street, Providence, RI.'); reg ('Every voter signing a nomination paper shall sign in person with his or her name, place of residence, and street number, as it appears on the voting list.'); reg definition of 'Presence' ('close physical proximity coupled with awareness sufficient...'). No evidence of any electronic petition pathway. Correct."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. Rhode Island has no filing fee for ballot access and no fee-in-lieu-of-signatures option; qualification is by nomination papers (signatures) only.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "SOS quote grounds VERBATIM ('In order to be on the ballot, you will need to obtain a specified number of valid signatures on your nomination papers. All candidates for federal, state and local public office need nomination papers.'). Adversarial check: searched the SOS Nominations page and both Ballotpedia pages for any filing-fee or fee-in-lieu provision — none found; RI ballot access is signature-only. This is an absence-of-evidence finding but is consistent across all sources, hence AUTO-LIVE."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Statewide list of registered voters: $25 via email or CD (includes three free data updates within a year of purchase); $700 if a printed printout. (Smaller scopes: Congressional District $15 email/$350 printout; State Senate/Rep district and City/Town $25 printout, free by email.) Credit-card payment adds a 3% service fee.",
+  "whoCanObtain": "General public. The registration list and the requests for it are public records under R.I. Gen. Laws § 17-6-9, and the SOS \"List of Registered Voters Order Form\" imposes no candidate/committee/party or political-use eligibility gate — any purchaser may order.",
+  "useRestrictions": "No use restriction (e.g., no commercial-use prohibition, political-use-only requirement, or anti-solicitation clause) appears on the order form or in § 17-6-9; the registration list is treated as a public record. (No use-limitation penalty was found tied to obtaining this list.)",
+  "requestProcess": "Application/order form. Complete the RI Department of State \"List of Registered Voters Order Form\" (purchaser contact info, scope selection, format, payment), sign and date it, and submit by email (elections@sos.ri.gov) or mail (Elections Division, 148 W. River St. Ste 1A, Providence, RI 02904). Payment (credit card +3%, check/money order payable to \"State of RI\", or cash) must be received before the order is processed. No notarized affidavit or sworn statement of permitted use is required by the form.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://vote.sos.ri.gov/Forms/elections/Forms/VoterListOrderForm.pdf",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "The circulator (statutorily a \"Collector,\" the person who gathers signatures and signs the notarized affidavit) must be at least 18. The active RI Board of Elections regulation 410-RICR-20-00-10 § 10.4(A) (effective 07/22/2024) states: \"A collector, who may be any person 18 years of age or older, must personally witness the signature of each person...\" The underlying statute (R.I. Gen. Laws § 17-1",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER (voter/endorser) bears the strict requirements: must be a registered RI voter, signing in person with name, place of residence, and street number \"as it appears on the voting list,\" on a page restricted to voters of the same city/town. CIRCULATOR (collector) need only be 18+, personally witness each signature, and attest under oath before a notary, providing printed name, residence address,",
+  "gate": "AUTO-LIVE",
+  "note": "Rhode Island independent presidential candidates file nomination papers requiring at least 1,000 registered-voter signatures, due 60 days before the general election (R.I. Gen. Laws § 17-14-1 et seq.). The collector/circulator eligibility is governed by the active RI Board of Elections regulation 410-RICR-20-00-10 (effective 07/22/2024), which is the authoritative official source. It affirmatively defines the collector as \"any person 18 years of age or older\" and imposes NO requirement that the ",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "7 of 8 fields grounded and AUTO-LIVE; only the deadline is held because the specific calendar date is cycle-specific and one cited URL (justia §17-14-12) was unreachable, though the operative 60-day statutory rule is grounded verbatim elsewhere."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/ri/title-17-elections/ri-gen-laws-sect-17-14-10.html",
+   "quote": "Every person who obtains signatures of voters upon nomination papers shall under oath sign the following statement: \"I, __________, of the city/town of __________, under oath, make affidavit and say that the signers of the within nomination paper did so sign the paper in my presence.\""
+  },
+  {
+   "field": "compensation",
+   "url": "https://rules.sos.ri.gov/regulations/part/410-20-00-10",
+   "quote": "\"Collector\" means any individual who gathers the signatures and addresses of eligible voters upon nomination papers."
+  },
+  {
+   "field": "compensation",
+   "url": "https://rules.sos.ri.gov/regulations/part/410-20-00-10",
+   "quote": "A collector, who may be any person 18 years of age or older, must personally witness the signature of each person and shall sign and attest before a notary public that each person who signed the nomination papers appeared personally before him or her and signed the nomination papers in the presence of the. Said collector must have personal knowledge that each person actually signed the document and must provide on the nomination paper form the collector's printed name, residence address, and telephone number."
+  },
+  {
+   "field": "compensation",
+   "url": "https://vote.sos.ri.gov/Forms/Elections/Guides/NomPapers24Eng.pdf",
+   "quote": "Any individual over the age of 18 can collect signatures. ... The candidate does not need to be the one to collect the signatures."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/ri/title-17-elections/ri-gen-laws-sect-17-23-12.html",
+   "quote": "No person, except one qualified to sign a petition for the adoption of a home rule charter as provided in § 6 of article XIII of the Constitution of this state, shall circulate any petition, or obtain signatures on any petition ... Nor shall any person not qualified as provided in subsection (a) of this section, obtain signatures on nomination papers of any elector seeking to be a candidate at any election held for the purpose of selecting the members of a charter commission"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.sos.ri.gov/Forms/elections/Forms/VoterListOrderForm.pdf",
+   "quote": "Statewide (includes three (3) free data updates within a year of purchase) ... Prices Printout Disk Email / Statewide $700 $25 $25 / Congressional District $350 $15 $15 / State Senate District $25 NA Free / State Representative District $25 NA Free / City $25 NA Free / Town $25 NA Free"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.sos.ri.gov/Forms/elections/Forms/VoterListOrderForm.pdf",
+   "quote": "Completed forms can be submitted by: Email: elections@sos.ri.gov  Mail: Elections Division | 148 W. River St. Ste 1A | Providence, RI 02904"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://vote.sos.ri.gov/Forms/elections/Forms/VoterListOrderForm.pdf",
+   "quote": "We accept the following payment methods: 1. Credit Card (3% service fee will be added) ... 2. Check or Money Order: Made payable to “State of RI” 3. Cash  We must receive payment before your order is processed."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/ri/title-17-elections/ri-gen-laws-sect-17-6-9/",
+   "quote": "All requests for registration lists, and the action taken on those requests by the secretary of state, shall be deemed to be public records and shall be open for inspection during regular business hours."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / minorCanCirculate",
+   "url": "https://rules.sos.ri.gov/regulations/part/410-20-00-10",
+   "quote": "A collector, who may be any person 18 years of age or older, must personally witness the signature of each person and shall sign and attest before a notary public that each person who signed the nomination papers appeared personally before him or her and signed the nomination papers in the presence of the [collector]. Said collector must have personal knowledge that each person actually signed the document and must provide on the nomination paper form the collector's printed name, residence address, and telephone number."
+  },
+  {
+   "field": "definition of Collector / circulator (who may circulate)",
+   "url": "https://rules.sos.ri.gov/regulations/part/410-20-00-10",
+   "quote": "\"Collector\" means any individual who gathers the signatures and addresses of eligible voters upon nomination papers."
+  },
+  {
+   "field": "signerVsCirculator (requirements binding the SIGNER, not the circulator)",
+   "url": "https://rules.sos.ri.gov/regulations/part/410-20-00-10",
+   "quote": "Every voter signing a nomination paper shall sign in person with his or her name, place of residence, and street number, as it appears on the voting list. The signature shall be accepted as valid if it can be reasonably identified to be the signature of the voter it purports to be."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / circulatorMustBeUSCitizen / circulatorMustBeStateResident (underlying statute imposes no collector qualifications, only the affidavit)",
+   "url": "https://codes.findlaw.com/ri/title-17-elections/ri-gen-laws-sect-17-14-10.html",
+   "quote": "Every person who obtains signatures of voters upon nomination papers shall under oath sign the following statement: \"I, ____, of the city/town of ____, under oath, make affidavit and say that the signers of the within nomination paper did so sign the paper in my presence.\""
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "MT-VR",
+ "jurisdiction": "Montana",
+ "abbr": "MT",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 30121,
+  "headline": "5% of votes cast for governor (qualify for ballot) — 5% of the qualified electors in each of one-third (34) of legislative districts. SUSPENSION nuance: if the petition contains signatures equal to 15% of votes cast for governor from a MAJORITY of legislative districts, the targeted law is suspended until the election."
+ },
+ "deadline": {
+  "headline": "Third Friday of the fourth month prior to the election (MCA 13-27-104); for the Nov 3, 2026 general election ~June 19, 2026. Referendum signatures are due no later than six months after adjournment of the legislature (Montana Const. Art. III, Sec. 5)."
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "5% of votes cast for governor (qualify for ballot) — 5% of the qualified electors in each of one-third (34) of legislative districts. SUSPENSION nuance: if the petition contains signatures equal to 15% of votes cast for governor from a MAJORITY of legislative districts, the targeted law is suspended until the election.",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Third Friday of the fourth month prior to the election (MCA 13-27-104); for the Nov 3, 2026 general election ~June 19, 2026. Referendum signatures are due no later than six months after adjournment of the legislature (Montana Const. Art. III, Sec. 5)."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Qualify: 5% of qualified electors in each of one-third (34) of the 100 legislative districts (MCA 13-27-240(1)(a)). Suspend targeted law: 15% of votes cast for governor from a majority of legislative districts."
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Single-subject rule applies to ballot issues generally (Montana Const. Art. III, Sec. 4)."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "not_required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Per-signature pay is EXPRESSLY BANNED. MCA 13-27-102(2): \"A person gathering signatures for a petition may not be paid anything of value based upon the number of signatures gathered.\" Paid signature gatherers ARE otherwise permitted (paid by time/salary), but as of 2025 (Ch. 239, L. 2025) they must verbally disclose their first name, the state in which they legally reside, and ",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "$1,000.00 flat for a single copy of the complete statewide voter file (or any single extract such as the Absentee Ballot Report or Petition Signers Report); $5,000.00 for a one-year (365-day) subscription giving unlimited downloads of all extracts/reports. Paid by Visa/MasterCard (credit or debit) online.",
+  "whoCanObtain": "Any individual, for noncommercial use. By statute (13-2-122 MCA) the Secretary of State \"shall furnish to any individual, for noncommercial use\" extracts and reports from the statewide voter registration system — no candidate/committee/party eligibility gate. A campaign or committee qualifies as long as the use is noncommercial.",
+  "useRestrictions": "Noncommercial use only. Statute 13-2-122(1) limits furnishing to \"noncommercial use\"; the SOS voter file service states records \"are for non-commercial use only.\" The SOS notes that if a requester needs a legal definition of noncommercial use, they should consult an attorney. Per 13-2-122(2), residential addresses of electors whose address is protected under 13-2-115(6)/(7) are withheld (name only listed). No solicitation/penalty language quoted on the SOS page.",
+  "requestProcess": "Instant online purchase through the SOS centralized voter file service at app.mt.gov/voterfile. The requester customizes a file by criteria (county, district, etc.), pays by credit/debit card, and is emailed a download link once the file is generated. A one-time purchase requires no account beyond payment; an annual subscription requires signing up for an Okta (okta.mt.gov) account. No notarized affidavit or sworn statement of permitted use is described.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://app.mt.gov/voterfile/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Current-cycle (2026) valid-signature requirements computed off the 2024 gubernatorial general-election vote (statewide ~602,400 votes for governor): ICA = 10% = 60,241; ISS / veto referendum = 5% = 30,121 (per Ballotpedia 2026 deadlines page). Numbers recompute each cycle on the most recent gubernatorial vote. Distribution is the binding constraint in practice: ICA needs 10% of each of 40 districts; ISS/VR needs 5% of each of 34 districts. GATE = CONSERVATIVE-HOLD for two rea"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis / distribution (constitutional amendment)",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0020/section_0410/0130-0270-0020-0410.html",
+   "quote": "If 10% of the voters in each of two-fifths of the legislative representative districts (totaling 40 legislative representative districts) sign this petition and the total number of voters signing the petition is _____, this constitutional amendment will appear on the next general election ballot. If a majority of voters vote for this amendment at that election, it will become part of the constitution."
+  },
+  {
+   "field": "signatureBasis / distribution (initiated statute)",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0020/section_0380/0130-0270-0020-0380.html",
+   "quote": "If 5% of the voters in each of one-third of the legislative representative districts (totaling 34 legislative representative districts) sign this petition and the total number of voters signing this petition is _____, this initiative will appear on the next general election ballot. If a majority of voters vote for this initiative at that election, it will become law."
+  },
+  {
+   "field": "signatureBasis / distribution (statutory referendum)",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0020/section_0400/0130-0270-0020-0400.html",
+   "quote": "If 5% of the voters in each of 34 legislative representative districts sign this petition and the total number of voters signing the petition is ____, Senate (House) Bill Number ____ will appear on the next general election ballot. If a majority of voters vote for this referendum at that election it will become law."
+  },
+  {
+   "field": "perSignaturePayAllowed / circulator eligibility",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0010/section_0020/0130-0270-0010-0020.html",
+   "quote": "(1) A petition may be signed only by a qualified elector of the state of Montana. (2) A person gathering signatures for a petition may not be paid anything of value based upon the number of signatures gathered."
+  },
+  {
+   "field": "deadline",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0010/section_0040/0130-0270-0010-0040.html",
+   "quote": "Unless a specific time for filing is provided in the constitution, all petitions filed with the secretary of state, certified as provided by law, must be received before 5 p.m. of the third Friday of the fourth month prior to the election at which they are to be voted upon by the people."
+  },
+  {
+   "field": "paid circulator disclosure (residency-related, 2025 statute)",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0010/section_0140/0130-0270-0010-0140.html",
+   "quote": "A paid signature gatherer, as defined in 13-27-112, shall verbally disclose their first name, the state in which they legally reside, and their status as a paid signature gatherer to anyone they approach about signing a petition. The paid signature gatherer shall also wear a badge stating this information, including their full first name and last initial."
+  },
+  {
+   "field": "filing limitation (4-year repeat bar)",
+   "url": "https://archive.legmt.gov/bills/mca/title_0130/chapter_0270/part_0020/section_0210/0130-0270-0020-0210.html",
+   "quote": "A statewide initiative filed under the provisions of this chapter may not be filed if it is substantially the same as a measure defeated by the voters in an election within the preceding 4 years."
+  },
+  {
+   "field": "signatureRequirement (current-cycle figures, deadline) — corroboration",
+   "url": "https://ballotpedia.org/Ballot_measure_petition_deadlines_and_requirements,_2026",
+   "quote": "Montana | CICA | 06/21/2026 | Signatures must be verified on or before the third Friday of June | 60,241   Montana | CISS | 06/21/2026 | Signatures must be verified on or before the third Friday of June | 30,121"
+  },
+  {
+   "field": "signatureBasis (constitution, votes-cast-for-governor) — corroboration",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Montana",
+   "quote": "To place an initiated constitutional amendment on the ballot, proponents must collect valid signatures signatures equal to 10 percent of votes cast for governor in the last gubernatorial general election. For an initiated state statute or veto referendum, signatures equal to 5 percent of votes cast for governor in the most recent gubernatorial election are required."
+  },
+  {
+   "field": "distribution (qualified-electors basis = votes for governor in district) — corroboration",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Montana",
+   "quote": "For a constitutional amendment, proponents must collect signatures equal to 10 percent of the qualified electors in each of two-fifths (40) of the state's 100 legislative districts. For an initiated statute or a veto referendum, signatures must be equal to 5 percent of the qualified electors in each of one-third (34) of the state's legislative districts. The number of qualified electors in any district, for the purpose of the distribution requirement, is equal to the number of votes cast for governor in that district in the last gubernatorial election."
+  },
+  {
+   "field": "circulatorResidencyRequired (struck down) — corroboration",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Montana",
+   "quote": "Montana does not require signature gatherers to be residents of the state. In Pierce et al. v. Jacobsen et al. (2022), a three-judge panel of the Ninth Circuit Court of Appeals ruled that Montana cannot restrict circulators from out-of-state."
+  },
+  {
+   "field": "veto-referendum suspension nuance — corroboration",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Montana",
+   "quote": "The petition must contain signatures equal to 5 percent of votes cast for governor from at least one-third of legislative districts to qualify the referendum for the ballot. If the petition contains signatures equal to 15 percent of votes cast for governor from a majority of legislative districts, it suspends the targeted law until the election."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

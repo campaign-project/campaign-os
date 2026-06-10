@@ -1,0 +1,17 @@
+name = "gather-sync"
+main = "src/worker.ts"
+compatibility_date = "2026-06-01"
+account_id = "9c1ed3ed0d1358469d08ae59a4e64d3b"
+
+# D1: captures dedup ledger, yield, movement, index_meta, tokens.
+# Create with:  wrangler d1 create gather   → paste the returned database_id below.
+[[d1_databases]]
+binding = "DB"
+database_name = "gather"
+database_id = "3161be6e-b983-4d71-8555-b86eaa6abe8c"
+
+# R2 (PRIVATE): per-campaign minimized index artifacts (indexes/<campaign>/<version>.json).
+# Create with:  wrangler r2 bucket create gather-indexes   (keep it private — never attach a public domain)
+[[r2_buckets]]
+binding = "INDEXES"
+bucket_name = "gather-indexes"

@@ -1,0 +1,14 @@
+{
+  "name": "@campaign-os/ai",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@campaign-os/domain": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

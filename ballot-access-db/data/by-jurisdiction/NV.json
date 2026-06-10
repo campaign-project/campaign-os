@@ -1,0 +1,204 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "NV",
+ "jurisdiction": "Nevada",
+ "abbr": "NV",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 10000,
+  "headline": "NV indep pres: 1% of last general's U.S. House vote total (statutory formula); exact 2024 hard number NOT confirmed from primary source — held UNKNOWN"
+ },
+ "deadline": {
+  "headline": "NV indep pres petition + declaration due 5 p.m. 2nd Friday in Aug (2024: Aug 9); county-clerk submission due 25 working days prior; copy filed with SOS before circulating"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Signatures of registered voters equal to not less than 1% of the total number of votes cast at the last preceding general election for the offices of Representative in Congress (NRS 298.109(1)). The exact 2024-cycle hard number is treated as UNKNOWN and MUST be computed from the certified 2022 Nevada U.S. House vote total and confirmed with the Secretary of State before relying.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUND: Both quotes verbatim-confirmed — NRS 298.109 quote present word-for-word on nevada.public.law/statutes/nrs_298.109; NRS 293.1715(2)(c) quote present word-for-word on nevada.public.law/statutes/nrs_293.1715. JUDGE: The 1% statutory formula is CURRENT and CORRECT for an independent presidential candidate. The draft correctly declines to assert an unverified 2024 hard number and sets it to UNKNOWN — the appropriate conservative move (I could not confirm any specific 2024 count from a primary source; Ballotpedia's 2024 table rendered empty). HOLD (not AUTO-LIVE) solely because the operationally usable value (the actual signature count) is unresolved; the formula itself is sound. Note the draft also correctly distinguishes the 1% basis is shared with the NRS 293.1715(2)(c) minor-party path."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Independent presidential path (NRS 298.109): declaration of candidacy + petition of candidacy filed with the Secretary of State no later than 5 p.m. on the second Friday in August of the presidential-election year (2024: Aug 9, 2024). A copy of the petition must be filed with the SOS before it may be circulated. Documents circulated in a county must be submitted to that county clerk for signature verification no later than 25 working days before the August filing deadline. Minor/new-party path (NRS 293.1715(2)(c)) differs: petition due to SOS no later than the third Friday in June.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "GROUND: All three quotes verbatim-confirmed on their cited pages (the 5 p.m. second-Friday-in-August quote and the 25-working-days quote on nrs_298.109; the third-Friday-in-June quote on nrs_293.1715). JUDGE: Independently corroborated — NRS 298.109(1) sets the 5 p.m. second-Friday-in-August deadline and the copy-before-circulation rule; 298.109(2) sets the 25-working-days county-clerk submission. Aug 9, 2024 is the correct second Friday of August 2024. Ballotpedia's 2020 footnote ('Deadline to file petitions with local officials...7/10/2020') is consistent with the 25-working-days-before rule. The draft properly flags the materially different minor-party June deadline so the two paths are not conflated. CURRENT and CORRECT for an independent presidential candidate; no legal interpretation needed."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "No statewide-distribution quota for the independent presidential petition (no minimum per congressional district or county). The petition may consist of more than one document; each document must bear the name of a single county and only registered voters of that county may sign it; each county's documents are verified by that county clerk. Signatures are county-segregated but there is no required number per county/district.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUND: Quote ('The petition may consist of more than one document. Each document must bear the name of a county and only registered voters of that county may sign the document.') verbatim-confirmed on nrs_298.109. JUDGE: NRS 298.109(2) contains no per-county or per-district minimum for the INDEPENDENT path — confirmed by full read of the section. ADVERSARIAL CHECK: The Justia copy of NRS 293.1715 shows a subsection 5 imposing a per-petition-district apportionment of the 1% — BUT that applies only to the MINOR-PARTY path (293.1715(2)(c)), NOT to the independent presidential petition (298.109) this field is scoped to. The draft is correctly scoped to NRS 298.109 and the no-quota conclusion holds for that path. CURRENT and CORRECT."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "NRS 298.109 imposes no express age, residency, or voter-registration requirement on the circulator; it requires only the circulator's affidavit that signatures are genuine and were signed in the circulator's presence by persons registered to vote in that county. STRICTEST defensible posture for operations: do not assume out-of-state or non-registered circulators are safe statewide — confirm with SOS, since circulator-eligibility rules are an area of active legal change in many states and Ballotpedia's 'no requirements' statement is secondary.",
+   "confidence": 0.7,
+   "interpretationRequired": true,
+   "note": "GROUND: Both quotes verbatim-confirmed — the NRS 298.109 affidavit quote on nrs_298.109; the Ballotpedia 'Circulators of petitions are not required to be registered voters in Nevada. The statutes do not stipulate any requirements for circulators in Nevada.' quote confirmed word-for-word at line 370 of the political-candidates page. JUDGE: The statute's silence on circulator eligibility is accurately read. HOLD (interpretationRequired=true) because correctness as an affirmative operational rule ('any circulator is fine') rests on (a) a secondary source (Ballotpedia) generalizing from statutory silence and (b) the open legal question of whether SOS practice or any other NRS provision constrains circulators for a presidential petition. Statutory silence does not equal a guarantee; conservative posture is to verify before relying on out-of-state/non-registered circulators."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Treat a NOTARIZED circulator affidavit as required: each petition document must contain the circulator's sworn affidavit that all signatures are genuine and were signed in the circulator's presence by persons registered to vote in that county (NRS 298.109(2)). Strictest defensible reading: execute the circulator affidavit before a notary public. No separate notarization of individual voter signatures is required.",
+   "confidence": 0.75,
+   "interpretationRequired": true,
+   "note": "GROUND: Both quotes verbatim-confirmed — the NRS 298.109(2) 'affidavit of the person who circulated the document...' quote on nrs_298.109; the Ballotpedia 'The circulator of the petition must sign, before a notary public, an affidavit on the back of the petition verifying that all signatures were recorded in the circulator's presence.' quote confirmed word-for-word at line 366 of the political-candidates page. JUDGE/ADVERSARIAL: NRS 298.109 itself says only 'affidavit' — it does NOT expressly say 'notary public.' The 'before a notary public' language comes from Ballotpedia's GENERAL petition guidance (tied to minor-party/NRS 293.172 petitions), not from NRS 298.109 specifically. An affidavit is by definition sworn before an officer authorized to administer oaths, which conventionally means a notary, so requiring notarization is the SAFE/strictest posture — but whether NRS 298.109 strictly mandates a notary (vs. any oath-administering officer) is a legal-interpretation question retrieval cannot settle. HOLD at the notarization-required reading."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. The independent presidential petition is a wet-ink, county-by-county paper document: each signer adds signature, residence address, date, and county of registration; signatures must be in ink; the circulator executes a paper affidavit; documents are physically submitted to each county clerk for verification. No Nevada digital/online signature-collection system covers this petition. (Candidate declaration/filing with the SOS may use the SOS online portal, but signature collection is paper.)",
+   "confidence": 0.88,
+   "interpretationRequired": false,
+   "note": "GROUND: Both quotes verbatim-confirmed — the NRS 298.109 signer-information quote ('Each person signing shall add to his or her signature the address...the date...and the name of the county wherein he or she is registered to vote.') on nrs_298.109; the Ballotpedia 'Each signature must be made in ink. Any signature not made in ink will be disregarded.' quote confirmed word-for-word at line 366. JUDGE: The statutory scheme (county-named documents, signer adds handwritten address/date/county, circulator paper affidavit, physical submission to county clerks for NRS 293.1276-293.1279 verification) is inherently wet-ink paper; no e-signature pathway exists for this petition. CURRENT and CORRECT; no interpretation needed. The 'made in ink' requirement is from general petition guidance but is consistent with and reinforces the statutory scheme."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "There is NO fee-in-lieu-of-signatures alternative. The $250 filing fee is required IN ADDITION TO the petition signatures, not as a substitute. An independent presidential candidate must both pay the $250 fee and file the qualifying petition. (The fee is refundable within 10 days if the candidacy is ultimately not qualified, per NRS 293.194, but it cannot replace the signature requirement.)",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUND: Both quotes verbatim-confirmed — the NRS 298.109(1) 'pay a filing fee of $250 and file...a declaration of candidacy and a petition of candidacy' quote on nrs_298.109; the Ballotpedia presidential-page quote 'must file a declaration of candidacy...pay a $250 filing fee, and file a petition containing the signatures of at least 1 percent...' confirmed word-for-word at line 231 of the presidential-candidates page. JUDGE: 'pay...AND file...a petition' in NRS 298.109(1) is conjunctive — the fee and petition are both mandatory; there is no statutory fee-in-lieu option. The draft's parenthetical refund claim is INDEPENDENTLY corroborated by NRS 293.194 (filing fee 'must be returned to the candidate...within 10 days' after a final determination the petition does not qualify) — a side note that does not affect the central, correct conclusion. CURRENT and CORRECT."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "LOW_COST",
+  "cost": "Statutory rate = 1 cent ($0.01) per name (NRS 293.440(1)). For the full statewide file (~2.07M active voters) this works out to roughly $20,000; Ballotpedia lists the statewide-list price as \"$20,000.\" A campaign normally requests a filtered subset (e.g., one county/district) and pays $0.01 per record, so verifying petition signers in a targeted geography is typically well under $100. Major/minor political-party central/executive committees can obtain the list without charge.",
+  "whoCanObtain": "Effectively open / general public (\"NevVoter is accessible to the public\"), but the Secretary of State \"retains full authority in granting, denying or revoking access at any time.\" A campaign or committee qualifies. The SOS verifies the applicant's qualification when the request form is filed. Major-party state/county central committees and minor-party executive committees may obtain copies without charge under NRS 293.440(1).",
+  "useRestrictions": "Yes — political/election-use-only. Per NRS 293.440(6)(b) (and as restated on the SOS page): \"any person, candidate, party or organization who receives information requested on this form is prohibited from using such information for purposes not related to an election and from selling such information for any reason.\" The statute also bars selling the list \"for compensation or other valuable consideration.\"",
+  "requestProcess": "Two-step: (1) create a web account in the Nevada SOS Online Services portal; (2) download, complete, sign, and file the \"Official Request for List of Registered Voters Form\" with the SOS (by email, fax, mail, or in person). The form attests to permitted election-related use. Access is granted/denied after verification, typically the next business day up to 7 business days, and the applicant is notified by email. (Not an instant anonymous download — application form + approval.)",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.nvsos.gov/sos/elections/voters/nevvoter-statewide-list",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — the requirement binds signers only. NRS 298.109 (the controlling statute for independent presidential petitions) and NRS 293.200 (general independent candidate petitions) impose NO minimum age on the person who circulates the petition. The statutes require only that \"the person who circulated the document\" sign an affidavit that the signatures are genuine and were s",
+  "minorCanCirculate": "yes",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER: registered voter of the county named on the document. CIRCULATOR: no eligibility requirement; only must sign the verification affidavit (before a notary).",
+  "gate": "AUTO-LIVE",
+  "note": "For an independent presidential nominating petition in Nevada, the controlling statute is NRS 298.109 (parallel general independent-candidate statute is NRS 293.200). Both define the SIGNER requirement (must be a registered voter of the county named on the document) but impose NO age, residency, citizenship, or voter-registration requirement on the CIRCULATOR. The only obligation on \"the person who circulated the document\" is to sign a verification affidavit that the signatures are genuine to th",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 3,
+  "riskNote": "All 8 fields citation-grounded (4 source URLs verbatim-confirmed). Core deadline/fee/distribution/capture facts AUTO-LIVE off NRS 298.109. Two CONSERVATIVE-HOLDs: signaturesRequired (no confirmed 2024 hard number — must compute from 2022 NV U.S. House total and confirm with SOS before relying) and witnessOrNotary (statute says \"affidavit\"; \"before a notary public\" is from a general-petition secondary source — treat notarization as required). Beware: NRS 298.109 (\"independent\" path) vs NRS 293.1715 (\"minor/new party\" path) are DIFFERENT regimes with different deadlines (Aug vs 3rd Fri June) — do not conflate."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/nv/title-24-elections/nv-rev-st-298-109/",
+   "quote": "A person who desires to be an independent candidate for the office of President of the United States must, not later than 5 p.m. on the second Friday in August ... pay a filing fee of $250 and file with the Secretary of State a declaration of candidacy and a petition of candidacy ... Each document of the petition must also contain the affidavit of the person who circulated the document that all signatures thereon are genuine to the best of the person's knowledge and belief and were signed in his or her presence by persons registered to vote in that county."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/nv/title-24-elections/nv-rev-st-295-0575/",
+   "quote": "A petition for a constitutional amendment or a petition for a statewide measure proposed by an initiative or referendum may consist of more than one document. Each document of a petition must have attached to it when submitted an affidavit executed by the circulator thereof stating: 1. That the circulator personally circulated the document."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/nv/title-24-elections/nv-rev-st-293-200/",
+   "quote": "The person who circulates each document of the petition shall sign an affidavit attesting that the signatures on the document are genuine to the best of his or her knowledge and belief and were signed in his or her presence by persons registered to vote in that county."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "Nevada allows paying signature gatherers based on the number of signatures collected. See law: Nevada Revised Statutes, Chapter 295"
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Nevada",
+   "quote": "Nevada does not require that petition circulators reside in the state."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Nevada",
+   "quote": "To gain access to the general ballot, an independent candidate for president must file a declaration of candidacy with the secretary of state no later than the second Friday in August, pay a $250 filing fee, and file a petition containing the signatures of at least 1 percent of the total number of votes cast for all representatives in Congress in the last election."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.nvsos.gov/sos/elections/voters/nevvoter-statewide-list",
+   "quote": "The statewide voter registration database is publicly accessible through this office and available in either hard copy or by a variety of electronic formats. NevVoter is accessible to the public; however, the Office of the Secretary of State retains full authority in granting, denying or revoking access at any time, in accordance with applicable local, state and federal law or regulations."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.nvsos.gov/sos/elections/voters/nevvoter-statewide-list",
+   "quote": "Requesting access to the Statewide Voter Registration List is a two-step process. You must complete both steps before accessing the Statewide Voter Registration List: Step 1: The applicant must create a web account ... Step 2: The applicant must download and submit an Official Request for List of Registered Voters Form. This form must be completed, signed, and filed with the Secretary of State."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.nvsos.gov/sos/elections/voters/nevvoter-statewide-list",
+   "quote": "Per NRS 293.440(6)(b), any person, candidate, party or organization who receives information requested on this form is prohibited from using such information for purposes not related to an election and from selling such information for any reason."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.nvsos.gov/sos/elections/voters/nevvoter-statewide-list",
+   "quote": "Qualification of the applicant to access the statewide voter registration list will be verified upon the filing of a completed request form. Once access has been granted, the applicant will be notified via email. Depending upon the volume of pending requests, access may be granted the following business day, or can take up to 7 business days."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "quote": "Any person who desires a copy of any list of the persons who are registered to vote in any precinct, district or county may obtain a copy by applying at the office of the county clerk and paying therefor a sum of money equal to 1 cent per name on the list, except that one copy of each original and supplemental list ... must be provided both to the state central committee of any major political party and to the county central committee of any major political party, and to the executive committee of any minor political party upon request, without charge."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.leg.state.nv.us/nrs/nrs-293.html",
+   "quote": "the copy of the list provided pursuant to this section must indicate the address, date of birth, telephone number and the serial number on each application to register to vote."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://ballotpedia.org/Availability_of_state_voter_files",
+   "quote": "Nevada | Open | $20,000 | Name, DOB, address, district, precinct, voter status, phone number, political party, voter identification numb[er]"
+  },
+  {
+   "field": "circulatorAgeRule / circulatorMustBeRegisteredVoter / circulatorMustBeUSCitizen / circulatorMustBeStateResident (controlling presidential statute)",
+   "url": "https://codes.findlaw.com/nv/title-24-elections/nv-rev-st-298-109/",
+   "quote": "Each person signing shall add to his or her signature the address of the place at which he or she resides, the date that he or she signs and the name of the county wherein he or she is registered to vote. Each document of the petition must also contain the affidavit of the person who circulated the document that all signatures thereon are genuine to the best of the person's knowledge and belief and were signed in his or her presence by persons registered to vote in that county."
+  },
+  {
+   "field": "signerVsCirculator (general independent-candidate statute, parallel language)",
+   "url": "https://codes.findlaw.com/nv/title-24-elections/nv-rev-st-293-200/",
+   "quote": "Each person who signs the petition shall add to his or her signature the address of the place at which the person actually resides, the date that he or she signs the petition and the name of the county where he or she is registered to vote. The person who circulates each document of the petition shall sign an affidavit attesting that the signatures on the document are genuine to the best of his or her knowledge and belief and were signed in his or her presence by persons registered to vote in that county."
+  },
+  {
+   "field": "minorCanCirculate / circulatorMustBeRegisteredVoter / circulatorMustBeStateResident (affirmative confirmation circulators are unrestricted)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Nevada",
+   "quote": "Circulators of petitions are not required to be registered voters in Nevada. The statutes do not stipulate any requirements for circulators in Nevada."
+  },
+  {
+   "field": "circulator affidavit procedural duty (notary)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Nevada",
+   "quote": "The circulator of the petition must sign, before a notary public, an affidavit on the back of the petition verifying that all signatures were recorded in the circulator's presence. The circulator must also affirm that, to the best of his or her knowledge, all signers were registered voters at the time of signing."
+  },
+  {
+   "field": "verification statutes add no circulator eligibility rule",
+   "url": "https://codes.findlaw.com/nv/title-24-elections/nv-rev-st-293-1277/",
+   "quote": "Verification of signatures by county clerks; regulations"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

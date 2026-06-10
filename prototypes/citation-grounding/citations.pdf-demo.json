@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ca-pdf-219403",
+    "field": "signaturesRequired",
+    "url": "https://elections.cdn.sos.ca.gov/statewide-elections/2024-general/president-elector-independent.pdf",
+    "quote": "signed by at least 219,403 registered voters"
+  },
+  {
+    "id": "az-pdf-captcha",
+    "field": "presidentialElectors",
+    "url": "https://azsos.gov/sites/default/files/docs/2024_running_for_president_handbook_20240309.pdf",
+    "quote": "eleven (11) presidential electors"
+  },
+  {
+    "id": "co-html-notary",
+    "field": "witnessOrNotary",
+    "url": "https://colorado.public.law/statutes/crs_1-4-905",
+    "quote": "shall not accept for filing any section of a petition which does not have attached to it the notarized affidavit required by this section"
+  }
+]

@@ -1,0 +1,194 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "NM",
+ "jurisdiction": "New Mexico",
+ "abbr": "NM",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 5000,
+  "headline": "Signature % DISPUTED: statute = 0.5% of gov vote (1-8-51(B)->1-7-2(A)); NASS = 3%. HOLD to 3% until SoS confirms."
+ },
+ "deadline": {
+  "headline": "Deadline DISPUTED: current statute = 23rd day after primary; NASS/Ballotpedia = 21st. HOLD to earlier (21st) date."
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "At least 3% of the total vote cast for governor at the last preceding general election at which a governor was elected (strictest defensible figure pending SoS confirmation). NOTE: the statutory chain (NMSA 1-8-51(B) -> 1-7-2(A)) reads to only one-half of one percent (0.5%); the 3% comes from the NASS summary and Ballotpedia's overview blurb and is NOT supported by the statutes those sources cite. Because over-collecting never risks the ballot line but under-collecting is fatal, plan to 3% until the SoS per-cycle Nominating Petition Calculations document gives the controlling exact number.",
+   "confidence": 0.9,
+   "interpretationRequired": true,
+   "note": "GROUNDED: 1-8-51(B) ('signed by a number of voters equal to the number of signatures required to form a new political party'), 1-8-51(A) (basis = total vote for governor at last election), and 1-7-2(A) ('one-half of one percent of the total votes cast for the office of governor') all verified verbatim on FindLaw; NASS '3%' quote verified verbatim in the downloaded PDF. ADVERSARIAL: re-deriving from primary law gives 0.5% (1-8-51(B)->1-7-2(A)); Ballotpedia's statute-citing detail section also says 'one-half of one percent.' The 3% appears to be a propagated error — even the NASS entry cites 1-7-2/1-8-51, which yield 0.5%. But correctness hinges on a statutory cross-reference interpretation retrieval cannot settle, and the controlling per-cycle SoS calculation could not be retrieved. HOLD to the higher (3%) figure to never risk the ballot line."
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "File the declaration of independent candidacy and nominating petition between 9:00 a.m. and 5:00 p.m. on the 21st day following the primary election (strictest/earliest of the two conflicting dates), pending SoS confirmation. Current NMSA 1-8-52(B) text says the 23rd day, but NASS and Ballotpedia say the 21st; treat the earlier (21st) date as the operative deadline so the filing is never late.",
+   "confidence": 0.85,
+   "interpretationRequired": true,
+   "note": "GROUNDED: 1-8-52(B) 'twenty-third day following the primary election' verified verbatim on FindLaw (current as of Jan 1, 2024); NASS '21st day following the primary election' verified verbatim in the PDF; Ballotpedia detail section independently says '21st day.' ADVERSARIAL: genuine conflict between the current statute (23rd) and two secondary sources (21st) — possibly a recent amendment from 21st to 23rd not yet reflected downstream, or a downstream error. Cannot confirm the operative posted date without the SoS filing calendar. A missed deadline is fatal to ballot access, so HOLD to the earlier 21st-day date."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. New Mexico imposes no congressional-district or county distribution requirement on an independent presidential nominating petition; the requirement is a single statewide number tied to the total vote cast for governor at the last preceding general election.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "GROUNDED: 1-8-51(A) and (B) verified verbatim on FindLaw. ADVERSARIAL: read the full text of 1-8-51 (all subsections A-G) and 1-8-49/1-8-50 — none contains any per-district or per-county allocation for the presidential petition; it is a single statewide figure. Confirmed no distribution rule exists."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "AUTO-LIVE",
+   "value": "No separate statutory circulator qualification. The constraint is on SIGNERS, who must each be a registered voter of New Mexico; a voter may not sign more than one independent-presidential petition. The named presidential electors must be registered NM voters (U.S. senators, U.S. representatives, and persons holding federal offices of trust or profit are ineligible). The Election Code specifies no separate age/residency/voter-status requirement for the person who circulates/collects signatures, as distinct from the signers.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUNDED: 1-8-50(D) presidential petition form ('I, the undersigned, a registered voter of New Mexico...' and the no-double-signing declaration) and 1-8-49(D) (electors must be registered NM voters; federal officeholders ineligible) all verified verbatim on FindLaw. ADVERSARIAL: searched 1-8-49 through 1-8-52 for any circulator affidavit/qualification — none exists for this petition (contrast with states that require a circulator oath). The value's claim of no separate circulator rule is accurate to the statute."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "The candidate's declaration of independent candidacy for president (and vice president) must be a sworn statement made under oath and notarized ('Subscribed and sworn to me this ___ day of ___ / notary public'), per NMSA 1-8-49(B)-(C). The signature petition itself carries no circulator affidavit and no notary block; each signer self-certifies as a registered NM voter on the 1-8-50(D) form. So: notarized sworn candidate declaration = YES; circulator/witness certification or notarization of the petition signatures = NONE.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "GROUNDED: 1-8-49 'I make the foregoing affidavit under oath...' and 'Subscribed and sworn to me this ___ day of ___, ... notary public' verified verbatim on FindLaw; 1-8-50(D) petition form (no notary/circulator block) verified verbatim. ADVERSARIAL: the petition form text in 1-8-50(D) contains only signer self-declarations and no notarization line, confirming the petition itself is not notarized while the candidate's declaration is."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. The statute prescribes a physical paper petition (approximately 8.5 x 11 inches, numbered lines spaced ~3/8 inch apart, multi-sheet petitions firmly secured by staple/fastening per 1-8-50(D),(F)). No online/remote e-signature or in-person-digitized system covers an independent presidential nominating petition in New Mexico; signatures must be collected on the prescribed paper form.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUNDED: 1-8-50(D) ('on paper approximately eight and one-half inches wide and eleven inches long with numbered lines for signatures spaced approximately three-eighths of an inch apart') and 1-8-50(F) ('firmly secured by a staple or other suitable fastening') verified verbatim on FindLaw. ADVERSARIAL: no statutory authorization for electronic/remote signature capture for this petition exists in 1-8-49 through 1-8-52; paper is correct."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "AUTO-LIVE",
+   "value": "None. New Mexico provides no filing fee in lieu of (or in addition to) the signature petition for an independent presidential candidate. Ballot access is obtained solely by filing the notarized declaration of independent candidacy plus the signed nominating petition (NMSA 1-8-49(A)); the statute specifies no fee and no fee-for-signatures alternative.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "GROUNDED: 1-8-49(A) ('Nomination as an independent candidate for president or vice president shall be made by filing a declaration of independent candidacy ... The candidate for president shall also at the same time file a nominating petition with the required number of signatures.') verified verbatim on FindLaw; NASS quote verified verbatim in PDF. ADVERSARIAL: nothing in 1-8-49 through 1-8-52 authorizes a fee alternative for the independent presidential route; the 'None' value is correct."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "not_required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Per-record fee with a hard cap. Electronic file: $3.00 per 1,000 records without voting history, or $4.00 per 1,000 records with voting history; plus a flat $15.00 setup fee on every request. Statute-set cap: \"The maximum fee for any request will not exceed $600.00\" (so a full statewide file is at most $600 + setup, i.e. effectively capped at ~$600 total). Printed list $5.00/1,000; mailing labels $20.00/1,000. For petition-signature verification, request the electronic statewide file including inactive voters.",
+  "whoCanObtain": "Any requester, BUT use is statutorily restricted to governmental or election/election-campaign purposes only — so in practice candidates, campaigns, committees, parties, and government users. The requester must sign an affidavit limiting use to those purposes. Per NMSA 1-4-5.5(C): \"Each requester of voter data, mailing labels or special voter lists shall sign an affidavit that the voter data, mailing labels and special voter lists shall be used for governmental or election and election campaign purposes only and shall not be made available or used for unlawful purposes.\"",
+  "useRestrictions": "Strong. Use limited to \"governmental or election and election campaign purposes only\" (NMSA 1-4-5.5(C)); commercial use is excluded (\"governmental purposes\" defined as noncommercial). Data may not be posted publicly on the internet or otherwise re-disclosed in a way that identifies a voter. Misuse is criminal: NMSA 1-4-5.6(B) — unlawful use \"is guilty of a fourth degree felony and upon conviction shall be fined one hundred dollars ($100) for each line of voter information that was unlawfully used,\" and each unlawful use is a separate offense. Files exclude SSNs, registration-agency codes, day/month of birth, and (if the voter prohibits) phone numbers.",
+  "requestProcess": "Written request to the Secretary of State (Bureau of Elections) plus a signed authorization/affidavit on the prescribed form. Not an instant download. Submit the SOS \"Voter Data Request Form\" (revised 05/15/2024), which requires selecting media/jurisdiction (Statewide), stating the purpose and intended use of the data, and signing as requestor. Contact: Bureau of Elections, NM Secretary of State, (505) 827-3600 / (800) 477-3632, Elections@sos.nm.gov; mailing address State Capitol North Annex, Suite 300, Santa Fe, NM 87503.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sos.nm.gov/voting-and-elections/data-and-maps/voter-data-information/",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 0,
+  "ageRule": "No circulator age requirement — the rule binds signers only. The New Mexico Election Code provisions governing independent-candidate nominating petitions (NMSA 1978 §§ 1-8-45 through 1-8-52) impose NO age requirement on the person who circulates/collects the petition. There is no circulator affidavit or witness oath at all in the independent presidential petition scheme. The only age-relevant requ",
+  "minorCanCirculate": "unknown",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "no",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER: must be \"a registered voter of New Mexico\" who signs on their own behalf — the independent presidential petition (NMSA 1978 § 1-8-50(D)) is self-attesting (\"I am that person whose name appears hereon\"), so each signature line is the signer's own declaration of registration. CIRCULATOR: New Mexico's independent-candidate petition scheme has NO circulator affidavit, witness, or notarization ",
+  "gate": "AUTO-LIVE",
+  "note": "New Mexico's independent presidential nominating petition is a self-attesting voter petition with NO regulated circulator role. Under NMSA 1978 § 1-8-50(D), the petition for an independent presidential candidate is signed directly by each \"registered voter of New Mexico\" on their own behalf — there is no separate person who witnesses/verifies the signatures and swears a circulator affidavit. The governing sections (§§ 1-8-45 to 1-8-52) contain no circulator eligibility provision: § 1-8-52, despi",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Two unresolved conflicts (signature % and deadline day) both go to ballot-access survival; neither resolvable by retrieval — the SoS per-cycle Nominating Petition Calculations doc and posted filing calendar are the controlling sources and must be obtained before relying on any number/date."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://www.sos.nm.gov/wp-content/uploads/2025/12/2026-Primary-Candidate-Guide_Final.pdf",
+   "quote": "CIRCULATING NOMINATING PETITIONS — Candidates are ultimately responsible for the contents of their petitions and for the actions of the individuals representing them in the public. It is extremely important that individuals assisting candidates with collecting petition signatures are adequately trained and appropriately informed. ... A person knowingly falsifying any information on a nominating petition is guilty of falsifying an election document (see 1-8-32 (A), NMSA 1978). ... It is a misdemeanor to knowingly circulate, present, or offer to present a nominating petition for the signature of a voter that does not contain the information specified under the law (see 1-8-32 (B), NMSA 1978)."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.sos.nm.gov/wp-content/uploads/2025/12/2026-Primary-Candidate-Guide_Final.pdf",
+   "quote": "Independent and Minor Party candidates: Voters signing petitions for independent and minor party candidates are not required to be registered in the minor candidate's political party. Instead, the voters certify that they are residents of the state, district, county, or area to be represented by the office for which the person seeking nomination is a candidate (see 1-8-2 (B) and 1-8-50, NMSA 1978)."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-51/",
+   "quote": "B. Nominating petitions for an independent candidate for president of the United States shall be signed by a number of voters equal to the number of signatures required to form a new political party. ... G. A voter shall not sign a petition for an independent candidate as provided in this section if the voter has signed a petition for another independent candidate for the same office."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-3-1/",
+   "quote": "To qualify as an independent candidate, the candidate must meet all requirements for an independent candidate in Section 1-8-45 NMSA 1978 and submit the required number of petition signatures for an independent candidate as prescribed in Section 1-8-51 NMSA 1978. No candidate may circulate petitions for candidacy for more than one political party in an election cycle."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-1-7-2/",
+   "quote": "D. The procedures set forth in this section shall be used to validate signatures on any petition required by the Election Code, except that Paragraph (4) of Subsection C of this section shall not apply to petitions filed by unaffiliated candidates or petitions filed by candidates of minor political parties."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.nm.gov/voting-and-elections/data-and-maps/voter-data-information/",
+   "quote": "Electronic Format without voting history | $3.00 per 1,000 records without voting history | Unsorted ... There will be a $15.00 Setup Fee on all voter data information requests. The maximum fee for any request will not exceed $600.00"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.nm.gov/voting-and-elections/data-and-maps/voter-data-information/",
+   "quote": "SERVIS ... data may be purchased. This data includes each voter's name, address, telephone # (with voter's consent), year of birth, party affiliation, and registration data such as county, precinct, and district information. ... Anyone who purchases SERVIS data must sign an Authorization Form"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www.sos.nm.gov/voting-and-elections/data-and-maps/voter-data-information/",
+   "quote": "those who want to validate petition signatures definitely want their lists to include inactive voters"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-4-5-5/",
+   "quote": "The county clerk or secretary of state shall furnish voter data, mailing labels or special voter lists only upon written request ... Each requester ... shall sign an affidavit that the voter data, mailing labels and special voter lists shall be used for governmental or election and election campaign purposes only and shall not be made available or used for unlawful purposes."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-4-5-6/",
+   "quote": "Any person, organization or corporation or agent, officer, representative or employee thereof who commits unlawful use of voter data, mailing labels or special voter lists is guilty of a fourth degree felony and upon conviction shall be fined one hundred dollars ($100) for each line of voter information that was unlawfully used."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter / signerVsCirculator",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-50/",
+   "quote": "D. The nominating petition for an independent candidate for the office of president of the United States shall be ... in the following form: “NOMINATING PETITION FOR INDEPENDENT CANDIDACY FOR THE OFFICE OF PRESIDENT OF THE UNITED STATES — I, the undersigned, a registered voter of New Mexico, by endorsement hereon, petition that the name of __________ be printed on the general election ballot as an independent candidate for the office of president of the United States ... I also declare that I am that person whose name appears hereon and that I have not signed, nor will I sign, any nominating petition for any other candidate seeking the office of president of the United States at the next ensuing general election.”"
+  },
+  {
+   "field": "circulatorAgeRule / circulator (no affidavit/eligibility provision)",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-52/",
+   "quote": "§ 1-8-52. Independent candidates for general or United States representative special elections; nominating petitions; circulation; date of filing. A. Declarations of independent candidacy and nominating petitions shall be filed with the proper filing officer between 9:00 a.m. and 5:00 p.m. on the twenty-third day following the primary election of each even-numbered year ... B. Declarations of independent candidacy and nominating petitions for the office of president of the United States shall be filed with the proper filing officer between 9:00 a.m. and 5:00 p.m. on the twenty-third day following the primary election."
+  },
+  {
+   "field": "minorCanCirculate / only 'circulate' provision regulates content not eligibility",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-32/",
+   "quote": "B. It is unlawful for any person to knowingly circulate, present or offer to present for the signature of another person a nominating petition that does not clearly show on the face of the petition the name of the candidate, the address at which the candidate resides, the candidate's county of residence and the office for which the candidate seeks nomination."
+  },
+  {
+   "field": "signer requirement (independent, non-presidential form shows registered-voter req binds signer)",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-50/",
+   "quote": "C. The nominating petition for an independent candidate for any office except president of the United States shall be ... in the following form: “NOMINATING PETITION FOR INDEPENDENT CANDIDACY — I, the undersigned, a registered voter of New Mexico, hereby nominate __________ ... and I declare that I am a registered voter of the state, district, county or area to be represented by the office for which the person being nominated is a candidate.”"
+  },
+  {
+   "field": "signature threshold for independent president",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-51/",
+   "quote": "B. Nominating petitions for an independent candidate for president of the United States shall be signed by a number of voters equal to the number of signatures required to form a new political party."
+  },
+  {
+   "field": "context — primary/party nominating petition is also signer-attested with no circulator affidavit",
+   "url": "https://codes.findlaw.com/nm/chapter-1-elections/nm-st-sect-1-8-30/",
+   "quote": "C. The nominating petition shall be ... in the following form: “NOMINATING PETITION — I, the undersigned, a registered voter of New Mexico, and a member of the __________ party, hereby nominate __________ ... and I declare that I am a registered voter of the state, district, county or area to be represented by the office for which the person being nominated is a candidate.”"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

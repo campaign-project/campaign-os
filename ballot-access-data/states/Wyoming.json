@@ -1,0 +1,205 @@
+{
+  "jurisdiction": "Wyoming",
+  "signaturesHeadline": "3,891 valid sigs (2% of 2022 U.S. House vote); recomputed each cycle",
+  "deadlineHeadline": "File with SOS no later than 70 days before general (2024: Aug 26, 2024)",
+  "riskNote": "All 8 fields grounded; statute and SOS form agree. Only open item: circulator qualifications are unstated in primary sources (held conservative). Fee conflict ($200 NASS vs $750) resolved to $750 by W.S. 22-5-208(a)(iii)+22-5-306(b).",
+  "sosInquiries": [
+    "Wyoming independent presidential nominating petition: are there any qualifications for a petition CIRCULATOR (minimum age, Wyoming residency, or voter registration), or may any person circulate, given the form only requires the circulator to certify personal circulation and give a residence address?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "2% of the total number of votes cast in Wyoming for U.S. Representative in the last general election. For the 2024 cycle this equaled 3,891 valid signatures. (Statewide flat figure; recomputed each cycle from the most recent U.S. House vote total.) Statutory basis: W.S. 22-5-304(a).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.93,
+      "note": "Quotes verified verbatim: SOS form (downloaded+text-extracted, lines 12-16: 'numbering not less than two percent (2%)... 3,891 for the upcoming 2024 General Election (W.S. 22-5-304(a))') and FindLaw W.S. 22-5-304(a). Independently re-derived: 2022 WY U.S. House total = 193,902 votes; 2% = ~3,878, within source-variance of the official 3,891 (corroborates, does not refute). Caveat: statute text reads 'statewide PARTISAN office', but the SOS office-issued independent-presidential form authoritatively applies the same 2% figure and cites 304(a), so this is office-settled, not an open interpretation."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "The petition must be filed with the Secretary of State not less than 70 days before the general election. For the 2024 cycle the filing deadline was August 26, 2024. A petition may be circulated for signatures only during the election year (W.S. 22-5-305(a)). Recomputes each cycle (70 days before the November general election date).",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "Verified verbatim: SOS form line 22-24 ('Filing Deadline: August 26, 2024. You must file not less than seventy (70) days prior...') and Ballotpedia ('no later than 70 days prior to the general election'). W.S. 22-5-305(a) circulation-window quote verified verbatim on FindLaw. Date is cycle-specific; the 70-day formula is the durable rule, correctly stated."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. For president (a statewide office) the requirement is a single statewide total of 2% of the last U.S. House vote; signatures are not allocated per congressional district or county. (W.S. 22-5-304(a) governs statewide office; the per-county/per-district formulas in 22-5-304(b)-(c) apply only to countywide and district offices.)",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Verified verbatim: W.S. 22-5-304(a) on FindLaw and SOS form lines 37-38. Confirmed adversarially that 304(b) is countywide and 304(c) is district — neither applies to a statewide/presidential petition. No geographic distribution requirement exists. WY has a single at-large U.S. House district, so no district split is even possible."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "UNRESOLVED / verify with SOS. Wyoming's petition statutes (W.S. 22-5-304/305/306) and the SOS petition form impose eligibility only on SIGNERS (registered elector, resident in the jurisdiction, eligible to vote for the petitioner). No age, residency, or registration qualification for the CIRCULATOR is stated in any primary source; the form requires only that the circulator certify they personally circulated the petition and give a name and residence address. Treat circulator qualifications as unconfirmed until the SOS verifies; do not assume non-residents may circulate.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": true,
+      "confidence": 0.7,
+      "note": "Citations grounded: SOS form circulator verification (lines 66-67) and W.S. 22-5-305(c) signer requirements, both verbatim. The draft's factual reading (no stated circulator requirement) is correct, BUT absence of a stated requirement is not proof none exists in rule/practice; strictest posture holds it open. Hold + SOS inquiry filed."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Circulator certification (NOT notarized). The petition carries a 'VERIFICATION BY CIRCULATOR' in which the circulator certifies personal circulation and that signatures were made in their presence; there is no notarization requirement on the form. Separately, the presidential and vice-presidential candidates must file sworn statements naming the three presidential electors.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "Verified verbatim against the extracted SOS form: VERIFICATION BY CIRCULATOR block (lines 65-68) and Sworn Statements paragraph (lines 18-20). Confirmed zero occurrences of 'notary'/'notariz' anywhere in the extracted form text. Circulator attestation, not notarization, is correct."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Signatures must be collected on the printed SOS petition form (which must be approved by the filing office before circulation), and each signer must hand-print name, date of signing, and physical residential address. No online/remote or digitized e-signature system exists for an independent presidential petition in Wyoming; collection and filing are paper-only.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "Verified verbatim: W.S. 22-5-305(b)-(c) on FindLaw and the SOS form's 'The petition shall be approved by the appropriate filing office prior to circulation' (form lines 5-6). Form requires handwritten signer fields and prohibits P.O. boxes. No statutory or SOS e-signature pathway found; paper-only is correct."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "$750 filing fee REQUIRED (in addition to, NOT in lieu of, the signatures). The petition is invalid if not accompanied by the fee. Statutory chain: W.S. 22-5-306(b) ties the independent-petition fee to the same fee a primary candidate pays for the same office, and W.S. 22-5-208(a)(iii) sets $750 for any federal office voted on statewide. The NASS July-2024 summary's $200 figure is incorrect and should be disregarded.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Conflict RESOLVED in verification. SOS form ('Filing Fee: $750 – Candidates for federal offices', line 26) and Ballotpedia ($750) verified verbatim; NASS PDF ($200, line 1178 of extract) verified verbatim as the conflicting source. Decisive primary source: W.S. 22-5-208(a)(iii) = '$750.00 for any federal office voted for by electors of the entire state', combined with 22-5-306(b) (fee = same as primary). $750 is statutorily controlling; NASS $200 is simply wrong/stale. Note this is a mandatory fee in addition to signatures, despite the field name 'feeAlternative' — there is no fee-in-lieu-of-signatures path in Wyoming."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute; only initiative/referendum payment bans exist, plus a general bribery ban on paying a person \"to sign a petition\"",
+    "note": "Wyoming's candidate/independent-presidential petition statutes (W.S. 22-5-301 through 22-5-308) are silent on circulator compensation — they neither permit nor prohibit paying circulators (per signature or otherwise), so candidate-petition comp is UNADDRESSED. The only \"payment for signatures\" bans in the Election Code (W.S. 22-24-323 initiative; 22-24-420 referendum) are by their own text confined to initiative/referendum petitions and prohibit paying the SIGNER, not paying circulators; they do not reach candidate petitions. However, the general election-bribery felony, W.S. 22-26-109(a)(i), broadly prohibits paying \"any money or other valuable thing to a person ... to ... sign or not sign a petition,\" which covers candidate petitions and makes per-signature pay legally risky. No Wyoming residency or voter-registration requirement is imposed on candidate-petition circulators (only the signers must be Wyoming registered electors); the analogous initiative-circulator rule, W.S. 22-24-306(a), requires only U.S. citizenship and age 18.",
+    "sosInquiry": "For an independent presidential candidate's nominating petition under W.S. 22-5-301 to 22-5-308, may the campaign pay circulators on a per-signature basis, and does Wyoming impose any residency or voter-registration requirement on those circulators?",
+    "citations": [
+      {
+        "url": "https://sos.wyo.gov/Forms/Publications/ElectionCode.pdf",
+        "quote": "22-5-304. Qualifications and number of signers required. (a) For a statewide partisan office, a petition shall be signed by registered electors, resident in the state and eligible to vote for the petitioner, numbering not less than two percent (2%) of the total number of votes cast for representative in congress in the last general election for the entire state."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Publications/ElectionCode.pdf",
+        "quote": "22-5-305. When petitions may be circulated; use of copies; requirements. (a) A petition shall be circulated for signatures only during the calendar year in which the election for the office sought is to be held. (b) Copies of the petition may be circulated for signatures, but each separate page shall contain the information required to be contained in the original petition for nomination."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Publications/ElectionCode.pdf",
+        "quote": "VERIFICATION BY CIRCULATORS  I, ...., do hereby certify that I am a circulator of this petition, and I solely and personally circulated this petition, that all the signatures appearing herein were made in my presence ... and to the best of my knowledge and belief such signatures are those of the persons whose names they purport to be."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Publications/ElectionCode.pdf",
+        "quote": "22-24-323. Petitions; payment for signatures; misrepresentation of petition; prohibition; penalty. (a) A circulator of an initiative petition or a person who causes the circulation of an initiative petition may not pay or offer to pay any compensation to another person for that person's signature on the initiative petition."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Publications/ElectionCode.pdf",
+        "quote": "22-26-109. Offering bribe. (a) Offering bribe consists of willfully advancing, paying, offering to pay or causing to be paid, or promising, directly or indirectly, any money or other valuable thing to a person, for any of the following purposes: (i) To induce a person to vote or refrain from voting for or against a candidate or ballot proposition or to sign or not sign a petition;"
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Publications/ElectionCode.pdf",
+        "quote": "22-24-306. Sponsors and circulators. (a) ... An individual shall not be qualified to act as a circulator unless he is a citizen of the United States and is at least eighteen (18) years of age."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/Apps/Independent_Presidential_petition_WY.pdf",
+        "quote": "Wyoming Statutes 22-5-301 through 22-5-308 are controlling legislation. The petition shall be approved by the appropriate filing office prior to circulation. ... A petition for a statewide office shall be signed by registered electors, resident in the jurisdiction and eligible to vote for the petitioner, numbering not less than two percent (2%) of the total number of votes cast in the state for U.S. Representative in the last general election."
+      }
+    ],
+    "initiativePrior": "banned"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Statewide File $125; Party $50; County $35; Legislative District $25 (statewide requests, per official fee schedule on the order form). County-level requests: fee set by the local County Clerk.",
+    "whoCanObtain": "Political use only, eligibility-gated per W.S. 22-2-113(a): candidates for political office, candidate campaign committees, political party central committees and officials, elected officials, political action committees, individuals promoting/opposing a ballot issue or candidate, and organizations promoting voter participation. NOT available to the general public or for commercial use.",
+    "useRestrictions": "Political purposes only; commercial use prohibited. Affiant must affirm they will not use the data for commercial purposes and, if redistributing, must notify subsequent parties of the commercial-use prohibition. Violations of W.S. 22-2-113(a) are referred for prosecution as a misdemeanor under W.S. 22-26-112.",
+    "requestProcess": "Application form (Wyoming Voter Registry List Request Form, VoterProductOrderForm.pdf) emailed to elections@wyo.gov or mailed to the Election Division. Requires a signed oath/affidavit under penalty of perjury affirming political-use-only, plus documentary evidence of eligibility (e.g., PAC formation/officers). Payment (cash or check payable to the Wyoming Secretary of State) must be received before data is delivered. For county/municipal officials/candidates/PACs/parties, the request goes to the local County Clerk instead.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+    "note": "Wyoming's statewide voter registry list is sold by the Secretary of State (Election Division) only to political actors under W.S. 22-2-113(a), at a $125 flat statewide fee, via a paper request form with a sworn political-use oath and prepayment. The standard file includes Voter ID, full name, residence address, county, precinct, registration date, and party — sufficient to match petition signers to registered voters.",
+    "citations": [
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+        "quote": "Per W.S. 22-2-113(a), “The secretary of state shall furnish at a reasonable price registry lists to any candidate for a political office in the state, candidate's campaign committee, political party central committees and officials thereof, elected officials, political action committees, individuals promoting or opposing a ballot issue or candidate and to organizations which promote voter participation.”"
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+        "quote": "The registry list may be obtained for political purposes only and the requestor must fit a category as outlined in #6 Oath Required on the form."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+        "quote": "State Requests: Please reference fees below. Statewide File – $125 Party – $50 County - $35 Legislative District – $25 Payment must be received prior to receiving data."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+        "quote": "The VR list data file will only include the following columns: Voter ID, Last Name, First Name, Middle Name, Name Suffix, Residence Address, County, Precinct, Split, Mailing Address, Registration Date, Political Party, and House & Senate District."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+        "quote": "(IMPORTANT! This data can ONLY be used for political purposes, not for commercial use.)"
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+        "quote": "I affirm under penalty of perjury that I will use the above voter registration data for political purposes only and that I will not use it for commercial purposes... I understand that violations of W.S. 22-2-113(a) will be referred for prosecution as a misdemeanor under W.S. 22-26-112."
+      },
+      {
+        "url": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+        "quote": "Payment may be submitted via cash or a check made payable to the Wyoming Secretary of State."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement for candidate nominating petitions. The independent presidential candidate path runs through Wyoming's \"nomination by petition\" statute (W.S. 22-5-301 et seq., with presidential electors under W.S. 22-19-102(b)). The only thing required of the circulator is the \"VERIFICATION BY CIRCULATORS\" affidavit in W.S. 22-5-301(a) — certifying they personally circulated the peti",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNERS must be \"registered electors, resident in the state and eligible to vote for the petitioner\" (W.S. 22-5-304(a), 22-5-305); the presidential ELECTOR nominees must be \"qualified electors\" (W.S. 22-19-102(b)). The CIRCULATOR faces no such requirement — only the verification affidavit (W.S. 22-5-301(a)) certifying personal circulation and witnessing of signatures, with no age, residency, citiz",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "Independent presidential candidates qualify in Wyoming by NOMINATION BY PETITION under Chapter 5, Article 3 (W.S. 22-5-301 to 22-5-308), filing presidential-elector nominees under W.S. 22-19-102(b). Controlling statutory text reviewed directly from the official Wyoming Legislature Title 22 compilation (wyoleg.gov). For the circulator, the statute requires ONLY the \"VERIFICATION BY CIRCULATORS\" affidavit in W.S. 22-5-301(a): the circulator certifies \"that I am a circulator of this petition, and I",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorAgeRule / circulatorMustBeRegisteredVoter / circulatorMustBeUSCitizen / circulatorMustBeStateResident",
+        "url": "https://www.wyoleg.gov/statutes/compress/title22.pdf",
+        "quote": "VERIFICATION BY CIRCULATORS — I, ...., do hereby certify that I am a circulator of this petition, and I solely and personally circulated this petition, that all the signatures appearing herein were made in my presence from .... (month) .... (day), ....(year) through .... (month) .... (day), ....(year), and to the best of my knowledge and belief such signatures are those of the persons whose names they purport to be. (W.S. 22-5-301(a))"
+      },
+      {
+        "field": "signerVsCirculator",
+        "url": "https://www.wyoleg.gov/statutes/compress/title22.pdf",
+        "quote": "22-5-304. Qualifications and number of signers required. (a) For a statewide partisan office, a petition shall be signed by registered electors, resident in the state and eligible to vote for the petitioner, numbering not less than two percent (2%) of the total number of votes cast for representative in congress in the last general election for the entire state."
+      },
+      {
+        "field": "minorCanCirculate / negative inference — citizen+18 requirement exists ONLY for ballot-measure petitions, not candidate petitions",
+        "url": "https://www.wyoleg.gov/statutes/compress/title22.pdf",
+        "quote": "22-24-306. Sponsors and circulators. (a) ... An individual shall not be qualified to act as a circulator unless he is a citizen of the United States and is at least eighteen (18) years of age. (This requirement appears in Chapter 24 — INITIATIVE AND REFERENDUM; it has no counterpart in the candidate nomination-by-petition statute, W.S. 22-5-301 et seq.)"
+      },
+      {
+        "field": "jurisdiction / path for independent presidential candidate",
+        "url": "https://www.wyoleg.gov/statutes/compress/title22.pdf",
+        "quote": "22-19-102. Nomination. ... (b) Independent candidates for president shall file the candidate's nominees for presidential electors not less than seventy (70) days prior to the general election. The nominees shall be qualified electors."
+      },
+      {
+        "field": "circulation timing / copy rule (no circulator qualification imposed)",
+        "url": "https://www.wyoleg.gov/statutes/compress/title22.pdf",
+        "quote": "22-5-305. When petitions may be circulated; use of copies; requirements. (a) A petition shall be circulated for signatures only during the calendar year in which the election for the office sought is to be held. (b) Copies of the petition may be circulated for signatures, but each separate page shall contain the information required to be contained in the original petition for nomination."
+      }
+    ]
+  }
+}

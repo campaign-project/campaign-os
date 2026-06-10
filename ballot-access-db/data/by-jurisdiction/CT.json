@@ -1,0 +1,179 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "CT",
+ "jurisdiction": "Connecticut",
+ "abbr": "CT",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 7500,
+  "headline": "7,500 wet-ink signatures (lesser of 1% of last presidential vote or 7,500; 1% of 1,759,010 = ~17,590, so 7,500 governs)"
+ },
+ "deadline": {
+  "headline": "SOTS by 4:00pm Jul 29, 2026; town clerk by 4:00pm Aug 5, 2026 (90th day before Nov 3, 2026)"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Lesser of (1) 1% of the votes cast for the same office at the last preceding election, or (2) 7,500. For an independent presidential candidate the operative number is 7,500, because 1% of Connecticut's 2024 presidential vote (1,759,010 total) is ~17,590, far above 7,500. The petition for the office of presidential elector must list seven candidates for Presidential Elector plus a candidate for President and a candidate for Vice-President. The Elections Services Division computes the exact figure at issuance, but the law prevails.",
+   "confidence": 0.96,
+   "interpretationRequired": false,
+   "note": "Both ED-607 quotes (lesser-of-1%-or-7,500; seven electors + Pres + VP) found verbatim at lines 98-104 and 62-64; Ballotpedia quote found verbatim. Independently confirmed 7,500 is operative: CT 2024 presidential total = 1,759,010 (Wikipedia), 1% = 17,590 > 7,500. Operative number is statutory, not interpretation-dependent."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Not later than 4:00 p.m. on the 90th day preceding the regular election. For the November 3, 2026 general election: submit to the Secretary of the State by 4:00 p.m. July 29, 2026; after July 29, pages may be submitted only to the town clerk of the signers' town of voting residence by 4:00 p.m. August 5, 2026. Withdrawals of signatures also run to Aug 5, 2026.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "ED-607 quote (Jul 29 SOTS / Aug 5 town clerk) found verbatim at lines 158-160; FAQ 90-day-rule quote found verbatim at line 66. Document states the specific 2026 dates authoritatively, consistent with the Nov 3, 2026 general election. Town-clerk Aug 5 date aligns with the 90-day rule; SOTS path closes a week earlier."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. Connecticut imposes no congressional-district or county signature-distribution quota. The only geographic constraints are (1) each signer must be an elector eligible to vote for all offices/candidates listed (statewide for president) and (2) no single page may be circulated among electors of more than one town (a per-page town-verification mechanic, not a distribution requirement).",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "Both ED-607 quotes found verbatim (signer-eligibility at lines 109-111; one-town-per-page at lines 116-119). No district/county quota appears anywhere in the instructions; the one-town-per-page rule is correctly characterized as a town-clerk verification mechanic, not a geographic distribution requirement."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Each circulator must be a United States citizen, at least 18 years of age, and not on parole for conviction of a felony; a candidate may circulate and sign his or her own petition. STRICTEST POSTURE pending SOS confirmation: treat in-state residency as potentially required and prefer Connecticut-resident circulators, because the asserted absence of any residency requirement is an inference from the form's silence (it asks circulators to state name/street/town/STATE of residence) rather than an affirmative statement of no-residency.",
+   "confidence": 0.78,
+   "interpretationRequired": true,
+   "note": "Affirmative criteria (US citizen, 18+, not on felony parole) found verbatim in ED-607 (lines 90-91) and FAQ (lines 51-52); 'candidate may circulate own' grounded in FAQ. But 'no in-state residency requirement' is a NEGATIVE inferred from the form asking for state of residence; retrieval cannot conclusively confirm no residency rule exists. Held conservative to avoid ballot-access risk from out-of-state circulators; SOS inquiry added."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "Each page must carry the circulator's Statement of Residence and Eligibility and of the Authenticity of Signatures, signed under penalties of false statement, attesting each signer signed in the circulator's presence and was known to or identified to the circulator. That statement must be signed in the presence of an authorized officer (town clerk, Secretary of the State, notary public, judge of a court of record, family support magistrate, clerk/deputy clerk of a court with a seal, commissioner of deeds, Connecticut justice of the peace, or a Connecticut-admitted attorney), who must certify the circulator signed before him and was known/identified. Pages lacking the statement and certification are not accepted. This is a notarization-type attestation, not a self-notarized affidavit.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "Both ED-607 quotes found verbatim (attestation language at lines 138-141; list of authorized officers at lines 143-146). The officer-certification requirement and the rejection of pages lacking it (lines 149-151) confirm this is an officer-witnessed attestation, accurately characterized."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Independent (nominating-petition) presidential signatures must be wet-ink on the official Petition Signature Page distributed by the Secretary of the State, or on duplicates of pages issued by the SOTS; each page is town-specific and physically certified by the town clerk/registrars against the registry list. The SOTS DocuSign system applies only to primary petitions, certificates of party endorsement, 15% eligibility, and minor-party nominations with statewide ballot access, not to independent nominating-petition signature collection.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "ED-607 'official Petition Signature Page... or duplicates' quote found verbatim at lines 119-121; candidate-ballot-access DocuSign-scope quote found verbatim. Core operative fact (signatures = wet-ink paper) is solidly grounded and not interpretation-dependent. The secondary sub-claim that 'only ED-602b may be emailed' is not directly substantiated by the sources but does not affect the operative captureMode."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Treat collecting the required 7,500 signatures as the sole and exclusive path onto the ballot for an independent/petitioning presidential candidate; assume NO filing fee and NO fee-based alternative, but confirm with the SOS before relying on the absence of any fee. No filing fee or fee alternative appears in the 2026 ED-607 instructions or the 2020/2026 FAQ, but the cited quote substantiates only the signature count, not the no-fee proposition.",
+   "confidence": 0.7,
+   "interpretationRequired": true,
+   "note": "The attached citation quote (signature-count FAQ language) was found verbatim, so citation integrity holds, BUT that quote addresses signature counts, not fees, so it does not affirmatively substantiate 'no fee.' The 'None' claim is a NEGATIVE inferred from the sources' silence on fees. Substantively CT has no nominating-petition filing fee, but a negative cannot be conclusively settled by retrieval; held conservative and SOS inquiry added."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "paidCirculatorsAllowed": "unknown",
+  "payMethod": "per-signature",
+  "circulatorResidency": "required",
+  "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$300 flat for the full statewide voter registry file (CSV only). Paid by check, credit card, or cash; payment must be received before the file is released.",
+  "whoCanObtain": "Open to any requester (no candidate/committee or registered-voter eligibility gate), BUT use is statutorily restricted to permitted purposes only: \"election-related, scholarly, journalistic, political or governmental purposes.\" A petition-signature-verification use by a campaign/committee qualifies as an election-related/political purpose.",
+  "useRestrictions": "Strong statutory use limits under CGS 9-50d as amended by Public Act 26-1 §96: may NOT be used for any personal, private, or commercial purpose, including (I) harassment of any voter/household (per §53a-183), (II) advertising, solicitation, sale or marketing of products or services, or (III) reproduction/display in print, digital, or broadcast format. Violations are subject to a civil penalty imposed by the State Elections Enforcement Commission under §9-7b. Additionally, per PA 26-1 §96, the month and day of a voter's date of birth are exempt from disclosure (only year of birth is released to the public).",
+  "requestProcess": "Written request by mail or email to the Secretary of the State, LEAD, P.O. Box 150470, Hartford, CT 06115 / LEAD@ct.gov, using the \"Connecticut Voter Registration Data File Request Form.\" Pay the $300 fee (check, credit card via the Credit Card Processing Form, or cash); the file is released only after payment is received. Questions: 860-509-6100 / LEAD@ct.gov.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://portal.ct.gov/sots/election-services/election-services/centralized-voter-registration-information---voter-privacy-program",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "The circulator's affidavit (statement by circulator) under CGS § 9-453j must set forth \"the circulator's date of birth and that the circulator is at least eighteen years of age.\" So circulators must be 18 or older. (This is a circulator-specific requirement, distinct from the signer's elector requirement.)",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "yes",
+  "stateResidentRequired": "yes",
+  "signerVsCirculator": "SIGNER: must be an elector (registered voter) — § 9-453a petition form warns \"YOU MAY NOT SIGN THIS PETITION IF YOU ARE NOT AN ELECTOR.\" CIRCULATOR: must be a Connecticut resident, at least 18, a U.S. citizen, and not on parole for a felony (§ 9-453j) — but the circulator is NOT required to be a registered voter/elector.",
+  "gate": "AUTO-LIVE",
+  "note": "CGS § 9-453j (\"Statement by circulator\") governs who may circulate a Connecticut nominating petition (the vehicle for independent/unaffiliated presidential candidates, §§ 9-453a–9-453s). The circulator must sign, under penalties of false statement, an affidavit setting forth: (1) residence address including the town IN THIS STATE in which the circulator resides → Connecticut residency required; (2) date of birth and that the circulator is AT LEAST EIGHTEEN years of age → 18+; (3) that the circul",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "All citations grounded verbatim against the 2026 ED-607, 2020 FAQ, candidate-ballot-access page, and Ballotpedia; the four hard operative rules (count, deadline, no distribution quota, witness/notary, paper-only) are AUTO-LIVE, but two fields assert legal NEGATIVES (no circulator residency requirement; no filing fee) that retrieval cannot conclusively settle, so they are held conservative pending SOS confirmation."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/ct/title-9-elections/ct-gen-st-sect-9-453j.html",
+   "quote": "Each page of a nominating petition submitted to the town clerk or the Secretary of the State ... shall contain a statement as to the residency in this state and eligibility of the circulator and authenticity of the signatures thereon, signed under penalties of false statement, by the person who circulated the same. Such statement shall set forth (1) such circulator's residence address, including the town in this state in which such circulator is a resident, (2) the circulator's date of birth and that the circulator is at least eighteen years of age, (3) that the circulator is a United States citizen and not on parole for conviction of a felony, and (4) that each person whose name appears on such page signed the same in person in the presence of such circulator..."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.findlaw.com/ct/title-9-elections/ct-gen-st-sect-9-453k.html",
+   "quote": "The town clerk or Secretary of the State shall not accept any page of a nominating petition unless the circulator thereof has signed before him or an appropriate person as provided in section 1-29, the statement as to the residency in this state and eligibility of the circulator and authenticity of the signatures thereon required by section 9-453j."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ctindependents.org/wp-content/uploads/2024/06/2024-ed-607-instruction-page-for-nominating-petition1-1.pdf",
+   "quote": "Who Can Be a Circulator: Each circulator of a nominating petition page must be a United States citizen, at least eighteen years of age, and shall not be on parole for conviction of a felony."
+  },
+  {
+   "field": "compensation",
+   "url": "https://ctindependents.org/wp-content/uploads/2024/06/2024-ed-607-instruction-page-for-nominating-petition1-1.pdf",
+   "quote": "Circulator's Statement of Residence and Authenticity of Signatures: Boxes on the back of each petition page setting forth the circulator's name, street address and town of residence must be filled out before the circulator signs the Circulator's Statement of Residence and Eligibility and of the Authenticity of Signatures."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://portal.ct.gov/sots/election-services/election-services/centralized-voter-registration-information---voter-privacy-program",
+   "quote": "To purchase a copy of the voter registry file you must make a request in writing either by mail or email at: Secretary of the State LEAD P.O. Box 150470 Hartford, Connecticut 06115 LEAD@ct.gov"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://portal.ct.gov/sots/election-services/election-services/centralized-voter-registration-information---voter-privacy-program",
+   "quote": "The cost of the file is $300 and can be paid by check or with credit card; cash is also accepted. We must receive payment before releasing the voter registry file."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://portal.ct.gov/sots/election-services/election-services/centralized-voter-registration-information---voter-privacy-program",
+   "quote": "The Centralized Voter Registration System is utilized by all towns in Connecticut. It is the exclusive means by which a town produces an official voter registry list. The system includes information contained in voter registration applications, indicates whether eligible voters participated in past elections and primaries, and whether they voted in person or by absentee ballot."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://portal.ct.gov/-/media/sots/electionservices/voter-file-request-forms/ct-voter-registration-data-file-request-form.pdf",
+   "quote": "Voter Registration Data File Request. Available only in CSV format ... Payment: $300 (If you pay with a credit card, please see the Credit Card Processing form)"
+  },
+  {
+   "field": "voterFile",
+   "url": "https://portal.ct.gov/-/media/sots/electionservices/voter-file-request-forms/ct-voter-registration-data-file-request-form.pdf",
+   "quote": "Pursuant to CGS 9-50d as amended by Public Act 26-1 § 96, Voter registration information may only be used for election-related, scholarly, journalistic, political or governmental purposes, and shall not be used for any personal, private or commercial purpose, including, but not limited to, (I) harassment, as described in § 53a-183, of any voter or voter's household, (II) advertising, solicitation, sale or marketing of products or services to any voter or voter's household, and (III) reproduction in print, digital or broadcast visual or audio, or display in any other format, of such information."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://portal.ct.gov/-/media/sots/electionservices/voter-file-request-forms/ct-voter-registration-data-file-request-form.pdf",
+   "quote": "(B) Any person who violates the provisions of subparagraph (A) of this subdivision shall be subject only to a civil penalty imposed by the State Elections Enforcement Commission pursuant to subsection (a) of § 9-7b, as amended by this act."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://portal.ct.gov/sots/election-services/election-services/centralized-voter-registration-information---voter-privacy-program",
+   "quote": "In accordance with Public Act 26-1, Sec. 96, the month and day of a voter's date of birth are exempt from public disclosure. Accordingly, only the voter's year of birth will be included in information released to the public."
+  },
+  {
+   "field": "circulatorMinAge / circulatorAgeRule / circulatorMustBeUSCitizen / circulatorMustBeStateResident",
+   "url": "https://codes.findlaw.com/ct/title-9-elections/ct-gen-st-sect-9-453j/",
+   "quote": "Each page of a nominating petition submitted to the town clerk or the Secretary of the State and filed with the Secretary of the State under the provisions of sections 9-453a to 9-453s, inclusive, or section 9-216 shall contain a statement as to the residency in this state and eligibility of the circulator and authenticity of the signatures thereon, signed under penalties of false statement, by the person who circulated the same. Such statement shall set forth (1) such circulator's residence address, including the town in this state in which such circulator is a resident, (2) the circulator's date of birth and that the circulator is at least eighteen years of age, (3) that the circulator is a United States citizen and not on parole for conviction of a felony, and (4) that each person whose name appears on such page signed the same in person in the presence of such circulator and that either the circulator knows each such signer or that the signer satisfactorily identified himself to the circulator."
+  },
+  {
+   "field": "signerVsCirculator / circulatorMustBeRegisteredVoter",
+   "url": "https://codes.findlaw.com/ct/title-9-elections/ct-gen-st-sect-9-453a/",
+   "quote": "Such form shall include, at the top of the form and in bold print, the following: WARNING IT IS A CRIME TO SIGN THIS PETITION IN THE NAME OF ANOTHER PERSON WITHOUT LEGAL AUTHORITY TO DO SO AND YOU MAY NOT SIGN THIS PETITION IF YOU ARE NOT AN ELECTOR."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

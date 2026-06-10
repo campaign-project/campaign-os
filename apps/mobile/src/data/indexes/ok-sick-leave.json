@@ -1,0 +1,77 @@
+{
+  "_generated": "build-indexes.mts (synthetic demo)",
+  "campaignId": "ok-sick-leave",
+  "jurisdiction": "Oklahoma",
+  "scopedZips": [
+    "73102",
+    "73104"
+  ],
+  "builtAt": "2026-06-09",
+  "version": "c0451719cfea",
+  "real": false,
+  "source": {
+    "adapter": "Oklahoma",
+    "format": "csv",
+    "layoutDocUrl": "https://oklahoma.gov/content/dam/ok/en/elections/ok-election-data-warehouse/readme-vrlist.pdf",
+    "downloadUrl": "https://data.okelections.gov/",
+    "verifiedAsOf": "2026-06-07",
+    "confidence": "high"
+  },
+  "voterCount": 6,
+  "voters": [
+    {
+      "id": "OK-0120",
+      "name": "Robert A Smith",
+      "address": "120 Robinson Ave, Oklahoma City 73102",
+      "status": "active",
+      "registeredOn": "2018-05-09",
+      "county": "Oklahoma",
+      "district": "1"
+    },
+    {
+      "id": "OK-0005",
+      "name": "Maria Gonzalez",
+      "address": "5 Sheridan Ave #4, Oklahoma City 73102",
+      "status": "active",
+      "registeredOn": "2020-10-15",
+      "county": "Oklahoma",
+      "district": "1"
+    },
+    {
+      "id": "OK-0017",
+      "name": "Elizabeth Carter",
+      "address": "17 Walnut Ave, Oklahoma City 73104",
+      "status": "active",
+      "registeredOn": "2019-06-01",
+      "county": "Oklahoma",
+      "district": "1"
+    },
+    {
+      "id": "OK-0230",
+      "name": "James O'Brien",
+      "address": "230 N Broadway Ave, Oklahoma City 73102",
+      "status": "inactive",
+      "registeredOn": "2016-02-18",
+      "county": "Oklahoma",
+      "district": "1"
+    },
+    {
+      "id": "OK-0044",
+      "name": "Michael Begay",
+      "address": "44 NE 8th St, Oklahoma City 73104",
+      "status": "active",
+      "registeredOn": "2021-01-30",
+      "county": "Oklahoma",
+      "district": "1"
+    },
+    {
+      "id": "OK-0210",
+      "name": "Linda Reyes",
+      "address": "210 N Walker Ave, Oklahoma City 73102",
+      "status": "active",
+      "registeredOn": "2017-04-22",
+      "county": "Oklahoma",
+      "district": "1"
+    }
+  ]
+}

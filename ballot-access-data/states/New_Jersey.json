@@ -1,0 +1,182 @@
+{
+  "jurisdiction": "New Jersey",
+  "signaturesHeadline": "NJ signatures: HOLD — collect to 2,000 (strict) but the 2,000 figure is documented only for Governor, not President; primary statute still reads 800. Confirm with Division of Elections.",
+  "deadlineHeadline": "NJ deadline: LIVE — 99th day before the general election (N.J.S.A. 19:13-9 presidential-elector carve-out); recompute the calendar date each cycle.",
+  "riskNote": "Only real risk is signaturesRequired: the 2,000 value is an inference (statewide-office aggregate applied to President), but every grounded source ties 2,000 to \"Governor\" and Ballotpedia's presidential page + the cited statute still say 800 — unresolved legal-interpretation question; over-comply to 2,000 and verify. All other fields are grounded and correct.",
+  "jurisdictionNote": "",
+  "sosInquiries": [
+    "For an INDEPENDENT candidate for President/Vice President (slate of presidential electors, not nominated at a party convention) filing a direct nomination petition under N.J.S.A. 19:13 for the November general election, how many petition signatures are required after A-5117/S-3994 (P.L. 2025) — is it the 2,000 statewide-office aggregate now applied to Governor, or does the presidential-elector petition retain the prior 800 figure?",
+    "Does the NJ-residency requirement for petition circulators in N.J.S.A. 19:13-7 apply to (and is it enforced against) a circulator of an INDEPENDENT general-election presidential-elector petition, in light of Arsenault v. Way and out-of-state-circulator case law?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "At least 2,000 signatures of qualified registered NJ voters statewide (use the higher figure to over-comply and never fall short). CAUTION: the 2,000 figure (A-5117/S-3994, eff. Feb 3, 2025) is documented in the grounded sources only for GOVERNOR; whether it governs an independent PRESIDENTIAL-elector petition is an unresolved statutory-interpretation question. The cited primary statute (N.J.S.A. 19:13-5) and Ballotpedia's NJ presidential page both still state 800. Confirm the operative number with the NJ Division of Elections before filing.",
+      "grounded": true,
+      "agree": false,
+      "interpretationRequired": true,
+      "confidence": 0.55,
+      "note": "All citations grounded VERBATIM, but they do not support the draft's value. FindLaw 19:13-5 (current as of Jan 1, 2024) reads 'eight hundred signatures in the aggregate' — the draft cites this to support 2,000, a self-contradiction. NJ Spotlight ('from 800 to 2,000 for governor') and NJ.gov press ('Independent candidates for Governor...2,000 signatures') both tie 2,000 specifically to Governor, NEVER to President. Ballotpedia's presidential page (cited in the deadline field, post-2025) still says 800. NJ nominates a slate of presidential electors under a distinct scheme (the 19:13-9 carve-out), so the draft's inference that the single-statewide-office aggregate automatically applies to President is contestable. Could not retrieve operative amended 19:13-5 text or NJ Div. of Elections presidential guidance (legislature/state pages CAPTCHA/404/unreachable). Disagree + interpretation-required → HOLD; strictest defensible posture is to collect to 2,000."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Filed with the Secretary of State before 4:00 p.m. of the 99th day preceding the general election (N.J.S.A. 19:13-9 carve-out for presidential electors not nominated at a party convention). The exact calendar date recomputes each cycle as the 99th day before that cycle's general election.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.95,
+      "note": "Grounded VERBATIM: FindLaw 19:13-9 ('...electors of candidates for President and Vice President...not been nominated at a convention...filed with the Secretary of State before 4:00 p.m. of the 99th day preceding the general election') and Ballotpedia presidential page ('no later than 99 days before the general election'). The statute is explicit and the presidential-elector carve-out is correctly identified; no contested interpretation. Note: the 2024 worked example (Aug 1, 2024) is a past-cycle illustration only — the rule is the 99-day formula."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. Flat statewide aggregate of signatures of qualified voters of the entire State; no per-congressional-district or per-county distribution requirement. Petition is addressed to (filed with) the Secretary of State.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Grounded VERBATIM: 19:13-5 ('...office to be filled by the voters of the entire State...in the aggregate...') and 19:13-3 ('Petitions naming candidates for office to be filled by voters of the entire State...shall be addressed to the Secretary of State'). NJ imposes no geographic distribution requirement for statewide office; uncontested. (Independent of the 800-vs-2,000 dispute, which is about quantity, not distribution.)"
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Circulator need not be a registered voter but must be voter-eligible: at least 18 years of age, a resident of New Jersey, a U.S. citizen, and not otherwise disqualified under the NJ Constitution. The candidate may sign and/or circulate their own petition.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.85,
+      "note": "Grounded VERBATIM in 19:13-7 ('shall not be required to be a registered voter, but shall be voter eligible, which means at least 18 years of age, a resident of this State, a citizen of the United States...'); candidate self-circulation confirmed by 19:13-5. Adversarial note flagged in sosInquiries: the NJ-residency bar may be constitutionally vulnerable as applied to an independent general-election presidential circulator (cf. Arsenault v. Way; Buckley v. ACLF), but that doubt cuts toward MORE circulator flexibility, so using only NJ-resident circulators (the value as written) over-complies and cannot threaten ballot access. Value tracks the statute verbatim → LIVE."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Yes — notarized circulator affidavit. Before filing, the circulator (or a candidate who signs/circulates) must make oath by affidavit before a duly qualified officer (notary) that the petition is made in good faith, that the affiant personally circulated it and saw all signatures made, and verily believes the signers are duly qualified voters.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.92,
+      "note": "Grounded VERBATIM: 19:13-7 ('...shall make oath by affidavit before a duly qualified officer that the petition is made in good faith, that the affiant personally circulated the petition and saw all the signatures made thereto and verily believes that the signers are duly qualified voters') and Ballotpedia ('Petition circulators must complete and sign an affidavit. The affidavit must also be notarized'). Current and uncontested."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Hand-circulated paper nominating petition, wet-ink voter signatures, notarized circulator affidavit, filed with the Secretary of State. No standing digital/online petition system. The COVID-era EO 216 (Jan 25, 2021) was a temporary emergency order and is not available for current cycles.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.9,
+      "note": "Grounded VERBATIM: Ballotpedia quotes EO 216 ('...submitted by hand delivery and electronically'; 'signatures to be collected electronically') and correctly frames it as a one-time 2021 emergency order; 19:13-7's wet-ink affidavit requirement supports paper as the standing default. No permanent e-petition system identified. Current and uncontested."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No filing fee and no fee-in-lieu-of-signatures option; ballot access for an independent presidential candidate is by nominating petition (signatures) only.",
+      "grounded": true,
+      "agree": true,
+      "interpretationRequired": false,
+      "confidence": 0.85,
+      "note": "Grounded VERBATIM: Ballotpedia ('File a petition with the required number of signatures for the office being sought, including a guarantee that signers are qualified voters...') and 19:13-5 (signatures of qualified voters). No fee or fee-alternative appears in the statutory petition scheme. Uncontested; note this is a negative finding (absence of a fee mechanism) rather than an affirmative 'fee = $0' statement."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "yes",
+    "circulatorResidency": "required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "New Jersey's independent/direct-nomination petition statutes (Title 19, Chapter 13) and the official Division of Elections petition forms/instructions (N.J.S.A. 19:13-4 and 19:13-7) do NOT address compensation of candidate-petition circulators at all — neither authorizing nor prohibiting per-signature pay, so compensation is UNADDRESSED for candidate petitions. Paying circulators (e.g., hourly) is not prohibited and is implicitly permitted (the recall chapter, 19:27A, expressly contemplates \"paid circulator[s],\" but that is a different petition type); per-signature pay specifically is unaddressed and carries some risk given a separate NJ provision against paying people to sign, so it should not be relied upon. NJ is not a statewide initiative state, so the national pay-per-signature initiative framework does not apply here. Circulators need not be registered voters but must be NJ voter-eligible (18+, U.S. citizen, not otherwise disqualified under NJ election laws), which effectively requires New Jersey residency — a purely out-of-state paid pool would not qualify.",
+    "sosInquiry": "For an independent presidential candidate's direct-nomination petition under N.J.S.A. 19:13, may a campaign lawfully pay signature circulators on a per-signature basis; if not, may they be paid hourly/salaried; and must each circulator be a New Jersey resident/NJ-voter-eligible per the 19:13-7 affidavit?",
+    "citations": [
+      {
+        "url": "https://www.nj.gov/state/elections/assets/pdf/candidate/2026-general-election-instructions-us-house.pdf",
+        "quote": "The person who circulates the petition does not have to be a signer of the petition and shall not be required to be a registered voter, but shall be at least 18 years of age, a citizen of the United States, and not otherwise disqualified from voting under the State Constitution or election laws of New Jersey. ... (N.J.S.A. 19:13-7)"
+      },
+      {
+        "url": "https://www.nj.gov/state/elections/assets/pdf/candidate/2026-general-election-petition-us-house.pdf",
+        "quote": "AFFIDAVIT OF PERSON WHO CIRCULATES THIS PETITION AND WITNESSES SIGNATURES (N.J.S.A. 19:13-7) ... I, ____, being duly sworn, upon my oath say that the petition is made in good faith, that I personally circulated the petition and saw all the signatures made thereto and verily believe that the signers are duly qualified voters. I am at least 18 years of age, a citizen of the United States, and not otherwise disqualified from voting under the State Constitution or election laws of New Jersey."
+      },
+      {
+        "url": "https://ballotpedia.org/Pay-per-signature_for_ballot_initiative_signature_gatherers",
+        "quote": "There are 26 states that provide for an initiative or referendum process. Sixteen (16) of those states allowed campaigns to make payments to signature gatherers based on the number of signatures collected. Ten (10) of those states prohibited campaigns from paying signature gatherers based on the number of signatures collected."
+      },
+      {
+        "url": "https://law.justia.com/codes/new-jersey/title-19/section-19-13-5/",
+        "quote": "For an office to be filled by the voters of the entire State, 2,000 signatures in the aggregate for each candidate nominated in the petition shall be sufficient."
+      },
+      {
+        "url": "https://nj.gov/state/dos-statutes-elections-19-20-29.shtml",
+        "quote": "i. ... if a recall petition is presented to such a prospective signer by a paid circulator, the solicitation or petition, respectively, shall disclose prominently in a statement printed in at least 10-point type (1) the identity of the person paying for the printed or personal solicitation, and (2) that the circulator is paid."
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "Up to $375 per county for a computer-generated/electronic copy (charge must \"reflect only the cost of reproducing the list\" and \"shall not exceed $375\"); printed per-election-district lists are $0.25 each. There is no single statewide fee — a statewide file means requesting from each of the 21 counties, so roughly up to ~$375 x 21 (~$7,875) at the cap, though most counties charge far less (actual reproduction cost).",
+    "whoCanObtain": "Any registered New Jersey voter. The statute says the commissioner \"shall furnish ... to any voter requesting it.\" (Not open to the non-registered general public; a campaign obtains it through a registered-voter requester such as the candidate, treasurer, or staff.)",
+    "useRestrictions": "Political use (e.g., petition-signature verification) is permitted. Commercial or charitable solicitation of the listed voters is prohibited: \"No person shall use voter registration lists or copies thereof prepared pursuant to this section as a basis for commercial or charitable solicitation of the voters listed thereon. Any person making such use ... shall be a disorderly person, and shall be punished by a fine not exceeding $500.00.\" Lists also exclude voter signatures and the home address of protected \"covered persons.\"",
+    "requestProcess": "Written request to the county Commissioner of Registration (county election office) — NOT the Secretary of State. New Jersey has no centralized statewide list-sale program; the file is assembled county-by-county (21 counties). The commissioner furnishes a computer-generated or electronic copy. (Separately, a State party committee chair may obtain a copy of each county's lists once per calendar year under 19:31-18.1(a), but the general mechanism is the per-voter request under subsection (b).)",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://nj.gov/state/dos-statutes-elections-19-31-39.shtml",
+    "note": "Per N.J.S.A. 19:31-18.1(b), New Jersey voter lists are obtained from each county's Commissioner of Registration (no central statewide download), capped at $375/county for an electronic copy from the Statewide voter registration system. The list includes name, address, date of birth, party affiliation, and voting history (signatures excluded) — sufficient to match petition signers to registered voters; use is restricted to registered voters and bars commercial/charitable solicitation.",
+    "citations": [
+      {
+        "url": "https://nj.gov/state/dos-statutes-elections-19-31-39.shtml",
+        "quote": "The commissioner of registration shall furnish a computer-generated or electronic copy of a list of registered voters in any or all election districts in the county to any voter requesting it, for which copy such commissioner shall make a charge which shall be uniform in any calendar year and which shall reflect only the cost of reproducing the list, but which in any case shall not exceed $375."
+      },
+      {
+        "url": "https://nj.gov/state/dos-statutes-elections-19-31-39.shtml",
+        "quote": "No person shall use voter registration lists or copies thereof prepared pursuant to this section as a basis for commercial or charitable solicitation of the voters listed thereon. Any person making such use of such lists or copies thereof shall be a disorderly person, and shall be punished by a fine not exceeding $500.00."
+      },
+      {
+        "url": "https://nj.gov/state/dos-statutes-elections-19-31-39.shtml",
+        "quote": "The list of registered voters shall include only the following information for each registered voter: name, address, date of birth, political party affiliation, and voting history. Except when so ordered by a court, the list of registered voters shall not include voter signatures."
+      },
+      {
+        "url": "https://nj.gov/state/dos-statutes-elections-19-31-39.shtml",
+        "quote": "The county clerk in all counties shall cause copies of the registry lists, certified and transmitted under R.S.19:31-18, to be printed, and shall furnish to any voter applying for the same such copies, charging therefor $0.25 per copy of the list of voters of each election district."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 18,
+    "ageRule": "N.J.S.A. 19:13-7 expressly requires the circulator to be at least 18: \"The person who circulates the petition shall not be required to be a registered voter, but shall be voter eligible, which means at least 18 years of age, a resident of this State, a citizen of the United States, and not otherwise disqualified under the New Jersey Constitution.\" So there IS a 18+ age requirement on circulators (",
+    "minorCanCirculate": "no",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "yes",
+    "stateResidentRequired": "yes",
+    "signerVsCirculator": "SIGNERS must be \"duly qualified voters\" / \"legally qualified to vote for such candidates\" — i.e., registered/qualified NJ voters in the relevant district (N.J.S.A. 19:13-4, 19:13-7). The CIRCULATOR is held to a looser, expressly-defined standard: NOT required to be a registered voter, but must be \"voter eligible\" = 18+, a NJ resident, and a U.S. citizen (N.J.S.A. 19:13-7). So registration binds on",
+    "gate": "AUTO-LIVE",
+    "note": "AUTO-LIVE: N.J.S.A. 19:13-7 explicitly defines circulator eligibility for the petition of nomination (independent / direct-nomination route, which is what an independent presidential ticket files in NJ — see 19:13-4 expressly covering petitions \"nominating electors of president and vice president of the United States\"). Circulator must be: (1) 18+, (2) a U.S. citizen, (3) a NJ resident, and not otherwise disqualified under the NJ Constitution — but is NOT required to be a registered voter. Signe",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMustBeRegisteredVoter / circulatorMinAge / circulatorMustBeUSCitizen / circulatorMustBeStateResident",
+        "url": "https://codes.findlaw.com/nj/title-19-elections/nj-st-sect-19-13-7/",
+        "quote": "Before any petition shall be filed as hereinafter provided, the person who circulates the petition, or a candidate who signs or circulates, or both signs and circulates, such a petition, shall make oath by affidavit before a duly qualified officer that the petition is made in good faith, that the affiant personally circulated the petition and saw all the signatures made thereto and verily believes that the signers are duly qualified voters. The person who circulates the petition shall not be required to be a registered voter, but shall be voter eligible, which means at least 18 years of age, a resident of this State, a citizen of the United States, and not otherwise disqualified under the New Jersey Constitution."
+      },
+      {
+        "field": "signerVsCirculator (signers must be qualified voters; presidential electors petitions covered by this chapter)",
+        "url": "https://codes.findlaw.com/nj/title-19-elections/nj-st-sect-19-13-4/",
+        "quote": "Such petition shall set forth the names, places of residence and post-office addresses of the candidates for the offices to be filled... that the petitioners are legally qualified to vote for such candidates and pledge themselves to support and vote for the persons named in such petition... In the case of a petition or petitions nominating electors of president and vice president of the United States, the names of the candidates for president and vice president for whom such electors are to vote may be included in the petition or petitions..."
+      },
+      {
+        "field": "signerVsCirculator (corroborating secondary source — Ballotpedia)",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_New_Jersey",
+        "quote": "Petition circulators must complete and sign an affidavit. The affidavit must also be notarized. The circulator does not have to be a registered voter of the district, but must be a voter-eligible New Jersey resident and provide his or her address on the petition in the designated location."
+      },
+      {
+        "field": "official SoS petition guidance source",
+        "url": "https://www.nj.gov/state/elections/candidate-information.shtml",
+        "quote": "PETITION OF DIRECT NOMINATION FOR THE GENERAL ELECTION... Instructions for the nominating petition for the General Election... Petition Filing Deadline: Before 4 p.m. on June 2, 2026."
+      }
+    ]
+  }
+}

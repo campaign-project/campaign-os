@@ -1,0 +1,181 @@
+{
+  "jurisdiction": "Mississippi",
+  "signaturesHeadline": "1,000 signatures (flat statutory floor) + 6-elector slate + $2,500 fee — all three required, AUTO-LIVE",
+  "deadlineHeadline": "5:00 p.m., 60 days before general election (actual-receipt); 2024 = Sept 6 — AUTO-LIVE",
+  "riskNote": "6 of 7 fields ground cleanly and triangulate across statute + SOS guide + Ballotpedia. Only circulatorEligibility is held (proving-a-negative on unwritten practice). No field is BLOCKED; ballot-access risk is low if signatures are clerk-certified well before deadline.",
+  "sosInquiries": [
+    "For an independent presidential nominating petition under Miss. Code Ann. 23-15-785, are there any requirements (residency, age, MS voter registration) governing WHO may circulate/collect the petition signatures, or any written or unwritten administrative practice limiting circulators? (No circulator affidavit appears on the form; please confirm.)"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "1,000 valid signatures — a flat statutory minimum (written nominating petition signed by not less than 1,000 qualified/registered Mississippi voters), NOT a percentage; same 1,000 applies to a minor party qualifying by petition. Must be accompanied by a slate of 6 presidential electors, each signing a consent/pledge statement.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.97,
+      "note": "Both citation quotes ground VERBATIM: FindLaw 23-15-785(1) ('...written petition signed by at least one thousand (1,000) qualified voters of this state.') and SOS forms page ('...signatures of not less than 1,000 qualified electors of this state, must also be accompanied by a list of Presidential electors...'). Triangulated by Ballotpedia ('At least 1,000 qualified state voters must sign the petition') and the official 2026 SOS Candidate Qualifying Guide, which lists for the independent presidential candidate: petition of not less than 1,000 + 6-elector slate + $2,500 fee. 23-15-785(3) confirms a list equal to the number of electors (6 for MS) each executing the consent statement. 'at least'=floor, so the draft's 'flat fixed number, not a recompute' framing is correct."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Petition + 6-elector slate + $2,500 fee must be filed with the State Board of Election Commissioners (in the Office of the Secretary of State) by 5:00 p.m. not less than sixty (60) days before the general election. Recomputes each cycle off the November general-election date (2024 example: Sept 6, 2024). If filing by mail, it is an actual-receipt deadline, not postmark.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.93,
+      "note": "FindLaw 23-15-785(2) grounds VERBATIM ('...by 5:00 p.m. not less than sixty (60) days previous to the day of the election.'). 60-day rule corroborated by Ballotpedia ('filed with the secretary of state by 5:00 p.m. 60 days prior to the general election'). Computation verified: Nov 5, 2024 minus 60 days = Fri Sept 6, 2024 (exactly 60 days). Exact Sept 6, 2024 date independently confirmed by news source (gwcommonwealth.com): 'independent and party presidential candidates have to submit all required paperwork and fees by Sept. 6, 2024.' Actual-receipt-not-postmark confirmed verbatim in the 2026 SOS Candidate Qualifying Guide. NOTE: the 2026 guide is a midterm guide (no presidential office in 2026, gen. election Nov 3, 2026); the specific calendar date must be recomputed for 2028 (Nov 7, 2028 -> ~Sept 8, 2028). Rule itself is current and correct; clear statutory computation, not a contestable legal interpretation."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. For an independent (or minor-party-by-petition) presidential candidate the 1,000 signatures may be gathered from qualified voters of the State at large; no per-congressional-district or per-county distribution requirement. The 100-per-district / 500-statewide alternative belongs ONLY to the presidential PRIMARY petition path (Miss. Code 23-15-1093), which does not apply to the independent general-election petition.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "Quote 'written petition signed by at least one thousand (1,000) qualified voters of this state' grounds VERBATIM in 23-15-785. Independently confirmed: 23-15-359(1)(a) sets 'For an office elected by the state at large, not less than one thousand (1,000) qualified electors' with NO geographic breakdown. The 2026 SOS guide shows the 100-per-Congressional-district / 500-statewide alternative only under the Presidential Preference PRIMARY (party-candidate) section, and the independent general-election section reads simply '1,000 ... of the State of Mississippi.' 23-15-1093 governs the primary petition (filed Jan 1-15), confirming the draft's distinction. No district distribution for the independent path."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "STRICT/over-comply default until SOS confirms: treat circulators as potentially required to be Mississippi-qualified electors (registered voters) and residents. The only person-level requirement that retrieval can confirm runs to the SIGNERS (each must be a qualified elector of MS, verified via circuit-clerk certification of registration); no circulator age/residency/voter-status statute or affidavit was found, but absence of an UNWRITTEN administrative practice cannot be proven by retrieval.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.6,
+      "note": "Signer-requirement quote grounds VERBATIM on SOS page ('Be a qualified elector (registered voter) of the State of Mississippi and of the district...'). Adversarial point: the draft VALUE itself flags 'UNKNOWN whether any unwritten administrative practice limits who may circulate.' Confirming a true negative (no circulator rule anywhere, including unwritten SOS practice) is beyond retrieval and is the kind of legal-interpretation question the gate reserves for hold. Structurally, MS has no circulator affidavit and signatures are clerk-certified against the signer's own registration, so circulator identity is largely irrelevant in practice — but under the never-risk-ballot-access mandate I hold and route to the SOS. Added an SOS inquiry."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No notary and no circulator affidavit. Each petition's signatures must be CERTIFIED by the circuit clerk of the county where the signatures were collected, BEFORE the petition is filed with the Secretary of State; obtain clerk certification well in advance of the qualifying deadline. 'Header' information must be completed on each petition page BEFORE signatures are gathered.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "Both quotes ground VERBATIM. SOS forms page: 'All signatures on petitions for independent or special election candidates MUST be certified by the signer's circuit or municipal clerk respectively before filing with the appropriate office.' 2026 SOS Candidate Qualifying Guide (extracted via pdftotext): 'a. All petition signatures must be certified by each Circuit Clerk's Office of the county from where the signatures were collected, and b. All \"header\" information must be completed on each petition page prior to obtaining voters' signatures.' Critically, the guide lists these two items expressly under 'As an Independent Candidate for the General Election' for U.S. President, so the requirement is confirmed for the independent presidential petition. No notary requirement appears anywhere."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Wet-ink paper petitions gathered by hand and certified by county circuit clerks; SOS provides only downloadable paper petition forms (President Candidate_Independent Candidate_Petition) that must be printed, signed, and clerk-certified. No digital/online filing exists for the independent presidential petition.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "Quote grounds VERBATIM: FindLaw 23-15-359(11) 'The petition required by this section may not be filed by using the Internet.' Caveat on citation SCOPE: that internet-ban lives in 23-15-359, whose petition language is mirrored by 23-15-785 for the presidential filing; arguably 'this section' refers to 23-15-359's petition, so the ban is not the tightest possible citation for the 23-15-785 presidential petition specifically. BUT the paper conclusion is independently dispositive regardless of that scope question: signatures must be wet-ink and county-clerk-certified (incompatible with online filing), and the SOS publishes only printable paper forms (verified on SOS forms page). Bottom line 'paper' is correct and not interpretation-dependent."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No fee-in-lieu-of-signatures option exists. A mandatory $2,500.00 qualifying assessment for the Office of President is payable to the MS Secretary of State and is required IN ADDITION to (not instead of) the 1,000-signature petition and the 6-elector slate. Same $2,500 presidential assessment applies to a party nominee. Fee revenue is deposited into the Elections Support Fund.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.96,
+      "note": "Both quotes ground VERBATIM: FindLaw 23-15-359(1)(h) '(h) For the Office of President of the United States, a party nominee or independent candidate shall pay an assessment in the amount of Two Thousand Five Hundred Dollars ($2,500.00).' and SOS forms page ('...submitted with a qualifying fee of $2,500 to the Secretary of State's Office.'). 23-15-359(5) confirms deposit into the Elections Support Fund (23-15-5). The 2026 SOS guide lists, for the independent presidential candidate, BOTH a 1,000-signature petition AND a $2,500 fee AND the 6-elector slate as separate required items — confirming the fee is additive, not an alternative. Field is mislabeled 'feeAlternative' but the substance (no alternative; fee is mandatory and additional) is correct."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found",
+    "note": "Mississippi's candidate/election-code petition statutes (Miss. Code 23-15-785 for independent presidential petitions and 23-15-359 generally) do NOT address compensation of candidate-petition circulators at all — neither per-signature pay, paid circulation in general, nor circulator residency/registration are mentioned. The frequently cited \"Mississippi permits pay-per-signature\" rule (and Term Limits Leadership Council v. Clark, 1997) comes only from the INITIATIVE/ballot-measure code (Title 23, Chapter 17, Sec. 57), a separate chapter that does not govern candidate petitions, so it must not be carried over. Treat candidate-petition compensation as unaddressed and hold conservatively.",
+    "sosInquiry": "For an INDEPENDENT presidential candidate's nominating petition under Miss. Code Ann. 23-15-785, does Mississippi law permit a campaign to pay petition circulators on a per-signature basis (and may circulators be paid at all, e.g., hourly), and must a circulator be a Mississippi resident or registered voter?",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/ms/title-23-elections/ms-code-sect-23-15-785.html",
+        "quote": "the Secretary of State of Mississippi shall certify to the circuit clerks of the several counties the names of all candidates for President and Vice President who are nominated by any national convention or other like assembly of any political party or by written petition signed by at least one thousand (1,000) qualified voters of this state. ... Any nominating petition, to be valid, must contain the signatures as well as the addresses of the petitioners."
+      },
+      {
+        "url": "https://codes.findlaw.com/ms/title-23-elections/ms-code-sect-23-15-359/",
+        "quote": "A petition requesting that an independent or special election candidate's name be placed on the ballot for any office shall be filed as provided for in subsection (3) or (4) of this section, as appropriate, and shall be signed by not less than the following number of qualified electors ... (h) For the Office of President of the United States, a party nominee or independent candidate shall pay an assessment in the amount of Two Thousand Five Hundred Dollars ($2,500.00)."
+      },
+      {
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_political_candidates_in_Mississippi",
+        "quote": "The relevant statutes do not specify residency requirements or other regulations for petition circulators."
+      },
+      {
+        "url": "https://ballotpedia.org/Pay-per-signature",
+        "quote": "Mississippi | Permitted | Mississippi Code, Title 23, Chapter 17, Section 57"
+      }
+    ],
+    "initiativePrior": "permitted"
+  },
+  "voterFile": {
+    "tier": "FREE_DOWNLOAD",
+    "cost": "Free. The full statewide voter file and statewide voter history file are distributed weekly \"at no cost\" to anyone who signs up. (The alternative one-off public-records-request path yields the same file; the SOS does not publish a separate fee for it on this page.)",
+    "whoCanObtain": "Open to anyone who signs up for the Statewide Voter File Distribution List — no candidate/committee/party eligibility gate is stated. The SOS confirms it is \"the same type of file provided when a statewide voter file is requested through a public records request,\" i.e., it is a public record available to the general public. Voters' SSNs, birthdates, and other private info are excluded by Mississippi law and are not released.",
+    "useRestrictions": "No commercial-use prohibition, anti-solicitation clause, political-use-only limit, or penalty is stated in the distribution-program document or the SOS Elections page. The only stated limit is on the SOS's side: it \"will not resend or forward any emails of the weekly distribution list,\" and private fields (SSN, DOB) are statutorily withheld. (Use restrictions in Miss. Code §23-15-165 governing the Statewide Elections Management System could not be retrieved verbatim — legal mirrors were blocked — so the absence of restrictions is based on the primary SOS sources only.)",
+    "requestProcess": "Self-service sign-up to a recurring distribution list, then automated weekly delivery. Enroll via the \"Statewide Voter File Distribution List\" Smartsheet form (linked from the SOS \"Request Voter File\" PDF: https://app.smartsheet.com/b/form/5c8b666a679c4c148eb513c8981a4962). Enrollees then \"receive an email each week with a Sharefile link\" to download the file. No application approval, affidavit, or notarized sworn statement is described for the weekly program; any request outside the weekly distribution must go through the formal public records request process.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://app.smartsheet.com/b/form/5c8b666a679c4c148eb513c8981a4962",
+    "note": "Mississippi gives away the entire statewide voter file (active + inactive voters) for free via a weekly CSV distribution program — sign up once on a Smartsheet form and receive a Sharefile download link each week; this is the easiest free-tier state for signature verification. The registration file includes First Name, Middle Name, Suffix, full Residential Address, City/State/Zip, County, Precinct, and Voter Status — sufficient to match petition signers to registered voters (note: the document's literal header list for the registration file omits \"Last Name,\" which does appear in the companion voting-history file, so a last-name field may be present in practice but is not explicitly listed). Free weekly distribution: enroll via the Smartsheet form, then receive a weekly ShareFile download link by email (not a one-click instant download, but free and self-service).",
+    "citations": [
+      {
+        "url": "https://www.sos.ms.gov/sites/default/files/elections/2025%20Voter%20File%20Weekly%20Distribution%20Program.pdf",
+        "quote": "The Mississippi Secretary of State's Office will provide a statewide voter file and statewide voter history file on a weekly basis to those who sign-up to receive such a file at Statewide Voter File Distribution List at no cost. Those who sign-up will receive an email each week with a Sharefile link to access a statewide voter file and statewide voter history file. This will be the same type of file provided when a statewide voter file is requested through a public records request and will include active and inactive voters."
+      },
+      {
+        "url": "https://www.sos.ms.gov/sites/default/files/elections/2025%20Voter%20File%20Weekly%20Distribution%20Program.pdf",
+        "quote": "The statewide voter file, which will just contain voter registration information, will provide the following information: Mapping Value, First Name, Middle Name, Suffix, Residential Address, House Number, Street Name, Street Type, Pre-Direction, Post-Direction, Residence City, Residence State, Residential Zip Code, Residential County, Precinct Code, Precinct Name, Mailing Address, Mailing City, Mailing State, Mailing Zip Code, Effective Voter Registration Date, Voter Status, and Date Last Voted."
+      },
+      {
+        "url": "https://www.sos.ms.gov/sites/default/files/elections/2025%20Voter%20File%20Weekly%20Distribution%20Program.pdf",
+        "quote": "The Mississippi Secretary of State's Office will not resend or forward any emails of the weekly distribution list for any reason and any request outside of the weekly distribution will be required to go through the public records request process."
+      },
+      {
+        "url": "https://www.sos.ms.gov/elections-voting",
+        "quote": "Voters' social security numbers, birthdates, and other private information, however, is not available to the public under Mississippi law. Please be on notice the Agency will not release this information in response to a public records request from any entity or individual."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the statute is silent on circulators entirely. Miss. Code § 23-15-785 (presidential nominating petitions) and § 23-15-359 (general independent-candidate petitions) impose requirements only on SIGNERS (\"qualified voters/qualified electors of this state\"). Neither statute mentions who may carry the petition or collect signatures, imposes a circulator affidavit/witness",
+    "minorCanCirculate": "unknown",
+    "registeredVoterRequired": "unknown",
+    "usCitizenRequired": "unknown",
+    "stateResidentRequired": "unknown",
+    "signerVsCirculator": "SIGNERS must be \"qualified voters of this state\" (§ 23-15-785) / \"qualified electors\" (§ 23-15-359) — i.e., registered Mississippi voters. The CIRCULATOR (collector) has NO statutory eligibility requirements at all: the Mississippi candidate-petition statutes do not require a circulator affidavit, witness, notarization, or any age/citizenship/residency/registration of the person gathering signatur",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "Mississippi's controlling statutes for an independent presidential nominating petition — Miss. Code § 23-15-785 (the presidential-specific provision) and § 23-15-359 (the general independent-candidate petition provision) — are entirely SILENT on the circulator. Both impose person-eligibility only on SIGNERS: the petition must be \"signed by at least one thousand (1,000) qualified voters of this state\" (§ 23-15-785(1)) / \"signed by not less than ... one thousand (1,000) qualified electors\" for a s",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "signerVsCirculator / circulatorMustBeRegisteredVoter",
+        "url": "https://codes.findlaw.com/ms/title-23-elections/ms-code-sect-23-15-785/",
+        "quote": "When presidential electors are to be chosen, the Secretary of State of Mississippi shall certify to the circuit clerks of the several counties the names of all candidates for President and Vice President who are nominated by any national convention or other like assembly of any political party or by written petition signed by at least one thousand (1,000) qualified voters of this state."
+      },
+      {
+        "field": "circulatorAgeRule / no circulator verification requirement",
+        "url": "https://codes.findlaw.com/ms/title-23-elections/ms-code-sect-23-15-785/",
+        "quote": "Any nominating petition, to be valid, must contain the signatures as well as the addresses of the petitioners. The certificates and petitions must be filed with the State Board of Election Commissioners by filing them in the Office of the Secretary of State by 5:00 p.m. not less than sixty (60) days previous to the day of the election."
+      },
+      {
+        "field": "signerVsCirculator (general independent-candidate petition)",
+        "url": "https://codes.findlaw.com/ms/title-23-elections/ms-code-sect-23-15-359/",
+        "quote": "A petition requesting that an independent or special election candidate's name be placed on the ballot for any office shall be filed as provided for in subsection (3) or (4) of this section, as appropriate, and shall be signed by not less than the following number of qualified electors: (a) For an office elected by the state at large, not less than one thousand (1,000) qualified electors."
+      },
+      {
+        "field": "only procedural circulator-adjacent restriction",
+        "url": "https://codes.findlaw.com/ms/title-23-elections/ms-code-sect-23-15-359/",
+        "quote": "The petition required by this section may not be filed by using the Internet."
+      },
+      {
+        "field": "signer requirement (corroborating, no circulator rule noted)",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Mississippi",
+        "quote": "An independent candidate must petition for placement on the general election ballot. At least 1,000 qualified state voters must sign the petition, which must be filed with the secretary of state by 5:00 p.m. 60 days prior to the general election. The petition must include the names of candidates for president, vice president, and presidential electors."
+      }
+    ]
+  }
+}

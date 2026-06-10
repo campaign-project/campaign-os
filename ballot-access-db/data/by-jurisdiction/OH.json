@@ -1,0 +1,204 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "OH",
+ "jurisdiction": "Ohio",
+ "abbr": "OH",
+ "petitionType": "independent-presidential",
+ "signatures": {
+  "required": 5000,
+  "headline": "5,000 valid (max 15,000); fixed number, no per-district minimum"
+ },
+ "deadline": {
+  "headline": "90th day before general (Aug 7, 2024); recomputes each cycle"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "5,000 valid signatures of qualified electors (statewide minimum), with petitions rejected if they purport to contain more than 15,000 signatures. Fixed statutory number, not a percentage; does not recompute by cycle.",
+   "confidence": 0.95,
+   "interpretationRequired": false,
+   "note": "R.C. 3513.257(A) quote confirmed verbatim on FindLaw ('no less than five thousand qualified electors ... no petition shall be accepted ... more than fifteen thousand signatures'). Ballotpedia quote confirmed verbatim (line 234: 'at least 5,000 qualified voters'). NASS report independently corroborates 'at least 5,000 qualified electors.' Independently re-derived and correct for an independent presidential candidate. Minor caveat: the parenthetical extending the same 5,000 threshold to a 'new/minor-party presidential candidate' is loose (minor-party ballot status runs through a separate party-formation/petition mechanism), but it does not affect the independent-candidate value relied upon."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Not later than 4 p.m. of the 90th day before the general election. For 2024 (general election Nov. 5, 2024) this was August 7, 2024. Statement of candidacy + nominating petition + a sufficient slate of presidential electors must be filed with the Secretary of State by that time. The 90-day rule recomputes each cycle. HB2 (2024 special session) moved only the major-party certification deadline to the 65th day; it did not change the independent-candidate petition deadline.",
+   "confidence": 0.92,
+   "interpretationRequired": false,
+   "note": "R.C. 3513.257 quote confirmed verbatim ('not later than four p.m. of the ninetieth day before the day of the general election'). NASS report quote confirmed verbatim (lines 846-848) and independently corroborates the 90th-day independent-candidate deadline AND the HB2 note that the 65th-day change applies only to MAJOR-PARTY certification (NASS lines 835-839), exactly as the draft claims. Date arithmetic independently verified: 90 days before Nov 5, 2024 = Aug 7, 2024 (Wednesday). Statute also confirms the presidential-elector slate must be submitted at filing. Value is current and correct; the specific date is cycle-specific and recomputes."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "None. The 5,000-signature requirement is a single statewide total; no minimum number of signatures per congressional district or per county. Mechanically, each petition paper must contain signatures of electors of only one county and separate papers are used per county, but no geographic distribution minimum is imposed.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "R.C. 3513.257(A) and R.C. 3513.261 quotes both confirmed verbatim on FindLaw. Independently re-derived: 3513.257 sets one statewide aggregate (5,000) with no district/county allocation; 3513.261's one-county-per-paper rule is a sorting/validity mechanic, not a distribution quota. Adversarial note worth flagging to staff (does not change the gate): 3513.261 further provides that if a single petition paper mixes counties, the board counts only signatures from the majority county and invalidates the rest — a paper-integrity rule, still not a geographic distribution minimum."
+  },
+  {
+   "field": "circulatorEligibility",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "A circulator of a nominating petition for presidential electors must be at least 18 years of age (R.C. 3503.06(C)(1)(b)). STRICTEST POSTURE: also assume the circulator may need to be an Ohio resident — the general residency requirement in R.C. 3503.06(C)(1)(a) is on the books and is reported as non-enforced only by virtue of the Citizens in Charge v. Husted injunction, an enforcement-status fact that retrieval cannot durably confirm as current. Plan for resident, 18+ circulators. Circulators need not be registered voters. Signers must be registered Ohio electors qualified to vote on the candidacy (R.C. 3501.38(A)).",
+   "confidence": 0.7,
+   "interpretationRequired": true,
+   "note": "R.C. 3503.06(C)(1)(b) quote (age 18, presidential-elector petition) confirmed verbatim; Hamilton County 2024 guide quote confirmed verbatim (lines 47-50, including the Citizens in Charge v. Husted citations); R.C. 3501.38(A) signer-qualification quote confirmed verbatim. The age-18 and signer requirements are AUTO-LIVE-grade. HOLD is driven solely by the residency claim: whether the statutory Ohio-residency requirement is currently unenforced depends on the live status of a federal injunction, which is a currency/legal-interpretation question retrieval cannot settle to the strict standard. Defaulting to the over-comply posture (assume residency may apply) avoids any ballot-access risk."
+  },
+  {
+   "field": "witnessOrNotary",
+   "gate": "AUTO-LIVE",
+   "value": "No notarization required. Each petition paper requires a circulator statement made UNDER PENALTY OF ELECTION FALSIFICATION (not before a notary) attesting to the number of signatures, that the circulator witnessed the affixing of every signature, that all signers were to the best of the circulator's knowledge and belief qualified to sign, and that every signature is genuine. Each petition must also carry the boldface warning that election falsification is a fifth-degree felony.",
+   "confidence": 0.93,
+   "interpretationRequired": false,
+   "note": "R.C. 3501.38(E)(1) circulator-statement quote and 3501.38(J) boldface-felony-warning quote both confirmed verbatim on FindLaw. R.C. 3513.261's prescribed petition form independently shows the same circulator declaration ('under penalty of election falsification ... witnessed the affixing of every signature') with no notary jurat. Statute uses 'penalty of election falsification' rather than notarization throughout. Value is current and correct; no notary/witness requirement exists."
+  },
+  {
+   "field": "captureMode",
+   "gate": "AUTO-LIVE",
+   "value": "paper. Signatures must be collected on the official paper nominating petition with signatures affixed in ink or indelible pencil. Ohio provides no remote-online or in-person digital signature system for an independent presidential nominating petition; the petition is wet-ink paper filed with the Secretary of State.",
+   "confidence": 0.9,
+   "interpretationRequired": false,
+   "note": "R.C. 3513.261 quote ('All signatures on nominating petitions shall be written in ink or indelible pencil') and R.C. 3501.38(B) quote ('Signatures shall be affixed in ink') both confirmed verbatim on FindLaw. Independently re-derived: ink/indelible-pencil wet-signature paper petition, no statutory e-signature alternative for nominating petitions. The specific form name 'Form 3-O' is non-load-bearing color not appearing in the cited statutory quotes, but the substantive paper/wet-ink mode is fully grounded and correct."
+  },
+  {
+   "field": "feeAlternative",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Treat ballot access as obtainable only via the 5,000-signature nominating petition; there is no money-payment alternative to gathering signatures for an independent presidential candidate. STRICTEST POSTURE: do not assume a fee can substitute for signatures, and confirm with the SOS whether any nominal filing fee is nonetheless owed at filing under R.C. 3513.261. The 3513.10(A)/(B) fee tables and the 3513.10(G) 'statewide office' definition do not list president/vice-president, creating an interpretive gap as to what (if any) fee 3513.261's cross-reference produces.",
+   "confidence": 0.68,
+   "interpretationRequired": true,
+   "note": "R.C. 3513.261 fee-cross-reference quote and R.C. 3513.10(G) 'statewide office' definition quote both confirmed verbatim on FindLaw. Adversarial finding: the draft's CONCLUSION (no fee alternative; president absent from the fee schedule) is correct as far as the texts go, but bridging '3513.261 says pay the 3513.10(A)/(B) fee for the office' with '3513.10 lists no fee for president' requires a legal interpretation (does the office owe $0, or is the fee provision simply inapplicable?) that retrieval cannot definitively settle. Because the load-bearing point for ballot access is that signatures are the route (which is safe regardless), HOLD with the over-comply posture and route the fee-amount question to the SOS."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "paidCirculatorsAllowed": "yes",
+  "payMethod": "hourly-only",
+  "circulatorResidency": "not_required",
+  "operatingStance": "NO per-signature (prohibited) — pay hourly/bonus; advocate to legalize",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "FREE_DOWNLOAD",
+  "cost": "Free. The entire statewide voter registration file is downloadable at no charge from the Ohio Secretary of State's Voter Files Download Page (no fee, no account, no form).",
+  "whoCanObtain": "General public — anyone. The statewide voter file is treated as a public record and posted online for open download with no eligibility gate (no candidate/committee/registered-user restriction).",
+  "useRestrictions": "No use-restriction gate is imposed at the point of download (no affidavit, click-through use agreement, or commercial-use prohibition on the SoS download page itself). General Ohio public-records/voter-registration law applies; the SoS states the files are published \"in accordance with Ohio law.\" No purpose attestation is required to obtain the file, which is ideal for petition-signature matching.",
+  "requestProcess": "Instant online download. Go to the SoS Voter Files Download Page, select \"Statewide Voter Files,\" and click each of the four files to download directly. No request, form, approval, or payment.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www6.ohiosos.gov/ords/f?p=VOTERFTP:STWD:::#stwdVtrFiles",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "circulator": {
+  "minAge": 18,
+  "ageRule": "For an independent presidential nominating petition (a \"nominating petition for presidential electors\" under ORC 3513.257), the circulator must be at least 18 years of age. ORC 3503.06(C)(1)(b): \"No person shall be entitled to circulate a nominating petition for presidential electors unless the person is at least eighteen years of age.\" This is the ONLY eligibility requirement Ohio imposes on circ",
+  "minorCanCirculate": "no",
+  "registeredVoterRequired": "no",
+  "usCitizenRequired": "unknown",
+  "stateResidentRequired": "no",
+  "signerVsCirculator": "SIGNER: must be a registered Ohio elector qualified to vote on the candidacy (ORC 3501.38(A) + 3503.06(B)). CIRCULATOR of a presidential-elector petition: only requirement is being at least 18 years old (ORC 3503.06(C)(1)(b)) plus signing the witnessing affidavit (3501.38(E)(1)) — NO residency, NO voter-registration, and NO citizenship requirement. The strict resident/registered requirements bind ",
+  "gate": "AUTO-LIVE",
+  "note": "Ohio statute is explicit and draws a deliberate circulator-vs-signer and presidential-vs-other distinction. ORC 3503.06(C)(1) sets two different circulator rules: (a) for petitions GENERALLY, the circulator \"must be a resident of this state and is at least eighteen years of age,\" BUT this is expressly \"Except for a nominating petition for presidential electors\"; and (b) for \"a nominating petition for presidential electors,\" the circulator need only be \"at least eighteen years of age.\" An indepen",
+  "verifiedAsOf": "2026-06-08"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 2,
+  "riskNote": "Core petition rule (5,000 sigs, 90-day, paper wet-ink, no notary) is grounded and AUTO-LIVE; two CONSERVATIVE-HOLDs: circulator residency depends on current injunction status, and the \"no fee alternative\" rests on a statutory gap (president absent from the 3513.10 fee schedule) that needs SOS confirmation."
+ },
+ "citations": [
+  {
+   "field": "compensation",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3599.111",
+   "quote": "No person shall receive compensation on a fee per signature or fee per volume basis for circulating any declaration of candidacy, nominating petition, initiative petition, referendum petition, recall petition, or any other election-related petition that is filed with or transmitted to a board of elections, the office of the secretary of state, or other appropriate public office. No person shall pay any other person for collecting signatures on election-related petitions or for registering voters except on the basis of time worked."
+  },
+  {
+   "field": "compensation",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3599.111",
+   "quote": "Whoever violates division (B) of this section is guilty of receiving improper compensation for circulating a petition, a felony of the fifth degree."
+  },
+  {
+   "field": "compensation",
+   "url": "https://en.wikipedia.org/wiki/Citizens_for_Tax_Reform_v._Deters",
+   "quote": "Citizens for Tax Reform v. Deters, 518 F.3d 375 (6th Cir. 2008), was a decision that overturned an Ohio statute that made it a felony to pay petitioners by the signature."
+  },
+  {
+   "field": "compensation",
+   "url": "https://en.wikipedia.org/wiki/Citizens_for_Tax_Reform_v._Deters",
+   "quote": "On March 5, 2008, a three judge panel of the Sixth Circuit Court of Appeals unanimously upheld the district court ruling to strike Ohio's law banning per-signature payments.... On November 17, 2008, the United States Supreme Court announced that it was declining to hear Ohio's appeal."
+  },
+  {
+   "field": "compensation",
+   "url": "https://en.wikipedia.org/wiki/Citizens_for_Tax_Reform_v._Deters",
+   "quote": "The case arose out of an attempt of Citizens for Tax Reform (CTR), an Ohio political advocacy group, to quality a citizen initiative for the 2005 general election ballot in that state."
+  },
+  {
+   "field": "compensation",
+   "url": "https://www.sos.state.oh.us/globalassets/publications/election/2025_crg.pdf",
+   "quote": "the Ohio residency requirement is not currently in place based on the preliminary injunction in Citizens in Charge v. Husted, Case: 2:13-CV-00935 (S.D. Ohio 11/13/13); See also, Citizens in Charge v. Husted, 810 F. 3d 437 (6th Cir 2016). ... a circulator does not have to be an Ohio elector or Ohio resident."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www6.ohiosos.gov/ords/f?p=VOTERFTP:STWD:::#stwdVtrFiles",
+   "quote": "Welcome to the Ohio Secretary of State's Voter Files Download Page. At this page you can download files of all registered voters by county, state senate district, state representative district, congressional district, or the entire state of Ohio. The statewide file is divided into four .zip files SWVF_1_22 (Adams-Erie), SWVF_23_44 (Fairfield-Lawrence), SWVF_45_66 (Licking-Pike) and SWVF_67_88 (Portage-Wyandot). The voter files available on this page are updated every week."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www6.ohiosos.gov/ords/f?p=VOTERFTP:STWD:::#stwdVtrFiles",
+   "quote": "Note: These statewide voter files are available as compressed (gzip) files. Please use a compression tool to uncompress these files after downloading."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://www6.ohiosos.gov/ords/f?p=VOTERFTP:STWD:::#stwdVtrFiles",
+   "quote": "The Ohio Secretary of State’s office publishes the voter registration files on this page in accordance with Ohio law."
+  },
+  {
+   "field": "voterFile",
+   "url": "https://data.ohiosos.gov/portal/voter-registration",
+   "quote": "The following links allow you to download files of all registered voters by county, state senate district, state representative district, congressional district, or the entire state of Ohio. The voter files available at this page are updates every week. The data is in CSV format that can be imported into Microsoft Excel ot other spreadsheet database programs."
+  },
+  {
+   "field": "circulatorMinAge / circulatorMustBeStateResident / circulatorAgeRule",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3503.06",
+   "quote": "(C)(1)(a) Except for a nominating petition for presidential electors, no person shall be entitled to circulate any petition unless the person is a resident of this state and is at least eighteen years of age. (b) No person shall be entitled to circulate a nominating petition for presidential electors unless the person is at least eighteen years of age."
+  },
+  {
+   "field": "circulatorMustBeRegisteredVoter (signer-only registration)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3503.06",
+   "quote": "(B) No person shall be entitled to sign any petition, unless the person is registered as an elector and resides in a precinct in which the candidacy or issue that is the subject of the petition will appear on the ballot."
+  },
+  {
+   "field": "signerVsCirculator (signer must be registered/qualified elector)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3501.38",
+   "quote": "(A) Only electors qualified to vote on the candidacy or issue which is the subject of the petition shall sign a petition. Each signer shall be a registered elector pursuant to section 3503.01 of the Revised Code. The facts of qualification shall be determined as of the date when the petition is filed."
+  },
+  {
+   "field": "circulator duties (no residency/registration imposed — only a witnessing affidavit)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3501.38",
+   "quote": "(E)(1) On each petition paper, the circulator shall indicate the number of signatures contained on it, and shall sign a statement made under penalty of election falsification that the circulator witnessed the affixing of every signature, that all signers were to the best of the circulator's knowledge and belief qualified to sign, and that every signature is to the best of the circulator's knowledge and belief the signature of the person whose signature it purports to be... On the circulator's statement for a declaration of candidacy or nominating petition for a person seeking to become a statewide candidate or for a statewide initiative or a statewide referendum petition, the circulator shall identify the circulator's name, the address of the circulator's permanent residence, and the name and address of the person employing the circulator..."
+  },
+  {
+   "field": "address-disclosure carve-out does not reach presidential petitions",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3501.38",
+   "quote": "(2) As used in division (E) of this section, \"statewide candidate\" means the joint candidates for the offices of governor and lieutenant governor or a candidate for the office of secretary of state, auditor of state, treasurer of state, or attorney general."
+  },
+  {
+   "field": "independent presidential candidate qualifies by nominating petition with slate of presidential electors",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3513.257",
+   "quote": "there is submitted to the secretary of state, at the time of filing the petition, a slate of presidential electors sufficient in number to satisfy the requirement of the United States Constitution."
+  },
+  {
+   "field": "signature count / signers are qualified electors (signer requirement)",
+   "url": "https://codes.ohio.gov/ohio-revised-code/section-3513.257",
+   "quote": "... shall be signed by no less than five thousand qualified electors, provided that no petition shall be accepted for filing if it purports to contain more than fifteen thousand signatures."
+  },
+  {
+   "field": "5,000 qualified-voter signatures for independent presidential candidate (corroboration)",
+   "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Ohio",
+   "quote": "An independent presidential candidate seeking placement on the general election ballot must file a petition and a statement of candidacy with the secretary of state. The petition must contain the signatures of at least 5,000 qualified voters and be submitted no later than 90 days before the general election."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-06",
+  "method": "multi-agent research → deterministic citation-grounding → adversarial verify → conservative gate (no human counsel)",
+  "source": "CampaignOS verified-rules.master.json"
+ }
+}

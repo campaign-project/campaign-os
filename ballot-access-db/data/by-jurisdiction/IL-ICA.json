@@ -1,0 +1,96 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "IL-ICA",
+ "jurisdiction": "Illinois",
+ "abbr": "IL",
+ "petitionType": "initiated-constitutional-amendment",
+ "signatures": {
+  "required": 328371,
+  "headline": "Art. XIV, Sec. 3: 'Amendments to Article IV of this Constitution may be proposed by a petition signed by a number of electors equal in number to at least eight percent of the total votes cast for candidates for Governor in the preceding gubernatorial election.' (corroborated by 10 ILCS 5/28-9: 'at least 8% of the total votes cast for candidates for Governor in the preceding gubernatorial election.') Base = 2022 Illinois gubernatorial election, 4,104,636 votes cast for Governo"
+ },
+ "deadline": {
+  "headline": "Art. XIV, Sec. 3 (verbatim): petition 'shall be filed with the Secretary of State at least six months before that general election.' Additionally the petition 'shall have been signed by the petitioning electors not more than twenty-four months preceding that general election.' For the Nov. 3, 2026 general election the filing deadline is May 3, 2026 (Ballotpedia corroboration)."
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Art. XIV, Sec. 3: 'Amendments to Article IV of this Constitution may be proposed by a petition signed by a number of electors equal in number to at least eight percent of the total votes cast for candidates for Governor in the preceding gubernatorial election.' (corroborated by 10 ILCS 5/28-9: 'at least 8% of the total votes cast for candidates for Governor in the preceding gubernatorial election.') Base = 2022 Illinois gubernatorial election, 4,104,636 votes cast for Governo",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct (goes straight to the voters at the general election; the General Assembly has no role in approving or rejecting an initiated amendment)"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Art. XIV, Sec. 3 (verbatim): petition 'shall be filed with the Secretary of State at least six months before that general election.' Additionally the petition 'shall have been signed by the petitioning electors not more than twenty-four months preceding that general election.' For the Nov. 3, 2026 general election the filing deadline is May 3, 2026 (Ballotpedia corroboration)."
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none (the constitution and 10 ILCS 5/28-9 impose no geographic/county/district distribution requirement)"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Subject-matter limited, not a conventional single-subject rule: 'Amendments shall be limited to structural and procedural subjects contained in Article IV.' (Art. XIV, Sec. 3). Citizen initiative may amend ONLY Article IV (the Legislature article), and only as to structural and procedural subjects within it."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "unaddressed",
+  "circulatorResidency": "not_required",
+  "operatingStance": "The Illinois Election Code does not address or prohibit per-signature compensation of circulators for the constitutional initiative; there is no pay-per-signature ban and no spreading ban. Illinois is NOT among the ~10 states (AZ, AR, FL, MT, ND, OK, OR, SD, UT, WY per Ballotpedia) that ban per-signature pay for initiatives. Circulator requirements are minimal: under 10 ILCS 5/",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$500 flat for the entire-state file (committee version). Sub-state files are cheaper per the published schedule (e.g., Congressional District $75, Senate District $30, Representative District $25, Cook County / City of Chicago $100 each; \"Others\" $25 minimum). The redacted PUBLIC (non-committee) file is instead priced at statutory \"cost of duplication plus a 15% fee for administration.\" Paid by electronic funds transfer (from the committee's own account); no application is processed without payment.",
+  "whoCanObtain": "For the full (unredacted, with-residential-address) file: registered State or local political committees, for bona fide political purposes (and governmental entities for a governmental purpose). The general public can only obtain a redacted version (street numbers, DOB, SSN, phone, partial email removed) and only for the limited purposes in the National Voter Registration Act, 52 U.S.C. 20507(i). The full statewide list may not be disclosed to anyone other than a State/local political committee or a governmental entity.",
+  "useRestrictions": "Political-use-only. Data \"shall be used only for bona fide political purposes\" and \"shall not be used under any circumstances for purposes of commercial solicitation or other business purposes.\" The application warns misuse \"may result in substantial penalty, including, but not limited to, conviction of a class 4 felony (10 ILCS 5/4-8, 5-7, 6-35).\" By statute (10 ILCS 5/1A-25(c)) records may not be used for any personal, private, or commercial purpose, including intimidation/threat/deception or advertising/solicitation/sale/marketing; SBE must deny requests from anyone under a court order finding a violation. Verifying petition signatures (matching signers to registered voters) is a bona fide political purpose for a committee.",
+  "requestProcess": "Written application: download the SBE \"Request for Voter Information\" form (Revised 07-07-2025), complete it, and submit by email to bpeterson@elections.il.gov for review; SBE then provides an electronic-payment link and the file is run after payment. Political committees must check a verification box and have the candidate, treasurer, or chair sign a sworn statement of permitted (bona fide political) use. Files are delivered encrypted and password-protected, with the password given only to the original requestor. This is a request-and-approval process, not an instant download.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.elections.il.gov/VotingAndRegistrationSystems/ComputerizedVoterData.aspx",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 1,
+  "riskNote": "Illinois citizen initiative = initiated constitutional amendment ONLY, restricted to Article IV (Legislative Article), structural/procedural subjects only. Signature requirement = 8% of votes cast for Governor in the preceding gubernatorial election. Current cycle (2024 and 2026): base is the 2022 gubernatorial election (4,104,636 votes) -> 8% = 328,370.88, rounded up to 328,371 valid signatures (matches Ballotpedia exactly). Signatures must be gathered within the 24 months b"
+ },
+ "citations": [
+  {
+   "field": "signatureBasis / signatureRequirement / deadline / distribution / singleSubject (primary constitutional source)",
+   "url": "https://ballotpedia.org/Article_XIV,_Illinois_Constitution",
+   "quote": "Text of Section 3: Constitutional Initiative for Legislative Article. Amendments to Article IV of this Constitution may be proposed by a petition signed by a number of electors equal in number to at least eight percent of the total votes cast for candidates for Governor in the preceding gubernatorial election. Amendments shall be limited to structural and procedural subjects contained in Article IV. A petition shall contain the text of the proposed amendment and the date of the general election at which the proposed amendment is to be submitted, shall have been signed by the petitioning electors not more than twenty-four months preceding that general election and shall be filed with the Secretary of State at least six months before that general election."
+  },
+  {
+   "field": "signatureBasis / deadline (statutory corroboration)",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-28-9/",
+   "quote": "Sec. 28-9. Petitions for proposed amendments to Article IV of the Constitution pursuant to Section 3, Article XIV of the Constitution shall be signed by a number of electors equal in number to at least 8% of the total votes cast for candidates for Governor in the preceding gubernatorial election. Such petition shall have been signed by the petitioning electors not more than 24 months preceding the general election at which the proposed amendment is to be submitted and shall be filed with the Secretary of State at least 6 months before that general election."
+  },
+  {
+   "field": "signatureRequirement (current-cycle figure and base, corroboration)",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Illinois",
+   "quote": "In Illinois, the signature requirement for initiated constitutional amendments is 8 percent of the total votes cast for governor in the preceding gubernatorial election. ... | 2026 | 328,371 | ... | 2022 | 4,104,636 | ... The deadline for submitting signatures to get an initiative or referendum on the ballot for a particular general election is six months before that election. | 2026 | May 3, 2026 |"
+  },
+  {
+   "field": "scope (CICA-only, Article IV only)",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Illinois",
+   "quote": "In Illinois, citizens can initiate constitutional amendments that amend Article IV of the Illinois Constitution."
+  },
+  {
+   "field": "circulatorResidencyRequired / circulator qualification",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-28-3/",
+   "quote": "At the bottom of each sheet of such petition shall be added a circulator's statement, signed by a person 18 years of age or older who is a citizen of the United States, stating the street address or rural route number, as the case may be, as well as the county, city, village or town, and state; certifying that the signatures on that sheet of the petition were signed in his or her presence and are genuine... In addition to the foregoing requirements, a petition proposing an amendment to Article IV of the Constitution pursuant to Section 3 of Article XIV of the Constitution ... shall be in conformity with the requirements of Section 28-9 of this Article."
+  },
+  {
+   "field": "signers must be registered voters / no distribution requirement",
+   "url": "https://codes.findlaw.com/il/chapter-10-elections/il-st-sect-10-5-28-3/",
+   "quote": "Such petition shall be signed by the registered voters of the political subdivision or district or precinct or combination of precincts in which the question of public policy is to be submitted in their own proper persons only, and opposite the signature of each signer his residence address shall be written or printed..."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

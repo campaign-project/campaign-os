@@ -1,0 +1,17 @@
+{
+  "name": "@campaign-os/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "dependencies": {
+    "@campaign-os/ai": "workspace:*",
+    "@campaign-os/domain": "workspace:*",
+    "@trpc/server": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
+  }
+}

@@ -1,0 +1,116 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "ME-IS",
+ "jurisdiction": "Maine",
+ "abbr": "ME",
+ "petitionType": "initiated-statute",
+ "signatures": {
+  "required": 67682,
+  "headline": "10% of the total votes cast for Governor at the last gubernatorial general election (Constitution of Maine, Article IV, Part Third, Section 18, sub-section 2). Current base: total votes cast for Governor at the November 8, 2022 General Election."
+ },
+ "deadline": {
+  "headline": "First Regular Session: By 5:00 p.m. on or before the 50th day after the convening of the Legislature. The first regular session convenes on the first Wednesday of December following the General Election. Second Regular Session: By 5:00 p.m. on or before the 25th day after the convening of the Legislature. The second regular session convenes on the first Wednesday after the firs"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "10% of the total votes cast for Governor at the last gubernatorial general election (Constitution of Maine, Article IV, Part Third, Section 18, sub-section 2). Current base: total votes cast for Governor at the November 8, 2022 General Election.",
+   "confidence": 0.9,
+   "note": "direct/indirect: indirect — a certified initiated statute is first submitted to the Legislature; if the Legislature does not enact it without change, it goes to the voters (Constitution Art. IV, Pt. Third, §18)."
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "First Regular Session: By 5:00 p.m. on or before the 50th day after the convening of the Legislature. The first regular session convenes on the first Wednesday of December following the General Election. Second Regular Session: By 5:00 p.m. on or before the 25th day after the convening of the Legislature. The second regular session convenes on the first Wednesday after the firs"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "none — Maine has no single-subject rule for initiatives. The Secretary of State's pre-circulation review under 21-A M.R.S. §901(3-A) addresses only drafting form/conventions, not subject matter."
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "required",
+  "operatingStance": "Per-signature / paid circulation is PERMITTED in Maine. Maine is NOT among the ~10 states that ban per-signature pay for initiatives (AZ, AR, FL, MT, ND, OK, OR, SD, UT, WY per Ballotpedia). 21-A M.R.S. §903-A(5) expressly contemplates paid circulators, requiring only a disclosure: 'A person or organization that pays individuals to circulate petitions, other than by reimbursing",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Electronic file priced by record count (tiered): $11 for 1-1,000 records up to $2,200 for 900,001+ records. A full statewide file (Maine has ~1M+ registered voters) falls in the top tier = $2,200. Printed/PDF report: $1 first page + 25 cents/additional page ($0.75/page for mailing labels). Up to 11 free updates in the 12 months after purchase.",
+  "whoCanObtain": "Eligibility-gated and political-use-only. The Party/Campaign Use Voter File (21-A MRS §196-A(1)(B)) is available to parties, candidates, issue campaigns, GOTV efforts directly related to a campaign, and currently-serving elected/appointed officials. The requestor must submit proof they are authorized by the candidate, party, or issue campaign (e.g., an authorization letter). Members of the public may obtain the same file only via a written request to the Secretary of State for a purpose protected by the NVRA. Default CVR data is otherwise confidential, accessible only by state/municipal election officials.",
+  "useRestrictions": "Strict. Information from the CVR may not be used for any commercial purpose or any solicitation not directly related to political-party/campaign/GOTV activities (or NVRA-protected purposes); selling or distributing the data to others for commercial use is prohibited; officials may not transfer their copy to another entity. Discrimination on the basis of disability, race, color, age, sex, sexual orientation, religion, ancestry, or national origin using the data is prohibited. Civil penalties: up to $1,000 for a first offense and up to $5,000 for each subsequent offense (21-A MRS §196-A, sub-§5).",
+  "requestProcess": "Application form + payment + proof of authorization. The \"Request for Obtaining Data from Maine CVR\" form must be typed or completed in ink, signed, and submitted to the Secretary of State (Division of Elections) by mail (CVR Manager, 184 State House Station, Augusta, ME 04333-0184), fax (287-6545), or scanned email to cec.elections@maine.gov (must contain an actual handwritten signature). Campaign requestors must attach written proof of authorization from the candidate/party/campaign. Fees must be paid before data release. Office responds within 5 business days. Electronic data is delivered on physical media (thumb drive); email transfer of the data is not permitted.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.maine.gov/sos/elections-voting/voter-data",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "Primary sources are the Maine Secretary of State (the controlling authority for ballot measures) and Title 21-A, Chapter 11 (statute), both citing the Maine Constitution, Article IV, Part Third, §§17-20, 22. The current valid-signature requirement is the SoS's official published figure: 67,682 = 10% of total votes cast for Governor at the November 8, 2022 General Election (implies ~676,820 votes cast for Governor in 2022). This same 10% base governs both the direct initiative"
+ },
+ "citations": [
+  {
+   "field": "signatureRequirement",
+   "url": "https://www.maine.gov/sos/elections-voting/peoples-veto-or-citizens-initiative-resources/deadlines-for-current-citizen-initiatives",
+   "quote": "The number of signatures currently required is 67,682. (10% of the total votes cast for Governor at the November 8, 2022 General Election). -- Constitution of Maine, Article 4, Part Third, Section 18, sub-section 2."
+  },
+  {
+   "field": "deadline",
+   "url": "https://www.maine.gov/sos/elections-voting/peoples-veto-or-citizens-initiative-resources/citizen-initiative-application-packet",
+   "quote": "First Regular Session: By 5:00 p.m. on or before the 50th day after the convening of the Legislature. The first regular session convenes on the first Wednesday of December following the General Election. Second Regular Session: By 5:00 p.m. on or before the 25th day after the convening of the Legislature. The second regular session convenes on the first Wednesday after the first Tuesday in January in the even-numbered year following the General Election. -- Constitution of Maine, Article 4, Part Third, Section 18, sub-section 2."
+  },
+  {
+   "field": "deadline (2026 cycle, now past)",
+   "url": "https://www.maine.gov/sos/elections-voting/peoples-veto-or-citizens-initiative-resources/deadlines-for-current-citizen-initiatives",
+   "quote": "The 2026 filing deadline for initiative petitions is February 2, 2026."
+  },
+  {
+   "field": "circulation period",
+   "url": "https://www.maine.gov/sos/elections-voting/peoples-veto-or-citizens-initiative-resources/process-for-peoples-veto-or-citizens-initiative",
+   "quote": "The date the approved form of the petition is provided to the applicant is the date of issuance. The petition may be circulated for 18 months from the date of issuance."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec903-A.html",
+   "quote": "C. That the circulator was a resident of the State and a registered voter in the State at the time of circulating the petition;"
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec903-A.html",
+   "quote": "Circulator payment. A person or organization that pays individuals to circulate petitions, other than by reimbursing travel expenses, shall provide a list of those individuals to the Secretary of State along with information indicating the method by which the individuals are being compensated when the petitions are filed pursuant to the Constitution of Maine, Article IV, Part Third, Section 17 or 18."
+  },
+  {
+   "field": "circulator oath / notary requirement",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec902.html",
+   "quote": "The circulator of a petition must sign the petition and verify by oath or affirmation before a notary public or other person authorized by law to administer oaths or affirmations that the circulator personally witnessed all of the signatures to the petition and that to the best of the circulator's knowledge and belief each signature is the signature of the person whose name it purports to be"
+  },
+  {
+   "field": "process / measure types (direct initiative + people's veto)",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec901.html",
+   "quote": "To initiate proceedings for a people's veto referendum or the direct initiative of legislation, provided in the Constitution of Maine, Article IV, Part Third, Sections 17 and 18, a voter shall submit a written application to the Department of the Secretary of State on a form designed by the Secretary of State."
+  },
+  {
+   "field": "people's veto application filing window",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec901.html",
+   "quote": "An application for a people's veto referendum petition must be filed in the Department of the Secretary of State within 10 business days after adjournment of the legislative session at which the Act in question was passed. A direct initiative of legislation must meet the filing deadlines specified in the Constitution of Maine, Article IV, Part Third, Section 18."
+  },
+  {
+   "field": "singleSubject (review is form-only, not subject)",
+   "url": "https://legislature.maine.gov/statutes/21-A/title21-Asec901.html",
+   "quote": "The Secretary of State shall review the proposed law for a direct initiative of legislation within 15 business days after receipt of the application and either reject the application or provide a first revised draft of the initiative legislation to the applicant within that time. The Secretary of State may reject the application if the Secretary of State determines that the proposed law: A. Does not conform to the form prescribed by the Secretary of State; or B. Does not conform to the essential aspects of the drafting conventions established for the Maine Revised Statutes."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

@@ -1,0 +1,186 @@
+{
+  "jurisdiction": "Arkansas",
+  "signaturesHeadline": "AR: 5,000 valid signatures (statewide, no distribution) — AUTO-LIVE",
+  "deadlineHeadline": "AR: petition due noon, first Monday of August (2024 = Aug 5); electors certified by Sep 15 — AUTO-LIVE",
+  "riskNote": "Core burden (5,000 sigs / first-Monday-of-August / no distribution / paper / no fee) is fully grounded and AUTO-LIVE. Open risk is procedural: circulator qualifications and notary/affidavit for the PRESIDENTIAL petition are not settled by primary sources (the standard SoS affidavit is expressly carved out for President/VP) — held conservative pending SoS confirmation; over-comply (qualified-elector circulators + notarize) until answered.",
+  "sosInquiries": [
+    "For an INDEPENDENT (and political-group) presidential/VP ballot-access petition under Ark. Code Ann. 7-8-302(5)-(6): does the Secretary of State impose any qualifications on the person who CIRCULATES the petition (e.g., must the circulator be a registered Arkansas voter, an Arkansas resident, or at least 18)?",
+    "Does the SoS-prescribed presidential/VP petition form under 7-8-302(5)-(6) require a notarized circulator affidavit or any sworn/witnessed verification of the signatures, given that the standard independent-candidate signature-collection affidavit is carved out 'except President/Vice President'?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "5,000 valid signatures of qualified electors (registered Arkansas voters), statewide. Flat statutory number under Ark. Code Ann. 7-8-302(6)(A) (independent) and 7-8-302(5)(B) (political group); does not recompute per cycle. Raised from 1,000 to 5,000 by HB1338 (signed Mar 8, 2021).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.96,
+      "note": "All 3 citations verbatim-confirmed: FindLaw 7-8-302(6)(A) (current as of Mar 28, 2024), ballot-access.org HB1338 post, and Ballotpedia. Independently re-derived 5,000 for the independent presidential petition; the 10,000 figure correctly distinguished as the new-PARTY petition (7-7-205 / Amendment), not the independent/group presidential petition. No litigation or post-2024 change found."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Petition filed with the Secretary of State by noon on the first Monday of August of the election year (2024 cycle = August 5, 2024; recomputes per cycle). SoS verifies sufficiency within 10 days. Separately, qualifying independent candidate must certify the elector slate to the SoS by September 15 (7-8-302(6)(C)).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "Statute quote verbatim in FindLaw 7-8-302(6)(A) and (6)(C); NASS independent-candidate line verbatim-confirmed (lines 117-119 of the 07/29/24 NASS summary). Verified independently that first Monday of August 2024 = Aug 5, 2024. Sep 15 elector-certification correctly sourced to (6)(C)."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. 5,000 signatures collected statewide ('qualified electors of the state'); no per-congressional-district or per-county distribution requirement in Ark. Code Ann. 7-8-302.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.94,
+      "note": "Statute quote verbatim in FindLaw; NASS describes a single statewide petition. Re-read of full 7-8-302 text confirms no geographic-distribution clause for the independent or group presidential petition."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Treat circulators of the presidential petition as required to be qualified Arkansas electors: U.S. citizen, Arkansas resident, at least 18, and lawfully registered to vote — the strictest generally-applicable standard — UNTIL the SoS confirms whether any (or no) circulator qualifications apply to the President/VP petition specifically.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.6,
+      "note": "Both SoS-handbook quotes confirmed verbatim (the 'except President/Vice President' carve-out at handbook p. re line 2244-2245, and the 'qualifications set out above, for purposes of signing the petition' qualified-elector list at lines 657-672). The draft's own value is UNKNOWN, which is honest: 7-8-302 sets no circulator qualifications and the standard affidavit is carved out for President/VP, so retrieval cannot settle what (if anything) the SoS-prescribed presidential form requires of a circulator. Over-comply with the strictest elector standard and confirm with SoS rather than rely on UNKNOWN."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Assume the SoS-prescribed presidential/VP petition form MAY require a notarized circulator affidavit or sworn verification; notarize the petition (and have each circulator execute any verification the form provides) UNTIL the SoS confirms no such requirement applies to the President/VP petition.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.58,
+      "note": "Citations verbatim-confirmed (SoS handbook 'except President/Vice President'; statute 7-8-302(5)(D) oath confirmed in FindLaw, applying to the GROUP certificate of choice, not the petition). But the draft's 'None statutorily required' is an inference from statutory silence plus an affidavit CARVE-OUT — and the thing carved out is precisely the notarized signature-collection affidavit. Whether the SoS form for the presidential petition nonetheless requires notarization is not settled by primary sources. Strictest defensible posture: notarize unless SoS says otherwise; never risk rejection."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Physical petition filed with the Secretary of State; no remote-online or in-person-digitized capture path exists for the independent or minor-party presidential petition.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "Statute 'file a petition ... at the time of filing' verbatim in FindLaw; SoS handbook group-presidential 'filing a petition with the Secretary of State' confirmed verbatim (lines 1200-1203). No statutory or handbook reference to any electronic/online signature system for this petition."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. No filing fee in lieu of or in addition to the 5,000-signature petition for an independent or minor-party presidential candidate; 7-8-302 provides only the petition route and specifies no fee. (Arkansas party filing fees apply only to candidates seeking a recognized party's primary nomination.)",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.88,
+      "note": "Statute quote verbatim in FindLaw (petition-only route, no fee provision in 7-8-302); Ballotpedia '5,000 signatures' / 'no write-in' quote confirmed verbatim. Re-read of full 7-8-302 confirms no fee alternative is created or required for the independent/group presidential path."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found; per-signature ban (§7-9-601) is initiative/referendum-only",
+    "note": "For an INDEPENDENT PRESIDENTIAL candidate, the controlling petition statute is Ark. Code § 7-8-302 (Chapter 8, Presidential Electors), whose full text addresses only the filing deadline, the 5,000 qualified-elector signature requirement, SoS verification, and elector certification — it is SILENT on whether circulators may be paid, paid per signature, or be non-residents (it only requires that the 5,000 SIGNERS be qualified electors of the state). Arkansas's per-signature ban, paid-canvasser registration rules, and circulator residency/citizenship requirement all live in Chapter 9 (Initiatives, Referenda, and Constitutional Amendments) and are textually limited to \"a statewide initiative petition or statewide referendum petition\" (§ 7-9-601), so they do NOT carry over to candidate petitions. Candidate-petition circulator compensation is therefore UNADDRESSED in the Arkansas election code; treat conservatively.",
+    "sosInquiry": "For an INDEPENDENT presidential nominating petition under Ark. Code § 7-8-302, may a campaign pay petition circulators on a per-signature basis, may it pay them at all (hourly/salary), and must a circulator be an Arkansas resident or registered voter? (Note: Ark. Code § 7-9-601's per-signature ban and the residency rule appear limited to statewide initiative/referendum petitions, not candidate petitions — please confirm whether any analogous restriction applies to candidate petitions.)",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-8-302.html",
+        "quote": "(6)(A) Persons desiring to have their names printed on the ballot as independent candidates for President of the United States and Vice President of the United States shall file a petition with the Secretary of State by noon on the first Monday of August of the year of the election. The petition shall contain at the time of filing the names of five thousand (5,000) qualified electors of the state declaring their desire to have printed on the ballot the names of the persons desiring their names to be printed on the ballot as independent candidates for President of the United States and Vice President of the United States."
+      },
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-9-601/",
+        "quote": "(g)(1) It is unlawful for a person to pay or offer to pay a person, or receive payment or agree to receive payment, on a basis related to the number of signatures obtained on a statewide initiative petition or statewide referendum petition. (2) This subsection does not prohibit compensation for circulating petitions but only compensation for obtaining signatures when the compensation or compensation level is impacted by or related to the number of signatures obtained."
+      },
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-9-601/",
+        "quote": "(a)(1) A person shall not provide money or anything of value to another person for obtaining signatures on a statewide initiative petition or statewide referendum petition unless the person receiving the money or item of value meets the requirements of this section."
+      },
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-7-103/",
+        "quote": "(a)(1) A person desiring to have his or her name placed upon the ballot as an independent candidate without political party affiliation for any United States office other than President of the United States or Vice President of the United States or state, county, township, or district office in any general election in this state shall file ... (2) Each elector signing the petition shall be a registered voter ..."
+      }
+    ],
+    "initiativePrior": "banned"
+  },
+  "voterFile": {
+    "tier": "LOW_COST",
+    "cost": "Up to $50 per county on electronic media (≤5,000 voters $10; 5,001–25,000 $25; >25,000 $50); printed lists ≤2¢/name. No statewide SoS file — assembled county-by-county across 75 county clerks (Ark. Code 7-5-109).",
+    "whoCanObtain": "General public. Ark. Code 7-5-109 says the county clerk \"shall provide the list\" upon request and imposes no eligibility limit (not restricted to candidates, committees, parties, or political use). The list is a public record subject only to redaction of \"secure voter\" addresses.",
+    "useRestrictions": "The statute imposes no commercial-use ban or political-use-only limit on the registered voter list itself. The one carve-out is \"secure voters\": county clerks \"shall not reproduce any address of a secure voter in any format unless otherwise authorized by law,\" and all furnished lists exclude secure-voter addresses (Ark. Code 7-5-109(a)(2), (c)). No penalty for ordinary use is specified in this section.",
+    "requestProcess": "Written / in-person request to the county clerk in each county (the statewide list is assembled county-by-county; the statewide voter registration database is maintained centrally but the statutory access mechanism is the county clerk). No notarized affidavit or sworn statement of permitted use is required by statute. Delivered on compact disc or other electronic medium, or as a printed list.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-5-109/",
+    "note": "Arkansas voter registration lists are obtained from county clerks under Ark. Code 7-5-109 at low statutory fee caps (max $50 per county on electronic media), and the list includes \"at least the names, addresses, and precinct numbers of the voters\" - sufficient to match petition signers to registered voters. There is no free instant statewide download from the Secretary of State; a true statewide file means requesting from each of the 75 county clerks (the SOS maintains the central voter-registration database but the statutory list-access mechanism is the county clerk).",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-5-109/",
+        "quote": "(c)(1)(A) Upon request every county clerk who maintains on computer the list of registered voters within the county shall provide the list on compact disc or other electronic medium, except the address of registered voters whose information is contained as a secure voter."
+      },
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-5-109/",
+        "quote": "(B) The list of registered voters, excluding the addresses of registered voters listed as secure voters, shall include at least the names, addresses, and precinct numbers of the voters."
+      },
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-5-109/",
+        "quote": "(2)(A) The fee for a list of registered voters ... of one (1) to five thousand (5,000) registered voters may be up to ten dollars ($10.00). (B) ... of five thousand one (5,001) to twenty-five thousand (25,000) registered voters may be up to twenty-five dollars ($25.00). (C) ... of more than twenty-five thousand (25,000) registered voters may be up to fifty dollars ($50.00)."
+      },
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-5-109/",
+        "quote": "(3) If a printed list of registered voters, excluding the addresses of registered voters listed as secure voters, is requested, the cost of the list may be no more than two cents (2¢) per name and address."
+      },
+      {
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-5-109/",
+        "quote": "(2) The county clerks of the several counties of the state shall not reproduce any address of a secure voter in any format unless otherwise authorized by law."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the rule binds signers only. The controlling statute for independent presidential candidates, Ark. Code § 7-8-302(6)(A), requires a petition signed by \"five thousand (5,000) qualified electors of the state\" but is entirely silent on who may circulate/collect the petition; it imposes no age, residency, registration, or citizenship requirement on the circulator. There",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "unknown",
+    "stateResidentRequired": "unknown",
+    "signerVsCirculator": "The strict requirement — being a \"qualified elector\"/registered voter of Arkansas — binds the SIGNER only (§ 7-8-302(6)(A) requires \"five thousand (5,000) qualified electors of the state\"). No statute imposes any eligibility requirement (age, registration, residency, citizenship) on the CIRCULATOR who collects the signatures; the presidential statute does not even require a circulator affidavit/wi",
+    "gate": "CONSERVATIVE-HOLD",
+    "note": "Independent PRESIDENTIAL petitions in Arkansas are governed by Ark. Code § 7-8-302(6)(A), NOT the general independent-candidate statute § 7-7-103 (which expressly excludes \"President of the United States or Vice President\"). § 7-8-302(6)(A) requires 5,000 qualified electors to SIGN (due by noon on the first Monday of August), and the Secretary of State verifies within 10 days. The statute says NOTHING about who may circulate/collect — no circulator eligibility, no circulator affidavit, no age/re",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "controlling statute / signer requirement (circulator silent)",
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-8-302/",
+        "quote": "(6)(A) Persons desiring to have their names printed on the ballot as independent candidates for President of the United States and Vice President of the United States shall file a petition with the Secretary of State by noon on the first Monday of August of the year of the election. The petition shall contain at the time of filing the names of five thousand (5,000) qualified electors of the state declaring their desire to have printed on the ballot the names of the persons desiring their names to be printed on the ballot as independent candidates for President of the United States and Vice President of the United States."
+      },
+      {
+        "field": "general independent statute expressly EXCLUDES president (so § 7-7-103 does not govern)",
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-7-103/",
+        "quote": "A person desiring to have his or her name placed upon the ballot as an independent candidate without political party affiliation for any United States office other than President of the United States or Vice President of the United States or state, county, township, or district office ..."
+      },
+      {
+        "field": "signer requirement binds signer only (no circulator clause) under § 7-7-103",
+        "url": "https://law.onecle.com/arkansas/title-7/7-7-103.html",
+        "quote": "(2) Each elector signing the petition shall be a registered voter ... (C)(i) The person filing for office as an independent candidate shall submit with the petition an affidavit that swears: (a) The signatures were not collected for a period over ninety (90) days; (b) The beginning and ending dates for collection of signatures on the petition are those as indicated on the affidavit; and (c) The signatures were collected and the petition was executed and submitted in compliance with the law."
+      },
+      {
+        "field": "strict circulator/canvasser regime limited to initiative/referendum, NOT candidate petitions",
+        "url": "https://codes.findlaw.com/ar/title-7-elections/ar-code-sect-7-9-601/",
+        "quote": "(a)(1) A person shall not provide money or anything of value to another person for obtaining signatures on a statewide initiative petition or statewide referendum petition unless the person receiving the money or item of value meets the requirements of this section. ... (c) As used in this section, \"paid canvasser\" means a person who is paid ... in exchange for soliciting a signature on a petition."
+      },
+      {
+        "field": "secondary source confirming signer (qualified voter) requirement; no circulator requirement noted",
+        "url": "https://ballotpedia.org/Ballot_access_requirements_for_presidential_candidates_in_Arkansas",
+        "quote": "An independent candidate can petition to have his or her name printed on the ballot as a candidate for the presidency. At least 5,000 qualified state voters must sign the petition, which must be submitted to the secretary of state by noon on the first Monday in August in the year of the election. The secretary of state must verify the petition within 10 days of filing."
+      }
+    ]
+  }
+}

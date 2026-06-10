@@ -1,0 +1,121 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "CA-IS",
+ "jurisdiction": "California",
+ "abbr": "CA",
+ "petitionType": "initiated-statute",
+ "signatures": {
+  "required": 546651,
+  "headline": "5 percent in the case of a statute, of the votes for all candidates for Governor at the last gubernatorial election (Cal. Const. art. II, § 8(b)); per Elec. Code § 9035, 5 percent of the voters for all candidates for Governor at the last gubernatorial election preceding issuance of the circulating title and summary. Base = Nov. 8, 2022 gubernatorial general election (10,933,009 total votes for Governor)."
+ },
+ "deadline": {
+  "headline": "180 days from the official summary date to file signatures with the county elections official (Elec. Code § 9014(b)); circulation may not begin before the official summary date (§ 9014(a)). Must qualify at least 131 days before the next statewide general election (Cal. Const. art. II, § 8(c)). 2026-cycle SoS suggested deadline (random-sample track): file signatures with countie"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "5 percent in the case of a statute, of the votes for all candidates for Governor at the last gubernatorial election (Cal. Const. art. II, § 8(b)); per Elec. Code § 9035, 5 percent of the voters for all candidates for Governor at the last gubernatorial election preceding issuance of the circulating title and summary. Base = Nov. 8, 2022 gubernatorial general election (10,933,009 total votes for Governor).",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "180 days from the official summary date to file signatures with the county elections official (Elec. Code § 9014(b)); circulation may not begin before the official summary date (§ 9014(a)). Must qualify at least 131 days before the next statewide general election (Cal. Const. art. II, § 8(c)). 2026-cycle SoS suggested deadline (random-sample track): file signatures with countie"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Yes. Cal. Const. art. II, § 8(d): \"An initiative measure embracing more than one subject may not be submitted to the electors or have any effect.\""
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Per-signature pay to CIRCULATORS is permitted in California — it is among the states that allow \"bounty\"/per-signature compensation, and is NOT in the ~10-state ban list (AZ, AR, FL, MT, ND, OK, OR, SD, UT, WY). The one relevant criminal statute, Elec. Code § 18603, bans paying the SIGNER (the voter) for their signature (\"Every person who offers or gives money or other valuable",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "$100 flat application fee for the statewide voter registration information file (one price for the whole state, regardless of record count). Single-voter records (≤10) are $30.00/record up to a $100 max. County-specific files vary by county.",
+  "whoCanObtain": "Eligibility-gated, NOT general public. Per the SoS: \"any candidate for federal, state, or local office, any committee for or against any initiative or referendum measure for which legal publication is made, any person for election, scholarly, journalistic, or political purposes, and any person for governmental purposes, as determined by the Secretary of State.\" A petition-signature-verification campaign/committee qualifies under the election/political-purpose and candidate/committee categories.",
+  "useRestrictions": "Strong. Use is limited to permitted (election/political/scholarly/journalistic/governmental) purposes only; commercial use is prohibited. Misuse is a crime: Elections Code 18109(a) makes it \"a misdemeanor for a person in possession of information ... obtained pursuant to Article 5 ... knowingly to use or permit the use of all or any part of that information for any purpose other than as permitted by law,\" and 18109(b) makes obtaining/using the data without first complying with the application requirements of 2188 a misdemeanor. The application must state intended use and is certified \"under penalty of perjury.\" Confidential-voter (Safe at Home, etc.) records are excluded entirely.",
+  "requestProcess": "Application form + approval (not an instant download). Submit the \"California Voter Registration File Request\" application (PDF) to the SoS. Elections Code 2188 requires a signed application stating the requestor's name, residence/business address, ID number, the specific information requested, and a statement of intended use, certified \"under penalty of perjury.\" SoS reviews to confirm the use is legally permitted: \"requests can take 7-14 business days to review and process.\" No refunds once sent.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.sos.ca.gov/elections/voter-registration/voter-registration-information-file-request",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "California has a strong direct citizen initiative process (Cal. Const. art. II, § 8) covering both initiated statutes (5%) and initiated constitutional amendments (8%), plus a veto/popular referendum on statutes (5%, art. II, § 9). All are DIRECT — no indirect/legislature-first path. Official SoS current-cycle valid-signature requirements: Initiated Constitutional Amendment 874,641; Initiated Statute 546,651; Referendum 546,651 — all keyed to the 10,933,009 votes cast for all"
+ },
+ "citations": [
+  {
+   "field": "signatureRequirement (ICA + statute)",
+   "url": "https://www.sos.ca.gov/elections/ballot-measures/how-qualify-initiative",
+   "quote": "The current initiative signature requirements according to the California Constitution, Article II, Section 8(b) and Elections Code section 9035 are as follows: Initiative Statute: 546,651 Initiative Constitutional Amendment: 874,641"
+  },
+  {
+   "field": "signatureBasis (initiative)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&division=&title=&part=&chapter=&article=II",
+   "quote": "An initiative measure may be proposed by presenting to the Secretary of State a petition that sets forth the text of the proposed statute or amendment to the Constitution and is certified to have been signed by electors equal in number to 5 percent in the case of a statute, and 8 percent in the case of an amendment to the Constitution, of the votes for all candidates for Governor at the last gubernatorial election."
+  },
+  {
+   "field": "signatureBasis (statutory base year)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=9035.",
+   "quote": "is certified to have been signed by registered voters equal in number to 5 percent in the case of a statute, and 8 percent in the case of an amendment to the Constitution, of the voters for all candidates for Governor at the last gubernatorial election preceding the issuance of the circulating title and summary for the initiative measure by the Attorney General."
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&division=&title=&part=&chapter=&article=II",
+   "quote": "An initiative measure embracing more than one subject may not be submitted to the electors or have any effect."
+  },
+  {
+   "field": "deadline (initiative 131-day submission)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&division=&title=&part=&chapter=&article=II",
+   "quote": "The Secretary of State shall then submit the measure at the next general election held at least 131 days after it qualifies or at any special statewide election held prior to that general election."
+  },
+  {
+   "field": "deadline (initiative 180-day circulation)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=9014.",
+   "quote": "a petition with signatures for a proposed initiative measure shall be filed with the county elections official not later than 180 days from the official summary date, and a county elections official shall not accept a petition for the proposed initiative measure after that period."
+  },
+  {
+   "field": "referendum (basis + requirement + 90-day deadline)",
+   "url": "https://www.sos.ca.gov/elections/ballot-measures/referendum",
+   "quote": "The petitions must be signed by registered voters in an amount equal to at least 5% of the votes cast for all candidates for Governor at the last gubernatorial election, which was held on November 8, 2022. The total number of valid signatures required to qualify a referendum for the ballot is 546,651. (Cal. Const., art. II, § 9(b).)"
+  },
+  {
+   "field": "referendum (90-day window)",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displayText.xhtml?lawCode=CONS&division=&title=&part=&chapter=&article=II",
+   "quote": "A referendum measure may be proposed by presenting to the Secretary of State, within 90 days after the enactment date of the statute, a petition certified to have been signed by electors equal in number to 5 percent of the votes for all candidates for Governor at the last gubernatorial election, asking that the statute or part of it be submitted to the electors."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=102.",
+   "quote": "A person shall not circulate a state or local initiative, referendum, or recall petition or nominating paper unless the person is 18 years of age or older."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=ELEC&sectionNum=18603.",
+   "quote": "Every person who offers or gives money or other valuable consideration to another in exchange for his or her signature on a state, county, municipal, or district initiative, referendum, or recall petition is guilty of a misdemeanor."
+  },
+  {
+   "field": "base year / vote total (corroboration)",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_California",
+   "quote": "| 2023-2026 | 10,933,009 (2022) | 21,940,274 (2022) | 874,641 | 4.0% | 546,651 | 2.5% |"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

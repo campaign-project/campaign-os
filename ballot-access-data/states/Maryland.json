@@ -1,0 +1,196 @@
+{
+  "jurisdiction": "Maryland",
+  "signaturesHeadline": "10,000 valid signatures statewide (firm cap; the lesser-of-10,000-or-1% formula resolves to the 10,000 ceiling for President) — AUTO-LIVE",
+  "deadlineHeadline": "Declaration of Intent by 1st Mon in July; Certificate of Candidacy + petition by 5pm 1st Mon in Aug (Aug 5, 2024 last cycle); electors certified ≥30 days pre-election — AUTO-LIVE",
+  "riskNote": "6 of 7 fields AUTO-LIVE on grounded primary sources (EL 5-703, 6-201/203/204, 8-502/503, 4-102, SBE pages). Sole hold: circulatorEligibility — the negative claim that out-of-state/non-registered circulators are permitted is literally accurate in statute and COMAR but is a litigated, risk-bearing point; over-comply by using MD-registered-voter circulators pending SBE confirmation.",
+  "sosInquiries": [
+    "For an independent/unaffiliated presidential candidate's General Election Candidate Nomination Petition under EL 5-703, may a petition circulator be a non-Maryland resident and/or a person who is not a registered Maryland voter, or does the State Board require circulators to be Maryland registered voters/residents in practice or by any policy beyond EL 6-204 and COMAR 33.06.03.07-.08?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "10,000 valid statewide signatures. Statutory formula: lesser of 10,000 registered voters OR 1% of registered voters eligible to vote for the office, floor of 250; for President (statewide) 1% far exceeds 10,000, so the binding number is the 10,000 cap. Count fixed as of January 1 of the primary-election year. New-party path under EL 4-102 is also 10,000.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.95,
+      "note": "All 4 citations verbatim: EL 5-703(e)(1) lesser-of-10,000-or-1%/250 floor; EL 5-703(e)(3) Jan 1 of primary year; SBE candidacy page explicitly states 10,000 for unaffiliated statewide candidates; Ballotpedia corroborates. President-is-statewide so cap binds is settled by SBE's own published guidance, not a contested interpretation. EL 4-102(b)(2)(i) confirms new-party 10,000."
+    },
+    {
+      "field": "deadline",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Two statutory deadlines: (1) Declaration of Intent not later than the first Monday in July of the general-election year; (2) Certificate of Candidacy AND completed nomination petition by 5 p.m. on the first Monday in August. For President, the slate of presidential electors must be certified to the State Board at least 30 days before the general election. 2024 first Monday in August = Aug 5, 2024 (verified).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.93,
+      "note": "EL 5-703(c)(3)(i), 5-703(d)(1), 5-703(f)(1), and 8-503(c)(3) all verbatim. SBE 2026 candidacy page corroborates (Declaration July 6, 2026; second deadline Aug 3, 2026). Calendar-verified Aug 5, 2024. Statutory deadlines, current. Minor non-material nuance: SBE notes some Aug-deadline documents need not be filed in person, but the in-person Certificate-of-Candidacy point belongs to captureMode and does not change the dates."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None. The unaffiliated/independent presidential 10,000-signature petition is statewide with no per-congressional-district or per-county distribution quota. The 400-signatures-per-congressional-district rule (EL 8-502) applies only to the principal-party PRIMARY ballot, not the independent general-election route.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.92,
+      "note": "EL 5-703(e)(1) contains no distribution language (verbatim). EL 8-502(b)(2) verbatim confirms the 400-per-district rule is expressly scoped to placement on the PRIMARY ballot for principal-party presidential candidates. Clear statutory reading; no interpretation needed."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "Circulator must be at least 18 years old when any covered signature is affixed and must be the person in whose presence each signature was affixed and who observed each signing (EL 6-204). STRICTEST DEFENSIBLE POSTURE: although neither EL 6-204 nor COMAR 33.06.03.07/.08 textually requires the circulator to be a Maryland registered voter or resident, treat circulators as Maryland registered voters (and require their MD residence address per COMAR 33.06.03.07) to eliminate any residency-challenge risk to the ballot line, pending SBE confirmation. Each SIGNER must be a registered voter assigned to the county on the signature page (EL 6-203(b)(2)).",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.8,
+      "note": "Affirmative claims grounded and correct: EL 6-204(c) 18+ verbatim; 6-204(a) observe-each-signature verbatim; 6-203(b)(2) signer county-registration verbatim. COMAR 33.06.03.07 requires the circulator's residence address; COMAR 33.06.03.08 requires the affidavit to attest signers are registered voters in the State — neither imposes a circulator residency/registration requirement. The draft's NEGATIVE claim (out-of-state/non-registered circulators allowed) is literally accurate but is a heavily litigated point nationally and SBE practice on out-of-state circulators is not settled by retrieved text; under never-risk-ballot-access this requires SBE confirmation, hence HOLD."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Circulator affidavit (NOT notarized). Each signature page must carry an affidavit executed by the circulator who personally observed every signature on that page being affixed; a signature is validated and counted only if attested by that affidavit. No notary is required for petition signature pages. (The Certificate of Candidacy and Financial Disclosure are notarized for state office, but President has no financial-disclosure requirement.)",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "EL 6-203(b)(4) (attested by affidavit on the page), 6-201(c)(6) (space for circulator affidavit), 6-204(b) (affidavit contents by regulation) all verbatim. COMAR 33.06.03.08 confirms a signed-and-dated circulator affidavit, not a notarized one. SBE requirements table shows President = No financial disclosure, supporting the notary aside."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper. Signatures collected on paper State-Board-prescribed pages (the 'General Election Candidate Nomination Petition' for unaffiliated candidates) and filed with the appropriate board; the Certificate of Candidacy must be filed in person and is not available online. Maryland's online signing system covers only statewide referendum/ballot-question petitions — there is NO online/remote digital signature system for an independent presidential candidate nomination petition.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.88,
+      "note": "forms/petitions.html verbatim: Certificate of Candidacy filed in person, form not available online; 'Unaffiliated Candidates' lists the General Election Candidate Nomination Petition PDF. EL 5-703 'in the form prescribed by the State Board' verbatim. Online petition forms on the SBE forms page are limited to referendum/charter/new-party/local petitions; no online candidate-petition system exists. Paper-only is current."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "No filing fee for President (and Vice President); the SBE filing-fee schedule lists no fee for President, and there is no fee-in-lieu-of-signatures option. A candidate seeking nomination by petition may not be charged a fee for filing the declaration of intent (EL 5-703(c)(4)). There is no money alternative to the 10,000-signature requirement.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.88,
+      "note": "SBE requirements.html Federal Offices table shows President with a blank Filing Fee column (verbatim row matches). EL 5-703(c)(4) verbatim: no fee for the declaration of intent. Maryland has no fee-in-lieu-of-signatures mechanism; the petition is the sole route. Correct and current."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "yes",
+    "circulatorResidency": "not_required",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "paid circulation permitted; per-signature structure unaddressed for candidate petitions (no compensation-structure statute, no per-signature ban)",
+    "note": "Maryland clearly permits PAID circulators on petitions generally (SBE FAQ, per Ficker v. Montgomery County), and circulators need NOT be Maryland residents or registered voters, so a national paid pool can legally work there. However, NO Maryland statute or official guidance specifically addresses the PER-SIGNATURE compensation STRUCTURE for candidate/nominating petitions — the §16-401 \"thing of value\" prohibition bars paying the SIGNER, not the circulator, and the SBE FAQ confirms paying people to collect signatures is allowed but is silent on per-signature pay. There is no Maryland per-signature ban (Ballotpedia lists MD as \"Permitted\"), but because per-signature specifically is unaddressed for candidate petitions, hold and confirm before structuring pay that way.",
+    "sosInquiry": "For an unaffiliated presidential candidate's nominating petition filed under Election Law §5-703/Title 6, may the campaign compensate petition circulators on a per-signature basis (e.g., $X per valid signature), or must circulator pay be structured as hourly/salary/bonus only?",
+    "citations": [
+      {
+        "url": "https://elections.maryland.gov/petitions/Petition%20Signature%20Gathering%20FAQ.pdf",
+        "quote": "Can an organization pay people to collect petition signatures? Yes – per U.S. District Court decision – Ficker vs. Montgomery County, but no one may receive any money or other thing of value in return for signing the petition. Election Law, Section 16-401(a)(2)."
+      },
+      {
+        "url": "https://elections.maryland.gov/petitions/Petition%20Signature%20Gathering%20FAQ.pdf",
+        "quote": "Must a petition circulator be a registered voter of Maryland? No.  Must a petition circulator be a resident of Maryland? No."
+      },
+      {
+        "url": "https://elections.maryland.gov/petitions/Petition%20Signature%20Gathering%20FAQ.pdf",
+        "quote": "Can an organization pay a consultant to administer and oversee the petition process? Yes."
+      },
+      {
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=16-401&enactments=false",
+        "quote": "A person may not willfully and knowingly: (1) give, transfer, promise, or offer anything of value for the purpose of inducing another person to sign or not sign any petition; (2) request, receive, or agree to receive, anything of value as an inducement to sign or not to sign any petition;"
+      },
+      {
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=6-204&enactments=false",
+        "quote": "(a) Each signature page shall contain an affidavit made and executed by the individual in whose presence all of the signatures on that page were affixed and who observed each of those signatures being affixed. ... (c) A circulator must be at least 18 years old at the time any of the signatures covered by the affidavit are affixed."
+      },
+      {
+        "url": "https://codes.findlaw.com/md/election-law/md-code-elec-law-sect-5-703.html",
+        "quote": "A candidate for public office may be nominated by petition if the candidate is not affiliated with any political party ... Petitions for nomination by petition must be filed as required in Title 6 of this article."
+      },
+      {
+        "url": "https://ballotpedia.org/Pay-per-signature_for_ballot_initiative_signature_gatherers",
+        "quote": "Maryland ... Permitted ... Offenses and Penalties Subtitle 4 - Petitions Section 16-401"
+      },
+      {
+        "url": "https://ballotpedia.org/Ficker_v._Montgomery_County",
+        "quote": "Ficker v. Montgomery County is a 1985 ruling of a federal court, the United States District Court for the District of Maryland, that found that a provision in the Maryland election law that prohibited paying individuals to collect signatures on a referendum petition violated the United States Constitution."
+      }
+    ],
+    "initiativePrior": "permitted"
+  },
+  "voterFile": {
+    "tier": "RESTRICTED",
+    "cost": "$125.00 per statewide list (or $75.00 each for a single county, district, or municipality list); one application required per list",
+    "whoCanObtain": "Qualified (registered) Maryland voters only, for electoral-process purposes. The State Board of Elections \"is authorized to sell, to qualified voters, their voter registration lists.\" Campaigns, committees, candidates, and petition circulators qualify because circulating a petition and qualifying as a candidate are expressly listed permitted uses.",
+    "useRestrictions": "Restricted to the \"electoral process\" as defined in COMAR 33.03.02.01B(1). The applicant must sign a statement, under penalty of perjury, that the list will not be used \"for commercial solicitation or any other purpose not related to the electoral process.\" Permitted uses explicitly include registering voters, forming a political party, qualifying as a candidate, circulating a petition, conducting elections/recounts, casting/counting ballots, and financing a campaign. The data may NOT be used \"for investigations into illegal or suspected illegal infractions or violations of voters' behaviors in a specific election.\"",
+    "requestProcess": "Application form (online at data_form.html, or downloadable PDF) + a signed statement under penalty of perjury of permitted use + payment via the Velocity payment site. Data is provided within 10 working days after the application and payment are received, delivered by FTP, mailed flash drive, or in-person flash-drive pickup. Applications must be received on or before the advanced voter registration deadline (21 days before an election) or after election day; applications received after the advanced deadline are returned.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://elections.maryland.gov/voter_registration/data.html",
+    "note": "Maryland sells the statewide voter registration list only to qualified (registered) voters for electoral-process use, for $125 flat per statewide list, requiring an application plus a sworn (penalty-of-perjury) non-commercial-use statement; petition circulation is an expressly permitted use, so a campaign verifying petition signatures qualifies. Delivered within 10 working days via FTP or flash drive; the page does not enumerate fields, but the Maryland statewide list is the standard registration file (name, residential address, party/status) used precisely for signer-to-voter matching.",
+    "citations": [
+      {
+        "url": "https://elections.maryland.gov/voter_registration/data.html",
+        "quote": "The State Board of Elections maintains voter registration files for 24 local boards of elections and is authorized to sell, to qualified voters, their voter registration lists (mainly statewide registration lists)."
+      },
+      {
+        "url": "https://elections.maryland.gov/voter_registration/data.html",
+        "quote": "Before we will process your application, you must sign a statement, under penalty of perjury, that you will not use the list for commercial solicitation or any other purpose not related to the electoral process. You can use the data to register voters, form a political party, qualify as a candidate for public office, circulate a petition, conduct elections and recount, cast and count ballots, finance a campaign, and other activities that meet the definition of \"electoral process\" as defined in COMAR 33.03.02.01B(1). You cannot use this data for investigations into illegal or suspected illegal infractions or violations of voters' behaviors in a specific election."
+      },
+      {
+        "url": "https://elections.maryland.gov/voter_registration/data.html",
+        "quote": "Cost: $125.00 for each statewide list or $75.00 each for a single county, district, or municipality list."
+      },
+      {
+        "url": "https://elections.maryland.gov/voter_registration/data.html",
+        "quote": "We will provide the data you requested within 10 working days after we receive the application and payment. We can provide the data via FTP, we can mail you the data (on a flash drive), or you can pick up a flash drive with the requested data."
+      },
+      {
+        "url": "https://elections.maryland.gov/voter_registration/data.html",
+        "quote": "Applications must be received on or before the advanced voter registration deadline (21 days before an election) or after election day. Applications received after the advanced voter registration deadline will be returned to the applicant."
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 18,
+    "ageRule": "Md. Election Law §6-204(c) expressly requires: \"A circulator must be at least 18 years old at the time any of the signatures covered by the affidavit are affixed.\" This is the only eligibility qualification the statute imposes on circulators (the affiant/witness who observes and attests to the signatures under §6-204(a)). The strict registered-voter requirement appears separately and binds only th",
+    "minorCanCirculate": "no",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNER must be a registered voter assigned to the named county (§6-203(b)); CIRCULATOR need only be 18+ (§6-204(c)) — no voter-registration, citizenship, or residency requirement.",
+    "gate": "AUTO-LIVE",
+    "note": "Maryland's general petition statute (Election Law Title 6) governs the independent presidential nominating petition (a petition for new party/independent ballot access under Title 4/5 uses this §6-2xx machinery). The circulator is defined functionally in §6-204(a) as \"the individual in whose presence all of the signatures on that page were affixed and who observed each of those signatures being affixed\" — i.e., the witness who executes the affidavit on each signature page (§6-201(c)(6)). §6-204(",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorMinAge / circulatorAgeRule / minorCanCirculate",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=6-204&enactments=false",
+        "quote": "(c) A circulator must be at least 18 years old at the time any of the signatures covered by the affidavit are affixed."
+      },
+      {
+        "field": "signerVsCirculator (circulator = affiant/witness; no voter/citizen/resident qualification stated)",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=6-204&enactments=false",
+        "quote": "(a) Each signature page shall contain an affidavit made and executed by the individual in whose presence all of the signatures on that page were affixed and who observed each of those signatures being affixed. (b) The affidavit shall contain the statements, required by regulation, designed to assure the validity of the signatures and the fairness of the petition process. (c) A circulator must be at least 18 years old at the time any of the signatures covered by the affidavit are affixed."
+      },
+      {
+        "field": "circulatorMustBeRegisteredVoter / signerVsCirculator (registered-voter requirement binds the SIGNER, not the circulator)",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=6-203&enactments=false",
+        "quote": "(b) The signature of an individual shall be validated and counted if: ... (2) the individual is a registered voter assigned to the county specified on the signature page and, if applicable, in a particular geographic area of the county; ... (4) the signature is attested by an affidavit appearing on the page on which the signature appears"
+      },
+      {
+        "field": "circulator role defined by affidavit on signature page",
+        "url": "https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gel&section=6-201&enactments=false",
+        "quote": "(c) Each signature page shall contain: ... (6) a space for the required affidavit made and executed by the circulator"
+      }
+    ]
+  }
+}

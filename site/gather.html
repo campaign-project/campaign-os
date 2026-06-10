@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mainframe">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>CampaignOS Gather — Next Best Move</title>
+<meta name="description" content="The CampaignOS Gather field app: your single highest-impact next move for ballot-access signature gathering, routed by the optimizer." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='2.5' y='2.5' width='27' height='27' rx='7' fill='%23090c11' stroke='%23334' stroke-width='1.6'/><path d='M9.5 16.4l4.2 4.3 8.8-9.1' fill='none' stroke='%2336f2c0' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/><circle cx='9.5' cy='9.5' r='1.6' fill='%23ffb24d'/></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=IBM+Plex+Mono:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="gather.css" />
+</head>
+<body class="gbody">
+
+<canvas id="grid-net" aria-hidden="true"></canvas>
+<div class="atmos" aria-hidden="true">
+  <div class="atmos__glow atmos__glow--mint"></div>
+  <div class="atmos__glow atmos__glow--amber"></div>
+  <div class="atmos__grid"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<a class="gback" href="index.html">← CampaignOS</a>
+
+<div class="stage">
+  <p class="stage__cap" aria-hidden="true">CampaignOS <b>Gather</b> — the field app a volunteer opens</p>
+  <div class="phone">
+    <div class="screen">
+
+      <div class="statusbar"><span id="clock">9:41</span><span class="sb-r">▟ ▟ ▟  ⚡ 86%</span></div>
+
+      <header class="gtop">
+        <span class="gbrand"><span class="gdot"></span> Gather</span>
+        <span class="gscore" title="civic score">◇ <b>1,240</b> · 🔥 6</span>
+      </header>
+
+      <div class="gctx">
+        <label class="gpick">I'm in <select id="state" aria-label="Your state"></select></label>
+        <div class="gmode" id="mode" role="tablist" aria-label="Mode">
+          <button class="gseg" data-mode="volunteer" aria-selected="true">volunteer</button>
+          <button class="gseg" data-mode="paid" aria-selected="false">paid</button>
+        </div>
+      </div>
+
+      <main class="gmain">
+        <div class="gnudge" id="nudge" hidden></div>
+
+        <section class="move" id="move">
+          <div class="move__klabel">next best move · next 2 hours</div>
+          <h1 class="move__opp" id="opp">—</h1>
+          <div class="move__yield"><b id="yield">—</b> valid signatures</div>
+
+          <div class="move__toward" id="toward"></div>
+
+          <dl class="move__meta" id="meta"></dl>
+
+          <div class="move__links">
+            <button class="chiplink" type="button">eligibility ▸</button>
+            <button class="chiplink" type="button">script ▸</button>
+            <button class="chiplink" type="button">safety ▸</button>
+          </div>
+
+          <button class="accept" id="accept">Accept &amp; start <span>→</span></button>
+        </section>
+
+        <section class="cap" id="cap">
+          <div class="cap__head">
+            <span class="cap__klabel">live capture · validated on device</span>
+            <span class="cap__rate" id="caprate" title="this shift's validity rate"></span>
+          </div>
+          <form class="cap__form" id="capform" autocomplete="off">
+            <input class="cap__in" id="cap-name" placeholder="signer name" aria-label="Signer name" />
+            <input class="cap__in" id="cap-addr" placeholder="street address + ZIP" aria-label="Signer address" />
+            <button class="cap__go" id="cap-go" type="submit">Validate <span>▸</span></button>
+          </form>
+          <div class="cap__verdict" id="cap-verdict" hidden></div>
+          <div class="cap__chips" id="cap-chips" aria-label="Try these"></div>
+          <div class="cap__tally">
+            <span class="cv cv--ok">✓ <b id="t-valid">0</b> valid</span>
+            <span class="cv cv--rev">⚠ <b id="t-review">0</b> review</span>
+            <span class="cv cv--no">✗ <b id="t-invalid">0</b> invalid</span>
+            <span class="cap__safe"><b id="t-safe">0</b> safe to submit</span>
+          </div>
+        </section>
+
+        <section class="impact">
+          <div class="impact__row"><span>your impact</span><b>1,240 valid · rank #18</b></div>
+          <div class="drive">
+            <div class="drive__row"><span id="drivelabel">drive status</span><b id="drivenum">—</b></div>
+            <div class="drive__bar"><i id="drivefill"></i></div>
+          </div>
+        </section>
+      </main>
+
+      <nav class="gtabs">
+        <span class="gtab gtab--on">◎ home</span>
+        <span class="gtab">⌖ map</span>
+        <span class="gtab">▤ training</span>
+        <span class="gtab">◐ profile</span>
+      </nav>
+
+    </div>
+  </div>
+</div>
+
+<script src="gather-data.js"></script>
+<script src="engine.core.js"></script>
+<script src="voter-sample-data.js"></script>
+<script src="app.js"></script>
+<script src="gather.js"></script>
+</body>
+</html>

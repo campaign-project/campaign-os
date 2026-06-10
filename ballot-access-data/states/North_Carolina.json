@@ -1,0 +1,189 @@
+{
+  "jurisdiction": "North Carolina",
+  "signaturesHeadline": "NC: 1.5% of last gubernatorial turnout = 83,874 (2024 cycle, NCSBE-confirmed) + 200 from each of 3 districts. AUTO-LIVE.",
+  "deadlineHeadline": "NC deadline DISPUTED: statute+NCSBE say noon, day of primary (Mar 2024/2026); Ballotpedia says last Fri June. HOLD on earliest.",
+  "riskNote": "Two unresolved legal-interpretation conflicts (presidential petition deadline; whether any filing fee applies to an independent presidential candidate) force CONSERVATIVE-HOLD on deadline and feeAlternative; treat the earliest deadline (noon, day of primary) and a possible fee as binding until NCSBE confirms. All citations grounded verbatim; nothing BLOCKED.",
+  "sosInquiries": [
+    "For an unaffiliated/independent candidate for President of the United States under G.S. 163-122, is the petition-filing deadline noon on the day of the primary election (per the NCSBE petitions table and G.S. 163-122(a)(1)), or is there a separate presidential-specific deadline (e.g., the last Friday in June, with presidential-elector certification by the first Friday in August)? Please confirm the controlling date for the current cycle.",
+    "Does an unaffiliated/independent candidate for President of the United States owe any filing fee under G.S. 163-122(e)/G.S. 163-107 given that the G.S. 163-107 fee schedule lists no line item for President or presidential electors, or is the office fee-free? If a fee applies, what is the amount and does the G.S. 163-107.1 petition-in-lieu-of-fee alternative apply?"
+  ],
+  "fields": [
+    {
+      "field": "signaturesRequired",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Formula-based: signatures equal to 1.5% of the total number of voters who voted in the most recent general election for Governor, plus at least 200 registered voters from each of three different NC congressional districts. For the 2024 gubernatorial base this equals 83,874 (per NCSBE 2026 Unaffiliated Candidate Fact Sheet). Statewide/presidential path runs through G.S. 163-122(a)(1), with G.S. 163-1(c) confirming an unaffiliated presidential candidate qualifies under 163-122 and nominates electors.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.9,
+      "note": "All three citations ground verbatim (FindLaw 163-122, NCSBE unaffiliated-petitions table, FindLaw 163-1(c)). Formula is current and correct. Adversarial note: the draft labels the 2024 integer UNKNOWN, but the NCSBE 2026 official fact sheet explicitly states 83,874 (1.5% of 2024 gubernatorial turnout) for the statewide path — the figure IS confirmable from a primary source, so I relied on it. Minor wording variance (statute 'voters who voted' vs NCSBE 'registered voters who voted'; Ballotpedia 'votes cast for governor') is immaterial in practice. Value recomputes each cycle."
+    },
+    {
+      "field": "deadline",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "STRICTEST: petition signature pages due to the county board of elections by 12:00 noon on the DAY OF THE PRIMARY ELECTION (e.g., noon March 5, 2024; noon March 3, 2026 per NCSBE fact sheet) — the earliest of the conflicting candidate deadlines. County-board verification no later than 15 business days after canvass of the primary. Do NOT rely on any later 'last Friday in June' date until NCSBE confirms in writing.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.6,
+      "note": "Both citations ground verbatim. UNRESOLVED CONFLICT for the PRESIDENTIAL contest: statute 163-122(a)(1) + NCSBE petitions table + NCSBE 2026 fact sheet all say 'noon on the day of the primary'; Ballotpedia (citing FEC) says the independent-presidential petition is due 'no later than the last Friday in June' with electors certified by 'the first Friday in August.' Reconciling these requires legal interpretation retrieval cannot settle (whether a presidential-specific timeline supersedes 163-122). Strictest = earliest deadline (day of primary), which is what the draft adopts; held rather than auto-lived because missing the true deadline is catastrophic. Note the draft omits the possible first-Friday-in-August presidential-elector certification step."
+    },
+    {
+      "field": "distributionRule",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "Geographic distribution required: at least 200 registered voters from EACH of three NC congressional districts (minimum 200 from each of three different districts). Petition pages must additionally be divided into sections by the county in which signatures were obtained, for county-level verification.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.92,
+      "note": "Citation grounds verbatim in 163-122(a)(1): 'the petition must be signed by at least 200 registered voters from each of three congressional districts in North Carolina. The petitions shall be divided into sections based on the county in which the signatures were obtained.' NCSBE 2026 fact sheet independently confirms '200 registered voters from three different congressional districts.' Adversarial check cleared a stale Ballotpedia phrase ('each of the state's congressional districts') — the statute and the fact sheet both say THREE, so the draft is correct."
+    },
+    {
+      "field": "circulatorEligibility",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "NC law regulates SIGNERS, not circulators: each signer must be a qualified registered NC voter residing in the applicable county, and no one may sign on behalf of another. No separate statutory circulator (age/residency/voter-status) requirement found for the unaffiliated petition; circulator-specific eligibility is UNKNOWN (no primary source establishes one).",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.78,
+      "note": "All three citations ground verbatim (NCSBE petitions page signer language; 'No one may sign a petition on behalf of another person'; statute signer requirement). The value is itself conservative — it asserts the signer rules and explicitly marks circulator eligibility UNKNOWN rather than claiming none exists. That is the strict posture, so no stricter reading is needed. Field rests on absence of a circulator statute, which is consistent with the primary sources reviewed."
+    },
+    {
+      "field": "witnessOrNotary",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "None / not required. Verification is performed by election officials (Executive Director for statewide petitions, or the county board chair), who check signatures against registration records and attach a signed certificate. No notarized affidavit or circulator certification by the petition gatherer is required by G.S. 163-122 or NCSBE petition instructions.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.85,
+      "note": "Citation grounds verbatim in 163-122(a)(1)(a): the Executive Director examines names, check-marks qualified/registered signers, and attaches a signed certificate stating signatures were checked against registration records. No circulator affidavit/notary appears anywhere in 163-122, the NCSBE petitions page, or the 2026 fact sheet. Correct and not interpretation-dependent."
+    },
+    {
+      "field": "captureMode",
+      "gate": "AUTO-LIVE",
+      "reliedValue": "paper only. Signatures must be collected on official paper petition sheets, in ink, with original (wet) signatures; electronic signatures are not counted and signatures cannot be collected electronically. No digital/remote-online capture exists for the NC unaffiliated presidential petition.",
+      "grounded": true,
+      "interpretationRequired": false,
+      "agree": true,
+      "confidence": 0.92,
+      "note": "Both quotes ground verbatim on the NCSBE petitions page: 'Signatures cannot be collected electronically.' and 'Signatures must be originals (please use INK); no electronic signatures will be counted. (Photocopies of signed forms are not accepted by county or state elections offices.)' Paper-only is correct and unambiguous."
+    },
+    {
+      "field": "feeAlternative",
+      "gate": "CONSERVATIVE-HOLD",
+      "reliedValue": "STRICTEST: do NOT assume the office is fee-free. G.S. 163-122(e) requires an unaffiliated candidate to pay the G.S. 163-107 filing fee for the office OR use the G.S. 163-107.1 petition-in-lieu-of-fee alternative; the NCSBE 2026 fact sheet answers 'Is there a filing fee to run as an unaffiliated candidate? Yes.' Treat a filing fee as potentially due for an independent presidential candidate and budget for the G.S. 163-107.1 fee-waiver petition as a hedge until NCSBE confirms in writing whether President carries a $0 fee.",
+      "grounded": true,
+      "interpretationRequired": true,
+      "agree": false,
+      "confidence": 0.55,
+      "note": "Both citations ground verbatim (163-122(e) fee-or-alternative language; 163-107 fee-schedule preamble). BUT the draft's CONCLUSION ('no fee for President') is an inference — the 163-107 table lists no 'President/presidential electors' line, so the draft reasons the fee is $0. This conflicts with the NCSBE fact sheet's plain 'Yes' that unaffiliated candidates owe a filing fee, and resolving it requires legal interpretation (does the missing line mean $0, or does the Board apply another basis?). Underpaying a required fee can void the filing, so strict posture = assume a fee may apply and confirm. Held, not auto-lived."
+    }
+  ],
+  "compensationModel": {
+    "verified": true,
+    "verifiedBy": "machine (single-pass, candidate-petition); confirm with SoS / counsel before paying real money",
+    "gate": "CONSERVATIVE-HOLD",
+    "perSignatureAllowed": "unaddressed",
+    "paidCirculatorsAllowed": "unknown",
+    "circulatorResidency": "unknown",
+    "payMethod": "per-signature",
+    "operatingStance": "PAY PER SIGNATURE — not prohibited; verification is the safeguard; confirm w/ SoS before a large spend",
+    "model": "unaddressed — no candidate-petition compensation statute found (general secondary indication the practice is currently legal, but not enacted/candidate-specific)",
+    "note": "The controlling unaffiliated-candidate-petition statute (N.C.G.S. 163-122, which governs independent presidential petitions) is entirely SILENT on circulator compensation: it does not authorize, prohibit, or mention paying circulators per signature or otherwise, and it imposes NO residency or voter-registration requirement on who may circulate/collect the signatures (only the signers must be qualified registered NC voters). NCSBE confirms \"State law provides minimal guidelines for conducting petitions,\" and the proposed 2025 Chapter 22 petition rules (Sections .0100/.0300/.0400) contain no compensation provision at all. So candidate-petition compensation is UNADDRESSED in primary NC authority. A WRAL news report indicates per-signature pay for ballot-access petitions is currently legal in NC and that the Board is only \"expected to recommend that lawmakers outlaw\" it — but that is a legislative recommendation, not enacted law, and is not candidate-petition-specific primary authority, so this stays CONSERVATIVE-HOLD.",
+    "sosInquiry": "For an UNAFFILIATED presidential candidate's nominating petition under N.C.G.S. 163-122, does any North Carolina statute or rule (a) permit or prohibit paying signature circulators per signature, (b) restrict paying circulators at all (e.g., hourly/salary), or (c) require circulators to be North Carolina residents or registered voters?",
+    "citations": [
+      {
+        "url": "https://codes.findlaw.com/nc/chapter-163-elections-and-election-laws/nc-gen-st-sect-163-122/",
+        "quote": "(a) Procedure for Having Name Printed on Ballot as Unaffiliated Candidate.--Any qualified voter who seeks to have the voter's name printed on the general election ballot as an unaffiliated candidate shall: (1) If the office is a statewide office, file written petitions with the State Board of Elections supporting the voter's candidacy for a specified office. These petitions must be filed with the State Board of Elections on or before 12:00 noon on the day of the primary election and must be signed by qualified voters of the State equal in number to one and a half percent (1.5%) of the total number of voters who voted in the most recent general election for Governor."
+      },
+      {
+        "url": "https://www.ncsbe.gov/news/press-releases/2025/03/17/public-comment-period-opens-proposed-rules-about-petitions-campaign-finance-disclosure",
+        "quote": "State law provides minimal guidelines for conducting petitions. The State Board has proposed rules for petitions that are designed to ensure consistency and transparency in the process for petitioners conducting petition drives and election officials tasked with reviewing and certifying petitions."
+      },
+      {
+        "url": "https://wral.com/amp/political-long-shots-pay-per-signature-for-ballot-access-why-state-officials-want-to-end-the-practice/20385914",
+        "quote": "Like a majority of states, North Carolina allows political parties to pay collectors by the signature... The practice is legal, but critics say it raises the risk of fraud. Before the next legislative session, the board is expected to recommend that lawmakers outlaw the practice of paying collectors by the signature."
+      },
+      {
+        "url": "https://www.ncsbe.gov/candidates/petitions/unaffiliated-candidate-petitions",
+        "quote": "...in the contest for President of the U.S. | 1.5% of all registered N.C. voters who voted in the most recent election for N.C. Governor. | Noon on the day of the primary election to CBE. | N.C.G.S. §163-122(a)(1), N.C.G.S. §163-209"
+      }
+    ],
+    "initiativePrior": "n/a — no statewide initiative process"
+  },
+  "voterFile": {
+    "tier": "FREE_DOWNLOAD",
+    "cost": "Free. The statewide voter registration file is a no-cost, publicly posted ZIP download with no request form, fee, or eligibility gate.",
+    "whoCanObtain": "General public — anyone. The NC State Board of Elections (NCSBE) posts the file openly on its public website/FTP; no registration, application, or political-use eligibility is required to download.",
+    "useRestrictions": "No use-based gate or political-use limit is stated on the data page itself — the file is publicly published. The file already excludes data made confidential by state law (birthdate, SSN, driver's license number are withheld; certain protected/confidential voter records are masked with \"#\" or \"xx/xx/xxxx\"). Note that other NC statutes (e.g., G.S. 132 / election-records law) govern downstream misuse, but there is no contractual click-through restriction on the download itself.",
+    "requestProcess": "Instant online download. Click the \"Statewide Voter Registration (ZIP)\" link on the NCSBE \"Voter Registration Data\" page (or pull it directly from the dl.ncsbe.gov S3/FTP bucket). No form, approval, written request, or affidavit. Files are refreshed weekly on Saturday mornings.",
+    "hasNeededFields": "yes",
+    "downloadUrl": "https://s3.amazonaws.com/dl.ncsbe.gov/data/ncvoter_Statewide.zip",
+    "note": "North Carolina is the easiest case for petition-signature verification: the full statewide voter file is a free, instant, ungated ZIP download from NCSBE, refreshed weekly. It contains voter name, residential street address, and registration status (Active/Inactive/Removed/Denied/Temporary) plus party and precinct — all the fields needed to match petition signers to registered voters. Confidential PII (birthdate, SSN, DL number) and protected-record details are excluded by state law.",
+    "citations": [
+      {
+        "url": "https://www.ncsbe.gov/results-data/voter-registration-data",
+        "quote": "These voter registration files contain the most up-to-date publicly available information for individuals registered or formerly registered to vote in North Carolina"
+      },
+      {
+        "url": "https://www.ncsbe.gov/results-data/voter-registration-data",
+        "quote": "What's included? Voter registration status (e.g., active, removed) and reason for status voter demographics, party affiliation, and address; voter county, precinct, and district information"
+      },
+      {
+        "url": "https://www.ncsbe.gov/results-data/voter-registration-data",
+        "quote": "What's not included? Voter birthdate, Social Security number, and driver's license number are confidential under state law and are not included."
+      },
+      {
+        "url": "https://www.ncsbe.gov/results-data/voter-registration-data",
+        "quote": "Statewide Voter Registration (ZIP)"
+      },
+      {
+        "url": "https://www.ncsbe.gov/results-data/voter-registration-data",
+        "quote": "The files are updated weekly on Saturday mornings."
+      },
+      {
+        "url": "https://s3.amazonaws.com/dl.ncsbe.gov/data/layout_ncvoter.txt",
+        "quote": "last_name varchar(25) Voter last name first_name varchar(20) Voter first name ... res_street_address varvarchar(65) Residential street address res_city_desc varchar(60) Residential city name ... voter_status_desc varchar(25) Registration status description"
+      },
+      {
+        "url": "https://s3.amazonaws.com/dl.ncsbe.gov/data/layout_ncvoter.txt",
+        "quote": "A ACTIVE D DENIED I INACTIVE R REMOVED S TEMPORARY (APPLICABLE TO MILITARY AND OVERSEAS)"
+      }
+    ],
+    "verifiedAsOf": "2026-06-06"
+  },
+  "circulator": {
+    "minAge": 0,
+    "ageRule": "No circulator age requirement — the rule binds signers only. N.C. Gen. Stat. § 163-122 (the unaffiliated-candidate nominating-petition statute, which governs unaffiliated presidential candidates via § 163-1(c)) imposes requirements only on the SIGNERS (\"signed by qualified voters of the State\"). The statute contains no circulator affidavit, oath, witness, or age provision. The NC State Board of El",
+    "minorCanCirculate": "yes",
+    "registeredVoterRequired": "no",
+    "usCitizenRequired": "no",
+    "stateResidentRequired": "no",
+    "signerVsCirculator": "SIGNERS must be qualified registered voters of the State (per § 163-122(a)(1): \"signed by qualified voters of the State\"; certified only if \"qualified and registered to vote in the designated county\"). The CIRCULATOR (collector) has NO statutory requirements at all — North Carolina has no circulator affidavit/witness mechanism; the State/county boards verify signers directly against the registrati",
+    "gate": "AUTO-LIVE",
+    "note": "North Carolina's unaffiliated presidential nominating petition is governed by N.C. Gen. Stat. § 163-1(c) (which routes an unaffiliated presidential candidate to qualify \"under G.S. 163-122\") and § 163-122 itself (statewide office: 1.5% of votes cast in the most recent gubernatorial general election, plus at least 200 registered voters from each of three congressional districts). § 163-122 and the NCSBE Petitions guidance impose strict eligibility ONLY on the SIGNERS (must be qualified, registere",
+    "verifiedAsOf": "2026-06-08",
+    "citations": [
+      {
+        "field": "circulatorAgeRule / signerVsCirculator / circulatorMustBeRegisteredVoter",
+        "url": "https://codes.findlaw.com/nc/chapter-163-elections-and-election-laws/nc-gen-st-sect-163-122/",
+        "quote": "Any qualified voter who seeks to have the voter's name printed on the general election ballot as an unaffiliated candidate shall: (1) If the office is a statewide office, file written petitions with the State Board of Elections supporting the voter's candidacy for a specified office. These petitions ... must be signed by qualified voters of the State equal in number to one and a half percent (1.5%) of the total number of voters who voted in the most recent general election for Governor. Also, the petition must be signed by at least 200 registered voters from each of three congressional districts in North Carolina."
+      },
+      {
+        "field": "verification is signer-based, not circulator-based",
+        "url": "https://codes.findlaw.com/nc/chapter-163-elections-and-election-laws/nc-gen-st-sect-163-122/",
+        "quote": "The Executive Director shall examine the names on the petition and place a check mark on the petition by the name of each signer who is qualified and registered to vote in the designated county and shall attach to the petition a signed certificate. Said certificates shall state that the signatures on the petition have been checked against the registration records and shall indicate the number of signers to be qualified and registered to vote in each county."
+      },
+      {
+        "field": "presidential unaffiliated candidate qualifies under 163-122",
+        "url": "https://codes.findlaw.com/nc/chapter-163-elections-and-election-laws/nc-gen-st-sect-163-1/",
+        "quote": "provided, that in the case of a candidate for President of the United States who has qualified to have his name printed on the general election ballot as an unaffiliated candidate under G.S. 163-122, that candidate shall nominate presidential electors."
+      },
+      {
+        "field": "official guidance imposes rules on signers/collection only, none on the circulator",
+        "url": "https://www.ncsbe.gov/candidates/petitions",
+        "quote": "Collect signatures: Use the recommended signature collection forms appropriate to your petition ... You will be gathering the signatures of qualified voters who reside in the applicable county or counties. Remember: You must separate signature pages by county ... No one may sign a petition on behalf of another person. Signatures must be originals (please use INK); no electronic signatures will be counted."
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@campaign-os/api": ["packages/api/src/index.ts"],
+      "@campaign-os/ai": ["packages/ai/src/index.ts"],
+      "@campaign-os/domain": ["packages/domain/src/index.ts"],
+      "@campaign-os/engine": ["packages/engine/src/index.ts"]
+    }
+  }
+}

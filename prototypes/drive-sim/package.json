@@ -1,0 +1,11 @@
+{
+  "name": "@campaign-os/drive-sim-proto",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "End-to-end drive simulation — optimizer → gather → validation → yield → cost, qualifying a pilot state with the whole stack working together",
+  "scripts": {
+    "start": "node --experimental-strip-types drivesim.ts",
+    "multistate": "node --experimental-strip-types multistate.ts"
+  }
+}

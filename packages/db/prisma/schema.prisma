@@ -1,0 +1,283 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum CampaignType {
+  CANDIDATE
+  BALLOT_INITIATIVE
+  NONPROFIT
+  ADVOCACY
+  PAC
+}
+
+enum MembershipStatus {
+  INVITED
+  ACTIVE
+  SUSPENDED
+}
+
+enum SourceStatus {
+  DRAFT
+  PENDING_REVIEW
+  APPROVED
+  DEPRECATED
+  REJECTED
+}
+
+enum ContentStatus {
+  REQUESTED
+  DRAFTED_BY_AI
+  NEEDS_REVIEW
+  CHANGES_REQUESTED
+  APPROVED
+  PUBLISHED
+  ARCHIVED
+}
+
+model Campaign {
+  id              String               @id @default(cuid())
+  name            String
+  type            CampaignType
+  jurisdiction    String?
+  electionCycle   String?
+  legalEntityName String?
+  committeeId     String?
+  status          String               @default("active")
+  createdAt       DateTime             @default(now())
+  updatedAt       DateTime             @updatedAt
+  memberships     CampaignMembership[]
+  people          Person[]
+  organizations   Organization[]
+  interactions    Interaction[]
+  policies        Policy[]
+  sourceDocuments SourceDocument[]
+  contentItems    ContentItem[]
+  auditLogs       AuditLog[]
+  consentRecords  ConsentRecord[]
+
+  @@index([status])
+}
+
+model User {
+  id          String               @id @default(cuid())
+  email       String               @unique
+  name        String?
+  authProvider String?
+  status      String               @default("active")
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @updatedAt
+  memberships CampaignMembership[]
+  auditLogs   AuditLog[]
+}
+
+model CampaignMembership {
+  id         String           @id @default(cuid())
+  campaignId String
+  userId     String
+  role       String
+  status     MembershipStatus @default(INVITED)
+  invitedBy  String?
+  joinedAt   DateTime?
+  createdAt  DateTime         @default(now())
+  updatedAt  DateTime         @updatedAt
+  campaign   Campaign         @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  user       User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([campaignId, userId])
+  @@index([campaignId, role])
+}
+
+model Person {
+  id             String          @id @default(cuid())
+  campaignId     String
+  firstName      String?
+  lastName       String?
+  email          String?
+  phone          String?
+  addressLine1   String?
+  addressLine2   String?
+  city           String?
+  state          String?
+  postalCode     String?
+  externalIds    Json?
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+  campaign       Campaign        @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  interactions   Interaction[]
+  consentRecords ConsentRecord[]
+
+  @@index([campaignId, email])
+  @@index([campaignId, phone])
+  @@index([campaignId, lastName])
+}
+
+model Organization {
+  id         String   @id @default(cuid())
+  campaignId String
+  name       String
+  type       String?
+  website    String?
+  address    String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  campaign   Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+
+  @@index([campaignId, name])
+}
+
+model Interaction {
+  id         String   @id @default(cuid())
+  campaignId String
+  personId   String?
+  type       String
+  channel    String?
+  summary    String?
+  metadata   Json?
+  occurredAt DateTime @default(now())
+  createdAt  DateTime @default(now())
+  campaign   Campaign @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  person     Person?  @relation(fields: [personId], references: [id], onDelete: SetNull)
+
+  @@index([campaignId, occurredAt])
+  @@index([campaignId, type])
+}
+
+model Policy {
+  id          String          @id @default(cuid())
+  campaignId  String
+  slug        String
+  title       String
+  summary     String
+  status      String          @default("draft")
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+  campaign    Campaign        @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  versions    PolicyVersion[]
+
+  @@unique([campaignId, slug])
+  @@index([campaignId, status])
+}
+
+model PolicyVersion {
+  id        String   @id @default(cuid())
+  policyId  String
+  version   Int
+  body      Json
+  createdAt DateTime @default(now())
+  policy    Policy   @relation(fields: [policyId], references: [id], onDelete: Cascade)
+
+  @@unique([policyId, version])
+}
+
+model SourceDocument {
+  id                 String        @id @default(cuid())
+  campaignId         String
+  title              String
+  sourceType         String
+  canonicalUrl       String?
+  publisher          String?
+  effectiveDate      DateTime?
+  retrievedAt        DateTime?
+  verificationStatus SourceStatus   @default(DRAFT)
+  allowedForAI       Boolean       @default(false)
+  allowedUseCases    String[]
+  version            String?
+  checksum           String?
+  createdAt          DateTime      @default(now())
+  updatedAt          DateTime      @updatedAt
+  campaign           Campaign      @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  chunks             SourceChunk[]
+  citations          Citation[]
+
+  @@index([campaignId, verificationStatus])
+  @@index([campaignId, allowedForAI])
+}
+
+model SourceChunk {
+  id               String         @id @default(cuid())
+  sourceDocumentId String
+  ordinal          Int
+  text             String
+  metadata         Json?
+  createdAt        DateTime       @default(now())
+  sourceDocument   SourceDocument @relation(fields: [sourceDocumentId], references: [id], onDelete: Cascade)
+
+  @@unique([sourceDocumentId, ordinal])
+}
+
+model Citation {
+  id               String         @id @default(cuid())
+  sourceDocumentId String
+  entityType       String
+  entityId         String
+  quoteRange       Json?
+  url              String?
+  createdAt        DateTime       @default(now())
+  sourceDocument   SourceDocument @relation(fields: [sourceDocumentId], references: [id], onDelete: Cascade)
+
+  @@index([entityType, entityId])
+}
+
+model ContentItem {
+  id          String        @id @default(cuid())
+  campaignId  String
+  type        String
+  status      ContentStatus @default(REQUESTED)
+  title       String
+  body        Json?
+  aiProvenance Json?
+  publishedAt DateTime?
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  campaign    Campaign      @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+
+  @@index([campaignId, status])
+  @@index([campaignId, type])
+}
+
+model ConsentRecord {
+  id          String    @id @default(cuid())
+  campaignId  String
+  personId    String
+  channel     String
+  purpose     String
+  status      String
+  source      String?
+  capturedAt  DateTime  @default(now())
+  expiresAt   DateTime?
+  withdrawnAt DateTime?
+  metadata    Json?
+  campaign    Campaign  @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+  person      Person    @relation(fields: [personId], references: [id], onDelete: Cascade)
+
+  @@index([campaignId, personId])
+  @@index([campaignId, channel, purpose])
+}
+
+model AuditLog {
+  id          String   @id @default(cuid())
+  campaignId  String?
+  actorUserId String?
+  actorType   String
+  action      String
+  entityType  String
+  entityId    String?
+  before      Json?
+  after       Json?
+  reason      String?
+  ipAddress   String?
+  userAgent   String?
+  requestId   String?
+  createdAt   DateTime @default(now())
+  campaign    Campaign? @relation(fields: [campaignId], references: [id], onDelete: SetNull)
+  actorUser   User?     @relation(fields: [actorUserId], references: [id], onDelete: SetNull)
+
+  @@index([campaignId, createdAt])
+  @@index([entityType, entityId])
+  @@index([actorUserId, createdAt])
+}

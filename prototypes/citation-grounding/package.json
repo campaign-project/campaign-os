@@ -1,0 +1,11 @@
+{
+  "name": "@campaign-os/citation-grounding-proto",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic citation-grounding checker (RFC-001 §5.5, layer 3) — prototype",
+  "scripts": {
+    "selftest": "node --experimental-strip-types ground.ts --selftest",
+    "check": "node --experimental-strip-types ground.ts citations.sample.json"
+  }
+}

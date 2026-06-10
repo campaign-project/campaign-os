@@ -1,0 +1,131 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "MI-VR",
+ "jurisdiction": "Michigan",
+ "abbr": "MI",
+ "petitionType": "veto-referendum",
+ "signatures": {
+  "required": 223099,
+  "headline": "Const. 1963, Art. II, Sec. 9: \"petitions signed by a number of registered electors, not less than ... five percent for referendum of the total vote cast for all candidates for governor at the last preceding general election at which a governor was elected\" (base = 2022 gubernatorial total vote, 4,461,980)"
+ },
+ "deadline": {
+  "headline": "Const. Art. II, Sec. 9: referendum \"must be invoked in the manner prescribed by law within 90 days following the final adjournment of the legislative session at which the law was enacted.\" This is a FLOATING deadline keyed to session adjournment; Ballotpedia estimates 08/04/2026 for the 2026 cycle, but the exact date is not fixed until the session adjourns. Cannot be used again"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Const. 1963, Art. II, Sec. 9: \"petitions signed by a number of registered electors, not less than ... five percent for referendum of the total vote cast for all candidates for governor at the last preceding general election at which a governor was elected\" (base = 2022 gubernatorial total vote, 4,461,980)",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct (approval/rejection by voters at the next general election; no law subject to a properly invoked referendum is effective unless approved by a majority of electors voting thereon)"
+  },
+  {
+   "field": "deadline",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "Const. Art. II, Sec. 9: referendum \"must be invoked in the manner prescribed by law within 90 days following the final adjournment of the legislative session at which the law was enacted.\" This is a FLOATING deadline keyed to session adjournment; Ballotpedia estimates 08/04/2026 for the 2026 cycle, but the exact date is not fixed until the session adjourns. Cannot be used again"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "none"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "CONSERVATIVE-HOLD",
+   "value": "none"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "yes",
+  "circulatorResidency": "not_required",
+  "operatingStance": "Per-signature pay is currently ALLOWED for initiatives. Ballotpedia (citing NCSL): \\\"Michigan allows paying signature gatherers based on the number of signatures collected.\\\" A bill to ban per-signature/per-sheet pay and require hourly compensation (HB 5210) and related spreading-type bills were PROPOSED but have NOT been enacted as of the data reviewed. The only paid-circulato",
+  "gate": "CONSERVATIVE-HOLD"
+ },
+ "voterFile": {
+  "tier": "PAID",
+  "cost": "No published flat statewide price; varies — request quote. By statute the requester pays \"the cost of making, certifying, and delivering the tape, disk, or listing\" (MCL 168.522); when obtained from the state via FOIA, the Dept. of State \"may charge a fee to cover the cost of complying\" (labor + media). Note: the separate $15/record \"Record sales\" program is for DRIVER/VEHICLE records only, NOT voter data.",
+  "whoCanObtain": "Broadly available — the statute requires the file be delivered \"to any person, upon request\" (MCL 168.522). Not gated to candidates/committees/parties; the statewide Qualified Voter File data is obtained from the Bureau of Elections via written/FOIA request (it is NOT sold through the SOS commercial \"Record sales / List sales\" program, which covers only driver and vehicle records).",
+  "useRestrictions": "Statutorily protected/exempt fields are stripped from any released list — no driver-license/state-ID number, no month/day of birth, no phone number, no last-4 SSN, and no digitized signature (MCL 168.509gg; MCL 168.522(2) bars these from the list, though it may include year of birth). For the SOS's separate bulk data programs the state warns data \"cannot be used for marketing or solicitation purposes... violations can be prosecuted as felony infractions.\"",
+  "requestProcess": "Written request to the Michigan Department of State / Bureau of Elections (election-data FOIA request). FOIA requests \"must be submitted in writing\" — online via MiLogin, or by mail/email to the MDOS FOIA Coordinator. (Local lists may alternatively be requested from a city/township/village clerk under MCL 168.522.) No instant online public download of the statewide file.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://www.michigan.gov/sos/resources/transparency",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "CONSERVATIVE-HOLD",
+  "sosInquiries": 1,
+  "riskNote": "Signature requirements are primary-source-grounded and settled. The 2026-cycle figures are based on the 2022 gubernatorial total vote (4,461,980 — confirmed by internal consistency: 446,198/.10 = 356,958/.08 = 223,099/.05 = 4,461,980): ICA 446,198 (10%), ISS 356,958 (8%), VR 223,099 (5%). These match both Ballotpedia's 2026 deadlines table and the Michigan signature-requirements chart. Constitutional text quoted verbatim from Art. XII Sec. 2 and Art. II Sec. 9. Two reasons fo"
+ },
+ "citations": [
+  {
+   "field": "initiated-constitutional-amendment.signatureBasis",
+   "url": "https://ballotpedia.org/Article_XII,_Michigan_Constitution",
+   "quote": "Every petition shall include the full text of the proposed amendment, and be signed by registered electors of the state equal in number to at least 10 percent of the total vote cast for all candidates for governor at the last preceding general election at which a governor was elected."
+  },
+  {
+   "field": "initiated-constitutional-amendment.deadline",
+   "url": "https://ballotpedia.org/Article_XII,_Michigan_Constitution",
+   "quote": "Such petitions shall be filed with the person authorized by law to receive the same at least 120 days before the election at which the proposed amendment is to be voted upon."
+  },
+  {
+   "field": "initiated-statute.signatureBasis / veto-referendum.signatureBasis",
+   "url": "https://ballotpedia.org/Article_II,_Michigan_Constitution",
+   "quote": "To invoke the initiative or referendum, petitions signed by a number of registered electors, not less than eight percent for initiative and five percent for referendum of the total vote cast for all candidates for governor at the last preceding general election at which a governor was elected shall be required."
+  },
+  {
+   "field": "initiated-statute.directOrIndirect",
+   "url": "https://ballotpedia.org/Article_II,_Michigan_Constitution",
+   "quote": "Any law proposed by initiative petition shall be either enacted or rejected by the legislature without change or amendment within 40 session days from the time such petition is received by the legislature."
+  },
+  {
+   "field": "veto-referendum.deadline",
+   "url": "https://ballotpedia.org/Article_II,_Michigan_Constitution",
+   "quote": "The power of referendum does not extend to acts making appropriations for state institutions or to meet deficiencies in state funds and must be invoked in the manner prescribed by law within 90 days following the final adjournment of the legislative session at which the law was enacted."
+  },
+  {
+   "field": "signatureRequirement (all three, 2026 cycle)",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Michigan",
+   "quote": "Year Amendment Statute Referendum 2026 446,198 356,958 223,099"
+  },
+  {
+   "field": "veto-referendum.signatureRequirement + deadline",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Michigan",
+   "quote": "MichiganVR08/04/2026Signatures must be submitted within 90 days after the end of the legislative session223,099"
+  },
+  {
+   "field": "initiated-constitutional-amendment + initiated-statute deadlines/requirements (2026)",
+   "url": "https://ballotpedia.org/Signature_requirements_for_ballot_measures_in_Michigan",
+   "quote": "MichiganCICA07/06/2026Signatures must be submitted at least 120 days before the general election446,198MichiganIndISS 05/27/2026Signatures must be submitted at least 160 days before the general election356,958"
+  },
+  {
+   "field": "singleSubject",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Michigan",
+   "quote": "Single-subject rule See also: Single-subject rule Michigan does not have a single-subject rule for ballot initiatives."
+  },
+  {
+   "field": "distribution",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Michigan",
+   "quote": "On January 24, 2022, the Michigan Supreme Court ruled that the distribution requirement was unconstitutional. Justice Megan Cavanagh said, \"It would run directly contrary to the clear intention that nothing more than a minimum number of signatures from the statewide population is necessary to propose changes to Michigan's laws.\" The court also overturned a requirement that paid signature gatherers register with the state but said requiring paid circulators to identify that they are paid on their petitions forms is constitutional."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Michigan",
+   "quote": "Michigan does not require circulators to be residents of the state. Circulators who are not residents of the state must indicate this on their circulator certificate."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Michigan",
+   "quote": "Pay-per-signature See also: Pay-per-signature Michigan allows paying signature gatherers based on the number of signatures collected."
+  },
+  {
+   "field": "180-day collection window",
+   "url": "https://ballotpedia.org/Laws_governing_the_initiative_process_in_Michigan",
+   "quote": "In Michigan, petitioners have 180 days to collect the required signatures for an initiated statute or an initiated constitutional amendment. Signatures older than 180 days at the time of filing are considered invalid. In addition, any signatures collected before a November election where a governor is elected, cannot be submitted after that election. Amendment petitions must be filed 120 days prior to the election. Petitions for statutes must be filed 160 days prior to the election, allowing the legislators 40 days to pass the proposed law."
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}

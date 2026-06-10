@@ -1,0 +1,146 @@
+{
+ "schemaVersion": "1.1.0",
+ "id": "WY-IS",
+ "jurisdiction": "Wyoming",
+ "abbr": "WY",
+ "petitionType": "initiated-statute",
+ "signatures": {
+  "required": 40669,
+  "headline": "Wyo. Const. art. 3, sec. 52(c)(i): \"It is signed by qualified voters, equal in number to fifteen percent (15%) of those who voted in the preceding general election\" — base = total votes cast in the 2024 general election (271,123). SoS: \"15% of total votes cast in 2024 general election: 271,123 x .15 = 40,669\"."
+ },
+ "deadline": {
+  "headline": "Petition filing: \"The committee has 18 months from the date petitions are provided to file them with the Secretary of State\" (SoS Initiative Process Information). Ballot placement (constitution, art. 3 sec. 52(d)): \"An initiative petition may be filed at any time except that one may not be filed for a measure substantially the same as that defeated by an initiative election wit"
+ },
+ "rules": [
+  {
+   "field": "signaturesRequired",
+   "gate": "AUTO-LIVE",
+   "value": "Wyo. Const. art. 3, sec. 52(c)(i): \"It is signed by qualified voters, equal in number to fifteen percent (15%) of those who voted in the preceding general election\" — base = total votes cast in the 2024 general election (271,123). SoS: \"15% of total votes cast in 2024 general election: 271,123 x .15 = 40,669\".",
+   "confidence": 0.9,
+   "note": "direct/indirect: direct"
+  },
+  {
+   "field": "deadline",
+   "gate": "AUTO-LIVE",
+   "value": "Petition filing: \"The committee has 18 months from the date petitions are provided to file them with the Secretary of State\" (SoS Initiative Process Information). Ballot placement (constitution, art. 3 sec. 52(d)): \"An initiative petition may be filed at any time except that one may not be filed for a measure substantially the same as that defeated by an initiative election wit"
+  },
+  {
+   "field": "distributionRule",
+   "gate": "AUTO-LIVE",
+   "value": "Wyo. Const. art. 3, sec. 52(c)(ii): \"It is signed by qualified voters equal in number to fifteen percent (15%) of those resident in at least two-thirds (2/3) of the counties of the state, as determined by those who voted in the preceding general election in that county.\" SoS 2025-2026: \"15% of those voting in 2024 general election in at least two-thirds (2/3rds) of counties = 1"
+  },
+  {
+   "field": "singleSubject",
+   "gate": "AUTO-LIVE",
+   "value": "Yes. SoS Initiative Process Information: \"The bill may not contain more than one subject.\" (Statute requires bill form, single subject in title.)"
+  }
+ ],
+ "compensation": {
+  "perSignatureAllowed": "no",
+  "circulatorResidency": "not_required",
+  "operatingStance": "per-signature pay BANNED for initiatives. Per-signature pay for initiatives is effectively BANNED. SoS Initiative Process Information states verbatim: \\\"Circulators may not be paid based upon the number of signatures gathered, nor shall a circulator pay or offer to pay any compensation to another person for that person's signature. If circulators will be paid to solicit signatures, a statement disclosing that fact must",
+  "gate": "AUTO-LIVE"
+ },
+ "voterFile": {
+  "tier": "RESTRICTED",
+  "cost": "Statewide File $125; Party $50; County $35; Legislative District $25 (statewide requests, per official fee schedule on the order form). County-level requests: fee set by the local County Clerk.",
+  "whoCanObtain": "Political use only, eligibility-gated per W.S. 22-2-113(a): candidates for political office, candidate campaign committees, political party central committees and officials, elected officials, political action committees, individuals promoting/opposing a ballot issue or candidate, and organizations promoting voter participation. NOT available to the general public or for commercial use.",
+  "useRestrictions": "Political purposes only; commercial use prohibited. Affiant must affirm they will not use the data for commercial purposes and, if redistributing, must notify subsequent parties of the commercial-use prohibition. Violations of W.S. 22-2-113(a) are referred for prosecution as a misdemeanor under W.S. 22-26-112.",
+  "requestProcess": "Application form (Wyoming Voter Registry List Request Form, VoterProductOrderForm.pdf) emailed to elections@wyo.gov or mailed to the Election Division. Requires a signed oath/affidavit under penalty of perjury affirming political-use-only, plus documentary evidence of eligibility (e.g., PAC formation/officers). Payment (cash or check payable to the Wyoming Secretary of State) must be received before data is delivered. For county/municipal officials/candidates/PACs/parties, the request goes to the local County Clerk instead.",
+  "hasNeededFields": "yes",
+  "downloadUrl": "https://sos.wyo.gov/Forms/Elections/General/VoterProductOrderForm.pdf",
+  "verifiedAsOf": "2026-06-06"
+ },
+ "verification": {
+  "gate": "AUTO-LIVE",
+  "sosInquiries": 0,
+  "riskNote": "All figures are grounded in primary sources: the Wyoming Constitution (Art. 3 Sec. 52), Wyoming Statutes Title 22 Chapter 24 (W.S. 22-24-301 to -323 initiative; -401 to -420 referendum), and the Wyoming Secretary of State's official Initiative Process Information / Referendum Process Information PDFs and the SoS's official 2025-2026 Initiative & Referendum Signature Requirements document.\\n\\nCURRENT-CYCLE NUMBER: For 2025-2026, the SoS sets the statewide requirement at 40,669"
+ },
+ "citations": [
+  {
+   "field": "hasCitizenInitiative",
+   "url": "https://sos.wyo.gov/Forms/Publications/WYConstitution.pdf",
+   "quote": "Sec. 52. Initiative and referendum. (a) The people may propose and enact laws by the initiative, and approve or reject acts of the legislature by the referendum."
+  },
+  {
+   "field": "statusNote",
+   "url": "https://sos.wyo.gov/Elections/InitiativeReferendumInfo.aspx",
+   "quote": "The people may propose and enact laws by the initiative process. It is highly recommended that before beginning this process the applicants consult the Wyoming Constitution and the Election Code of the Wyoming State Statutes."
+  },
+  {
+   "field": "initiated-statute.signatureBasis",
+   "url": "https://sos.wyo.gov/Forms/Publications/WYConstitution.pdf",
+   "quote": "(i) It is signed by qualified voters, equal in number to fifteen percent (15%) of those who voted in the preceding general election; and"
+  },
+  {
+   "field": "initiated-statute.signatureRequirement",
+   "url": "https://sos.wyo.gov/Elections/Docs/2024/Signature_requirement_2025-26.pdf",
+   "quote": "Initiative Signatures Required: 40,669 — 15% of total votes cast in 2024 general election: 271,123 x .15 = 40,669"
+  },
+  {
+   "field": "initiated-statute.distribution",
+   "url": "https://sos.wyo.gov/Elections/Docs/2024/Signature_requirement_2025-26.pdf",
+   "quote": "Distribution requirement: 15% of those voting in 2024 general election in at least two-thirds (2/3rds) of counties = 16 counties"
+  },
+  {
+   "field": "initiated-statute.distribution",
+   "url": "https://sos.wyo.gov/Forms/Publications/WYConstitution.pdf",
+   "quote": "(ii) It is signed by qualified voters equal in number to fifteen percent (15%) of those resident in at least two-thirds (2/3) of the counties of the state, as determined by those who voted in the preceding general election in that county."
+  },
+  {
+   "field": "initiated-statute.deadline",
+   "url": "https://sos.wyo.gov/Elections/Docs/IPInfo.pdf",
+   "quote": "The committee has 18 months from the date petitions are provided to file them with the Secretary of State."
+  },
+  {
+   "field": "initiated-statute.deadline.ballot",
+   "url": "https://sos.wyo.gov/Forms/Publications/WYConstitution.pdf",
+   "quote": "The secretary of state shall prepare a ballot title and proposition summarizing the proposed law, and shall place them on the ballot for the first statewide election held more than one hundred twenty (120) days after adjournment of the legislative session following the filing."
+  },
+  {
+   "field": "initiated-statute.singleSubject",
+   "url": "https://sos.wyo.gov/Elections/Docs/IPInfo.pdf",
+   "quote": "The bill may not contain more than one subject. The bill may not dedicate revenues. The bill may not make or repeal appropriations."
+  },
+  {
+   "field": "veto-referendum.deadline",
+   "url": "https://sos.wyo.gov/Forms/Publications/WYConstitution.pdf",
+   "quote": "(e) A referendum petition may be filed only within ninety (90) days after adjournment of the legislative session at which the act was passed, except that a referendum petition respecting any act previously passed by the legislature may be filed within six months after the power of referendum is adopted."
+  },
+  {
+   "field": "veto-referendum.signatureBasis",
+   "url": "https://sos.wyo.gov/Elections/Docs/RPInfo.pdf",
+   "quote": "The committee must submit registered voter signatures representing 15% of those who voted in the preceding general election and 15% of those resident in at least two-thirds of Wyoming counties."
+  },
+  {
+   "field": "veto-referendum.deadline.ballot",
+   "url": "https://sos.wyo.gov/Elections/Docs/RPInfo.pdf",
+   "quote": "If the petition is determined to be properly filed, the referendum is placed on the ballot of the first general election held more than 180 days after adjournment of the legislative session at which the act was passed."
+  },
+  {
+   "field": "perSignaturePayAllowed",
+   "url": "https://sos.wyo.gov/Elections/Docs/IPInfo.pdf",
+   "quote": "Circulators may not be paid based upon the number of signatures gathered, nor shall a circulator pay or offer to pay any compensation to another person for that person's signature. If circulators will be paid to solicit signatures, a statement disclosing that fact must appear on the petition."
+  },
+  {
+   "field": "perSignaturePayAllowed.statute",
+   "url": "https://wyoleg.gov/statutes/compress/title22.pdf",
+   "quote": "22-24-323. Petitions; payment for signatures; misrepresentation of petition; prohibition; penalty. (a) A circulator of an initiative petition or a person who causes the circulation of an initiative petition may not pay or offer to pay any compensation to another person for that person's signature on the initiative petition."
+  },
+  {
+   "field": "circulatorResidencyRequired",
+   "url": "https://sos.wyo.gov/Elections/Docs/IPInfo.pdf",
+   "quote": "Only qualified sponsors/circulators may circulate petitions... Circulators must be U.S. citizens and at least 18 years old. Circulators do not have to be registered voters."
+  },
+  {
+   "field": "governance",
+   "url": "https://sos.wyo.gov/Elections/Docs/IPInfo.pdf",
+   "quote": "Governance: Wyoming Constitution Article 3 Section 52 and W.S. 22-24-301 through 22-24-323"
+  }
+ ],
+ "provenance": {
+  "verifiedAsOf": "2026-06-08",
+  "method": "multi-agent research → primary-source citation → conservative gate (initiative-rules sweep)",
+  "source": "BallotAccessDB v1.1 initiative-rules sweep"
+ }
+}
