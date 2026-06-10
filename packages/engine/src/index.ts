@@ -26,3 +26,6 @@ export { validateSigner, validateBatch } from "./validate";
 export type { SignerVerdict, SignerLedgerRow, SliceStat, BatchReport, ValidateOpts } from "./validate";
 
 export { suggestVoters } from "./suggest";
+
+export { newFilter, addMember, sealFilter, loadFilter, isMember } from "./membership";
+export type { MembershipFilter, LoadedFilter } from "./membership";
