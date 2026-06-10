@@ -22,7 +22,11 @@ export type CanonicalField =
   | "voterId" | "firstName" | "middleName" | "lastName" | "suffix" | "fullName"
   | "streetAddress" | "houseNumber" | "streetName" | "unit"
   | "city" | "state" | "zip"
-  | "status" | "registrationDate" | "county" | "district";
+  | "status" | "registrationDate" | "county" | "district"
+  // tileCell: the state's compact sub-county geography used as the index tile (precinct / ward /
+  // election district / division). Optional — states that don't expose one fall back to ZIP+street
+  // (see build-tiles.mts). Spec-driven, so this is per-adapter, never hardcoded to one state.
+  | "tileCell";
 
 // A column reference: a header NAME (string) when hasHeader, a 1-based POSITION
 // (number) when positional, or an array to concatenate (e.g. FL address spans 2 cols).

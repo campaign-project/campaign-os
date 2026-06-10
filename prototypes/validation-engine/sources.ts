@@ -27,6 +27,7 @@ export const ADAPTERS: Record<string, AdapterSpec> = {
       firstName: "first_name", middleName: "middle_name", lastName: "last_name", suffix: "name_suffix_lbl",
       streetAddress: "res_street_address", city: "res_city_desc", state: "state_cd", zip: "zip_code",
       status: "status_cd", registrationDate: "registr_dt", county: "county_desc", district: "nc_house_abbrv",
+      tileCell: "precinct_abbrv", // NC's compact turf geography — the index tile (build-tiles.mts)
     },
     downloadUrl: "https://s3.amazonaws.com/dl.ncsbe.gov/data/ncvoter_Statewide.zip",
     layoutDocUrl: "https://s3.amazonaws.com/dl.ncsbe.gov/data/layout_ncvoter.txt",
