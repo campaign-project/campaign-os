@@ -143,6 +143,12 @@ async function syncIfStale(id: string): Promise<void> {
   }
 }
 
+/** The raw voter records backing the effective index — synced set if present, else bundled.
+ *  Stable reference between syncs, so the suggester's per-array corpus cache stays warm. */
+export function getVoterList(campaignId: string): VoterRecord[] {
+  return voters.get(campaignId) ?? buildCampaignIndex(campaignId).voters;
+}
+
 /** Effective index: persisted/synced if available, else bundled. Auto-refreshes (delta) on mount + foreground. */
 export function useCampaignIndex(campaignId: string): EffectiveIndex {
   useSyncExternalStore(subscribe, getSnapshot);

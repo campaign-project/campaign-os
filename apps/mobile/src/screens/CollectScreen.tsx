@@ -9,13 +9,13 @@
  * Capture mode is paper-assist (wet ink is the binding artifact for all 51 indep-presidential
  * jurisdictions). The app validates and logs; it does not replace the paper signature.
  */
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Animated, KeyboardAvoidingView, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View,
 } from "react-native";
-import { makeContext, validateSigner, type SignerVerdict } from "@campaign-os/engine";
+import { makeContext, validateSigner, suggestVoters, type SignerVerdict, type VoterRecord } from "@campaign-os/engine";
 import { getExamples } from "../data/voterIndex";
-import { useCampaignIndex } from "../store/voterIndexStore";
+import { useCampaignIndex, getVoterList } from "../store/voterIndexStore";
 import { useActiveCampaign } from "../store/campaign";
 import { addCapture } from "../store/session";
 import ShiftImpact from "../components/ShiftImpact";
@@ -23,12 +23,17 @@ import { C, MONO, VERDICT_COLOR, VERDICT_LABEL } from "../theme";
 
 const TODAY = new Date().toISOString().slice(0, 10);
 
+// Voter files store names/addresses in shouty all-caps with ragged spacing; show them like a person.
+const pretty = (s: string) => s.replace(/\s+/g, " ").trim().toLowerCase().replace(/\b[a-z]/g, (c) => c.toUpperCase());
+
 interface Toast { text: string; color: string }
 
 export default function CollectScreen() {
   const [name, setName] = useState("");
   const [address, setAddress] = useState("");
   const [toast, setToast] = useState<Toast | null>(null);
+  const [suggestions, setSuggestions] = useState<VoterRecord[]>([]);
+  const [showSuggest, setShowSuggest] = useState(false);
 
   const anim = useRef(new Animated.Value(0)).current;
   const seqRef = useRef<Animated.CompositeAnimation | null>(null);
@@ -47,6 +52,24 @@ export default function CollectScreen() {
     () => (ready ? validateSigner({ id: "live", name, address, signedOn: TODAY, capture: "wet" }, index, ctx) : null),
     [name, address, ready, ctx, index],
   );
+
+  // Typeahead: as you type — or dictate — surface the registered voters in the synced turf so a tap
+  // fills name+address AND pre-resolves the match (the live verdict below then reads VALID instantly).
+  // Debounced; queries name+address together, so it narrows as you add either. Same engine
+  // normalization as the matcher → tolerant of the messy, unpunctuated text voice dictation produces.
+  useEffect(() => {
+    if (!showSuggest) { setSuggestions([]); return; }
+    const q = `${name} ${address}`.trim();
+    if (q.length < 2) { setSuggestions([]); return; }
+    const t = setTimeout(() => setSuggestions(suggestVoters(q, getVoterList(campaign.id), 6)), 130);
+    return () => clearTimeout(t);
+  }, [name, address, showSuggest, campaign.id]);
+
+  function pick(v: VoterRecord) {
+    setName(pretty(v.name));
+    setAddress(pretty(v.address));
+    setShowSuggest(false);
+  }
 
   function flashToast(verdict: SignerVerdict["verdict"], who: string) {
     setToast({ text: `${who} · ${VERDICT_LABEL[verdict]}`, color: VERDICT_COLOR[verdict] });
@@ -67,6 +90,7 @@ export default function CollectScreen() {
     flashToast(live.verdict, who);
     setName("");
     setAddress("");
+    setShowSuggest(false);
   }
 
   const toastTranslate = anim.interpolate({ inputRange: [0, 1], outputRange: [18, 0] });
@@ -89,7 +113,7 @@ export default function CollectScreen() {
             autoCapitalize="words"
             autoCorrect={false}
             value={name}
-            onChangeText={setName}
+            onChangeText={(t) => { setName(t); setShowSuggest(true); }}
           />
           <TextInput
             style={styles.input}
@@ -98,8 +122,21 @@ export default function CollectScreen() {
             autoCapitalize="words"
             autoCorrect={false}
             value={address}
-            onChangeText={setAddress}
+            onChangeText={(t) => { setAddress(t); setShowSuggest(true); }}
           />
+
+          {/* Typeahead suggestions from the synced turf — tap to fill + pre-resolve the match */}
+          {showSuggest && suggestions.length > 0 ? (
+            <View style={styles.suggestBox}>
+              <Text style={styles.suggestHead}>REGISTERED VOTERS IN YOUR TURF</Text>
+              {suggestions.map((v, i) => (
+                <Pressable key={v.id} style={[styles.suggestRow, i > 0 && styles.suggestRowDiv]} onPress={() => pick(v)}>
+                  <Text style={styles.suggestName} numberOfLines={1}>{pretty(v.name)}</Text>
+                  <Text style={styles.suggestAddr} numberOfLines={1}>{pretty(v.address)}</Text>
+                </Pressable>
+              ))}
+            </View>
+          ) : null}
 
           {/* Live verdict */}
           {live ? (
@@ -118,13 +155,13 @@ export default function CollectScreen() {
               <Text style={styles.reason}>{live.reasons[0]}</Text>
             </View>
           ) : (
-            <Text style={styles.idleHint}>Type a name + address, or tap an example below to try it.</Text>
+            <Text style={styles.idleHint}>Type or 🎤 dictate a name + address — we'll match it to your turf. Or tap an example.</Text>
           )}
 
           {/* Quick-fill examples */}
           <View style={styles.chips}>
             {examples.map((e) => (
-              <Pressable key={e.label} style={styles.chip} onPress={() => { setName(e.name); setAddress(e.address); }}>
+              <Pressable key={e.label} style={styles.chip} onPress={() => { setName(e.name); setAddress(e.address); setShowSuggest(false); }}>
                 <Text style={styles.chipText}>{e.label}</Text>
               </Pressable>
             ))}
@@ -166,6 +203,13 @@ const styles = StyleSheet.create({
     backgroundColor: C.bgElev, borderWidth: 1, borderColor: C.line, borderRadius: 11,
     paddingHorizontal: 14, paddingVertical: 13, color: C.ink, fontSize: 16,
   },
+
+  suggestBox: { borderWidth: 1, borderColor: C.line, borderRadius: 11, backgroundColor: C.bgElev, overflow: "hidden", marginTop: -4 },
+  suggestHead: { color: C.inkFaint, fontFamily: MONO, fontSize: 9, letterSpacing: 1.5, paddingHorizontal: 13, paddingTop: 10, paddingBottom: 6 },
+  suggestRow: { paddingHorizontal: 13, paddingVertical: 10, gap: 2 },
+  suggestRowDiv: { borderTopWidth: 1, borderTopColor: C.line },
+  suggestName: { color: C.ink, fontSize: 15, fontWeight: "600" },
+  suggestAddr: { color: C.inkDim, fontFamily: MONO, fontSize: 11 },
 
   verdictCard: { borderWidth: 1.5, borderRadius: 13, padding: 14, backgroundColor: C.bgElev, gap: 5 },
   verdictTop: { flexDirection: "row", justifyContent: "space-between", alignItems: "baseline" },

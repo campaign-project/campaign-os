@@ -24,3 +24,5 @@ export type { VerificationMode, Verdict, StateContext, ValidityResult } from "./
 
 export { validateSigner, validateBatch } from "./validate";
 export type { SignerVerdict, SignerLedgerRow, SliceStat, BatchReport, ValidateOpts } from "./validate";
+
+export { suggestVoters } from "./suggest";
