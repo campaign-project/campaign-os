@@ -42,6 +42,7 @@ device prefetches the turf's tiles (while online) → engine.core.js matches LOC
 - The builder (`prototypes/validation-engine/load.ts` + `sources.ts`) changes from **filter-by-ZIP-list** to **bucket-every-voter-into-its-cell**. Emit one artifact per tile under `index/<campaign>/tiles/<cell>/<version>.json` in R2.
 - **Geocoding dependency (new):** voter files give addresses, not coordinates, so assigning a voter to an H3 cell needs geocoding (Census batch geocoder / local rooftop set). **Fallback when coords are absent: ZIP + street-name-prefix tiles** — no geocoding required, coarser but functional. Recommend geocode→H3 with ZIP-segment fallback.
 - Per-tile content-hash versioning reuses the existing delta/version machinery — no new sync semantics, just more (smaller) artifacts.
+- **Ship precomputed search tokens.** Beyond the minimized fields (§2), emit the engine-normalized name tokens + house number that autocomplete (`suggestVoters`) scores against. The device then builds its typeahead corpus with **zero on-device normalization** — it just loads tokens into the suggestion map. Costs a few bytes per record, saves all client CPU, and makes the corpus build independent of device speed. (See §7.)
 
 ## 4. Three-tier validation ladder
 
@@ -99,24 +100,34 @@ These guards make Tier 2 a *confirmation* tool, not a *lookup* tool.
 - The **full file lives server-side only** (Tier 2 + Tier 3). The device never holds the statewide file (RFC-002 §3, preserved).
 - `/verify` oracle risk mitigated per §5.
 
-## 7. Migration & impact
+## 7. On-device autocomplete (typeahead)
+
+The shipped collect-screen autocomplete (`suggestVoters`, `getVoterList`) suggests registered voters from the resident index as the circulator types or dictates; a tap fills name+address and pre-resolves the match. Under turf scoping it stays cheap and incremental:
+
+- **Per-tile corpus, not per-index.** Build the suggestion corpus once per tile and key it by the tile's immutable content-hash version, so it survives syncs *and* app restarts (a loaded tile's tokens never change). The suggester queries the **union of loaded tiles**; gaining or dropping a tile builds/evicts just that tile's corpus — never a full rebuild as the working set shifts.
+- **Cost scales with the turf, not the nation.** Over a ~3 k-record turf the corpus builds in milliseconds, and the device never holds — let alone normalizes — the national file. The visible hitch today is 103 k demo records being normalized on first keystroke; it vanishes at turf scale, and entirely once tokens are shipped precomputed (§3).
+- **Out-of-turf signers are NOT a national per-keystroke typeahead.** Suggesting against the full file as the user types would reintroduce the connectivity dependency *and* turn lookup into a live oracle (§5). Local autocomplete covers the in-turf ~99%; the rare out-of-turf signer types their full name+address once and **Tier-2 `/verify`** confirms it (one gated query when online), not one per keystroke.
+
+## 8. Migration & impact
 
 | Layer | Change |
 |---|---|
-| Builder (`build-indexes.mts`, `load.ts`, `sources.ts`) | ZIP-filter → cell-bucketing; add geocoding (ZIP-segment fallback); emit per-tile artifacts |
+| Builder (`build-indexes.mts`, `load.ts`, `sources.ts`) | ZIP-filter → cell-bucketing; add geocoding (ZIP-segment fallback); emit per-tile artifacts **+ precomputed search tokens** |
 | R2 layout | `index/<campaign>/tiles/<cell>/<version>.json` (per-tile versions) |
 | Worker | add `POST /verify/:campaignId` (rate-limited, minimal response, audited); tile artifacts served by the existing `/index` delta path, keyed per tile |
 | Client (`voterIndexStore.ts`) | turf → tile-set prefetch; hold multiple tiles; `matchSigner` across loaded tiles; tile TTL/eviction; neighbor prefetch on connectivity |
+| Client autocomplete (`suggestVoters`, `getVoterList`) | per-tile corpus keyed by content-hash, queried over the union of loaded tiles; consume server-precomputed tokens (skip on-device normalization) |
 | Client (`sync.ts`) | add Tier-2 `verify()` call; the 90 s index-pull window stays but is moot at ~1 MB/tile |
 | Capture/verdict UI | `PENDING` state + "confirm on sync"; reconcile flip on sync |
 
 The sync *protocol* (delta, content-hash versions, push/pull) is unchanged — there are just more, smaller, versioned artifacts.
 
-## 8. Open questions
+## 9. Open questions
 
 - **Geocoding** source & coverage; precision of the ZIP+street-segment fallback when coords are missing.
 - **H3 resolution** (res 8 vs 9) and the max-records-per-tile split policy for dense cells.
 - **`/verify` policy**: exact rate limits, whether to gate on partial-address match, abuse heuristics.
 - **Tile eviction / TTL** and buffer-ring size (how far a circulator can drift before a cache miss).
 - **On-device encryption** key management (Keychain/Keystore) and tile-at-rest format (encrypted SQLite vs. blocked JSON vs. bloom prefilter — RFC-002 §8 line 215).
+- **Autocomplete corpus**: ship precomputed tokens in the tile vs. normalize on device; per-tile corpus cache key (content-hash) and eviction in lockstep with tile eviction.
 - Whether Tier-2 verdicts should be cached locally (they're a tiny addition to the working set).
