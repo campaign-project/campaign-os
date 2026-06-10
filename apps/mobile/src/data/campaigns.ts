@@ -138,9 +138,9 @@ export const CAMPAIGNS: Campaign[] = [
     petition: "Unaffiliated candidate · statewide ballot-access petition",
     petitionType: "candidate-statewide",
     freeFile: true,
-    area: "Mecklenburg County — Uptown Charlotte",
+    area: "Mecklenburg County — Charlotte",
     areaShort: "Charlotte · 28202",
-    zips: ["28202", "28203", "28204", "28205"],
+    zips: ["28202", "28203", "28204", "28205", "28211"],
     destination: { label: "Uptown Charlotte — Tryon St", lat: 35.2271, lng: -80.8431 },
     shiftTargetValid: 40,
     statewideRequired: 85000, // NC unaffiliated statewide ≈ 1.5% of last gov vote — verify vs NCSBE/BallotAccessDB

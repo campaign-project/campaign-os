@@ -82,7 +82,7 @@ const CAMPAIGNS: CampaignSpec[] = [
     ],
   },
   {
-    campaignId: "nc-independent", jurisdiction: "North Carolina", zips: ["28202", "28203", "28204", "28205"], realLimit: 8000,
+    campaignId: "nc-independent", jurisdiction: "North Carolina", zips: ["28202", "28203", "28204", "28205", "28211"], realLimit: 110000,
     people: [
       P("NC-0100", "Robert", "Smith", "100", "N Tryon St", "Charlotte", "NC", "28202", "active", "2018-04-10", "Mecklenburg"),
       P("NC-0005", "Maria", "Gonzalez", "5", "W Trade St", "Charlotte", "NC", "28202", "active", "2020-09-12", "Mecklenburg"),
