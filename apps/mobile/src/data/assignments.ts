@@ -15,6 +15,8 @@ export interface Assignment {
   turf: string[];       // tile cells (RFC-002-A1) this assignment covers → the device loads exactly these
   expectedValid: number; // the optimizer's yield prior for this turf (0–1)
   directive: string;     // the "next best move" for this turf
+  voterCount?: number;   // turf density (optimizer-supplied)
+  rank?: number;         // optimizer rank (1 = best turf right now)
 }
 
 export const ASSIGNMENTS: Assignment[] = [

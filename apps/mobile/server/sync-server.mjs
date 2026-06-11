@@ -140,6 +140,27 @@ const server = createServer((req, res) => {
     }
   }
 
+  // The optimizer (RFC-002-A1): rank turfs by expected valid = voter density × yield (Moat B).
+  if (req.method === "GET" && url.pathname.startsWith("/assignments/")) {
+    const id = decodeURIComponent(url.pathname.slice("/assignments/".length));
+    let manifest;
+    try { manifest = JSON.parse(readFileSync(join(INDEX_DIR, "tiles", id, "manifest.json"), "utf8")); }
+    catch { return send(res, 404, { error: `no manifest for "${id}"` }); }
+    const yld = yieldByCampaign.get(id) ?? new Map();
+    const rate = (zip) => { const e = yld.get(zip); return e ? smooth(e.valid, e.total) : smooth(0, 0); };
+    const assignments = manifest.cells
+      .map((c) => ({ c, r: rate(c.zip) }))
+      .sort((a, b) => b.c.voterCount * b.r - a.c.voterCount * a.r)
+      .slice(0, 12)
+      .map(({ c, r }, i) => {
+        const prec = c.cell.split("__").slice(1).join("-");
+        return { id: `opt-${c.cell}`, campaignId: id, turf: [c.cell], label: `Precinct ${prec} · ${c.zip}`, areaShort: `Prec ${prec} · ${c.zip}`,
+          expectedValid: Math.round(r * 100) / 100, voterCount: c.voterCount, rank: i + 1,
+          directive: `~${c.voterCount} active registrations · ${Math.round(r * 100)}% expected valid${i === 0 ? " — your best turf right now." : "."}` };
+      });
+    return send(res, 200, { campaignId: id, basis: "expected valid = voter density × yield (Beta-Binomial smoothed)", assignments });
+  }
+
   if (req.method === "GET" && url.pathname.startsWith("/index/")) {
     const id = decodeURIComponent(url.pathname.slice("/index/".length));
     // A compound id "<campaign>/tiles/<cell>" is a turf tile (build-tiles.mts layout); else a whole index.

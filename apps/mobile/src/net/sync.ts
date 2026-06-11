@@ -7,6 +7,7 @@
  * available in React Native.
  */
 import type { VoterRecord, MembershipFilter, Verdict } from "@campaign-os/engine";
+import type { Assignment } from "../data/assignments";
 
 // Simulator reaches the host here; point at the deployed Worker URL for staging/prod. The Node dev
 // reference ignores the token; the Cloudflare Worker (server/worker) requires it (device-scoped).
@@ -95,6 +96,12 @@ export function getManifest(campaignId: string): Promise<Manifest | null> {
 /** Tier 1b: the campaign membership filter (~10MB of hashed bits). Generous timeout (large payload). */
 export function getMembership(campaignId: string): Promise<MembershipFilter | null> {
   return req<MembershipFilter>(`/membership/${encodeURIComponent(campaignId)}`, undefined, 90_000);
+}
+
+/** The optimizer's ranked turf assignments for this campaign (expected valid = density × yield). Null
+ *  offline → the caller falls back to the bundled static assignments. */
+export function getAssignments(campaignId: string): Promise<{ assignments: Assignment[] } | null> {
+  return req<{ assignments: Assignment[] }>(`/assignments/${encodeURIComponent(campaignId)}`);
 }
 
 /** Tier 2: authoritative online point-lookup against the full server-side roll. Verdict + opaque id

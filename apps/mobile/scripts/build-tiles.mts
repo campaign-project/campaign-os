@@ -129,12 +129,17 @@ async function tile(job: TileJob) {
   rmSync(outDir, { recursive: true, force: true });
   mkdirSync(outDir, { recursive: true });
   const builtAt = new Date().toISOString().slice(0, 10);
-  const cells: Array<{ cell: string; voterCount: number; version: string; file: string }> = [];
+  const cells: Array<{ cell: string; voterCount: number; version: string; file: string; zip: string }> = [];
   for (const [cell, recs] of final) {
     const version = createHash("sha1").update(JSON.stringify(recs)).digest("hex").slice(0, 12);
     const fname = `${cell}.json`;
     writeFileSync(join(outDir, fname), JSON.stringify({ campaignId: job.campaignId, cell, jurisdiction: job.jurisdiction, builtAt, version, voterCount: recs.length, voters: recs }));
-    cells.push({ cell, voterCount: recs.length, version, file: fname });
+    // Modal residential ZIP for this cell (a precinct sits ≈ within one ZIP) — lets the optimizer
+    // join the per-ZIP yield store to a per-turf yield prior.
+    const zc = new Map<string, number>();
+    for (const r of recs) { const z = r.address.match(/(\d{5})\s*$/)?.[1]; if (z) zc.set(z, (zc.get(z) ?? 0) + 1); }
+    const zip = [...zc.entries()].sort((a, b) => b[1] - a[1])[0]?.[0] ?? "";
+    cells.push({ cell, voterCount: recs.length, version, file: fname, zip });
   }
   cells.sort((a, b) => b.voterCount - a.voterCount);
   writeFileSync(join(outDir, "manifest.json"), JSON.stringify({

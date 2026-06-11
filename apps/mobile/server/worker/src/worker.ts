@@ -126,6 +126,34 @@ export default {
       return json(await obj.json());
     }
 
+    // --- GET /assignments/:campaignId  (the optimizer: rank turfs by expected valid signatures) ---
+    if (req.method === "GET" && path.startsWith("/assignments/")) {
+      const id = decodeURIComponent(path.slice("/assignments/".length));
+      const auth = await authorize(req, env, { campaignId: id.split("/")[0] });
+      if (auth instanceof Response) return auth;
+      const mObj = await env.INDEXES.get(`manifests/${id}.json`);
+      if (!mObj) return json({ error: `no manifest for "${id}"` }, 404);
+      const manifest = (await mObj.json()) as { cells: Array<{ cell: string; voterCount: number; zip: string }> };
+      // Per-ZIP yield (Beta-Binomial smoothed, Moat B); ZIPs with no captures fall to the cold prior.
+      const { results } = await env.DB.prepare("SELECT zip, valid, total FROM yield WHERE campaign_id = ?").bind(id).all<{ zip: string; valid: number; total: number }>();
+      const rateByZip = new Map<string, number>();
+      for (const r of results ?? []) rateByZip.set(r.zip, smooth(r.valid, r.total));
+      const assignments = manifest.cells
+        .map((c) => { const rate = rateByZip.get(c.zip) ?? smooth(0, 0); return { c, rate, score: c.voterCount * rate }; })
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 12)
+        .map(({ c, rate }, i) => {
+          const prec = c.cell.split("__").slice(1).join("-"); // precinct (+ band)
+          return {
+            id: `opt-${c.cell}`, campaignId: id, turf: [c.cell],
+            label: `Precinct ${prec} · ${c.zip}`, areaShort: `Prec ${prec} · ${c.zip}`,
+            expectedValid: Math.round(rate * 100) / 100, voterCount: c.voterCount, rank: i + 1,
+            directive: `~${c.voterCount.toLocaleString()} active registrations · ${Math.round(rate * 100)}% expected valid${i === 0 ? " — your best turf right now." : "."}`,
+          };
+        });
+      return json({ campaignId: id, basis: "expected valid = voter density × yield (Beta-Binomial smoothed)", assignments });
+    }
+
     // --- GET /membership/:campaignId  (Tier 1b eligible-set Bloom filter; ~10MB, streamed) ---
     if (req.method === "GET" && path.startsWith("/membership/")) {
       const id = decodeURIComponent(path.slice("/membership/".length));
