@@ -20,6 +20,7 @@ import { buildIndex, type VoterIndex, type VoterRecord } from "@campaign-os/engi
 import { buildCampaignIndex } from "../data/voterIndex";
 import { pullIndex, getManifest, tileId } from "../net/sync";
 import { CAMPAIGNS } from "../data/campaigns";
+import { getActiveAssignment } from "./assignment";
 
 export type IndexOrigin = "bundled" | "synced";
 export interface EffectiveIndex {
@@ -152,7 +153,13 @@ async function syncIfStale(id: string): Promise<void> {
 // persisted individually; the campaign-level union is rebuilt in-memory. Falls back to the monolithic
 // index when the backend serves no manifest (e.g. tiles not deployed yet) — so prod keeps working.
 
-const turfOf = (campaignId: string): string[] | undefined => CAMPAIGNS.find((c) => c.id === campaignId)?.turf;
+// Turf comes from the active ASSIGNMENT (the optimizer's allocation of this circulator to a geography).
+// campaign.turf is only the hydrate-time fallback (the last-known turf before an assignment is set).
+const turfOf = (campaignId: string): string[] | undefined => {
+  const a = getActiveAssignment();
+  if (a && a.campaignId === campaignId && a.turf.length) return a.turf;
+  return CAMPAIGNS.find((c) => c.id === campaignId)?.turf;
+};
 
 /** Pull one turf tile to the manifest's target version (snapshot/delta); persisted under its id. */
 async function syncTile(key: string, want: string): Promise<void> {

@@ -15,6 +15,7 @@ import { LiveDot } from "../components/LiveMovement";
 import TurfYield from "../components/TurfYield";
 import { type Destination, type PetitionForm } from "../data/synced";
 import { useActiveCampaign } from "../store/campaign";
+import { useActiveAssignment, ensureAssignment } from "../store/assignment";
 import { useMovement } from "../store/movement";
 import { deriveStats, useSession } from "../store/session";
 import { C, MONO, DISPLAY, DISPLAY_BLACK, DISPLAY_SEMI } from "../theme";
@@ -34,6 +35,9 @@ function openForm(form: PetitionForm) {
 
 export default function AssignmentScreen({ onStart, onBack }: { onStart: () => void; onBack: () => void }) {
   const campaign = useActiveCampaign();
+  // The optimizer's turf allocation for this circulator — drives which tiles the device loads.
+  const assignment = useActiveAssignment();
+  useEffect(() => { ensureAssignment(campaign.id); }, [campaign.id]);
   const movement = useMovement();
   const comp = campaign.compensation;
   const payNum = comp.basis === "volunteer" ? "★" : money(comp.rate);
@@ -89,8 +93,9 @@ export default function AssignmentScreen({ onStart, onBack }: { onStart: () => v
 
         <View style={styles.below}>
           <Animated.View style={group(intro[1])}>
+            {assignment ? <Text style={styles.turfLine}>YOUR TURF · {assignment.label}</Text> : null}
             <View style={styles.directive}>
-              <Text style={styles.directiveText}>→ {campaign.directive}</Text>
+              <Text style={styles.directiveText}>→ {assignment?.directive ?? campaign.directive}</Text>
             </View>
 
             <View style={styles.facts}>
@@ -196,6 +201,7 @@ const styles = StyleSheet.create({
 
   below: { paddingHorizontal: 22, paddingTop: 22 },
 
+  turfLine: { color: C.inkFaint, fontFamily: MONO, fontSize: 10, letterSpacing: 1.5, marginBottom: 8 },
   directive: { backgroundColor: C.mintDeep, borderRadius: 11, paddingVertical: 12, paddingHorizontal: 13 },
   directiveText: { color: C.mint, fontSize: 14, fontWeight: "600", lineHeight: 20 },
 
