@@ -11,8 +11,11 @@ import type { Assignment } from "../data/assignments";
 
 // Simulator reaches the host here; point at the deployed Worker URL for staging/prod. The Node dev
 // reference ignores the token; the Cloudflare Worker (server/worker) requires it (device-scoped).
-export const SYNC_BASE_URL = "https://gather-sync.gotaylorfamilygo.workers.dev";
-export const SYNC_TOKEN = "33f82b946c2b0b6a89dcf7f3f3dbffaf218177ce3f8c4a0e"; // prod device token (read-only, campaign-unscoped); admin token stays operator-only
+// The prod device token is NOT committed — set EXPO_PUBLIC_SYNC_TOKEN at build time (Expo inlines
+// EXPO_PUBLIC_* vars). The default matches the local dev server's seeded token, so `expo start` works
+// offline/locally with no env. The admin token is operator-only and never ships in the app.
+export const SYNC_BASE_URL = process.env.EXPO_PUBLIC_SYNC_BASE_URL ?? "https://gather-sync.gotaylorfamilygo.workers.dev";
+export const SYNC_TOKEN = process.env.EXPO_PUBLIC_SYNC_TOKEN ?? "dev-device-token";
 const TIMEOUT_MS = 6000;
 
 export interface Movement { circulators: number; validThisWeek: number; states: number }
