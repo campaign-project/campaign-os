@@ -171,21 +171,44 @@ export default {
 
       const body = (await req.json().catch(() => null)) as { name?: string; address?: string } | null;
       if (!body?.name || !body?.address) return json({ error: "name + address required" }, 400);
-      const meta = await env.DB.prepare("SELECT version, jurisdiction FROM index_meta WHERE campaign_id = ?").bind(id).first<{ version: string; jurisdiction: string }>();
-      if (!meta) return json({ error: `no index for "${id}"` }, 404);
 
-      const cacheKey = `${id}@${meta.version}`;
-      let index = verifyIndexCache.get(cacheKey);
-      if (!index) {
+      // Statewide blocking: fetch just the signer's ZIP shard (a few k voters) and match it. Falls
+      // back to the campaign's monolithic index where no shard exists (smaller scope, still useful).
+      const zip5 = body.address.match(/(\d{5})(?:-\d{4})?\s*$/)?.[1] ?? "";
+      let voters: VoterRecord[] | null = null, jurisdiction = "", cacheKey = "";
+      if (zip5) {
+        const shard = await env.INDEXES.get(`verify/${id}/zip/${zip5}.json`);
+        if (shard) {
+          const d = (await shard.json()) as { voters: VoterRecord[]; jurisdiction: string; version: string };
+          voters = d.voters; jurisdiction = d.jurisdiction; cacheKey = `vfy:${id}:${zip5}:${d.version}`;
+        }
+      }
+      if (!voters) {
+        const meta = await env.DB.prepare("SELECT version, jurisdiction FROM index_meta WHERE campaign_id = ?").bind(id).first<{ version: string; jurisdiction: string }>();
+        if (!meta) return json({ error: `no records for "${id}"` }, 404);
         const art = await readArtifact(env, id, meta.version);
         if (!art) return json({ error: "index artifact missing in R2" }, 500);
-        index = buildIndex(art.voters as Parameters<typeof buildIndex>[0]);
-        verifyIndexCache.set(cacheKey, index);
+        voters = art.voters; jurisdiction = meta.jurisdiction; cacheKey = `vfy:${id}:mono:${meta.version}`;
       }
-      const v = validateSigner({ id: "verify", name: body.name, address: body.address, capture: "wet" } as Parameters<typeof validateSigner>[0], index, makeContext(meta.jurisdiction));
+      let index = verifyIndexCache.get(cacheKey);
+      if (!index) { index = buildIndex(voters as Parameters<typeof buildIndex>[0]); verifyIndexCache.set(cacheKey, index); }
+      const v = validateSigner({ id: "verify", name: body.name, address: body.address, capture: "wet" } as Parameters<typeof validateSigner>[0], index, makeContext(jurisdiction));
       // §5: verdict + opaque matched id only — never the matched voter's name/address/details.
-      console.log(`verify[${id}] ${v.verdict}/${v.band} ${v.score.toFixed(2)} tok=${tok.slice(0, 6)}…`);
+      console.log(`verify[${id}] zip=${zip5 || "-"} src=${cacheKey.includes(":mono:") ? "mono" : "shard"} → ${v.verdict}/${v.band} ${v.score.toFixed(2)}`);
       return json({ verdict: v.verdict, band: v.band, score: v.score, matched: !!v.matchedVoterId, matchedVoterId: v.matchedVoterId ?? null });
+    }
+
+    // --- PUT /verify-shard/:campaignId/:zip5  (operator upload of a ZIP record shard; admin token) ---
+    if (req.method === "PUT" && path.startsWith("/verify-shard/")) {
+      const rest = decodeURIComponent(path.slice("/verify-shard/".length));
+      const slash = rest.lastIndexOf("/");
+      if (slash < 0) return json({ error: "path: /verify-shard/<campaign>/<zip5>" }, 400);
+      const auth = await authorize(req, env, { admin: true });
+      if (auth instanceof Response) return auth;
+      const txt = await req.text();
+      if (!txt) return json({ error: "empty shard" }, 400);
+      await env.INDEXES.put(`verify/${rest.slice(0, slash)}/zip/${rest.slice(slash + 1)}.json`, txt);
+      return json({ ok: true, zip: rest.slice(slash + 1) });
     }
 
     // --- POST /captures ---
