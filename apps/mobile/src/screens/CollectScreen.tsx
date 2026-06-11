@@ -19,6 +19,7 @@ import { useCampaignIndex, getVoterList } from "../store/voterIndexStore";
 import { useMembershipFilter } from "../store/membershipStore";
 import { getVerify, type VerifyResult } from "../net/sync";
 import { useActiveCampaign } from "../store/campaign";
+import { useActiveAssignment } from "../store/assignment";
 import { addCapture } from "../store/session";
 import ShiftImpact from "../components/ShiftImpact";
 import { C, MONO, VERDICT_COLOR, VERDICT_LABEL } from "../theme";
@@ -44,6 +45,7 @@ export default function CollectScreen() {
   // Engine context + voter index both follow the picked campaign (jurisdiction drives the
   // verification mode; the index is that campaign's bounded, minimized per-geography slice).
   const campaign = useActiveCampaign();
+  const assignment = useActiveAssignment(); // the optimizer's turf — labels the loaded index
   const ctx = useMemo(() => makeContext(campaign.jurisdiction), [campaign.jurisdiction]);
   const { index, voterCount, origin, builtAt } = useCampaignIndex(campaign.id); // bundled now → synced when the server pull lands
   const examples = getExamples(campaign.id);
@@ -137,7 +139,7 @@ export default function CollectScreen() {
         <ScrollView style={styles.flex} contentContainerStyle={styles.wrap} keyboardShouldPersistTaps="handled">
           <Text style={styles.formLabel}>RECORD A PAPER SIGNATURE</Text>
           <Text style={styles.indexNote}>
-            matching {voterCount} voters · {campaign.areaShort} ·{" "}
+            matching {voterCount} voters · {assignment?.areaShort ?? campaign.areaShort} ·{" "}
             <Text style={{ color: origin === "synced" ? C.mint : C.inkGhost }}>
               {origin === "synced" ? `synced ✓ ${builtAt}` : "bundled"}
             </Text>

@@ -19,6 +19,7 @@ import Onboarding from "./src/screens/Onboarding";
 import AssignmentScreen from "./src/screens/AssignmentScreen";
 import CampaignPicker from "./src/screens/CampaignPicker";
 import { useActiveCampaign } from "./src/store/campaign";
+import { useActiveAssignment } from "./src/store/assignment";
 import { deriveStats, useSession } from "./src/store/session";
 import { getFlag, setFlag, ONBOARDED } from "./src/store/prefs";
 import { C, MONO } from "./src/theme";
@@ -32,6 +33,7 @@ export default function App() {
   const [onboarded, setOnboarded] = useState(() => getFlag(ONBOARDED));
   const stats = deriveStats(useSession());
   const campaign = useActiveCampaign();
+  const assignment = useActiveAssignment(); // the optimizer's turf — labels the working top bar
 
   // Pull the live movement rollup once on launch (falls back to static defaults if offline).
   useEffect(() => { getMovement().then((m) => { if (m) setMovement(m); }); }, []);
@@ -74,7 +76,7 @@ export default function App() {
       {/* Working top bar: assignment context collapsed to one tappable line + live progress. */}
       <View style={styles.topbar}>
         <Pressable style={styles.assignChip} onPress={() => setPhase("briefing")} hitSlop={8}>
-          <Text style={styles.assignChipText}>‹ {campaign.areaShort}</Text>
+          <Text style={styles.assignChipText}>‹ {assignment?.areaShort ?? campaign.areaShort}</Text>
         </Pressable>
         <Text style={styles.progress}>
           <Text style={styles.progressNum}>{stats.valid}</Text>
