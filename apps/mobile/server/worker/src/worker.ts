@@ -19,6 +19,9 @@
  * campaign scope). Device tokens may be locked to one campaign; admin tokens may PUT indexes.
  * Voter PII (the index artifacts) lives only in R2 + flows to devices minimized — never public.
  */
+// Tier 2 (RFC-002-A1 §5) runs the SAME engine matcher server-side — bundled by wrangler/esbuild from
+// the workspace (pure TS, no platform deps), so /verify returns verdicts identical to the device.
+import { buildIndex, validateSigner, makeContext, type VoterIndex } from "../../../../../packages/engine/src/index";
 
 interface Env {
   DB: D1Database;
@@ -29,6 +32,12 @@ interface VoterRecord {
   id: string; name: string; address: string; status: string;
   registeredOn?: string; county?: string; district?: string;
 }
+
+// Tier-2 caches (per warm isolate): the built match index per (campaign,version), and a coarse
+// per-token rate limiter — the /verify oracle guard (§5). Production wants a durable D1/KV limiter.
+const verifyIndexCache = new Map<string, VoterIndex>();
+const verifyRate = new Map<string, number[]>();
+const VERIFY_PER_MIN = 60;
 
 const PRIOR_A = 7, PRIOR_B = 3; // Beta-Binomial cold-start prior ≈ 0.70
 const smooth = (valid: number, total: number) => (valid + PRIOR_A) / (total + PRIOR_A + PRIOR_B);
@@ -147,6 +156,36 @@ export default {
         }
       }
       return json({ mode: "snapshot", version: meta.version, jurisdiction: meta.jurisdiction, builtAt: meta.built_at, voterCount: meta.voter_count, voters: current.voters });
+    }
+
+    // --- POST /verify/:campaignId  (Tier 2: authoritative online point-lookup; rate-limited, verdict-only) ---
+    if (req.method === "POST" && path.startsWith("/verify/")) {
+      const id = decodeURIComponent(path.slice("/verify/".length));
+      const auth = await authorize(req, env, { campaignId: id.split("/")[0] });
+      if (auth instanceof Response) return auth;
+      const tok = bearer(req)!;
+      const now = Date.now();
+      const hits = (verifyRate.get(tok) ?? []).filter((t) => now - t < 60_000);
+      if (hits.length >= VERIFY_PER_MIN) return json({ error: "rate limited — slow down" }, 429); // §5 oracle guard
+      hits.push(now); verifyRate.set(tok, hits);
+
+      const body = (await req.json().catch(() => null)) as { name?: string; address?: string } | null;
+      if (!body?.name || !body?.address) return json({ error: "name + address required" }, 400);
+      const meta = await env.DB.prepare("SELECT version, jurisdiction FROM index_meta WHERE campaign_id = ?").bind(id).first<{ version: string; jurisdiction: string }>();
+      if (!meta) return json({ error: `no index for "${id}"` }, 404);
+
+      const cacheKey = `${id}@${meta.version}`;
+      let index = verifyIndexCache.get(cacheKey);
+      if (!index) {
+        const art = await readArtifact(env, id, meta.version);
+        if (!art) return json({ error: "index artifact missing in R2" }, 500);
+        index = buildIndex(art.voters as Parameters<typeof buildIndex>[0]);
+        verifyIndexCache.set(cacheKey, index);
+      }
+      const v = validateSigner({ id: "verify", name: body.name, address: body.address, capture: "wet" } as Parameters<typeof validateSigner>[0], index, makeContext(meta.jurisdiction));
+      // §5: verdict + opaque matched id only — never the matched voter's name/address/details.
+      console.log(`verify[${id}] ${v.verdict}/${v.band} ${v.score.toFixed(2)} tok=${tok.slice(0, 6)}…`);
+      return json({ verdict: v.verdict, band: v.band, score: v.score, matched: !!v.matchedVoterId, matchedVoterId: v.matchedVoterId ?? null });
     }
 
     // --- POST /captures ---

@@ -17,6 +17,7 @@ import { makeContext, validateSigner, suggestVoters, isMember, type SignerVerdic
 import { getExamples } from "../data/voterIndex";
 import { useCampaignIndex, getVoterList } from "../store/voterIndexStore";
 import { useMembershipFilter } from "../store/membershipStore";
+import { getVerify, type VerifyResult } from "../net/sync";
 import { useActiveCampaign } from "../store/campaign";
 import { addCapture } from "../store/session";
 import ShiftImpact from "../components/ShiftImpact";
@@ -35,6 +36,7 @@ export default function CollectScreen() {
   const [toast, setToast] = useState<Toast | null>(null);
   const [suggestions, setSuggestions] = useState<VoterRecord[]>([]);
   const [showSuggest, setShowSuggest] = useState(false);
+  const [verifyResult, setVerifyResult] = useState<VerifyResult | null>(null);
 
   const anim = useRef(new Animated.Value(0)).current;
   const seqRef = useRef<Animated.CompositeAnimation | null>(null);
@@ -62,6 +64,30 @@ export default function CollectScreen() {
     () => !!(ready && live && live.band === "NO_MATCH" && membership && isMember(membership, name, address)),
     [ready, live, membership, name, address],
   );
+
+  // Tier 2 (RFC-002-A1 §5): when a signer isn't in any loaded tile AND we have connectivity, ask the
+  // server to match the full roll authoritatively — the upgrade over Tier 1b's "appears registered."
+  // Debounced (it's a network call); offline → no-op and we fall back to Tier 1b / local.
+  useEffect(() => {
+    setVerifyResult(null);
+    if (!(ready && live && live.band === "NO_MATCH")) return;
+    let alive = true;
+    const t = setTimeout(() => { void getVerify(campaign.id, name, address).then((r) => { if (alive && r) setVerifyResult(r); }); }, 400);
+    return () => { alive = false; clearTimeout(t); };
+  }, [name, address, ready, live?.band, campaign.id]);
+
+  // Compose the verdict card across the ladder: Tier 1a (local tile) → Tier 2 (online /verify, when it
+  // confirms VALID) → Tier 1b (membership filter) → local NO_MATCH.
+  const card = useMemo(() => {
+    if (!live) return null;
+    if (live.band !== "NO_MATCH")
+      return { color: VERDICT_COLOR[live.verdict], label: VERDICT_LABEL[live.verdict], score: live.score, voterId: live.voter?.id, voterName: live.voter?.name, voterStatus: live.voter?.status, reason: live.reasons[0], tag: undefined as string | undefined };
+    if (verifyResult?.verdict === "VALID")
+      return { color: C.mint, label: VERDICT_LABEL.VALID, score: verifyResult.score, voterId: verifyResult.matchedVoterId ?? undefined, voterName: undefined, voterStatus: undefined, reason: "Confirmed against the full voter roll online — we'll log it for reconcile.", tag: "verified online" };
+    if (appearsRegistered)
+      return { color: C.accent, label: "◇ APPEARS REGISTERED", score: 0, voterId: undefined, voterName: undefined, voterStatus: undefined, reason: "Not in your turf, but on the statewide voter roll — collect it; we'll confirm on sync.", tag: "statewide roll" };
+    return { color: VERDICT_COLOR[live.verdict], label: VERDICT_LABEL[live.verdict], score: live.score, voterId: undefined, voterName: undefined, voterStatus: undefined, reason: live.reasons[0], tag: undefined as string | undefined };
+  }, [live, verifyResult, appearsRegistered]);
 
   // Typeahead: as you type — or dictate — surface the registered voters in the synced turf so a tap
   // fills name+address AND pre-resolves the match (the live verdict below then reads VALID instantly).
@@ -148,29 +174,19 @@ export default function CollectScreen() {
             </View>
           ) : null}
 
-          {/* Verdict — Tier 1b (statewide membership filter) overrides a local NO_MATCH at a venue */}
-          {appearsRegistered ? (
-            <View style={[styles.verdictCard, { borderColor: C.accent }]}>
+          {/* Verdict — composed across the ladder: Tier 1a (tile) → Tier 2 (online /verify) → Tier 1b (filter) → local */}
+          {card ? (
+            <View style={[styles.verdictCard, { borderColor: card.color }]}>
               <View style={styles.verdictTop}>
-                <Text style={[styles.verdictText, { color: C.accent }]}>◇ APPEARS REGISTERED</Text>
-                <Text style={styles.score}>statewide roll</Text>
+                <Text style={[styles.verdictText, { color: card.color }]}>{card.label}</Text>
+                <Text style={styles.score}>{card.tag ?? (card.score > 0 ? card.score.toFixed(2) : "—")}</Text>
               </View>
-              <Text style={styles.reason}>Not in your turf, but on the statewide voter roll — collect it; we'll confirm on sync.</Text>
-            </View>
-          ) : live ? (
-            <View style={[styles.verdictCard, { borderColor: VERDICT_COLOR[live.verdict] }]}>
-              <View style={styles.verdictTop}>
-                <Text style={[styles.verdictText, { color: VERDICT_COLOR[live.verdict] }]}>
-                  {VERDICT_LABEL[live.verdict]}
-                </Text>
-                <Text style={styles.score}>{live.score > 0 ? live.score.toFixed(2) : "—"}</Text>
-              </View>
-              {live.voter ? (
+              {card.voterId ? (
                 <Text style={styles.matchLine}>
-                  matched {live.voter.id} · {live.voter.name} · {live.voter.status}
+                  matched {card.voterId}{card.voterName ? ` · ${card.voterName}` : ""}{card.voterStatus ? ` · ${card.voterStatus}` : ""}
                 </Text>
               ) : null}
-              <Text style={styles.reason}>{live.reasons[0]}</Text>
+              <Text style={styles.reason}>{card.reason}</Text>
             </View>
           ) : (
             <Text style={styles.idleHint}>Type or 🎤 dictate a name + address — we'll match it to your turf. Or tap an example.</Text>
