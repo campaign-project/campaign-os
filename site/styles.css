@@ -551,7 +551,7 @@ h2{
 }
 
 /* ── 03 · the signature engine ───────────────────────────────────────────── */
-.engine__metrics{ margin-top: 8px; }
+.engine__metrics{ margin-top: 28px; }
 .ladder{ list-style: none; margin: 34px 0 0; padding: 0; display: grid; gap: 12px; max-width: 900px; }
 .tier{
   display: flex; gap: 16px; align-items: flex-start; padding: 16px 18px;
