@@ -102,15 +102,7 @@
     countEls.forEach((el) => mIO.observe(el));
   }
 
-  /* live-ish star count */
-  const starEl = $("#starcount");
-  if (starEl && !reduce) {
-    let stars = 14200;
-    setInterval(() => {
-      stars += Math.floor(Math.random() * 3);
-      starEl.textContent = (stars / 1000).toFixed(1) + "k";
-    }, 5200);
-  }
+  /* (removed a fabricated star counter — the GitHub CTA links to the real repo, no invented count) */
 
   /* ---------------------------------------------------------
      5. CURSOR GLOW + CARD SPOTLIGHT
@@ -236,7 +228,7 @@
   if (copyBtn) {
     copyBtn.addEventListener("click", async () => {
       const cmd = [
-        "git clone https://github.com/campaign-os/campaign-os",
+        "git clone https://github.com/campaign-project/campaign-os",
         "pnpm install && pnpm db:push",
         "pnpm dev",
       ].join("\n");
