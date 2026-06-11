@@ -18,6 +18,7 @@ import { getExamples } from "../data/voterIndex";
 import { useCampaignIndex, getVoterList } from "../store/voterIndexStore";
 import { useMembershipFilter } from "../store/membershipStore";
 import { getVerify, type VerifyResult } from "../net/sync";
+import { getAddressSuggest } from "../net/places";
 import { useActiveCampaign } from "../store/campaign";
 import { useActiveAssignment } from "../store/assignment";
 import { addCapture } from "../store/session";
@@ -37,6 +38,7 @@ export default function CollectScreen() {
   const [toast, setToast] = useState<Toast | null>(null);
   const [suggestions, setSuggestions] = useState<VoterRecord[]>([]);
   const [showSuggest, setShowSuggest] = useState(false);
+  const [addrHits, setAddrHits] = useState<string[]>([]);
   const [verifyResult, setVerifyResult] = useState<VerifyResult | null>(null);
 
   const anim = useRef(new Animated.Value(0)).current;
@@ -93,15 +95,29 @@ export default function CollectScreen() {
 
   // Typeahead: as you type — or dictate — surface the registered voters in the synced turf so a tap
   // fills name+address AND pre-resolves the match (the live verdict below then reads VALID instantly).
-  // Debounced; queries name+address together, so it narrows as you add either. Same engine
+  // Debounced; NAME-driven (the address field drives the global fallback below instead). Same engine
   // normalization as the matcher → tolerant of the messy, unpunctuated text voice dictation produces.
   useEffect(() => {
     if (!showSuggest) { setSuggestions([]); return; }
-    const q = `${name} ${address}`.trim();
+    const q = name.trim(); // NAME-driven: keep address words (e.g. a street named "Sharon") out of name matching
     if (q.length < 2) { setSuggestions([]); return; }
     const t = setTimeout(() => setSuggestions(suggestVoters(q, getVoterList(campaign.id), 6)), 130);
     return () => clearTimeout(t);
-  }, [name, address, showSuggest, campaign.id]);
+  }, [name, showSuggest, campaign.id]);
+
+  // Connected-venue fallback (RFC-002-A1): no in-turf voter match + connectivity → global address
+  // autocomplete so entry stays fast for a dispersed crowd. It completes the ADDRESS only — the engine
+  // still confirms registration (Tier 1b membership filter offline / Tier 2 /verify online). Offline
+  // → returns nothing and the circulator types manually; the membership filter still gives the verdict.
+  useEffect(() => {
+    if (!showSuggest || suggestions.length > 0 || address.trim().length < 4) { setAddrHits([]); return; }
+    let alive = true;
+    const bias = { lat: campaign.destination.lat, lon: campaign.destination.lng };
+    const t = setTimeout(() => { void getAddressSuggest(address, bias).then((r) => { if (alive && r) setAddrHits(r); }); }, 300);
+    return () => { alive = false; clearTimeout(t); };
+  }, [address, showSuggest, suggestions.length]);
+
+  function pickAddress(line: string) { setAddress(line); setAddrHits([]); setShowSuggest(false); }
 
   function pick(v: VoterRecord) {
     setName(pretty(v.name));
@@ -171,6 +187,18 @@ export default function CollectScreen() {
                 <Pressable key={v.id} style={[styles.suggestRow, i > 0 && styles.suggestRowDiv]} onPress={() => pick(v)}>
                   <Text style={styles.suggestName} numberOfLines={1}>{pretty(v.name)}</Text>
                   <Text style={styles.suggestAddr} numberOfLines={1}>{pretty(v.address)}</Text>
+                </Pressable>
+              ))}
+            </View>
+          ) : null}
+
+          {/* Connected-venue fallback: no in-turf match → global address autocomplete (registration confirmed below) */}
+          {showSuggest && suggestions.length === 0 && addrHits.length > 0 ? (
+            <View style={styles.suggestBox}>
+              <Text style={styles.suggestHead}>ADDRESSES · we'll confirm registration</Text>
+              {addrHits.map((line, i) => (
+                <Pressable key={line} style={[styles.suggestRow, i > 0 && styles.suggestRowDiv]} onPress={() => pickAddress(line)}>
+                  <Text style={styles.suggestAddr} numberOfLines={1}>{line}</Text>
                 </Pressable>
               ))}
             </View>
