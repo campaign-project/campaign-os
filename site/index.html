@@ -39,6 +39,7 @@
   <nav class="menubar__nav" aria-label="Primary">
     <a href="#thesis">Thesis</a>
     <a href="#launch">Launch</a>
+    <a href="#engine">Engine</a>
     <a href="#modules">Modules</a>
     <a href="#roadmap">Roadmap</a>
     <a href="#govern">Governance</a>
@@ -218,10 +219,55 @@
   </ul>
 </section>
 
+<!-- ===================== SIGNATURE ENGINE ===================== -->
+<section class="band engine" id="engine">
+  <div class="band__head reveal" data-reveal>
+    <span class="sec-num">03 / the signature engine</span>
+    <h2>Will it count? <span class="hl-mint">Instantly. Offline.</span></h2>
+    <p class="band__sub">
+      Ballot access lives or dies on <em>valid</em> signatures. Gather runs the same record-linkage
+      engine on the volunteer's phone and on the server — so a circulator knows at the doorstep, with
+      no signal, whether the signature they just took will hold. The phone carries a turf, not a state.
+    </p>
+  </div>
+
+  <dl class="metrics engine__metrics reveal" data-reveal>
+    <div><dt>6.7M&nbsp;→&nbsp;9&nbsp;MB</dt><dd>statewide eligibility, as a Bloom filter on the phone</dd></div>
+    <div><dt>~1&nbsp;MB</dt><dd>one turf tile — vs 1.5&nbsp;GB for the whole state</dd></div>
+    <div><dt>0&nbsp;ms</dt><dd>offline verdict — no round-trip at the doorstep</dd></div>
+    <div><dt>0.43%</dt><dd>false-positive rate on the membership filter</dd></div>
+  </dl>
+
+  <ol class="ladder reveal" data-reveal>
+    <li class="tier">
+      <span class="tier__n">1a</span>
+      <div class="tier__b"><b>Local turf tile</b><span>The optimizer's assigned precinct (~a few thousand voters) rides on the phone. Full fuzzy match + the matched record — instant, offline.</span></div>
+    </li>
+    <li class="tier">
+      <span class="tier__n">1b</span>
+      <div class="tier__b"><b>Statewide membership filter</b><span>For a signer who isn't local — the stadium, the state fair — a 9&nbsp;MB Bloom filter confirms "registered, statewide" offline. Hashed bits, never browsable records.</span></div>
+    </li>
+    <li class="tier">
+      <span class="tier__n">2</span>
+      <div class="tier__b"><b>Online point-lookup</b><span>With signal, the server matches the full roll authoritatively and returns a verdict — never a record. ZIP-blocked, so it scales to any state.</span></div>
+    </li>
+    <li class="tier tier--amber">
+      <span class="tier__n">3</span>
+      <div class="tier__b"><b>Server reconcile</b><span>Every capture is re-validated and de-duplicated across all volunteers on sync. The device is a cache; the server is the source of truth.</span></div>
+    </li>
+  </ol>
+
+  <p class="engine__inv reveal" data-reveal>
+    <span class="dot-live"></span> <b>Capture is never blocked.</b> The signature is always collected — the ladder only decides how fast, and how certain, the verdict is.
+  </p>
+
+  <a class="btn btn--line engine__cta reveal" data-reveal href="gather.html">▸ Try the live engine — it validates in your browser</a>
+</section>
+
 <!-- ===================== MODULES ===================== -->
 <section class="band modules" id="modules">
   <div class="band__head reveal" data-reveal>
-    <span class="sec-num">03 / system modules</span>
+    <span class="sec-num">04 / system modules</span>
     <h2>Six modules. One CRM spine. Every record knows who owns it.</h2>
     <p class="band__sub">
       Mount only what your campaign needs. Each module attaches to shared people, interactions,
@@ -283,7 +329,7 @@
 <!-- ===================== ROADMAP ===================== -->
 <section class="band roadmap" id="roadmap">
   <div class="band__head reveal" data-reveal>
-    <span class="sec-num">04 / release timeline</span>
+    <span class="sec-num">05 / release timeline</span>
     <h2>Shipping one accountable milestone at a time.</h2>
   </div>
 
@@ -336,7 +382,7 @@
 <!-- ===================== GOVERNANCE / MANIFESTO ===================== -->
 <section class="band govern" id="govern">
   <div class="band__head reveal" data-reveal>
-    <span class="sec-num sec-num--amber">05 / governance</span>
+    <span class="sec-num sec-num--amber">06 / governance</span>
     <h2>Owned by everyone. Captured by no one.</h2>
   </div>
 
@@ -362,7 +408,7 @@
 <!-- ===================== JOIN / CTA ===================== -->
 <section class="band join" id="join">
   <div class="join__inner reveal" data-reveal>
-    <span class="sec-num">06 / deploy</span>
+    <span class="sec-num">07 / deploy</span>
     <h2>Democracy is open source.<br/>Clone it.</h2>
     <p class="join__sub">Three commands to a running campaign. No vendor lock-in, no per-seat tax, no black box.</p>
 
