@@ -32,10 +32,16 @@ const TILES_OUT = join(REAL_IN, "out", "tiles");          // tile artifacts (git
 const MAX_TILE = 4000;                                    // split a denser cell into house-number bands
 
 // What to tile: a campaign + the coverage ZIPs that scope it. The tiling CELL is NOT here — it
-// comes from the jurisdiction's adapter, so this stays a thin per-campaign config.
-interface TileJob { campaignId: string; jurisdiction: string; zips: string[] }
+// comes from the jurisdiction's adapter, so this stays a thin per-campaign config. `probeId` is an
+// optional known voter id — the build prints which tile it landed in (a demo sanity check), no
+// effect on output. After the first real build, read manifest.json and paste the covering cell(s)
+// into the campaign's `turf` (apps/mobile/src/data/campaigns.ts) — the NC entry shows the pattern.
+interface TileJob { campaignId: string; jurisdiction: string; zips: string[]; probeId?: string }
 const JOBS: TileJob[] = [
-  { campaignId: "nc-independent", jurisdiction: "North Carolina", zips: ["28202", "28203", "28204", "28205", "28211"] },
+  { campaignId: "nc-independent", jurisdiction: "North Carolina", zips: ["28202", "28203", "28204", "28205", "28211"], probeId: "CW287640" },
+  // Ohio Minimum Wage — OSU campus district (Franklin County). Drop voterfiles/ohio.csv (per-county
+  // CSVs concatenated to ONE file with a single header — see sources.ts Ohio note); tiles by precinct.
+  { campaignId: "oh-minwage", jurisdiction: "Ohio", zips: ["43201", "43210"] },
 ];
 
 interface Rec {
@@ -82,7 +88,7 @@ async function tile(job: TileJob) {
   const useCell = spec.columns.tileCell != null;        // per-state decision, not per-row
   const scheme = useCell ? "tileCell" : "zip-street";
   let scanned = 0, kept = 0;
-  let kirkCell = "";
+  let probeCell = "";
 
   const rl = createInterface({ input: createReadStream(join(REAL_IN, file), { encoding: "latin1" }), crlfDelay: Infinity });
   let get: ReturnType<typeof makeGet> | null = null;
@@ -114,7 +120,7 @@ async function tile(job: TileJob) {
     const key = cellOf(useCell, get, row, rec.county, zip5, na.street);
     (tiles.get(key) ?? tiles.set(key, []).get(key)!).push(rec);
     kept++;
-    if (rec.id === "CW287640") kirkCell = key;
+    if (job.probeId && rec.id === job.probeId) probeCell = key;
   }
 
   // Split any oversize cell (dense precinct) into house-number bands so no tile blows the budget.
@@ -151,7 +157,7 @@ async function tile(job: TileJob) {
   const med = sizes[Math.floor(sizes.length / 2)] ?? 0;
   console.log(`  ${job.campaignId} (${job.jurisdiction}, scheme=${scheme}): ${scanned.toLocaleString()} scanned → ${kept.toLocaleString()} in scope → ${cells.length} tiles`);
   console.log(`    tile records  min ${sizes[0] ?? 0} · median ${med} · max ${sizes[sizes.length - 1] ?? 0}`);
-  console.log(`    Kirk (CW287640) → tile ${kirkCell || "(out of scope)"}`);
+  if (job.probeId) console.log(`    probe ${job.probeId} → tile ${probeCell || "(out of scope)"}`);
 }
 
 console.log("\n⚠️  Tiling lawfully-obtained voter files from voterfiles/. Output is real PII (gitignored).\n");

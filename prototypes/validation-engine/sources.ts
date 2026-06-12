@@ -52,12 +52,13 @@ export const ADAPTERS: Record<string, AdapterSpec> = {
       city: "RESIDENTIAL_CITY", state: "RESIDENTIAL_STATE", zip: "RESIDENTIAL_ZIP",
       status: "VOTER_STATUS", registrationDate: "REGISTRATION_DATE",
       county: "COUNTY_NUMBER", district: "CONGRESSIONAL_DISTRICT",
+      tileCell: "PRECINCT_CODE", // OH's compact turf geography (county-qualified by build-tiles) — precinct tiles, like NC
     },
     downloadUrl: "https://www6.ohiosos.gov/ords/f?p=VOTERFTP:HOME",
     layoutDocUrl: "https://www6.ohiosos.gov/ords/f?p=111:2::FILE_LAYOUT:NO:RP,2::",
     confidence: "medium",
     verifiedAsOf: "2026-06-07",
-    notes: "County is a numeric code (COUNTY_NUMBER), not a name. OH publishes per-county CSVs; concatenate for statewide.",
+    notes: "County is a numeric code (COUNTY_NUMBER), not a name. tileCell=PRECINCT_CODE gives precinct tiling (county-qualified, like NC). OH publishes per-county CSVs; concatenate to ONE statewide file keeping a SINGLE header row (head -1 first.csv > ohio.csv; for f in *.csv; do tail -n +2 \"$f\" >> ohio.csv; done) — extra header rows would parse as junk voter records. Confirm PRECINCT_CODE/RESIDENTIAL_* headers against the real file on first build.",
   },
 
   Mississippi: {

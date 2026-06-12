@@ -33,6 +33,9 @@ const OUT = join(REAL_IN, "out", "verify");
 interface Job { campaignId: string; jurisdiction: string; zips: string[] }
 const JOBS: Job[] = [
   { campaignId: "nc-independent", jurisdiction: "North Carolina", zips: ["28202", "28203", "28204", "28205", "28211", "27614"] },
+  // Ohio — campaign turf (OSU/Columbus 43201/43210) + Cleveland 44114 (out-of-metro, proves statewide
+  // resolution). Drop voterfiles/ohio.csv (single header — see sources.ts Ohio note).
+  { campaignId: "oh-minwage", jurisdiction: "Ohio", zips: ["43201", "43210", "44114"] },
 ];
 
 function makeGet(headerLine: string, spec: AdapterSpec) {

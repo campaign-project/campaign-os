@@ -24,10 +24,16 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const REAL_IN = join(HERE, "..", "voterfiles");
 const OUT = join(REAL_IN, "out", "membership");
 const FPR = 0.01;           // target false-positive rate
-const N_EST = 8_000_000;    // size for ~8M (NC active ≈ 7M → actual FPR a touch better than target)
+const N_EST = 8_000_000;    // sized for ~8M actives (NC ≈7M, OH ≈5.7M → realized FPR a touch better than target)
 
-interface Job { campaignId: string; jurisdiction: string } // statewide eligible set (whole active file)
-const JOBS: Job[] = [{ campaignId: "nc-independent", jurisdiction: "North Carolina" }];
+// Statewide eligible set (whole active file). `probe` is an optional self-check: a known member id
+// (must hit), plus an optional casual name/address variant (proves a middle-name-dropped match hits).
+interface Job { campaignId: string; jurisdiction: string; probe?: { id: string; casualName?: string; casualAddress?: string } }
+const JOBS: Job[] = [
+  { campaignId: "nc-independent", jurisdiction: "North Carolina", probe: { id: "CW287640", casualName: "Kirk Fanelly", casualAddress: "130 Sharon Township Ln, Charlotte NC 28211" } },
+  // Ohio Minimum Wage — statewide active set (~5.7M). Drop voterfiles/ohio.csv (single header).
+  { campaignId: "oh-minwage", jurisdiction: "Ohio" },
+];
 
 function makeGet(headerLine: string, spec: AdapterSpec) {
   const header = splitDelimited(headerLine, spec.delimiter);
@@ -52,7 +58,7 @@ async function build(job: Job) {
 
   const f = newFilter(N_EST, FPR);
   let scanned = 0, active = 0;
-  let kirk: { name: string; address: string } | null = null;
+  let probeRec: { name: string; address: string } | null = null;
   const rl = createInterface({ input: createReadStream(join(REAL_IN, file), { encoding: "latin1" }), crlfDelay: Infinity });
   let get: ReturnType<typeof makeGet> | null = null;
   for await (const raw of rl) {
@@ -67,7 +73,7 @@ async function build(job: Job) {
     const address = `${get(r, "streetAddress")}, ${get(r, "city")} ${get(r, "state")} ${z5}`.replace(/\s+/g, " ").trim();
     addMember(f, name, address);
     active++;
-    if (get(r, "voterId") === "CW287640") kirk = { name, address };
+    if (job.probe && get(r, "voterId") === job.probe.id) probeRec = { name, address };
   }
 
   const filter = sealFilter(f, active, FPR);
@@ -76,17 +82,21 @@ async function build(job: Job) {
   const builtAt = new Date().toISOString().slice(0, 10);
   writeFileSync(join(OUT, `${job.campaignId}.json`), JSON.stringify({ campaignId: job.campaignId, jurisdiction: job.jurisdiction, builtAt, version, ...filter }));
 
-  // Self-check: a real member hits; random fakes estimate the realized false-positive rate.
+  // Self-check: random fakes estimate the realized false-positive rate; an optional probe confirms a
+  // real member hits (and that a middle-name-dropped "casual" variant still hits).
   const loaded = loadFilter(filter);
-  const kirkHit = kirk ? isMember(loaded, kirk.name, kirk.address) : false;
-  const kirkCasual = isMember(loaded, "Kirk Fanelly", "130 Sharon Township Ln, Charlotte NC 28211");
   let fp = 0; const TRIALS = 20000;
-  for (let i = 0; i < TRIALS; i++) if (isMember(loaded, `Zzqx${i} Nonexistent`, `${i} Imaginary Rd, Nowhere NC 00000`)) fp++;
+  for (let i = 0; i < TRIALS; i++) if (isMember(loaded, `Zzqx${i} Nonexistent`, `${i} Imaginary Rd, Nowhere XX 00000`)) fp++;
   const sizeMB = (filter.bits.length / 1024 / 1024).toFixed(1);
 
   console.log(`  ${job.campaignId} (${job.jurisdiction}): ${scanned.toLocaleString()} scanned · ${active.toLocaleString()} active members`);
   console.log(`    filter  m=${f.m.toLocaleString()} bits · k=${f.k} · ~${(f.m / 8 / 1024 / 1024).toFixed(1)}MB raw · ${sizeMB}MB base64 · version ${version}`);
-  console.log(`    Kirk (full)=${kirkHit}  Kirk (casual, no middle)=${kirkCasual}  measured FPR=${(fp / TRIALS * 100).toFixed(2)}% (target ${FPR * 100}%)`);
+  console.log(`    measured FPR=${(fp / TRIALS * 100).toFixed(2)}% (target ${FPR * 100}%)`);
+  if (job.probe) {
+    const probeHit = probeRec ? isMember(loaded, probeRec.name, probeRec.address) : false;
+    const probeCasual = job.probe.casualName ? isMember(loaded, job.probe.casualName, job.probe.casualAddress ?? "") : null;
+    console.log(`    probe ${job.probe.id} (full)=${probeHit}${probeCasual === null ? "" : `  (casual, no middle)=${probeCasual}`}`);
+  }
 }
 
 console.log("\n⚠️  Building membership filter from lawfully-obtained voter files (hashed bits, not records; output gitignored).\n");

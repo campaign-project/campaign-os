@@ -54,6 +54,10 @@ export const CAMPAIGNS: Campaign[] = [
     petition: "Initiated constitutional amendment · $15 minimum wage",
     petitionType: "initiated-constitutional-amendment",
     freeFile: true,
+    // RFC-002-A1 turf = OSU campus-core precincts (ZIP 43210 — the "dorm gates" the directive targets),
+    // from the real Franklin County tile build (build-tiles.mts manifest). ~3.6k voters / 8 precinct tiles.
+    turf: ["25__25-blk", "25__25-bkv", "25__25-bll", "25__25-aif", "25__25-aih", "25__25-ahz", "25__25-bku", "25__25-ade"],
+    venue: true, // statewide initiative + dense campus crowd → also carry the eligible-set membership filter (Tier 1b)
     area: "Franklin County — OSU campus district",
     areaShort: "OSU campus · 43210",
     zips: ["43201", "43210"],
